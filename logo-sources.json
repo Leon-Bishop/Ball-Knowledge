@@ -24,10 +24,10 @@
     "status": "identified; runtime fetch not tested"
   },
   "germany-bundesliga": {
-    "file": "Bundesliga logo.svg",
-    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesliga%20logo.svg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Bundesliga_logo.svg",
-    "status": "identified; runtime fetch not tested"
+    "file": "Fußball-Bundesliga Logo.png",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fu%C3%9Fball-Bundesliga%20Logo.png",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Fu%C3%9Fball-Bundesliga_Logo.png",
+    "status": "Correct red footballer badge (2026); browser hotlink needs live verification"
   },
   "greece-super-league": {
     "file": "Stoiximan Super League Greece logo.svg",
@@ -64,5 +64,11 @@
     "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%BCper%20Lig%20logo.svg",
     "source_page": "https://commons.wikimedia.org/wiki/File:S%C3%BCper_Lig_logo.svg",
     "status": "identified; runtime fetch not tested"
+  },
+  "scotland-premiership": {
+    "file": "Scottish Premiership lion logo (PNG)",
+    "asset_url": "https://images.seeklogo.com/logo-png/27/1/scottish-premiership-logo-png_seeklogo-277110.png",
+    "source_page": "https://seeklogo.com/vector-logo/277110/scottish-premiership",
+    "status": "Scottish Premiership navy/gold lion branding; external image hotlink needs live verification"
   }
 }
