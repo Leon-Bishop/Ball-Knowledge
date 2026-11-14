@@ -23,7 +23,7 @@ async function handle(req,env){const url=new URL(req.url),method=req.method,rout
   const username=normal(body.username),token=authToken(req);
   if(!validName(username)||!token)return reply({error:'Username must be 3–20 letters, numbers or underscores'},400);
   const existing=await currentUser(req,env);if(existing)return reply({error:'This browser already has a username',profile:publicUser(existing)},409);
-  const country=countryOf(req),region=regionOf(req),key=username.toLocaleLowerCase('und');
+  const country=countryOf(req),region=regionOf(req),key=username.toLowerCase();
   const ip=req.headers.get('CF-Connecting-IP')||'unknown';
   const allowed=await ipLimiter(env.DB,'registration:'+await hash(ip),60);
   if(!allowed)return reply({error:'Too many registration attempts. Try later.'},429);
@@ -41,7 +41,7 @@ async function handle(req,env){const url=new URL(req.url),method=req.method,rout
   const where=scope==='country'?' AND u.country = ?':scope==='region'?' AND u.country = ? AND u.region = ?':'';
   let binds=[mode];if(scope!=='global')binds.push(user.country);if(scope==='region')binds.push(user.region);
   const rows=await env.DB.prepare(`SELECT u.username,u.country,u.region,s.best_score AS score,s.best_total AS rounds,s.best_correct AS correct,s.updated_at FROM scores s JOIN users u ON u.id=s.user_id WHERE s.mode = ?${where} ORDER BY s.best_score * 1.0 / (s.best_total * 5) DESC, s.best_correct DESC, s.best_score DESC, s.updated_at ASC LIMIT 100`).bind(...binds).all();
-  return reply({scope,mode,country:scope==='global'?null:user.country,region:scope==='region'?user.region:null,players:(rows.results||[]).map((x,i)=>({...x,rank:i+1,accuracy:Math.round(100*x.score/(x.rounds*5))}))});
+  return reply({scope,mode,country:scope==='global'?null:user.country,region:scope==='region'?user.region:null,players:(rows.results||[]).map(({region,...x},i)=>({...x,rank:i+1,accuracy:Math.round(100*x.score/(x.rounds*5))}))});
  }
  if(route==='/api/scores'&&method==='POST'){
   const user=await currentUser(req,env);if(!user)return reply({error:'Choose a username first'},401);
