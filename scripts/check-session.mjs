@@ -9,6 +9,15 @@ assert.equal(data.length,214,'The original club list must stay intact');
 assert.equal(unique.length,214,'All 214 clubs should be unique and playable');
 const league=unique.filter(t=>t.league_id==='turkey-super-lig');
 assert.equal(league.length,18,'Turkish league must have 18 unique clubs');
+for(const [limit,expected] of [[5,5],[10,10],[20,18],[Infinity,18]]){
+ const sample=Session.createSession(league,{limit,random:()=>.17});
+ assert.equal(sample.order.length,expected,'Requested session length should cap at available clubs');
+ assert.equal(new Set(sample.order.map(t=>t.id)).size,expected,'No repeated clubs in shortened quiz');
+}
+const shortA=Session.createSession(league,{limit:5,random:()=>.17});
+const shortB=Session.createSession(league,{limit:5,random:()=>.83});
+assert.notDeepEqual(shortA.order.map(t=>t.id),shortB.order.map(t=>t.id),'Different shuffles should produce different clubs');
+assert(league.every(t=>!Object.hasOwn(t,'difficulty')),'All clubs should be eligible regardless of quiz length');
 const single=Session.createSession(league,{random:()=>.17});
 assert.equal(single.order.length,18,'One round per club');
 assert.equal(new Set(single.order.map(t=>t.id)).size,18,'Club IDs must be unique in session deck');
