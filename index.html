@@ -18,7 +18,7 @@
     <div class="stadium-light stadium-light-left" aria-hidden="true">✦ ✦ ✦</div>
     <div class="stadium-light stadium-light-right" aria-hidden="true">✦ ✦ ✦</div>
     <div class="hero-topbar">
-      
+      <p id="brandTagline">Guess the club. Unlock the story.</p>
       <div class="header-actions">
         <label for="language" id="languageLabel" class="sr-only">Language</label>
         <select id="language" class="language-control" aria-label="Language">
@@ -31,7 +31,6 @@
     <div class="hero-main">
       <div class="trophy-float" aria-hidden="true">🏆</div>
       <div class="brand-center">
-        <p id="brandTagline">Guess the club. Unlock the story.</p>
         <h1 id="gameTitle" class="brand-title"><span>BALL</span><em>KNOWLEDGE</em></h1>
       </div>
       <div class="ball-float" aria-hidden="true">⚽</div>
@@ -95,7 +94,7 @@
     </section>
 
     <section id="statsView" class="screen other-screen hidden" aria-label="Statistics"><div class="eyebrow" id="statsEyebrow">YOUR HIGHLIGHTS</div><h2 id="statsTitle">Your stats</h2><div id="statsDetails" class="stat-grid"></div><button class="primary-cta go-back" type="button" data-screen="selection" id="statsChoose">Choose leagues</button></section>
-    <section id="settingsView" class="screen other-screen hidden" aria-label="Settings"><div class="eyebrow" id="settingsEyebrow">MAKE IT YOURS</div><h2 id="settingsTitle">Settings</h2><div class="setting-card"><span id="settingsLanguageLabel">Game language</span><div id="settingsCurrentLanguage">English</div></div><div class="setting-card"><span id="settingsThemeLabel">Appearance</span><button type="button" id="settingsTheme" class="outline-button">Switch theme</button></div><button class="primary-cta go-back" type="button" data-screen="selection" id="settingsChoose">Choose leagues</button></section>
+    <section id="settingsView" class="screen other-screen hidden" aria-label="Settings"><div class="eyebrow" id="settingsEyebrow">MAKE IT YOURS</div><h2 id="settingsTitle">Settings</h2><div class="setting-card"><label for="settingsLanguage" id="settingsLanguageLabel">Game language</label><select id="settingsLanguage" class="settings-language-control" aria-label="Game language"><option value="tr">🇹🇷 Türkçe</option><option value="en">🇬🇧 English</option><option value="es">🇪🇸 Español</option><option value="fr">🇫🇷 Français</option><option value="it">🇮🇹 Italiano</option><option value="pt">🇵🇹 Português</option></select></div><div class="setting-card"><span id="settingsThemeLabel">Appearance</span><button type="button" id="settingsTheme" class="outline-button">Switch theme</button></div><button class="primary-cta go-back" type="button" data-screen="selection" id="settingsChoose">Choose leagues</button></section>
     <details class="dev-warnings"><summary id="warningsTitle">Data warnings</summary><pre id="warnings"></pre></details>
   </main>
 
