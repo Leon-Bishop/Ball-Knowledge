@@ -1,0 +1,13 @@
+name = "ball-knowledge-leaderboard"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+# Create a D1 database and replace the ID below before deploying.
+[[d1_databases]]
+binding = "DB"
+database_name = "ball-knowledge-leaderboard"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[vars]
+ALLOWED_ORIGINS = "https://leon-bishop.github.io,http://localhost:8000,http://127.0.0.1:8000"
