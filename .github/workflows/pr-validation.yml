@@ -1,0 +1,19 @@
+name: Validate pull requests
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check web app and leaderboard code
+        run: npm test
+      - name: Parse Worker module
+        run: node --input-type=module --check < leaderboard-worker/src/index.js
