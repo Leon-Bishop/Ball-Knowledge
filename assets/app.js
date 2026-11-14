@@ -69,6 +69,7 @@ function startQuiz(){
  if(!pool.length)return;
  const date=new Date().toLocaleDateString('sv-SE');
  session=BallKnowledgeSession.createSession(pool,{daily:false,date,limit:roundCount()});
+ session.leaderboardSessionId=crypto.randomUUID();session.leaderboardMode=$('f-quizLength')?.value||'short';
  score=0;streak=0;round=null;outcomes=[];
  newRound();setView('game');
 }
@@ -152,7 +153,7 @@ function finish(win,pts){
  $('result').append(heading,fact);
  if(lang!=='tr'&&lastFactIsTurkish){const note=document.createElement('p');note.className='fact-language-note';note.textContent=tr('factOriginal');$('result').append(note)}
  $('next').classList.toggle('hidden',session.completed);
- if(session.completed)renderFinalSummary();else $('sessionSummary').classList.add('hidden');
+ if(session.completed){renderFinalSummary();window.BallKnowledgeLeaderboard?.submit(session)}else $('sessionSummary').classList.add('hidden');
  render();
  if(session.completed)$('sessionSummary').scrollIntoView({behavior:'smooth',block:'nearest'});
 }
@@ -244,9 +245,10 @@ function updateStartButton(){
 function setView(view){
  if(view==='game'&&!session){if(!pool.length){view='selection'}else{startQuiz();return}}
  currentView=view;
- for(const [key,id] of Object.entries({selection:'selectionView',game:'gameView',stats:'statsView',settings:'settingsView'}))$(id).classList.toggle('hidden',view!==key);
+ for(const [key,id] of Object.entries({selection:'selectionView',game:'gameView',stats:'statsView',leaderboard:'leaderboardView',settings:'settingsView'}))$(id).classList.toggle('hidden',view!==key);
  for(const btn of document.querySelectorAll('.nav-item')){const active=btn.dataset.screen===view;btn.classList.toggle('active',active);if(active)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current')}
  if(view==='stats')updateStats();
+ if(view==='leaderboard')window.BallKnowledgeLeaderboard?.refresh();
  if(view==='settings')$('settingsChoose').textContent=session?tr('resumeGame'):tr('selectLeagues');
  window.scrollTo({top:0,behavior:'instant'});
 }
@@ -270,6 +272,7 @@ function refreshLanguage(){
  $('statsChoose').textContent=tr('selectLeagues');$('settingsChoose').textContent=session?tr('resumeGame'):tr('selectLeagues');
  $('navLeagues').textContent=tr('navLeagues');$('navPlay').textContent=tr('navPlay');
  $('navStats').textContent=tr('navStats');$('navSettings').textContent=tr('navSettings');
+ window.BallKnowledgeLeaderboard?.localize();
  updateStartButton();updateStats();
  if(leagues.length){makeLeagueGrid();makeFilters();$('pool').textContent=tr('teamsAvailable',{count:pool.length});
  if(round){$('mode').textContent=session?.daily?tr('dailyMode'):tr('randomMode');render();if(finished)finishViewOnly()}}
