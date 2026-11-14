@@ -1760,42 +1760,43 @@
   },
   {
     "team_id": 11,
-    "team_name": "Leicester City",
-    "team_abbreviation": "LEI",
-    "team_stadium": "King Power Stadium",
+    "team_name": "Leeds United",
+    "team_abbreviation": "LEE",
+    "team_stadium": "Elland Road",
     "id": "england-premier-league:11",
-    "name": "Leicester City",
+    "name": "Leeds United",
     "league_id": "england-premier-league",
     "country": "England",
     "continent": "Europe",
-    "city": "Leicester",
+    "city": "Leeds",
     "aliases": [
-      "LEI"
+      "Leeds",
+      "LUFC"
     ],
     "emojis": [
       "🏙️",
       "🏟️",
-      "🦊",
-      "🔵",
-      "🏆"
+      "🦚",
+      "⚪",
+      "💛"
     ],
     "why": [
-      "City or regional visual cue for Leicester (provisional)",
-      "Secondary local context for Leicester (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
-      "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "Leeds, West Yorkshire",
+      "Elland Road stadium",
+      "Peacocks club nickname",
+      "Traditional white home kit",
+      "Yellow secondary club colour"
     ],
     "sources": [
-      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
-      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+      "https://www.premierleague.com/en/clubs/2/leeds-united",
+      "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
     ],
-    "confidence": "low",
+    "confidence": "high",
     "difficulty": "medium",
-    "fun_fact": "Leicester City için yüklediğiniz kulüp verisinde belirtilen stadyum: King Power Stadium.",
-    "fallback_used": true,
-    "fun_fact_source": "provided_team_data",
-    "fun_fact_status": "source_data_only"
+    "fun_fact": "Leeds United, 1919'da kurulduğundan beri Elland Road'da oynuyor.",
+    "fallback_used": false,
+    "fun_fact_source": "premierleague.com",
+    "fun_fact_status": "source_supported"
   },
   {
     "team_id": 12,
@@ -2072,42 +2073,43 @@
   },
   {
     "team_id": 19,
-    "team_name": "Ipswich Town",
-    "team_abbreviation": "IPS",
-    "team_stadium": "Portman Road",
+    "team_name": "Sunderland",
+    "team_abbreviation": "SUN",
+    "team_stadium": "Stadium of Light",
     "id": "england-premier-league:19",
-    "name": "Ipswich Town",
+    "name": "Sunderland",
     "league_id": "england-premier-league",
     "country": "England",
     "continent": "Europe",
-    "city": "Ipswich",
+    "city": "Sunderland",
     "aliases": [
-      "IPS"
+      "Sunderland AFC",
+      "Black Cats"
     ],
     "emojis": [
-      "📍",
+      "🌉",
       "🏟️",
-      "🚜",
-      "🔵",
-      "🐎"
+      "🐈‍⬛",
+      "🔴",
+      "⚪"
     ],
     "why": [
-      "City or regional visual cue for Ipswich (provisional)",
-      "Distinctiveness fallback, not a verified club-specific clue",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
-      "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "Wearmouth Bridge on club crest",
+      "Stadium of Light",
+      "Black Cats nickname",
+      "Red club stripes",
+      "White club stripes"
     ],
     "sources": [
       "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
-      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+      "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
     ],
-    "confidence": "low",
+    "confidence": "high",
     "difficulty": "medium",
-    "fun_fact": "Ipswich Town için yüklediğiniz kulüp verisinde belirtilen stadyum: Portman Road.",
-    "fallback_used": true,
-    "fun_fact_source": "provided_team_data",
-    "fun_fact_status": "source_data_only"
+    "fun_fact": "Sunderland'ın 1997'de açılan Stadium of Light stadı eski bir kömür madeni üzerine kuruldu.",
+    "fallback_used": false,
+    "fun_fact_source": "premierleague.com",
+    "fun_fact_status": "source_supported"
   },
   {
     "team_id": 20,
