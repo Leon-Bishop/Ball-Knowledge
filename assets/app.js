@@ -178,8 +178,8 @@ function share(){
  let result;
  if(session?.completed){const s=BallKnowledgeSession.summary(session);result=`⚽ Ball Knowledge 🏆 ${s.score}/${s.maxScore} · ${s.correct}/${s.total} ${tr('clubsCorrect')}`}
  else result=`${tr('shareTitle')} ⚽ ${finished&&outcomes.includes('🟩')?outcomes.length+'/5':'X/5'} ${outcomes.join('')}${'⬜'.repeat(5-outcomes.length)}`;
- const text=result+' '+window.location.href.split('#')[0];
- if(window.confirm('Share on X (Twitter)?\\nCancel to copy the result and game link instead.')){
+ const text=result+' '+tr('shareInvite')+' '+window.location.href.split('#')[0];
+ if(window.confirm(tr('shareOnX')+'\\n'+tr('copyShare'))){
   window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text),'_blank','noopener,noreferrer');
  }else if(navigator.clipboard?.writeText){
   navigator.clipboard.writeText(text).then(()=>$('message').textContent=tr('copied')).catch(()=>prompt(tr('copyResult'),text));
@@ -239,7 +239,7 @@ function setView(view){
  for(const [key,id] of Object.entries({selection:'selectionView',game:'gameView',stats:'statsView',settings:'settingsView'}))$(id).classList.toggle('hidden',view!==key);
  for(const btn of document.querySelectorAll('.nav-item')){const active=btn.dataset.screen===view;btn.classList.toggle('active',active);if(active)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current')}
  if(view==='stats')updateStats();
- if(view==='settings')$('settingsChoose').textContent=session?'Back to game':tr('selectLeagues');
+ if(view==='settings')$('settingsChoose').textContent=session?tr('resumeGame'):tr('selectLeagues');
  window.scrollTo({top:0,behavior:'instant'});
 }
 function refreshLanguage(){
@@ -258,7 +258,8 @@ function refreshLanguage(){
  $('settingsEyebrow').textContent=tr('settingsEyebrow');$('settingsTitle').textContent=tr('settingsTitle');
  $('settingsLanguageLabel').textContent=tr('settingsLanguage');$('settingsCurrentLanguage').textContent=$('language').selectedOptions[0]?.textContent||'';
  $('settingsThemeLabel').textContent=tr('settingsAppearance');$('settingsTheme').textContent=tr('theme');
- $('statsChoose').textContent=tr('selectLeagues');$('settingsChoose').textContent=session?'Back to game':tr('selectLeagues');
+ $('selectAllLeagues').textContent=tr('selectAllLeagues');$('deselectAllLeagues').textContent=tr('deselectAllLeagues');
+ $('statsChoose').textContent=tr('selectLeagues');$('settingsChoose').textContent=session?tr('resumeGame'):tr('selectLeagues');
  $('navLeagues').textContent=tr('navLeagues');$('navPlay').textContent=tr('navPlay');
  $('navStats').textContent=tr('navStats');$('navSettings').textContent=tr('navSettings');
  updateStartButton();updateStats();
