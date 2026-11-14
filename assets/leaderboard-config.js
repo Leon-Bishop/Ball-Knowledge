@@ -1,1 +1,2 @@
-// Set the deployed Cloudflare Worker URL after creating the D1 database.\nwindow.BK_LEADERBOARD_API = '';\n
+// Set this to your deployed Cloudflare Worker URL after deployment.
+window.BK_LEADERBOARD_API = '';
