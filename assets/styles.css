@@ -123,3 +123,9 @@ body.dark .suggestions button:focus-visible {
 body.dark .suggestions button:active{color:#fff !important;background:#72519b !important}
 body.dark .filters select{color:#f8f4ff;background:#31264b}
 body.dark .filters select option{background:#241b3c;color:#f8f4ff}
+
+/* Minimal placements: preserve the existing stadium design and league cards. */
+.brand-center #brandTagline{margin:0 0 12px;text-align:center}
+.ad-placement{min-height:96px;margin:24px 0 8px;border:1px dashed var(--line);border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.6px}
+.ad-placement span{pointer-events:none}
+@media(max-width:620px){.ad-placement{min-height:100px;margin:18px 0 8px}}
