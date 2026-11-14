@@ -82,7 +82,12 @@
     "resumeGame": "Teste devam et",
     "selectAllLeagues": "Tümünü seç",
     "deselectAllLeagues": "Seçimi kaldır",
-    "shareInvite": "Arkadaşlarını da oyuna davet et!"
+    "shareInvite": "Arkadaşlarını da oyuna davet et!",
+    "quizLength": "Test uzunluğu",
+    "lengthAll": "Tüm takımlar",
+    "lengthShort": "Kısa (5 tur)",
+    "lengthMedium": "Orta (10 tur)",
+    "lengthLong": "Uzun (20 tur)"
   },
   "en": {
     "title": "Ball Knowledge",
@@ -167,7 +172,12 @@
     "resumeGame": "Resume Quiz",
     "selectAllLeagues": "Select All",
     "deselectAllLeagues": "Deselect All",
-    "shareInvite": "Challenge your friends!"
+    "shareInvite": "Challenge your friends!",
+    "quizLength": "Quiz length",
+    "lengthAll": "All clubs",
+    "lengthShort": "Short (5 rounds)",
+    "lengthMedium": "Medium (10 rounds)",
+    "lengthLong": "Long (20 rounds)"
   },
   "es": {
     "title": "Ball Knowledge",
@@ -252,7 +262,12 @@
     "resumeGame": "Continuar cuestionario",
     "selectAllLeagues": "Seleccionar todas",
     "deselectAllLeagues": "Deseleccionar todas",
-    "shareInvite": "¡Reta a tus amigos!"
+    "shareInvite": "¡Reta a tus amigos!",
+    "quizLength": "Duración del quiz",
+    "lengthAll": "Todos los clubes",
+    "lengthShort": "Corto (5 rondas)",
+    "lengthMedium": "Medio (10 rondas)",
+    "lengthLong": "Largo (20 rondas)"
   },
   "fr": {
     "title": "Ball Knowledge",
@@ -337,7 +352,12 @@
     "resumeGame": "Reprendre le quiz",
     "selectAllLeagues": "Tout sélectionner",
     "deselectAllLeagues": "Tout désélectionner",
-    "shareInvite": "Défiez vos amis !"
+    "shareInvite": "Défiez vos amis !",
+    "quizLength": "Longueur du quiz",
+    "lengthAll": "Tous les clubs",
+    "lengthShort": "Court (5 manches)",
+    "lengthMedium": "Moyen (10 manches)",
+    "lengthLong": "Long (20 manches)"
   },
   "it": {
     "title": "Ball Knowledge",
@@ -422,7 +442,12 @@
     "resumeGame": "Riprendi il quiz",
     "selectAllLeagues": "Seleziona tutte",
     "deselectAllLeagues": "Deseleziona tutte",
-    "shareInvite": "Sfida i tuoi amici!"
+    "shareInvite": "Sfida i tuoi amici!",
+    "quizLength": "Durata del quiz",
+    "lengthAll": "Tutti i club",
+    "lengthShort": "Breve (5 turni)",
+    "lengthMedium": "Medio (10 turni)",
+    "lengthLong": "Lungo (20 turni)"
   },
   "pt": {
     "title": "Ball Knowledge",
@@ -507,6 +532,11 @@
     "resumeGame": "Retomar quiz",
     "selectAllLeagues": "Selecionar todas",
     "deselectAllLeagues": "Desmarcar todas",
-    "shareInvite": "Desafia os teus amigos!"
+    "shareInvite": "Desafia os teus amigos!",
+    "quizLength": "Duração do quiz",
+    "lengthAll": "Todos os clubes",
+    "lengthShort": "Curto (5 rondas)",
+    "lengthMedium": "Médio (10 rondas)",
+    "lengthLong": "Longo (20 rondas)"
   }
 }
