@@ -58,7 +58,7 @@ function seededShuffle(a,seed){a=[...a];for(let i=a.length-1;i>0;i--){seed=(Math
 function startQuiz(){
  if(!pool.length)return;
  const date=new Date().toLocaleDateString('sv-SE');
- session=BallKnowledgeSession.createSession(pool,{daily:$('daily').checked,date});
+ session=BallKnowledgeSession.createSession(pool,{daily:false,date});
  score=0;streak=0;round=null;outcomes=[];
  newRound();setView('game');
 }
@@ -178,12 +178,10 @@ function share(){
  let result;
  if(session?.completed){const s=BallKnowledgeSession.summary(session);result=`⚽ Ball Knowledge 🏆 ${s.score}/${s.maxScore} · ${s.correct}/${s.total} ${tr('clubsCorrect')}`}
  else result=`${tr('shareTitle')} ⚽ ${finished&&outcomes.includes('🟩')?outcomes.length+'/5':'X/5'} ${outcomes.join('')}${'⬜'.repeat(5-outcomes.length)}`;
- const text=result+' '+tr('shareInvite')+' '+window.location.href.split('#')[0];
- if(window.confirm(tr('shareOnX')+'\\n'+tr('copyShare'))){
-  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text),'_blank','noopener,noreferrer');
- }else if(navigator.clipboard?.writeText){
-  navigator.clipboard.writeText(text).then(()=>$('message').textContent=tr('copied')).catch(()=>prompt(tr('copyResult'),text));
- }else prompt(tr('copyResult'),text);
+ const onLocalHost=['localhost','127.0.0.1','0.0.0.0'].includes(window.location.hostname);
+ const gameUrl=onLocalHost?'https://leon-bishop.github.io/Ball-Knowledge/':window.location.href.split('#')[0];
+ const intent='https://twitter.com/intent/tweet?text='+encodeURIComponent(result+' '+tr('shareInvite'))+'&url='+encodeURIComponent(gameUrl);
+ window.open(intent,'_blank','noopener,noreferrer');
 }
 function getFallbackFact(team){
  const direct=(team.fun_fact||'').trim();
@@ -248,7 +246,7 @@ function refreshLanguage(){
  $('brandTagline').textContent=tr('brandTagline');
  $('languageLabel').textContent=tr('language');$('language').setAttribute('aria-label',tr('language'));
  $('language').value=lang;$('theme').setAttribute('aria-label',tr('theme'));
- $('dailyLabel').textContent=tr('dailyChallenge');$('selectionEyebrow').textContent=tr('selectionEyebrow');
+ $('selectionEyebrow').textContent=tr('selectionEyebrow');
  $('leagueTitle').textContent=tr('selectLeagues');$('leagueHelp').textContent=tr('selectHelp');
  $('backLabel').textContent=tr('backToLeagues');$('roundEyebrow').textContent=tr('roundEyebrow');
  $('guessTitle').textContent=tr('guessTitle');$('clueHelp').textContent=tr('clueHelp');$('guessLabel').textContent=tr('guessLabel');
@@ -277,7 +275,6 @@ $('new').onclick=startQuiz;
 $('next').onclick=()=>{if(!session?.completed){newRound();setView('game')}};
 $('backToLeagues').onclick=()=>setView('selection');
 $('share').onclick=share;
-$('daily').onchange=()=>{/* Applies when the next session starts; never restarts the current run. */};
 const toggleTheme=()=>{document.body.classList.toggle('dark');localStorage.setItem('efq-theme',document.body.classList.contains('dark')?'dark':'light')};
 $('theme').onclick=toggleTheme;$('settingsTheme').onclick=toggleTheme;
 $('language').onchange=()=>{lang=$('language').value;localStorage.setItem('efq-language',lang);refreshLanguage()};
