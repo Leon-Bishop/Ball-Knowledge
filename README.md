@@ -4,6 +4,12 @@
 
 **Ball Knowledge** is a mobile-first football club emoji quiz with a stadium-inspired purple interface. Choose one or more leagues by tapping their logo tiles, then guess the secret club from five randomized emojis. Each round ends with **one randomly selected club story**. **Each session contains up to the selected number of unique clubs from the chosen leagues**, with no repeat answers, and finishes with a scored summary.
 
+### Anonymous rankings (optional backend)
+
+A new **Rankings** tab supports a one-time username, a nearby country flag, and separate global, country and region rankings for Short, Medium and Long quizzes. No password or formal sign-up is required. Cloudflare supplies approximate country/region details without requesting GPS.
+
+**Shared rankings require a deployed Cloudflare Worker + D1 database**. Until the API URL is configured, the game remains fully playable and the Rankings tab displays a setup notice instead of fake scores. See [leaderboard-worker/README.md](leaderboard-worker/README.md) for deployment instructions, anonymity limits and score-integrity warnings. Anonymous per-browser identity cannot guarantee one account per person; leaderboard scores are currently unverified beta submissions.
+
 ### Game
 
 - **12 leagues**, **214 input club records** (**214 unique playable clubs**).
