@@ -239,7 +239,7 @@ function updateStats(){
  const label=document.createElement('span');label.textContent=tr(key);box.append(strong,label);$('statsDetails').append(box)}
 }
 function updateStartButton(){
- const button=$('new');button.textContent=tr('startQuizRounds',{count:roundCount()});button.disabled=!pool.length||!chosenLeagues.size;
+ const button=$('new');button.textContent=tr('startGameButton');button.disabled=!pool.length||!chosenLeagues.size;
 }
 function setView(view){
  if(view==='game'&&!session){if(!pool.length){view='selection'}else{startQuiz();return}}
