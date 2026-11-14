@@ -2088,9 +2088,21 @@
         ],
         "status": "source_supported",
         "surprise_score": 7
+      },
+      {
+        "text": null,
+        "translations": {},
+        "sources": [],
+        "status": "research_pending"
+      },
+      {
+        "text": null,
+        "translations": {},
+        "sources": [],
+        "status": "research_pending"
       }
     ],
-    "complete": true
+    "complete": false
   },
   {
     "id": "england-premier-league:12",
@@ -2456,9 +2468,21 @@
         ],
         "status": "source_supported",
         "surprise_score": 7
+      },
+      {
+        "text": null,
+        "translations": {},
+        "sources": [],
+        "status": "research_pending"
+      },
+      {
+        "text": null,
+        "translations": {},
+        "sources": [],
+        "status": "research_pending"
       }
     ],
-    "complete": true
+    "complete": false
   },
   {
     "id": "england-premier-league:20",
