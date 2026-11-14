@@ -1,9 +1,10 @@
-const $=id=>document.getElementById(id);let dictionaries={},lang=localStorage.getItem('efq-language')||'tr';const tr=(key,args={})=>{let str=dictionaries[lang]?.[key]||dictionaries.tr?.[key]||key;return str.replace(/\{(\w+)\}/g,(_,k)=>String(args[k]??''))};const fields=['difficulty'];let chosenLeagues=new Set((()=>{try{const saved=JSON.parse(localStorage.getItem('bk-leagues')||'null');return Array.isArray(saved)?saved:['england-premier-league','turkey-super-lig']}catch{return ['england-premier-league','turkey-super-lig']}})());let leagues=[],teams=[],clubFacts=new Map(),pool=[],session=null,round=null,clueOrder=[],selected=null,wrong=[],finished=false,score=0,streak=0,best=Number(localStorage.getItem('bk-best-session-score')||0),outcomes=[];
+const $=id=>document.getElementById(id);let dictionaries={},lang=localStorage.getItem('efq-language')||'tr';const tr=(key,args={})=>{let str=dictionaries[lang]?.[key]||dictionaries.tr?.[key]||key;return str.replace(/\{(\w+)\}/g,(_,k)=>String(args[k]??''))};const quizLengths={short:5,medium:10,long:20};let chosenLeagues=new Set((()=>{try{const saved=JSON.parse(localStorage.getItem('bk-leagues')||'null');return Array.isArray(saved)?saved:['england-premier-league','turkey-super-lig']}catch{return ['england-premier-league','turkey-super-lig']}})());let leagues=[],teams=[],clubFacts=new Map(),pool=[],session=null,round=null,clueOrder=[],selected=null,wrong=[],finished=false,score=0,streak=0,best=Number(localStorage.getItem('bk-best-session-score')||0),outcomes=[];
 const normalize=s=>String(s||'').toLocaleLowerCase('en').replace(/ı/g,'i').replace(/ß/g,'ss').replace(/æ/g,'ae').replace(/ø/g,'o').replace(/ł/g,'l').replace(/đ/g,'d').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
 function warn(s){console.warn(s);$('warnings').textContent+=s+'\n'}
-function validate(){let ids=new Set(),seq=new Set();for(const t of teams){for(const k of ['id','name','league_id','emojis','why','sources','confidence','difficulty','fun_fact'])if(t[k]==null)warn('Missing '+k+': '+(t.name||'?'));if(ids.has(t.id))warn('Duplicate ID: '+t.id);ids.add(t.id);if(!leagues.some(l=>l.id===t.league_id))warn('Missing league: '+t.name+' → '+t.league_id);if(!Array.isArray(t.emojis)||t.emojis.length!==5)warn('Invalid emoji count: '+t.name);else{let key=JSON.stringify(t.emojis);if(seq.has(key))warn('Duplicate emoji sequence: '+t.name);seq.add(key)}}}
+function validate(){let ids=new Set(),seq=new Set();for(const t of teams){for(const k of ['id','name','league_id','emojis','why','sources','confidence','fun_fact'])if(t[k]==null)warn('Missing '+k+': '+(t.name||'?'));if(ids.has(t.id))warn('Duplicate ID: '+t.id);ids.add(t.id);if(!leagues.some(l=>l.id===t.league_id))warn('Missing league: '+t.name+' → '+t.league_id);if(!Array.isArray(t.emojis)||t.emojis.length!==5)warn('Invalid emoji count: '+t.name);else{let key=JSON.stringify(t.emojis);if(seq.has(key))warn('Duplicate emoji sequence: '+t.name);seq.add(key)}}}
 function valid(t){return t.id&&t.name&&t.league_id&&Array.isArray(t.emojis)&&t.emojis.length===5&&leagues.some(l=>l.id===t.league_id)}
-function options(key){if(key==='difficulty'){return ['easy','medium','hard'].map(v=>[v,v]);}let vals=key==='league_id'?leagues.filter(l=>teams.some(t=>t.league_id===l.id)).map(l=>[l.id,l.name]):[...new Set(teams.flatMap(t=>key==='tag'?(leagues.find(l=>l.id===t.league_id)?.tags||[]):[t[key]]).filter(Boolean))].sort().map(v=>[v,v]);return vals}
+function quizLength(){return quizLengths[$('f-quizLength')?.value]||pool.length}
+function roundCount(){return Math.min(pool.length,quizLength())}
 const officialLogos={
  "belgian-pro-league": "https://commons.wikimedia.org/wiki/Special:FilePath/Belgian%20Pro%20League%20logo%20%282020%2C%20boxed%29.svg",
  "brazil-serie-a": "https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato%20Brasileiro%20S%C3%A9rie%20A%20logo%20%282026%29.svg",
@@ -47,10 +48,18 @@ function makeLeagueGrid(){
  }
 }
 function setAllLeagues(selectAll){chosenLeagues=new Set(selectAll?leagues.map(l=>l.id):[]);localStorage.setItem('bk-leagues',JSON.stringify([...chosenLeagues]));makeLeagueGrid();filter()}
-function makeFilters(){const prior=Object.fromEntries(fields.map(f=>[f,$('f-'+f)?.value||'']));$('filters').innerHTML='';for(const f of fields){let label=document.createElement('label');label.textContent=f==='difficulty'?tr('difficulty'):f;let sel=document.createElement('select');sel.id='f-'+f;sel.innerHTML='<option value="">'+tr('all')+'</option>';for(const [v,n] of options(f)){let o=document.createElement('option');o.value=v;o.textContent=(['easy','medium','hard'].includes(n)?tr(n):n);sel.append(o)}sel.value=prior[f];sel.onchange=filter;label.append(sel);$('filters').append(label)}}
+function makeFilters(){
+ const prior=$('f-quizLength')?.value||'';
+ const label=document.createElement('label');label.textContent=tr('quizLength');
+ const sel=document.createElement('select');sel.id='f-quizLength';
+ for(const [value,key] of [['','lengthAll'],['short','lengthShort'],['medium','lengthMedium'],['long','lengthLong']]){
+  const option=document.createElement('option');option.value=value;option.textContent=tr(key);sel.append(option);
+ }
+ sel.value=prior;sel.onchange=filter;label.append(sel);$('filters').replaceChildren(label);
+}
 function filter(){
- // The filter controls the NEXT session. A session already in progress keeps its fixed pool and order.
- pool=BallKnowledgeSession.uniqueClubs(teams.filter(t=>valid(t)&&chosenLeagues.has(t.league_id)&&fields.every(f=>{let v=$('f-'+f)?.value;return !v||t[f]===v})));
+ // Quiz length controls the NEXT session; every selected club is eligible regardless of length.
+ pool=BallKnowledgeSession.uniqueClubs(teams.filter(t=>valid(t)&&chosenLeagues.has(t.league_id)));
  $('pool').textContent=tr('teamsAvailable',{count:pool.length});updateStartButton();
 }
 function hash(s){let h=2166136261;for(const c of s){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
@@ -59,7 +68,7 @@ function seededShuffle(a,seed){a=[...a];for(let i=a.length-1;i>0;i--){seed=(Math
 function startQuiz(){
  if(!pool.length)return;
  const date=new Date().toLocaleDateString('sv-SE');
- session=BallKnowledgeSession.createSession(pool,{daily:false,date});
+ session=BallKnowledgeSession.createSession(pool,{daily:false,date,limit:roundCount()});
  score=0;streak=0;round=null;outcomes=[];
  newRound();setView('game');
 }
@@ -230,7 +239,7 @@ function updateStats(){
  const label=document.createElement('span');label.textContent=tr(key);box.append(strong,label);$('statsDetails').append(box)}
 }
 function updateStartButton(){
- const button=$('new');button.textContent=tr('startQuizRounds',{count:pool.length});button.disabled=!pool.length||!chosenLeagues.size;
+ const button=$('new');button.textContent=tr('startQuizRounds',{count:roundCount()});button.disabled=!pool.length||!chosenLeagues.size;
 }
 function setView(view){
  if(view==='game'&&!session){if(!pool.length){view='selection'}else{startQuiz();return}}
