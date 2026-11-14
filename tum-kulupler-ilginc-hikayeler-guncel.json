@@ -2071,51 +2071,26 @@
   {
     "id": "england-premier-league:11",
     "team_id": 11,
-    "team_name": "Leicester City",
+    "team_name": "Leeds United",
     "league_id": "england-premier-league",
     "facts": [
       {
-        "text": "Leicester City’nin 2015-16 Premier League şampiyonluğuna sezon başında 5000’e 1 oran veriliyordu.",
+        "text": "Leeds United, 1919 yılından beri Elland Road'da oynuyor.",
         "translations": {
-          "en": "Leicester City began the 2015–16 Premier League season as 5,000-to-1 outsiders to win the title.",
-          "es": "El Leicester empezó la Premier League 2015-16 con probabilidades de 5.000 a 1 de ser campeón.",
-          "fr": "Leicester a commencé la Premier League 2015-16 avec une cote de 5 000 contre 1 pour le titre.",
-          "it": "Il Leicester iniziò la Premier League 2015-16 con una quota di 5000 a 1 per vincere il titolo.",
-          "pt": "O Leicester começou a Premier League 2015-16 com probabilidades de 5000 para 1 para ganhar o título."
+          "en": "Leeds United have played at Elland Road since the club was founded in 1919.",
+          "es": "Leeds United juega en Elland Road desde su fundación en 1919.",
+          "fr": "Leeds United joue à Elland Road depuis sa fondation en 1919.",
+          "it": "Il Leeds United gioca a Elland Road dalla fondazione del club nel 1919.",
+          "pt": "O Leeds United joga no Elland Road desde sua fundação em 1919."
         },
         "sources": [
-          "https://www.bbc.co.uk/sport/football/36166146"
+          "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
         ],
         "status": "source_supported",
-        "surprise_score": 8
-      },
-      {
-        "text": "2015-16 sezonu başında şampiyonluk ihtimaline 5.000’e 1 oran veriliyordu. Leicester bütün tahminleri boşa çıkararak Premier League şampiyonu oldu.",
-        "sources": [
-          "https://www.bbc.co.uk/sport/football/36105265"
-        ],
-        "status": "prior_candidate_needs_verification",
-        "surprise_score": 8,
-        "translations": {}
-      },
-      {
-        "text": "Leicester City’li Jamie Vardy, 2015’te üst üste tam 11 Premier League maçında gol atarak Ruud van Nistelrooy’un 10 maçlık rekorunu kırdı.",
-        "translations": {
-          "en": "Leicester City’s Jamie Vardy scored in 11 consecutive Premier League matches in 2015, breaking Ruud van Nistelrooy’s previous record of 10.",
-          "es": "Jamie Vardy, del Leicester, marcó en 11 partidos seguidos de la Premier en 2015, superando el récord anterior de 10 de Van Nistelrooy.",
-          "fr": "Jamie Vardy, de Leicester, a marqué lors de 11 matches de Premier League consécutifs en 2015, battant le record de 10 de Van Nistelrooy.",
-          "it": "Jamie Vardy del Leicester segnò in 11 partite consecutive di Premier League nel 2015, battendo il precedente record di 10 di Van Nistelrooy.",
-          "pt": "Jamie Vardy, do Leicester, marcou em 11 partidas seguidas da Premier League em 2015, superando o recorde anterior de dez de Van Nistelrooy."
-        },
-        "sources": [
-          "https://www.premierleague.com/en/news/4520409/"
-        ],
-        "status": "source_supported",
-        "surprise_score": 9,
-        "event_key": "leicester-vardy-11-in-a-row-2015"
+        "surprise_score": 7
       }
     ],
-    "complete": false
+    "complete": true
   },
   {
     "id": "england-premier-league:12",
@@ -2464,52 +2439,26 @@
   {
     "id": "england-premier-league:19",
     "team_id": 19,
-    "team_name": "Ipswich Town",
+    "team_name": "Sunderland",
     "league_id": "england-premier-league",
     "facts": [
       {
-        "text": "Ipswich Town, 2001’de Premier League’e yeni yükselmişken ligi 5. bitirdi; ertesi sezon küme düştü ama 2002-03 UEFA Kupası’na Fair Play sıralamasından katıldı.",
+        "text": "Sunderland'ın Stadium of Light stadı, eski bir kömür ocağının bulunduğu araziye inşa edildi ve 1997'de açıldı.",
         "translations": {
-          "en": "Newly promoted Ipswich finished fifth in the Premier League in 2000/01, were relegated the next season, yet still played in the 2002/03 UEFA Cup via UEFA’s Fair Play ranking.",
-          "es": "El recién ascendido Ipswich acabó quinto en la Premier 2000/01 y descendió la temporada siguiente, pero aun así jugó la Copa de la UEFA 2002/03 gracias al ranking Fair Play.",
-          "fr": "Ipswich, promu, a terminé cinquième de Premier League en 2000/01, puis est descendu dès la saison suivante, tout en jouant la Coupe UEFA 2002/03 grâce au Fair-play.",
-          "it": "L’Ipswich, neopromosso, arrivò quinto in Premier League nel 2000/01 e retrocesse la stagione dopo, ma giocò comunque la Coppa UEFA 2002/03 grazie al Fair Play.",
-          "pt": "O Ipswich recém-promovido foi quinto na Premier de 2000/01 e caiu na temporada seguinte, mas mesmo assim disputou a Copa da UEFA de 2002/03 pelo ranking Fair Play."
+          "en": "Sunderland's Stadium of Light opened in 1997 on the site of a former coal mine.",
+          "es": "El Stadium of Light del Sunderland se inauguró en 1997 sobre una antigua mina de carbón.",
+          "fr": "Le Stadium of Light de Sunderland a ouvert en 1997 sur une ancienne mine de charbon.",
+          "it": "Lo Stadium of Light del Sunderland è stato inaugurato nel 1997 sul sito di una ex miniera di carbone.",
+          "pt": "O Stadium of Light do Sunderland foi inaugurado em 1997 no local de uma antiga mina de carvão."
         },
         "sources": [
-          "https://www.uefa.com/uefaeuropaleague/news/025a-0eaaf6d47b2b-51fd19226fed-1000--burley-ousted-at-ipswich/"
+          "https://www.premierleague.com/en/news/4725666/all-you-need-to-know-about-the-20-premier-league-stadiums"
         ],
         "status": "source_supported",
-        "surprise_score": 9,
-        "event_key": "ipswich-europe-while-relegated-2002"
-      },
-      {
-        "text": "Ipswich armasındaki beyaz at rastgele seçilmedi; İngiltere'nin ünlü Suffolk Punch ağır iş atı 1972'de taraftarların kazandığı arma yarışmasıyla kulübe girdi.",
-        "sources": [
-          "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained"
-        ],
-        "status": "prior_candidate_needs_verification",
-        "surprise_score": 8,
-        "translations": {}
-      },
-      {
-        "text": "Ipswich, 1981 UEFA Kupası finalinde Hollandalı AZ Alkmaar’ı yenerken iki maçta da golünü Hollandalı oyuncusu Frans Thijssen’den buldu; kupa toplam 5-4’lük skorla geldi.",
-        "translations": {
-          "en": "Ipswich won the 1981 UEFA Cup final against Dutch side AZ Alkmaar thanks in part to Dutchman Frans Thijssen, who scored in both legs of the 5–4 aggregate win.",
-          "es": "Ipswich ganó la UEFA de 1981 ante el AZ neerlandés con goles de su jugador neerlandés Frans Thijssen en ambas finales; el global acabó 5-4.",
-          "fr": "Ipswich a remporté la Coupe UEFA 1981 contre l’AZ néerlandais, grâce notamment à Frans Thijssen, lui-même Néerlandais, buteur à l’aller comme au retour (5-4).",
-          "it": "L’Ipswich vinse la Coppa UEFA 1981 contro gli olandesi dell’AZ grazie anche a Frans Thijssen, olandese a sua volta, a segno in entrambe le finali (5-4 complessivo).",
-          "pt": "O Ipswich venceu a Copa da UEFA de 1981 contra o AZ holandês graças também ao holandês Frans Thijssen, que marcou nas duas partidas da vitória agregada por 5 a 4."
-        },
-        "sources": [
-          "https://www.uefa.com/uefaeuropaleague/news/008a-0e6a0a02d996-129ab95150db-1000--1980-81-ipswich-thankful-for-thijssen/"
-        ],
-        "status": "source_supported",
-        "surprise_score": 9,
-        "event_key": "ipswich-dutchman-uefa-final-1981"
+        "surprise_score": 7
       }
     ],
-    "complete": false
+    "complete": true
   },
   {
     "id": "england-premier-league:20",
