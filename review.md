@@ -1,0 +1,258 @@
+# Research and QA review — all 12 uploaded leagues
+
+**Important:** The 11 newly added leagues are a provisional coverage pass, NOT individually verified club research. Their proposed emoji associations and city labels require human/source verification. The Turkish sample retains its earlier research notes and confidence levels. Source URLs in the English entries are general league resources, not proof of every proposed clue.
+
+## Source duplicates
+- English Premier League: repeated club name Ipswich Town under different source IDs; retained both records
+
+## Full-sequence collisions
+- Waasland-Beveren, Frosinone
+- KV Kortrijk, Oud-Heverlee Leuven
+- KVC Westerlo, Panetolikos
+- Lommel SK, Chapecoense, Moreirense
+- Red Bull Bragantino, RB Leipzig
+- Chelsea, Rangers
+- Ipswich Town, Ipswich Town
+- Angers, Udinese, St. Mirren
+- Troyes, PEC Zwolle, FC Famalicão
+- Werder Bremen, Racing Santander
+- Volos NFC, Cagliari
+- Deportivo La Coruña, Celta Vigo, Málaga
+
+## Clubs requiring review and/or fallback
+- **Belgian Pro League — Anderlecht**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Antwerp**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Cercle Brugge KSV**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Club Brugge**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Waasland-Beveren**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — KAA Gent**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — KV Kortrijk**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — KV Mechelen**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — KVC Westerlo**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Oud-Heverlee Leuven**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Racing Genk**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Royal Charleroi SC**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Lommel SK**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Sint-Truidense**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Standard Liege**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Union St.-Gilloise**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — RAAL La Louvière**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Belgian Pro League — Zulte-Waregem**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Vitória**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Athletico Paranaense**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Atlético-MG**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Bahia**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Botafogo**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Corinthians**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Coritiba**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Mirassol**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Cruzeiro**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Flamengo**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Fluminense**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — São Paulo**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Remo**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Grêmio**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Internacional**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Palmeiras**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Red Bull Bragantino**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Santos**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Chapecoense**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Brazilian Série A — Vasco da Gama**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Arsenal**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Aston Villa**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Bournemouth**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Brentford**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Brighton**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Chelsea**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Crystal Palace**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Everton**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Fulham**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Ipswich Town**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Leicester City**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Liverpool**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Manchester City**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Manchester United**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Newcastle**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Nottm Forest**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Coventry City**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Tottenham**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Ipswich Town**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **English Premier League — Hull City**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — AJ Auxerre**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Angers**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — AS Monaco**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Brest**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Le Havre AC**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Lille**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Lyon**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Marseille**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Le Mans**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Nice**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Lorient**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Paris Saint-Germain**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Rennes**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Paris FC**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Strasbourg**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Toulouse**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Lens**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **French Ligue 1 — Troyes**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — FC Augsburg**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — Bayer Leverkusen**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — Bayern Munich**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — Borussia Dortmund**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — Borussia Monchengladbach**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — Eintracht Frankfurt**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — SV Elversberg**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — FC Cologne**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — FC Mainz**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — Hamburg SV**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — RB Leipzig**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — SC Freiburg**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — SC Paderborn 07**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — TSG Hoffenheim**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — VfB Stuttgart**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — Schalke 04**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — FC Union Berlin**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **German Bundesliga — Werder Bremen**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — AEK Athens**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Aris**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Asteras Tripoli**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Atromitos**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Kifisia**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Iraklis**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — OFI Crete**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Olympiacos**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — PAOK**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Panathinaikos**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Panetolikos**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Kalamata**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Levadiakos**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Greek Super League — Volos NFC**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — AC Milan**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Atalanta**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Bologna**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Cagliari**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Como**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Fiorentina**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Frosinone**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Genoa**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Internazionale**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Juventus**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Lazio**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Lecce**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Monza**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Napoli**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Parma**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — AS Roma**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Sassuolo**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Torino**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Udinese**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Italian Serie A — Venezia**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Ajax Amsterdam**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — ADO Den Haag**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — AZ Alkmaar**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Excelsior**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Feyenoord Rotterdam**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Fortuna Sittard**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Go Ahead Eagles**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — FC Twente**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — FC Utrecht**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — FC Groningen**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Heerenveen**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — NEC Nijmegen**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — PEC Zwolle**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — PSV Eindhoven**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Sparta Rotterdam**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — SC Cambuur**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Telstar**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Dutch Eredivisie — Willem II**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Arouca**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Benfica**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Académico de Viseu**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Braga**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Casa Pia**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Estoril**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Estrela**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — FC Famalicão**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — FC Porto**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Marítimo**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Gil Vicente**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Vitória Guimarães**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Moreirense**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — C.D. Nacional**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Rio Ave**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Santa Clara**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Sporting CP**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Liga Portugal — Alverca**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Aberdeen**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Celtic**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Dundee**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Heart of Midlothian**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Hibernian**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Kilmarnock**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Dundee United**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Motherwell**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Rangers**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — Falkirk**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — St. Johnstone**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Scottish Premiership — St. Mirren**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Deportivo Alavés**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Deportivo La Coruña**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Athletic Club**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Atlético Madrid**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — FC Barcelona**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Elche**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Celta Vigo**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Espanyol**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Getafe CF**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Levante**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Málaga**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — CA Osasuna**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Racing Santander**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Rayo Vallecano**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Real Betis**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Real Madrid**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Real Sociedad**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Sevilla FC**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Valencia CF**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Spanish La Liga — Villarreal CF**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Alanyaspor**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Amed SFK**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Erzurum BB**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Eyüpspor**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Gaziantep FK**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Gençlerbirliği**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Göztepe**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Başakşehir**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Kasımpaşa**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Kocaelispor**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Konyaspor**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Çaykur Rizespor**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Samsunspor**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Trabzonspor**: confidence medium; fallback True. Check all provisional associations and sources before publishing.
+- **Turkish Süper Lig — Çorum FK**: confidence low; fallback True. Check all provisional associations and sources before publishing.
+- Collision resolved for Frosinone: replaced second clue with provisional generic symbol.
+- Collision resolved for Oud-Heverlee Leuven: replaced second clue with provisional generic symbol.
+- Collision resolved for Panetolikos: replaced second clue with provisional generic symbol.
+- Collision resolved for Chapecoense: replaced second clue with provisional generic symbol.
+- Collision resolved for Moreirense: replaced second clue with provisional generic symbol.
+- Collision resolved for RB Leipzig: replaced second clue with provisional generic symbol.
+- Collision resolved for Rangers: replaced second clue with provisional generic symbol.
+- Collision resolved for Ipswich Town: replaced second clue with provisional generic symbol.
+- Collision resolved for Udinese: replaced second clue with provisional generic symbol.
+- Collision resolved for St. Mirren: replaced second clue with provisional generic symbol.
+- Collision resolved for PEC Zwolle: replaced second clue with provisional generic symbol.
+- Collision resolved for FC Famalicão: replaced second clue with provisional generic symbol.
+- Collision resolved for Racing Santander: replaced second clue with provisional generic symbol.
+- Collision resolved for Cagliari: replaced second clue with provisional generic symbol.
+- Collision resolved for Celta Vigo: replaced second clue with provisional generic symbol.
+- Collision resolved for Málaga: replaced second clue with provisional generic symbol.
+
+
+## Türkçe takım bilgileri incelemesi
+
+Beş kulüp için bağımsız kaynakla doğrulanmış özel tarihçe eklendi: Fenerbahçe, Galatasaray, Arsenal, Ajax, Napoli. Diğer 209 kayıt, yüklenen stadyum alanından kulübe özgü bilgi kullanıyor; bu bir tarihçe doğrulaması değildir. Yayına çıkmadan önce bu kayıtlar için resmi kulüp/lig kaynaklarıyla özel tarihçe eklenmeli.
+
+## Research continuation, 14 November 2026
+
+See `RESEARCH_COVERAGE.md` and `RESEARCH_AUDIT.json` for the current, automatically measured figures. In this pass, 37 source-linked story candidates were added (36 net new populated slots), along with six-language texts. Older candidate stories still require editorial verification. No `same country` or `same continent` messages remain in guess feedback.

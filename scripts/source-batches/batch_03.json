@@ -1,0 +1,370 @@
+[
+  {
+    "id": "brazil-serie-a:8",
+    "key": "mirassol-rise-from-serie-d",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/mirassol-2026-conmebol-libertadores-results-squad-and-schedule"
+    ],
+    "tr": "Mirassol, 2020’de Brezilya 4. ligindeydi; beş sezonda en üst lige çıktı ve 2026’da Libertadores’te ilk katılımında son 16’ya kaldı.",
+    "translations": {
+      "en": "Mirassol played in Brazil’s fourth tier in 2020; five seasons later it reached the top flight, then made the 2026 Libertadores last 16 on debut.",
+      "es": "El Mirassol estaba en la cuarta división de Brasil en 2020; cinco temporadas después llegó a Primera y alcanzó los octavos de la Libertadores 2026 en su debut.",
+      "fr": "Mirassol évoluait en quatrième division brésilienne en 2020 ; cinq saisons plus tard, il accédait à l’élite puis aux huitièmes de la Libertadores 2026 dès sa première participation.",
+      "it": "Il Mirassol militava nella quarta serie brasiliana nel 2020; cinque stagioni dopo raggiunse la massima divisione e gli ottavi di Libertadores 2026 al debutto.",
+      "pt": "O Mirassol disputava a Série D em 2020; cinco temporadas depois estava na elite e chegou às oitavas da Libertadores de 2026 logo na estreia."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:8",
+    "key": "mirassol-seven-scorers",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/mirassol-2026-conmebol-libertadores-results-squad-and-schedule"
+    ],
+    "tr": "Mirassol’un ilk Libertadores grup macerasındaki yedi golü yedi farklı futbolcu attı; takım evindeki üç maçı gol yemeden kazandı.",
+    "translations": {
+      "en": "Seven different players scored Mirassol’s seven goals in its first Libertadores group stage; it won all three home games without conceding.",
+      "es": "Siete jugadores distintos marcaron los siete goles del Mirassol en su primera fase de grupos de Libertadores; ganó sus tres partidos en casa sin encajar.",
+      "fr": "Sept joueurs différents ont inscrit les sept buts de Mirassol lors de sa première phase de groupes de Libertadores ; trois victoires à domicile sans encaisser.",
+      "it": "Sette giocatori diversi segnarono i sette gol del Mirassol nel suo primo girone di Libertadores; vinse tutte le tre gare in casa senza subire reti.",
+      "pt": "Sete jogadores diferentes marcaram os sete gols do Mirassol em sua primeira fase de grupos da Libertadores; venceu os três jogos em casa sem sofrer gols."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:13",
+    "key": "remo-2026-32-years",
+    "sources": [
+      "https://www.cbf.com.br/futebol-brasileiro/noticias/undefined/volta-redonda-x-criciuma/apos-32-anos-remo-volta-a-jogar-como-mandante-na-serie-a-nesta-quarta-vespera-de-seu-aniversario"
+    ],
+    "tr": "Remo, 32 yıl sonra ilk kez Şubat 2026’da kendi sahasında Brezilya Serie A maçına çıktı; karşılaşma 121. kuruluş yıldönümünden bir gün önceydi.",
+    "translations": {
+      "en": "Remo hosted its first Brazilian top-flight game for 32 years in February 2026—just one day before its 121st birthday.",
+      "es": "El Remo volvió a jugar en casa en la máxima liga brasileña tras 32 años en febrero de 2026, justo un día antes de cumplir 121 años.",
+      "fr": "En février 2026, Remo a rejoué à domicile en première division brésilienne après 32 ans, la veille de son 121e anniversaire.",
+      "it": "Nel febbraio 2026 il Remo tornò a ospitare una gara di massima serie dopo 32 anni, proprio il giorno prima del 121º anniversario.",
+      "pt": "Em fevereiro de 2026, o Remo voltou a jogar a Série A em casa após 32 anos, na véspera de completar 121 anos."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:13",
+    "key": "remo-2026-two-for-one-tickets",
+    "sources": [
+      "https://www.cbf.com.br/futebol-brasileiro/noticias/undefined/volta-redonda-x-criciuma/apos-32-anos-remo-volta-a-jogar-como-mandante-na-serie-a-nesta-quarta-vespera-de-seu-aniversario"
+    ],
+    "tr": "Remo, 2026’da Serie A’ya dönüş maçına bilet alan taraftarlara yerel Paysandu derbisi için de ücretsiz bilet verdi.",
+    "translations": {
+      "en": "For its 2026 top-flight homecoming, Remo offered supporters a free ticket to the local derby against Paysandu with every match ticket.",
+      "es": "Para su regreso a Primera en 2026, el Remo regaló una entrada al derbi con Paysandu a quienes compraron un boleto para el partido.",
+      "fr": "Pour son retour à domicile en première division en 2026, Remo offrait une place pour le derby contre Paysandu à chaque acheteur de billet.",
+      "it": "Per il ritorno in casa nella massima serie nel 2026, il Remo regalò un biglietto per il derby con il Paysandu a ogni acquirente.",
+      "pt": "Para a volta à Série A em casa em 2026, o Remo ofereceu a quem comprasse ingresso outra entrada para o clássico contra o Paysandu."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:15",
+    "key": "inter-2006-borrowed-boots",
+    "sources": [
+      "https://www.fifa.com/en/tournaments/mens/fifa-club-world-cup/saudi-arabia-2023/articles/adriano-gabiru-internacional-barcelona-japan-2006-great-fifa-club-world-cup-moments"
+    ],
+    "tr": "Internacional’in Barcelona’yı yıkan 2006 Dünya Kulüpler Kupası golünün sahibi Gabiru, finalden önce kramponunu yırttı; arkadaşının kendisinden büyük yedek kramponuyla maça çıktı.",
+    "translations": {
+      "en": "Internacional’s 2006 world-title hero Gabiru tore his boots before facing Barcelona, so he scored the winner wearing a teammate’s oversized spare pair.",
+      "es": "Gabiru, héroe del título mundial del Internacional en 2006 ante el Barça, rompió sus botas antes de la final y marcó el gol decisivo con unas prestadas demasiado grandes.",
+      "fr": "Gabiru, héros du titre mondial de l’Internacional face au Barça en 2006, avait déchiré ses chaussures ; il a marqué avec une paire trop grande prêtée par un coéquipier.",
+      "it": "Gabiru, eroe del mondiale per club 2006 dell’Internacional contro il Barça, si ruppe gli scarpini e segnò il gol decisivo con un paio più grande prestatogli da un compagno.",
+      "pt": "Gabiru, herói do Mundial de 2006 do Internacional contra o Barcelona, rasgou a chuteira antes da final e fez o gol com um par emprestado e maior que seu número."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:12",
+    "key": "saopaulo-2005-goalie-miracle",
+    "sources": [
+      "https://inside.fifa.com/tournaments/mens/clubworldcup/uae2021/news/the-upsets-that-shook-the-club-world-cup"
+    ],
+    "tr": "São Paulo, 2005 Dünya Kulüpler Kupası finalinde Liverpool’u 1-0 yendi; efsane golcü kaleci Rogério Ceni bu kez golleriyle değil olağanüstü kurtarışlarıyla maçın kahramanıydı.",
+    "translations": {
+      "en": "São Paulo stunned Liverpool 1–0 in the 2005 Club World Cup final, with famously goal-scoring goalkeeper Rogério Ceni starring for his saves instead.",
+      "es": "El São Paulo sorprendió 1-0 al Liverpool en la final del Mundial de Clubes de 2005; el arquero goleador Rogério Ceni brilló esta vez por sus paradas.",
+      "fr": "São Paulo a surpris Liverpool 1-0 en finale du Mondial des clubs 2005 ; le gardien buteur Rogério Ceni s’est cette fois illustré par ses arrêts.",
+      "it": "Il San Paolo sorprese il Liverpool 1-0 nella finale del Mondiale per club 2005; il portiere goleador Rogério Ceni stavolta fu decisivo con le sue parate.",
+      "pt": "O São Paulo surpreendeu o Liverpool por 1 a 0 na final do Mundial de Clubes de 2005; o goleiro-artilheiro Rogério Ceni brilhou desta vez pelas defesas."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:10",
+    "key": "flamengo-2019-double-lastminute",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/flamengo-look-extend-their-golden-era-conmebol-libertadores"
+    ],
+    "tr": "Flamengo, 2019 Libertadores finalinde River Plate karşısında 88. dakikaya kadar 1-0 yeniliyordu; Gabigol iki geç gol atıp kupayı çevirdi.",
+    "translations": {
+      "en": "Flamengo trailed River Plate 1–0 late in the 2019 Libertadores final before Gabigol scored twice at the death to win the trophy.",
+      "es": "El Flamengo perdía 1-0 ante River Plate al final de la Libertadores 2019, hasta que Gabigol marcó dos goles agónicos y dio vuelta la final.",
+      "fr": "Flamengo était mené 1-0 par River Plate en fin de finale de Libertadores 2019, avant deux buts tardifs de Gabigol pour renverser le match.",
+      "it": "Il Flamengo era sotto 1-0 contro il River Plate nel finale della Libertadores 2019, poi Gabigol segnò due volte nel finale ribaltando la partita.",
+      "pt": "O Flamengo perdia por 1 a 0 para o River Plate nos minutos finais da Libertadores de 2019, até Gabigol marcar duas vezes e virar a decisão."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:10",
+    "key": "flamengo-2022-undefeated",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/flamengo-look-extend-their-golden-era-conmebol-libertadores"
+    ],
+    "tr": "Flamengo, 2022 Libertadores şampiyonluğuna tam 13 maçta 12 galibiyet ve yalnızca 1 beraberlikle, hiç yenilmeden ulaştı.",
+    "translations": {
+      "en": "Flamengo lifted the 2022 Copa Libertadores after an undefeated run of 12 wins and one draw in 13 matches.",
+      "es": "El Flamengo ganó la Libertadores de 2022 invicto: 12 victorias y un empate en 13 partidos.",
+      "fr": "Flamengo a remporté la Libertadores 2022 sans perdre : douze victoires et un nul en treize matches.",
+      "it": "Il Flamengo vinse la Libertadores 2022 da imbattuto: dodici vittorie e un pareggio in tredici partite.",
+      "pt": "O Flamengo conquistou a Libertadores de 2022 invicto: 12 vitórias e um empate em 13 partidas."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:16",
+    "key": "palmeiras-2021-deyverson",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/cool-head-hot-heart-abel-ferreira-continues-make-history-palmeiras"
+    ],
+    "tr": "Palmeiras, 2021 Libertadores finalinde Flamengo’yu uzatmada Deyverson’un golüyle 2-1 yenip üst üste ikinci kez kıtanın zirvesine çıktı.",
+    "translations": {
+      "en": "Palmeiras beat Flamengo 2–1 with Deyverson’s extra-time winner in the 2021 Libertadores final, securing back-to-back continental titles.",
+      "es": "El Palmeiras ganó 2-1 al Flamengo con un gol de Deyverson en la prórroga de la final de Libertadores 2021 y logró dos títulos seguidos.",
+      "fr": "Palmeiras a battu Flamengo 2-1 grâce à Deyverson en prolongation de la finale de Libertadores 2021, conservant son titre continental.",
+      "it": "Il Palmeiras batté il Flamengo 2-1 con un gol di Deyverson ai supplementari nella finale di Libertadores 2021, conquistando due titoli consecutivi.",
+      "pt": "O Palmeiras venceu o Flamengo por 2 a 1 com gol de Deyverson na prorrogação da final da Libertadores de 2021, conquistando o bicampeonato."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:16",
+    "key": "palmeiras-2025-threegoal-comeback",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/cool-head-hot-heart-abel-ferreira-continues-make-history-palmeiras"
+    ],
+    "tr": "Palmeiras, 2025 Libertadores yarı finalinde LDU Quito karşısında ilk maçtan kalan üç gollük farkı kapatıp finale çıktı.",
+    "translations": {
+      "en": "Palmeiras reached the 2025 Libertadores final after overturning a three-goal first-leg deficit against LDU Quito.",
+      "es": "El Palmeiras llegó a la final de la Libertadores 2025 remontando tres goles de desventaja ante Liga de Quito.",
+      "fr": "Palmeiras a atteint la finale de Libertadores 2025 après avoir remonté un retard de trois buts face à la LDU Quito.",
+      "it": "Il Palmeiras arrivò in finale di Libertadores 2025 rimontando uno svantaggio di tre gol contro la LDU Quito.",
+      "pt": "O Palmeiras chegou à final da Libertadores de 2025 depois de reverter uma desvantagem de três gols contra a LDU Quito."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:6",
+    "key": "corinthians-2012-unbeaten",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/corinthians-2026-conmebol-libertadores-results-squad-and-schedule"
+    ],
+    "tr": "Corinthians, 2012 Libertadores’i 14 maçta tek yenilgi almadan kazandı; turnuva boyunca sadece dört gol yedi.",
+    "translations": {
+      "en": "Corinthians won the 2012 Libertadores unbeaten across 14 games, conceding just four goals in the whole tournament.",
+      "es": "El Corinthians ganó la Libertadores de 2012 sin perder ninguno de sus 14 partidos y solo recibió cuatro goles.",
+      "fr": "Corinthians a remporté la Libertadores 2012 sans perdre un seul de ses 14 matchs et en encaissant seulement quatre buts.",
+      "it": "Il Corinthians vinse la Libertadores 2012 senza perdere in 14 gare, subendo appena quattro gol.",
+      "pt": "O Corinthians ganhou a Libertadores de 2012 invicto em 14 jogos, sofrendo apenas quatro gols."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:6",
+    "key": "corinthians-lingard-first-english",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/corinthians-2026-conmebol-libertadores-results-squad-and-schedule"
+    ],
+    "tr": "Corinthians formasıyla Jesse Lingard, 2026’da Peñarol’a karşı Libertadores tarihinde gol atan ilk İngiliz oyuncu oldu.",
+    "translations": {
+      "en": "Playing for Corinthians in 2026, Jesse Lingard became the first English player to score in Copa Libertadores history, against Peñarol.",
+      "es": "Con el Corinthians en 2026, Jesse Lingard se convirtió ante Peñarol en el primer inglés que marcó un gol en la historia de la Libertadores.",
+      "fr": "Avec Corinthians en 2026 face à Peñarol, Jesse Lingard est devenu le premier Anglais à marquer en Copa Libertadores.",
+      "it": "Con il Corinthians nel 2026 contro il Peñarol, Jesse Lingard divenne il primo inglese a segnare nella storia della Libertadores.",
+      "pt": "Pelo Corinthians em 2026 contra o Peñarol, Jesse Lingard se tornou o primeiro inglês a marcar na história da Libertadores."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:11",
+    "key": "fluminense-2023-kennedy-overtime",
+    "sources": [
+      "https://gol.conmebol.com/libertadores/en/news/former-conmebol-libertadores-champions-chasing-another-crown"
+    ],
+    "tr": "Fluminense’nin tarihindeki ilk Libertadores şampiyonluğunu getiren 2023 final golü, Boca Juniors karşısında uzatmada John Kennedy’den geldi.",
+    "translations": {
+      "en": "Fluminense won its first-ever Libertadores in 2023 thanks to John Kennedy’s extra-time winner against Boca Juniors.",
+      "es": "El Fluminense ganó su primera Libertadores en 2023 gracias a un gol de John Kennedy en la prórroga contra Boca Juniors.",
+      "fr": "Fluminense a remporté sa toute première Libertadores en 2023 grâce au but de John Kennedy en prolongation face à Boca Juniors.",
+      "it": "Il Fluminense vinse la sua prima Libertadores nel 2023 grazie al gol di John Kennedy nei supplementari contro il Boca Juniors.",
+      "pt": "O Fluminense conquistou sua primeira Libertadores em 2023 com o gol de John Kennedy na prorrogação contra o Boca Juniors."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:20",
+    "key": "vasco-2000-centurys-comeback",
+    "sources": [
+      "https://gol.conmebol.com/sudamericana/en/news/vasco-da-gama-busca-reconquistar-el-continente-con-la-conmebol-sudamericana"
+    ],
+    "tr": "Vasco da Gama, 2000 Copa Mercosur finalinde Palmeiras’a karşı 3-0 geriye düştü ama Romário’nun golleriyle 4-3 kazanıp “Yüzyılın Geri Dönüşü”nü yaptı.",
+    "translations": {
+      "en": "Vasco da Gama came back from 3–0 down against Palmeiras to win the 2000 Mercosur Cup final 4–3—a night remembered as the “Comeback of the Century.”",
+      "es": "El Vasco da Gama remontó un 0-3 frente al Palmeiras para ganar 4-3 la final de la Copa Mercosur 2000, la célebre «Remontada del Siglo».",
+      "fr": "Vasco da Gama a renversé un 0-3 contre Palmeiras pour gagner 4-3 la finale de Coupe Mercosur 2000, la «Remontée du siècle».",
+      "it": "Il Vasco da Gama rimontò da 0-3 contro il Palmeiras vincendo 4-3 la finale della Coppa Mercosur 2000, la famosa «Rimonta del secolo».",
+      "pt": "O Vasco da Gama virou um 0 a 3 contra o Palmeiras para vencer a final da Mercosul de 2000 por 4 a 3, a famosa «Virada do Século»."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:20",
+    "key": "vasco-1998-centenary-libertadores",
+    "sources": [
+      "https://gol.conmebol.com/sudamericana/en/news/vasco-da-gama-busca-reconquistar-el-continente-con-la-conmebol-sudamericana"
+    ],
+    "tr": "Vasco da Gama, kulübün 100. yaşında 1998 Libertadores’i kazandı; eleme aşamasında son şampiyon Cruzeiro’yu da saf dışı bıraktı.",
+    "translations": {
+      "en": "Vasco da Gama won the 1998 Copa Libertadores in its centenary year, knocking out reigning champions Cruzeiro along the way.",
+      "es": "El Vasco da Gama ganó la Libertadores de 1998 justo en su centenario, eliminando por el camino al campeón vigente Cruzeiro.",
+      "fr": "Vasco da Gama a remporté la Libertadores 1998 l’année de son centenaire, éliminant au passage le tenant du titre Cruzeiro.",
+      "it": "Il Vasco da Gama vinse la Libertadores 1998 nell’anno del centenario, eliminando anche i campioni in carica del Cruzeiro.",
+      "pt": "O Vasco da Gama venceu a Libertadores de 1998 no ano do seu centenário, eliminando o então campeão Cruzeiro pelo caminho."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:17",
+    "key": "bragantino-2021-sudamericana-final",
+    "sources": [
+      "https://gol.conmebol.com/sudamericana/en/news/red-bull-bragantino-en-la-conmebol-sudamericana-2026-resultados-plantel-y-calendario"
+    ],
+    "tr": "Red Bull Bragantino, 2021 Copa Sudamericana finaline yükseldi; Athletico Paranaense karşısında Nikão’nun tek golüyle 1-0 kaybetti.",
+    "translations": {
+      "en": "Red Bull Bragantino reached the 2021 Copa Sudamericana final but lost 1–0 to Athletico Paranaense on a single goal from Nikão.",
+      "es": "El Red Bull Bragantino llegó a la final de la Sudamericana 2021, pero perdió 1-0 ante Athletico Paranaense por un gol de Nikão.",
+      "fr": "El Red Bull Bragantino a atteint la finale de Sudamericana 2021, mais s’est incliné 1-0 face à l’Athletico Paranaense sur un but de Nikão.",
+      "it": "Il Red Bull Bragantino arrivò in finale di Sudamericana 2021, ma perse 1-0 contro l’Athletico Paranaense per un gol di Nikão.",
+      "pt": "O Red Bull Bragantino chegou à final da Sul-Americana de 2021, mas perdeu por 1 a 0 para o Athletico Paranaense com gol de Nikão."
+    },
+    "score": 7
+  },
+  {
+    "id": "brazil-serie-a:17",
+    "key": "bragantino-2026-six-away",
+    "sources": [
+      "https://gol.conmebol.com/sudamericana/en/news/red-bull-bragantino-en-la-conmebol-sudamericana-2026-resultados-plantel-y-calendario"
+    ],
+    "tr": "Red Bull Bragantino, 2026 Copa Sudamericana deplasmanında Bolivya ekibi Blooming’i 6-0 yendi.",
+    "translations": {
+      "en": "Red Bull Bragantino hammered Bolivian club Blooming 6–0 away in the 2026 Copa Sudamericana.",
+      "es": "El Red Bull Bragantino goleó 6-0 a domicilio al boliviano Blooming en la Copa Sudamericana 2026.",
+      "fr": "Le Red Bull Bragantino a écrasé les Boliviens de Blooming 6-0 à l’extérieur en Copa Sudamericana 2026.",
+      "it": "Il Red Bull Bragantino travolse 6-0 in trasferta i boliviani del Blooming nella Sudamericana 2026.",
+      "pt": "O Red Bull Bragantino goleou o Blooming, da Bolívia, por 6 a 0 fora de casa na Sul-Americana de 2026."
+    },
+    "score": 7
+  },
+  {
+    "id": "brazil-serie-a:9",
+    "key": "cruzeiro-2003-triple-crown",
+    "sources": [
+      "https://www.cbf.com.br/futebol-brasileiro/noticias/competicoes-campeonato-brasileiro-serie-a/a/cruzeiro-comemora-104-anos-de-historia"
+    ],
+    "tr": "Cruzeiro, 2003’te aynı sezonda eyalet şampiyonluğunu, Brezilya Kupası’nı ve ulusal ligi kazanarak Brezilya’nın ünlü “Üçlü Taç” başarısını gerçekleştirdi.",
+    "translations": {
+      "en": "In 2003 Cruzeiro won the state league, Copa do Brasil and Brazilian championship in one season—the celebrated national “Triple Crown.”",
+      "es": "En 2003 el Cruzeiro conquistó el campeonato estatal, la Copa de Brasil y la liga nacional en una sola temporada: la famosa «Triple Corona».",
+      "fr": "En 2003, Cruzeiro a remporté le championnat régional, la Coupe du Brésil et le championnat national dans la même saison : la «Triple Couronne».",
+      "it": "Nel 2003 il Cruzeiro vinse campionato statale, Coppa del Brasile e campionato nazionale nella stessa stagione: la celebre «Tripla Corona».",
+      "pt": "Em 2003, o Cruzeiro ganhou o estadual, a Copa do Brasil e o Brasileirão na mesma temporada: a famosa «Tríplice Coroa»."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:9",
+    "key": "cruzeiro-1976-three-leg-final",
+    "sources": [
+      "https://www.cbf.com.br/futebol-brasileiro/noticias/competicoes-campeonato-brasileiro-serie-a/a/cruzeiro-comemora-104-anos-de-historia"
+    ],
+    "tr": "Cruzeiro, 1976 Libertadores finalinde River Plate’le iki maçın ardından eşitliği bozamadı; üçüncü maçta 3-2 kazanarak ilk Güney Amerika şampiyonluğunu aldı.",
+    "translations": {
+      "en": "Cruzeiro’s 1976 Libertadores final against River Plate needed a third match; Cruzeiro won that decider 3–2 for its first continental crown.",
+      "es": "La final de la Libertadores 1976 entre Cruzeiro y River Plate requirió un tercer partido; Cruzeiro ganó 3-2 el desempate para ser campeón.",
+      "fr": "La finale de Libertadores 1976 entre Cruzeiro et River Plate a nécessité un troisième match ; Cruzeiro a gagné la belle 3-2.",
+      "it": "La finale di Libertadores 1976 tra Cruzeiro e River Plate richiese una terza gara; il Cruzeiro vinse lo spareggio 3-2.",
+      "pt": "A final da Libertadores de 1976 entre Cruzeiro e River Plate precisou de um terceiro jogo; o Cruzeiro venceu a decisão por 3 a 2."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:2",
+    "key": "athletico-2018-last-two-leg-final",
+    "sources": [
+      "https://www.conmebol.com/wp-content/uploads/2019/04/2018-Reinvirtiendo-en-el-Futbol-CONMEBOL.pdf"
+    ],
+    "tr": "Athletico Paranaense, 2018’de Copa Sudamericana’yı kazanarak turnuvanın iki ayaklı final formatındaki son şampiyonu oldu.",
+    "translations": {
+      "en": "Athletico Paranaense won the 2018 Copa Sudamericana—the last edition whose final was played over two legs.",
+      "es": "El Athletico Paranaense ganó la Sudamericana 2018, la última edición cuya final se disputó a doble partido.",
+      "fr": "L’Athletico Paranaense a remporté la Sudamericana 2018, dernière édition avec une finale aller-retour.",
+      "it": "L’Athletico Paranaense vinse la Sudamericana 2018, ultima edizione con finale su andata e ritorno.",
+      "pt": "O Athletico Paranaense ganhou a Sul-Americana de 2018, última edição com final em jogos de ida e volta."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:2",
+    "key": "athletico-2025-topfour-nine-rounds",
+    "sources": [
+      "https://www.cbf.com.br/futebol-brasileiro/noticias/noticias/detalhes/furacao-fica-com-o-vice-campeonato-e-volta-a-elite-em-2026"
+    ],
+    "tr": "Athletico Paranaense, 2025’te Brezilya ikinci ligini ikinci bitirip yükseldi; 38 haftanın yalnızca dokuzunda ilk dörtteydi.",
+    "translations": {
+      "en": "Athletico Paranaense earned promotion as 2025 Série B runners-up despite spending only nine of the 38 rounds in the top four.",
+      "es": "El Athletico Paranaense ascendió como subcampeón de la Serie B en 2025 pese a estar entre los cuatro primeros en solo nueve de las 38 jornadas.",
+      "fr": "L’Athletico Paranaense est monté comme vice-champion de Série B en 2025 bien qu’il n’ait figuré parmi les quatre premiers que neuf journées sur 38.",
+      "it": "L’Athletico Paranaense fu promosso da secondo in Série B nel 2025 pur essendo tra le prime quattro solo in nove delle 38 giornate.",
+      "pt": "O Athletico Paranaense subiu como vice-campeão da Série B de 2025 apesar de ter ficado no G4 em apenas nove das 38 rodadas."
+    },
+    "score": 9
+  },
+  {
+    "id": "brazil-serie-a:18",
+    "key": "santos-2011-neymar-pele-libertadores",
+    "sources": [
+      "https://gol.conmebol.com/sudamericana/en/news/santos-2026-conmebol-sudamericana-results-squad-and-schedule"
+    ],
+    "tr": "Santos’un Libertadores kupalarını 1962 ve 1963’te Pelé, 2011’de ise Neymar’ın önderlik ettiği kuşaklar kazandı; iki yıldız arasında tam 48 yıl vardı.",
+    "translations": {
+      "en": "Santos won back-to-back Libertadores with Pelé in 1962 and 1963, then waited until Neymar’s generation in 2011 to lift the trophy again.",
+      "es": "El Santos ganó Libertadores consecutivas con Pelé en 1962 y 1963, y tuvo que esperar hasta la generación de Neymar en 2011 para repetir el título.",
+      "fr": "Santos a gagné deux Libertadores avec Pelé en 1962 et 1963, puis a attendu la génération de Neymar en 2011 pour soulever à nouveau le trophée.",
+      "it": "Il Santos vinse due Libertadores con Pelé nel 1962 e 1963, poi aspettò fino alla generazione di Neymar nel 2011 per riconquistarla.",
+      "pt": "O Santos venceu duas Libertadores com Pelé em 1962 e 1963 e só voltou a erguer a taça com a geração de Neymar em 2011."
+    },
+    "score": 7
+  },
+  {
+    "id": "brazil-serie-a:18",
+    "key": "santos-no-sudamericana-title",
+    "sources": [
+      "https://gol.conmebol.com/sudamericana/en/news/santos-2026-conmebol-sudamericana-results-squad-and-schedule"
+    ],
+    "tr": "Pelé ve Neymar’la üç Libertadores kazanmış Santos, 2026’ya kadar bir kez bile Copa Sudamericana finali oynayamamıştı.",
+    "translations": {
+      "en": "Despite three Libertadores titles with Pelé and Neymar, Santos had never reached a Copa Sudamericana final by 2026.",
+      "es": "Pese a tres títulos de Libertadores con Pelé y Neymar, el Santos nunca había disputado una final de Copa Sudamericana hasta 2026.",
+      "fr": "Malgré trois Libertadores remportées avec Pelé et Neymar, Santos n’avait jamais disputé de finale de Sudamericana en 2026.",
+      "it": "Nonostante tre Libertadores vinte con Pelé e Neymar, nel 2026 il Santos non aveva mai raggiunto una finale di Sudamericana.",
+      "pt": "Apesar de três Libertadores com Pelé e Neymar, o Santos nunca havia chegado a uma final da Sul-Americana até 2026."
+    },
+    "score": 7
+  }
+]

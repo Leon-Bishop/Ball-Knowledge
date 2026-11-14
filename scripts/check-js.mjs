@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const read=f=>fs.readFileSync(new URL('../'+f,import.meta.url),'utf8');
+const html=read('index.html');
+const js=read('assets/app.js');
+const css=read('assets/styles.css');
+new vm.Script(js,{filename:'assets/app.js'});
+assert(html.includes('src="./assets/app.js"')&&html.includes('href="./assets/styles.css"'),'Missing app JS/CSS links');
+assert(css.includes('.league-grid')&&css.includes('.slots'),'Missing game styles');
+for (const f of ['leagues.json','teams.enriched.json','tum-kulupler-ilginc-hikayeler-guncel.json','i18n.json'])assert(js.includes(`'${f}'`)||js.includes(`"${f}"`),'Game does not load '+f);
+assert(js.includes('pickDisplayFact(round)'),'Result must choose one story');
+assert(!html.includes('type="file"'),'Players cannot upload JSON');
+console.log('✓ Game JS syntax, responsive CSS, data references and no JSON upload.');

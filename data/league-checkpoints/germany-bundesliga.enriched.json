@@ -1,0 +1,650 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "FC Augsburg",
+    "team_abbreviation": "FCA",
+    "team_stadium": "WWK Arena",
+    "id": "germany-bundesliga:1",
+    "name": "FC Augsburg",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Augsburg",
+    "aliases": [
+      "FCA"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🌲",
+      "🔴",
+      "🟢"
+    ],
+    "why": [
+      "City or regional visual cue for Augsburg (provisional)",
+      "Secondary local context for Augsburg (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "FC Augsburg için yüklediğiniz kulüp verisinde belirtilen stadyum: WWK Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Bayer Leverkusen",
+    "team_abbreviation": "LEV",
+    "team_stadium": "BayArena",
+    "id": "germany-bundesliga:2",
+    "name": "Bayer Leverkusen",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Leverkusen",
+    "aliases": [
+      "LEV"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🦁",
+      "🔴",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Leverkusen (provisional)",
+      "Secondary local context for Leverkusen (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Bayer Leverkusen için yüklediğiniz kulüp verisinde belirtilen stadyum: BayArena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Bayern Munich",
+    "team_abbreviation": "FCB",
+    "team_stadium": "Allianz Arena",
+    "id": "germany-bundesliga:3",
+    "name": "Bayern Munich",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Munich",
+    "aliases": [
+      "FCB"
+    ],
+    "emojis": [
+      "🍺",
+      "🏟️",
+      "🔴",
+      "⚪",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Munich (provisional)",
+      "Secondary local context for Munich (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Bayern Munich için yüklediğiniz kulüp verisinde belirtilen stadyum: Allianz Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Borussia Dortmund",
+    "team_abbreviation": "BVB",
+    "team_stadium": "Signal Iduna Park",
+    "id": "germany-bundesliga:4",
+    "name": "Borussia Dortmund",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Dortmund",
+    "aliases": [
+      "BVB"
+    ],
+    "emojis": [
+      "🏭",
+      "⚙️",
+      "🐝",
+      "🟡",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Dortmund (provisional)",
+      "Secondary local context for Dortmund (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Borussia Dortmund için yüklediğiniz kulüp verisinde belirtilen stadyum: Signal Iduna Park.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 5,
+    "team_name": "Borussia Monchengladbach",
+    "team_abbreviation": "BMG",
+    "team_stadium": "Borussia-Park",
+    "id": "germany-bundesliga:5",
+    "name": "Borussia Monchengladbach",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Mönchengladbach",
+    "aliases": [
+      "BMG"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🐎",
+      "🟢",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Mönchengladbach (provisional)",
+      "Secondary local context for Mönchengladbach (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Borussia Monchengladbach için yüklediğiniz kulüp verisinde belirtilen stadyum: Borussia-Park.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Eintracht Frankfurt",
+    "team_abbreviation": "SGE",
+    "team_stadium": "Deutsche Bank Park",
+    "id": "germany-bundesliga:6",
+    "name": "Eintracht Frankfurt",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Frankfurt",
+    "aliases": [
+      "SGE"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🦅",
+      "🔴",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Frankfurt (provisional)",
+      "Secondary local context for Frankfurt (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Eintracht Frankfurt için yüklediğiniz kulüp verisinde belirtilen stadyum: Deutsche Bank Park.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 7,
+    "team_name": "SV Elversberg",
+    "team_abbreviation": "ELV",
+    "team_stadium": "URSAPHARM-Arena",
+    "id": "germany-bundesliga:7",
+    "name": "SV Elversberg",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Spiesen-Elversberg",
+    "aliases": [
+      "ELV"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🌲",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Spiesen-Elversberg (provisional)",
+      "Secondary local context for Spiesen-Elversberg (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "SV Elversberg için yüklediğiniz kulüp verisinde belirtilen stadyum: URSAPHARM-Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 8,
+    "team_name": "FC Cologne",
+    "team_abbreviation": "KOE",
+    "team_stadium": "RheinEnergieStadion",
+    "id": "germany-bundesliga:8",
+    "name": "FC Cologne",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Cologne",
+    "aliases": [
+      "KOE"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🐐",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Cologne (provisional)",
+      "Secondary local context for Cologne (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "FC Cologne için yüklediğiniz kulüp verisinde belirtilen stadyum: RheinEnergieStadion.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 9,
+    "team_name": "FC Mainz",
+    "team_abbreviation": "M05",
+    "team_stadium": "MEWA Arena",
+    "id": "germany-bundesliga:9",
+    "name": "FC Mainz",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Mainz",
+    "aliases": [
+      "M05"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🎭",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Mainz (provisional)",
+      "Secondary local context for Mainz (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "FC Mainz için yüklediğiniz kulüp verisinde belirtilen stadyum: MEWA Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Hamburg SV",
+    "team_abbreviation": "HSV",
+    "team_stadium": "Volksparkstadion",
+    "id": "germany-bundesliga:10",
+    "name": "Hamburg SV",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Hamburg",
+    "aliases": [
+      "HSV"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "⚓",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Hamburg (provisional)",
+      "Secondary local context for Hamburg (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Hamburg SV için yüklediğiniz kulüp verisinde belirtilen stadyum: Volksparkstadion.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 11,
+    "team_name": "RB Leipzig",
+    "team_abbreviation": "RBL",
+    "team_stadium": "Red Bull Arena",
+    "id": "germany-bundesliga:11",
+    "name": "RB Leipzig",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Leipzig",
+    "aliases": [
+      "RBL"
+    ],
+    "emojis": [
+      "🏙️",
+      "⚽",
+      "🐂",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Leipzig (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "RB Leipzig için yüklediğiniz kulüp verisinde belirtilen stadyum: Red Bull Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 12,
+    "team_name": "SC Freiburg",
+    "team_abbreviation": "SCF",
+    "team_stadium": "Europa-Park Stadion",
+    "id": "germany-bundesliga:12",
+    "name": "SC Freiburg",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Freiburg",
+    "aliases": [
+      "SCF"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🦅",
+      "🔴",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Freiburg (provisional)",
+      "Secondary local context for Freiburg (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "SC Freiburg için yüklediğiniz kulüp verisinde belirtilen stadyum: Europa-Park Stadion.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 13,
+    "team_name": "SC Paderborn 07",
+    "team_abbreviation": "SCP",
+    "team_stadium": "Home Deluxe Arena",
+    "id": "germany-bundesliga:13",
+    "name": "SC Paderborn 07",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Paderborn",
+    "aliases": [
+      "SCP"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🏰",
+      "🔵",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Paderborn (provisional)",
+      "Secondary local context for Paderborn (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "SC Paderborn 07 için yüklediğiniz kulüp verisinde belirtilen stadyum: Home Deluxe Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 14,
+    "team_name": "TSG Hoffenheim",
+    "team_abbreviation": "TSG",
+    "team_stadium": "PreZero Arena",
+    "id": "germany-bundesliga:14",
+    "name": "TSG Hoffenheim",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Sinsheim",
+    "aliases": [
+      "TSG"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🏡",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Sinsheim (provisional)",
+      "Secondary local context for Sinsheim (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "TSG Hoffenheim için yüklediğiniz kulüp verisinde belirtilen stadyum: PreZero Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 15,
+    "team_name": "VfB Stuttgart",
+    "team_abbreviation": "VFB",
+    "team_stadium": "Mercedes-Benz Arena",
+    "id": "germany-bundesliga:15",
+    "name": "VfB Stuttgart",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Stuttgart",
+    "aliases": [
+      "VFB"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🚗",
+      "⚪",
+      "🔴"
+    ],
+    "why": [
+      "City or regional visual cue for Stuttgart (provisional)",
+      "Secondary local context for Stuttgart (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "VfB Stuttgart için yüklediğiniz kulüp verisinde belirtilen stadyum: Mercedes-Benz Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Schalke 04",
+    "team_abbreviation": "S04",
+    "team_stadium": "VELTINS-Arena",
+    "id": "germany-bundesliga:16",
+    "name": "Schalke 04",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Gelsenkirchen",
+    "aliases": [
+      "S04"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "⛏️",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Gelsenkirchen (provisional)",
+      "Secondary local context for Gelsenkirchen (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Schalke 04 için yüklediğiniz kulüp verisinde belirtilen stadyum: VELTINS-Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 17,
+    "team_name": "FC Union Berlin",
+    "team_abbreviation": "FCU",
+    "team_stadium": "Stadion An der Alten Försterei",
+    "id": "germany-bundesliga:17",
+    "name": "FC Union Berlin",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Berlin",
+    "aliases": [
+      "FCU"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🔩",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Berlin (provisional)",
+      "Secondary local context for Berlin (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "FC Union Berlin için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadion An der Alten Försterei.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Werder Bremen",
+    "team_abbreviation": "SVW",
+    "team_stadium": "Wohninvest Weserstadion",
+    "id": "germany-bundesliga:18",
+    "name": "Werder Bremen",
+    "league_id": "germany-bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "city": "Bremen",
+    "aliases": [
+      "SVW"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🌊",
+      "🟢",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Bremen (provisional)",
+      "Secondary local context for Bremen (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Werder Bremen için yüklediğiniz kulüp verisinde belirtilen stadyum: Wohninvest Weserstadion.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  }
+]

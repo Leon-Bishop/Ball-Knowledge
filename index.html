@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#32117b">
+  <meta name="description" content="Ball Knowledge — the six-language football club emoji guessing game. Pick a league, reveal clues and discover surprising club stories.">
+  <meta property="og:title" content="Ball Knowledge — Football Emoji Game">
+  <meta property="og:description" content="12 leagues. 214 club records. Five emoji clues. How much do you know?">
+  <title>Ball Knowledge</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<div class="app-frame">
+  <header class="stadium-hero">
+    <div class="hero-stars" aria-hidden="true"></div>
+    <div class="stadium-light stadium-light-left" aria-hidden="true">✦ ✦ ✦</div>
+    <div class="stadium-light stadium-light-right" aria-hidden="true">✦ ✦ ✦</div>
+    <div class="hero-topbar">
+      
+      <div class="header-actions">
+        <label for="language" id="languageLabel" class="sr-only">Language</label>
+        <select id="language" class="language-control" aria-label="Language">
+          <option value="tr">🇹🇷 Türkçe</option><option value="en">🇬🇧 English</option><option value="es">🇪🇸 Español</option>
+          <option value="fr">🇫🇷 Français</option><option value="it">🇮🇹 Italiano</option><option value="pt">🇵🇹 Português</option>
+        </select>
+        <button id="theme" class="theme-button" aria-label="Toggle dark mode" title="Toggle theme">☾</button>
+      </div>
+    </div>
+    <div class="hero-main">
+      <div class="trophy-float" aria-hidden="true">🏆</div>
+      <div class="brand-center">
+        <h1 id="gameTitle" class="brand-title"><span>BALL</span><em>KNOWLEDGE</em></h1>
+        <p id="brandTagline">Guess the club. Unlock the story.</p>
+      </div>
+      <div class="ball-float" aria-hidden="true">⚽</div>
+    </div>
+    <div class="stadium-pitch" aria-hidden="true"><span></span></div>
+    <div class="hero-scorebar">
+      <div class="score-pill"><span aria-hidden="true">✨</span><span id="stats">Points 0 · Streak 0 · Best 0</span></div>
+      <label class="daily-toggle" for="daily"><input type="checkbox" id="daily"><span class="toggle-track" aria-hidden="true"></span><span id="dailyLabel">Daily challenge</span></label>
+    </div>
+  </header>
+
+  <main class="content-shell">
+    <section id="selectionView" class="screen selection-view" aria-label="Choose leagues">
+      <div class="section-intro">
+        <div class="eyebrow"><span class="sparkle">✦</span> <span id="selectionEyebrow">YOUR NEXT CHALLENGE</span></div>
+        <h2 id="leagueTitle">Choose your leagues</h2>
+        <p id="leagueHelp" class="muted">Pick one or more leagues to include in your quiz.</p>
+      </div>
+      <div class="filter-strip">
+        <div class="filter-icon" aria-hidden="true">⚙</div>
+        <div id="filters" class="filters"></div>
+      </div>
+      <div class="league-grid" id="leagueGrid" aria-label="League selection"></div>
+      <div class="selection-footer">
+        <div class="pool-caption"><span class="pool-dot"></span><span id="pool">214 clubs available</span></div>
+        <button class="primary-cta start-button" id="new" type="button">Start quiz</button>
+      </div>
+    </section>
+
+    <section id="gameView" class="screen game-view hidden" aria-label="Play Ball Knowledge">
+      <div class="game-toolbar">
+        <button type="button" id="backToLeagues" class="back-button">‹ <span id="backLabel">Leagues</span></button>
+        <span class="mode-pill" id="mode">Random round</span>
+      </div>
+      <div class="round-progress-panel">
+        <div class="round-progress-row"><strong id="roundProgress">Round 1 / 18</strong><span id="sessionProgress">0 / 18 completed</span></div>
+        <div class="round-meter" role="progressbar" aria-label="Completed rounds" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="sessionMeter"><div id="sessionMeterFill"></div></div>
+      </div>
+      <div class="game-card">
+        <div class="game-card-heading">
+          <div><div class="eyebrow" id="roundEyebrow">THE EMOJI CHALLENGE</div><h2 id="guessTitle">Which club is it?</h2></div>
+          <div class="attempts-badge" id="attempts">5 guesses left</div>
+        </div>
+        <div class="slots" id="slots" aria-label="Emoji clues"></div>
+        <p class="clue-subtext" id="clueHelp">One more emoji unlocks after each wrong guess.</p>
+        <div id="play" class="play-area">
+          <label for="guess" class="field-label" id="guessLabel">Your guess</label>
+          <div class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><input id="guess" placeholder="Search for a club…" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="suggestions"></div>
+          <div id="suggestions" class="suggestions" role="listbox" aria-label="Matching clubs"></div>
+          <p id="selected" class="selected-text"></p>
+          <button id="submit" class="primary-cta guess-button" type="button" disabled>Guess</button>
+        </div>
+        <p class="status" id="message" aria-live="polite"></p>
+        <ol id="history" class="guess-history"></ol>
+        <div id="sessionSummary" class="session-summary hidden" aria-live="polite"></div>
+        <div id="result" class="result-panel hidden"></div>
+        <div id="endActions" class="end-actions hidden"><button id="share" type="button" class="outline-button">Share result</button><button id="next" type="button" class="primary-cta">Next club</button></div>
+      </div>
+    </section>
+
+    <section id="statsView" class="screen other-screen hidden" aria-label="Statistics"><div class="eyebrow" id="statsEyebrow">YOUR HIGHLIGHTS</div><h2 id="statsTitle">Your stats</h2><div id="statsDetails" class="stat-grid"></div><button class="primary-cta go-back" type="button" data-screen="selection" id="statsChoose">Choose leagues</button></section>
+    <section id="settingsView" class="screen other-screen hidden" aria-label="Settings"><div class="eyebrow" id="settingsEyebrow">MAKE IT YOURS</div><h2 id="settingsTitle">Settings</h2><div class="setting-card"><span id="settingsLanguageLabel">Game language</span><div id="settingsCurrentLanguage">English</div></div><div class="setting-card"><span id="settingsThemeLabel">Appearance</span><button type="button" id="settingsTheme" class="outline-button">Switch theme</button></div><button class="primary-cta go-back" type="button" data-screen="selection" id="settingsChoose">Choose leagues</button></section>
+    <details class="dev-warnings"><summary id="warningsTitle">Data warnings</summary><pre id="warnings"></pre></details>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary navigation">
+    <button type="button" class="nav-item active" data-screen="selection" aria-current="page"><span class="nav-icon">▦</span><span id="navLeagues">Leagues</span></button>
+    <button type="button" class="nav-item" data-screen="game"><span class="nav-icon">⚽</span><span id="navPlay">Play</span></button>
+    <button type="button" class="nav-item" data-screen="stats"><span class="nav-icon">▥</span><span id="navStats">Stats</span></button>
+    <button type="button" class="nav-item" data-screen="settings"><span class="nav-icon">⚙</span><span id="navSettings">Settings</span></button>
+  </nav>
+</div>
+<script src="./assets/session-core.js" defer></script>
+<script src="./assets/app.js" defer></script>
+</body>
+</html>

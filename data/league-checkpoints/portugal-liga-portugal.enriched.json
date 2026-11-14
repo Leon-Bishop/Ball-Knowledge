@@ -1,0 +1,650 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "Arouca",
+    "team_abbreviation": "ARO",
+    "team_stadium": "Estádio Municipal de Arouca",
+    "id": "portugal-liga-portugal:1",
+    "name": "Arouca",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Arouca",
+    "aliases": [
+      "ARO"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🌲",
+      "🟡",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Arouca (provisional)",
+      "Secondary local context for Arouca (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Arouca için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio Municipal de Arouca.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Benfica",
+    "team_abbreviation": "SLB",
+    "team_stadium": "Estádio da Luz",
+    "id": "portugal-liga-portugal:2",
+    "name": "Benfica",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Lisbon",
+    "aliases": [
+      "SLB"
+    ],
+    "emojis": [
+      "🚋",
+      "🌉",
+      "🦅",
+      "🔴",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Lisbon (provisional)",
+      "Secondary local context for Lisbon (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Benfica için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio da Luz.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Académico de Viseu",
+    "team_abbreviation": "AVF",
+    "team_stadium": "Estádio do Fontelo",
+    "id": "portugal-liga-portugal:3",
+    "name": "Académico de Viseu",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Viseu",
+    "aliases": [
+      "AVF"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🎓",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Viseu (provisional)",
+      "Secondary local context for Viseu (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Académico de Viseu için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio do Fontelo.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Braga",
+    "team_abbreviation": "SCB",
+    "team_stadium": "Estádio Municipal de Braga",
+    "id": "portugal-liga-portugal:4",
+    "name": "Braga",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Braga",
+    "aliases": [
+      "SCB"
+    ],
+    "emojis": [
+      "⛰️",
+      "🌲",
+      "🔴",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Braga (provisional)",
+      "Secondary local context for Braga (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Braga için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio Municipal de Braga.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 5,
+    "team_name": "Casa Pia",
+    "team_abbreviation": "CSP",
+    "team_stadium": "Estádio Pina Manique",
+    "id": "portugal-liga-portugal:5",
+    "name": "Casa Pia",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Lisbon",
+    "aliases": [
+      "CSP"
+    ],
+    "emojis": [
+      "🚋",
+      "🌉",
+      "🏠",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Lisbon (provisional)",
+      "Secondary local context for Lisbon (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Casa Pia için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio Pina Manique.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Estoril",
+    "team_abbreviation": "EST",
+    "team_stadium": "Estádio António Coimbra da Mota",
+    "id": "portugal-liga-portugal:6",
+    "name": "Estoril",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Estoril",
+    "aliases": [
+      "EST"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🌊",
+      "🟡",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Estoril (provisional)",
+      "Secondary local context for Estoril (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Estoril için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio António Coimbra da Mota.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 7,
+    "team_name": "Estrela",
+    "team_abbreviation": "ESA",
+    "team_stadium": "Estádio José Gomes",
+    "id": "portugal-liga-portugal:7",
+    "name": "Estrela",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Amadora",
+    "aliases": [
+      "ESA"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "⭐",
+      "🔴",
+      "🟢"
+    ],
+    "why": [
+      "City or regional visual cue for Amadora (provisional)",
+      "Secondary local context for Amadora (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Estrela için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio José Gomes.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 8,
+    "team_name": "FC Famalicão",
+    "team_abbreviation": "FAM",
+    "team_stadium": "Estádio Municipal 22 de Junho",
+    "id": "portugal-liga-portugal:8",
+    "name": "FC Famalicão",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Vila Nova de Famalicão",
+    "aliases": [
+      "FAM"
+    ],
+    "emojis": [
+      "📍",
+      "⚽",
+      "🔵",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Vila Nova de Famalicão (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "FC Famalicão için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio Municipal 22 de Junho.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 9,
+    "team_name": "FC Porto",
+    "team_abbreviation": "POR",
+    "team_stadium": "Estádio do Dragão",
+    "id": "portugal-liga-portugal:9",
+    "name": "FC Porto",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Porto",
+    "aliases": [
+      "POR"
+    ],
+    "emojis": [
+      "🌉",
+      "🚋",
+      "🐉",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Porto (provisional)",
+      "Secondary local context for Porto (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "FC Porto için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio do Dragão.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Marítimo",
+    "team_abbreviation": "MAR",
+    "team_stadium": "Estádio dos Barreiros",
+    "id": "portugal-liga-portugal:10",
+    "name": "Marítimo",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Funchal",
+    "aliases": [
+      "MAR"
+    ],
+    "emojis": [
+      "🏝️",
+      "🌊",
+      "🚢",
+      "🔴",
+      "🟢"
+    ],
+    "why": [
+      "City or regional visual cue for Funchal (provisional)",
+      "Secondary local context for Funchal (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Marítimo için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio dos Barreiros.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Gil Vicente",
+    "team_abbreviation": "GIL",
+    "team_stadium": "Estádio Cidade de Barcelos",
+    "id": "portugal-liga-portugal:11",
+    "name": "Gil Vicente",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Barcelos",
+    "aliases": [
+      "GIL"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🐓",
+      "🔴",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Barcelos (provisional)",
+      "Secondary local context for Barcelos (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Gil Vicente için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio Cidade de Barcelos.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 12,
+    "team_name": "Vitória Guimarães",
+    "team_abbreviation": "VSC",
+    "team_stadium": "Estádio D. Afonso Henriques",
+    "id": "portugal-liga-portugal:12",
+    "name": "Vitória Guimarães",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Guimarães",
+    "aliases": [
+      "VSC"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🏰",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Guimarães (provisional)",
+      "Secondary local context for Guimarães (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Vitória Guimarães için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio D. Afonso Henriques.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 13,
+    "team_name": "Moreirense",
+    "team_abbreviation": "MOR",
+    "team_stadium": "Parque Desportivo Comendador Joaquim de Almeida Freitas",
+    "id": "portugal-liga-portugal:13",
+    "name": "Moreirense",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Moreira de Cónegos",
+    "aliases": [
+      "MOR"
+    ],
+    "emojis": [
+      "📍",
+      "⚽",
+      "🟢",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Moreira de Cónegos (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Moreirense için yüklediğiniz kulüp verisinde belirtilen stadyum: Parque Desportivo Comendador Joaquim de Almeida Freitas.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 14,
+    "team_name": "C.D. Nacional",
+    "team_abbreviation": "NAC",
+    "team_stadium": "Estádio da Madeira",
+    "id": "portugal-liga-portugal:14",
+    "name": "C.D. Nacional",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Funchal",
+    "aliases": [
+      "NAC"
+    ],
+    "emojis": [
+      "🏝️",
+      "🌊",
+      "🏝️",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Funchal (provisional)",
+      "Secondary local context for Funchal (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "C.D. Nacional için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio da Madeira.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Rio Ave",
+    "team_abbreviation": "RIO",
+    "team_stadium": "Estádio dos Arcos",
+    "id": "portugal-liga-portugal:15",
+    "name": "Rio Ave",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Vila do Conde",
+    "aliases": [
+      "RIO"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🌊",
+      "🟢",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Vila do Conde (provisional)",
+      "Secondary local context for Vila do Conde (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Rio Ave için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio dos Arcos.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Santa Clara",
+    "team_abbreviation": "SCL",
+    "team_stadium": "Estádio de São Miguel",
+    "id": "portugal-liga-portugal:16",
+    "name": "Santa Clara",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Ponta Delgada",
+    "aliases": [
+      "SCL"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🏝️",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Ponta Delgada (provisional)",
+      "Secondary local context for Ponta Delgada (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Santa Clara için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio de São Miguel.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 17,
+    "team_name": "Sporting CP",
+    "team_abbreviation": "SCP",
+    "team_stadium": "Estádio José Alvalade",
+    "id": "portugal-liga-portugal:17",
+    "name": "Sporting CP",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Lisbon",
+    "aliases": [
+      "SCP"
+    ],
+    "emojis": [
+      "🚋",
+      "🌉",
+      "🦁",
+      "🟢",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Lisbon (provisional)",
+      "Secondary local context for Lisbon (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Sporting CP için yüklediğiniz kulüp verisinde belirtilen stadyum: Estádio José Alvalade.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Alverca",
+    "team_abbreviation": "ALV",
+    "team_stadium": "Complexo Desportivo FC Alverca",
+    "id": "portugal-liga-portugal:18",
+    "name": "Alverca",
+    "league_id": "portugal-liga-portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "city": "Alverca",
+    "aliases": [
+      "ALV"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "✈️",
+      "🔴",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Alverca (provisional)",
+      "Secondary local context for Alverca (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Alverca için yüklediğiniz kulüp verisinde belirtilen stadyum: Complexo Desportivo FC Alverca.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  }
+]

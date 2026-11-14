@@ -1,0 +1,90 @@
+from pathlib import Path
+import json
+A=[]
+def add(id,key,url,tr,en,es,fr,it,pt):A.append(dict(id=id,key=key,sources=[url],score=9,tr=tr,translations=dict(en=en,es=es,fr=fr,it=it,pt=pt)))
+add('belgian-pro-league:3','cercle-brugge-2024-six-two-debut','https://cerclebrugge.be/matches/a-team/2024-2025-uefa-conference-league/cercle-brugge-st-gallen',
+ 'Cercle Brugge, 2024’te Konferans Ligi lig aşamasındaki ilk maçında St. Gallen’i 6-2 yendi; Denkey hat-trick yaparken Magnée de iki gol attı.',
+ 'On its Conference League league-phase debut in 2024, Cercle Brugge beat St Gallen 6–2, with a Denkey hat-trick and two goals from Magnée.',
+ 'En su debut en la fase de liga de la Conference League 2024, Cercle Brujas goleó 6-2 al St. Gallen, con triplete de Denkey y doblete de Magnée.',
+ 'Pour son premier match en phase de ligue de Conference League 2024, le Cercle Bruges a battu Saint-Gall 6-2, avec un triplé de Denkey et un doublé de Magnée.',
+ 'Al debutto nella fase campionato di Conference League 2024, il Cercle Brugge batté il San Gallo 6-2, con tripletta di Denkey e doppietta di Magnée.',
+ 'Na estreia na fase de liga da Conference League 2024, o Cercle Brugge venceu o St. Gallen por 6 a 2, com três gols de Denkey e dois de Magnée.')
+add('belgian-pro-league:13','lommel-ninth-city-football-group-2020','https://www.cityfootballgroup.com/post/city-football-group-expands-to-belgium-acquiring-lommel-sk',
+ 'Belçika’nın küçük kenti Lommel’in takımı 2020’de Manchester City’nin de bulunduğu City Football Group ağının dokuzuncu kulübü oldu.',
+ 'In 2020, tiny-town Lommel SK became the ninth club in City Football Group’s network, which also includes Manchester City.',
+ 'En 2020, el Lommel SK, de una pequeña ciudad belga, se convirtió en el noveno club de City Football Group, dueño también del Manchester City.',
+ 'En 2020, le Lommel SK, club d’une petite ville belge, est devenu le neuvième club du City Football Group, propriétaire aussi de Manchester City.',
+ 'Nel 2020 il Lommel SK, di una piccola città belga, diventò il nono club del City Football Group, che comprende anche il Manchester City.',
+ 'Em 2020, o Lommel SK, de uma pequena cidade belga, tornou-se o nono clube do City Football Group, que inclui o Manchester City.')
+add('belgian-pro-league:7','kortrijk-2012-ten-man-cup-final','https://www.uefa.com/news-media/news/01fb-0f87fdd2a094-b8338502407e-1000--lokeren-lift-historic-first-belgian-cup/',
+ 'Kortrijk, 2012 Belçika Kupası finalinde rakibi Lokeren 20. dakikada 10 kişi kalmasına rağmen maçı 1-0 kaybederek ilk final fırsatını kaçırdı.',
+ 'In the 2012 Belgian Cup final, Kortrijk lost 1–0 to Lokeren even though its opponent had been down to ten men since the 20th minute.',
+ 'En la final de la Copa belga de 2012, el Kortrijk perdió 1-0 ante Lokeren pese a que el rival jugaba con diez desde el minuto 20.',
+ 'En finale de Coupe de Belgique 2012, Courtrai s’est incliné 1-0 contre Lokeren malgré l’expulsion d’un adversaire dès la 20e minute.',
+ 'Nella finale di Coppa del Belgio 2012, il Kortrijk perse 1-0 contro il Lokeren nonostante gli avversari fossero in dieci dal 20º minuto.',
+ 'Na final da Copa da Bélgica de 2012, o Kortrijk perdeu por 1 a 0 para o Lokeren, mesmo com o rival jogando com dez desde os 20 minutos.')
+add('belgian-pro-league:9','westerlo-2001-cup-84-years','https://www.uefa.com/news/018c-0f8453a86ca9-90bb097d3da7-1000--history-kvc-westerlo/',
+ 'Westerlo’nun kökleri 1917’ye uzanıyor ama ilk büyük kupasını ancak 2001’de kazandı: Belçika Kupası finalinde Lommel’i 1-0 yendi.',
+ 'Westerlo traces its roots to 1917 but had to wait until 2001 for a major trophy, beating Lommel 1–0 in the Belgian Cup final.',
+ 'Westerlo tiene raíces en 1917, pero no ganó un gran título hasta 2001, cuando venció 1-0 al Lommel en la final de Copa belga.',
+ 'Westerlo remonte à 1917, mais n’a remporté un trophée majeur qu’en 2001, en battant Lommel 1-0 en finale de la Coupe de Belgique.',
+ 'Il Westerlo ha radici nel 1917, ma attese fino al 2001 per un grande trofeo, battendo il Lommel 1-0 nella finale di Coppa del Belgio.',
+ 'O Westerlo tem raízes em 1917, mas só conquistou um título importante em 2001, ao vencer o Lommel por 1 a 0 na final da Copa da Bélgica.')
+add('belgian-pro-league:17','raal-lalouviere-2025-final-minute-promotion','https://www.proleague.be/nieuws/drama-voor-rwdm-sv-zulte-waregem-pakt-titel-la-louviere-mee-naar-de-jupiler-pro-league',
+ '2017’de yeniden kurulan RAAL La Louvière, 2025’te üst lige çıkışı son maçın 90. dakikasındaki Belkheir golüyle yakaladı; birkaç dakika içinde sıralamada rakibi RWDM’yi geçti.',
+ 'Re-founded in 2017, RAAL La Louvière won promotion to Belgium’s top flight in 2025 thanks to a 90th-minute Belkheir goal on the final day, overtaking RWDM.',
+ 'Refundado en 2017, el RAAL La Louvière ascendió a la élite belga en 2025 gracias a un gol de Belkheir en el minuto 90 de la última jornada, adelantando al RWDM.',
+ 'Refondé en 2017, le RAAL La Louvière a été promu en première division belge en 2025 grâce à un but de Belkheir à la 90e minute de la dernière journée, dépassant le RWDM.',
+ 'Rifondato nel 2017, il RAAL La Louvière fu promosso nella massima serie belga nel 2025 grazie a un gol di Belkheir al 90º minuto dell’ultima giornata, superando l’RWDM.',
+ 'Refundado em 2017, o RAAL La Louvière subiu à elite belga em 2025 graças a um gol de Belkheir aos 90 minutos da última rodada, ultrapassando o RWDM.')
+add('belgian-pro-league:5','waasland-beveren-promotion-2012-oostende','https://www.skbeveren.be/geschiedenis',
+ '2010 birleşmesiyle Waasland-Beveren adını alan kulüp, 2012’de Oostende deplasmanında 1-1 berabere kalıp Belçika’nın en üst ligine yükseldi; maç sonu binlerce taraftarla kutlama yapıldı.',
+ 'Following its 2010 merger, Waasland-Beveren earned top-flight promotion with a 1–1 draw away to Oostende in 2012 and celebrated with thousands of travelling fans.',
+ 'Tras la fusión de 2010, Waasland-Beveren logró el ascenso a primera con un 1-1 en campo del Oostende en 2012 y lo celebró con miles de aficionados desplazados.',
+ 'Après la fusion de 2010, Waasland-Beveren est monté en première division grâce à un 1-1 à Ostende en 2012, fêté avec des milliers de supporters.',
+ 'Dopo la fusione del 2010, il Waasland-Beveren conquistò la promozione nella massima serie con l’1-1 a Ostenda nel 2012, festeggiando con migliaia di tifosi.',
+ 'Após a fusão de 2010, o Waasland-Beveren conquistou o acesso à elite com um empate por 1 a 1 fora contra o Oostende em 2012, comemorado com milhares de torcedores.')
+add('brazil-serie-a:5','botafogo-ten-men-2024-libertadores-final','https://gol.conmebol.com/sudamericana/pt-br/fixture/view/178',
+ 'Botafogo, 2024 Libertadores finalinde daha 2. dakikada kırmızı kart görüp 10 kişi kalmasına rağmen Atlético Mineiro’yu 3-1 yenerek kupayı kazandı.',
+ 'Botafogo had a player sent off in the second minute of the 2024 Copa Libertadores final, yet beat Atlético Mineiro 3–1 with ten men.',
+ 'Botafogo se quedó con diez jugadores en el minuto 2 de la final de la Libertadores 2024, pero aun así venció 3-1 al Atlético Mineiro.',
+ 'Le Botafogo a été réduit à dix dès la deuxième minute de la finale de Libertadores 2024, mais a tout de même battu l’Atlético Mineiro 3-1.',
+ 'Il Botafogo rimase in dieci al secondo minuto della finale di Libertadores 2024, ma batté comunque l’Atlético Mineiro 3-1.',
+ 'O Botafogo ficou com dez jogadores no segundo minuto da final da Libertadores de 2024, mas venceu o Atlético Mineiro por 3 a 1.')
+add('brazil-serie-a:7','coritiba-2011-guinness-24-win-streak','https://www.guinnessworldrecords.com/news/2011/10/brazilian-football-team-coritiba-celebrate-102nd-birthday-with-world-record-for-most-wins',
+ 'Coritiba, 2011’de iki farklı turnuvada üst üste 24 resmî maç kazanarak Guinness Dünya Rekoru aldı. Kulüp bu başarıyı 102. kuruluş yılı kutlamasında belgeyle kutladı.',
+ 'Coritiba won 24 consecutive competitive matches across two tournaments in 2011 and received a Guinness World Records certificate at its 102nd anniversary celebration.',
+ 'El Coritiba ganó 24 partidos oficiales consecutivos entre dos torneos en 2011 y recibió el certificado Guinness en la celebración de su 102.º aniversario.',
+ 'Coritiba a remporté 24 matchs officiels de suite dans deux compétitions en 2011 et a reçu son certificat Guinness lors de son 102e anniversaire.',
+ 'Il Coritiba vinse 24 gare ufficiali consecutive in due competizioni nel 2011, ricevendo il certificato Guinness ai festeggiamenti del 102º anniversario.',
+ 'O Coritiba venceu 24 jogos oficiais seguidos em dois torneios em 2011 e recebeu o certificado do Guinness no aniversário de 102 anos do clube.')
+add('brazil-serie-a:4','bahia-1959-peles-santos-first-brazil-title','https://www.fifa.com/es/tournaments/mens/worldcup/articles/volante-argentina-brasil-jugador-nombre-posicion-futbol',
+ 'Bahia, Brezilya’nın ilk Taça Brasil turnuvasının 1959 finalinde Pelé’li Santos’u yenerek ülkenin ilk ulusal şampiyonu oldu. Antrenörü Arjantinli Carlos Volante’ydi.',
+ 'Bahia beat Pelé’s Santos in the 1959 final of the first Taça Brasil, becoming Brazil’s first national champion under Argentine coach Carlos Volante.',
+ 'Bahia venció al Santos de Pelé en la final de la primera Taça Brasil, en 1959, y fue el primer campeón nacional del país con el técnico argentino Carlos Volante.',
+ 'Bahia a battu le Santos de Pelé en finale de la première Taça Brasil en 1959, devenant le premier champion national brésilien sous l’Argentin Carlos Volante.',
+ 'Il Bahia sconfisse il Santos di Pelé nella finale della prima Taça Brasil, nel 1959, diventando il primo campione nazionale con l’argentino Carlos Volante.',
+ 'O Bahia venceu o Santos de Pelé na final da primeira Taça Brasil, em 1959, e se tornou o primeiro campeão nacional do país, treinado pelo argentino Carlos Volante.')
+add('spain-la-liga:13','racing-santander-2014-onpitch-strike','https://www.euronews.com/2014/01/31/spanish-footballers-don-t-play-ball-after-not-being-paid',
+ 'Racing Santander futbolcuları 2014 Kral Kupası çeyrek finalinde Real Sociedad karşısında sahaya çıktı ama maaşları ödenmediği için başlama düdüğünden sonra oynamayı reddetti; hakem maçı durdurdu.',
+ 'In a 2014 Copa del Rey quarter-final against Real Sociedad, Racing Santander players took the field but refused to play after kick-off over unpaid wages. The referee abandoned the match.',
+ 'En los cuartos de Copa de 2014 ante la Real Sociedad, los futbolistas del Racing salieron al campo, pero se negaron a jugar tras el saque inicial por salarios impagados. El árbitro suspendió el partido.',
+ 'En quart de finale de Coupe d’Espagne 2014 contre la Real Sociedad, les joueurs du Racing sont entrés sur le terrain puis ont refusé de jouer au coup d’envoi pour protester contre des salaires impayés. Le match a été arrêté.',
+ 'Nei quarti di Coppa del Re 2014 contro la Real Sociedad, i giocatori del Racing entrarono in campo ma si rifiutarono di giocare dopo il fischio d’inizio per stipendi arretrati. La gara fu sospesa.',
+ 'Nas quartas da Copa do Rei de 2014 contra a Real Sociedad, os jogadores do Racing entraram em campo, mas se recusaram a jogar após o apito inicial por salários atrasados. A partida foi suspensa.')
+add('turkey-super-lig:17','trabzonspor-liverpool-1976-wet-boots','https://www.uefa.com/uefaeuropaleague/news/01e8-0e75283852dc-c3fc0c867d5d-1000--liverpool-memories-raise-gunes-expectations/',
+ 'Trabzonspor 1976’da Liverpool’u evinde 1-0 yendi. Rövanşta kaleci Şenol Güneş, Liverpool’un maç öncesi sahayı sulamasına şaşırdıklarını, ıslak zemine uygun kramponları olmadığı için ilk 20 dakikada üç gol yediklerini anlattı.',
+ 'Trabzonspor beat Liverpool 1–0 at home in 1976. Goalkeeper Şenol Güneş later recalled being startled by Anfield’s pre-match pitch watering: they lacked suitable boots and conceded three goals in 20 minutes.',
+ 'El Trabzonspor ganó 1-0 al Liverpool en casa en 1976. Su portero Şenol Güneş recordó que el riego del césped en Anfield los sorprendió: no llevaban botas adecuadas y encajaron tres goles en 20 minutos.',
+ 'Trabzonspor a battu Liverpool 1-0 chez lui en 1976. Le gardien Şenol Güneş a raconté avoir été surpris par l’arrosage de la pelouse d’Anfield : sans chaussures adaptées, ils ont encaissé trois buts en vingt minutes.',
+ 'Il Trabzonspor batté il Liverpool 1-0 in casa nel 1976. Il portiere Şenol Güneş raccontò che l’irrigazione del campo di Anfield li colse di sorpresa: senza scarpe adatte subirono tre reti in venti minuti.',
+ 'O Trabzonspor venceu o Liverpool por 1 a 0 em casa em 1976. O goleiro Şenol Güneş contou que a irrigação do gramado de Anfield os surpreendeu: sem chuteiras adequadas, sofreram três gols em vinte minutos.')
+add('brazil-serie-a:3','atletico-mineiro-newells-2013-sixth-minute-stoppage','https://inside.fifa.com/tournaments/mens/clubworldcup/uae2018/news/argentina-versus-brazil-semi-sizzlers',
+ 'Atlético Mineiro, 2013 Libertadores yarı finalinde Newell’s’e deplasmanda 2-0 kaybetti. Evindeki rövanşta uzatma dakikalarının altıncısında 2-0’ı bulup maçı penaltılara taşıdı ve turu geçti.',
+ 'Atlético Mineiro lost 2–0 away to Newell’s in the 2013 Libertadores semi-final, then scored its second home-leg goal in the sixth minute of stoppage time before advancing on penalties.',
+ 'Atlético Mineiro perdió 2-0 ante Newell’s en la semifinal de Libertadores 2013, pero marcó el 2-0 en casa en el sexto minuto de descuento y pasó por penaltis.',
+ 'L’Atlético Mineiro a perdu 2-0 à l’aller contre Newell’s en demi-finale de Libertadores 2013, avant de marquer le 2-0 au retour à la sixième minute du temps additionnel puis de gagner aux tirs au but.',
+ 'L’Atlético Mineiro perse 2-0 in trasferta contro il Newell’s nella semifinale Libertadores 2013, poi segnò il 2-0 al ritorno al sesto minuto di recupero e passò ai rigori.',
+ 'O Atlético Mineiro perdeu por 2 a 0 fora para o Newell’s na semifinal da Libertadores 2013, mas marcou o 2 a 0 em casa no sexto minuto de acréscimos e avançou nos pênaltis.')
+Path(__file__).with_suffix('.json').write_text(json.dumps(A,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+print('Generated',len(A))

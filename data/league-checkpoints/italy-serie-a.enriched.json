@@ -1,0 +1,724 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "AC Milan",
+    "team_abbreviation": "MIL",
+    "team_stadium": "San Siro",
+    "id": "italy-serie-a:1",
+    "name": "AC Milan",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Milan",
+    "aliases": [
+      "MIL"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "😈",
+      "🔴",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Milan (provisional)",
+      "Secondary local context for Milan (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "AC Milan için yüklediğiniz kulüp verisinde belirtilen stadyum: San Siro.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Atalanta",
+    "team_abbreviation": "ATA",
+    "team_stadium": "Gewiss Stadium",
+    "id": "italy-serie-a:2",
+    "name": "Atalanta",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Bergamo",
+    "aliases": [
+      "ATA"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "👸",
+      "🔵",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Bergamo (provisional)",
+      "Secondary local context for Bergamo (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Atalanta için yüklediğiniz kulüp verisinde belirtilen stadyum: Gewiss Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Bologna",
+    "team_abbreviation": "BOL",
+    "team_stadium": "Stadio Renato Dall'Ara",
+    "id": "italy-serie-a:3",
+    "name": "Bologna",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Bologna",
+    "aliases": [
+      "BOL"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🔴",
+      "🔵",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Bologna (provisional)",
+      "Secondary local context for Bologna (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Bologna için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Renato Dall'Ara.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Cagliari",
+    "team_abbreviation": "CAG",
+    "team_stadium": "Sardegna Arena",
+    "id": "italy-serie-a:4",
+    "name": "Cagliari",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Cagliari",
+    "aliases": [
+      "CAG"
+    ],
+    "emojis": [
+      "🌊",
+      "🏟️",
+      "🌊",
+      "🔴",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Cagliari (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Cagliari için yüklediğiniz kulüp verisinde belirtilen stadyum: Sardegna Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 5,
+    "team_name": "Como",
+    "team_abbreviation": "COM",
+    "team_stadium": "Stadio Giuseppe Sinigaglia",
+    "id": "italy-serie-a:5",
+    "name": "Como",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Como",
+    "aliases": [
+      "COM"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🏞️",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Como (provisional)",
+      "Secondary local context for Como (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Como için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Giuseppe Sinigaglia.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Fiorentina",
+    "team_abbreviation": "FIO",
+    "team_stadium": "Stadio Artemio Franchi",
+    "id": "italy-serie-a:6",
+    "name": "Fiorentina",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Florence",
+    "aliases": [
+      "FIO"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🌸",
+      "🟣",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Florence (provisional)",
+      "Secondary local context for Florence (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Fiorentina için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Artemio Franchi.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 7,
+    "team_name": "Frosinone",
+    "team_abbreviation": "FRO",
+    "team_stadium": "Stadio Benito Stirpe",
+    "id": "italy-serie-a:7",
+    "name": "Frosinone",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Frosinone",
+    "aliases": [
+      "FRO"
+    ],
+    "emojis": [
+      "📍",
+      "🏟️",
+      "🦁",
+      "🟡",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Frosinone (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Frosinone için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Benito Stirpe.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 8,
+    "team_name": "Genoa",
+    "team_abbreviation": "GEN",
+    "team_stadium": "Stadio Luigi Ferraris",
+    "id": "italy-serie-a:8",
+    "name": "Genoa",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Genoa",
+    "aliases": [
+      "GEN"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🦅",
+      "🔴",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Genoa (provisional)",
+      "Secondary local context for Genoa (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Genoa için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Luigi Ferraris.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 9,
+    "team_name": "Internazionale",
+    "team_abbreviation": "INT",
+    "team_stadium": "San Siro",
+    "id": "italy-serie-a:9",
+    "name": "Internazionale",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Milan",
+    "aliases": [
+      "INT"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🐍",
+      "🔵",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Milan (provisional)",
+      "Secondary local context for Milan (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Internazionale için yüklediğiniz kulüp verisinde belirtilen stadyum: San Siro.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Juventus",
+    "team_abbreviation": "JUV",
+    "team_stadium": "Allianz Stadium",
+    "id": "italy-serie-a:10",
+    "name": "Juventus",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Turin",
+    "aliases": [
+      "JUV"
+    ],
+    "emojis": [
+      "🏔️",
+      "⛰️",
+      "🦓",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Turin (provisional)",
+      "Secondary local context for Turin (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Juventus için yüklediğiniz kulüp verisinde belirtilen stadyum: Allianz Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Lazio",
+    "team_abbreviation": "LAZ",
+    "team_stadium": "Stadio Olimpico",
+    "id": "italy-serie-a:11",
+    "name": "Lazio",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Rome",
+    "aliases": [
+      "LAZ"
+    ],
+    "emojis": [
+      "🏛️",
+      "🏟️",
+      "🦅",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Rome (provisional)",
+      "Secondary local context for Rome (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Lazio için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Olimpico.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 12,
+    "team_name": "Lecce",
+    "team_abbreviation": "LEC",
+    "team_stadium": "Stadio Via del Mare",
+    "id": "italy-serie-a:12",
+    "name": "Lecce",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Lecce",
+    "aliases": [
+      "LEC"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🐺",
+      "🟡",
+      "🔴"
+    ],
+    "why": [
+      "City or regional visual cue for Lecce (provisional)",
+      "Secondary local context for Lecce (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Lecce için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Via del Mare.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 13,
+    "team_name": "Monza",
+    "team_abbreviation": "MON",
+    "team_stadium": "U-Power Stadium",
+    "id": "italy-serie-a:13",
+    "name": "Monza",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Monza",
+    "aliases": [
+      "MON"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🏎️",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Monza (provisional)",
+      "Secondary local context for Monza (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Monza için yüklediğiniz kulüp verisinde belirtilen stadyum: U-Power Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 14,
+    "team_name": "Napoli",
+    "team_abbreviation": "NAP",
+    "team_stadium": "Stadio Diego Armando Maradona",
+    "id": "italy-serie-a:14",
+    "name": "Napoli",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Naples",
+    "aliases": [
+      "NAP"
+    ],
+    "emojis": [
+      "🌋",
+      "🍕",
+      "🌋",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Naples (provisional)",
+      "Secondary local context for Naples (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://sscnapoli.it/en/il-club"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Diego Maradona, Napoli’nin 1987 ve 1990’daki ilk iki Serie A şampiyonluğunda başrol oynadı.",
+    "fallback_used": true,
+    "fun_fact_source": "https://sscnapoli.it/en/il-club",
+    "fun_fact_status": "verified"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Parma",
+    "team_abbreviation": "PAR",
+    "team_stadium": "Stadio Ennio Tardini",
+    "id": "italy-serie-a:15",
+    "name": "Parma",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Parma",
+    "aliases": [
+      "PAR"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🧀",
+      "🟡",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Parma (provisional)",
+      "Secondary local context for Parma (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Parma için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Ennio Tardini.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 16,
+    "team_name": "AS Roma",
+    "team_abbreviation": "ROMA",
+    "team_stadium": "Stadio Olimpico",
+    "id": "italy-serie-a:16",
+    "name": "AS Roma",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Rome",
+    "aliases": [
+      "ROMA"
+    ],
+    "emojis": [
+      "🏛️",
+      "🏟️",
+      "🐺",
+      "🟡",
+      "🔴"
+    ],
+    "why": [
+      "City or regional visual cue for Rome (provisional)",
+      "Secondary local context for Rome (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "AS Roma için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Olimpico.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 17,
+    "team_name": "Sassuolo",
+    "team_abbreviation": "SAS",
+    "team_stadium": "MAPEI Stadium",
+    "id": "italy-serie-a:17",
+    "name": "Sassuolo",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Sassuolo",
+    "aliases": [
+      "SAS"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🟢",
+      "⚫",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Sassuolo (provisional)",
+      "Secondary local context for Sassuolo (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Sassuolo için yüklediğiniz kulüp verisinde belirtilen stadyum: MAPEI Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Torino",
+    "team_abbreviation": "TOR",
+    "team_stadium": "Stadio Olimpico Grande Torino",
+    "id": "italy-serie-a:18",
+    "name": "Torino",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Turin",
+    "aliases": [
+      "TOR"
+    ],
+    "emojis": [
+      "🏔️",
+      "⛰️",
+      "🐂",
+      "🔴",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Turin (provisional)",
+      "Secondary local context for Turin (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Torino için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Olimpico Grande Torino.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 19,
+    "team_name": "Udinese",
+    "team_abbreviation": "UDI",
+    "team_stadium": "Dacia Arena",
+    "id": "italy-serie-a:19",
+    "name": "Udinese",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Udine",
+    "aliases": [
+      "UDI"
+    ],
+    "emojis": [
+      "📍",
+      "🏟️",
+      "⚫",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Udine (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Udinese için yüklediğiniz kulüp verisinde belirtilen stadyum: Dacia Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 20,
+    "team_name": "Venezia",
+    "team_abbreviation": "VEN",
+    "team_stadium": "Stadio Pierluigi Penzo",
+    "id": "italy-serie-a:20",
+    "name": "Venezia",
+    "league_id": "italy-serie-a",
+    "country": "Italy",
+    "continent": "Europe",
+    "city": "Venice",
+    "aliases": [
+      "VEN"
+    ],
+    "emojis": [
+      "🚣",
+      "🌊",
+      "🦁",
+      "🟠",
+      "🟢"
+    ],
+    "why": [
+      "City or regional visual cue for Venice (provisional)",
+      "Secondary local context for Venice (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Venezia için yüklediğiniz kulüp verisinde belirtilen stadyum: Stadio Pierluigi Penzo.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  }
+]

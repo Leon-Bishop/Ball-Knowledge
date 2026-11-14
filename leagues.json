@@ -1,0 +1,122 @@
+[
+  {
+    "id": "belgian-pro-league",
+    "name": "Belgian Pro League",
+    "country": "Belgium",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "brazil-serie-a",
+    "name": "Brazilian Série A",
+    "country": "Brazil",
+    "continent": "South America",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "england-premier-league",
+    "name": "English Premier League",
+    "country": "England",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "france-ligue-1",
+    "name": "French Ligue 1",
+    "country": "France",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "germany-bundesliga",
+    "name": "German Bundesliga",
+    "country": "Germany",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "greece-super-league",
+    "name": "Greek Super League",
+    "country": "Greece",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "italy-serie-a",
+    "name": "Italian Serie A",
+    "country": "Italy",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "netherlands-eredivisie",
+    "name": "Dutch Eredivisie",
+    "country": "Netherlands",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "portugal-liga-portugal",
+    "name": "Liga Portugal",
+    "country": "Portugal",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "scotland-premiership",
+    "name": "Scottish Premiership",
+    "country": "Scotland",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "spain-la-liga",
+    "name": "Spanish La Liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  },
+  {
+    "id": "turkey-super-lig",
+    "name": "Turkish Süper Lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "tags": [
+      "uploaded",
+      "sample-season"
+    ]
+  }
+]

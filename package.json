@@ -1,0 +1,19 @@
+{
+  "name": "ball-knowledge",
+  "version": "3.4.0",
+  "private": true,
+  "description": "Ball Knowledge — six-language football club emoji guessing game, with a polished stadium-inspired interface",
+  "scripts": {
+    "test": "node scripts/validate-data.mjs && node scripts/validate-i18n.mjs && node scripts/check-js.mjs && node scripts/validate-research.mjs && node scripts/check-feedback.mjs && node scripts/check-brand.mjs && node scripts/check-session.mjs && node scripts/check-dark-suggestions.mjs && node scripts/check-difficulty-order.mjs",
+    "validate": "node scripts/validate-data.mjs",
+    "serve": "python3 -m http.server 8000",
+    "check:research": "node scripts/validate-research.mjs",
+    "research:plan": "node scripts/plan-research.mjs",
+    "research:audit": "node scripts/audit-editorial.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

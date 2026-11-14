@@ -1,0 +1,650 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "AJ Auxerre",
+    "team_abbreviation": "AUX",
+    "team_stadium": "Stade de l'Abbé Deschamps",
+    "id": "france-ligue-1:1",
+    "name": "AJ Auxerre",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Auxerre",
+    "aliases": [
+      "AUX"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "⚪",
+      "🔵",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Auxerre (provisional)",
+      "Secondary local context for Auxerre (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "AJ Auxerre için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade de l'Abbé Deschamps.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Angers",
+    "team_abbreviation": "ANG",
+    "team_stadium": "Stade Raymond Kopa",
+    "id": "france-ligue-1:2",
+    "name": "Angers",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Angers",
+    "aliases": [
+      "ANG"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "⚫",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Angers (provisional)",
+      "Secondary local context for Angers (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Angers için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Raymond Kopa.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 3,
+    "team_name": "AS Monaco",
+    "team_abbreviation": "ASM",
+    "team_stadium": "Stade Louis II",
+    "id": "france-ligue-1:3",
+    "name": "AS Monaco",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Monaco",
+    "aliases": [
+      "ASM"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "👑",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Monaco (provisional)",
+      "Secondary local context for Monaco (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "AS Monaco için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Louis II.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Brest",
+    "team_abbreviation": "BRE",
+    "team_stadium": "Stade Francis-Le Blé",
+    "id": "france-ligue-1:4",
+    "name": "Brest",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Brest",
+    "aliases": [
+      "BRE"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "⚓",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Brest (provisional)",
+      "Secondary local context for Brest (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Brest için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Francis-Le Blé.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 5,
+    "team_name": "Le Havre AC",
+    "team_abbreviation": "HAC",
+    "team_stadium": "Stade Oceane",
+    "id": "france-ligue-1:5",
+    "name": "Le Havre AC",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Le Havre",
+    "aliases": [
+      "HAC"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "⚓",
+      "🔵",
+      "🌊"
+    ],
+    "why": [
+      "City or regional visual cue for Le Havre (provisional)",
+      "Secondary local context for Le Havre (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Le Havre AC için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Oceane.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Lille",
+    "team_abbreviation": "LIL",
+    "team_stadium": "Stade Pierre-Mauroy",
+    "id": "france-ligue-1:6",
+    "name": "Lille",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Lille",
+    "aliases": [
+      "LIL"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🐕",
+      "🔴",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Lille (provisional)",
+      "Secondary local context for Lille (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Lille için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Pierre-Mauroy.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 7,
+    "team_name": "Lyon",
+    "team_abbreviation": "OL",
+    "team_stadium": "Parc Olympique Lyonnais",
+    "id": "france-ligue-1:7",
+    "name": "Lyon",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Lyon",
+    "aliases": [
+      "OL"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🦁",
+      "🔴",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Lyon (provisional)",
+      "Secondary local context for Lyon (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Lyon için yüklediğiniz kulüp verisinde belirtilen stadyum: Parc Olympique Lyonnais.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 8,
+    "team_name": "Marseille",
+    "team_abbreviation": "OM",
+    "team_stadium": "Stade Vélodrome",
+    "id": "france-ligue-1:8",
+    "name": "Marseille",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Marseille",
+    "aliases": [
+      "OM"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🌊",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Marseille (provisional)",
+      "Secondary local context for Marseille (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Marseille için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Vélodrome.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 9,
+    "team_name": "Le Mans",
+    "team_abbreviation": "MNS",
+    "team_stadium": "Stade Marie-Marvingt",
+    "id": "france-ligue-1:9",
+    "name": "Le Mans",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Le Mans",
+    "aliases": [
+      "MNS"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🏎️",
+      "🔴",
+      "🟡"
+    ],
+    "why": [
+      "City or regional visual cue for Le Mans (provisional)",
+      "Secondary local context for Le Mans (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Le Mans için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Marie-Marvingt.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Nice",
+    "team_abbreviation": "NIC",
+    "team_stadium": "Allianz Riviera",
+    "id": "france-ligue-1:10",
+    "name": "Nice",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Nice",
+    "aliases": [
+      "NIC"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🦅",
+      "🔴",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Nice (provisional)",
+      "Secondary local context for Nice (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Nice için yüklediğiniz kulüp verisinde belirtilen stadyum: Allianz Riviera.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Lorient",
+    "team_abbreviation": "LOR",
+    "team_stadium": "Stade du Moustoir",
+    "id": "france-ligue-1:11",
+    "name": "Lorient",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Lorient",
+    "aliases": [
+      "LOR"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🐟",
+      "🟠",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Lorient (provisional)",
+      "Secondary local context for Lorient (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Lorient için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade du Moustoir.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 12,
+    "team_name": "Paris Saint-Germain",
+    "team_abbreviation": "PSG",
+    "team_stadium": "Parc des Princes",
+    "id": "france-ligue-1:12",
+    "name": "Paris Saint-Germain",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Paris",
+    "aliases": [
+      "PSG"
+    ],
+    "emojis": [
+      "🗼",
+      "🎨",
+      "🗼",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Paris (provisional)",
+      "Secondary local context for Paris (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Paris Saint-Germain için yüklediğiniz kulüp verisinde belirtilen stadyum: Parc des Princes.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 13,
+    "team_name": "Rennes",
+    "team_abbreviation": "REN",
+    "team_stadium": "Roazhon Park",
+    "id": "france-ligue-1:13",
+    "name": "Rennes",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Rennes",
+    "aliases": [
+      "REN"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🟠",
+      "⚫",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Rennes (provisional)",
+      "Secondary local context for Rennes (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Rennes için yüklediğiniz kulüp verisinde belirtilen stadyum: Roazhon Park.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 14,
+    "team_name": "Paris FC",
+    "team_abbreviation": "PAR",
+    "team_stadium": "Stade Jean-Bouin",
+    "id": "france-ligue-1:14",
+    "name": "Paris FC",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Paris",
+    "aliases": [
+      "PAR"
+    ],
+    "emojis": [
+      "🗼",
+      "🎨",
+      "🗼",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Paris (provisional)",
+      "Secondary local context for Paris (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Paris FC için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Jean-Bouin.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Strasbourg",
+    "team_abbreviation": "STR",
+    "team_stadium": "Stade de la Meinau",
+    "id": "france-ligue-1:15",
+    "name": "Strasbourg",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Strasbourg",
+    "aliases": [
+      "STR"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🦢",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Strasbourg (provisional)",
+      "Secondary local context for Strasbourg (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Strasbourg için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade de la Meinau.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Toulouse",
+    "team_abbreviation": "TFC",
+    "team_stadium": "Stade de Toulouse",
+    "id": "france-ligue-1:16",
+    "name": "Toulouse",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Toulouse",
+    "aliases": [
+      "TFC"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🟣",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Toulouse (provisional)",
+      "Secondary local context for Toulouse (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Toulouse için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade de Toulouse.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 17,
+    "team_name": "Lens",
+    "team_abbreviation": "RCL",
+    "team_stadium": "Stade Bollaert-Delelis",
+    "id": "france-ligue-1:17",
+    "name": "Lens",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Lens",
+    "aliases": [
+      "RCL"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "⛏️",
+      "🔴",
+      "🟡"
+    ],
+    "why": [
+      "City or regional visual cue for Lens (provisional)",
+      "Secondary local context for Lens (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Lens için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Bollaert-Delelis.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Troyes",
+    "team_abbreviation": "TRY",
+    "team_stadium": "Stade de l'Aube",
+    "id": "france-ligue-1:18",
+    "name": "Troyes",
+    "league_id": "france-ligue-1",
+    "country": "France",
+    "continent": "Europe",
+    "city": "Troyes",
+    "aliases": [
+      "TRY"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🔵",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Troyes (provisional)",
+      "Secondary local context for Troyes (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Troyes için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade de l'Aube.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  }
+]

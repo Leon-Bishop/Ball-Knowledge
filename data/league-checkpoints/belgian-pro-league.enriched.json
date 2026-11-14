@@ -1,0 +1,650 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "Anderlecht",
+    "team_abbreviation": "AND",
+    "team_stadium": "Stade Constant Vanden Stock",
+    "id": "belgian-pro-league:1",
+    "name": "Anderlecht",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Brussels",
+    "aliases": [
+      "AND"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🟣",
+      "⚪",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Brussels (provisional)",
+      "Secondary local context for Brussels (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Anderlecht için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Constant Vanden Stock.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Antwerp",
+    "team_abbreviation": "ANT",
+    "team_stadium": "Bosuilstadion",
+    "id": "belgian-pro-league:2",
+    "name": "Antwerp",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Antwerp",
+    "aliases": [
+      "ANT"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "👴",
+      "🔴",
+      "🥇"
+    ],
+    "why": [
+      "City or regional visual cue for Antwerp (provisional)",
+      "Secondary local context for Antwerp (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Antwerp için yüklediğiniz kulüp verisinde belirtilen stadyum: Bosuilstadion.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Cercle Brugge KSV",
+    "team_abbreviation": "CER",
+    "team_stadium": "Jan Breydel Stadium",
+    "id": "belgian-pro-league:3",
+    "name": "Cercle Brugge KSV",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Bruges",
+    "aliases": [
+      "CER"
+    ],
+    "emojis": [
+      "🚣",
+      "🌊",
+      "🟢",
+      "⚫",
+      "⭕"
+    ],
+    "why": [
+      "City or regional visual cue for Bruges (provisional)",
+      "Secondary local context for Bruges (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Cercle Brugge KSV için yüklediğiniz kulüp verisinde belirtilen stadyum: Jan Breydel Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Club Brugge",
+    "team_abbreviation": "CLU",
+    "team_stadium": "Jan Breydel Stadium",
+    "id": "belgian-pro-league:4",
+    "name": "Club Brugge",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Bruges",
+    "aliases": [
+      "CLU"
+    ],
+    "emojis": [
+      "🚣",
+      "🌊",
+      "🐻",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Bruges (provisional)",
+      "Secondary local context for Bruges (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Club Brugge için yüklediğiniz kulüp verisinde belirtilen stadyum: Jan Breydel Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 5,
+    "team_name": "Waasland-Beveren",
+    "team_abbreviation": "WAA",
+    "team_stadium": "Freethiel Stadion",
+    "id": "belgian-pro-league:5",
+    "name": "Waasland-Beveren",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Beveren",
+    "aliases": [
+      "WAA"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🦁",
+      "🟡",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Beveren (provisional)",
+      "Secondary local context for Beveren (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Waasland-Beveren için yüklediğiniz kulüp verisinde belirtilen stadyum: Freethiel Stadion.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 6,
+    "team_name": "KAA Gent",
+    "team_abbreviation": "GNT",
+    "team_stadium": "Ghelamco Arena",
+    "id": "belgian-pro-league:6",
+    "name": "KAA Gent",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Ghent",
+    "aliases": [
+      "GNT"
+    ],
+    "emojis": [
+      "🌉",
+      "🚋",
+      "🐃",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Ghent (provisional)",
+      "Secondary local context for Ghent (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "KAA Gent için yüklediğiniz kulüp verisinde belirtilen stadyum: Ghelamco Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 7,
+    "team_name": "KV Kortrijk",
+    "team_abbreviation": "KVK",
+    "team_stadium": "Guldensporenstadion",
+    "id": "belgian-pro-league:7",
+    "name": "KV Kortrijk",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Kortrijk",
+    "aliases": [
+      "KVK"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🔴",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Kortrijk (provisional)",
+      "Secondary local context for Kortrijk (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "KV Kortrijk için yüklediğiniz kulüp verisinde belirtilen stadyum: Guldensporenstadion.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 8,
+    "team_name": "KV Mechelen",
+    "team_abbreviation": "KVM",
+    "team_stadium": "AFAS-stadion Achter de Kazerne",
+    "id": "belgian-pro-league:8",
+    "name": "KV Mechelen",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Mechelen",
+    "aliases": [
+      "KVM"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🟡",
+      "🔴",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Mechelen (provisional)",
+      "Secondary local context for Mechelen (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "KV Mechelen için yüklediğiniz kulüp verisinde belirtilen stadyum: AFAS-stadion Achter de Kazerne.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 9,
+    "team_name": "KVC Westerlo",
+    "team_abbreviation": "WES",
+    "team_stadium": "Het Kuipje",
+    "id": "belgian-pro-league:9",
+    "name": "KVC Westerlo",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Westerlo",
+    "aliases": [
+      "WES"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🟡",
+      "🔵",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Westerlo (provisional)",
+      "Secondary local context for Westerlo (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "KVC Westerlo için yüklediğiniz kulüp verisinde belirtilen stadyum: Het Kuipje.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Oud-Heverlee Leuven",
+    "team_abbreviation": "OHL",
+    "team_stadium": "King Power at Den Dreef Stadium",
+    "id": "belgian-pro-league:10",
+    "name": "Oud-Heverlee Leuven",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Leuven",
+    "aliases": [
+      "OHL"
+    ],
+    "emojis": [
+      "📍",
+      "🏟️",
+      "🔴",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Leuven (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Oud-Heverlee Leuven için yüklediğiniz kulüp verisinde belirtilen stadyum: King Power at Den Dreef Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Racing Genk",
+    "team_abbreviation": "GNK",
+    "team_stadium": "Luminus Arena",
+    "id": "belgian-pro-league:11",
+    "name": "Racing Genk",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Genk",
+    "aliases": [
+      "GNK"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🔵",
+      "⚪",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Genk (provisional)",
+      "Secondary local context for Genk (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Racing Genk için yüklediğiniz kulüp verisinde belirtilen stadyum: Luminus Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 12,
+    "team_name": "Royal Charleroi SC",
+    "team_abbreviation": "CHA",
+    "team_stadium": "Stade du Pays de Charleroi",
+    "id": "belgian-pro-league:12",
+    "name": "Royal Charleroi SC",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Charleroi",
+    "aliases": [
+      "CHA"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🦓",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Charleroi (provisional)",
+      "Secondary local context for Charleroi (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Royal Charleroi SC için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade du Pays de Charleroi.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 13,
+    "team_name": "Lommel SK",
+    "team_abbreviation": "LOM",
+    "team_stadium": "Soevereinstadion",
+    "id": "belgian-pro-league:13",
+    "name": "Lommel SK",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Lommel",
+    "aliases": [
+      "LOM"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🟢",
+      "⚪",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Lommel (provisional)",
+      "Secondary local context for Lommel (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Lommel SK için yüklediğiniz kulüp verisinde belirtilen stadyum: Soevereinstadion.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 14,
+    "team_name": "Sint-Truidense",
+    "team_abbreviation": "STV",
+    "team_stadium": "Stayen",
+    "id": "belgian-pro-league:14",
+    "name": "Sint-Truidense",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Sint-Truiden",
+    "aliases": [
+      "STV"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🐤",
+      "🟡",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Sint-Truiden (provisional)",
+      "Secondary local context for Sint-Truiden (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Sint-Truidense için yüklediğiniz kulüp verisinde belirtilen stadyum: Stayen.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Standard Liege",
+    "team_abbreviation": "STA",
+    "team_stadium": "Stade Maurice Dufrasne",
+    "id": "belgian-pro-league:15",
+    "name": "Standard Liege",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Liège",
+    "aliases": [
+      "STA"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🔴",
+      "⚪",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Liège (provisional)",
+      "Secondary local context for Liège (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Standard Liege için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Maurice Dufrasne.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Union St.-Gilloise",
+    "team_abbreviation": "USG",
+    "team_stadium": "Stade Joseph Marien",
+    "id": "belgian-pro-league:16",
+    "name": "Union St.-Gilloise",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Brussels",
+    "aliases": [
+      "USG"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🟡",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Brussels (provisional)",
+      "Secondary local context for Brussels (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Union St.-Gilloise için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade Joseph Marien.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 17,
+    "team_name": "RAAL La Louvière",
+    "team_abbreviation": "RLL",
+    "team_stadium": "Stade du Tivoli",
+    "id": "belgian-pro-league:17",
+    "name": "RAAL La Louvière",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "La Louvière",
+    "aliases": [
+      "RLL"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🐺",
+      "🟢",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for La Louvière (provisional)",
+      "Secondary local context for La Louvière (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "RAAL La Louvière için yüklediğiniz kulüp verisinde belirtilen stadyum: Stade du Tivoli.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Zulte-Waregem",
+    "team_abbreviation": "ZW",
+    "team_stadium": "Elindus Arena",
+    "id": "belgian-pro-league:18",
+    "name": "Zulte-Waregem",
+    "league_id": "belgian-pro-league",
+    "country": "Belgium",
+    "continent": "Europe",
+    "city": "Waregem",
+    "aliases": [
+      "ZW"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🔴",
+      "🟢",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Waregem (provisional)",
+      "Secondary local context for Waregem (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Zulte-Waregem için yüklediğiniz kulüp verisinde belirtilen stadyum: Elindus Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  }
+]

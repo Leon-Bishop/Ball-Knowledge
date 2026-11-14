@@ -1,0 +1,112 @@
+from pathlib import Path
+import json
+A=[]
+def add(id,key,url,tr,en,es,fr,it,pt):
+ A.append({'id':id,'key':key,'sources':[url],'score':9,'tr':tr,'translations':dict(en=en,es=es,fr=fr,it=it,pt=pt)})
+add('england-premier-league:2','villa-spink-second-game-1982','https://www.uefa.com/uefachampionsleague/news/0254-0d7b1e154752-f2cfb521c62d-1000--1981-82-withe-brings-villa-glory/',
+'1982 Avrupa Kupası finalinde Aston Villa’nın kalecisi 9. dakikada sakatlandı. Yedek Nigel Spink, henüz ikinci A takım maçında Bayern Münih’i golsüz tutup Avrupa şampiyonu oldu.',
+'In the 1982 European Cup final, Villa lost their goalkeeper after nine minutes. Substitute Nigel Spink, making only his second senior appearance, kept Bayern out as Villa won the trophy.',
+'En la final europea de 1982, el portero del Villa se lesionó en el minuto nueve. Su sustituto Nigel Spink, en apenas su segundo partido con el primer equipo, mantuvo a raya al Bayern.',
+'En finale européenne 1982, le gardien de Villa s’est blessé à la neuvième minute. Nigel Spink, qui ne disputait que son deuxième match avec les pros, a tenu le Bayern en échec.',
+'Nella finale europea del 1982, il portiere del Villa si infortunò al nono minuto. Nigel Spink, alla seconda presenza in prima squadra, fermò il Bayern e vinse il trofeo.',
+'Na final europeia de 1982, o goleiro do Villa se lesionou aos nove minutos. Nigel Spink, em apenas seu segundo jogo pela equipe principal, segurou o Bayern e venceu o título.')
+add('england-premier-league:3','bournemouth-manunited-fa-1984','https://www.thefa.com/news/2019/jan/03/fa-cup-third-round-shocks-030119',
+'Bournemouth, henüz alt ligdeyken 1984’te son FA Cup şampiyonu Manchester United’ı 2-0 eledi. Teknik direktör Harry Redknapp o günü hayatının en güzel günü olarak anlattı.',
+'In 1984 lower-league Bournemouth knocked holders Manchester United out of the FA Cup 2–0; manager Harry Redknapp called it the greatest day of his life.',
+'En 1984, el Bournemouth, entonces de una división inferior, eliminó al campeón Manchester United por 2-0 en la FA Cup. Harry Redknapp lo llamó el mejor día de su vida.',
+'En 1984, Bournemouth, alors en division inférieure, a éliminé le tenant Manchester United 2-0 en FA Cup. Harry Redknapp a parlé du plus beau jour de sa vie.',
+'Nel 1984 il Bournemouth, in una serie inferiore, eliminò il Manchester United detentore della FA Cup per 2-0. Harry Redknapp lo definì il giorno più bello della sua vita.',
+'Em 1984, o Bournemouth, de divisão inferior, eliminou o atual campeão Manchester United da Copa da Inglaterra por 2 a 0. Harry Redknapp chamou o feito de melhor dia da sua vida.')
+add('england-premier-league:6','chelsea-home-opponent-2012-final','https://www.uefa.com/uefachampionsleague/news/0250-0c50fb78a384-1434bbcadbcb-1000/',
+'Chelsea, 2012 Şampiyonlar Ligi finalinde Bayern Münih’in kendi stadında 83’te geri düştü, Drogba 88’de eşitledi; Petr Čech uzatmada bir penaltı kurtardı, Chelsea kupayı penaltılarda aldı.',
+'Chelsea trailed Bayern in Bayern’s own stadium in the 2012 Champions League final. Drogba equalised in minute 88, Čech saved an extra-time penalty, and Chelsea won the shoot-out.',
+'En la final de 2012, Chelsea perdía ante el Bayern en su propio estadio. Drogba empató en el 88, Čech paró un penalti en la prórroga y Chelsea ganó en la tanda.',
+'En finale 2012 chez le Bayern, Chelsea était mené. Drogba a égalisé à la 88e, Čech a arrêté un penalty en prolongation et les Blues ont gagné aux tirs au but.',
+'Nella finale del 2012, il Chelsea era sotto contro il Bayern nel suo stadio. Drogba pareggiò all’88’, Čech parò un rigore nei supplementari e i Blues vinsero ai rigori.',
+'Na final de 2012, o Chelsea perdia para o Bayern no estádio rival. Drogba empatou aos 88, Čech defendeu um pênalti na prorrogação e o Chelsea venceu nos pênaltis.')
+add('england-premier-league:7','palace-ian-wright-1990-final-double','https://www.thefa.com/news/2017/mar/09/fa-cups-super-subs-090317',
+'Crystal Palace’ın 1990 FA Cup finalinde yedek giren Ian Wright üç dakika içinde gol attı, uzatmada bir gol daha buldu; maç 3-3 bitti ve United rövanşı kazandı.',
+'In the 1990 FA Cup final, Crystal Palace substitute Ian Wright scored within three minutes of coming on and again in extra time. The match finished 3–3; United won the replay.',
+'En la final de FA Cup de 1990, Ian Wright entró por el Palace, marcó en tres minutos y repitió en la prórroga. El 3-3 obligó a repetir la final, que ganó el United.',
+'En finale de FA Cup 1990, Ian Wright est entré pour Palace et a marqué trois minutes plus tard, puis encore en prolongation. Score final 3-3, avant une revanche gagnée par United.',
+'Nella finale FA Cup 1990, Ian Wright entrò per il Palace e segnò dopo tre minuti e di nuovo nei supplementari. Finì 3-3; lo United vinse la ripetizione.',
+'Na final da FA Cup de 1990, Ian Wright entrou pelo Palace, marcou em três minutos e novamente na prorrogação. O jogo terminou 3 a 3; o United venceu o replay.')
+add('england-premier-league:10','ipswich-dutchman-uefa-final-1981','https://www.uefa.com/uefaeuropaleague/news/008a-0e6a0a02d996-129ab95150db-1000--1980-81-ipswich-thankful-for-thijssen/',
+'Ipswich, 1981 UEFA Kupası finalinde Hollandalı AZ Alkmaar’ı yenerken iki maçta da golünü Hollandalı oyuncusu Frans Thijssen’den buldu; kupa toplam 5-4’lük skorla geldi.',
+'Ipswich won the 1981 UEFA Cup final against Dutch side AZ Alkmaar thanks in part to Dutchman Frans Thijssen, who scored in both legs of the 5–4 aggregate win.',
+'Ipswich ganó la UEFA de 1981 ante el AZ neerlandés con goles de su jugador neerlandés Frans Thijssen en ambas finales; el global acabó 5-4.',
+'Ipswich a remporté la Coupe UEFA 1981 contre l’AZ néerlandais, grâce notamment à Frans Thijssen, lui-même Néerlandais, buteur à l’aller comme au retour (5-4).',
+'L’Ipswich vinse la Coppa UEFA 1981 contro gli olandesi dell’AZ grazie anche a Frans Thijssen, olandese a sua volta, a segno in entrambe le finali (5-4 complessivo).',
+'O Ipswich venceu a Copa da UEFA de 1981 contra o AZ holandês graças também ao holandês Frans Thijssen, que marcou nas duas partidas da vitória agregada por 5 a 4.')
+add('england-premier-league:19','ipswich-dutchman-uefa-final-1981','https://www.uefa.com/uefaeuropaleague/news/008a-0e6a0a02d996-129ab95150db-1000--1980-81-ipswich-thankful-for-thijssen/',
+'Ipswich, 1981 UEFA Kupası finalinde Hollandalı AZ Alkmaar’ı yenerken iki maçta da golünü Hollandalı oyuncusu Frans Thijssen’den buldu; kupa toplam 5-4’lük skorla geldi.',
+'Ipswich won the 1981 UEFA Cup final against Dutch side AZ Alkmaar thanks in part to Dutchman Frans Thijssen, who scored in both legs of the 5–4 aggregate win.',
+'Ipswich ganó la UEFA de 1981 ante el AZ neerlandés con goles de su jugador neerlandés Frans Thijssen en ambas finales; el global acabó 5-4.',
+'Ipswich a remporté la Coupe UEFA 1981 contre l’AZ néerlandais, grâce notamment à Frans Thijssen, lui-même Néerlandais, buteur à l’aller comme au retour (5-4).',
+'L’Ipswich vinse la Coppa UEFA 1981 contro gli olandesi dell’AZ grazie anche a Frans Thijssen, olandese a sua volta, a segno in entrambe le finali (5-4 complessivo).',
+'O Ipswich venceu a Copa da UEFA de 1981 contra o AZ holandês graças também ao holandês Frans Thijssen, que marcou nas duas partidas da vitória agregada por 5 a 4.')
+add('england-premier-league:14','manunited-1999-two-stoppage-goals','https://www.uefa.com/uefachampionsleague/news/0253-0d7ff133e70e-1072ac4c9b80-1000--legendary-moments-sir-alex-on-1999-triumph/',
+'Manchester United, 1999 Şampiyonlar Ligi finalinde 90. dakikaya Bayern karşısında 0-1 geride girdi; iki yedek Sheringham ve Solskjær 91 ve 93’te attıkları gollerle kupayı çevirdi.',
+'Manchester United entered stoppage time of the 1999 final 1–0 down to Bayern. Two substitutes, Sheringham and Solskjær, scored in the 91st and 93rd minutes to win the Champions League.',
+'United perdía 1-0 ante el Bayern al llegar al descuento de la final de 1999. Dos suplentes, Sheringham y Solskjær, marcaron en los minutos 91 y 93 para ganar la Champions.',
+'United était mené 1-0 par le Bayern à la 90e de la finale 1999. Deux remplaçants, Sheringham et Solskjær, ont marqué aux 91e et 93e minutes pour gagner la Champions.',
+'Lo United perdeva 1-0 contro il Bayern al 90’ della finale del 1999. Due riserve, Sheringham e Solskjær, segnarono al 91’ e al 93’ e vinsero la Champions.',
+'O United perdia por 1 a 0 para o Bayern aos 90 da final de 1999. Dois reservas, Sheringham e Solskjær, marcaram aos 91 e 93 para ganhar a Champions.')
+add('england-premier-league:15','newcastle-domestic-70year-wait-2025','https://www.uefa.com/uefachampionsleague/news/029d-1ea2e7e3e5d8-c5227ee0ab3c-1000--meet-the-2025-26-champions-league-league-phase-teams/',
+'Newcastle 2025 Lig Kupası finalinde Liverpool’u 2-1 yenerek 70 yıldır kazanamadığı ilk yerel büyük kupayı aldı.',
+'Newcastle beat Liverpool 2–1 in the 2025 League Cup final, winning its first major domestic trophy in 70 years.',
+'Newcastle derrotó 2-1 al Liverpool en la final de la Copa de la Liga de 2025 y ganó su primer gran título nacional en 70 años.',
+'Newcastle a battu Liverpool 2-1 en finale de la Coupe de la Ligue 2025 et remporté son premier grand trophée national depuis 70 ans.',
+'Il Newcastle sconfisse il Liverpool 2-1 nella finale di Coppa di Lega 2025, conquistando il primo grande trofeo nazionale dopo 70 anni.',
+'O Newcastle venceu o Liverpool por 2 a 1 na final da Copa da Liga de 2025 e conquistou seu primeiro grande troféu doméstico em 70 anos.')
+add('england-premier-league:16','forest-francis-first-million-1979','https://www.uefa.com/uefachampionsleague/news/021f-0e8fdb966b61-6218b8be0349-1000--legendary-moments-francis-on-forest-s-first/',
+'Nottingham Forest, Britanya futbolunun ilk 1 milyon sterlinlik transferi Trevor Francis’i 1979’da aldı; Francis, Avrupa Kupası finalindeki tek golü atıp hemen kulübe kupayı getirdi.',
+'Nottingham Forest signed Britain’s first £1m footballer, Trevor Francis, in 1979. Just months later, he scored the only goal in the European Cup final.',
+'Nottingham Forest fichó en 1979 a Trevor Francis, el primer futbolista británico de un millón de libras. Meses después marcó el único gol de la final de la Copa de Europa.',
+'Forest a recruté Trevor Francis, premier footballeur britannique à un million de livres, en 1979. Quelques mois plus tard, il marquait le seul but de la finale européenne.',
+'Il Forest acquistò Trevor Francis, primo calciatore britannico da un milione di sterline, nel 1979. Pochi mesi dopo segnò l’unico gol della finale europea.',
+'O Forest contratou Trevor Francis, primeiro jogador britânico de £1 milhão, em 1979. Meses depois ele marcou o único gol da final europeia.')
+add('england-premier-league:16','forest-francis-first-final-1979','https://www.uefa.com/news-media/news/0283-1891d3c58ceb-24a5ff59ff69-1000--forest-s-1979-goal-hero-francis-passes-away/',
+'Nottingham Forest’ın 1979 Avrupa Kupası finalindeki tek golünü atan Trevor Francis, transfer kuralları yüzünden o finalden önce Forest formasıyla turnuvada hiç oynayamamıştı.',
+'Trevor Francis scored the only goal of Forest’s 1979 European Cup final, yet transfer-eligibility rules meant the final was his very first European Cup appearance for the club.',
+'Trevor Francis marcó el único gol de la final europea de Forest en 1979, aunque las normas de inscripción hicieron que aquella fuera su primera aparición europea con el club.',
+'Trevor Francis a marqué le seul but de la finale européenne 1979 de Forest, alors que les règles d’éligibilité avaient fait de cette finale son tout premier match européen avec le club.',
+'Trevor Francis segnò l’unico gol della finale europea del Forest nel 1979, pur non avendo potuto giocare le gare precedenti per le regole di eleggibilità.',
+'Trevor Francis fez o único gol da final europeia do Forest em 1979, mas as regras de inscrição fizeram daquela sua primeira partida no torneio pelo clube.')
+add('england-premier-league:20','hull-fa-final-2014-8minutes','https://www.thefa.com/news/2014/may/17/arsenal-v-hull-city-fa-cup-final-2014-match-report',
+'Hull City, 2014 FA Cup finalinde Arsenal karşısında ilk sekiz dakikada 2-0 öne geçti ama uzatmada 3-2 kaybetti; neredeyse tarihinde ilk kez kupayı kazanıyordu.',
+'Hull City led Arsenal 2–0 after just eight minutes of the 2014 FA Cup final but eventually lost 3–2 after extra time.',
+'Hull City ganaba 2-0 al Arsenal tras solo ocho minutos de la final de la FA Cup de 2014, pero acabó perdiendo 3-2 en la prórroga.',
+'Hull City menait 2-0 contre Arsenal après huit minutes en finale de FA Cup 2014, mais a finalement perdu 3-2 après prolongation.',
+'L’Hull City era avanti 2-0 sull’Arsenal dopo appena otto minuti nella finale di FA Cup 2014, ma perse 3-2 ai supplementari.',
+'O Hull City vencia o Arsenal por 2 a 0 após apenas oito minutos da final da Copa da Inglaterra de 2014, mas perdeu por 3 a 2 na prorrogação.')
+add('scotland-premiership:4','hearts-2006-derby-semifinal-hat-trick','https://www.uefa.com/news-media/news/01b4-0f848723ae60-6a209f6866e1-1000--hartley-leads-hearts-into-final/',
+'Hearts, 2006 İskoçya Kupası yarı finalinde Edinburgh rakibi Hibernian’ı 4-0 yendi; Paul Hartley kariyerinin ilk hat-trick’ini bu derbide yaptı.',
+'Hearts beat Edinburgh rivals Hibernian 4–0 in the 2006 Scottish Cup semi-final; Paul Hartley scored the first senior hat-trick of his career.',
+'Hearts derrotó 4-0 al Hibernian en la semifinal de la Copa escocesa de 2006; Paul Hartley logró su primer triplete profesional.',
+'Hearts a dominé Hibernian 4-0 en demi-finale de la Coupe d’Écosse 2006 ; Paul Hartley y a signé son premier triplé professionnel.',
+'Gli Hearts batterono 4-0 l’Hibernian nella semifinale di Coppa di Scozia 2006; Paul Hartley segnò la prima tripletta da professionista.',
+'O Hearts venceu o Hibernian por 4 a 0 na semifinal da Copa da Escócia de 2006; Paul Hartley fez seu primeiro hat-trick profissional.')
+add('scotland-premiership:5','hibs-cup-114year-2016','https://www.uefa.com/news-media/news/022d-0e946b0b973e-f09a0648b4b5-1000--cup-glory-for-bayern-paris-juve-and-united/',
+'Hibernian, 114 yıllık İskoçya Kupası hasretini 2016 finalinde Rangers’ı 3-2 yenerek bitirdi; kaptan David Gray galibiyet golünü uzatmalarda kafayla attı.',
+'Hibernian ended a 114-year Scottish Cup drought in 2016, beating Rangers 3–2 thanks to captain David Gray’s added-time header.',
+'Hibernian acabó en 2016 con 114 años sin Copa escocesa al ganar 3-2 al Rangers con un cabezazo del capitán David Gray en el descuento.',
+'Hibernian a mis fin à 114 ans d’attente en Coupe d’Écosse en 2016, battant Rangers 3-2 sur une tête du capitaine David Gray dans les arrêts de jeu.',
+'L’Hibernian pose fine a 114 anni senza Coppa di Scozia nel 2016, battendo i Rangers 3-2 con un colpo di testa del capitano David Gray nel recupero.',
+'O Hibernian encerrou 114 anos sem a Copa da Escócia em 2016, vencendo o Rangers por 3 a 2 com cabeceio do capitão David Gray nos acréscimos.')
+add('scotland-premiership:9','rangers-1972-trophy-dressingroom','https://www.uefa.com/uefaeuropaleague/news/01a9-0e6cc83febd2-dc13bedb6f7c-1000--russia-s-woes-weigh-on-cska/',
+'Rangers 1972 Kupa Galipleri Kupası’nı Barcelona’da kazandı ama saha olayları yüzünden UEFA başkanı kupayı oyunculara stadyumun soyunma odasında vermek zorunda kaldı.',
+'Rangers won the 1972 Cup Winners’ Cup in Barcelona, but crowd disturbances meant UEFA’s president had to hand over the trophy in the dressing room.',
+'Rangers ganó la Recopa de 1972 en Barcelona, pero los incidentes con el público obligaron al presidente de la UEFA a entregar el trofeo en el vestuario.',
+'Rangers a remporté la Coupe des coupes 1972 à Barcelone, mais les incidents en tribunes ont contraint le président de l’UEFA à remettre le trophée dans les vestiaires.',
+'I Rangers vinsero la Coppa delle Coppe 1972 a Barcellona, ma gli incidenti del pubblico obbligarono il presidente UEFA a consegnare il trofeo negli spogliatoi.',
+'O Rangers venceu a Recopa de 1972 em Barcelona, mas a invasão de torcedores fez o presidente da UEFA entregar o troféu no vestiário.')
+add('scotland-premiership:11','stjohnstone-first-cup-2014-released-defender','https://www.uefa.com/news-media/news/0215-0f8a587a8395-e4133f1995ea-1000--st-johnstone-clinch-maiden-scottish-cup/',
+'St. Johnstone tarihindeki ilk İskoçya Kupası’nı 2014’te alırken finalde ilk golü, rakip Dundee United’ın bir zamanlar altyapısından gönderdiği Steven Anderson attı.',
+'St Johnstone won its first Scottish Cup in 2014. Its opening goal in the final was scored by Steven Anderson, once released from the opponents’ Dundee United youth setup.',
+'St Johnstone ganó su primera Copa escocesa en 2014; el primer gol de la final lo marcó Steven Anderson, descartado años antes de la cantera del rival Dundee United.',
+'St Johnstone a gagné sa première Coupe d’Écosse en 2014. Le premier but en finale fut inscrit par Steven Anderson, auparavant écarté du centre de formation du rival Dundee United.',
+'Il St Johnstone vinse la prima Coppa di Scozia nel 2014. Il primo gol della finale fu segnato da Steven Anderson, scartato anni prima dal vivaio degli avversari del Dundee United.',
+'O St Johnstone venceu sua primeira Copa da Escócia em 2014. O primeiro gol da final foi de Steven Anderson, dispensado anos antes das categorias de base do rival Dundee United.')
+Path(__file__).with_suffix('.json').write_text(json.dumps(A,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print('Generated',len(A))

@@ -1,0 +1,783 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "Arsenal",
+    "team_abbreviation": "ARS",
+    "team_stadium": "Emirates Stadium",
+    "id": "england-premier-league:1",
+    "name": "Arsenal",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "London",
+    "aliases": [
+      "ARS"
+    ],
+    "emojis": [
+      "🌉",
+      "🚋",
+      "🔫",
+      "🔴",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for London (provisional)",
+      "Secondary local context for London (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712",
+      "https://www.premierleague.com/en/news/4726407"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Arsenal’in armasındaki top, kulübün 1886’da Woolwich’teki Royal Arsenal mühimmat işçileri tarafından kurulmasına gönderme yapar.",
+    "fallback_used": true,
+    "fun_fact_source": "https://www.premierleague.com/en/news/4726407",
+    "fun_fact_status": "verified"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Aston Villa",
+    "team_abbreviation": "AVL",
+    "team_stadium": "Villa Park",
+    "id": "england-premier-league:2",
+    "name": "Aston Villa",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Birmingham",
+    "aliases": [
+      "AVL"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🦁",
+      "🟣",
+      "🏰"
+    ],
+    "why": [
+      "City or regional visual cue for Birmingham (provisional)",
+      "Secondary local context for Birmingham (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Aston Villa için yüklediğiniz kulüp verisinde belirtilen stadyum: Villa Park.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Bournemouth",
+    "team_abbreviation": "BOU",
+    "team_stadium": "Vitality Stadium",
+    "id": "england-premier-league:3",
+    "name": "Bournemouth",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Bournemouth",
+    "aliases": [
+      "BOU"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🍒",
+      "🔴",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Bournemouth (provisional)",
+      "Secondary local context for Bournemouth (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Bournemouth için yüklediğiniz kulüp verisinde belirtilen stadyum: Vitality Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Brentford",
+    "team_abbreviation": "BRE",
+    "team_stadium": "Brentford Community Stadium",
+    "id": "england-premier-league:4",
+    "name": "Brentford",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "London",
+    "aliases": [
+      "BRE"
+    ],
+    "emojis": [
+      "🌉",
+      "🚋",
+      "🐝",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for London (provisional)",
+      "Secondary local context for London (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Brentford için yüklediğiniz kulüp verisinde belirtilen stadyum: Brentford Community Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 5,
+    "team_name": "Brighton",
+    "team_abbreviation": "BHA",
+    "team_stadium": "Amex Stadium",
+    "id": "england-premier-league:5",
+    "name": "Brighton",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Brighton",
+    "aliases": [
+      "BHA"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🕊️",
+      "🔵",
+      "🌊"
+    ],
+    "why": [
+      "City or regional visual cue for Brighton (provisional)",
+      "Secondary local context for Brighton (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Brighton için yüklediğiniz kulüp verisinde belirtilen stadyum: Amex Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Chelsea",
+    "team_abbreviation": "CHE",
+    "team_stadium": "Stamford Bridge",
+    "id": "england-premier-league:6",
+    "name": "Chelsea",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "London",
+    "aliases": [
+      "CHE"
+    ],
+    "emojis": [
+      "🌉",
+      "🚋",
+      "🦁",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for London (provisional)",
+      "Secondary local context for London (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Chelsea için yüklediğiniz kulüp verisinde belirtilen stadyum: Stamford Bridge.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 7,
+    "team_name": "Crystal Palace",
+    "team_abbreviation": "CRY",
+    "team_stadium": "Selhurst Park",
+    "id": "england-premier-league:7",
+    "name": "Crystal Palace",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "London",
+    "aliases": [
+      "CRY"
+    ],
+    "emojis": [
+      "🌉",
+      "🚋",
+      "🦅",
+      "🔴",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for London (provisional)",
+      "Secondary local context for London (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Crystal Palace için yüklediğiniz kulüp verisinde belirtilen stadyum: Selhurst Park.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 8,
+    "team_name": "Everton",
+    "team_abbreviation": "EVE",
+    "team_stadium": "Goodison Park",
+    "id": "england-premier-league:8",
+    "name": "Everton",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Liverpool",
+    "aliases": [
+      "EVE"
+    ],
+    "emojis": [
+      "⚓",
+      "🏟️",
+      "🍬",
+      "🔵",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Liverpool (provisional)",
+      "Secondary local context for Liverpool (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Everton için yüklediğiniz kulüp verisinde belirtilen stadyum: Goodison Park.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 9,
+    "team_name": "Fulham",
+    "team_abbreviation": "FUL",
+    "team_stadium": "Craven Cottage",
+    "id": "england-premier-league:9",
+    "name": "Fulham",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "London",
+    "aliases": [
+      "FUL"
+    ],
+    "emojis": [
+      "🌉",
+      "🚋",
+      "🏡",
+      "⚪",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for London (provisional)",
+      "Secondary local context for London (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Fulham için yüklediğiniz kulüp verisinde belirtilen stadyum: Craven Cottage.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Ipswich Town",
+    "team_abbreviation": "IPS",
+    "team_stadium": "Portman Road",
+    "id": "england-premier-league:10",
+    "name": "Ipswich Town",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Ipswich",
+    "aliases": [
+      "IPS"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🚜",
+      "🔵",
+      "🐎"
+    ],
+    "why": [
+      "City or regional visual cue for Ipswich (provisional)",
+      "Secondary local context for Ipswich (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Ipswich Town için yüklediğiniz kulüp verisinde belirtilen stadyum: Portman Road.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Leicester City",
+    "team_abbreviation": "LEI",
+    "team_stadium": "King Power Stadium",
+    "id": "england-premier-league:11",
+    "name": "Leicester City",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Leicester",
+    "aliases": [
+      "LEI"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🦊",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Leicester (provisional)",
+      "Secondary local context for Leicester (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Leicester City için yüklediğiniz kulüp verisinde belirtilen stadyum: King Power Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 12,
+    "team_name": "Liverpool",
+    "team_abbreviation": "LIV",
+    "team_stadium": "Anfield",
+    "id": "england-premier-league:12",
+    "name": "Liverpool",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Liverpool",
+    "aliases": [
+      "LIV"
+    ],
+    "emojis": [
+      "⚓",
+      "🏟️",
+      "🐦",
+      "🔴",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Liverpool (provisional)",
+      "Secondary local context for Liverpool (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Liverpool için yüklediğiniz kulüp verisinde belirtilen stadyum: Anfield.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 13,
+    "team_name": "Manchester City",
+    "team_abbreviation": "MCI",
+    "team_stadium": "Etihad Stadium",
+    "id": "england-premier-league:13",
+    "name": "Manchester City",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Manchester",
+    "aliases": [
+      "MCI"
+    ],
+    "emojis": [
+      "🏭",
+      "⚙️",
+      "🌙",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Manchester (provisional)",
+      "Secondary local context for Manchester (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Manchester City için yüklediğiniz kulüp verisinde belirtilen stadyum: Etihad Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 14,
+    "team_name": "Manchester United",
+    "team_abbreviation": "MUN",
+    "team_stadium": "Old Trafford",
+    "id": "england-premier-league:14",
+    "name": "Manchester United",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Manchester",
+    "aliases": [
+      "MUN"
+    ],
+    "emojis": [
+      "🏭",
+      "⚙️",
+      "😈",
+      "🔴",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Manchester (provisional)",
+      "Secondary local context for Manchester (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Manchester United için yüklediğiniz kulüp verisinde belirtilen stadyum: Old Trafford.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Newcastle",
+    "team_abbreviation": "NEW",
+    "team_stadium": "St. James' Park",
+    "id": "england-premier-league:15",
+    "name": "Newcastle",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Newcastle",
+    "aliases": [
+      "NEW"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🐦",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Newcastle (provisional)",
+      "Secondary local context for Newcastle (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Newcastle için yüklediğiniz kulüp verisinde belirtilen stadyum: St. James' Park.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Nottm Forest",
+    "team_abbreviation": "NFO",
+    "team_stadium": "City Ground",
+    "id": "england-premier-league:16",
+    "name": "Nottm Forest",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Nottingham",
+    "aliases": [
+      "NFO"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🌳",
+      "🔴",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Nottingham (provisional)",
+      "Secondary local context for Nottingham (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Nottm Forest için yüklediğiniz kulüp verisinde belirtilen stadyum: City Ground.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 17,
+    "team_name": "Coventry City",
+    "team_abbreviation": "COV",
+    "team_stadium": "Coventry Building Society Arena",
+    "id": "england-premier-league:17",
+    "name": "Coventry City",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Coventry",
+    "aliases": [
+      "COV"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🐘",
+      "🔵",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Coventry (provisional)",
+      "Secondary local context for Coventry (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Coventry City için yüklediğiniz kulüp verisinde belirtilen stadyum: Coventry Building Society Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Tottenham",
+    "team_abbreviation": "TOT",
+    "team_stadium": "Tottenham Hotspur Stadium",
+    "id": "england-premier-league:18",
+    "name": "Tottenham",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "London",
+    "aliases": [
+      "TOT"
+    ],
+    "emojis": [
+      "🌉",
+      "🚋",
+      "🐓",
+      "⚪",
+      "⚽"
+    ],
+    "why": [
+      "City or regional visual cue for London (provisional)",
+      "Secondary local context for London (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Tottenham için yüklediğiniz kulüp verisinde belirtilen stadyum: Tottenham Hotspur Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 19,
+    "team_name": "Ipswich Town",
+    "team_abbreviation": "IPS",
+    "team_stadium": "Portman Road",
+    "id": "england-premier-league:19",
+    "name": "Ipswich Town",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Ipswich",
+    "aliases": [
+      "IPS"
+    ],
+    "emojis": [
+      "📍",
+      "🏟️",
+      "🚜",
+      "🔵",
+      "🐎"
+    ],
+    "why": [
+      "City or regional visual cue for Ipswich (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Ipswich Town için yüklediğiniz kulüp verisinde belirtilen stadyum: Portman Road.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 20,
+    "team_name": "Hull City",
+    "team_abbreviation": "HUL",
+    "team_stadium": "MKM Stadium",
+    "id": "england-premier-league:20",
+    "name": "Hull City",
+    "league_id": "england-premier-league",
+    "country": "England",
+    "continent": "Europe",
+    "city": "Hull",
+    "aliases": [
+      "HUL"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🐯",
+      "🟠",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Hull (provisional)",
+      "Secondary local context for Hull (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [
+      "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
+      "https://news.bet365.com/en-gb/article/every-english-football-league-clubs-nickname/2026081819374302712"
+    ],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Hull City için yüklediğiniz kulüp verisinde belirtilen stadyum: MKM Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  }
+]

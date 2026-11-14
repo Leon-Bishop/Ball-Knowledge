@@ -1,0 +1,130 @@
+[
+  {
+    "id": "turkey-super-lig:2",
+    "key": "amed-2016-undefeated-cup-group",
+    "sources": [
+      "https://www.tff.org/Default.aspx?pageID=1383"
+    ],
+    "tr": "Amedspor, 2015-16 Türkiye Kupası grubunda Başakşehir’in arkasından ikinci çıktı; altı grup maçını da kaybetmedi (3 galibiyet, 3 beraberlik).",
+    "translations": {
+      "en": "Amedspor finished second behind Başakşehir in its 2015/16 Turkish Cup group without losing a game: three wins and three draws.",
+      "es": "El Amedspor terminó segundo tras el Başakşehir en su grupo de Copa turca 2015/16 sin perder: tres victorias y tres empates.",
+      "fr": "Amedspor a terminé deuxième derrière Başakşehir de son groupe de Coupe de Turquie 2015/16 sans perdre : trois victoires et trois nuls.",
+      "it": "L’Amedspor arrivò secondo dietro al Başakşehir nel girone di Coppa di Turchia 2015/16 senza sconfitte: tre vittorie e tre pareggi.",
+      "pt": "O Amedspor foi vice-líder do grupo da Copa da Turquia de 2015/16 atrás do Başakşehir sem perder: três vitórias e três empates."
+    },
+    "score": 7
+  },
+  {
+    "id": "turkey-super-lig:8",
+    "key": "gaziantep-2019-second-chance-promotion",
+    "sources": [
+      "https://www.tff.org/default.aspx?ftxtID=31430&pageID=287"
+    ],
+    "tr": "Gaziantep FK, 2018’de Süper Lig’e çıkma finalini penaltılarda kaybetti; 2019’da Hatayspor’la 1-1 biten finali bu kez penaltılarda kazanıp lige çıktı.",
+    "translations": {
+      "en": "Gaziantep lost the 2018 promotion final on penalties; in 2019 it returned, drew 1–1 with Hatayspor and won the shoot-out to reach the Süper Lig.",
+      "es": "Gaziantep perdió por penaltis la final de ascenso de 2018; en 2019 volvió, empató 1-1 con Hatayspor y ganó la tanda para subir.",
+      "fr": "Gaziantep a perdu la finale de montée 2018 aux tirs au but ; revenu en 2019, il a fait 1-1 contre Hatayspor puis gagné la séance décisive.",
+      "it": "Il Gaziantep perse ai rigori la finale promozione 2018; tornò nel 2019, pareggiò 1-1 con l’Hatayspor e vinse la lotteria dei rigori.",
+      "pt": "O Gaziantep perdeu nos pênaltis a final de acesso de 2018; voltou em 2019, empatou por 1 a 1 com o Hatayspor e venceu a disputa."
+    },
+    "score": 7
+  },
+  {
+    "id": "turkey-super-lig:12",
+    "key": "kasimpasa-2007-penalty-120th",
+    "sources": [
+      "https://www.tff.org/default.aspx?ftxtID=1465&pageID=285"
+    ],
+    "tr": "Kasımpaşa’nın 2007 Süper Lig’e çıkma finali Altay karşısında 120. dakikada gelen golle 3-3 bitti; 13 penaltılık gollü serinin ardından yükseldiler.",
+    "translations": {
+      "en": "Kasımpaşa’s 2007 promotion final against Altay finished 3–3 after a 120th-minute equaliser; it won an extraordinary shoot-out to reach the Süper Lig.",
+      "es": "La final de ascenso del Kasımpaşa de 2007 ante Altay terminó 3-3 tras un gol en el minuto 120; ganó una extraordinaria tanda de penaltis.",
+      "fr": "La finale de montée 2007 de Kasımpaşa contre Altay s’est achevée sur un 3-3 après une égalisation à la 120e minute ; il a gagné aux tirs au but.",
+      "it": "La finale promozione 2007 del Kasımpaşa contro l’Altay finì 3-3 dopo il pareggio al 120º minuto; vinse poi ai rigori.",
+      "pt": "A final do acesso do Kasımpaşa em 2007 contra o Altay terminou 3 a 3 com empate aos 120 minutos; o time venceu nos pênaltis."
+    },
+    "score": 8
+  },
+  {
+    "id": "turkey-super-lig:18",
+    "key": "corum-2024-bodrum-shootout",
+    "sources": [
+      "https://www.tff.org/Default.aspx?hafta=23&pageID=1649"
+    ],
+    "tr": "Çorum FK, 2024 yükselme play-off’unda Bodrum’la iki maçta da berabere kaldı (1-1 ve 0-0); Süper Lig biletini penaltılarda 5-4 kaçırdı.",
+    "translations": {
+      "en": "Çorum drew both legs of its 2024 promotion play-off tie with Bodrum (1–1 and 0–0), then missed out on the final after losing 5–4 on penalties.",
+      "es": "El Çorum empató ambos partidos del play-off de ascenso 2024 ante Bodrum (1-1 y 0-0) y quedó eliminado en los penaltis por 5-4.",
+      "fr": "Çorum a fait deux nuls face à Bodrum en barrages de montée 2024 (1-1 et 0-0), avant d’être éliminé 5-4 aux tirs au but.",
+      "it": "Il Çorum pareggiò entrambe le gare del play-off promozione 2024 contro il Bodrum (1-1 e 0-0), poi uscì 5-4 ai rigori.",
+      "pt": "O Çorum empatou os dois jogos do mata-mata de acesso de 2024 contra o Bodrum (1 a 1 e 0 a 0), mas caiu nos pênaltis por 5 a 4."
+    },
+    "score": 7
+  },
+  {
+    "id": "turkey-super-lig:18",
+    "key": "corum-2024-knockout-kocaelispor",
+    "sources": [
+      "https://www.tff.org/Default.aspx?hafta=23&pageID=1649"
+    ],
+    "tr": "Çorum FK, 2024’te yükselme play-off’unun ilk turunda Kocaelispor’u 2-1 eledi; bir sonraki turda finali penaltılarla kaçırdı.",
+    "translations": {
+      "en": "Çorum knocked out Kocaelispor 2–1 in the opening round of the 2024 promotion play-offs, only to lose its next tie in a shoot-out.",
+      "es": "El Çorum eliminó 2-1 al Kocaelispor en el primer play-off de ascenso de 2024, pero cayó por penaltis en la siguiente ronda.",
+      "fr": "Çorum a éliminé Kocaelispor 2-1 au premier tour des barrages de montée 2024, avant de tomber aux tirs au but au tour suivant.",
+      "it": "Il Çorum eliminò il Kocaelispor 2-1 al primo turno dei play-off promozione 2024, prima di uscire ai rigori nel turno seguente.",
+      "pt": "O Çorum eliminou o Kocaelispor por 2 a 1 na primeira fase do acesso de 2024, mas caiu nos pênaltis na rodada seguinte."
+    },
+    "score": 7
+  },
+  {
+    "id": "turkey-super-lig:18",
+    "key": "corum-2023-first-division",
+    "sources": [
+      "https://www.tff.org/default.aspx?ftxtID=41273&pageID=338"
+    ],
+    "tr": "Çorum FK, 2023’te sezonun bitimine bir hafta kala TFF 2. Lig şampiyonluğunu garantileyip kulüp tarihinde ilk kez bir üst profesyonel lige yükseldi.",
+    "translations": {
+      "en": "Çorum clinched the 2023 third-tier title with a match to spare, reaching Türkiye’s second-tier professional league for the first time in club history.",
+      "es": "El Çorum conquistó el título de tercera categoría en 2023 a falta de una jornada y ascendió por primera vez a la segunda división profesional.",
+      "fr": "Çorum a remporté le titre de troisième division turque en 2023 avec une journée d’avance, accédant pour la première fois au deuxième échelon.",
+      "it": "Il Çorum vinse il campionato di terza serie nel 2023 con una giornata d’anticipo, raggiungendo per la prima volta la seconda divisione.",
+      "pt": "O Çorum garantiu o título da terceira divisão turca em 2023 com uma rodada de antecedência e subiu à segunda divisão pela primeira vez."
+    },
+    "score": 7
+  },
+  {
+    "id": "turkey-super-lig:15",
+    "key": "rizespor-2016-cup-semi",
+    "sources": [
+      "https://www.tff.org/default.aspx?ftxtID=24648&pageID=267"
+    ],
+    "tr": "Çaykur Rizespor, 2016 Türkiye Kupası’nda yarı finale yükselerek Galatasaray’la eşleşti; İstanbul’da rakibiyle 0-0 berabere kaldı.",
+    "translations": {
+      "en": "Çaykur Rizespor reached the Turkish Cup semi-finals in 2016 and held Galatasaray to a 0–0 draw in Istanbul in the return leg.",
+      "es": "El Çaykur Rizespor alcanzó las semifinales de la Copa turca en 2016 y empató 0-0 ante Galatasaray en Estambul en la vuelta.",
+      "fr": "Çaykur Rizespor a atteint les demi-finales de Coupe de Turquie en 2016 et a tenu Galatasaray en échec 0-0 à Istanbul au retour.",
+      "it": "Il Çaykur Rizespor raggiunse le semifinali di Coppa di Turchia nel 2016 e pareggiò 0-0 contro il Galatasaray a Istanbul al ritorno.",
+      "pt": "O Çaykur Rizespor chegou à semifinal da Copa da Turquia em 2016 e empatou por 0 a 0 com o Galatasaray em Istambul na volta."
+    },
+    "score": 6
+  },
+  {
+    "id": "turkey-super-lig:5",
+    "key": "eyup-2024-title-final-round",
+    "sources": [
+      "https://www.tff.org/Default.aspx?ftxtId=44205&pageId=200"
+    ],
+    "tr": "Eyüpspor, tarihinde ilk Süper Lig biletini aldıktan sonra 2024’ün son haftasında Erzurumspor’u yenip ilk kez 1. Lig şampiyonluğunu da kazandı.",
+    "translations": {
+      "en": "After securing its first-ever Süper Lig promotion, Eyüpspor beat Erzurumspor on the final day in 2024 to win its first second-tier league title too.",
+      "es": "Tras asegurar su primer ascenso a la Süper Lig, el Eyüpspor venció al Erzurumspor en la última jornada de 2024 y ganó además su primer título de Segunda.",
+      "fr": "Après sa première montée en Süper Lig, Eyüpspor a battu Erzurumspor lors de la dernière journée 2024 pour décrocher aussi son premier titre de deuxième division.",
+      "it": "Dopo la prima promozione in Süper Lig, l’Eyüpspor batté l’Erzurumspor all’ultima giornata del 2024 e vinse anche il suo primo campionato di seconda serie.",
+      "pt": "Após garantir o primeiro acesso à Süper Lig, o Eyüpspor venceu o Erzurumspor na última rodada de 2024 e conquistou também o primeiro título da segunda divisão."
+    },
+    "score": 7
+  }
+]

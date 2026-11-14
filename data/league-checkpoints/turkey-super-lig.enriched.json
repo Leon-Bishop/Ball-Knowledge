@@ -1,0 +1,695 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "Alanyaspor",
+    "team_abbreviation": "ALA",
+    "team_stadium": "Bahçeşehir Okulları Stadium",
+    "id": "turkey-super-lig:1",
+    "name": "Alanyaspor",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Alanya",
+    "aliases": [
+      "ALA"
+    ],
+    "emojis": [
+      "🏖️",
+      "🍊",
+      "⚡",
+      "🟠",
+      "🟢"
+    ],
+    "why": [
+      "Alanya coastal resort",
+      "Alanya citrus-growing association; regional clue, not a club symbol",
+      "Şimşekler (Thunders) nickname",
+      "Orange club colour",
+      "Green club colour"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alanyaspor"
+    ],
+    "confidence": "medium",
+    "difficulty": "medium",
+    "fun_fact": "Alanyaspor için yüklediğiniz kulüp verisinde belirtilen stadyum: Bahçeşehir Okulları Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Amed SFK",
+    "team_abbreviation": "AMED",
+    "team_stadium": "Diyarbakır Stadium",
+    "id": "turkey-super-lig:2",
+    "name": "Amed SFK",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Diyarbakır",
+    "aliases": [
+      "AMED"
+    ],
+    "emojis": [
+      "🏰",
+      "🧱",
+      "⚽",
+      "🟢",
+      "🔴"
+    ],
+    "why": [
+      "Diyarbakır historic city walls",
+      "Diyarbakır basalt city walls; city-heritage clue",
+      "Football symbol fallback; no verified mascot",
+      "Green kit identity (provisional)",
+      "Red kit identity (provisional)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Amed_S.F.K."
+    ],
+    "confidence": "low",
+    "difficulty": "hard",
+    "fun_fact": "Amed SFK için yüklediğiniz kulüp verisinde belirtilen stadyum: Diyarbakır Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Beşiktaş",
+    "team_abbreviation": "BJK",
+    "team_stadium": "Vodafone Park",
+    "id": "turkey-super-lig:3",
+    "name": "Beşiktaş",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Istanbul",
+    "aliases": [
+      "BJK"
+    ],
+    "emojis": [
+      "🌉",
+      "⚓",
+      "🦅",
+      "⚫",
+      "⚪"
+    ],
+    "why": [
+      "Bosphorus bridges",
+      "Beşiktaş waterfront neighborhood and maritime association",
+      "Kara Kartallar (Black Eagles)",
+      "Black kit colour",
+      "White kit colour"
+    ],
+    "sources": [
+      "https://bjk.com.tr/en/cms/tarihce/2/75/",
+      "https://www.rsssf.org/miscellaneous/turnick.html"
+    ],
+    "confidence": "high",
+    "difficulty": "easy",
+    "fun_fact": "Beşiktaş için yüklediğiniz kulüp verisinde belirtilen stadyum: Vodafone Park.",
+    "fallback_used": false,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Erzurum BB",
+    "team_abbreviation": "ERZ",
+    "team_stadium": "Kazım Karabekir Stadium",
+    "id": "turkey-super-lig:4",
+    "name": "Erzurum BB",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Erzurum",
+    "aliases": [
+      "ERZ"
+    ],
+    "emojis": [
+      "🏔️",
+      "⛷️",
+      "❄️",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "Erzurum mountain setting",
+      "Erzurum winter sports and ski destination; regional clue",
+      "Winter-sport city association fallback",
+      "Blue kit colour (provisional)",
+      "White kit colour (provisional)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Erzurumspor_F.K."
+    ],
+    "confidence": "low",
+    "difficulty": "hard",
+    "fun_fact": "Erzurum BB için yüklediğiniz kulüp verisinde belirtilen stadyum: Kazım Karabekir Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 5,
+    "team_name": "Eyüpspor",
+    "team_abbreviation": "EYU",
+    "team_stadium": "Recep Tayyip Erdoğan Stadium",
+    "id": "turkey-super-lig:5",
+    "name": "Eyüpspor",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Istanbul",
+    "aliases": [
+      "EYU"
+    ],
+    "emojis": [
+      "🌉",
+      "🛶",
+      "🟣",
+      "🟡",
+      "🏟️"
+    ],
+    "why": [
+      "Bosphorus bridges",
+      "Golden Horn waterfront association for Eyüp; broad geographic clue",
+      "Purple kit colour fallback",
+      "Yellow kit colour",
+      "Stadium association, generic fallback"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ey%C3%BCpspor"
+    ],
+    "confidence": "medium",
+    "difficulty": "hard",
+    "fun_fact": "Eyüpspor için yüklediğiniz kulüp verisinde belirtilen stadyum: Recep Tayyip Erdoğan Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Fenerbahçe",
+    "team_abbreviation": "FB",
+    "team_stadium": "Şükrü Saracoğlu Stadium",
+    "id": "turkey-super-lig:6",
+    "name": "Fenerbahçe",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Istanbul",
+    "aliases": [
+      "FB"
+    ],
+    "emojis": [
+      "🌉",
+      "🔦",
+      "🐤",
+      "🔵",
+      "🟡"
+    ],
+    "why": [
+      "Bosphorus bridges",
+      "Flashlight representing the fener (lighthouse/light) in the Fenerbahçe name; symbolic fallback, not a literal lighthouse",
+      "Sarı Kanaryalar (Yellow Canaries)",
+      "Navy kit colour",
+      "Yellow kit colour"
+    ],
+    "sources": [
+      "https://www.uefa.com/news-media/news/0230-0e7ba1dc0e1d-95164ef968ba-1000--handy-on-the-wing-europe-s-footballing-birds/",
+      "https://www.rsssf.org/miscellaneous/turnick.html",
+      "https://fenerbahcefederation.com/history/"
+    ],
+    "confidence": "high",
+    "difficulty": "easy",
+    "fun_fact": "Fenerbahçe’nin ilk armasında, semte adını veren deniz feneri bulunuyordu. Kulübün ilk renkleri ise sarı ve beyazdı.",
+    "fallback_used": false,
+    "fun_fact_source": "https://fenerbahcefederation.com/history/",
+    "fun_fact_status": "verified"
+  },
+  {
+    "team_id": 7,
+    "team_name": "Galatasaray",
+    "team_abbreviation": "GS",
+    "team_stadium": "Türk Telekom Stadium",
+    "id": "turkey-super-lig:7",
+    "name": "Galatasaray",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Istanbul",
+    "aliases": [
+      "GS"
+    ],
+    "emojis": [
+      "🌉",
+      "🏫",
+      "🦁",
+      "🔥",
+      "🏆"
+    ],
+    "why": [
+      "Bosphorus bridges",
+      "Club origins at Galatasaray High School",
+      "Aslanlar (Lions) nickname",
+      "Red-yellow colours likened to flames",
+      "Historic 2000 UEFA Cup victory"
+    ],
+    "sources": [
+      "https://www.galatasaray.org/en/s/story-of-our-colors/186",
+      "https://www.rsssf.org/miscellaneous/turnick.html",
+      "https://www.galatasaray.org/en/s/galatasaray-spor-kulubu-1905/3"
+    ],
+    "confidence": "high",
+    "difficulty": "easy",
+    "fun_fact": "Galatasaray, 1905’te Ali Sami Yen ve arkadaşları tarafından Galatasaray Lisesi’nde kuruldu. 2000’de UEFA Kupası’nı kazandı.",
+    "fallback_used": false,
+    "fun_fact_source": "https://www.galatasaray.org/en/s/galatasaray-spor-kulubu-1905/3",
+    "fun_fact_status": "verified"
+  },
+  {
+    "team_id": 8,
+    "team_name": "Gaziantep FK",
+    "team_abbreviation": "GAZ",
+    "team_stadium": "Gaziantep Stadium",
+    "id": "turkey-super-lig:8",
+    "name": "Gaziantep FK",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Gaziantep",
+    "aliases": [
+      "GAZ"
+    ],
+    "emojis": [
+      "🍽️",
+      "🥜",
+      "🔴",
+      "⚫",
+      "🏟️"
+    ],
+    "why": [
+      "Gaziantep culinary association",
+      "Gaziantep pistachios; regional culinary association",
+      "Red club colour fallback",
+      "Black club colour",
+      "Stadium association, generic fallback"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gaziantep_F.K."
+    ],
+    "confidence": "medium",
+    "difficulty": "hard",
+    "fun_fact": "Gaziantep FK için yüklediğiniz kulüp verisinde belirtilen stadyum: Gaziantep Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 9,
+    "team_name": "Gençlerbirliği",
+    "team_abbreviation": "GNC",
+    "team_stadium": "Eryaman Stadium",
+    "id": "turkey-super-lig:9",
+    "name": "Gençlerbirliği",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Ankara",
+    "aliases": [
+      "GNC"
+    ],
+    "emojis": [
+      "🏛️",
+      "👦",
+      "🔴",
+      "⚫",
+      "👦"
+    ],
+    "why": [
+      "Ankara capital-city civic buildings",
+      "Gençlerbirliği name means youth union; club-name clue",
+      "Red club colour fallback",
+      "Black club colour",
+      "Club name means Youth Union"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gen%C3%A7lerbirli%C4%9Fi_S.K.",
+      "https://www.rsssf.org/miscellaneous/turnick.html"
+    ],
+    "confidence": "medium",
+    "difficulty": "medium",
+    "fun_fact": "Gençlerbirliği için yüklediğiniz kulüp verisinde belirtilen stadyum: Eryaman Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Göztepe",
+    "team_abbreviation": "GOZ",
+    "team_stadium": "Gürsel Aksel Stadium",
+    "id": "turkey-super-lig:10",
+    "name": "Göztepe",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Izmir",
+    "aliases": [
+      "GOZ"
+    ],
+    "emojis": [
+      "🌊",
+      "👁️",
+      "🔴",
+      "🟡",
+      "🏁"
+    ],
+    "why": [
+      "Izmir Aegean coast",
+      "Göz means eye; wordplay on Göztepe name, not official mascot",
+      "Red kit colour fallback",
+      "Yellow kit colour",
+      "Chequered detail on badge"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/G%C3%B6ztepe_S.K.",
+      "https://www.rsssf.org/miscellaneous/turnick.html"
+    ],
+    "confidence": "medium",
+    "difficulty": "medium",
+    "fun_fact": "Göztepe için yüklediğiniz kulüp verisinde belirtilen stadyum: Gürsel Aksel Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Başakşehir",
+    "team_abbreviation": "IBA",
+    "team_stadium": "Başakşehir Fatih Terim Stadium",
+    "id": "turkey-super-lig:11",
+    "name": "Başakşehir",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Istanbul",
+    "aliases": [
+      "IBA"
+    ],
+    "emojis": [
+      "🌉",
+      "🌾",
+      "🟠",
+      "🔵",
+      "🏟️"
+    ],
+    "why": [
+      "Bosphorus bridges",
+      "Başak means ear of grain; name-based clue, not mascot",
+      "Orange club colour fallback",
+      "Blue club colour",
+      "Home stadium association, generic fallback"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/%C4%B0stanbul_Ba%C5%9Fak%C5%9Fehir_F.K."
+    ],
+    "confidence": "medium",
+    "difficulty": "medium",
+    "fun_fact": "Başakşehir için yüklediğiniz kulüp verisinde belirtilen stadyum: Başakşehir Fatih Terim Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 12,
+    "team_name": "Kasımpaşa",
+    "team_abbreviation": "KAS",
+    "team_stadium": "Recep Tayyip Erdoğan Stadium",
+    "id": "turkey-super-lig:12",
+    "name": "Kasımpaşa",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Istanbul",
+    "aliases": [
+      "KAS"
+    ],
+    "emojis": [
+      "🌉",
+      "⛵",
+      "🔵",
+      "⚪",
+      "⚓"
+    ],
+    "why": [
+      "Bosphorus bridges",
+      "Kasımpaşa neighborhood by the Golden Horn; maritime association",
+      "Blue club colour fallback",
+      "White club colour",
+      "Istanbul waterfront association, broad fallback"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kas%C4%B1mpa%C5%9Fa_S.K."
+    ],
+    "confidence": "low",
+    "difficulty": "hard",
+    "fun_fact": "Kasımpaşa için yüklediğiniz kulüp verisinde belirtilen stadyum: Recep Tayyip Erdoğan Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 13,
+    "team_name": "Kocaelispor",
+    "team_abbreviation": "KOC",
+    "team_stadium": "Yıldız Entegre Kocaeli Stadium",
+    "id": "turkey-super-lig:13",
+    "name": "Kocaelispor",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Izmit",
+    "aliases": [
+      "KOC"
+    ],
+    "emojis": [
+      "🏭",
+      "⚙️",
+      "🟢",
+      "⚫",
+      "🏆"
+    ],
+    "why": [
+      "Izmit industrial association",
+      "Kocaeli industrial identity; regional clue",
+      "Green club colour fallback",
+      "Black club colour",
+      "Turkish Cup success"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kocaelispor"
+    ],
+    "confidence": "medium",
+    "difficulty": "medium",
+    "fun_fact": "Kocaelispor için yüklediğiniz kulüp verisinde belirtilen stadyum: Yıldız Entegre Kocaeli Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 14,
+    "team_name": "Konyaspor",
+    "team_abbreviation": "KON",
+    "team_stadium": "Konya Büyükşehir Stadium",
+    "id": "turkey-super-lig:14",
+    "name": "Konyaspor",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Konya",
+    "aliases": [
+      "KON"
+    ],
+    "emojis": [
+      "🌾",
+      "🏛️",
+      "🦅",
+      "🟢",
+      "⚪"
+    ],
+    "why": [
+      "Konya agricultural plain",
+      "Konya historical Seljuk architecture; broad city association",
+      "Double-headed eagle badge motif",
+      "Green kit colour",
+      "White kit colour"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Konyaspor",
+      "https://www.rsssf.org/miscellaneous/turnick.html"
+    ],
+    "confidence": "medium",
+    "difficulty": "medium",
+    "fun_fact": "Konyaspor için yüklediğiniz kulüp verisinde belirtilen stadyum: Konya Büyükşehir Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Çaykur Rizespor",
+    "team_abbreviation": "CAY",
+    "team_stadium": "Çaykur Didi Stadium",
+    "id": "turkey-super-lig:15",
+    "name": "Çaykur Rizespor",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Rize",
+    "aliases": [
+      "CAY"
+    ],
+    "emojis": [
+      "🍵",
+      "🌧️",
+      "🌿",
+      "🟢",
+      "🔵"
+    ],
+    "why": [
+      "Rize tea-growing region",
+      "Rize rainy Black Sea climate, important to local tea growing",
+      "Tea leaves association fallback",
+      "Green kit colour",
+      "Blue kit colour"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/%C3%87aykur_Rizespor"
+    ],
+    "confidence": "medium",
+    "difficulty": "medium",
+    "fun_fact": "Çaykur Rizespor için yüklediğiniz kulüp verisinde belirtilen stadyum: Çaykur Didi Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Samsunspor",
+    "team_abbreviation": "SAM",
+    "team_stadium": "Samsun Stadium",
+    "id": "turkey-super-lig:16",
+    "name": "Samsunspor",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Samsun",
+    "aliases": [
+      "SAM"
+    ],
+    "emojis": [
+      "🌊",
+      "🚢",
+      "🔴",
+      "⚪",
+      "🐎"
+    ],
+    "why": [
+      "Black Sea coast",
+      "Samsun Black Sea port city; regional clue",
+      "Red kit colour fallback",
+      "White kit colour",
+      "Horseback statue on club crest; requires editorial review"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Samsunspor"
+    ],
+    "confidence": "medium",
+    "difficulty": "medium",
+    "fun_fact": "Samsunspor için yüklediğiniz kulüp verisinde belirtilen stadyum: Samsun Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 17,
+    "team_name": "Trabzonspor",
+    "team_abbreviation": "TS",
+    "team_stadium": "Medical Park Stadium",
+    "id": "turkey-super-lig:17",
+    "name": "Trabzonspor",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Trabzon",
+    "aliases": [
+      "TS"
+    ],
+    "emojis": [
+      "🌊",
+      "🐟",
+      "🌪️",
+      "🔴",
+      "🔵"
+    ],
+    "why": [
+      "Black Sea coast",
+      "Black Sea anchovy association with Trabzon; regional clue",
+      "Black Sea Storm nickname association",
+      "Burgundy kit colour, approximated with red emoji",
+      "Light-blue kit colour"
+    ],
+    "sources": [
+      "https://cdn.trabzonspor.org.tr/be0b5c2bf4614c5c9baa658513b4ddb0.pdf",
+      "https://www.rsssf.org/miscellaneous/turnick.html"
+    ],
+    "confidence": "medium",
+    "difficulty": "easy",
+    "fun_fact": "Trabzonspor için yüklediğiniz kulüp verisinde belirtilen stadyum: Medical Park Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Çorum FK",
+    "team_abbreviation": "COR",
+    "team_stadium": "Çorum City Stadium",
+    "id": "turkey-super-lig:18",
+    "name": "Çorum FK",
+    "league_id": "turkey-super-lig",
+    "country": "Türkiye",
+    "continent": "Europe",
+    "city": "Çorum",
+    "aliases": [
+      "COR"
+    ],
+    "emojis": [
+      "🌾",
+      "🥜",
+      "⚽",
+      "🔴",
+      "⚫"
+    ],
+    "why": [
+      "Çorum inland Anatolian setting, broad association",
+      "Çorum roasted chickpea (leblebi) specialty; approximate food emoji fallback",
+      "Football fallback; mascot not verified",
+      "Red club colour provisional",
+      "Black club colour provisional"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/%C3%87orum_F.K."
+    ],
+    "confidence": "low",
+    "difficulty": "hard",
+    "fun_fact": "Çorum FK için yüklediğiniz kulüp verisinde belirtilen stadyum: Çorum City Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  }
+]

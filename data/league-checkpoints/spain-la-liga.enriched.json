@@ -1,0 +1,722 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "Deportivo Alavés",
+    "team_abbreviation": "ALA",
+    "team_stadium": "Estadio de Mendizorroza",
+    "id": "spain-la-liga:1",
+    "name": "Deportivo Alavés",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Vitoria-Gasteiz",
+    "aliases": [
+      "ALA"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🔵",
+      "⚪",
+      "🦊"
+    ],
+    "why": [
+      "City or regional visual cue for Vitoria-Gasteiz (provisional)",
+      "Secondary local context for Vitoria-Gasteiz (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Deportivo Alavés için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio de Mendizorroza.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Deportivo La Coruña",
+    "team_abbreviation": "DEP",
+    "team_stadium": "Estadio de Riazor",
+    "id": "spain-la-liga:2",
+    "name": "Deportivo La Coruña",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "A Coruña",
+    "aliases": [
+      "DEP"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🌊",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for A Coruña (provisional)",
+      "Secondary local context for A Coruña (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Deportivo La Coruña için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio de Riazor.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Athletic Club",
+    "team_abbreviation": "ATH",
+    "team_stadium": "San Mamés Stadium",
+    "id": "spain-la-liga:3",
+    "name": "Athletic Club",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Bilbao",
+    "aliases": [
+      "ATH"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🦁",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Bilbao (provisional)",
+      "Secondary local context for Bilbao (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Athletic Club için yüklediğiniz kulüp verisinde belirtilen stadyum: San Mamés Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Atlético Madrid",
+    "team_abbreviation": "ATM",
+    "team_stadium": "Wanda Metropolitano",
+    "id": "spain-la-liga:4",
+    "name": "Atlético Madrid",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Madrid",
+    "aliases": [
+      "ATM"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "🐻",
+      "🔴",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Madrid (provisional)",
+      "Secondary local context for Madrid (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Atlético Madrid için yüklediğiniz kulüp verisinde belirtilen stadyum: Wanda Metropolitano.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 5,
+    "team_name": "FC Barcelona",
+    "team_abbreviation": "BAR",
+    "team_stadium": "Camp Nou",
+    "id": "spain-la-liga:5",
+    "name": "FC Barcelona",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Barcelona",
+    "aliases": [
+      "BAR"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🔵",
+      "🔴",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Barcelona (provisional)",
+      "Secondary local context for Barcelona (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "FC Barcelona için yüklediğiniz kulüp verisinde belirtilen stadyum: Camp Nou.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Elche",
+    "team_abbreviation": "ELC",
+    "team_stadium": "Estadio Manuel Martínez Valero",
+    "id": "spain-la-liga:6",
+    "name": "Elche",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Elche",
+    "aliases": [
+      "ELC"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🌴",
+      "🟢",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Elche (provisional)",
+      "Secondary local context for Elche (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Elche için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio Manuel Martínez Valero.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 7,
+    "team_name": "Celta Vigo",
+    "team_abbreviation": "CEL",
+    "team_stadium": "Abanca-Balaídos",
+    "id": "spain-la-liga:7",
+    "name": "Celta Vigo",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Vigo",
+    "aliases": [
+      "CEL"
+    ],
+    "emojis": [
+      "🌊",
+      "🏟️",
+      "🌊",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Vigo (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Celta Vigo için yüklediğiniz kulüp verisinde belirtilen stadyum: Abanca-Balaídos.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 8,
+    "team_name": "Espanyol",
+    "team_abbreviation": "ESP",
+    "team_stadium": "RCDE Stadium",
+    "id": "spain-la-liga:8",
+    "name": "Espanyol",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Barcelona",
+    "aliases": [
+      "ESP"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "🐦",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Barcelona (provisional)",
+      "Secondary local context for Barcelona (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Espanyol için yüklediğiniz kulüp verisinde belirtilen stadyum: RCDE Stadium.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 9,
+    "team_name": "Getafe CF",
+    "team_abbreviation": "GET",
+    "team_stadium": "Coliseum Alfonso Pérez",
+    "id": "spain-la-liga:9",
+    "name": "Getafe CF",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Getafe",
+    "aliases": [
+      "GET"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "✈️",
+      "🔵",
+      "🏟️"
+    ],
+    "why": [
+      "City or regional visual cue for Getafe (provisional)",
+      "Secondary local context for Getafe (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Getafe CF için yüklediğiniz kulüp verisinde belirtilen stadyum: Coliseum Alfonso Pérez.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Levante",
+    "team_abbreviation": "LEV",
+    "team_stadium": "Estadi Ciutat de València",
+    "id": "spain-la-liga:10",
+    "name": "Levante",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Valencia",
+    "aliases": [
+      "LEV"
+    ],
+    "emojis": [
+      "🍊",
+      "🌳",
+      "🐸",
+      "🔵",
+      "🔴"
+    ],
+    "why": [
+      "City or regional visual cue for Valencia (provisional)",
+      "Secondary local context for Valencia (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Levante için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadi Ciutat de València.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Málaga",
+    "team_abbreviation": "MCF",
+    "team_stadium": "La Rosaleda",
+    "id": "spain-la-liga:11",
+    "name": "Málaga",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Málaga",
+    "aliases": [
+      "MCF"
+    ],
+    "emojis": [
+      "🌊",
+      "⚽",
+      "🌊",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Málaga (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Málaga için yüklediğiniz kulüp verisinde belirtilen stadyum: La Rosaleda.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 12,
+    "team_name": "CA Osasuna",
+    "team_abbreviation": "OSA",
+    "team_stadium": "Estadio El Sadar",
+    "id": "spain-la-liga:12",
+    "name": "CA Osasuna",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Pamplona",
+    "aliases": [
+      "OSA"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🔴",
+      "🏰",
+      "🔵"
+    ],
+    "why": [
+      "City or regional visual cue for Pamplona (provisional)",
+      "Secondary local context for Pamplona (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "CA Osasuna için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio El Sadar.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 13,
+    "team_name": "Racing Santander",
+    "team_abbreviation": "RAC",
+    "team_stadium": "Campos de Sport de El Sardinero",
+    "id": "spain-la-liga:13",
+    "name": "Racing Santander",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Santander",
+    "aliases": [
+      "RAC"
+    ],
+    "emojis": [
+      "🌊",
+      "🏟️",
+      "🌊",
+      "🟢",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for Santander (provisional)",
+      "Distinctiveness fallback, not a verified club-specific clue",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Racing Santander için yüklediğiniz kulüp verisinde belirtilen stadyum: Campos de Sport de El Sardinero.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 14,
+    "team_name": "Rayo Vallecano",
+    "team_abbreviation": "RAY",
+    "team_stadium": "Estadio de Vallecas",
+    "id": "spain-la-liga:14",
+    "name": "Rayo Vallecano",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Madrid",
+    "aliases": [
+      "RAY"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "⚡",
+      "⚪",
+      "🔴"
+    ],
+    "why": [
+      "City or regional visual cue for Madrid (provisional)",
+      "Secondary local context for Madrid (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Rayo Vallecano için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio de Vallecas.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Real Betis",
+    "team_abbreviation": "BET",
+    "team_stadium": "Estadio Benito Villamarín",
+    "id": "spain-la-liga:15",
+    "name": "Real Betis",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Seville",
+    "aliases": [
+      "BET"
+    ],
+    "emojis": [
+      "🍊",
+      "🌳",
+      "🟢",
+      "⚪",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Seville (provisional)",
+      "Secondary local context for Seville (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Real Betis için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio Benito Villamarín.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Real Madrid",
+    "team_abbreviation": "RMA",
+    "team_stadium": "Santiago Bernabéu",
+    "id": "spain-la-liga:16",
+    "name": "Real Madrid",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Madrid",
+    "aliases": [
+      "RMA"
+    ],
+    "emojis": [
+      "🏙️",
+      "🏟️",
+      "👑",
+      "⚪",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Madrid (provisional)",
+      "Secondary local context for Madrid (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Real Madrid için yüklediğiniz kulüp verisinde belirtilen stadyum: Santiago Bernabéu.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 17,
+    "team_name": "Real Sociedad",
+    "team_abbreviation": "RSO",
+    "team_stadium": "Reale Arena",
+    "id": "spain-la-liga:17",
+    "name": "Real Sociedad",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "San Sebastián",
+    "aliases": [
+      "RSO"
+    ],
+    "emojis": [
+      "🌊",
+      "⚓",
+      "👑",
+      "🔵",
+      "⚪"
+    ],
+    "why": [
+      "City or regional visual cue for San Sebastián (provisional)",
+      "Secondary local context for San Sebastián (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Real Sociedad için yüklediğiniz kulüp verisinde belirtilen stadyum: Reale Arena.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Sevilla FC",
+    "team_abbreviation": "SEV",
+    "team_stadium": "Estadio Ramón Sánchez Pizjuán",
+    "id": "spain-la-liga:18",
+    "name": "Sevilla FC",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Seville",
+    "aliases": [
+      "SEV"
+    ],
+    "emojis": [
+      "🍊",
+      "🌳",
+      "🔴",
+      "⚪",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Seville (provisional)",
+      "Secondary local context for Seville (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Sevilla FC için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio Ramón Sánchez Pizjuán.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 19,
+    "team_name": "Valencia CF",
+    "team_abbreviation": "VAL",
+    "team_stadium": "Estadio de Mestalla",
+    "id": "spain-la-liga:19",
+    "name": "Valencia CF",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Valencia",
+    "aliases": [
+      "VAL"
+    ],
+    "emojis": [
+      "🍊",
+      "🌳",
+      "🦇",
+      "🟠",
+      "⚫"
+    ],
+    "why": [
+      "City or regional visual cue for Valencia (provisional)",
+      "Secondary local context for Valencia (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Valencia CF için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio de Mestalla.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  },
+  {
+    "team_id": 20,
+    "team_name": "Villarreal CF",
+    "team_abbreviation": "VIL",
+    "team_stadium": "Estadio de la Cerámica",
+    "id": "spain-la-liga:20",
+    "name": "Villarreal CF",
+    "league_id": "spain-la-liga",
+    "country": "Spain",
+    "continent": "Europe",
+    "city": "Villarreal",
+    "aliases": [
+      "VIL"
+    ],
+    "emojis": [
+      "📍",
+      "🗺️",
+      "🟡",
+      "🚢",
+      "🏆"
+    ],
+    "why": [
+      "City or regional visual cue for Villarreal (provisional)",
+      "Secondary local context for Villarreal (provisional)",
+      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Candidate club colour or visual identity (requires verification)",
+      "Candidate club colour, trophy or distinctive association (requires verification)"
+    ],
+    "sources": [],
+    "confidence": "low",
+    "difficulty": "medium",
+    "fun_fact": "Villarreal CF için yüklediğiniz kulüp verisinde belirtilen stadyum: Estadio de la Cerámica.",
+    "fallback_used": true,
+    "fun_fact_source": "provided_team_data",
+    "fun_fact_status": "source_data_only"
+  }
+]

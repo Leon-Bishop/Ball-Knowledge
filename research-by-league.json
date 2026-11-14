@@ -1,0 +1,86 @@
+{
+  "belgian-pro-league": {
+    "clubs": 18,
+    "target": 54,
+    "populated": 40,
+    "source_tagged": 27,
+    "six_languages": 24
+  },
+  "brazil-serie-a": {
+    "clubs": 20,
+    "target": 60,
+    "populated": 47,
+    "source_tagged": 30,
+    "six_languages": 27
+  },
+  "england-premier-league": {
+    "clubs": 20,
+    "target": 60,
+    "populated": 60,
+    "source_tagged": 42,
+    "six_languages": 37
+  },
+  "france-ligue-1": {
+    "clubs": 18,
+    "target": 54,
+    "populated": 46,
+    "source_tagged": 29,
+    "six_languages": 28
+  },
+  "germany-bundesliga": {
+    "clubs": 18,
+    "target": 54,
+    "populated": 50,
+    "source_tagged": 36,
+    "six_languages": 30
+  },
+  "greece-super-league": {
+    "clubs": 14,
+    "target": 42,
+    "populated": 31,
+    "source_tagged": 18,
+    "six_languages": 15
+  },
+  "italy-serie-a": {
+    "clubs": 20,
+    "target": 60,
+    "populated": 52,
+    "source_tagged": 36,
+    "six_languages": 22
+  },
+  "netherlands-eredivisie": {
+    "clubs": 18,
+    "target": 54,
+    "populated": 44,
+    "source_tagged": 30,
+    "six_languages": 26
+  },
+  "portugal-liga-portugal": {
+    "clubs": 18,
+    "target": 54,
+    "populated": 37,
+    "source_tagged": 23,
+    "six_languages": 17
+  },
+  "scotland-premiership": {
+    "clubs": 12,
+    "target": 36,
+    "populated": 35,
+    "source_tagged": 26,
+    "six_languages": 26
+  },
+  "spain-la-liga": {
+    "clubs": 20,
+    "target": 60,
+    "populated": 51,
+    "source_tagged": 37,
+    "six_languages": 33
+  },
+  "turkey-super-lig": {
+    "clubs": 18,
+    "target": 90,
+    "populated": 60,
+    "source_tagged": 54,
+    "six_languages": 49
+  }
+}

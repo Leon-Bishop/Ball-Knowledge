@@ -1,0 +1,68 @@
+{
+  "belgian-pro-league": {
+    "file": "Belgian Pro League logo (2020, boxed).svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Belgian%20Pro%20League%20logo%20%282020%2C%20boxed%29.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Belgian_Pro_League_logo_%282020%2C_boxed%29.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "brazil-serie-a": {
+    "file": "Campeonato Brasileiro Série A logo (2026).svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato%20Brasileiro%20S%C3%A9rie%20A%20logo%20%282026%29.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Campeonato_Brasileiro_S%C3%A9rie_A_logo_%282026%29.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "england-premier-league": {
+    "file": "Pl-logo-light.svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pl-logo-light.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Pl-logo-light.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "france-ligue-1": {
+    "file": "Logo Ligue 1 McDonald's 2024.svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Ligue%201%20McDonald%27s%202024.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Logo_Ligue_1_McDonald%27s_2024.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "germany-bundesliga": {
+    "file": "Bundesliga logo.svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesliga%20logo.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Bundesliga_logo.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "greece-super-league": {
+    "file": "Stoiximan Super League Greece logo.svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stoiximan%20Super%20League%20Greece%20logo.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Stoiximan_Super_League_Greece_logo.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "italy-serie-a": {
+    "file": "Serie A logo 2022.svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Serie%20A%20logo%202022.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Serie_A_logo_2022.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "netherlands-eredivisie": {
+    "file": "VriendenLoterij Eredivisie Logo.png",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/VriendenLoterij%20Eredivisie%20Logo.png",
+    "source_page": "https://commons.wikimedia.org/wiki/File:VriendenLoterij_Eredivisie_Logo.png",
+    "status": "identified; runtime fetch not tested"
+  },
+  "portugal-liga-portugal": {
+    "file": "Liga Portugal Betclic logo.svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Liga%20Portugal%20Betclic%20logo.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Liga_Portugal_Betclic_logo.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "spain-la-liga": {
+    "file": "LaLiga EA Sports 2023 Vertical Logo.svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LaLiga%20EA%20Sports%202023%20Vertical%20Logo.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:LaLiga_EA_Sports_2023_Vertical_Logo.svg",
+    "status": "identified; runtime fetch not tested"
+  },
+  "turkey-super-lig": {
+    "file": "Süper Lig logo.svg",
+    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%BCper%20Lig%20logo.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:S%C3%BCper_Lig_logo.svg",
+    "status": "identified; runtime fetch not tested"
+  }
+}
