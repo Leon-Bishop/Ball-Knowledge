@@ -3,7 +3,7 @@ const normalize=s=>String(s||'').toLocaleLowerCase('en').replace(/ı/g,'i').repl
 function warn(s){console.warn(s);$('warnings').textContent+=s+'\n'}
 function validate(){let ids=new Set(),seq=new Set();for(const t of teams){for(const k of ['id','name','league_id','emojis','why','sources','confidence','difficulty','fun_fact'])if(t[k]==null)warn('Missing '+k+': '+(t.name||'?'));if(ids.has(t.id))warn('Duplicate ID: '+t.id);ids.add(t.id);if(!leagues.some(l=>l.id===t.league_id))warn('Missing league: '+t.name+' → '+t.league_id);if(!Array.isArray(t.emojis)||t.emojis.length!==5)warn('Invalid emoji count: '+t.name);else{let key=JSON.stringify(t.emojis);if(seq.has(key))warn('Duplicate emoji sequence: '+t.name);seq.add(key)}}}
 function valid(t){return t.id&&t.name&&t.league_id&&Array.isArray(t.emojis)&&t.emojis.length===5&&leagues.some(l=>l.id===t.league_id)}
-function options(key){if(key==='difficulty'){const available=new Set(teams.map(t=>t.difficulty));return ['easy','medium','hard'].filter(v=>available.has(v)).map(v=>[v,v]);}let vals=key==='league_id'?leagues.filter(l=>teams.some(t=>t.league_id===l.id)).map(l=>[l.id,l.name]):[...new Set(teams.flatMap(t=>key==='tag'?(leagues.find(l=>l.id===t.league_id)?.tags||[]):[t[key]]).filter(Boolean))].sort().map(v=>[v,v]);return vals}
+function options(key){if(key==='difficulty'){return ['easy','medium','hard'].map(v=>[v,v]);}let vals=key==='league_id'?leagues.filter(l=>teams.some(t=>t.league_id===l.id)).map(l=>[l.id,l.name]):[...new Set(teams.flatMap(t=>key==='tag'?(leagues.find(l=>l.id===t.league_id)?.tags||[]):[t[key]]).filter(Boolean))].sort().map(v=>[v,v]);return vals}
 const officialLogos={
  "belgian-pro-league": "https://commons.wikimedia.org/wiki/Special:FilePath/Belgian%20Pro%20League%20logo%20%282020%2C%20boxed%29.svg",
  "brazil-serie-a": "https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato%20Brasileiro%20S%C3%A9rie%20A%20logo%20%282026%29.svg",
@@ -45,6 +45,7 @@ function makeLeagueGrid(){
    localStorage.setItem('bk-leagues',JSON.stringify([...chosenLeagues]));makeLeagueGrid();filter()};grid.append(b);
  }
 }
+function setAllLeagues(selectAll){chosenLeagues=new Set(selectAll?leagues.map(l=>l.id):[]);localStorage.setItem('bk-leagues',JSON.stringify([...chosenLeagues]));makeLeagueGrid();filter()}
 function makeFilters(){const prior=Object.fromEntries(fields.map(f=>[f,$('f-'+f)?.value||'']));$('filters').innerHTML='';for(const f of fields){let label=document.createElement('label');label.textContent=f==='difficulty'?tr('difficulty'):f;let sel=document.createElement('select');sel.id='f-'+f;sel.innerHTML='<option value="">'+tr('all')+'</option>';for(const [v,n] of options(f)){let o=document.createElement('option');o.value=v;o.textContent=(['easy','medium','hard'].includes(n)?tr(n):n);sel.append(o)}sel.value=prior[f];sel.onchange=filter;label.append(sel);$('filters').append(label)}}
 function filter(){
  // The filter controls the NEXT session. A session already in progress keeps its fixed pool and order.
@@ -177,7 +178,12 @@ function share(){
  let result;
  if(session?.completed){const s=BallKnowledgeSession.summary(session);result=`⚽ Ball Knowledge 🏆 ${s.score}/${s.maxScore} · ${s.correct}/${s.total} ${tr('clubsCorrect')}`}
  else result=`${tr('shareTitle')} ⚽ ${finished&&outcomes.includes('🟩')?outcomes.length+'/5':'X/5'} ${outcomes.join('')}${'⬜'.repeat(5-outcomes.length)}`;
- navigator.clipboard?.writeText(result).then(()=>$('message').textContent=tr('copied')).catch(()=>prompt(tr('copyResult'),result));
+ const text=result+' '+window.location.href.split('#')[0];
+ if(window.confirm('Share on X (Twitter)?\\nCancel to copy the result and game link instead.')){
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(text),'_blank','noopener,noreferrer');
+ }else if(navigator.clipboard?.writeText){
+  navigator.clipboard.writeText(text).then(()=>$('message').textContent=tr('copied')).catch(()=>prompt(tr('copyResult'),text));
+ }else prompt(tr('copyResult'),text);
 }
 function getFallbackFact(team){
  const direct=(team.fun_fact||'').trim();
@@ -233,6 +239,7 @@ function setView(view){
  for(const [key,id] of Object.entries({selection:'selectionView',game:'gameView',stats:'statsView',settings:'settingsView'}))$(id).classList.toggle('hidden',view!==key);
  for(const btn of document.querySelectorAll('.nav-item')){const active=btn.dataset.screen===view;btn.classList.toggle('active',active);if(active)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current')}
  if(view==='stats')updateStats();
+ if(view==='settings')$('settingsChoose').textContent=session?'Back to game':tr('selectLeagues');
  window.scrollTo({top:0,behavior:'instant'});
 }
 function refreshLanguage(){
@@ -251,7 +258,7 @@ function refreshLanguage(){
  $('settingsEyebrow').textContent=tr('settingsEyebrow');$('settingsTitle').textContent=tr('settingsTitle');
  $('settingsLanguageLabel').textContent=tr('settingsLanguage');$('settingsCurrentLanguage').textContent=$('language').selectedOptions[0]?.textContent||'';
  $('settingsThemeLabel').textContent=tr('settingsAppearance');$('settingsTheme').textContent=tr('theme');
- $('statsChoose').textContent=tr('selectLeagues');$('settingsChoose').textContent=tr('selectLeagues');
+ $('statsChoose').textContent=tr('selectLeagues');$('settingsChoose').textContent=session?'Back to game':tr('selectLeagues');
  $('navLeagues').textContent=tr('navLeagues');$('navPlay').textContent=tr('navPlay');
  $('navStats').textContent=tr('navStats');$('navSettings').textContent=tr('navSettings');
  updateStartButton();updateStats();
@@ -273,6 +280,8 @@ $('daily').onchange=()=>{/* Applies when the next session starts; never restarts
 const toggleTheme=()=>{document.body.classList.toggle('dark');localStorage.setItem('efq-theme',document.body.classList.contains('dark')?'dark':'light')};
 $('theme').onclick=toggleTheme;$('settingsTheme').onclick=toggleTheme;
 $('language').onchange=()=>{lang=$('language').value;localStorage.setItem('efq-language',lang);refreshLanguage()};
-for(const btn of document.querySelectorAll('[data-screen]'))btn.onclick=()=>setView(btn.dataset.screen);
+$('selectAllLeagues').onclick=()=>setAllLeagues(true);
+$('deselectAllLeagues').onclick=()=>setAllLeagues(false);
+for(const btn of document.querySelectorAll('[data-screen]'))btn.onclick=()=>setView(btn.id==='settingsChoose'&&session?'game':btn.dataset.screen);
 if(localStorage.getItem('efq-theme')==='dark')document.body.classList.add('dark');
 setView('selection');init();
