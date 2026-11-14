@@ -1,5 +1,13 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const js=readFileSync(new URL('../assets/app.js',import.meta.url),'utf8');
-assert(js.includes("return ['easy','medium','hard'].filter(v=>available.has(v))"),'Difficulty values must always be Easy, Medium, Hard');
-console.log('✓ Difficulty order is Easy → Medium → Hard (localized labels).');
+const teams=JSON.parse(readFileSync(new URL('../teams.enriched.json',import.meta.url),'utf8'));
+const translations=JSON.parse(readFileSync(new URL('../i18n.json',import.meta.url),'utf8'));
+assert(js.includes('short:5,medium:10'),'Short and Medium must be 5/10 rounds; Long includes all clubs.');
+assert(js.includes("chosenLeagues.has(t.league_id)"),'Only league selection may constrain the club pool.');
+assert(!js.includes('t.difficulty')&&!js.includes('t[f]===v'),'Club difficulty must not filter quiz pools.');
+assert(teams.every(t=>!Object.hasOwn(t,'difficulty')),'Clubs must not have fixed difficulty assignments.');
+for(const [lang,words] of Object.entries(translations))for(const key of ['quizLength','lengthShort','lengthMedium','lengthLong'])assert(words[key],lang+' missing '+key);
+assert(js.includes("[['short','lengthShort'],['medium','lengthMedium'],['long','lengthLong']]"),'Dropdown must offer exactly three length options.');
+assert(!js.includes("['','lengthAll']"),'All clubs must not be a separate option.');
+console.log('✓ Quiz lengths Short 5, Medium 10, Long all clubs; no club difficulty; six languages.');

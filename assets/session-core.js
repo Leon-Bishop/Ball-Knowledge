@@ -19,10 +19,10 @@
  function hash(s){let h=2166136261;for(const ch of s){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
  function shuffle(items,random=Math.random){const copy=[...items];for(let i=copy.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]]}return copy}
  function seededShuffle(items,seed){let state=seed>>>0;return shuffle(items,()=>{state=(Math.imul(state,1664525)+1013904223)>>>0;return state/4294967296})}
- function createSession(clubs,{daily=false,date='',random=Math.random}={}){
+ function createSession(clubs,{daily=false,date='',random=Math.random,limit=Infinity}={}){
   const unique=uniqueClubs(clubs);
   const ordered= daily ? seededShuffle([...unique].sort((a,b)=>a.id.localeCompare(b.id)),hash(date+'|'+unique.map(t=>t.id).sort().join('|'))) : shuffle(unique,random);
-  return {order:ordered,results:[],daily:Boolean(daily),date:String(date),completed:false};
+  return {order:ordered.slice(0,Number.isFinite(limit)?Math.max(1,Math.floor(limit)):ordered.length),results:[],daily:Boolean(daily),date:String(date),completed:false};
  }
  function currentClub(session){return session&&!session.completed?session.order[session.results.length]||null:null}
  function recordRound(session,team,{won=false,wrongCount=0}={}){

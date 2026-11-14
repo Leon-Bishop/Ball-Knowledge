@@ -1,16 +1,16 @@
-> **v3.4 — Dropdown fixes:** Dark-mode club autocomplete hover/focus text is now readable; difficulty always lists Easy, Medium, Hard (translated).
+> **Quiz lengths:** Short = 5 rounds, Medium = 10, Long = all clubs in the selected leagues. Every length draws randomly from the selected league(s); no club has a fixed difficulty.
 
 # ⚽ Ball Knowledge
 
-**Ball Knowledge** is a mobile-first football club emoji quiz with a stadium-inspired purple interface. Choose one or more leagues by tapping their logo tiles, then guess the secret club from five randomized emojis. Each round ends with **one randomly selected club story**. **Each session contains exactly one round per unique club in the chosen leagues**, with no repeat answers, and finishes with a scored summary.
+**Ball Knowledge** is a mobile-first football club emoji quiz with a stadium-inspired purple interface. Choose one or more leagues by tapping their logo tiles, then guess the secret club from five randomized emojis. Each round ends with **one randomly selected club story**. **Each session contains up to the selected number of unique clubs from the chosen leagues**, with no repeat answers, and finishes with a scored summary.
 
 ### Game
 
-- **12 leagues**, **214 input club records** (**213 unique playable clubs**; one duplicated Ipswich Town record remains in the source data).
+- **12 leagues**, **214 input club records** (**214 unique playable clubs**).
 - **6 interface languages:** Turkish, English, Spanish, French, Italian and Portuguese. The name **Ball Knowledge** is unchanged in all six.
-- Five guess attempts **per round**, autocomplete, final session score, streak, a deterministic daily session order, progress tracker and spoiler-free share.
+- Five guess attempts **per round**, autocomplete, final session score, streak, progress tracker and spoiler-free share.
 - Helpful wrong-guess feedback: shared city, kit colour or league (when multiple leagues are selected); no redundant country hint.
-- **No “All leagues” button, continent/country/tag filters or player JSON upload**.
+- **Select All and Deselect All league buttons are included; there is no player JSON upload**.
 - Light/dark mode; a separate, fully designed league-selection screen and game screen.
 - Official league logo URLs are referenced where available. Tiles have **clearly distinct typographic fallbacks** if a logo cannot load. Logo imagery is **not bundled**, and use may be subject to trademark restrictions.
 
@@ -63,12 +63,11 @@ Club facts include draft research; publishing the project does not independently
 
 ## Finite quiz sessions (v3.1)
 
-- Choosing a league with 18 distinct clubs creates **18 rounds**, regardless of how many wrong guesses occur within a round. Each round permits up to five guesses.
-- Choosing several leagues creates one session with exactly the **unique club count** across those selected leagues and the current difficulty filter.
+- Choosing a league with 18 distinct clubs offers **5, 10, or all 18 rounds**, depending on quiz length. Each round permits up to five guesses.
+- Choosing several leagues creates a random, nonrepeating sample from **all clubs in the selected leagues**, limited only by the chosen round count.
 - Each club is the secret answer **once per session**. Previously completed secret clubs do not appear in autocomplete in that session.
 - The session **never reshuffles and never restarts by itself** when its last club is completed. Instead it shows the final score, solved/missed counts, longest streak and a collapsible round-by-round recap.
 - After the final round, players can **Play again** (a new shuffled session) or **Choose leagues**.
-- Changing the league/difficulty selector affects **the next session**, not the ongoing session. Returning to the Play tab resumes the current run.
-- Daily mode deterministically shuffles the entire selected session's club list and each club's hint order based on the date; it no longer repeats the same club indefinitely.
-- Input data includes Ipswich Town twice in England, so England has **19 distinct playable clubs**, not 20, until the source file is corrected. No source records were silently deleted.
+- Changing league/quiz-length selections affects **the next session**, not the ongoing session. Returning to the Play tab resumes the current run.
+- The Premier League list contains **20 distinct playable clubs**.
 - `npm test` now checks finite session length, uniqueness, daily determinism, final scoring and all six translations.

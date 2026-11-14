@@ -18,7 +18,7 @@
     <div class="stadium-light stadium-light-left" aria-hidden="true">✦ ✦ ✦</div>
     <div class="stadium-light stadium-light-right" aria-hidden="true">✦ ✦ ✦</div>
     <div class="hero-topbar">
-      
+      <p id="brandTagline">Guess the club. Unlock the story.</p>
       <div class="header-actions">
         <label for="language" id="languageLabel" class="sr-only">Language</label>
         <select id="language" class="language-control" aria-label="Language">
@@ -32,14 +32,12 @@
       <div class="trophy-float" aria-hidden="true">🏆</div>
       <div class="brand-center">
         <h1 id="gameTitle" class="brand-title"><span>BALL</span><em>KNOWLEDGE</em></h1>
-        <p id="brandTagline">Guess the club. Unlock the story.</p>
       </div>
       <div class="ball-float" aria-hidden="true">⚽</div>
     </div>
     <div class="stadium-pitch" aria-hidden="true"><span></span></div>
     <div class="hero-scorebar">
       <div class="score-pill"><span aria-hidden="true">✨</span><span id="stats">Points 0 · Streak 0 · Best 0</span></div>
-      <label class="daily-toggle" for="daily"><input type="checkbox" id="daily"><span class="toggle-track" aria-hidden="true"></span><span id="dailyLabel">Daily challenge</span></label>
     </div>
   </header>
 
@@ -50,6 +48,7 @@
         <h2 id="leagueTitle">Choose your leagues</h2>
         <p id="leagueHelp" class="muted">Pick one or more leagues to include in your quiz.</p>
       </div>
+      <div class="league-bulk-actions"><button class="outline-button" id="selectAllLeagues" type="button">Select All</button> <button class="outline-button" id="deselectAllLeagues" type="button">Deselect All</button></div>
       <div class="filter-strip">
         <div class="filter-icon" aria-hidden="true">⚙</div>
         <div id="filters" class="filters"></div>
@@ -59,6 +58,7 @@
         <div class="pool-caption"><span class="pool-dot"></span><span id="pool">214 clubs available</span></div>
         <button class="primary-cta start-button" id="new" type="button">Start quiz</button>
       </div>
+      <aside class="ad-placement" data-ad-slot="selection-bottom" aria-label="Advertisement"><span>Advertisement</span></aside>
     </section>
 
     <section id="gameView" class="screen game-view hidden" aria-label="Play Ball Knowledge">
@@ -90,10 +90,11 @@
         <div id="result" class="result-panel hidden"></div>
         <div id="endActions" class="end-actions hidden"><button id="share" type="button" class="outline-button">Share result</button><button id="next" type="button" class="primary-cta">Next club</button></div>
       </div>
+      <aside class="ad-placement" data-ad-slot="game-bottom" aria-label="Advertisement"><span>Advertisement</span></aside>
     </section>
 
     <section id="statsView" class="screen other-screen hidden" aria-label="Statistics"><div class="eyebrow" id="statsEyebrow">YOUR HIGHLIGHTS</div><h2 id="statsTitle">Your stats</h2><div id="statsDetails" class="stat-grid"></div><button class="primary-cta go-back" type="button" data-screen="selection" id="statsChoose">Choose leagues</button></section>
-    <section id="settingsView" class="screen other-screen hidden" aria-label="Settings"><div class="eyebrow" id="settingsEyebrow">MAKE IT YOURS</div><h2 id="settingsTitle">Settings</h2><div class="setting-card"><span id="settingsLanguageLabel">Game language</span><div id="settingsCurrentLanguage">English</div></div><div class="setting-card"><span id="settingsThemeLabel">Appearance</span><button type="button" id="settingsTheme" class="outline-button">Switch theme</button></div><button class="primary-cta go-back" type="button" data-screen="selection" id="settingsChoose">Choose leagues</button></section>
+    <section id="settingsView" class="screen other-screen hidden" aria-label="Settings"><div class="eyebrow" id="settingsEyebrow">MAKE IT YOURS</div><h2 id="settingsTitle">Settings</h2><div class="setting-card"><label for="settingsLanguage" id="settingsLanguageLabel">Game language</label><select id="settingsLanguage" class="settings-language-control" aria-label="Game language"><option value="tr">🇹🇷 Türkçe</option><option value="en">🇬🇧 English</option><option value="es">🇪🇸 Español</option><option value="fr">🇫🇷 Français</option><option value="it">🇮🇹 Italiano</option><option value="pt">🇵🇹 Português</option></select></div><div class="setting-card"><span id="settingsThemeLabel">Appearance</span><button type="button" id="settingsTheme" class="outline-button">Switch theme</button></div><button class="primary-cta go-back" type="button" data-screen="selection" id="settingsChoose">Choose leagues</button></section>
     <details class="dev-warnings"><summary id="warningsTitle">Data warnings</summary><pre id="warnings"></pre></details>
   </main>
 
