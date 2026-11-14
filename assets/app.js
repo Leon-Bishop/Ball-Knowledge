@@ -9,12 +9,13 @@ const officialLogos={
  "brazil-serie-a": "https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato%20Brasileiro%20S%C3%A9rie%20A%20logo%20%282026%29.svg",
  "england-premier-league": "https://commons.wikimedia.org/wiki/Special:FilePath/Premier%20League%20wordmark.svg",
  "france-ligue-1": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Ligue%201%20McDonald%27s%202024.svg",
- "germany-bundesliga": "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesliga%20logo.svg",
+ "germany-bundesliga": "https://commons.wikimedia.org/wiki/Special:FilePath/Fu%C3%9Fball-Bundesliga%20Logo.png",
  "greece-super-league": "https://commons.wikimedia.org/wiki/Special:FilePath/Stoiximan%20Super%20League%20Greece%20logo.svg",
  "italy-serie-a": "https://commons.wikimedia.org/wiki/Special:FilePath/Serie%20A%20logo%202022.svg",
  "netherlands-eredivisie": "https://commons.wikimedia.org/wiki/Special:FilePath/VriendenLoterij%20Eredivisie%20Logo.png",
  "portugal-liga-portugal": "https://commons.wikimedia.org/wiki/Special:FilePath/Liga%20Portugal%20Betclic%20logo.svg",
  "spain-la-liga": "https://commons.wikimedia.org/wiki/Special:FilePath/LaLiga%20EA%20Sports%202023%20Vertical%20Logo.svg",
+ "scotland-premiership": "https://images.seeklogo.com/logo-png/27/1/scottish-premiership-logo-png_seeklogo-277110.png",
  "turkey-super-lig": "https://commons.wikimedia.org/wiki/Special:FilePath/Trendyol%20S%C3%BCper%20Lig%20logo%20dikey.svg"
 };
 const displayOrder=['england-premier-league','spain-la-liga','italy-serie-a','germany-bundesliga','france-ligue-1','turkey-super-lig','netherlands-eredivisie','portugal-liga-portugal','belgian-pro-league','brazil-serie-a','scotland-premiership','greece-super-league'];
