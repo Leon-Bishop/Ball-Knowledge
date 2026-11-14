@@ -49,7 +49,7 @@ body.dark .summary-kicker{color:#d3adff}
 @media(max-width:380px){.session-summary{padding:19px 11px}.round-progress-row{font-size:11px}.summary-actions button{min-width:110px;font-size:13px}}
 
 /* Ball Knowledge 3.2: clean hero and accessible league identities in dark mode. */
-.hero-topbar{justify-content:flex-end}
+.hero-topbar{justify-content:space-between}
 .league-mark{width:min(100%,126px);min-height:78px;border-radius:14px}
 body.dark .league-mark{
   background:#fff;
@@ -125,7 +125,10 @@ body.dark .filters select{color:#f8f4ff;background:#31264b}
 body.dark .filters select option{background:#241b3c;color:#f8f4ff}
 
 /* Minimal placements: preserve the existing stadium design and league cards. */
-.brand-center #brandTagline{margin:0 0 12px;text-align:center}
+.hero-topbar #brandTagline{margin:0;max-width:min(54%,460px);font-size:clamp(10px,1.5vw,13px);font-weight:800;letter-spacing:.15px;color:#f7e9ff;line-height:1.4;text-align:left}
+.league-bulk-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.settings-language-control{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:135px;max-width:180px;font-weight:850}
+@media(max-width:620px){.hero-topbar #brandTagline{max-width:48%;font-size:10px}.league-bulk-actions .outline-button{padding:9px 11px;font-size:12px}}
 .ad-placement{min-height:96px;margin:24px 0 8px;border:1px dashed var(--line);border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.6px}
 .ad-placement span{pointer-events:none}
 @media(max-width:620px){.ad-placement{min-height:100px;margin:18px 0 8px}}
