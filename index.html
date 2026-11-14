@@ -94,6 +94,19 @@
     </section>
 
     <section id="statsView" class="screen other-screen hidden" aria-label="Statistics"><div class="eyebrow" id="statsEyebrow">YOUR HIGHLIGHTS</div><h2 id="statsTitle">Your stats</h2><div id="statsDetails" class="stat-grid"></div><button class="primary-cta go-back" type="button" data-screen="selection" id="statsChoose">Choose leagues</button></section>
+    <section id="leaderboardView" class="screen other-screen hidden" aria-label="Leaderboard">
+      <div class="eyebrow">⚽ BALL KNOWLEDGE</div>
+      <h2 id="leaderboardTitle">Leaderboards</h2>
+      <div class="setting-card leaderboard-profile"><div><strong id="playerTitle">Your player name</strong><div id="playerProfile"></div></div></div>
+      <div class="ranking-filters">
+        <label><span id="rankingScopeLabel">Rankings</span><select id="rankingScope"><option value="global">Global</option><option value="country">Country</option><option value="region">Region</option></select></label>
+        <label><span id="rankingLengthLabel">Quiz length</span><select id="rankingLength"><option value="short">Short</option><option value="medium">Medium</option><option value="long">Long</option></select></label>
+      </div>
+      <p class="muted leaderboard-status" id="leaderboardStatus" role="status"></p>
+      <div class="ranking-scroll"><table class="ranking-table"><thead><tr><th>#</th><th>Player</th><th>Score</th><th>Accuracy</th></tr></thead><tbody id="rankingRows"></tbody></table></div>
+      <p class="muted leaderboard-disclaimer" id="rankingCaption">Beta leaderboard; scores are not independently verified.</p>
+    </section>
+
     <section id="settingsView" class="screen other-screen hidden" aria-label="Settings"><div class="eyebrow" id="settingsEyebrow">MAKE IT YOURS</div><h2 id="settingsTitle">Settings</h2><div class="setting-card"><label for="settingsLanguage" id="settingsLanguageLabel">Game language</label><select id="settingsLanguage" class="settings-language-control" aria-label="Game language"><option value="tr">🇹🇷 Türkçe</option><option value="en">🇬🇧 English</option><option value="es">🇪🇸 Español</option><option value="fr">🇫🇷 Français</option><option value="it">🇮🇹 Italiano</option><option value="pt">🇵🇹 Português</option></select></div><div class="setting-card"><span id="settingsThemeLabel">Appearance</span><button type="button" id="settingsTheme" class="outline-button">Switch theme</button></div><button class="primary-cta go-back" type="button" data-screen="selection" id="settingsChoose">Choose leagues</button></section>
     <details class="dev-warnings"><summary id="warningsTitle">Data warnings</summary><pre id="warnings"></pre></details>
   </main>
@@ -102,10 +115,13 @@
     <button type="button" class="nav-item active" data-screen="selection" aria-current="page"><span class="nav-icon">▦</span><span id="navLeagues">Leagues</span></button>
     <button type="button" class="nav-item" data-screen="game"><span class="nav-icon">⚽</span><span id="navPlay">Play</span></button>
     <button type="button" class="nav-item" data-screen="stats"><span class="nav-icon">▥</span><span id="navStats">Stats</span></button>
+    <button type="button" class="nav-item" data-screen="leaderboard"><span class="nav-icon">🏆</span><span id="navLeaderboard">Rankings</span></button>
     <button type="button" class="nav-item" data-screen="settings"><span class="nav-icon">⚙</span><span id="navSettings">Settings</span></button>
   </nav>
 </div>
 <script src="./assets/session-core.js" defer></script>
+<script src="./assets/leaderboard-config.js" defer></script>
 <script src="./assets/app.js" defer></script>
+<script src="./assets/leaderboard.js" defer></script>
 </body>
 </html>
