@@ -86,7 +86,8 @@
     "quizLength": "Test uzunluğu",
     "lengthShort": "Kısa (5 tur)",
     "lengthMedium": "Orta (10 tur)",
-    "lengthLong": "Uzun (Tüm takımlar)"
+    "lengthLong": "Uzun (Tüm takımlar)",
+    "startGameButton": "Oyuna Başla"
   },
   "en": {
     "title": "Ball Knowledge",
@@ -175,7 +176,8 @@
     "quizLength": "Quiz length",
     "lengthShort": "Short (5 rounds)",
     "lengthMedium": "Medium (10 rounds)",
-    "lengthLong": "Long (All clubs)"
+    "lengthLong": "Long (All clubs)",
+    "startGameButton": "Start Game"
   },
   "es": {
     "title": "Ball Knowledge",
@@ -264,7 +266,8 @@
     "quizLength": "Duración del quiz",
     "lengthShort": "Corto (5 rondas)",
     "lengthMedium": "Medio (10 rondas)",
-    "lengthLong": "Largo (Todos los clubes)"
+    "lengthLong": "Largo (Todos los clubes)",
+    "startGameButton": "Empezar a jugar"
   },
   "fr": {
     "title": "Ball Knowledge",
@@ -353,7 +356,8 @@
     "quizLength": "Longueur du quiz",
     "lengthShort": "Court (5 manches)",
     "lengthMedium": "Moyen (10 manches)",
-    "lengthLong": "Long (Tous les clubs)"
+    "lengthLong": "Long (Tous les clubs)",
+    "startGameButton": "Commencer à jouer"
   },
   "it": {
     "title": "Ball Knowledge",
@@ -442,7 +446,8 @@
     "quizLength": "Durata del quiz",
     "lengthShort": "Breve (5 turni)",
     "lengthMedium": "Medio (10 turni)",
-    "lengthLong": "Lungo (Tutti i club)"
+    "lengthLong": "Lungo (Tutti i club)",
+    "startGameButton": "Inizia a giocare"
   },
   "pt": {
     "title": "Ball Knowledge",
@@ -531,6 +536,7 @@
     "quizLength": "Duração do quiz",
     "lengthShort": "Curto (5 rondas)",
     "lengthMedium": "Médio (10 rondas)",
-    "lengthLong": "Longo (Todos os clubes)"
+    "lengthLong": "Longo (Todos os clubes)",
+    "startGameButton": "Começar a jogar"
   }
 }
