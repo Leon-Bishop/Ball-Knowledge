@@ -78,7 +78,11 @@
     "totalRounds": "Toplam tur",
     "roundResults": "Tüm tur sonuçları",
     "playAgain": "Yeniden Oyna",
-    "roundResolved": "Tur tamamlandı"
+    "roundResolved": "Tur tamamlandı",
+    "resumeGame": "Teste devam et",
+    "selectAllLeagues": "Tümünü seç",
+    "deselectAllLeagues": "Seçimi kaldır",
+    "shareInvite": "Arkadaşlarını da oyuna davet et!"
   },
   "en": {
     "title": "Ball Knowledge",
@@ -159,7 +163,11 @@
     "totalRounds": "Total rounds",
     "roundResults": "All round results",
     "playAgain": "Play again",
-    "roundResolved": "Round complete"
+    "roundResolved": "Round complete",
+    "resumeGame": "Resume Quiz",
+    "selectAllLeagues": "Select All",
+    "deselectAllLeagues": "Deselect All",
+    "shareInvite": "Challenge your friends!"
   },
   "es": {
     "title": "Ball Knowledge",
@@ -240,7 +248,11 @@
     "totalRounds": "Rondas totales",
     "roundResults": "Resultados de todas las rondas",
     "playAgain": "Jugar de nuevo",
-    "roundResolved": "Ronda completada"
+    "roundResolved": "Ronda completada",
+    "resumeGame": "Continuar cuestionario",
+    "selectAllLeagues": "Seleccionar todas",
+    "deselectAllLeagues": "Deseleccionar todas",
+    "shareInvite": "¡Reta a tus amigos!"
   },
   "fr": {
     "title": "Ball Knowledge",
@@ -321,7 +333,11 @@
     "totalRounds": "Manches au total",
     "roundResults": "Résultats de toutes les manches",
     "playAgain": "Rejouer",
-    "roundResolved": "Manche terminée"
+    "roundResolved": "Manche terminée",
+    "resumeGame": "Reprendre le quiz",
+    "selectAllLeagues": "Tout sélectionner",
+    "deselectAllLeagues": "Tout désélectionner",
+    "shareInvite": "Défiez vos amis !"
   },
   "it": {
     "title": "Ball Knowledge",
@@ -402,7 +418,11 @@
     "totalRounds": "Turni totali",
     "roundResults": "Risultati di tutti i turni",
     "playAgain": "Gioca ancora",
-    "roundResolved": "Turno completato"
+    "roundResolved": "Turno completato",
+    "resumeGame": "Riprendi il quiz",
+    "selectAllLeagues": "Seleziona tutte",
+    "deselectAllLeagues": "Deseleziona tutte",
+    "shareInvite": "Sfida i tuoi amici!"
   },
   "pt": {
     "title": "Ball Knowledge",
@@ -483,6 +503,10 @@
     "totalRounds": "Total de rondas",
     "roundResults": "Resultados de todas as rondas",
     "playAgain": "Jogar novamente",
-    "roundResolved": "Ronda concluída"
+    "roundResolved": "Ronda concluída",
+    "resumeGame": "Retomar quiz",
+    "selectAllLeagues": "Selecionar todas",
+    "deselectAllLeagues": "Desmarcar todas",
+    "shareInvite": "Desafia os teus amigos!"
   }
 }
