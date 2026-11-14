@@ -6,7 +6,7 @@ const data=JSON.parse(fs.readFileSync(new URL('../teams.enriched.json',import.me
 const i18n=JSON.parse(fs.readFileSync(new URL('../i18n.json',import.meta.url),'utf8'));
 const unique=Session.uniqueClubs(data);
 assert.equal(data.length,214,'The original club list must stay intact');
-assert.equal(unique.length,213,'Source duplicate should be excluded from playable sessions');
+assert.equal(unique.length,214,'All 214 clubs should be unique and playable');
 const league=unique.filter(t=>t.league_id==='turkey-super-lig');
 assert.equal(league.length,18,'Turkish league must have 18 unique clubs');
 const single=Session.createSession(league,{random:()=>.17});
@@ -40,9 +40,9 @@ assert.deepEqual({total:summary.total,played:summary.played,correct:summary.corr
  {total:50,played:50,correct:25,missed:25,score:75,maxScore:250});
 assert.equal(combined.completed,true);
 const europe=unique.filter(x=>x.league_id==='england-premier-league');
-assert.equal(europe.length,19,'Ipswich Town duplicate should not become two rounds');
+assert.equal(europe.length,20,'Premier League must include 20 unique clubs');
 const duplicate=Session.createSession(data.filter(x=>x.league_id==='england-premier-league'));
-assert.equal(duplicate.order.length,19);
+assert.equal(duplicate.order.length,20);
 const daily1=Session.createSession(mixed,{daily:true,date:'2026-11-14'});
 const daily2=Session.createSession([...mixed].reverse(),{daily:true,date:'2026-11-14'});
 assert.deepEqual(daily1.order.map(x=>x.id),daily2.order.map(x=>x.id),'Daily order must be fixed for same date/pool');
