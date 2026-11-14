@@ -84,10 +84,9 @@
     "deselectAllLeagues": "Seçimi kaldır",
     "shareInvite": "Arkadaşlarını da oyuna davet et!",
     "quizLength": "Test uzunluğu",
-    "lengthAll": "Tüm takımlar",
     "lengthShort": "Kısa (5 tur)",
     "lengthMedium": "Orta (10 tur)",
-    "lengthLong": "Uzun (20 tur)"
+    "lengthLong": "Uzun (Tüm takımlar)"
   },
   "en": {
     "title": "Ball Knowledge",
@@ -174,10 +173,9 @@
     "deselectAllLeagues": "Deselect All",
     "shareInvite": "Challenge your friends!",
     "quizLength": "Quiz length",
-    "lengthAll": "All clubs",
     "lengthShort": "Short (5 rounds)",
     "lengthMedium": "Medium (10 rounds)",
-    "lengthLong": "Long (20 rounds)"
+    "lengthLong": "Long (All clubs)"
   },
   "es": {
     "title": "Ball Knowledge",
@@ -264,10 +262,9 @@
     "deselectAllLeagues": "Deseleccionar todas",
     "shareInvite": "¡Reta a tus amigos!",
     "quizLength": "Duración del quiz",
-    "lengthAll": "Todos los clubes",
     "lengthShort": "Corto (5 rondas)",
     "lengthMedium": "Medio (10 rondas)",
-    "lengthLong": "Largo (20 rondas)"
+    "lengthLong": "Largo (Todos los clubes)"
   },
   "fr": {
     "title": "Ball Knowledge",
@@ -354,10 +351,9 @@
     "deselectAllLeagues": "Tout désélectionner",
     "shareInvite": "Défiez vos amis !",
     "quizLength": "Longueur du quiz",
-    "lengthAll": "Tous les clubs",
     "lengthShort": "Court (5 manches)",
     "lengthMedium": "Moyen (10 manches)",
-    "lengthLong": "Long (20 manches)"
+    "lengthLong": "Long (Tous les clubs)"
   },
   "it": {
     "title": "Ball Knowledge",
@@ -444,10 +440,9 @@
     "deselectAllLeagues": "Deseleziona tutte",
     "shareInvite": "Sfida i tuoi amici!",
     "quizLength": "Durata del quiz",
-    "lengthAll": "Tutti i club",
     "lengthShort": "Breve (5 turni)",
     "lengthMedium": "Medio (10 turni)",
-    "lengthLong": "Lungo (20 turni)"
+    "lengthLong": "Lungo (Tutti i club)"
   },
   "pt": {
     "title": "Ball Knowledge",
@@ -534,9 +529,8 @@
     "deselectAllLeagues": "Desmarcar todas",
     "shareInvite": "Desafia os teus amigos!",
     "quizLength": "Duração do quiz",
-    "lengthAll": "Todos os clubes",
     "lengthShort": "Curto (5 rondas)",
     "lengthMedium": "Médio (10 rondas)",
-    "lengthLong": "Longo (20 rondas)"
+    "lengthLong": "Longo (Todos os clubes)"
   }
 }
