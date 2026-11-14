@@ -246,7 +246,7 @@ function refreshLanguage(){
  $('gameTitle').innerHTML='<span>BALL</span><em>KNOWLEDGE</em>';
  $('brandTagline').textContent=tr('brandTagline');
  $('languageLabel').textContent=tr('language');$('language').setAttribute('aria-label',tr('language'));
- $('language').value=lang;$('theme').setAttribute('aria-label',tr('theme'));
+ $('language').value=lang;$('settingsLanguage').value=lang;$('theme').setAttribute('aria-label',tr('theme'));
  $('selectionEyebrow').textContent=tr('selectionEyebrow');
  $('leagueTitle').textContent=tr('selectLeagues');$('leagueHelp').textContent=tr('selectHelp');
  $('backLabel').textContent=tr('backToLeagues');$('roundEyebrow').textContent=tr('roundEyebrow');
@@ -255,7 +255,7 @@ function refreshLanguage(){
  $('share').textContent=tr('share');$('next').textContent=tr('next');$('warningsTitle').textContent=tr('dataWarnings');
  $('statsEyebrow').textContent=tr('statsEyebrow');$('statsTitle').textContent=tr('statsTitle');
  $('settingsEyebrow').textContent=tr('settingsEyebrow');$('settingsTitle').textContent=tr('settingsTitle');
- $('settingsLanguageLabel').textContent=tr('settingsLanguage');$('settingsCurrentLanguage').textContent=$('language').selectedOptions[0]?.textContent||'';
+ $('settingsLanguageLabel').textContent=tr('settingsLanguage');$('settingsLanguage').setAttribute('aria-label',tr('settingsLanguage'));
  $('settingsThemeLabel').textContent=tr('settingsAppearance');$('settingsTheme').textContent=tr('theme');
  $('selectAllLeagues').textContent=tr('selectAllLeagues');$('deselectAllLeagues').textContent=tr('deselectAllLeagues');
  $('statsChoose').textContent=tr('selectLeagues');$('settingsChoose').textContent=session?tr('resumeGame'):tr('selectLeagues');
@@ -278,7 +278,9 @@ $('backToLeagues').onclick=()=>setView('selection');
 $('share').onclick=share;
 const toggleTheme=()=>{document.body.classList.toggle('dark');localStorage.setItem('efq-theme',document.body.classList.contains('dark')?'dark':'light')};
 $('theme').onclick=toggleTheme;$('settingsTheme').onclick=toggleTheme;
-$('language').onchange=()=>{lang=$('language').value;localStorage.setItem('efq-language',lang);refreshLanguage()};
+const changeLanguage=value=>{lang=value;localStorage.setItem('efq-language',lang);refreshLanguage()};
+$('language').onchange=()=>changeLanguage($('language').value);
+$('settingsLanguage').onchange=()=>changeLanguage($('settingsLanguage').value);
 $('selectAllLeagues').onclick=()=>setAllLeagues(true);
 $('deselectAllLeagues').onclick=()=>setAllLeagues(false);
 for(const btn of document.querySelectorAll('[data-screen]'))btn.onclick=()=>setView(btn.id==='settingsChoose'&&session?'game':btn.dataset.screen);
