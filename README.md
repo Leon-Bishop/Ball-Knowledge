@@ -1,4 +1,4 @@
-> **Quiz lengths:** Short = 5 rounds, Medium = 10, Long = 20, or All Clubs. Every length draws randomly from the selected league(s); no club has a fixed difficulty.
+> **Quiz lengths:** Short = 5 rounds, Medium = 10, Long = all clubs in the selected leagues. Every length draws randomly from the selected league(s); no club has a fixed difficulty.
 
 # ⚽ Ball Knowledge
 
@@ -63,7 +63,7 @@ Club facts include draft research; publishing the project does not independently
 
 ## Finite quiz sessions (v3.1)
 
-- Choosing a league with 18 distinct clubs offers **5, 10, 18 (Long capped to the available clubs), or all 18 rounds**, depending on quiz length. Each round permits up to five guesses.
+- Choosing a league with 18 distinct clubs offers **5, 10, or all 18 rounds**, depending on quiz length. Each round permits up to five guesses.
 - Choosing several leagues creates a random, nonrepeating sample from **all clubs in the selected leagues**, limited only by the chosen round count.
 - Each club is the secret answer **once per session**. Previously completed secret clubs do not appear in autocomplete in that session.
 - The session **never reshuffles and never restarts by itself** when its last club is completed. Instead it shows the final score, solved/missed counts, longest streak and a collapsible round-by-round recap.
