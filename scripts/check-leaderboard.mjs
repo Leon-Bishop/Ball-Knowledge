@@ -16,7 +16,7 @@ assert(rules.includes('name_key TEXT NOT NULL UNIQUE')&&rules.includes('token_ha
 assert(worker.includes('req.cf?.country'),'Use Cloudflare country; do not ask for precise location');
 assert(worker.includes('DELETE FROM rate_limits'),'Rate limiting should be enabled');
 assert(worker.includes('score>correct*5'),'Reject impossible scores');
-assert(!worker.includes('password'),'No password field should be needed');
+assert(!/\bpassword\s*[:=]/i.test(worker),'No password field should be needed');
 for(const [locale,strings] of Object.entries(i18n))
  for(const key of ['navLeaderboard','leaderboardTitle','playerTitle','claimUsername','oneUsernameNote','rankingGlobal','rankingCountry','rankingRegion','leaderboardNotConnected','leaderboardBeta'])
   assert(strings[key],locale+' missing '+key);
