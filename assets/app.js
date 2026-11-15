@@ -341,8 +341,7 @@ function updateStartButton(){
 function setView(view){
  if(view==='game'&&!session){if(!pool.length){view='selection'}else{startQuiz();return}}
  currentView=view;
- document.body.classList.toggle('home-active',view==='home');
- for(const [key,id] of Object.entries({home:'homeView',selection:'selectionView',game:'gameView',stats:'statsView',leaderboard:'leaderboardView',settings:'settingsView'}))$(id).classList.toggle('hidden',view!==key);
+ for(const [key,id] of Object.entries({selection:'selectionView',game:'gameView',stats:'statsView',leaderboard:'leaderboardView',settings:'settingsView'}))$(id).classList.toggle('hidden',view!==key);
  for(const btn of document.querySelectorAll('.nav-item')){const active=btn.dataset.screen===view;btn.classList.toggle('active',active);if(active)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current')}
  if(view==='stats')updateStats();
  if(view==='game')window.BallKnowledgeReference?.show(new Set(session?.leagueIds||chosenLeagues),leagues,session?.referencePool||pool);
@@ -355,12 +354,7 @@ function refreshLanguage(){
  $('gameTitle').innerHTML='<span>BALL</span><em>KNOWLEDGE</em>';
  $('brandTagline').textContent=tr('brandTagline');
  $('languageLabel').textContent=tr('language');$('language').setAttribute('aria-label',tr('language'));
- $('language').value=lang;$('homeLanguage').value=lang;$('settingsLanguage').value=lang;$('theme').setAttribute('aria-label',tr('theme'));
- $('homeLanguage').setAttribute('aria-label',tr('language'));
- $('homeKicker').textContent=tr('homeKicker');$('homePromise').textContent=tr('homePromise');$('homeFooter').textContent=tr('homeFooter');
- $('homePlayText').textContent=tr('navPlay');$('homeLeaderboardText').textContent=tr('navLeaderboard');
- $('homeLeaguesText').textContent=tr('navLeagues');$('homeSettingsText').textContent=tr('navSettings');
- $('heroHome').setAttribute('aria-label',tr('homeBack'));$('heroHome').title=tr('homeBack');
+ $('language').value=lang;$('settingsLanguage').value=lang;$('theme').setAttribute('aria-label',tr('theme'));
  $('selectionEyebrow').textContent=tr('selectionEyebrow');
  $('leagueTitle').textContent=tr('selectLeagues');$('leagueHelp').textContent=tr('selectHelp');
  $('backLabel').textContent=tr('backToLeagues');$('roundEyebrow').textContent=tr('roundEyebrow');
@@ -390,11 +384,6 @@ $('guess').oninput=suggest;
 $('guess').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();submit()}};
 $('submit').onclick=submit;
 $('new').onclick=startQuiz;
-$('homePlay').onclick=()=>setView('game');
-$('homeLeagues').onclick=()=>setView('selection');
-$('homeLeaderboard').onclick=()=>setView('leaderboard');
-$('homeSettings').onclick=()=>setView('settings');
-$('heroHome').onclick=()=>setView('home');
 $('next').onclick=()=>{if(!session?.completed){newRound();setView('game')}};
 $('backToLeagues').onclick=()=>setView('selection');
 $('share').onclick=share;
@@ -402,10 +391,9 @@ const toggleTheme=()=>{document.body.classList.toggle('dark');localStorage.setIt
 $('theme').onclick=toggleTheme;$('settingsTheme').onclick=toggleTheme;
 const changeLanguage=value=>{lang=value;localStorage.setItem('efq-language',lang);refreshLanguage()};
 $('language').onchange=()=>changeLanguage($('language').value);
-$('homeLanguage').onchange=()=>changeLanguage($('homeLanguage').value);
 $('settingsLanguage').onchange=()=>changeLanguage($('settingsLanguage').value);
 $('selectAllLeagues').onclick=()=>setAllLeagues(true);
 $('deselectAllLeagues').onclick=()=>setAllLeagues(false);
 for(const btn of document.querySelectorAll('[data-screen]'))btn.onclick=()=>setView(btn.id==='settingsChoose'&&session?'game':btn.dataset.screen);
 if(localStorage.getItem('efq-theme')==='dark')document.body.classList.add('dark');
-setView('home');init();
+setView('selection');init();
