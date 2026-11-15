@@ -88,12 +88,24 @@ function distinctRoundEmojis(emojis){
   used.add(key(replacement));return replacement;
  });
 }
+// Guarantee that a club colour appears in clue one or two outside the Turkish league.
+function promoteEarlyColour(order,emojis,leagueId,random=Math.random){
+ if(leagueId==='turkey-super-lig')return order;
+ const colourPositions=order.map((index,slot)=>KIT_COLOUR_EMOJIS.has(emojis[index])?slot:-1).filter(slot=>slot!==-1);
+ if(!colourPositions.length)return order; // invalid data is blocked by validation
+ if(colourPositions.some(slot=>slot<2))return order;
+ const from=colourPositions[Math.floor(random()*colourPositions.length)];
+ const to=Math.floor(random()*2);
+ const result=[...order];[result[from],result[to]]=[result[to],result[from]];
+ return result;
+}
 function newRound(){
  if(!session||session.completed)return;
  round=BallKnowledgeSession.currentClub(session);
  if(!round)return;
  round={...round,emojis:distinctRoundEmojis(round.emojis)};
  clueOrder=session.daily?seededShuffle([0,1,2,3,4],hash(session.date+'|'+round.id+'|clues')):shuffle([0,1,2,3,4]);
+ clueOrder=promoteEarlyColour(clueOrder,round.emojis,round.league_id,session.daily?()=>hash(session.date+'|'+round.id+'|colour')/4294967296:Math.random);
  wrong=[];outcomes=[];selected=null;selectedFactForRound=null;activeEmojiExplanation=null;finished=false;
  $('guess').value='';$('message').textContent='';$('history').replaceChildren();$('selected').textContent='';
  $('result').classList.add('hidden');$('sessionSummary').classList.add('hidden');$('endActions').classList.add('hidden');
