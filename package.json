@@ -4,7 +4,7 @@
   "private": true,
   "description": "Ball Knowledge — six-language football club emoji guessing game, with a polished stadium-inspired interface",
   "scripts": {
-    "test": "node scripts/validate-data.mjs && node scripts/validate-i18n.mjs && node scripts/check-js.mjs && node scripts/validate-research.mjs && node scripts/check-feedback.mjs && node scripts/check-guess-matcher.mjs && node scripts/check-brand.mjs && node scripts/check-session.mjs && node scripts/check-dark-suggestions.mjs && node scripts/check-difficulty-order.mjs && node scripts/check-leaderboard.mjs && node scripts/check-reference.mjs && node scripts/check-ux-polish.mjs && node scripts/check-early-colour.mjs",
+    "test": "node scripts/validate-data.mjs && node scripts/validate-i18n.mjs && node scripts/check-js.mjs && node scripts/validate-research.mjs && node scripts/check-feedback.mjs && node scripts/check-guess-matcher.mjs && node scripts/check-brand.mjs && node scripts/check-league-logos.mjs && node scripts/check-session.mjs && node scripts/check-dark-suggestions.mjs && node scripts/check-difficulty-order.mjs && node scripts/check-leaderboard.mjs && node scripts/check-reference.mjs && node scripts/check-ux-polish.mjs && node scripts/check-early-colour.mjs",
     "validate": "node scripts/validate-data.mjs",
     "serve": "python3 -m http.server 8000",
     "check:research": "node scripts/validate-research.mjs",
