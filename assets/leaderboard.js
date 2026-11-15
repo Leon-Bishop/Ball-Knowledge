@@ -8,7 +8,7 @@ const node=id=>document.getElementById(id);
 const words=(key,args={})=>{try{return tr(key,args)}catch{return key}};
 const tokenKey='bk-anonymous-player-token';
 
-let profile=null,busy=false;
+let profile=null,busy=false,profileLoading=true,profileLoadError='',nameDraft='';
 
 const token=()=>localStorage.getItem(tokenKey)||'';
 
@@ -61,132 +61,314 @@ async function api(path,{method='GET',body,withIdentity=true}={}){
  return data;
 }
 
-function describeProfile(){
- const el=node('playerProfile');
- if(!el)return;
+function registrationMessage(error){
+ if(error==='Username already taken')return words('homePlayerTaken');
+ if(error==='Too many registration attempts. Try later.')return words('homePlayerRateLimit');
+ if(error==='This browser already has a username')return words('homePlayerExisting');
+ return error;
+}
 
- el.replaceChildren();
+function createClaimForm(context){
+ const form=document.createElement('form');
+ form.id=context==='home'?'homeClaimUsername':'claimUsername';
+ form.className='player-claim-form';
 
- if(!root()){
-  const p=document.createElement('p');
-  p.className='muted';
-  p.textContent=words('leaderboardNotConnected');
-  el.append(p);
-  return;
- }
+ const label=document.createElement('label');
+ label.className='player-name-label';
+ label.htmlFor=context==='home'?'homeUsername':'leaderboardUsername';
+ label.textContent=words('homePlayerInputLabel');
 
- if(!profile){
-  const info=document.createElement('p');
-  info.className='muted';
-  info.textContent=words('playerNameHelp');
+ const controls=document.createElement('div');
+ controls.className='player-claim-controls';
 
-  const form=document.createElement('form');
-  form.id='claimUsername';
-  form.className='player-claim-form';
+ const input=document.createElement('input');
+ input.id=label.htmlFor;
+ input.name='username';
+ input.type='text';
+ input.required=true;
+ input.minLength=3;
+ input.maxLength=20;
+ input.autocomplete='nickname';
+ input.spellcheck=false;
+ input.setAttribute('autocapitalize','off');
+ input.placeholder=words('usernamePlaceholder');
+ input.value=nameDraft;
 
-  const input=document.createElement('input');
-  input.name='username';
-  input.type='text';
-  input.required=true;
-  input.minLength=3;
-  input.maxLength=20;
-  input.autocomplete='nickname';
-  input.placeholder=words('usernamePlaceholder');
+ const button=document.createElement('button');
+ button.type='submit';
+ button.className='primary-cta';
+ button.textContent=words('claimUsername');
 
-  const button=document.createElement('button');
-  button.type='submit';
-  button.className='primary-cta';
-  button.textContent=words('claimUsername');
+ controls.append(input,button);
 
-  form.append(input,button);
+ const meta=document.createElement('div');
+ meta.className='player-name-meta';
 
-  form.onsubmit=async e=>{
-   e.preventDefault();
-   if(busy)return;
+ const feedback=document.createElement('span');
+ feedback.className='player-name-feedback';
+ feedback.id=context+'UsernameFeedback';
+ feedback.setAttribute('role','status');
+ feedback.setAttribute('aria-live','polite');
 
-   busy=true;
-   button.disabled=true;
+ const count=document.createElement('span');
+ count.className='player-name-count';
+ count.setAttribute('aria-hidden','true');
+ input.setAttribute('aria-describedby',feedback.id);
+ meta.append(feedback,count);
+
+ const preview=document.createElement('div');
+ preview.className='player-name-preview';
+ const previewIcon=document.createElement('span');
+ previewIcon.textContent='⚽';
+ previewIcon.setAttribute('aria-hidden','true');
+ const previewName=document.createElement('span');
+ preview.append(previewIcon,previewName);
+
+ const validName=name=>{
+  const length=[...name].length;
+  return length>=3&&length<=20&&/^[\p{L}\p{N}_]+$/u.test(name);
+ };
+
+ const validate=()=>{
+  const name=input.value.trim();
+  const length=[...name].length;
+  const valid=validName(name);
+  const touched=input.value.length>0;
+  const key=!touched?'homePlayerRules':
+   length<3?'homePlayerTooShort':
+   length>20?'homePlayerTooLong':
+   !/^[\p{L}\p{N}_]+$/u.test(name)?'homePlayerBadCharacters':
+   'homePlayerLooksGood';
+
+  feedback.textContent=words(key);
+  feedback.dataset.state=!touched?'neutral':valid?'valid':'error';
+  input.setAttribute('aria-invalid',String(touched&&!valid));
+  count.textContent=length+'/20';
+  previewName.textContent=name||words('homePlayerPreviewEmpty');
+  button.disabled=busy||!valid;
+ };
+
+ input.addEventListener('input',()=>{
+  nameDraft=input.value;
+  validate();
+ });
+
+ form.addEventListener('submit',async event=>{
+  event.preventDefault();
+  const name=input.value.trim();
+  if(busy||!validName(name))return;
+
+  busy=true;
+  button.disabled=true;
+  input.disabled=true;
+  feedback.textContent=words('homePlayerCreating');
+  feedback.dataset.state='neutral';
+
+  try{
+   // Check browser storage before creating a server-side identity.
+   const storageCheck='bk-identity-storage-check';
+   try{
+    localStorage.setItem(storageCheck,'1');
+    localStorage.removeItem(storageCheck);
+   }catch{
+    throw new Error(words('homePlayerStorageUnavailable'));
+   }
 
    const fresh=Array.from(
     crypto.getRandomValues(new Uint8Array(32))
    ).map(x=>x.toString(16).padStart(2,'0')).join('');
 
-   try{
-    const res=await fetch(root()+'/api/register',{
-     method:'POST',
-     mode:'cors',
-     headers:{
-      'Content-Type':'application/json',
-      Authorization:'Bearer '+fresh
-     },
-     body:JSON.stringify({
-      username:input.value.trim()
-     })
-    });
+   const res=await fetch(root()+'/api/register',{
+    method:'POST',
+    mode:'cors',
+    headers:{
+     'Content-Type':'application/json',
+     Authorization:'Bearer '+fresh
+    },
+    body:JSON.stringify({username:name})
+   });
 
-    const data=await res.json();
-
-    if(!res.ok){
-     throw new Error(
-      data.error||words('leaderboardUnavailable')
-     );
-    }
-
-    localStorage.setItem(tokenKey,fresh);
-    profile=data.profile;
-
-    node('leaderboardStatus').textContent=words('profileCreated');
-
-    describeProfile();
-    await loadRanks();
-
-   }catch(err){
-    node('leaderboardStatus').textContent=err.message;
-   }finally{
-    busy=false;
-    button.disabled=false;
+   const data=await res.json().catch(()=>({}));
+   if(!res.ok){
+    throw new Error(registrationMessage(
+     data.error||words('leaderboardUnavailable')
+    ));
    }
-  };
 
-  el.append(info,form);
+   localStorage.setItem(tokenKey,fresh);
+   profile=data.profile;
+   profileLoadError='';
+   nameDraft='';
+   node('leaderboardStatus').textContent=words('profileCreated');
+   renderProfiles();
+   await loadRanks();
+  }catch(error){
+   feedback.textContent=error.message||words('leaderboardUnavailable');
+   feedback.dataset.state='error';
+   input.setAttribute('aria-invalid','true');
+   node('leaderboardStatus').textContent=feedback.textContent;
+  }finally{
+   busy=false;
+   input.disabled=false;
+   if(form.isConnected){
+    button.disabled=!validName(input.value.trim());
+   }
+  }
+ });
+
+ form.append(label,controls,meta,preview);
+ validate();
+ return form;
+}
+
+function retryProfileButton(){
+ const button=document.createElement('button');
+ button.type='button';
+ button.className='outline-button player-profile-retry';
+ button.textContent=words('homePlayerRetry');
+ button.onclick=restoreProfile;
+ return button;
+}
+
+function describeProfile(){
+ const el=node('playerProfile');
+ if(!el)return;
+ el.replaceChildren();
+
+ const p=document.createElement('p');
+ p.className='muted';
+
+ if(!root()){
+  p.textContent=words('leaderboardNotConnected');
+  el.append(p);
   return;
  }
 
- const p=document.createElement('p');
- p.className='player-identity';
+ if(profileLoading){
+  p.textContent=words('homePlayerLoading');
+  el.append(p);
+  return;
+ }
 
- p.textContent=
-  flag(profile.country)+' '+
-  profile.username+' · '+
+ if(profileLoadError){
+  p.textContent=words('homePlayerLoadError',{reason:profileLoadError});
+  el.append(p,retryProfileButton());
+  return;
+ }
+
+ if(!profile){
+  p.textContent=words('playerNameHelp');
+  el.append(p,createClaimForm('leaderboard'));
+  return;
+ }
+
+ const identity=document.createElement('p');
+ identity.className='player-identity';
+ identity.textContent=
+  flag(profile.country)+' '+profile.username+' · '+
   countryLabel(profile.country)+
   (profile.region?' / '+regionLabel(profile.region):'');
 
- const note=document.createElement('p');
- note.className='muted';
- note.textContent=words('oneUsernameNote');
-
- el.append(p,note);
+ p.textContent=words('oneUsernameNote');
+ el.append(identity,p);
 }
 
-async function restoreProfile(){
+function describeHomeProfile(){
+ const card=node('homePlayerCard');
+ const content=node('homePlayerContent');
+ const title=node('homePlayerTitle');
+ const avatar=node('homePlayerAvatar');
+ const kicker=node('homePlayerKicker');
+ const tag=node('homePlayerTag');
+ if(!card||!content||!title||!avatar||!kicker||!tag)return;
+
+ content.replaceChildren();
+ kicker.textContent=words('homePlayerKicker');
+ card.dataset.state=profile?'active':'new';
+ avatar.textContent=profile?flag(profile.country):'⚽';
+
+ const description=document.createElement('p');
+ description.className='home-player-description';
+
  if(!root()){
-  describeProfile();
+  title.textContent=words('homePlayerTitle');
+  tag.textContent=words('homePlayerOptional');
+  description.textContent=words('leaderboardNotConnected');
+  content.append(description);
   return;
  }
 
- if(token()){
+ if(profileLoading){
+  title.textContent=words('homePlayerLoading');
+  tag.textContent=words('homePlayerOptional');
+  return;
+ }
+
+ if(profileLoadError){
+  title.textContent=words('homePlayerLoadErrorTitle');
+  tag.textContent=words('homePlayerOptional');
+  description.textContent=words('homePlayerLoadError',{reason:profileLoadError});
+  content.append(description,retryProfileButton());
+  return;
+ }
+
+ if(!profile){
+  title.textContent=words('homePlayerTitle');
+  tag.textContent=words('homePlayerOptional');
+  description.textContent=words('homePlayerHelp');
+  content.append(description,createClaimForm('home'));
+  return;
+ }
+
+ title.textContent=words('homePlayerWelcome',{name:profile.username});
+ tag.textContent=words('homePlayerReady');
+ description.textContent=words('homePlayerLinked');
+ const actions=document.createElement('div');
+ actions.className='home-player-actions';
+
+ const country=document.createElement('span');
+ country.className='home-player-country';
+ country.textContent=flag(profile.country)+' '+countryLabel(profile.country);
+
+ const view=document.createElement('button');
+ view.type='button';
+ view.className='outline-button';
+ view.textContent=words('homePlayerViewRanks');
+ view.onclick=()=>node('navLeaderboard')?.click();
+ actions.append(country,view);
+
+ const note=document.createElement('p');
+ note.className='player-profile-help';
+ note.textContent=words('homePlayerBrowserNote');
+ content.append(description,actions,note);
+}
+
+function renderProfiles(){
+ describeProfile();
+ describeHomeProfile();
+}
+
+async function restoreProfile(){
+ profileLoading=true;
+ profileLoadError='';
+ renderProfiles();
+
+ if(root()&&token()){
   try{
    profile=(await api('/api/profile')).profile;
-  }catch(e){
+  }catch(error){
    profile=null;
-
-   if(e.message!=='Profile not found'){
-    node('leaderboardStatus').textContent=e.message;
+   if(error.message==='Profile not found'){
+    localStorage.removeItem(tokenKey);
+   }else{
+    profileLoadError=error.message;
+    node('leaderboardStatus').textContent=error.message;
    }
   }
  }
 
- describeProfile();
+ profileLoading=false;
+ renderProfiles();
 }
 
 async function loadRanks(){
@@ -396,7 +578,7 @@ function localize(){
   }
  }
 
- describeProfile();
+ renderProfiles();
 }
 
 function init(){
