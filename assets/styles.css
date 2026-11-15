@@ -152,3 +152,27 @@ body.dark .filters select option{background:#241b3c;color:#f8f4ff}
 .ranking-table td:nth-child(2){font-weight:900}
 .leaderboard-disclaimer{font-size:11px;margin:14px 0}
 @media(max-width:620px){.ranking-table{font-size:11px}.ranking-table th,.ranking-table td{padding:10px 6px}.nav-item{font-size:10px}.nav-icon{font-size:22px}}
+
+/* Read-only league standings reference; it never participates in answer selection. */
+.game-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,265px);align-items:start;gap:18px}
+.game-layout-main{min-width:0}
+.club-reference{position:sticky;top:16px;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:17px 13px;max-height:calc(100vh - 100px);overflow:auto}
+.club-reference.hidden{display:none}
+.reference-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.reference-heading strong{font-size:14px;line-height:1.4}
+.reference-heading span{font-size:10px;color:var(--muted);font-weight:700}
+.standings-table-wrap{overflow-x:auto}
+.standings-table-wrap table{border-collapse:collapse;width:100%;font-size:11px}
+.standings-table-wrap th{color:var(--muted);font-size:10px;text-align:left;background:var(--soft)}
+.standings-table-wrap th,.standings-table-wrap td{padding:7px 5px;border-bottom:1px solid var(--line)}
+.standings-table-wrap th:first-child,.standings-table-wrap td:first-child{width:20px}
+.standings-table-wrap th:nth-child(3),.standings-table-wrap th:nth-child(4),.standings-table-wrap td:nth-child(3),.standings-table-wrap td:nth-child(4){text-align:right;font-variant-numeric:tabular-nums}
+.standings-table-wrap tbody tr:last-child td{border-bottom:0}
+.standings-table-wrap tbody td:nth-child(2){font-weight:850;line-height:1.3}
+.reference-source,.reference-notice{font-size:11px;color:var(--muted);line-height:1.5;margin:12px 0 0}
+.club-directory label{display:block;font-size:11px;font-weight:850;margin-bottom:8px}
+.club-directory select{width:100%;padding:10px;border-radius:10px;background:var(--soft);color:var(--fg);border:1px solid var(--line);font-weight:800}
+.directory-rows{max-height:420px;overflow:auto;margin-top:8px}
+.directory-club{font-weight:800;font-size:12px;border-bottom:1px solid var(--line);padding:9px 6px}
+.directory-club:last-child{border-bottom:0}
+@media(max-width:800px){.game-layout{grid-template-columns:minmax(0,1fr)}.club-reference{position:static;max-height:none;order:2}.standings-table-wrap table{font-size:12px}.directory-rows{max-height:300px}}
