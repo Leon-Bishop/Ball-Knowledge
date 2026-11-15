@@ -222,7 +222,7 @@ async function loadRanks(){
    for(const value of [
     String(player.rank),
     flag(player.country)+' '+player.username,
-    player.score+' / '+player.rounds*5,
+    Number(player.bkPoints||0).toLocaleString()+' BK',
     String(player.accuracy)+'%'
    ]){
     const td=document.createElement('td');
