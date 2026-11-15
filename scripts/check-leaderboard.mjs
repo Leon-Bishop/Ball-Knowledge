@@ -13,9 +13,9 @@ assert(html.includes('src="./assets/leaderboard-config.js"')&&html.includes('src
 assert(js.includes('window.BallKnowledgeLeaderboard?.submit(session)'),'Completed quiz must submit score');
 assert(js.includes('session.leaderboardMode='),'Quiz length must be saved at start');
 assert(rules.includes('name_key TEXT NOT NULL UNIQUE')&&rules.includes('token_hash TEXT NOT NULL UNIQUE'),'Usernames and anonymous IDs must be unique');
-assert(worker.includes('req.cf?.country'),'Use Cloudflare country; do not ask for precise location');
+assert(worker.includes('request.cf?.country'),'Use Cloudflare country; do not ask for precise location');
 assert(worker.includes('DELETE FROM rate_limits'),'Rate limiting should be enabled');
-assert(worker.includes('score>correct*5'),'Reject impossible scores');
+assert(worker.includes('score !== calculatedScore')&&worker.includes('bkPoints !== calculatedBK'),'Reject inconsistent scores and BK Points');
 assert(!/\bpassword\s*[:=]/i.test(worker),'No password field should be needed');
 for(const [locale,strings] of Object.entries(i18n))
  for(const key of ['navLeaderboard','leaderboardTitle','playerTitle','claimUsername','oneUsernameNote','rankingGlobal','rankingCountry','rankingRegion','leaderboardNotConnected','leaderboardBeta'])
