@@ -10,6 +10,10 @@ A new **Rankings** tab supports a one-time username, a nearby country flag, and 
 
 **Shared rankings require a deployed Cloudflare Worker + D1 database**. Until the API URL is configured, the game remains fully playable and the Rankings tab displays a setup notice instead of fake scores. See [leaderboard-worker/README.md](leaderboard-worker/README.md) for deployment instructions, anonymity limits and score-integrity warnings. Anonymous per-browser identity cannot guarantee one account per person; leaderboard scores are currently unverified beta submissions.
 
+### Live standings and fair guesses
+
+When one league is selected, a sidebar displays **real current-season standings** (ranking, club, matches played, points) whenever the connected standings provider returns data. With multiple leagues, a read-only dropdown lists every club grouped by league. Neither reference searches, filters nor reveals the hidden quiz answers. The answer field accepts club names and aliases without autocomplete. The data API requires a secret configured in GitHub Actions; no fictitious standings are displayed before activation. See [LIVE_STANDINGS_SETUP.md](LIVE_STANDINGS_SETUP.md) for source licensing and setup.
+
 ### Game
 
 - **12 leagues**, **214 input club records** (**214 unique playable clubs**).
