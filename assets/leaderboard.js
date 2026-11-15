@@ -72,7 +72,7 @@ async function submit(session){
  const eligible =
    (mode === 'short' && summary.total === 5) ||
    (mode === 'medium' && summary.total === 10) ||
-   (mode === 'long' && summary.total >= 20);
+    (mode === 'long' &&  Array.isArray(session.referencePool) &&  session.referencePool.length > 0 &&  summary.total === session.referencePool.length);
 
  if (!eligible) {
    console.info(
