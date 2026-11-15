@@ -6,21 +6,26 @@ const source='./assets/standings.json';
 let latest=null,lastContext=null,loadPromise=null;
 const tx=key=>typeof tr==='function'?tr(key):key;
 function el(tag,cls,content){const node=document.createElement(tag);if(cls)node.className=cls;if(content!==undefined)node.textContent=content;return node}
-function renderDirectory(leagues,pool){
- $('standingsReference').classList.add('hidden');$('clubDirectory').classList.remove('hidden');$('referenceNotice').textContent='';
- const select=$('clubDirectoryLeague'),previous=select.value;
- select.replaceChildren();
- for(const league of leagues){const opt=document.createElement('option');opt.value=league.id;opt.textContent=league.name;select.append(opt)}
- select.value=leagues.some(l=>l.id===previous)?previous:leagues[0]?.id||'';
- const draw=()=>{
-  const list=pool.filter(team=>team.league_id===select.value).sort((a,b)=>a.name.localeCompare(b.name));
-  $('directoryCount').textContent=tx('referenceClubCount').replace('{count}',String(list.length));
-  $('clubDirectoryRows').replaceChildren(...list.map(team=>el('div','directory-club',team.name)));
+// For multiple selected leagues, the dropdown changes ONLY the standings being
+// displayed. It never searches or changes the hidden quiz or the guess input.
+let selectedStandingsLeague=null;
+function renderDirectory(leagues){
+ $('clubDirectory').classList.remove('hidden');
+ const select=$('clubDirectoryLeague');
+ const previous=selectedStandingsLeague||select.value;
+ select.replaceChildren(...leagues.map(league=>{
+  const option=el('option','',league.name);option.value=league.id;return option;
+ }));
+ select.value=leagues.some(l=>l.id===previous)?previous:leagues[0].id;
+ selectedStandingsLeague=select.value;
+ select.onchange=()=>{
+  selectedStandingsLeague=select.value;
+  const league=leagues.find(l=>l.id===select.value);
+  if(league)showStandings(league);
  };
- select.onchange=draw;draw();
+ showStandings(leagues.find(l=>l.id===select.value));
 }
 function renderTable(league,standings){
- $('clubDirectory').classList.add('hidden');
  $('standingsReference').classList.remove('hidden');
  const rows=standings?.leagues?.[league.id]?.rows;
  if(!Array.isArray(rows)||!rows.length){
@@ -44,26 +49,32 @@ async function fetchStandings(){
  loadPromise=fetch(source,{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Not found');return r.json()}).then(j=>latest=j).catch(()=>null).finally(()=>{loadPromise=null});
  return loadPromise;
 }
-async function show(selected,leagues,pool){
+// All leagues, single or multi-selection, use the same real standings feed.
+let standingsRequest=0;
+async function showStandings(league){
+ if(!league)return;
+ const request=++standingsRequest;
+ $('standingsReference').classList.add('hidden');
+ $('standingsRows').replaceChildren();
+ $('referenceNotice').textContent=tx('standingsLoading');
+ $('referenceUpdated').textContent='';
+ const standings=await fetchStandings();
+ // Ignore obsolete results when a player switches leagues while data loads.
+ if(request!==standingsRequest)return;
+ renderTable(league,standings);
+}
+function show(selected,leagues,pool){
  const target=$('clubReference');if(!target)return;
  const list=leagues.filter(league=>selected.has(league.id));
  target.classList.toggle('hidden',!list.length);
- if(!list.length)return;
+ if(!list.length){++standingsRequest;return}
  lastContext={selected:new Set(selected),leagues,pool};
- $('referenceUpdated').textContent='';
+ $('referenceTitle').textContent=tx('liveStandings');
  if(list.length===1){
-  $('referenceTitle').textContent=list[0].name+' · '+tx('liveStandings');
   $('clubDirectory').classList.add('hidden');
-  $('standingsReference').classList.add('hidden');
-  $('referenceNotice').textContent=tx('standingsLoading');
-  const standings=await fetchStandings();
-  // Do not replace a newer session's reference if an old fetch completes later.
-  if(lastContext?.selected.size!==1||!lastContext.selected.has(list[0].id))return;
-  renderTable(list[0],standings);
- }else{
-  $('referenceTitle').textContent=tx('clubDirectory');
-  renderDirectory(list,pool);
- }
+  selectedStandingsLeague=null;
+  showStandings(list[0]);
+ }else renderDirectory(list);
 }
 function localize(){
  for(const [id,key] of [['standingsClubHead','referenceClub'],['standingsPlayedHead','referencePlayed'],['standingsPointsHead','referencePoints'],['directoryLeagueLabel','referenceBrowse']])$(id).textContent=tx(key);
