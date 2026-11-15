@@ -176,3 +176,18 @@ body.dark .filters select option{background:#241b3c;color:#f8f4ff}
 .directory-club{font-weight:800;font-size:12px;border-bottom:1px solid var(--line);padding:9px 6px}
 .directory-club:last-child{border-bottom:0}
 @media(max-width:800px){.game-layout{grid-template-columns:minmax(0,1fr)}.club-reference{position:static;max-height:none;order:2}.standings-table-wrap table{font-size:12px}.directory-rows{max-height:300px}}
+
+/* Match quiz-length selector and bulk actions to the same baseline. */
+.league-options-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:18px 0}
+.league-options-row .filter-strip{margin:0;flex:1 1 310px;max-width:420px;min-width:245px}
+.league-options-row .league-bulk-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex:0 1 auto;flex-wrap:wrap;margin:0}
+.league-options-row .league-bulk-actions .outline-button{white-space:nowrap}
+/* Tap or hover a revealed clue; hidden ones remain completely inert. */
+button.slot.emoji-explain-trigger{font-family:inherit;color:inherit;cursor:help;padding:0;transition:border-color .18s,box-shadow .18s}
+button.slot.emoji-explain-trigger:hover,button.slot.emoji-explain-trigger:focus-visible,
+button.slot.emoji-explain-trigger[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 3px #9d4aff30;outline:none}
+.emoji-explanation{background:var(--soft);color:var(--fg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-weight:750;font-size:12px;line-height:1.5;margin:7px 0 13px}
+.summary-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.summary-actions button{flex:auto;min-width:0;white-space:normal}
+@media(max-width:700px){.league-options-row{align-items:stretch;gap:10px}.league-options-row .filter-strip{flex:1 1 100%;max-width:none;min-width:0}.league-options-row .league-bulk-actions{flex:1 1 100%;justify-content:flex-end}.summary-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.summary-actions button:last-child{grid-column:1 / -1}}
+@media(max-width:380px){.summary-actions button{min-width:0;font-size:13px}}
