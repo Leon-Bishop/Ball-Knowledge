@@ -1,4 +1,4 @@
-const $=id=>document.getElementById(id);let dictionaries={},lang=localStorage.getItem('efq-language')||'tr';const tr=(key,args={})=>{let str=dictionaries[lang]?.[key]||dictionaries.tr?.[key]||key;return str.replace(/\{(\w+)\}/g,(_,k)=>String(args[k]??''))};const quizLengths={short:5,medium:10};let chosenLeagues=new Set((()=>{try{const saved=JSON.parse(localStorage.getItem('bk-leagues')||'null');return Array.isArray(saved)?saved:['england-premier-league','turkey-super-lig']}catch{return ['england-premier-league','turkey-super-lig']}})());let leagues=[],teams=[],clubFacts=new Map(),pool=[],session=null,round=null,clueOrder=[],selected=null,wrong=[],finished=false,score=0,streak=0,best=Number(localStorage.getItem('bk-best-session-score')||0),outcomes=[];
+const $=id=>document.getElementById(id);let dictionaries={},lang=localStorage.getItem('efq-language')||'tr';const tr=(key,args={})=>{let str=dictionaries[lang]?.[key]||dictionaries.tr?.[key]||key;return str.replace(/\{(\w+)\}/g,(_,k)=>String(args[k]??''))};const quizLengths={short:5,medium:10};let chosenLeagues=new Set((()=>{try{const saved=JSON.parse(localStorage.getItem('bk-leagues')||'null');return Array.isArray(saved)?saved:['england-premier-league','turkey-super-lig']}catch{return ['england-premier-league','turkey-super-lig']}})());let leagues=[],teams=[],clubFacts=new Map(),pool=[],session=null,round=null,clueOrder=[],selected=null,wrong=[],activeEmojiExplanation=null,finished=false,score=0,streak=0,best=Number(localStorage.getItem('bk-best-session-score')||0),outcomes=[];
 const normalize=s=>String(s||'').toLocaleLowerCase('en').replace(/ı/g,'i').replace(/ß/g,'ss').replace(/æ/g,'ae').replace(/ø/g,'o').replace(/ł/g,'l').replace(/đ/g,'d').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
 function warn(s){console.warn(s);$('warnings').textContent+=s+'\n'}
 function validate(){let ids=new Set(),seq=new Set();for(const t of teams){for(const k of ['id','name','league_id','emojis','why','sources','confidence','fun_fact'])if(t[k]==null)warn('Missing '+k+': '+(t.name||'?'));if(ids.has(t.id))warn('Duplicate ID: '+t.id);ids.add(t.id);if(!leagues.some(l=>l.id===t.league_id))warn('Missing league: '+t.name+' → '+t.league_id);if(!Array.isArray(t.emojis)||t.emojis.length!==5)warn('Invalid emoji count: '+t.name);else{let key=JSON.stringify(t.emojis);if(seq.has(key))warn('Duplicate emoji sequence: '+t.name);seq.add(key)}}}
@@ -79,7 +79,7 @@ function newRound(){
  round=BallKnowledgeSession.currentClub(session);
  if(!round)return;
  clueOrder=session.daily?seededShuffle([0,1,2,3,4],hash(session.date+'|'+round.id+'|clues')):shuffle([0,1,2,3,4]);
- wrong=[];outcomes=[];selected=null;selectedFactForRound=null;finished=false;
+ wrong=[];outcomes=[];selected=null;selectedFactForRound=null;activeEmojiExplanation=null;finished=false;
  $('guess').value='';$('message').textContent='';$('history').replaceChildren();$('selected').textContent='';
  $('result').classList.add('hidden');$('sessionSummary').classList.add('hidden');$('endActions').classList.add('hidden');
  $('next').classList.remove('hidden');$('play').classList.remove('hidden');
@@ -95,10 +95,39 @@ function renderProgress(){
  const pct=s.total?Math.round(s.played/s.total*100):0;
  $('sessionMeterFill').style.width=pct+'%';$('sessionMeter').setAttribute('aria-valuenow',String(pct));
 }
+// Generic explanations do not assert unverified club-specific associations.
+const EMOJI_COLOURS=new Set(['🔴','🔵','🟡','🟢','⚫','⚪','🟣','🟠','🟤']);
+function emojiMeaning(index){
+ const emoji=round?.emojis?.[index]||'';
+ return tr(EMOJI_COLOURS.has(emoji)?'emojiMeaningColor':index<=1?'emojiMeaningPlace':index===2?'emojiMeaningSymbol':'emojiMeaningIdentity');
+}
+function displayEmojiExplanation(){
+ const panel=$('emojiExplanation');
+ if(activeEmojiExplanation===null||!round){panel.classList.add('hidden');panel.textContent='';return}
+ panel.textContent=round.emojis[activeEmojiExplanation]+' '+emojiMeaning(activeEmojiExplanation);
+ panel.classList.remove('hidden');
+}
 function render(){
  if(!round)return;
  $('attempts').textContent=finished?tr('roundResolved'):tr('attempts',{count:5-wrong.length});
- $('slots').innerHTML=clueOrder.map((idx,i)=>`<div class="slot ${i<=wrong.length?'show':''}" title="${tr('clue',{count:i+1})}">${i<=wrong.length||finished?round.emojis[idx]:'❓'}</div>`).join('');
+ const container=$('slots');container.replaceChildren();
+ clueOrder.forEach((idx,i)=>{
+  const visible=i<=wrong.length||finished;
+  const item=document.createElement(visible?'button':'div');
+  item.className='slot'+(visible?' show emoji-explain-trigger':'');
+  if(visible){
+   item.type='button';item.textContent=round.emojis[idx];
+   const hint=emojiMeaning(idx);
+   item.title=hint;
+   item.setAttribute('aria-label',round.emojis[idx]+'. '+hint);
+   item.setAttribute('aria-pressed',String(activeEmojiExplanation===idx));
+   item.onclick=()=>{activeEmojiExplanation=activeEmojiExplanation===idx?null:idx;displayEmojiExplanation();
+    container.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===item&&activeEmojiExplanation!==null)));
+   };
+  }else{item.textContent='❓';item.setAttribute('aria-hidden','true')}
+  container.append(item);
+ });
+ displayEmojiExplanation();
  $('submit').disabled=!$('guess').value.trim()||finished;
  // No suggestions or possible-answer previews.
  updateStats();renderProgress();
@@ -157,7 +186,7 @@ function finish(win,pts){
  $('result').append(heading,fact);
  if(lang!=='tr'&&lastFactIsTurkish){const note=document.createElement('p');note.className='fact-language-note';note.textContent=tr('factOriginal');$('result').append(note)}
  $('next').classList.toggle('hidden',session.completed);
- if(session.completed){renderFinalSummary();window.BallKnowledgeLeaderboard?.submit(session)}else $('sessionSummary').classList.add('hidden');
+ if(session.completed){$('endActions').classList.add('hidden');renderFinalSummary();window.BallKnowledgeLeaderboard?.submit(session)}else $('sessionSummary').classList.add('hidden');
  render();
  if(session.completed)$('sessionSummary').scrollIntoView({behavior:'smooth',block:'nearest'});
 }
@@ -187,7 +216,8 @@ function renderFinalSummary(){
  const buttons=document.createElement('div');buttons.className='summary-actions';
  const again=document.createElement('button');again.className='primary-cta';again.textContent=tr('playAgain');again.onclick=startQuiz;
  const change=document.createElement('button');change.className='outline-button';change.textContent=tr('selectLeagues');change.onclick=()=>setView('selection');
- buttons.append(again,change);panel.append(buttons);
+ const shareButton=document.createElement('button');shareButton.className='outline-button';shareButton.textContent=tr('share');shareButton.onclick=share;
+ buttons.append(again,change,shareButton);panel.append(buttons);
 }
 function share(){
  let result;
@@ -267,6 +297,7 @@ function refreshLanguage(){
  $('leagueTitle').textContent=tr('selectLeagues');$('leagueHelp').textContent=tr('selectHelp');
  $('backLabel').textContent=tr('backToLeagues');$('roundEyebrow').textContent=tr('roundEyebrow');
  $('guessTitle').textContent=tr('guessTitle');$('clueHelp').textContent=tr('clueHelp');$('guessLabel').textContent=tr('guessLabel');
+ displayEmojiExplanation();
  $('guess').placeholder=tr('guessPlaceholder');$('submit').textContent=tr('submit');
  $('share').textContent=tr('share');$('next').textContent=tr('next');$('warningsTitle').textContent=tr('dataWarnings');
  $('statsEyebrow').textContent=tr('statsEyebrow');$('statsTitle').textContent=tr('statsTitle');
