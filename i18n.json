@@ -155,7 +155,11 @@
     "emojiMeaningPlace": "Bu simge, kulübün bulunduğu şehir veya bölgeyle bağlantılı bir ipucudur.",
     "emojiMeaningSymbol": "Bu simge, kulübün lakabı, arması veya kimliğiyle ilgili olabilir.",
     "emojiMeaningIdentity": "Bu simge, kulübün renkleri, tarihi veya futbol kimliğiyle ilgili bir ipucudur.",
-    "ambiguousClub": "Birden fazla takım eşleşiyor. Lütfen daha belirgin bir takım adı yaz."
+    "ambiguousClub": "Birden fazla takım eşleşiyor. Lütfen daha belirgin bir takım adı yaz.",
+    "homeKicker": "MAÇ GECESİ BURADA BAŞLIYOR",
+    "homePromise": "5 emojiden futbol kulübünü tahmin et.",
+    "homeFooter": "Skordan fazlasını bilen taraftarlar için.",
+    "homeBack": "Ana sayfa"
   },
   "en": {
     "title": "Ball Knowledge",
@@ -313,7 +317,11 @@
     "emojiMeaningPlace": "This symbol hints at a connection to the club's city or region.",
     "emojiMeaningSymbol": "This symbol may relate to the club's nickname, badge or identity.",
     "emojiMeaningIdentity": "This symbol hints at the club's colours, history or football identity.",
-    "ambiguousClub": "Several clubs match that guess. Type a more specific club name."
+    "ambiguousClub": "Several clubs match that guess. Type a more specific club name.",
+    "homeKicker": "YOUR MATCH NIGHT STARTS HERE",
+    "homePromise": "Guess the football club from 5 emojis.",
+    "homeFooter": "For the fans who know more than the score.",
+    "homeBack": "Home"
   },
   "es": {
     "title": "Ball Knowledge",
@@ -471,7 +479,11 @@
     "emojiMeaningPlace": "Este símbolo puede estar relacionado con la ciudad o región del club.",
     "emojiMeaningSymbol": "Este símbolo puede aludir al apodo, escudo o identidad del club.",
     "emojiMeaningIdentity": "Este símbolo es una pista sobre los colores, la historia o la identidad del club.",
-    "ambiguousClub": "Varios clubes coinciden. Escribe un nombre más específico."
+    "ambiguousClub": "Varios clubes coinciden. Escribe un nombre más específico.",
+    "homeKicker": "TU NOCHE DE FÚTBOL EMPIEZA AQUÍ",
+    "homePromise": "Adivina el club de fútbol con 5 emojis.",
+    "homeFooter": "Para quienes viven el fútbol más allá del marcador.",
+    "homeBack": "Inicio"
   },
   "fr": {
     "title": "Ball Knowledge",
@@ -629,7 +641,11 @@
     "emojiMeaningPlace": "Ce symbole peut évoquer la ville ou la région du club.",
     "emojiMeaningSymbol": "Ce symbole peut évoquer le surnom, l'écusson ou l'identité du club.",
     "emojiMeaningIdentity": "Ce symbole évoque les couleurs, l'histoire ou l'identité du club.",
-    "ambiguousClub": "Plusieurs clubs correspondent. Saisis un nom plus précis."
+    "ambiguousClub": "Plusieurs clubs correspondent. Saisis un nom plus précis.",
+    "homeKicker": "LE MATCH COMMENCE ICI",
+    "homePromise": "Devine le club de football avec 5 émojis.",
+    "homeFooter": "Pour les passionnés qui connaissent le foot par cœur.",
+    "homeBack": "Accueil"
   },
   "it": {
     "title": "Ball Knowledge",
@@ -787,7 +803,11 @@
     "emojiMeaningPlace": "Questo simbolo può essere collegato alla città o alla regione del club.",
     "emojiMeaningSymbol": "Questo simbolo può richiamare il soprannome, lo stemma o l'identità del club.",
     "emojiMeaningIdentity": "Questo simbolo può richiamare i colori, la storia o l'identità del club.",
-    "ambiguousClub": "Più squadre corrispondono. Scrivi un nome più preciso."
+    "ambiguousClub": "Più squadre corrispondono. Scrivi un nome più preciso.",
+    "homeKicker": "LA PARTITA INIZIA QUI",
+    "homePromise": "Indovina la squadra di calcio con 5 emoji.",
+    "homeFooter": "Per chi vive il calcio oltre il risultato.",
+    "homeBack": "Home"
   },
   "pt": {
     "title": "Ball Knowledge",
@@ -945,6 +965,10 @@
     "emojiMeaningPlace": "Este símbolo pode estar relacionado com a cidade ou região do clube.",
     "emojiMeaningSymbol": "Este símbolo pode referir-se à alcunha, ao emblema ou à identidade do clube.",
     "emojiMeaningIdentity": "Este símbolo pode indicar as cores, a história ou a identidade do clube.",
-    "ambiguousClub": "Vários clubes correspondem. Escreve um nome mais específico."
+    "ambiguousClub": "Vários clubes correspondem. Escreve um nome mais específico.",
+    "homeKicker": "A NOITE DE JOGO COMEÇA AQUI",
+    "homePromise": "Adivinha o clube de futebol com 5 emojis.",
+    "homeFooter": "Para quem vive o futebol para lá do resultado.",
+    "homeBack": "Início"
   }
 }

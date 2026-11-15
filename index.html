@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#32117b">
+  <meta name="theme-color" content="#081b2b">
   <meta name="description" content="Ball Knowledge — the six-language football club emoji guessing game. Pick a league, reveal clues and discover surprising club stories.">
   <meta property="og:title" content="Ball Knowledge — Find the club, Learn the History">
   <meta property="og:description" content="12 leagues. 214 club records. Five emoji clues. How much do you know?">
@@ -11,14 +11,17 @@
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
-<body>
+<body class="home-active">
 <div class="app-frame">
   <header class="stadium-hero">
     <div class="hero-stars" aria-hidden="true"></div>
     <div class="stadium-light stadium-light-left" aria-hidden="true">✦ ✦ ✦</div>
     <div class="stadium-light stadium-light-right" aria-hidden="true">✦ ✦ ✦</div>
     <div class="hero-topbar">
-      <p id="brandTagline">Guess the club. Unlock the story.</p>
+      <div class="hero-topline">
+        <button type="button" id="heroHome" class="hero-home-button" aria-label="Home" title="Home">⌂</button>
+        <p id="brandTagline">Guess the club. Unlock the story.</p>
+      </div>
       <div class="header-actions">
         <label for="language" id="languageLabel" class="sr-only">Language</label>
         <select id="language" class="language-control" aria-label="Language">
@@ -42,7 +45,37 @@
   </header>
 
   <main class="content-shell">
-    <section id="selectionView" class="screen selection-view" aria-label="Choose leagues">
+    <!-- Stadium Night welcome screen: visual-only front door to the existing game. -->
+    <section id="homeView" class="screen home-view" aria-label="Ball Knowledge home">
+      <div class="home-topline">
+        <span class="home-kickoff-mark" aria-hidden="true"><span class="home-kickoff-dot"></span> BK / FOOTBALL QUIZ</span>
+        <label for="homeLanguage" class="home-language-label">
+          <span class="sr-only">Language</span>
+          <select id="homeLanguage" class="home-language-control" aria-label="Language">
+            <option value="tr">🇹🇷 Türkçe</option><option value="en">🇬🇧 English</option><option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option><option value="it">🇮🇹 Italiano</option><option value="pt">🇵🇹 Português</option>
+          </select>
+        </label>
+      </div>
+      <div class="home-center">
+        <div class="home-ball" aria-hidden="true">⚽</div>
+        <h1 class="home-wordmark"><span>BALL</span><span>KNOWLEDGE</span></h1>
+        <p class="home-kicker" id="homeKicker">YOUR MATCH NIGHT STARTS HERE</p>
+        <p class="home-promise" id="homePromise">Guess the football club from 5 emojis.</p>
+        <div class="home-actions">
+          <button class="home-action home-action-primary" id="homePlay" type="button"><span class="home-action-icon" aria-hidden="true">▶</span><span id="homePlayText">Play</span></button>
+          <button class="home-action home-action-secondary" id="homeLeaderboard" type="button"><span class="home-action-icon" aria-hidden="true">♜</span><span id="homeLeaderboardText">Leaderboard</span></button>
+          <button class="home-action home-action-secondary" id="homeLeagues" type="button"><span class="home-action-icon" aria-hidden="true">▤</span><span id="homeLeaguesText">Leagues</span></button>
+          <button class="home-action home-action-secondary" id="homeSettings" type="button"><span class="home-action-icon" aria-hidden="true">⚙</span><span id="homeSettingsText">Settings</span></button>
+        </div>
+      </div>
+      <div class="home-footer">
+        <p id="homeFooter">For the fans who know more than the score.</p>
+        <a href="https://unsplash.com/photos/soccer-game-played-in-a-packed-stadium-at-night-gq7DkfsEHVU" rel="noopener noreferrer" target="_blank" class="home-photo-credit">Photo: Zaki / Unsplash</a>
+      </div>
+    </section>
+
+    <section id="selectionView" class="screen selection-view hidden" aria-label="Choose leagues">
       <div class="section-intro">
         <div class="eyebrow"><span class="sparkle">✦</span> <span id="selectionEyebrow">YOUR NEXT CHALLENGE</span></div>
         <h2 id="leagueTitle">Choose your leagues</h2>
