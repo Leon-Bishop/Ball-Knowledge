@@ -333,14 +333,14 @@
       "🏟️",
       "🔴",
       "⚪",
-      "🏟️"
+      "⚽"
     ],
     "why": [
       "City or regional visual cue for Leuven (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "General football imagery; not a verified club-specific identifier"
     ],
     "sources": [],
     "confidence": "low",
@@ -856,14 +856,14 @@
     "emojis": [
       "🌲",
       "🌳",
-      "🌲",
+      "🏙️",
       "🟢",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Curitiba (provisional)",
       "Secondary local context for Curitiba (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Additional urban context for Curitiba; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -1278,14 +1278,14 @@
       "🏟️",
       "🟢",
       "⚪",
-      "🏟️"
+      "⚽"
     ],
     "why": [
       "City or regional visual cue for Chapecó (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "General football imagery; not a verified club-specific identifier"
     ],
     "sources": [],
     "confidence": "low",
@@ -1501,14 +1501,14 @@
       "⚓",
       "🕊️",
       "🔵",
-      "🌊"
+      "🏖️"
     ],
     "why": [
       "City or regional visual cue for Brighton (provisional)",
       "Secondary local context for Brighton (provisional)",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "Coastal setting of Brighton; provisional geographical clue"
     ],
     "sources": [
       "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
@@ -1615,14 +1615,14 @@
       "🏟️",
       "🍬",
       "🔵",
-      "🏟️"
+      "🏰"
     ],
     "why": [
       "City or regional visual cue for Liverpool (provisional)",
       "Secondary local context for Liverpool (provisional)",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "Tower imagery associated with Everton's crest; club-identity clue"
     ],
     "sources": [
       "https://www.premierleague.com/en/news/4726407/all-20-premier-league-clubs-badges-explained",
@@ -2214,14 +2214,14 @@
     "emojis": [
       "🌊",
       "⚓",
-      "⚓",
+      "🚢",
       "🔴",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Brest (provisional)",
       "Secondary local context for Brest (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Maritime setting of Brest; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -2249,16 +2249,16 @@
     "emojis": [
       "🌊",
       "⚓",
-      "⚓",
+      "🚢",
       "🔵",
-      "🌊"
+      "🛟"
     ],
     "why": [
       "City or regional visual cue for Le Havre (provisional)",
       "Secondary local context for Le Havre (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Maritime context for Le Havre; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "Additional coastal imagery; provisional geographical clue"
     ],
     "sources": [],
     "confidence": "low",
@@ -2354,14 +2354,14 @@
     "emojis": [
       "🌊",
       "⚓",
-      "🌊",
+      "⛵",
       "🔵",
       "🏆"
     ],
     "why": [
       "City or regional visual cue for Marseille (provisional)",
       "Secondary local context for Marseille (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Mediterranean maritime context for Marseille; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -2494,14 +2494,14 @@
     "emojis": [
       "🗼",
       "🎨",
-      "🗼",
+      "⚜️",
       "🔵",
       "🏆"
     ],
     "why": [
       "City or regional visual cue for Paris (provisional)",
       "Secondary local context for Paris (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Decorative Parisian motif; provisional visual clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -2564,14 +2564,14 @@
     "emojis": [
       "🗼",
       "🎨",
-      "🗼",
+      "🏙️",
       "🔵",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Paris (provisional)",
       "Secondary local context for Paris (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Additional Paris city imagery; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -2636,14 +2636,14 @@
       "🏟️",
       "🟣",
       "⚪",
-      "🏟️"
+      "🌸"
     ],
     "why": [
       "City or regional visual cue for Toulouse (provisional)",
       "Secondary local context for Toulouse (provisional)",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "Toulouse's 'pink city' association; provisional geographical clue"
     ],
     "sources": [],
     "confidence": "low",
@@ -3054,14 +3054,14 @@
     "emojis": [
       "🌊",
       "⚓",
-      "⚓",
+      "🚢",
       "🔵",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Hamburg (provisional)",
       "Secondary local context for Hamburg (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Hamburg's seaport context; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -3334,14 +3334,14 @@
     "emojis": [
       "🌊",
       "⚓",
-      "🌊",
+      "🚢",
       "🟢",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Bremen (provisional)",
       "Secondary local context for Bremen (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "River and maritime context for Bremen; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -3721,14 +3721,14 @@
       "🏟️",
       "🟡",
       "🔵",
-      "🏟️"
+      "⚽"
     ],
     "why": [
       "City or regional visual cue for Agrinio (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "General football imagery; not a verified club-specific identifier"
     ],
     "sources": [],
     "confidence": "low",
@@ -3824,14 +3824,14 @@
     "emojis": [
       "🌊",
       "⚓",
-      "🌊",
+      "⛵",
       "🔴",
       "🔵"
     ],
     "why": [
       "City or regional visual cue for Volos (provisional)",
       "Secondary local context for Volos (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Volos coastal context; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -3931,14 +3931,14 @@
       "🏟️",
       "🔴",
       "🔵",
-      "🏟️"
+      "🍝"
     ],
     "why": [
       "City or regional visual cue for Bologna (provisional)",
       "Secondary local context for Bologna (provisional)",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "Bologna's culinary association; provisional regional clue"
     ],
     "sources": [],
     "confidence": "low",
@@ -3964,14 +3964,14 @@
     "emojis": [
       "🌊",
       "🏟️",
-      "🌊",
+      "🏝️",
       "🔴",
       "🔵"
     ],
     "why": [
       "City or regional visual cue for Cagliari (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Sardinian island setting of Cagliari; geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -4314,14 +4314,14 @@
     "emojis": [
       "🌋",
       "🍕",
-      "🌋",
+      "🏙️",
       "🔵",
       "🏆"
     ],
     "why": [
       "City or regional visual cue for Naples (provisional)",
       "Secondary local context for Naples (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Naples city context; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -4493,14 +4493,14 @@
       "🏟️",
       "⚫",
       "⚪",
-      "🏟️"
+      "⚽"
     ],
     "why": [
       "City or regional visual cue for Udine (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "General football imagery; not a verified club-specific identifier"
     ],
     "sources": [],
     "confidence": "low",
@@ -4985,14 +4985,14 @@
       "🏟️",
       "🔵",
       "⚪",
-      "🏟️"
+      "⚽"
     ],
     "why": [
       "City or regional visual cue for Zwolle (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
       "Candidate club nickname, badge or identity symbol (requires verification)",
       "Candidate club colour or visual identity (requires verification)",
-      "Candidate club colour, trophy or distinctive association (requires verification)"
+      "General football imagery; not a verified club-specific identifier"
     ],
     "sources": [],
     "confidence": "low",
@@ -5648,14 +5648,14 @@
     "emojis": [
       "🏝️",
       "🌊",
-      "🏝️",
+      "⛰️",
       "⚫",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Funchal (provisional)",
       "Secondary local context for Funchal (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Mountainous Madeira setting; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -6278,14 +6278,14 @@
     "emojis": [
       "🌊",
       "⚓",
-      "🌊",
+      "🏖️",
       "🔵",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for A Coruña (provisional)",
       "Secondary local context for A Coruña (provisional)",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "A Coruña's coastal setting; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -6453,14 +6453,14 @@
     "emojis": [
       "🌊",
       "🏟️",
-      "🌊",
+      "⛵",
       "🔵",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Vigo (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Vigo's maritime setting; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -6593,14 +6593,14 @@
     "emojis": [
       "🌊",
       "⚽",
-      "🌊",
+      "☀️",
       "🔵",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Málaga (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Sunny southern-Spain setting of Málaga; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -6663,14 +6663,14 @@
     "emojis": [
       "🌊",
       "🏟️",
-      "🌊",
+      "🏖️",
       "🟢",
       "⚪"
     ],
     "why": [
       "City or regional visual cue for Santander (provisional)",
       "Distinctiveness fallback, not a verified club-specific clue",
-      "Candidate club nickname, badge or identity symbol (requires verification)",
+      "Santander's coastal setting; provisional geographical clue",
       "Candidate club colour or visual identity (requires verification)",
       "Candidate club colour, trophy or distinctive association (requires verification)"
     ],
@@ -7246,14 +7246,14 @@
       "👦",
       "🔴",
       "⚫",
-      "👦"
+      "🤝"
     ],
     "why": [
       "Ankara capital-city civic buildings",
       "Gençlerbirliği name means youth union; club-name clue",
       "Red club colour fallback",
       "Black club colour",
-      "Club name means Youth Union"
+      "The club name refers to a youth union; collective identity clue"
     ],
     "sources": [
       "https://en.wikipedia.org/wiki/Gen%C3%A7lerbirli%C4%9Fi_S.K.",
