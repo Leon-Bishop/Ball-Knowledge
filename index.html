@@ -48,10 +48,12 @@
         <h2 id="leagueTitle">Choose your leagues</h2>
         <p id="leagueHelp" class="muted">Pick one or more leagues to include in your quiz.</p>
       </div>
-      <div class="league-bulk-actions"><button class="outline-button" id="selectAllLeagues" type="button">Select All</button> <button class="outline-button" id="deselectAllLeagues" type="button">Deselect All</button></div>
-      <div class="filter-strip">
-        <div class="filter-icon" aria-hidden="true">⚙</div>
-        <div id="filters" class="filters"></div>
+      <div class="league-options-row">
+        <div class="filter-strip">
+          <div class="filter-icon" aria-hidden="true">⚙</div>
+          <div id="filters" class="filters"></div>
+        </div>
+        <div class="league-bulk-actions"><button class="outline-button" id="selectAllLeagues" type="button">Select All</button><button class="outline-button" id="deselectAllLeagues" type="button">Deselect All</button></div>
       </div>
       <div class="league-grid" id="leagueGrid" aria-label="League selection"></div>
       <div class="selection-footer">
@@ -78,6 +80,7 @@
           <div class="attempts-badge" id="attempts">5 guesses left</div>
         </div>
         <div class="slots" id="slots" aria-label="Emoji clues"></div>
+        <p id="emojiExplanation" class="emoji-explanation hidden" role="status" aria-live="polite"></p>
         <p class="clue-subtext" id="clueHelp">One more emoji unlocks after each wrong guess.</p>
         <div id="play" class="play-area">
           <label for="guess" class="field-label" id="guessLabel">Your guess</label>
