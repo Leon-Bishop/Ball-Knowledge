@@ -65,6 +65,22 @@ async function loadRanks(){
 async function submit(session){
  if(!root()||!profile||!session?.completed||!session.leaderboardSessionId||session.leaderboardSent)return;
  const summary=BallKnowledgeSession.summary(session);
+ 
+ // Only completed, eligible quizzes can affect the leaderboard.
+ const mode = session.leaderboardMode || 'short';
+
+ const eligible =
+   (mode === 'short' && summary.total === 5) ||
+   (mode === 'medium' && summary.total === 10) ||
+   (mode === 'long' && summary.total >= 20);
+
+ if (!eligible) {
+   console.info(
+     'Ball Knowledge: Quiz does not meet leaderboard requirements.'
+   );
+   return;
+ }
+
  try{
   await api('/api/scores',{method:'POST',body:{sessionId:session.leaderboardSessionId,mode:session.leaderboardMode||'short',score:summary.score,total:summary.total,correct:summary.correct}});
   session.leaderboardSent=true;node('leaderboardStatus').textContent=words('scoreSaved');if(currentView==='leaderboard')await loadRanks();
