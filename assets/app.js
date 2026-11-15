@@ -227,6 +227,23 @@ function renderFinalSummary(){
  const number=document.createElement('div');number.className='final-score-number';number.textContent=`${s.score} / ${s.maxScore}`;
  const caption=document.createElement('p');caption.className='summary-caption';caption.textContent=tr('scorePercent',{percentage:s.percentage});
  panel.append(kicker,title,number,caption);
+ 
+  // Display BK Points after a completed quiz.
+  const bkPreview = document.createElement('p');
+  bkPreview.className = 'summary-caption';
+
+  try {
+    const bkPoints = window.BKPoints.calculateSession(session);
+
+    bkPreview.textContent =
+      `⚽ ${bkPoints.toLocaleString()} BK Points · Preview only`;
+  } catch (error) {
+    bkPreview.textContent = 'BK Points unavailable';
+    console.warn('BK Points calculation:', error);
+  }
+
+  panel.append(bkPreview);
+
  const grid=document.createElement('div');grid.className='summary-stat-grid';
  for(const [key,value] of [['clubsCorrect',s.correct],['clubsMissed',s.missed],['sessionBestStreak',s.bestStreak],['totalRounds',s.total]]){
   const cell=document.createElement('div');cell.className='summary-stat-cell';
