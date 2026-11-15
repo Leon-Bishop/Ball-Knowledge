@@ -12,8 +12,16 @@ let profile=null,busy=false;
 
 const token=()=>localStorage.getItem(tokenKey)||'';
 
+// EU members display the EU flag; other countries keep their national flags.
+const EU_COUNTRIES=new Set([
+ 'AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE',
+ 'GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT',
+ 'RO','SK','SI','ES','SE'
+]);
+
 const flag=country=>{
  if(!/^[A-Z]{2}$/.test(country)||country==='ZZ')return '🌍';
+ if(EU_COUNTRIES.has(country))return '🇪🇺';
  return String.fromCodePoint(
   ...[...country].map(c=>c.charCodeAt(0)+127397)
  );
