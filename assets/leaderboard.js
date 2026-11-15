@@ -5,7 +5,7 @@
 
 const root=()=>String(window.BK_LEADERBOARD_API||'').trim().replace(/\/$/,'');
 const node=id=>document.getElementById(id);
-const words=(key)=>{try{return tr(key)}catch{return key}};
+const words=(key,args={})=>{try{return tr(key,args)}catch{return key}};
 const tokenKey='bk-anonymous-player-token';
 
 let profile=null,busy=false;
@@ -247,75 +247,95 @@ async function loadRanks(){
  * BK Points and league IDs are included in the request.
  * Server-side validation will be added before activation.
  */
-async function submit(session){
+function setSaveState(session, key, reason = '', retryable = false) {
+ session.leaderboardSaveKey = key;
+ session.leaderboardSaveReason = reason;
+ session.leaderboardSaveRetryable = retryable;
 
- if(
-  !root()||
-  !profile||
-  !session?.completed||
-  !session.leaderboardSessionId||
-  session.leaderboardSent
- ){
+ const status = node('bkSaveStatus');
+ if(status && status.dataset.sessionId === session.leaderboardSessionId){
+  status.textContent = words(key, {reason});
+  const retry = node('bkRetrySave');
+  if(retry){
+   retry.hidden = !retryable;
+   retry.classList.toggle('hidden', !retryable);
+  }
+ }
+}
+
+async function submit(session){
+ if(!session?.completed || session.leaderboardSent || session.leaderboardSaving){
   return;
  }
 
- const summary=BallKnowledgeSession.summary(session);
- const mode=session.leaderboardMode||'short';
+ if(!root()){
+  setSaveState(session, 'bkScoreNoConnection');
+  return;
+ }
 
- // Check leaderboard eligibility.
- const eligible=
-  (mode==='short'&&summary.total===5)||
-  (mode==='medium'&&summary.total===10)||
+ if(!profile){
+  setSaveState(session, 'bkScoreNeedUsername', '', true);
+  return;
+ }
+
+ if(!session.leaderboardSessionId){
+  setSaveState(session, 'bkScoreFailed', 'Missing session ID');
+  return;
+ }
+
+ const summary = BallKnowledgeSession.summary(session);
+ const mode = session.leaderboardMode || 'short';
+
+ const eligible =
+  (mode === 'short' && summary.total === 5) ||
+  (mode === 'medium' && summary.total === 10) ||
   (
-   mode==='long'&&
-   Array.isArray(session.referencePool)&&
-   session.referencePool.length>0&&
-   summary.total===session.referencePool.length
+   mode === 'long' &&
+   Array.isArray(session.referencePool) &&
+   session.referencePool.length > 0 &&
+   summary.total === session.referencePool.length
   );
 
  if(!eligible){
-  console.info(
-   'Ball Knowledge: Quiz does not meet leaderboard requirements.'
-  );
+  setSaveState(session, 'bkScoreNotEligible');
   return;
  }
 
+ session.leaderboardSaving = true;
+ setSaveState(session, 'bkScoreSaving');
+
  try{
-  // Calculate BK Points using league multipliers.
-  const bkPoints=window.BKPoints.calculateSession(session);
+  const bkPoints = window.BKPoints.calculateSession(session);
 
-  // Send the completed result to Cloudflare.
-  await api('/api/scores',{
-   method:'POST',
-   body:{
-    sessionId:session.leaderboardSessionId,
-    mode:mode,
-    score:summary.score,
-    total:summary.total,
-    correct:summary.correct,
-    bkPoints:bkPoints,
-    
-    leagueIds:session.leagueIds||[],
-    rounds:session.results.map(result=>({
-      id:result.id,
-      attempt:result.won?result.attempts:null
+  await api('/api/scores', {
+   method: 'POST',
+   body: {
+    sessionId: session.leaderboardSessionId,
+    mode,
+    score: summary.score,
+    total: summary.total,
+    correct: summary.correct,
+    bkPoints,
+    leagueIds: session.leagueIds || [],
+    rounds: session.results.map(result => ({
+     id: result.id,
+     attempt: result.won ? result.attempts : null
     }))
-
    }
   });
 
-  // Prevent duplicate submissions from this session.
-  session.leaderboardSent=true;
+  session.leaderboardSent = true;
+  setSaveState(session, 'bkScoreSaved');
+  node('leaderboardStatus').textContent = words('scoreSaved');
 
-  node('leaderboardStatus').textContent=
-   words('scoreSaved');
-
-  if(currentView==='leaderboard'){
+  if(currentView === 'leaderboard'){
    await loadRanks();
   }
-
  }catch(e){
-  node('leaderboardStatus').textContent=e.message;
+  setSaveState(session, 'bkScoreFailed', e.message, true);
+  node('leaderboardStatus').textContent = e.message;
+ }finally{
+  session.leaderboardSaving = false;
  }
 }
 
