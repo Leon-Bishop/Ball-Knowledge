@@ -191,3 +191,7 @@ button.slot.emoji-explain-trigger[aria-pressed="true"]{border-color:var(--accent
 .summary-actions button{flex:auto;min-width:0;white-space:normal}
 @media(max-width:700px){.league-options-row{align-items:stretch;gap:10px}.league-options-row .filter-strip{flex:1 1 100%;max-width:none;min-width:0}.league-options-row .league-bulk-actions{flex:1 1 100%;justify-content:flex-end}.summary-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.summary-actions button:last-child{grid-column:1 / -1}}
 @media(max-width:380px){.summary-actions button{min-width:0;font-size:13px}}
+
+/* The standings league selector sits above the section title, not under the table. */
+.club-reference > .club-directory{margin:0 0 15px}
+.club-reference > .club-directory label{margin-bottom:8px}
