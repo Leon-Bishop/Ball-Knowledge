@@ -1,11 +1,10 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-const css=readFileSync(new URL('../assets/styles.css', import.meta.url),'utf8');
-for(const selector of [
- 'body.dark .suggestions button{',
- 'body.dark .suggestions button:hover,',
- 'body.dark .suggestions button:focus-visible{',
- 'body.dark .suggestions button:active{'
-]) assert(css.includes(selector),`Missing dark autocomplete state: ${selector}`);
-assert(css.includes('background:#604184;') && css.includes('color:#fff;'));
-console.log('✓ Dark-mode autocomplete normal, hover, focus and active contrast rules present.');
+const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const css=read('assets/styles.css'),html=read('index.html'),js=read('assets/app.js');
+assert(css.includes('.search-field input{'),'Answer input styling must remain visible');
+assert(css.includes('background:var(--card);color:var(--fg);'),'Input must adapt to light and dark themes');
+assert(css.includes('.search-field input:focus{'),'Input requires a visible focus state');
+assert(!html.includes('id="suggestions"'),'Autocomplete must not expose possible clubs');
+assert(!js.includes("$('suggestions')"),'Autocomplete behavior must be removed');
+console.log('✓ Theme-aware answer input with no leaking autocomplete.');
