@@ -45,5 +45,59 @@
     );
   }
 
-  window.BKPoints = Object.freeze({ calculate });
+  
+const LEAGUE_MULTIPLIERS = Object.freeze({
+  "england-premier-league": 1.00,
+  "spain-la-liga": 1.00,
+  "italy-serie-a": 1.00,
+  "germany-bundesliga": 1.00,
+  "france-ligue-1": 1.00,
+  "turkey-super-lig": 1.00,
+
+  "portugal-liga-portugal": 1.05,
+  "netherlands-eredivisie": 1.05,
+  "belgian-pro-league": 1.05,
+
+  "brazil-serie-a": 1.08,
+  "scotland-premiership": 1.10,
+  "greece-super-league": 1.15
+});
+
+function calculateSession(session) {
+  if (
+    !session?.completed ||
+    !Array.isArray(session.order) ||
+    !Array.isArray(session.results) ||
+    session.order.length !== session.results.length
+  ) {
+    throw new Error("Quiz session is not complete");
+  }
+
+  const rounds = session.results.map((result, index) => {
+    const club = session.order[index];
+
+    if (result.id !== club.id) {
+      throw new Error("Club and result do not match");
+    }
+
+    const multiplier = LEAGUE_MULTIPLIERS[club.league_id];
+
+    if (multiplier === undefined) {
+      throw new Error("Unknown league: " + club.league_id);
+    }
+
+    return {
+      attempt: result.won ? result.attempts : null,
+      multiplier
+    };
+  });
+
+  return calculate(session.leaderboardMode, rounds);
+}
+
+window.BKPoints = Object.freeze({
+  calculate,
+  calculateSession
+});
+
 })();
