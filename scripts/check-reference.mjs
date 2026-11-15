@@ -14,8 +14,17 @@ assert(app.includes('normalize(n)===q'),'Guess matching requires full names or a
 assert(app.includes('session.referencePool=[...pool]'),'Keep all chosen-league clubs throughout the quiz');
 assert(ui.includes('list.length===1')&&ui.includes('renderTable(list[0],standings)'),'Single-league standings required');
 assert(ui.includes('renderDirectory(list,pool)'),'Multi-league directory required');
+assert(!html.includes('id="clubDirectoryLeague"'),'Do not show one league at a time in a dropdown');
+assert(html.includes('id="directoryIntro"'),'Explain complete selected-league club list');
+assert(ui.includes("leagues.map(league=>{"),'Each selected league gets its own visual section');
+assert(ui.includes("pool.filter(team=>team.league_id===league.id)"),'Show every club in every selected league');
+assert(ui.includes("directory-league-card")&&ui.includes("directory-team-name"),'Show grouped league cards with team names');
+assert(ui.includes('directoryOpen.get(league.id)??true'),'Default every chosen league expanded');
+assert(!ui.includes("select.onchange="),'League list must not be restricted by a selector');
+assert(css.includes('.directory-groups{display:grid')&&css.includes('.directory-team-name{'),'Grouped directory styles required');
+
 assert(!ui.includes("getElementById('guess')")&&!ui.includes("node('guess')"),'Directory must not filter answers');
 assert(css.includes('.game-layout{display:grid;')&&css.includes('grid-template-columns:minmax(0,1fr)'));
 for(const id of ['belgian-pro-league','brazil-serie-a','england-premier-league','france-ligue-1','germany-bundesliga','greece-super-league','italy-serie-a','netherlands-eredivisie','portugal-liga-portugal','scotland-premiership','spain-la-liga','turkey-super-lig'])assert(source.includes("'"+id+"':"),id+' standings integration missing');
-for(const [lang,d] of Object.entries(strings))for(const key of ['unknownClub','liveStandings','standingsUnavailable','clubDirectory','referenceBrowse','referenceClubCount'])assert(d[key],lang+' missing '+key);
+for(const [lang,d] of Object.entries(strings))for(const key of ['unknownClub','liveStandings','standingsUnavailable','clubDirectory','referenceBrowse','referenceClubCount','referenceAllClubs'])assert(d[key],lang+' missing '+key);
 console.log('✓ Direct guesses, unfiltered all-club directory, live-only standings, 12 leagues, six translations');
