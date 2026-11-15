@@ -14,7 +14,7 @@ for(const [id,route] of [['homePlay','game'],['homeLeagues','selection'],['homeL
  assert(app.includes("$('"+id+"').onclick=()=>setView('"+route+"')"),'Wrong destination for '+id);
 }
 assert(app.includes("if(view==='game'&&!session)"),'Existing play-session start behaviour must remain');
-assert(app.includes("session.referencePool=[...pool]"),"Game's league selection must remain intact");
+assert(app.includes("session.referencePool=[...pool]"),'Game's league selection must remain intact');
 assert(app.includes("$('selectAllLeagues').onclick=()=>setAllLeagues(true)"),'League bulk selection must remain intact');
 assert(css.includes('body.home-active .stadium-hero')&&css.includes('body.home-active .bottom-nav'),'Welcome should replace old header/nav only on home');
 assert(css.includes('.home-action-primary')&&css.includes('.home-action-secondary'),'Stadium Night buttons missing');
