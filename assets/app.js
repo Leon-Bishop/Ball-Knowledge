@@ -1,5 +1,5 @@
 const $=id=>document.getElementById(id);let dictionaries={},lang=localStorage.getItem('efq-language')||'tr';const tr=(key,args={})=>{let str=dictionaries[lang]?.[key]||dictionaries.tr?.[key]||key;return str.replace(/\{(\w+)\}/g,(_,k)=>String(args[k]??''))};const quizLengths={short:5,medium:10};let chosenLeagues=new Set((()=>{try{const saved=JSON.parse(localStorage.getItem('bk-leagues')||'null');return Array.isArray(saved)?saved:['england-premier-league','turkey-super-lig']}catch{return ['england-premier-league','turkey-super-lig']}})());let leagues=[],teams=[],clubFacts=new Map(),pool=[],session=null,round=null,clueOrder=[],selected=null,wrong=[],activeEmojiExplanation=null,finished=false,score=0,streak=0,best=Number(localStorage.getItem('bk-best-session-score')||0),outcomes=[];
-const normalize=s=>String(s||'').toLocaleLowerCase('en').replace(/ı/g,'i').replace(/ß/g,'ss').replace(/æ/g,'ae').replace(/ø/g,'o').replace(/ł/g,'l').replace(/đ/g,'d').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+const normalize=BallKnowledgeGuessMatcher.normalize;
 function warn(s){console.warn(s);$('warnings').textContent+=s+'\n'}
 function validate(){let ids=new Set(),seq=new Set();for(const t of teams){for(const k of ['id','name','league_id','emojis','why','sources','confidence','fun_fact'])if(t[k]==null)warn('Missing '+k+': '+(t.name||'?'));if(ids.has(t.id))warn('Duplicate ID: '+t.id);ids.add(t.id);if(!leagues.some(l=>l.id===t.league_id))warn('Missing league: '+t.name+' → '+t.league_id);if(!Array.isArray(t.emojis)||t.emojis.length!==5)warn('Invalid emoji count: '+t.name);else{if(new Set(t.emojis.map(e=>String(e).replace(/\uFE0F/g,''))).size!==5)warn('Duplicate emoji clues: '+t.name);let key=JSON.stringify(t.emojis);if(seq.has(key))warn('Duplicate emoji sequence: '+t.name);seq.add(key)}}}
 function valid(t){return t.id&&t.name&&t.league_id&&Array.isArray(t.emojis)&&t.emojis.length===5&&leagues.some(l=>l.id===t.league_id)}
@@ -164,9 +164,8 @@ function suggest(){
  $('selected').textContent='';render();
 }
 function resolveGuess(input){
- const q=normalize(input);if(!q)return null;
- // Evaluate names against all clubs from selected leagues, not just 5/10 session answers.
- return (session?.referencePool||pool).find(t=>[t.name,...(t.aliases||[]),t.team_abbreviation].some(n=>n&&normalize(n)===q))||null;
+ // Check every club in the selected leagues, not just the short quiz's hidden answers.
+ return BallKnowledgeGuessMatcher.resolve(input,session?.referencePool||pool);
 }
 // Feedback must add information: never state the country, or restate the selected single league.
 const KIT_COLOUR_EMOJIS=new Set(['🔴','🔵','🟡','🟢','⚫','⚪','🟣','🟠','🟤']);
@@ -181,8 +180,9 @@ function guessFeedback(guess,answer,lastAttempt){
 }
 function submit(){
  if(finished||!round||!session||session.completed)return;
- const t=resolveGuess($('guess').value);
- if(!t){$('selected').textContent=tr('unknownClub');return}
+ const match=resolveGuess($('guess').value);
+ if(!match.club){$('selected').textContent=tr(match.ambiguous?'ambiguousClub':'unknownClub');return}
+ const t=match.club;
  $('selected').textContent='';selected=null;$('guess').value='';
  if(wrong.some(w=>w.id===t.id)){$('message').textContent=tr('alreadyGuessed');render();return}
  if(t.id===round.id){outcomes.push('🟩');finish(true,5-wrong.length)}
