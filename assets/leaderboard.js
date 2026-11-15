@@ -295,7 +295,13 @@ async function submit(session){
     total:summary.total,
     correct:summary.correct,
     bkPoints:bkPoints,
-    leagueIds:session.leagueIds||[]
+    
+    leagueIds:session.leagueIds||[],
+    rounds:session.results.map(result=>({
+      id:result.id,
+      attempt:result.won?result.attempts:null
+    }))
+
    }
   });
 
