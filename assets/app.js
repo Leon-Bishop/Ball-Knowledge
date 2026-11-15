@@ -110,7 +110,7 @@ function suggest(){
 function resolveGuess(input){
  const q=normalize(input);if(!q)return null;
  // Evaluate names against all clubs from selected leagues, not just 5/10 session answers.
- return pool.find(t=>[t.name,...(t.aliases||[]),t.team_abbreviation].some(n=>n&&normalize(n)===q))||null;
+ return (session?.referencePool||pool).find(t=>[t.name,...(t.aliases||[]),t.team_abbreviation].some(n=>n&&normalize(n)===q))||null;
 }
 // Feedback must add information: never state the country, or restate the selected single league.
 const KIT_COLOUR_EMOJIS=new Set(['🔴','🔵','🟡','🟢','⚫','⚪','🟣','🟠','🟤']);
