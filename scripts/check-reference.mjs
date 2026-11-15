@@ -9,8 +9,9 @@ assert(html.includes('id="clubReference"')&&html.includes('id="standingsRows"')&
 assert(html.includes('src="./assets/club-reference.js"'));
 assert(!html.includes('id="suggestions"')&&!html.includes('aria-autocomplete="list"'));
 assert(!app.includes("$('suggestions')"),'No answer suggestions may remain');
-assert(app.includes('(session?.referencePool||pool).find('),'All clubs of original selected leagues must be allowed guesses');
-assert(app.includes('normalize(n)===q'),'Guess matching requires full names or aliases, not substring search');
+assert(app.includes('BallKnowledgeGuessMatcher.resolve(input,session?.referencePool||pool)'),'Guess matcher must use all selected-league clubs');
+assert(html.includes('src="./assets/guess-matcher.js"'),'Load forgiving guess matcher before game');
+assert(!app.includes('includes(q)'),'Guess matching must not accept arbitrary substrings');
 assert(app.includes('session.referencePool=[...pool]'),'Keep all chosen-league clubs throughout the quiz');
 assert(ui.includes('renderDirectory(list)'),'Standings selector should appear for single and multiple leagues');
 assert(html.indexOf('id="clubDirectory"')<html.indexOf('id="referenceTitle"'),'Dropdown must appear ABOVE live standings heading');
