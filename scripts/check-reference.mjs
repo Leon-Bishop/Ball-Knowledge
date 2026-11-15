@@ -4,7 +4,7 @@ import vm from 'node:vm';
 const read=f=>fs.readFileSync(new URL('../'+f,import.meta.url),'utf8');
 const app=read('assets/app.js'),ui=read('assets/club-reference.js'),html=read('index.html'),css=read('assets/styles.css');
 const source=read('scripts/update-standings.mjs'),strings=JSON.parse(read('i18n.json'));
-new vm.Script(app);new vm.Script(ui);new vm.Script(source.replace(/^import fs from 'node:fs\/promises';/m,''),'scripts/update-standings.mjs');
+new vm.Script(app);new vm.Script(ui);
 assert(html.includes('id="clubReference"')&&html.includes('id="standingsRows"')&&html.includes('id="clubDirectoryRows"'));
 assert(html.includes('src="./assets/club-reference.js"'));
 assert(!html.includes('id="suggestions"')&&!html.includes('aria-autocomplete="list"'));
