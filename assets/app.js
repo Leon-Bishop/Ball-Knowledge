@@ -1,7 +1,7 @@
 const $=id=>document.getElementById(id);let dictionaries={},lang=localStorage.getItem('efq-language')||'tr';const tr=(key,args={})=>{let str=dictionaries[lang]?.[key]||dictionaries.tr?.[key]||key;return str.replace(/\{(\w+)\}/g,(_,k)=>String(args[k]??''))};const quizLengths={short:5,medium:10};let chosenLeagues=new Set((()=>{try{const saved=JSON.parse(localStorage.getItem('bk-leagues')||'null');return Array.isArray(saved)?saved:['england-premier-league','turkey-super-lig']}catch{return ['england-premier-league','turkey-super-lig']}})());let leagues=[],teams=[],clubFacts=new Map(),pool=[],session=null,round=null,clueOrder=[],selected=null,wrong=[],activeEmojiExplanation=null,finished=false,score=0,streak=0,best=Number(localStorage.getItem('bk-best-session-score')||0),outcomes=[];
 const normalize=s=>String(s||'').toLocaleLowerCase('en').replace(/ı/g,'i').replace(/ß/g,'ss').replace(/æ/g,'ae').replace(/ø/g,'o').replace(/ł/g,'l').replace(/đ/g,'d').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
 function warn(s){console.warn(s);$('warnings').textContent+=s+'\n'}
-function validate(){let ids=new Set(),seq=new Set();for(const t of teams){for(const k of ['id','name','league_id','emojis','why','sources','confidence','fun_fact'])if(t[k]==null)warn('Missing '+k+': '+(t.name||'?'));if(ids.has(t.id))warn('Duplicate ID: '+t.id);ids.add(t.id);if(!leagues.some(l=>l.id===t.league_id))warn('Missing league: '+t.name+' → '+t.league_id);if(!Array.isArray(t.emojis)||t.emojis.length!==5)warn('Invalid emoji count: '+t.name);else{let key=JSON.stringify(t.emojis);if(seq.has(key))warn('Duplicate emoji sequence: '+t.name);seq.add(key)}}}
+function validate(){let ids=new Set(),seq=new Set();for(const t of teams){for(const k of ['id','name','league_id','emojis','why','sources','confidence','fun_fact'])if(t[k]==null)warn('Missing '+k+': '+(t.name||'?'));if(ids.has(t.id))warn('Duplicate ID: '+t.id);ids.add(t.id);if(!leagues.some(l=>l.id===t.league_id))warn('Missing league: '+t.name+' → '+t.league_id);if(!Array.isArray(t.emojis)||t.emojis.length!==5)warn('Invalid emoji count: '+t.name);else{if(new Set(t.emojis.map(e=>String(e).replace(/\uFE0F/g,''))).size!==5)warn('Duplicate emoji clues: '+t.name);let key=JSON.stringify(t.emojis);if(seq.has(key))warn('Duplicate emoji sequence: '+t.name);seq.add(key)}}}
 function valid(t){return t.id&&t.name&&t.league_id&&Array.isArray(t.emojis)&&t.emojis.length===5&&leagues.some(l=>l.id===t.league_id)}
 function quizLength(){return quizLengths[$('f-quizLength')?.value]||pool.length}
 function roundCount(){return Math.min(pool.length,quizLength())}
@@ -74,10 +74,25 @@ function startQuiz(){
  score=0;streak=0;round=null;outcomes=[];
  newRound();setView('game');
 }
+// Defensive fallback: no round can display the same visible emoji twice,
+// even if future imported club data contains duplicate clue symbols.
+function distinctRoundEmojis(emojis){
+ const used=new Set();
+ const candidates=['⚽','🥅','🏟️','🎽','🧭','🗺️','🏆','⭐','🌍','🎯'];
+ const key=e=>String(e).replace(/\uFE0F/g,'');
+ return emojis.map(emoji=>{
+  const normalized=key(emoji);
+  if(!used.has(normalized)){used.add(normalized);return emoji}
+  const replacement=candidates.find(candidate=>!used.has(key(candidate)));
+  if(!replacement)throw Error('Not enough unique emoji fallback symbols');
+  used.add(key(replacement));return replacement;
+ });
+}
 function newRound(){
  if(!session||session.completed)return;
  round=BallKnowledgeSession.currentClub(session);
  if(!round)return;
+ round={...round,emojis:distinctRoundEmojis(round.emojis)};
  clueOrder=session.daily?seededShuffle([0,1,2,3,4],hash(session.date+'|'+round.id+'|clues')):shuffle([0,1,2,3,4]);
  wrong=[];outcomes=[];selected=null;selectedFactForRound=null;activeEmojiExplanation=null;finished=false;
  $('guess').value='';$('message').textContent='';$('history').replaceChildren();$('selected').textContent='';
