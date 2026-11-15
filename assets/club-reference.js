@@ -70,11 +70,9 @@ function show(selected,leagues,pool){
  if(!list.length){++standingsRequest;return}
  lastContext={selected:new Set(selected),leagues,pool};
  $('referenceTitle').textContent=tx('liveStandings');
- if(list.length===1){
-  $('clubDirectory').classList.add('hidden');
-  selectedStandingsLeague=null;
-  showStandings(list[0]);
- }else renderDirectory(list);
+ // Keep the selector above the heading for one or multiple chosen leagues.
+ // With one league, the dropdown simply contains that one league.
+ renderDirectory(list);
 }
 function localize(){
  for(const [id,key] of [['standingsClubHead','referenceClub'],['standingsPlayedHead','referencePlayed'],['standingsPointsHead','referencePoints'],['directoryLeagueLabel','referenceBrowse']])$(id).textContent=tx(key);
