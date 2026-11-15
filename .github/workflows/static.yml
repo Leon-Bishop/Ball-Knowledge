@@ -8,6 +8,9 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  schedule:
+    # Four refresh attempts a day. API access requires API_NINJAS_KEY repository secret.
+    - cron: "13 */6 * * *"
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -31,6 +34,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Update live standings (optional)
+        env:
+          API_NINJAS_KEY: ${{ secrets.API_NINJAS_KEY }}
+        run: node scripts/update-standings.mjs
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
