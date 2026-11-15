@@ -195,3 +195,43 @@ button.slot.emoji-explain-trigger[aria-pressed="true"]{border-color:var(--accent
 /* The standings league selector sits above the section title, not under the table. */
 .club-reference > .club-directory{margin:0 0 15px}
 .club-reference > .club-directory label{margin-bottom:8px}
+
+/* Home player identity card: optional signup, live name feedback, responsive layout. */
+.home-player-card{display:flex;align-items:flex-start;gap:15px;padding:19px 20px;margin:19px 0 6px;background:linear-gradient(115deg,var(--soft),var(--card));border:1px solid var(--line);border-radius:19px;box-shadow:0 7px 19px #5b21a50b}
+.home-player-avatar{flex:0 0 53px;width:53px;height:53px;display:grid;place-items:center;border-radius:17px;background:var(--card);border:1px solid var(--line);font-size:25px;box-shadow:0 4px 10px #5b21a511}
+.home-player-main{flex:1;min-width:0}
+.home-player-topline{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-bottom:6px}
+.home-player-kicker{font-size:10px;font-weight:1000;letter-spacing:1.6px;color:var(--accent)}
+.home-player-tag{font-size:10px;font-weight:900;border-radius:50px;background:var(--card);border:1px solid var(--line);color:var(--muted);padding:4px 9px}
+.home-player-card[data-state="active"] .home-player-tag{color:var(--accent)}
+.home-player-card h3{font-size:clamp(18px,3vw,22px);font-weight:1000;line-height:1.25;letter-spacing:-.45px;margin:0 0 7px;overflow-wrap:anywhere}
+.home-player-content{font-size:13px;line-height:1.5}
+.home-player-content>.muted{margin-bottom:9px}
+.home-player-description{color:var(--muted);font-size:13px;line-height:1.5}
+.home-player-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:12px}
+.home-player-actions .outline-button{font-size:12px;padding:10px 14px}
+.home-player-country{font-size:13px;font-weight:850;color:var(--muted)}
+.player-claim-form{display:block;margin-top:11px}
+.player-name-label{display:block;font-size:12px;font-weight:900;margin-bottom:6px}
+.player-claim-controls{display:flex;gap:9px;align-items:stretch}
+.player-claim-controls input{flex:1;min-width:0;width:100%;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--fg);padding:12px 13px;font:inherit;font-size:14px}
+.player-claim-controls input[aria-invalid="true"]{border-color:#d44e72}
+.player-claim-controls .primary-cta{white-space:nowrap;font-size:13px;padding:11px 15px;min-height:44px}
+.player-claim-controls .primary-cta:before{display:none}
+.player-name-meta{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-top:7px;font-size:11px;color:var(--muted)}
+.player-name-feedback{flex:1;min-width:0;line-height:1.45}
+.player-name-feedback[data-state="valid"]{color:var(--accent);font-weight:850}
+.player-name-feedback[data-state="error"]{color:#c33d61;font-weight:850}
+body.dark .player-name-feedback[data-state="error"]{color:#ff8cac}
+.player-name-count{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:900}
+.player-name-preview{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:7px 10px;margin-top:10px;font-size:12px;font-weight:900;max-width:100%;overflow-wrap:anywhere}
+.player-name-preview span:last-child{min-width:0;overflow-wrap:anywhere}
+.player-profile-help{color:var(--muted);font-size:12px;margin-top:8px;line-height:1.5}
+.player-profile-retry{margin-top:10px;font-size:12px}
+@media(max-width:620px){
+ .home-player-card{gap:11px;padding:15px 13px;border-radius:17px}
+ .home-player-avatar{flex-basis:41px;width:41px;height:41px;font-size:21px;border-radius:13px}
+ .player-claim-controls{flex-wrap:wrap}
+ .player-claim-controls input{flex:1 1 100%}
+ .player-claim-controls .primary-cta{width:100%}
+}
