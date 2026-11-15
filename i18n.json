@@ -122,8 +122,7 @@
     "emojiMeaningColor": "Bu renk, kulübün forma veya görsel kimliğiyle ilgili bir ipucu olabilir.",
     "emojiMeaningPlace": "Bu simge, kulübün bulunduğu şehir veya bölgeyle bağlantılı bir ipucudur.",
     "emojiMeaningSymbol": "Bu simge, kulübün lakabı, arması veya kimliğiyle ilgili olabilir.",
-    "emojiMeaningIdentity": "Bu simge, kulübün renkleri, tarihi veya futbol kimliğiyle ilgili bir ipucudur.",
-    "referenceAllClubs": "{leagues} seçili ligden toplam {count} takım. Her ligin tüm takımları aşağıda; bu liste tahminlerine göre değişmez."
+    "emojiMeaningIdentity": "Bu simge, kulübün renkleri, tarihi veya futbol kimliğiyle ilgili bir ipucudur."
   },
   "en": {
     "title": "Ball Knowledge",
@@ -248,8 +247,7 @@
     "emojiMeaningColor": "This colour may be a clue about the club's kit or visual identity.",
     "emojiMeaningPlace": "This symbol hints at a connection to the club's city or region.",
     "emojiMeaningSymbol": "This symbol may relate to the club's nickname, badge or identity.",
-    "emojiMeaningIdentity": "This symbol hints at the club's colours, history or football identity.",
-    "referenceAllClubs": "{count} clubs across {leagues} selected leagues. Every club is listed below; your guesses never filter this directory."
+    "emojiMeaningIdentity": "This symbol hints at the club's colours, history or football identity."
   },
   "es": {
     "title": "Ball Knowledge",
@@ -374,8 +372,7 @@
     "emojiMeaningColor": "Este color puede ser una pista sobre la equipación o identidad visual del club.",
     "emojiMeaningPlace": "Este símbolo puede estar relacionado con la ciudad o región del club.",
     "emojiMeaningSymbol": "Este símbolo puede aludir al apodo, escudo o identidad del club.",
-    "emojiMeaningIdentity": "Este símbolo es una pista sobre los colores, la historia o la identidad del club.",
-    "referenceAllClubs": "{count} clubes de {leagues} ligas seleccionadas. Se muestran todos, sin filtrarlos según tus respuestas."
+    "emojiMeaningIdentity": "Este símbolo es una pista sobre los colores, la historia o la identidad del club."
   },
   "fr": {
     "title": "Ball Knowledge",
@@ -500,8 +497,7 @@
     "emojiMeaningColor": "Cette couleur peut évoquer le maillot ou l'identité visuelle du club.",
     "emojiMeaningPlace": "Ce symbole peut évoquer la ville ou la région du club.",
     "emojiMeaningSymbol": "Ce symbole peut évoquer le surnom, l'écusson ou l'identité du club.",
-    "emojiMeaningIdentity": "Ce symbole évoque les couleurs, l'histoire ou l'identité du club.",
-    "referenceAllClubs": "{count} clubs dans {leagues} championnats sélectionnés. Tous les clubs sont affichés, sans filtrage selon tes réponses."
+    "emojiMeaningIdentity": "Ce symbole évoque les couleurs, l'histoire ou l'identité du club."
   },
   "it": {
     "title": "Ball Knowledge",
@@ -626,8 +622,7 @@
     "emojiMeaningColor": "Questo colore può essere un indizio sulla maglia o sull'identità visiva del club.",
     "emojiMeaningPlace": "Questo simbolo può essere collegato alla città o alla regione del club.",
     "emojiMeaningSymbol": "Questo simbolo può richiamare il soprannome, lo stemma o l'identità del club.",
-    "emojiMeaningIdentity": "Questo simbolo può richiamare i colori, la storia o l'identità del club.",
-    "referenceAllClubs": "{count} club in {leagues} campionati selezionati. Tutti i club sono visibili; i tuoi tentativi non filtrano l'elenco."
+    "emojiMeaningIdentity": "Questo simbolo può richiamare i colori, la storia o l'identità del club."
   },
   "pt": {
     "title": "Ball Knowledge",
@@ -752,7 +747,6 @@
     "emojiMeaningColor": "Esta cor pode ser uma pista sobre o equipamento ou a identidade visual do clube.",
     "emojiMeaningPlace": "Este símbolo pode estar relacionado com a cidade ou região do clube.",
     "emojiMeaningSymbol": "Este símbolo pode referir-se à alcunha, ao emblema ou à identidade do clube.",
-    "emojiMeaningIdentity": "Este símbolo pode indicar as cores, a história ou a identidade do clube.",
-    "referenceAllClubs": "{count} clubes em {leagues} ligas selecionadas. Todos os clubes estão visíveis; os teus palpites não filtram a lista."
+    "emojiMeaningIdentity": "Este símbolo pode indicar as cores, a história ou a identidade do clube."
   }
 }

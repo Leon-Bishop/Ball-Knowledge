@@ -191,22 +191,3 @@ button.slot.emoji-explain-trigger[aria-pressed="true"]{border-color:var(--accent
 .summary-actions button{flex:auto;min-width:0;white-space:normal}
 @media(max-width:700px){.league-options-row{align-items:stretch;gap:10px}.league-options-row .filter-strip{flex:1 1 100%;max-width:none;min-width:0}.league-options-row .league-bulk-actions{flex:1 1 100%;justify-content:flex-end}.summary-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.summary-actions button:last-child{grid-column:1 / -1}}
 @media(max-width:380px){.summary-actions button{min-width:0;font-size:13px}}
-
-/* Multi-league reference: distinct league groups, not standings and not answer autocomplete. */
-.club-directory{min-width:0}
-.directory-intro{margin:0 0 14px;color:var(--muted);font-size:11px;line-height:1.6;font-weight:750}
-.directory-groups{display:grid;gap:13px;min-width:0}
-.directory-league-card{overflow:hidden;background:var(--soft);border:1px solid var(--line);border-radius:16px}
-.directory-league-header{list-style:none;display:flex;align-items:center;gap:10px;padding:13px 11px;cursor:pointer;min-width:0;user-select:none}
-.directory-league-header::-webkit-details-marker{display:none}
-.directory-league-header:focus-visible{outline:2px solid var(--accent);outline-offset:-3px;border-radius:14px}
-.directory-league-flag{font-size:23px;line-height:1;flex:none}
-.directory-league-info{display:grid;gap:3px;flex:1;min-width:0}
-.directory-league-name{font-size:12px;line-height:1.35;font-weight:1000;overflow-wrap:anywhere;color:var(--fg)}
-.directory-league-count{font-size:10px;font-weight:750;color:var(--muted)}
-.directory-league-chevron{font-size:20px;font-weight:900;color:var(--accent);line-height:1;transition:transform .2s}
-.directory-league-card[open] .directory-league-chevron{transform:rotate(180deg)}
-.directory-team-grid{display:grid;gap:5px;padding:0 9px 10px;min-width:0}
-.directory-team-name{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:9px;padding:9px 10px;font-size:11px;font-weight:850;line-height:1.3;overflow-wrap:anywhere}
-@media(max-width:800px){.directory-team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:420px){.directory-team-grid{grid-template-columns:minmax(0,1fr)}}
