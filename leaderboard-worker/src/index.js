@@ -49,7 +49,7 @@ async function handle(req,env){const url=new URL(req.url),method=req.method,rout
   const {mode,sessionId,score,total,correct}=body;
   if(!['short','medium','long'].includes(mode)||!/^[-a-f0-9]{36}$/.test(sessionId||'')||![score,total,correct].every(Number.isInteger)||
     total<1||total>214||correct<0||correct>total||score<0||score>correct*5||
-    (mode==='short'&&total!==5)||(mode==='medium'&&total!==10)||(mode==='long'&&total<1))return reply({error:'Invalid quiz result'},400);
+    (mode==='short'&&total!==5)||(mode==='medium'&&total!==10)|| (mode==='long'&&total<20))return reply({error:'Invalid quiz result'},400);
   const throttle=await ipLimiter(env.DB,'score:'+user.id,10);if(!throttle)return reply({error:'Please allow a moment between submissions'},429);
   try{
    const now=Math.floor(Date.now()/1000);
