@@ -14,6 +14,7 @@ for (const team of teams){
  assert(leagueIds.has(team.league_id),`Bilinmeyen lig: ${team.name}`);
  assert(Array.isArray(team.emojis)&&team.emojis.length===5,`5 emoji şartı: ${team.name}`);
  assert(team.emojis.every(e=>typeof e==='string'&&e.length>0),`Boş emoji: ${team.name}`);
+ assert.equal(new Set(team.emojis.map(e=>e.replace(/\uFE0F/g,''))).size,5,`Repeated emoji within ${team.name} (${team.id})`);
  teamsById.set(team.id,team);
 }
 const storiesById=new Map();
