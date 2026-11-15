@@ -467,23 +467,32 @@ async function handle(request, env) {
       WHERE s.mode = ?${where}
       ORDER BY
         s.best_bk_points DESC,
-        s.best_correct DESC,
-        s.updated_at ASC
+        s.updated_at ASC,
+        u.username ASC
       LIMIT 100
     `).bind(...binds).all();
 
-    const players = (rows.results || []).map((row, index) => ({
-      rank: index + 1,
-      username: row.username,
-      country: row.country,
-      score: row.score,
-      rounds: row.rounds,
-      correct: row.correct,
-      bkPoints: row.bkPoints,
-      accuracy: Math.round(
-        100 * row.score / (row.rounds * 5)
-      )
-    }));
+    // Players with the same BK Points share the same rank.
+    // Display order among tied players does not affect their rank.
+    let previousPoints = null;
+    let sharedRank = 0;
+
+    const players = (rows.results || []).map((row, index) => {
+      if (row.bkPoints !== previousPoints) {
+        sharedRank = index + 1;
+        previousPoints = row.bkPoints;
+      }
+
+      return {
+        rank: sharedRank,
+        username: row.username,
+        country: row.country,
+        score: row.score,
+        rounds: row.rounds,
+        correct: row.correct,
+        bkPoints: row.bkPoints
+      };
+    });
 
     return reply({
       scope,
@@ -561,12 +570,7 @@ async function handle(request, env) {
             best_correct = excluded.best_correct,
             best_bk_points = excluded.best_bk_points,
             updated_at = excluded.updated_at
-          WHERE
-            excluded.best_bk_points > scores.best_bk_points
-            OR (
-              excluded.best_bk_points = scores.best_bk_points
-              AND excluded.best_correct > scores.best_correct
-            )
+          WHERE excluded.best_bk_points > scores.best_bk_points
         `).bind(
           user.id,
           result.mode,
