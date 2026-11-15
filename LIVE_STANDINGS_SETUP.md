@@ -4,7 +4,7 @@
 
 - With **one selected league**, a read-only current-season standings table appears to the right of the quiz on wide screens (below the quiz on narrow screens). It shows actual ranking, club, games played and points, with provider and last-fetched date. Never generated from the hidden 5/10 quiz selections.
 - With **multiple leagues**, a separate unsearchable directory dropdown groups **every eligible club** by league. Changing the directory never changes the answer or matches against what is typed.
-- The guess input no longer autocompletes or narrows clubs as a user types. Enter the full club name or a supported alias/abbreviation. Guesses are checked against **all clubs of the selected leagues**, not only those secretly drawn for this session. Unknown names do not cost an attempt, but an actual wrong guess does. Five attempts and scoring remain unchanged.
+- The guess input no longer autocompletes or narrows clubs as a user types. Enter the club's full name, a familiar short name or nickname, or a supported abbreviation. Common accent differences and small typos are tolerated; ambiguous names ask for a more specific club without costing an attempt. Guesses are checked against **all clubs of the selected leagues**, not only those secretly drawn for this session. Unknown names do not cost an attempt, but an actual wrong guess does. Five attempts and scoring remain unchanged.
 - The directory remains public reference information. Quiz answers stay hidden until each round ends.
 - If standings are not available, **no false table is shown**; an honest unavailability message appears.
 
