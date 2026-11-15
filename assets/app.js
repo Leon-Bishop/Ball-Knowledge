@@ -69,6 +69,7 @@ function startQuiz(){
  if(!pool.length)return;
  const date=new Date().toLocaleDateString('sv-SE');
  session=BallKnowledgeSession.createSession(pool,{daily:false,date,limit:roundCount()});
+ session.leagueIds=[...chosenLeagues];session.referencePool=[...pool];
  session.leaderboardSessionId=crypto.randomUUID();session.leaderboardMode=$('f-quizLength')?.value||'short';
  score=0;streak=0;round=null;outcomes=[];
  newRound();setView('game');
@@ -79,7 +80,7 @@ function newRound(){
  if(!round)return;
  clueOrder=session.daily?seededShuffle([0,1,2,3,4],hash(session.date+'|'+round.id+'|clues')):shuffle([0,1,2,3,4]);
  wrong=[];outcomes=[];selected=null;selectedFactForRound=null;finished=false;
- $('guess').value='';$('message').textContent='';$('history').replaceChildren();$('suggestions').replaceChildren();
+ $('guess').value='';$('message').textContent='';$('history').replaceChildren();$('selected').textContent='';
  $('result').classList.add('hidden');$('sessionSummary').classList.add('hidden');$('endActions').classList.add('hidden');
  $('next').classList.remove('hidden');$('play').classList.remove('hidden');
  $('mode').textContent=session.daily?tr('dailyMode'):tr('randomMode');
@@ -98,17 +99,18 @@ function render(){
  if(!round)return;
  $('attempts').textContent=finished?tr('roundResolved'):tr('attempts',{count:5-wrong.length});
  $('slots').innerHTML=clueOrder.map((idx,i)=>`<div class="slot ${i<=wrong.length?'show':''}" title="${tr('clue',{count:i+1})}">${i<=wrong.length||finished?round.emojis[idx]:'❓'}</div>`).join('');
- $('submit').disabled=!selected||finished;
- $('selected').textContent=selected?tr('selected',{name:selected.name}):'';
+ $('submit').disabled=!$('guess').value.trim()||finished;
+ // No suggestions or possible-answer previews.
  updateStats();renderProgress();
 }
 function suggest(){
- selected=null;render();let q=normalize($('guess').value);$('suggestions').replaceChildren();if(!q||!session||session.completed)return;
- const played=new Set(session.results.map(x=>x.id));
- for(const t of session.order.filter(t=>!played.has(t.id)&&!wrong.some(w=>w.id===t.id)&&[t.name,...(t.aliases||[]),t.team_abbreviation].some(n=>normalize(n).includes(q))).slice(0,8)){
-  let b=document.createElement('button');b.textContent=t.name;
-  b.onclick=()=>{selected=t;$('guess').value=t.name;$('suggestions').replaceChildren();render()};$('suggestions').append(b)
- }
+ // Input never searches or filters the club reference or hidden session.
+ $('selected').textContent='';render();
+}
+function resolveGuess(input){
+ const q=normalize(input);if(!q)return null;
+ // Evaluate names against all clubs from selected leagues, not just 5/10 session answers.
+ return pool.find(t=>[t.name,...(t.aliases||[]),t.team_abbreviation].some(n=>n&&normalize(n)===q))||null;
 }
 // Feedback must add information: never state the country, or restate the selected single league.
 const KIT_COLOUR_EMOJIS=new Set(['🔴','🔵','🟡','🟢','⚫','⚪','🟣','🟠','🟤']);
@@ -122,8 +124,10 @@ function guessFeedback(guess,answer,lastAttempt){
  return tr('newClue');
 }
 function submit(){
- if(!selected||finished||!round||!session||session.completed)return;
- let t=selected;selected=null;$('guess').value='';$('suggestions').replaceChildren();
+ if(finished||!round||!session||session.completed)return;
+ const t=resolveGuess($('guess').value);
+ if(!t){$('selected').textContent=tr('unknownClub');return}
+ $('selected').textContent='';selected=null;$('guess').value='';
  if(wrong.some(w=>w.id===t.id)){$('message').textContent=tr('alreadyGuessed');render();return}
  if(t.id===round.id){outcomes.push('🟩');finish(true,5-wrong.length)}
  else{
@@ -248,6 +252,7 @@ function setView(view){
  for(const [key,id] of Object.entries({selection:'selectionView',game:'gameView',stats:'statsView',leaderboard:'leaderboardView',settings:'settingsView'}))$(id).classList.toggle('hidden',view!==key);
  for(const btn of document.querySelectorAll('.nav-item')){const active=btn.dataset.screen===view;btn.classList.toggle('active',active);if(active)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current')}
  if(view==='stats')updateStats();
+ if(view==='game')window.BallKnowledgeReference?.show(new Set(session?.leagueIds||chosenLeagues),leagues,session?.referencePool||pool);
  if(view==='leaderboard')window.BallKnowledgeLeaderboard?.refresh();
  if(view==='settings')$('settingsChoose').textContent=session?tr('resumeGame'):tr('selectLeagues');
  window.scrollTo({top:0,behavior:'instant'});
@@ -273,6 +278,7 @@ function refreshLanguage(){
  $('navLeagues').textContent=tr('navLeagues');$('navPlay').textContent=tr('navPlay');
  $('navStats').textContent=tr('navStats');$('navSettings').textContent=tr('navSettings');
  window.BallKnowledgeLeaderboard?.localize();
+ window.BallKnowledgeReference?.localize();
  updateStartButton();updateStats();
  if(leagues.length){makeLeagueGrid();makeFilters();$('pool').textContent=tr('teamsAvailable',{count:pool.length});
  if(round){$('mode').textContent=session?.daily?tr('dailyMode'):tr('randomMode');render();if(finished)finishViewOnly()}}
@@ -282,7 +288,7 @@ function finishViewOnly(){if(!finished||!round)return;const league=leagues.find(
 async function init(){try{dictionaries=await fetch('i18n.json').then(r=>{if(!r.ok)throw Error('i18n.json');return r.json()});if(!dictionaries[lang])lang='tr';refreshLanguage();[leagues,teams]=await Promise.all(['leagues.json','teams.enriched.json'].map(p=>fetch(p).then(r=>{if(!r.ok)throw Error(p);return r.json()})));
 try{const res=await fetch('tum-kulupler-ilginc-hikayeler-guncel.json');if(!res.ok)throw Error('HTTP '+res.status);const rows=await res.json();for(const item of rows){if(!item.id||!Array.isArray(item.facts))continue;clubFacts.set(item.id,item.facts)}}catch(e){warn('Kulüp bilgileri yüklenemedi: '+e.message)}validate();makeLeagueGrid();makeFilters();filter();refreshLanguage()}catch(e){warn('Load failed: '+e.message+' — run a local web server, not file://')}}
 $('guess').oninput=suggest;
-$('guess').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();if(!selected){let b=$('suggestions').querySelector('button');if(b)b.click()}else submit()}};
+$('guess').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();submit()}};
 $('submit').onclick=submit;
 $('new').onclick=startQuiz;
 $('next').onclick=()=>{if(!session?.completed){newRound();setView('game')}};
