@@ -228,21 +228,39 @@ function renderFinalSummary(){
  const caption=document.createElement('p');caption.className='summary-caption';caption.textContent=tr('scorePercent',{percentage:s.percentage});
  panel.append(kicker,title,number,caption);
  
-  // Display BK Points after a completed quiz.
+  // Show calculated BK Points and the actual online save result separately.
   const bkPreview = document.createElement('p');
   bkPreview.className = 'summary-caption';
 
   try {
     const bkPoints = window.BKPoints.calculateSession(session);
-
-    bkPreview.textContent =
-      `⚽ ${bkPoints.toLocaleString()} BK Points · Preview only`;
+    bkPreview.textContent = `⚽ ${bkPoints.toLocaleString()} BK Points`;
   } catch (error) {
     bkPreview.textContent = 'BK Points unavailable';
     console.warn('BK Points calculation:', error);
   }
 
-  panel.append(bkPreview);
+  const saveStatus = document.createElement('p');
+  saveStatus.id = 'bkSaveStatus';
+  saveStatus.className = 'summary-caption';
+  saveStatus.setAttribute('role', 'status');
+  saveStatus.setAttribute('aria-live', 'polite');
+  saveStatus.dataset.sessionId = session.leaderboardSessionId || '';
+  saveStatus.textContent = tr(
+    session.leaderboardSaveKey || (session.leaderboardSent ? 'bkScoreSaved' : 'bkScoreSaving'),
+    {reason: session.leaderboardSaveReason || ''}
+  );
+
+  const retrySave = document.createElement('button');
+  retrySave.id = 'bkRetrySave';
+  retrySave.type = 'button';
+  retrySave.className = 'outline-button';
+  retrySave.textContent = tr('bkScoreRetry');
+  retrySave.hidden = !session.leaderboardSaveRetryable;
+  retrySave.classList.toggle('hidden', !session.leaderboardSaveRetryable);
+  retrySave.onclick = () => window.BallKnowledgeLeaderboard?.submit(session);
+
+  panel.append(bkPreview, saveStatus, retrySave);
 
  const grid=document.createElement('div');grid.className='summary-stat-grid';
  for(const [key,value] of [['clubsCorrect',s.correct],['clubsMissed',s.missed],['sessionBestStreak',s.bestStreak],['totalRounds',s.total]]){
