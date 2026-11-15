@@ -14,8 +14,8 @@
       "AND"
     ],
     "emojis": [
-      "🏙️",
       "🏟️",
+      "⚛️",
       "🟣",
       "⚪",
       "🏆"
@@ -49,10 +49,10 @@
       "ANT"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "💎",
       "👴",
       "🔴",
+      "⚪",
       "🥇"
     ],
     "why": [
@@ -85,10 +85,10 @@
     ],
     "emojis": [
       "🚣",
-      "🌊",
+      "🔔",
       "🟢",
       "⚫",
-      "⭕"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Bruges (provisional)",
@@ -120,10 +120,10 @@
     ],
     "emojis": [
       "🚣",
-      "🌊",
+      "🔔",
       "🐻",
       "🔵",
-      "🏆"
+      "⚫"
     ],
     "why": [
       "City or regional visual cue for Bruges (provisional)",
@@ -154,11 +154,11 @@
       "WAA"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
       "🦁",
       "🟡",
-      "🔵"
+      "🔵",
+      "🏆",
+      "🗺️"
     ],
     "why": [
       "City or regional visual cue for Beveren (provisional)",
@@ -189,10 +189,10 @@
       "GNT"
     ],
     "emojis": [
-      "🌉",
-      "🚋",
+      "🏰",
       "🐃",
       "🔵",
+      "⚪",
       "🏆"
     ],
     "why": [
@@ -259,8 +259,8 @@
       "KVM"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🔔",
+      "🌙",
       "🟡",
       "🔴",
       "🏆"
@@ -294,8 +294,8 @@
       "WES"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏰",
+      "🌲",
       "🟡",
       "🔵",
       "🏟️"
@@ -329,11 +329,11 @@
       "OHL"
     ],
     "emojis": [
-      "📍",
+      "🎓",
+      "🍺",
       "🏟️",
-      "🔴",
       "⚪",
-      "⚽"
+      "🟢"
     ],
     "why": [
       "City or regional visual cue for Leuven (provisional)",
@@ -364,11 +364,11 @@
       "GNK"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "⛏️",
       "🔵",
       "⚪",
-      "🏆"
+      "🏆",
+      "🏟️"
     ],
     "why": [
       "City or regional visual cue for Genk (provisional)",
@@ -399,8 +399,8 @@
       "CHA"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "⛏️",
+      "🏭",
       "🦓",
       "⚫",
       "⚪"
@@ -434,8 +434,8 @@
       "LOM"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏜️",
+      "🌲",
       "🟢",
       "⚪",
       "🏟️"
@@ -469,11 +469,11 @@
       "STV"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🍎",
       "🐤",
       "🟡",
-      "🔵"
+      "🔵",
+      "📍"
     ],
     "why": [
       "City or regional visual cue for Sint-Truiden (provisional)",
@@ -504,8 +504,8 @@
       "STA"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🧇",
+      "🏭",
       "🔴",
       "⚪",
       "🏆"
@@ -539,8 +539,8 @@
       "USG"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "⚛️",
+      "🏛️",
       "🟡",
       "🔵",
       "🏆"
@@ -574,11 +574,11 @@
       "RLL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
       "🐺",
+      "⛏️",
       "🟢",
-      "⚪"
+      "⚪",
+      "🗺️"
     ],
     "why": [
       "City or regional visual cue for La Louvière (provisional)",
@@ -609,11 +609,11 @@
       "ZW"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🐎",
       "🔴",
       "🟢",
-      "🏟️"
+      "🏆",
+      "📍"
     ],
     "why": [
       "City or regional visual cue for Waregem (provisional)",
@@ -644,8 +644,8 @@
       "VIT"
     ],
     "emojis": [
+      "🛗",
       "🌊",
-      "⚓",
       "🦁",
       "🔴",
       "⚫"
@@ -679,11 +679,11 @@
       "CAP"
     ],
     "emojis": [
-      "🌲",
-      "🌳",
       "🌪️",
+      "🌲",
       "🔴",
-      "⚫"
+      "⚫",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Curitiba (provisional)",
@@ -715,10 +715,10 @@
     ],
     "emojis": [
       "⛰️",
-      "🌲",
       "🐓",
       "⚫",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Belo Horizonte (provisional)",
@@ -749,8 +749,8 @@
       "BAH"
     ],
     "emojis": [
+      "🛗",
       "🌊",
-      "⚓",
       "🔵",
       "🔴",
       "⚪"
@@ -785,10 +785,10 @@
     ],
     "emojis": [
       "🏖️",
-      "🌴",
       "⭐",
       "⚫",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Rio de Janeiro (provisional)",
@@ -820,8 +820,8 @@
     ],
     "emojis": [
       "🏙️",
-      "🏟️",
       "⚓",
+      "🤺",
       "⚫",
       "⚪"
     ],
@@ -855,10 +855,10 @@
     ],
     "emojis": [
       "🌲",
-      "🌳",
-      "🏙️",
+      "👴",
       "🟢",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Curitiba (provisional)",
@@ -889,11 +889,11 @@
       "MIR"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏟️",
       "🦁",
       "🟡",
-      "🟢"
+      "🟢",
+      "🗺️"
     ],
     "why": [
       "City or regional visual cue for Mirassol (provisional)",
@@ -925,10 +925,10 @@
     ],
     "emojis": [
       "⛰️",
-      "🌲",
+      "🦊",
       "⭐",
       "🔵",
-      "🏆"
+      "⚪"
     ],
     "why": [
       "City or regional visual cue for Belo Horizonte (provisional)",
@@ -960,10 +960,10 @@
     ],
     "emojis": [
       "🏖️",
-      "🌴",
       "🦅",
       "🔴",
-      "⚫"
+      "⚫",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Rio de Janeiro (provisional)",
@@ -995,10 +995,10 @@
     ],
     "emojis": [
       "🏖️",
-      "🌴",
       "🟢",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Rio de Janeiro (provisional)",
@@ -1029,11 +1029,11 @@
       "SAO"
     ],
     "emojis": [
-      "🏙️",
       "🏟️",
-      "🔺",
       "🔴",
-      "⚪"
+      "⚪",
+      "⚫",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for São Paulo (provisional)",
@@ -1065,10 +1065,10 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
       "🦁",
       "🔵",
-      "⚪"
+      "⚪",
+      "🥭"
     ],
     "why": [
       "City or regional visual cue for Belém (provisional)",
@@ -1100,7 +1100,7 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
+      "🤺",
       "🔵",
       "⚫",
       "⚪"
@@ -1134,8 +1134,8 @@
       "INT"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
+      "🌅",
+      "🧉",
       "🔴",
       "⚪",
       "🏆"
@@ -1170,9 +1170,9 @@
     ],
     "emojis": [
       "🏙️",
-      "🏟️",
       "🐷",
       "🟢",
+      "⚪",
       "🏆"
     ],
     "why": [
@@ -1204,11 +1204,11 @@
       "BRA"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
       "🐂",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆",
+      "🏟️"
     ],
     "why": [
       "City or regional visual cue for Bragança Paulista (provisional)",
@@ -1239,11 +1239,11 @@
       "SAN"
     ],
     "emojis": [
-      "🌊",
       "⚓",
       "👑",
       "⚪",
-      "⚫"
+      "⚫",
+      "🐟"
     ],
     "why": [
       "City or regional visual cue for Santos (provisional)",
@@ -1274,11 +1274,11 @@
       "CHA"
     ],
     "emojis": [
-      "📍",
+      "💚",
       "🏟️",
       "🟢",
       "⚪",
-      "⚽"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Chapecó (provisional)",
@@ -1310,8 +1310,8 @@
     ],
     "emojis": [
       "🏖️",
-      "🌴",
-      "🚢",
+      "⛵",
+      "✝️",
       "⚫",
       "⚪"
     ],
@@ -1344,10 +1344,10 @@
       "ARS"
     ],
     "emojis": [
-      "🌉",
       "🚋",
-      "🔫",
+      "💣",
       "🔴",
+      "⚪",
       "🏆"
     ],
     "why": [
@@ -1383,11 +1383,11 @@
       "AVL"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🏰",
       "🦁",
       "🟣",
-      "🏰"
+      "🔵",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Birmingham (provisional)",
@@ -1422,7 +1422,7 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
+      "🏖️",
       "🍒",
       "🔴",
       "⚫"
@@ -1460,7 +1460,7 @@
     ],
     "emojis": [
       "🌉",
-      "🚋",
+      "🏟️",
       "🐝",
       "🔴",
       "⚪"
@@ -1497,11 +1497,11 @@
       "BHA"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
+      "🏖️",
+      "🎡",
       "🕊️",
       "🔵",
-      "🏖️"
+      "⚪"
     ],
     "why": [
       "City or regional visual cue for Brighton (provisional)",
@@ -1536,7 +1536,7 @@
     ],
     "emojis": [
       "🌉",
-      "🚋",
+      "👴",
       "🦁",
       "🔵",
       "🏆"
@@ -1573,11 +1573,11 @@
       "CRY"
     ],
     "emojis": [
-      "🌉",
-      "🚋",
+      "💎",
       "🦅",
       "🔴",
-      "🔵"
+      "🔵",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for London (provisional)",
@@ -1612,10 +1612,10 @@
     ],
     "emojis": [
       "⚓",
-      "🏟️",
       "🍬",
+      "🏰",
       "🔵",
-      "🏰"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Liverpool (provisional)",
@@ -1650,7 +1650,7 @@
     ],
     "emojis": [
       "🌉",
-      "🚋",
+      "🌊",
       "🏡",
       "⚪",
       "⚫"
@@ -1687,11 +1687,11 @@
       "IPS"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏆",
       "🚜",
+      "🐎",
       "🔵",
-      "🐎"
+      "⚪"
     ],
     "why": [
       "City or regional visual cue for Ipswich (provisional)",
@@ -1726,11 +1726,11 @@
       "LUFC"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🏆",
       "🦚",
       "⚪",
-      "💛"
+      "💛",
+      "🏟️"
     ],
     "why": [
       "Leeds, West Yorkshire",
@@ -1803,7 +1803,7 @@
     ],
     "emojis": [
       "🏭",
-      "⚙️",
+      "🐝",
       "🌙",
       "🔵",
       "🏆"
@@ -1878,9 +1878,9 @@
       "NEW"
     ],
     "emojis": [
+      "🌉",
       "🌊",
-      "⚓",
-      "🐦",
+      "🐦‍⬛",
       "⚫",
       "⚪"
     ],
@@ -1916,11 +1916,11 @@
       "NFO"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
       "🌳",
+      "🏹",
       "🔴",
-      "🏆"
+      "🏆",
+      "🏟️"
     ],
     "why": [
       "City or regional visual cue for Nottingham (provisional)",
@@ -1954,11 +1954,11 @@
       "COV"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🐎",
       "🐘",
       "🔵",
-      "🏆"
+      "🏆",
+      "🏙️"
     ],
     "why": [
       "City or regional visual cue for Coventry (provisional)",
@@ -1992,11 +1992,11 @@
       "TOT"
     ],
     "emojis": [
-      "🌉",
-      "🚋",
+      "🏟️",
       "🐓",
       "⚪",
-      "⚽"
+      "🔵",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for London (provisional)",
@@ -2032,10 +2032,10 @@
     ],
     "emojis": [
       "🌉",
-      "🏟️",
       "🐈‍⬛",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "Wearmouth Bridge on club crest",
@@ -2107,8 +2107,8 @@
       "AUX"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🍷",
+      "🏆",
       "⚪",
       "🔵",
       "🏟️"
@@ -2142,8 +2142,8 @@
       "ANG"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏰",
+      "🍷",
       "⚫",
       "⚪",
       "🏟️"
@@ -2177,11 +2177,11 @@
       "ASM"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏎️",
       "👑",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Monaco (provisional)",
@@ -2212,9 +2212,9 @@
       "BRE"
     ],
     "emojis": [
-      "🌊",
       "⚓",
       "🚢",
+      "🏴‍☠️",
       "🔴",
       "⚪"
     ],
@@ -2247,9 +2247,9 @@
       "HAC"
     ],
     "emojis": [
-      "🌊",
       "⚓",
       "🚢",
+      "🥇",
       "🔵",
       "🛟"
     ],
@@ -2282,11 +2282,11 @@
       "LIL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏆",
       "🐕",
       "🔴",
-      "🔵"
+      "🔵",
+      "⛲"
     ],
     "why": [
       "City or regional visual cue for Lille (provisional)",
@@ -2317,9 +2317,9 @@
       "OL"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "⛪",
       "🦁",
+      "⚪",
       "🔴",
       "🔵"
     ],
@@ -2352,10 +2352,10 @@
       "OM"
     ],
     "emojis": [
-      "🌊",
       "⚓",
-      "⛵",
+      "⛪",
       "🔵",
+      "⚪",
       "🏆"
     ],
     "why": [
@@ -2387,9 +2387,9 @@
       "MNS"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
       "🏎️",
+      "🏁",
+      "🏰",
       "🔴",
       "🟡"
     ],
@@ -2423,7 +2423,7 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
+      "🌴",
       "🦅",
       "🔴",
       "⚫"
@@ -2457,11 +2457,11 @@
       "LOR"
     ],
     "emojis": [
-      "🌊",
       "⚓",
       "🐟",
       "🟠",
-      "⚫"
+      "⚫",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Lorient (provisional)",
@@ -2493,9 +2493,9 @@
     ],
     "emojis": [
       "🗼",
-      "🎨",
       "⚜️",
       "🔵",
+      "🔴",
       "🏆"
     ],
     "why": [
@@ -2527,11 +2527,11 @@
       "REN"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
-      "🟠",
+      "🏰",
+      "🔴",
       "⚫",
-      "🏟️"
+      "🏆",
+      "🌆"
     ],
     "why": [
       "City or regional visual cue for Rennes (provisional)",
@@ -2562,9 +2562,9 @@
       "PAR"
     ],
     "emojis": [
-      "🗼",
-      "🎨",
       "🏙️",
+      "🗼",
+      "🏟️",
       "🔵",
       "⚪"
     ],
@@ -2598,7 +2598,7 @@
     ],
     "emojis": [
       "🏙️",
-      "🏟️",
+      "⛪",
       "🦢",
       "🔵",
       "⚪"
@@ -2632,11 +2632,11 @@
       "TFC"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "✈️",
+      "🌸",
       "🟣",
       "⚪",
-      "🌸"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Toulouse (provisional)",
@@ -2667,11 +2667,11 @@
       "RCL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
       "⛏️",
+      "🏟️",
       "🔴",
-      "🟡"
+      "🟡",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Lens (provisional)",
@@ -2702,11 +2702,11 @@
       "TRY"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏠",
+      "🍾",
       "🔵",
       "⚪",
-      "🏟️"
+      "⛪"
     ],
     "why": [
       "City or regional visual cue for Troyes (provisional)",
@@ -2737,11 +2737,11 @@
       "FCA"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏘️",
       "🌲",
       "🔴",
-      "🟢"
+      "🟢",
+      "🍃"
     ],
     "why": [
       "City or regional visual cue for Augsburg (provisional)",
@@ -2772,11 +2772,11 @@
       "LEV"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "💊",
       "🦁",
       "🔴",
-      "⚫"
+      "⚫",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Leverkusen (provisional)",
@@ -2808,7 +2808,7 @@
     ],
     "emojis": [
       "🍺",
-      "🏟️",
+      "🐻",
       "🔴",
       "⚪",
       "🏆"
@@ -2843,10 +2843,10 @@
     ],
     "emojis": [
       "🏭",
-      "⚙️",
       "🐝",
       "🟡",
-      "⚫"
+      "⚫",
+      "🧱"
     ],
     "why": [
       "City or regional visual cue for Dortmund (provisional)",
@@ -2877,11 +2877,11 @@
       "BMG"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏆",
       "🐎",
       "🟢",
-      "⚫"
+      "⚫",
+      "⚪"
     ],
     "why": [
       "City or regional visual cue for Mönchengladbach (provisional)",
@@ -2913,10 +2913,10 @@
     ],
     "emojis": [
       "🏙️",
-      "🏟️",
       "🦅",
       "🔴",
-      "⚫"
+      "⚫",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Frankfurt (provisional)",
@@ -2947,11 +2947,11 @@
       "ELV"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "⛏️",
       "🌲",
       "⚫",
-      "⚪"
+      "⚪",
+      "🍃"
     ],
     "why": [
       "City or regional visual cue for Spiesen-Elversberg (provisional)",
@@ -2982,8 +2982,8 @@
       "KOE"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "⛪",
+      "🎭",
       "🐐",
       "🔴",
       "⚪"
@@ -3017,11 +3017,11 @@
       "M05"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "📖",
       "🎭",
       "🔴",
-      "⚪"
+      "⚪",
+      "🍷"
     ],
     "why": [
       "City or regional visual cue for Mainz (provisional)",
@@ -3052,11 +3052,11 @@
       "HSV"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
       "🚢",
+      "🦖",
       "🔵",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Hamburg (provisional)",
@@ -3087,11 +3087,11 @@
       "RBL"
     ],
     "emojis": [
-      "🏙️",
-      "⚽",
+      "🎻",
       "🐂",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Leipzig (provisional)",
@@ -3122,9 +3122,9 @@
       "SCF"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
-      "🦅",
+      "⛪",
+      "☀️",
+      "🌲",
       "🔴",
       "⚫"
     ],
@@ -3157,11 +3157,11 @@
       "SCP"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "💻",
       "🏰",
       "🔵",
-      "⚫"
+      "⚫",
+      "🌲"
     ],
     "why": [
       "City or regional visual cue for Paderborn (provisional)",
@@ -3192,11 +3192,11 @@
       "TSG"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "✈️",
       "🏡",
       "🔵",
-      "⚪"
+      "⚪",
+      "🫎"
     ],
     "why": [
       "City or regional visual cue for Sinsheim (provisional)",
@@ -3227,11 +3227,11 @@
       "VFB"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🐎",
       "🚗",
       "⚪",
-      "🔴"
+      "🔴",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Stuttgart (provisional)",
@@ -3262,8 +3262,8 @@
       "S04"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏭",
+      "🏆",
       "⛏️",
       "🔵",
       "⚪"
@@ -3297,8 +3297,8 @@
       "FCU"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🐻",
+      "🌲",
       "🔩",
       "🔴",
       "⚪"
@@ -3332,11 +3332,11 @@
       "SVW"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
       "🚢",
+      "🫏",
       "🟢",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Bremen (provisional)",
@@ -3368,10 +3368,10 @@
     ],
     "emojis": [
       "🏛️",
-      "🏟️",
       "🦅",
       "🟡",
-      "⚫"
+      "⚫",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Athens (provisional)",
@@ -3403,7 +3403,7 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
+      "⚔️",
       "🟡",
       "⚫",
       "🏆"
@@ -3437,11 +3437,11 @@
       "AST"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "⛰️",
       "⭐",
       "🟡",
-      "🔵"
+      "🔵",
+      "🐎"
     ],
     "why": [
       "City or regional visual cue for Tripoli (provisional)",
@@ -3472,11 +3472,11 @@
       "ATR"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏛️",
       "⭐",
       "🔵",
-      "⚪"
+      "⚪",
+      "🏖️"
     ],
     "why": [
       "City or regional visual cue for Peristeri (provisional)",
@@ -3507,11 +3507,11 @@
       "KIF"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏛️",
       "🌲",
       "🔵",
-      "⚪"
+      "⚪",
+      "🍃"
     ],
     "why": [
       "City or regional visual cue for Kifisia (provisional)",
@@ -3543,10 +3543,10 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
       "💪",
       "🔵",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Thessaloniki (provisional)",
@@ -3577,9 +3577,9 @@
       "OFI"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
       "🏝️",
+      "🏺",
+      "🐂",
       "⚫",
       "⚪"
     ],
@@ -3612,11 +3612,11 @@
       "OLY"
     ],
     "emojis": [
-      "🌊",
       "⚓",
-      "🏆",
+      "🌿",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Piraeus (provisional)",
@@ -3647,11 +3647,11 @@
       "PKT"
     ],
     "emojis": [
-      "🌊",
       "⚓",
       "🦅",
       "⚫",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Thessaloniki (provisional)",
@@ -3683,10 +3683,10 @@
     ],
     "emojis": [
       "🏛️",
-      "🏟️",
       "🍀",
       "🟢",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Athens (provisional)",
@@ -3717,11 +3717,11 @@
       "PTL"
     ],
     "emojis": [
-      "📍",
+      "🏞️",
       "🏟️",
       "🟡",
       "🔵",
-      "⚽"
+      "🏠"
     ],
     "why": [
       "City or regional visual cue for Agrinio (provisional)",
@@ -3752,11 +3752,11 @@
       "KAL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
       "🫒",
+      "🏰",
       "⚫",
-      "⚪"
+      "⚪",
+      "🏖️"
     ],
     "why": [
       "City or regional visual cue for Kalamata (provisional)",
@@ -3787,11 +3787,11 @@
       "LEV"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏰",
+      "🏟️",
       "🟢",
       "🔵",
-      "🏟️"
+      "🏖️"
     ],
     "why": [
       "City or regional visual cue for Livadeia (provisional)",
@@ -3822,9 +3822,9 @@
       "VLO"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
       "⛵",
+      "⚓",
+      "⛰️",
       "🔴",
       "🔵"
     ],
@@ -3857,7 +3857,7 @@
       "MIL"
     ],
     "emojis": [
-      "🏙️",
+      "⛪",
       "🏟️",
       "😈",
       "🔴",
@@ -3892,11 +3892,11 @@
       "ATA"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏰",
       "👸",
       "🔵",
-      "⚫"
+      "⚫",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Bergamo (provisional)",
@@ -3927,11 +3927,11 @@
       "BOL"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🗼",
+      "🍝",
       "🔴",
       "🔵",
-      "🍝"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Bologna (provisional)",
@@ -3963,10 +3963,10 @@
     ],
     "emojis": [
       "🌊",
-      "🏟️",
       "🏝️",
       "🔴",
-      "🔵"
+      "🔵",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Cagliari (provisional)",
@@ -3997,11 +3997,11 @@
       "COM"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
       "🏞️",
+      "🧵",
       "🔵",
-      "⚪"
+      "⚪",
+      "🛶"
     ],
     "why": [
       "City or regional visual cue for Como (provisional)",
@@ -4032,11 +4032,11 @@
       "FIO"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "⛪",
       "🌸",
       "🟣",
-      "🏆"
+      "🏆",
+      "🗿"
     ],
     "why": [
       "City or regional visual cue for Florence (provisional)",
@@ -4067,7 +4067,7 @@
       "FRO"
     ],
     "emojis": [
-      "📍",
+      "🩴",
       "🏟️",
       "🦁",
       "🟡",
@@ -4102,11 +4102,11 @@
       "GEN"
     ],
     "emojis": [
-      "🌊",
       "⚓",
       "🦅",
       "🔴",
-      "🔵"
+      "🔵",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Genoa (provisional)",
@@ -4137,7 +4137,7 @@
       "INT"
     ],
     "emojis": [
-      "🏙️",
+      "⛪",
       "🏟️",
       "🐍",
       "🔵",
@@ -4173,7 +4173,7 @@
     ],
     "emojis": [
       "🏔️",
-      "⛰️",
+      "👵",
       "🦓",
       "⚫",
       "⚪"
@@ -4208,10 +4208,10 @@
     ],
     "emojis": [
       "🏛️",
-      "🏟️",
       "🦅",
       "🔵",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Rome (provisional)",
@@ -4242,11 +4242,11 @@
       "LEC"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "⛪",
       "🐺",
       "🟡",
-      "🔴"
+      "🔴",
+      "🫒"
     ],
     "why": [
       "City or regional visual cue for Lecce (provisional)",
@@ -4277,11 +4277,11 @@
       "MON"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "👑",
       "🏎️",
       "🔴",
-      "⚪"
+      "⚪",
+      "⛪"
     ],
     "why": [
       "City or regional visual cue for Monza (provisional)",
@@ -4314,7 +4314,7 @@
     "emojis": [
       "🌋",
       "🍕",
-      "🏙️",
+      "🫏",
       "🔵",
       "🏆"
     ],
@@ -4349,11 +4349,11 @@
       "PAR"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "✝️",
       "🧀",
       "🟡",
-      "🔵"
+      "🔵",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Parma (provisional)",
@@ -4419,11 +4419,11 @@
       "SAS"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🧱",
+      "🏟️",
       "🟢",
       "⚫",
-      "🏟️"
+      "⛪"
     ],
     "why": [
       "City or regional visual cue for Sassuolo (provisional)",
@@ -4455,10 +4455,10 @@
     ],
     "emojis": [
       "🏔️",
-      "⛰️",
       "🐂",
-      "🔴",
-      "🏆"
+      "🟤",
+      "🏆",
+      "⛪"
     ],
     "why": [
       "City or regional visual cue for Turin (provisional)",
@@ -4489,11 +4489,11 @@
       "UDI"
     ],
     "emojis": [
-      "📍",
+      "🏰",
       "🏟️",
+      "🦓",
       "⚫",
-      "⚪",
-      "⚽"
+      "⚪"
     ],
     "why": [
       "City or regional visual cue for Udine (provisional)",
@@ -4524,11 +4524,11 @@
       "VEN"
     ],
     "emojis": [
-      "🚣",
       "🌊",
       "🦁",
       "🟠",
-      "🟢"
+      "🟢",
+      "⚫"
     ],
     "why": [
       "City or regional visual cue for Venice (provisional)",
@@ -4563,7 +4563,7 @@
       "🚤",
       "🏛️",
       "🔴",
-      "🏆"
+      "⚪"
     ],
     "why": [
       "City or regional visual cue for Amsterdam (provisional)",
@@ -4597,7 +4597,7 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
+      "🏛️",
       "🕊️",
       "🟡",
       "🟢"
@@ -4631,11 +4631,11 @@
       "AZ"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏆",
       "🧀",
       "🔴",
-      "⚪"
+      "⚪",
+      "🍃"
     ],
     "why": [
       "City or regional visual cue for Alkmaar (provisional)",
@@ -4668,7 +4668,7 @@
     "emojis": [
       "🚢",
       "⚓",
-      "⭐",
+      "🌉",
       "⚫",
       "🔴"
     ],
@@ -4701,11 +4701,11 @@
       "FEY"
     ],
     "emojis": [
-      "🚢",
       "⚓",
       "🏟️",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Rotterdam (provisional)",
@@ -4736,11 +4736,11 @@
       "FOR"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🎭",
       "🍀",
       "🟡",
-      "🟢"
+      "🟢",
+      "🏠"
     ],
     "why": [
       "City or regional visual cue for Sittard (provisional)",
@@ -4771,11 +4771,11 @@
       "GAE"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🍪",
       "🦅",
       "🔴",
-      "🟡"
+      "🟡",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Deventer (provisional)",
@@ -4806,11 +4806,11 @@
       "TWE"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🍺",
       "🐎",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Enschede (provisional)",
@@ -4841,11 +4841,11 @@
       "UTR"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "⛪",
       "🏰",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Utrecht (provisional)",
@@ -4876,11 +4876,11 @@
       "GRO"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "⛪",
       "🌾",
       "🟢",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Groningen (provisional)",
@@ -4911,11 +4911,11 @@
       "HEE"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "⛸️",
       "💙",
       "🔵",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Heerenveen (provisional)",
@@ -4946,11 +4946,11 @@
       "NEC"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🥾",
       "🦅",
       "🔴",
-      "🟢"
+      "🟢",
+      "⛪"
     ],
     "why": [
       "City or regional visual cue for Nijmegen (provisional)",
@@ -4981,11 +4981,11 @@
       "PEC"
     ],
     "emojis": [
-      "📍",
+      "🏰",
       "🏟️",
       "🔵",
       "⚪",
-      "⚽"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Zwolle (provisional)",
@@ -5016,11 +5016,11 @@
       "PSV"
     ],
     "emojis": [
+      "💡",
       "🏙️",
       "🏟️",
-      "💡",
       "🔴",
-      "🏆"
+      "⚪"
     ],
     "why": [
       "City or regional visual cue for Eindhoven (provisional)",
@@ -5052,10 +5052,10 @@
     ],
     "emojis": [
       "🚢",
-      "⚓",
       "🏰",
       "🔴",
-      "⚪"
+      "⚪",
+      "🥇"
     ],
     "why": [
       "City or regional visual cue for Rotterdam (provisional)",
@@ -5086,8 +5086,8 @@
       "CAM"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
+      "🗼",
+      "⛵",
       "🟡",
       "🔵",
       "🏟️"
@@ -5121,11 +5121,11 @@
       "TEL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
-      "⭐",
+      "🛰️",
+      "🏭",
       "⚪",
-      "🔵"
+      "🔵",
+      "🦁"
     ],
     "why": [
       "City or regional visual cue for Velsen (provisional)",
@@ -5156,11 +5156,11 @@
       "WIL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🧵",
       "👑",
       "🔴",
-      "🔵"
+      "🔵",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Tilburg (provisional)",
@@ -5191,11 +5191,11 @@
       "ARO"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🌉",
       "🌲",
       "🟡",
-      "🔵"
+      "🔵",
+      "🌄"
     ],
     "why": [
       "City or regional visual cue for Arouca (provisional)",
@@ -5227,9 +5227,9 @@
     ],
     "emojis": [
       "🚋",
-      "🌉",
       "🦅",
       "🔴",
+      "⚪",
       "🏆"
     ],
     "why": [
@@ -5261,11 +5261,11 @@
       "AVF"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🍷",
       "🎓",
       "⚫",
-      "⚪"
+      "⚪",
+      "⛪"
     ],
     "why": [
       "City or regional visual cue for Viseu (provisional)",
@@ -5297,7 +5297,7 @@
     ],
     "emojis": [
       "⛰️",
-      "🌲",
+      "⛪",
       "🔴",
       "⚪",
       "🏟️"
@@ -5333,7 +5333,7 @@
     "emojis": [
       "🚋",
       "🌉",
-      "🏠",
+      "🪿",
       "⚫",
       "⚪"
     ],
@@ -5366,9 +5366,9 @@
       "EST"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
       "🌊",
+      "🎰",
+      "🐤",
       "🟡",
       "🔵"
     ],
@@ -5401,11 +5401,11 @@
       "ESA"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏆",
       "⭐",
       "🔴",
-      "🟢"
+      "🟢",
+      "🚋"
     ],
     "why": [
       "City or regional visual cue for Amadora (provisional)",
@@ -5436,11 +5436,11 @@
       "FAM"
     ],
     "emojis": [
-      "📍",
-      "⚽",
+      "🧵",
+      "🏟️",
       "🔵",
       "⚪",
-      "🏟️"
+      "✍️"
     ],
     "why": [
       "City or regional visual cue for Vila Nova de Famalicão (provisional)",
@@ -5471,11 +5471,11 @@
       "POR"
     ],
     "emojis": [
-      "🌉",
       "🚋",
       "🐉",
       "🔵",
-      "🏆"
+      "⚪",
+      "🍷"
     ],
     "why": [
       "City or regional visual cue for Porto (provisional)",
@@ -5507,10 +5507,10 @@
     ],
     "emojis": [
       "🏝️",
-      "🌊",
       "🚢",
       "🔴",
-      "🟢"
+      "🟢",
+      "🌺"
     ],
     "why": [
       "City or regional visual cue for Funchal (provisional)",
@@ -5541,11 +5541,11 @@
       "GIL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🎭",
       "🐓",
       "🔴",
-      "🔵"
+      "🔵",
+      "🏖️"
     ],
     "why": [
       "City or regional visual cue for Barcelos (provisional)",
@@ -5576,11 +5576,11 @@
       "VSC"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "⚔️",
       "🏰",
       "⚫",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Guimarães (provisional)",
@@ -5611,11 +5611,11 @@
       "MOR"
     ],
     "emojis": [
-      "📍",
-      "⚽",
+      "⛪",
+      "🏟️",
       "🟢",
       "⚪",
-      "🏟️"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Moreira de Cónegos (provisional)",
@@ -5681,11 +5681,11 @@
       "RIO"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "⛵",
       "🌊",
       "🟢",
-      "⚪"
+      "⚪",
+      "🧵"
     ],
     "why": [
       "City or regional visual cue for Vila do Conde (provisional)",
@@ -5716,9 +5716,9 @@
       "SCL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🌋",
       "🏝️",
+      "🐋",
       "🔴",
       "⚪"
     ],
@@ -5752,9 +5752,9 @@
     ],
     "emojis": [
       "🚋",
-      "🌉",
       "🦁",
       "🟢",
+      "⚪",
       "🏆"
     ],
     "why": [
@@ -5786,11 +5786,11 @@
       "ALV"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🌊",
       "✈️",
       "🔴",
-      "🔵"
+      "🔵",
+      "💈"
     ],
     "why": [
       "City or regional visual cue for Alverca (provisional)",
@@ -5821,11 +5821,11 @@
       "ABE"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
-      "🐑",
+      "🪨",
+      "🛢️",
+      "🐂",
       "🔴",
-      "🏆"
+      "⚪"
     ],
     "why": [
       "City or regional visual cue for Aberdeen (provisional)",
@@ -5856,10 +5856,10 @@
       "CEL"
     ],
     "emojis": [
-      "🌉",
       "🚋",
-      "🍀",
+      "☘️",
       "🟢",
+      "⚪",
       "🏆"
     ],
     "why": [
@@ -5891,11 +5891,11 @@
       "DND"
     ],
     "emojis": [
-      "🌊",
+      "⛵",
       "⚓",
       "🔵",
-      "🔴",
-      "🏟️"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Dundee (provisional)",
@@ -5927,10 +5927,10 @@
     ],
     "emojis": [
       "🏰",
-      "🧱",
       "❤️",
-      "🟣",
-      "⚪"
+      "🟤",
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Edinburgh (provisional)",
@@ -5962,10 +5962,10 @@
     ],
     "emojis": [
       "🏰",
-      "🧱",
-      "🌿",
+      "☘️",
       "🟢",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Edinburgh (provisional)",
@@ -5996,11 +5996,11 @@
       "KIL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
-      "🐿️",
+      "🥃",
+      "📖",
       "🔵",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Kilmarnock (provisional)",
@@ -6066,11 +6066,11 @@
       "MOT"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏭",
+      "🏟️",
       "🟡",
       "🔴",
-      "🏟️"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Motherwell (provisional)",
@@ -6101,10 +6101,10 @@
       "RAN"
     ],
     "emojis": [
-      "🌉",
       "🏟️",
       "🦁",
       "🔵",
+      "⚪",
       "🏆"
     ],
     "why": [
@@ -6136,9 +6136,9 @@
       "FAL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🐎",
       "⚙️",
+      "👶",
       "🔵",
       "⚪"
     ],
@@ -6171,11 +6171,11 @@
       "STJ"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🏆",
       "🟦",
       "⚪",
-      "🏟️"
+      "🏟️",
+      "😇"
     ],
     "why": [
       "City or regional visual cue for Perth (provisional)",
@@ -6206,11 +6206,11 @@
       "STM"
     ],
     "emojis": [
-      "📍",
-      "⚽",
+      "🧣",
+      "🏟️",
       "⚫",
       "⚪",
-      "🏟️"
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Paisley (provisional)",
@@ -6241,11 +6241,11 @@
       "ALA"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🌳",
+      "🫘",
       "🔵",
       "⚪",
-      "🦊"
+      "⛲"
     ],
     "why": [
       "City or regional visual cue for Vitoria-Gasteiz (provisional)",
@@ -6277,10 +6277,10 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
       "🏖️",
       "🔵",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for A Coruña (provisional)",
@@ -6311,11 +6311,11 @@
       "ATH"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
+      "🏛️",
       "🦁",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Bilbao (provisional)",
@@ -6346,11 +6346,11 @@
       "ATM"
     ],
     "emojis": [
-      "🏙️",
-      "🏟️",
+      "🍓",
       "🐻",
       "🔴",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "City or regional visual cue for Madrid (provisional)",
@@ -6381,11 +6381,11 @@
       "BAR"
     ],
     "emojis": [
-      "🌊",
-      "⚓",
+      "⛪",
       "🔵",
       "🔴",
-      "🏆"
+      "🏆",
+      "🏟️"
     ],
     "why": [
       "City or regional visual cue for Barcelona (provisional)",
@@ -6416,11 +6416,11 @@
       "ELC"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
+      "🥿",
       "🌴",
       "🟢",
-      "⚪"
+      "⚪",
+      "🗿"
     ],
     "why": [
       "City or regional visual cue for Elche (provisional)",
@@ -6452,8 +6452,8 @@
     ],
     "emojis": [
       "🌊",
-      "🏟️",
       "⛵",
+      "🏟️",
       "🔵",
       "⚪"
     ],
@@ -6488,7 +6488,7 @@
     "emojis": [
       "🌊",
       "⚓",
-      "🐦",
+      "🦜",
       "🔵",
       "⚪"
     ],
@@ -6592,8 +6592,8 @@
     ],
     "emojis": [
       "🌊",
-      "⚽",
       "☀️",
+      "🐟",
       "🔵",
       "⚪"
     ],
@@ -6626,11 +6626,11 @@
       "OSA"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
-      "🔴",
+      "🐂",
       "🏰",
-      "🔵"
+      "🔴",
+      "🔵",
+      "🏟️"
     ],
     "why": [
       "City or regional visual cue for Pamplona (provisional)",
@@ -6662,8 +6662,8 @@
     ],
     "emojis": [
       "🌊",
-      "🏟️",
       "🏖️",
+      "🏟️",
       "🟢",
       "⚪"
     ],
@@ -6696,7 +6696,7 @@
       "RAY"
     ],
     "emojis": [
-      "🏙️",
+      "🏘️",
       "🏟️",
       "⚡",
       "⚪",
@@ -6731,7 +6731,7 @@
       "BET"
     ],
     "emojis": [
-      "🍊",
+      "🌊",
       "🌳",
       "🟢",
       "⚪",
@@ -6802,7 +6802,7 @@
     ],
     "emojis": [
       "🌊",
-      "⚓",
+      "🏖️",
       "👑",
       "🔵",
       "⚪"
@@ -6838,8 +6838,8 @@
     "emojis": [
       "🍊",
       "🌳",
-      "🔴",
       "⚪",
+      "🔴",
       "🏆"
     ],
     "why": [
@@ -6871,10 +6871,10 @@
       "VAL"
     ],
     "emojis": [
-      "🍊",
+      "🥘",
       "🌳",
       "🦇",
-      "🟠",
+      "⚪",
       "⚫"
     ],
     "why": [
@@ -6906,10 +6906,10 @@
       "VIL"
     ],
     "emojis": [
-      "📍",
-      "🗺️",
-      "🟡",
+      "🍊",
+      "🧱",
       "🚢",
+      "🟡",
       "🏆"
     ],
     "why": [
@@ -6941,9 +6941,9 @@
       "ALA"
     ],
     "emojis": [
-      "🏖️",
       "🍊",
-      "⚡",
+      "🏖️",
+      "🍌",
       "🟠",
       "🟢"
     ],
@@ -6980,7 +6980,7 @@
     "emojis": [
       "🏰",
       "🧱",
-      "⚽",
+      "🍉",
       "🟢",
       "🔴"
     ],
@@ -7015,11 +7015,11 @@
       "BJK"
     ],
     "emojis": [
-      "🌉",
       "⚓",
       "🦅",
       "⚫",
-      "⚪"
+      "⚪",
+      "🥇"
     ],
     "why": [
       "Bosphorus bridges",
@@ -7055,9 +7055,9 @@
     "emojis": [
       "🏔️",
       "⛷️",
-      "❄️",
       "🔵",
-      "⚪"
+      "⚪",
+      "🍢"
     ],
     "why": [
       "Erzurum mountain setting",
@@ -7092,9 +7092,9 @@
     "emojis": [
       "🌉",
       "🛶",
+      "🕌",
       "🟣",
-      "🟡",
-      "🏟️"
+      "🟡"
     ],
     "why": [
       "Bosphorus bridges",
@@ -7127,11 +7127,11 @@
       "FB"
     ],
     "emojis": [
-      "🌉",
       "🔦",
       "🐤",
       "🔵",
-      "🟡"
+      "🟡",
+      "🏆"
     ],
     "why": [
       "Bosphorus bridges",
@@ -7166,11 +7166,11 @@
       "GS"
     ],
     "emojis": [
-      "🌉",
+      "🏆",
       "🏫",
       "🦁",
-      "🔥",
-      "🏆"
+      "🟡",
+      "🔴"
     ],
     "why": [
       "Bosphorus bridges",
@@ -7207,9 +7207,9 @@
     "emojis": [
       "🍽️",
       "🥜",
+      "🏰",
       "🔴",
-      "⚫",
-      "🏟️"
+      "⚫"
     ],
     "why": [
       "Gaziantep culinary association",
@@ -7246,7 +7246,7 @@
       "👦",
       "🔴",
       "⚫",
-      "🤝"
+      "🐐"
     ],
     "why": [
       "Ankara capital-city civic buildings",
@@ -7284,7 +7284,7 @@
       "👁️",
       "🔴",
       "🟡",
-      "🏁"
+      "🏆"
     ],
     "why": [
       "Izmir Aegean coast",
@@ -7318,11 +7318,11 @@
       "IBA"
     ],
     "emojis": [
-      "🌉",
+      "🦉",
       "🌾",
       "🟠",
       "🔵",
-      "🏟️"
+      "🏆"
     ],
     "why": [
       "Bosphorus bridges",
@@ -7429,11 +7429,11 @@
       "KON"
     ],
     "emojis": [
-      "🌾",
-      "🏛️",
+      "🌀",
       "🦅",
       "🟢",
-      "⚪"
+      "⚪",
+      "🏆"
     ],
     "why": [
       "Konya agricultural plain",
@@ -7506,9 +7506,9 @@
     "emojis": [
       "🌊",
       "🚢",
+      "🐎",
       "🔴",
-      "⚪",
-      "🐎"
+      "⚪"
     ],
     "why": [
       "Black Sea coast",
@@ -7581,7 +7581,7 @@
     "emojis": [
       "🌾",
       "🥜",
-      "⚽",
+      "🏛️",
       "🔴",
       "⚫"
     ],
