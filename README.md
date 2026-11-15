@@ -18,7 +18,8 @@ When one league is selected, a sidebar displays **real current-season standings*
 
 - **12 leagues**, **214 input club records** (**214 unique playable clubs**).
 - **6 interface languages:** Turkish, English, Spanish, French, Italian and Portuguese. The name **Ball Knowledge** is unchanged in all six.
-- Five guess attempts **per round**, autocomplete, final session score, streak, progress tracker and spoiler-free share.
+- Five guess attempts **per round**, forgiving guesses (short names, common nicknames, accent-insensitive spelling and small typos), final session score, streak, progress tracker and spoiler-free share.
+- Ambiguous short names (for example, Manchester or Madrid) ask for a more specific club name without costing an attempt. The guess input does not reveal answer suggestions.
 - Helpful wrong-guess feedback: shared city, kit colour or league (when multiple leagues are selected); no redundant country hint.
 - **Select All and Deselect All league buttons are included; there is no player JSON upload**.
 - Light/dark mode; a separate, fully designed league-selection screen and game screen.
