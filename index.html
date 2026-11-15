@@ -70,6 +70,8 @@
         <div class="round-progress-row"><strong id="roundProgress">Round 1 / 18</strong><span id="sessionProgress">0 / 18 completed</span></div>
         <div class="round-meter" role="progressbar" aria-label="Completed rounds" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="sessionMeter"><div id="sessionMeterFill"></div></div>
       </div>
+      <div class="game-layout">
+      <div class="game-layout-main">
       <div class="game-card">
         <div class="game-card-heading">
           <div><div class="eyebrow" id="roundEyebrow">THE EMOJI CHALLENGE</div><h2 id="guessTitle">Which club is it?</h2></div>
@@ -79,9 +81,9 @@
         <p class="clue-subtext" id="clueHelp">One more emoji unlocks after each wrong guess.</p>
         <div id="play" class="play-area">
           <label for="guess" class="field-label" id="guessLabel">Your guess</label>
-          <div class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><input id="guess" placeholder="Search for a club…" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-controls="suggestions"></div>
-          <div id="suggestions" class="suggestions" role="listbox" aria-label="Matching clubs"></div>
-          <p id="selected" class="selected-text"></p>
+          <div class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><input id="guess" placeholder="Search for a club…" autocomplete="off" spellcheck="false" ></div>
+          
+          <p id="selected" class="selected-text" aria-live="polite"></p>
           <button id="submit" class="primary-cta guess-button" type="button" disabled>Guess</button>
         </div>
         <p class="status" id="message" aria-live="polite"></p>
@@ -89,6 +91,22 @@
         <div id="sessionSummary" class="session-summary hidden" aria-live="polite"></div>
         <div id="result" class="result-panel hidden"></div>
         <div id="endActions" class="end-actions hidden"><button id="share" type="button" class="outline-button">Share result</button><button id="next" type="button" class="primary-cta">Next club</button></div>
+      </div>
+      </div>
+      <aside id="clubReference" class="club-reference hidden" aria-label="Club reference">
+        <div class="reference-heading"><strong id="referenceTitle">League reference</strong><span id="referenceUpdated"></span></div>
+        <div id="standingsReference" class="standings-reference hidden">
+          <div class="standings-table-wrap"><table><thead><tr><th>#</th><th id="standingsClubHead">Club</th><th id="standingsPlayedHead">P</th><th id="standingsPointsHead">Pts</th></tr></thead><tbody id="standingsRows"></tbody></table></div>
+          <p id="standingsSource" class="reference-source"></p>
+        </div>
+        <div id="clubDirectory" class="club-directory hidden">
+          <label for="clubDirectoryLeague" id="directoryLeagueLabel">Browse clubs by league</label>
+          <select id="clubDirectoryLeague"></select>
+          <p id="directoryCount" class="reference-source"></p>
+          <div id="clubDirectoryRows" class="directory-rows"></div>
+        </div>
+        <p id="referenceNotice" class="reference-notice"></p>
+      </aside>
       </div>
       <aside class="ad-placement" data-ad-slot="game-bottom" aria-label="Advertisement"><span>Advertisement</span></aside>
     </section>
