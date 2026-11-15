@@ -6,35 +6,18 @@ const source='./assets/standings.json';
 let latest=null,lastContext=null,loadPromise=null;
 const tx=key=>typeof tr==='function'?tr(key):key;
 function el(tag,cls,content){const node=document.createElement(tag);if(cls)node.className=cls;if(content!==undefined)node.textContent=content;return node}
-// All selected leagues are visible together. The directory is never searched
-// or filtered using the player's guess, and never uses the secret session order.
-const countryFlags={'Belgium':'🇧🇪','Brazil':'🇧🇷','England':'🏴','France':'🇫🇷','Germany':'🇩🇪','Greece':'🇬🇷','Italy':'🇮🇹','Netherlands':'🇳🇱','Portugal':'🇵🇹','Scotland':'🏴','Spain':'🇪🇸','Turkey':'🇹🇷'};
-const directoryOpen=new Map();
 function renderDirectory(leagues,pool){
- $('standingsReference').classList.add('hidden');
- $('clubDirectory').classList.remove('hidden');
- $('referenceNotice').textContent='';
- const groups=$('clubDirectoryRows');
- const total=pool.filter(team=>leagues.some(league=>league.id===team.league_id)).length;
- $('directoryIntro').textContent=tx('referenceAllClubs').replace('{count}',String(total)).replace('{leagues}',String(leagues.length));
- const sections=leagues.map(league=>{
-  const clubs=pool.filter(team=>team.league_id===league.id).sort((a,b)=>a.name.localeCompare(b.name,document.documentElement.lang||'en'));
-  const section=el('details','directory-league-card');
-  section.open=directoryOpen.get(league.id)??true;
-  section.addEventListener('toggle',()=>directoryOpen.set(league.id,section.open));
-  const header=el('summary','directory-league-header');
-  const mark=el('span','directory-league-flag',countryFlags[league.country]||'⚽');
-  mark.setAttribute('aria-hidden','true');
-  const info=el('span','directory-league-info');
-  info.append(el('strong','directory-league-name',league.name),el('span','directory-league-count',tx('referenceClubCount').replace('{count}',String(clubs.length))));
-  const chevron=el('span','directory-league-chevron','⌄');chevron.setAttribute('aria-hidden','true');
-  header.append(mark,info,chevron);
-  const rows=el('div','directory-team-grid');
-  for(const club of clubs)rows.append(el('div','directory-team-name',club.name));
-  section.append(header,rows);
-  return section;
- });
- groups.replaceChildren(...sections);
+ $('standingsReference').classList.add('hidden');$('clubDirectory').classList.remove('hidden');$('referenceNotice').textContent='';
+ const select=$('clubDirectoryLeague'),previous=select.value;
+ select.replaceChildren();
+ for(const league of leagues){const opt=document.createElement('option');opt.value=league.id;opt.textContent=league.name;select.append(opt)}
+ select.value=leagues.some(l=>l.id===previous)?previous:leagues[0]?.id||'';
+ const draw=()=>{
+  const list=pool.filter(team=>team.league_id===select.value).sort((a,b)=>a.name.localeCompare(b.name));
+  $('directoryCount').textContent=tx('referenceClubCount').replace('{count}',String(list.length));
+  $('clubDirectoryRows').replaceChildren(...list.map(team=>el('div','directory-club',team.name)));
+ };
+ select.onchange=draw;draw();
 }
 function renderTable(league,standings){
  $('clubDirectory').classList.add('hidden');
@@ -83,7 +66,7 @@ async function show(selected,leagues,pool){
  }
 }
 function localize(){
- for(const [id,key] of [['standingsClubHead','referenceClub'],['standingsPlayedHead','referencePlayed'],['standingsPointsHead','referencePoints']])$(id).textContent=tx(key);
+ for(const [id,key] of [['standingsClubHead','referenceClub'],['standingsPlayedHead','referencePlayed'],['standingsPointsHead','referencePoints'],['directoryLeagueLabel','referenceBrowse']])$(id).textContent=tx(key);
  if(lastContext)show(lastContext.selected,lastContext.leagues,lastContext.pool);
 }
 window.BallKnowledgeReference={show,localize};
