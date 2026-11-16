@@ -8,7 +8,13 @@
     "belgian-pro-league:3": "Q364698",
     "belgian-pro-league:7": "Q618620",
     "belgian-pro-league:8": "Q113000",
-    "belgian-pro-league:9": "Q849544"
+    "belgian-pro-league:9": "Q849544",
+    "brazil-serie-a:17": "Q541744",
+    "brazil-serie-a:18": "Q128660882",
+    "brazil-serie-a:20": "Q2094623",
+    "brazil-serie-a:5": "Q2911639",
+    "england-premier-league:11": "Q1812080",
+    "england-premier-league:8": "Q28714652"
   },
   "notes": "Map only verified football-club Wikidata QIDs. The ingestion script can suggest exact candidates and records their source. Unresolved clubs are skipped."
 }
