@@ -287,47 +287,72 @@ body:not(.dark) .recent-player-note{color:#4f6d58}
 .pool-dot{display:none!important}
 
 
-/* Marvyra's original transparent 32×32 portraits. No colored backgrounds,
-   masks, frames, borders, circles, or silhouette placeholders. */
-.pixel-avatar,
-body:not(.dark) .pixel-avatar{
- position:relative;display:inline-block;flex:none;vertical-align:middle;
- border:0!important;border-radius:0!important;outline:0;
- box-shadow:none!important;background:transparent!important;
- background-image:none!important;overflow:visible;
- padding:0!important;margin:0;font-size:0!important;line-height:0!important;
+
+/* Team badge avatars. No portraits, circles, frames, masks or shadows. */
+.club-avatar,body:not(.dark) .club-avatar{
+ display:inline-grid;place-items:center;flex:none;vertical-align:middle;
+ width:46px;height:46px;border:0!important;border-radius:0!important;
+ background:transparent!important;box-shadow:none!important;overflow:visible;
+ margin:0;padding:0!important;line-height:1;
 }
-.pixel-avatar-art{
- position:absolute;inset:0;display:block;width:100%;height:100%;
- background-repeat:no-repeat;image-rendering:pixelated;
- background-color:transparent;
- border:0;border-radius:0;box-shadow:none;
- clip-path:none!important;mask-image:none!important;-webkit-mask-image:none!important;
- transform:none!important;pointer-events:none;
-}
-.broadcast-rank-row{
- display:grid;grid-template-columns:26px minmax(0,1fr) auto;
- align-items:center;column-gap:12px;min-height:62px;padding:8px 6px;
-}
+.club-avatar-img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+.club-avatar-letters{font:800 11px/1.1 Inter,system-ui,sans-serif;color:var(--fg);text-align:center}
+.club-avatar-letters[hidden],.club-avatar-img[hidden]{display:none!important}
+.broadcast-rank-row{display:grid;grid-template-columns:26px minmax(0,1fr) auto;align-items:center;column-gap:12px;min-height:62px;padding:8px 6px}
 .broadcast-rank-number{justify-self:center;align-self:center;line-height:1}
 .broadcast-rank-name{display:flex;align-items:center;gap:11px;min-width:0;min-height:46px;line-height:1.3}
-.broadcast-rank-name>.leaderboard-avatar{display:block;width:46px;height:46px;flex:0 0 46px}
+.broadcast-rank-name>.leaderboard-avatar{width:46px;height:46px;flex:0 0 46px}
 .broadcast-rank-name>span:last-child{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .broadcast-rank-score{justify-self:end;align-self:center;line-height:1.3;font-variant-numeric:tabular-nums}
 .ranking-table td:nth-child(2){vertical-align:middle}
 .ranking-table td:nth-child(2)>.leaderboard-avatar{width:46px;height:46px;margin-right:9px}
-.recent-player-avatar.pixel-avatar,.home-player-avatar.pixel-avatar{width:56px;height:56px;flex-basis:56px}
-.broadcast-player-icon.pixel-avatar{width:36px;height:36px;flex-basis:36px}
-.player-name-preview .pixel-avatar{width:32px;height:32px}
+.recent-player-avatar.club-avatar,.home-player-avatar.club-avatar{width:56px;height:56px;flex-basis:56px}
+.broadcast-player-icon.club-avatar{width:36px;height:36px;flex-basis:36px}
+.player-name-preview .club-avatar{width:32px;height:32px}
 .player-profile-avatar{width:52px;height:52px;margin-right:10px}
-.avatar-art-credit{font:400 11px/1.6 Inter,system-ui,sans-serif;opacity:.86}
-.avatar-art-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
-.avatar-art-credit a:hover{color:var(--accent)}
-.site-legal-footer{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.club-change-button{white-space:nowrap;font-size:12px!important;padding:8px 11px!important}
+#recentPlayerAvatar.club-avatar[data-avatar-owner],#homePlayerAvatar.club-avatar[data-avatar-owner]{cursor:pointer}
+.club-picker-visible{overflow:hidden}
+.club-picker-backdrop[hidden]{display:none!important}
+.club-picker-backdrop{position:fixed;inset:0;z-index:9999;background:#000b;display:flex;align-items:flex-end;justify-content:center;padding:10px}
+.club-picker-sheet{display:flex;flex-direction:column;width:min(690px,100%);height:min(670px,88dvh);background:#141d1e;border:1px solid #63716a;border-radius:23px 23px 16px 16px;color:#f6f8f3;box-shadow:0 18px 70px #0009;overflow:hidden}
+.club-picker-grab{width:38px;height:4px;background:#738078;border-radius:8px;margin:10px auto 3px}
+.club-picker-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 21px}
+.club-picker-heading h2{font:800 25px/1.1 Inter,system-ui,sans-serif;margin:0}
+.club-picker-heading p{font:500 12px/1.4 Inter,system-ui,sans-serif;color:#a4b5ac;margin-top:5px}
+.club-picker-close{flex:none;background:#283534;border:0;border-radius:50%;width:36px;height:36px;font:24px/1 Inter,system-ui;color:#fff}
+.club-picker-search{background:#23302f;border:1px solid #566861;border-radius:12px;color:#fff;margin:0 20px 13px;padding:12px 14px;font:500 14px Inter,system-ui,sans-serif;width:calc(100% - 40px)}
+.club-picker-tabs{display:flex;gap:7px;padding:0 18px 13px;overflow-x:auto;scrollbar-width:thin;scroll-snap-type:x mandatory;flex:none;border-bottom:1px solid #3b4c43}
+.club-picker-tab{flex:none;scroll-snap-align:start;background:#26332e;border:1px solid #45584e;border-radius:25px;color:#d7e4db;padding:9px 13px;font:600 12px Inter,system-ui,sans-serif;white-space:nowrap}
+.club-picker-tab.selected{background:#d6fa39;border-color:#d6fa39;color:#16201a}
+.club-picker-list{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:15px 18px 22px}
+.club-picker-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.club-picker-option{position:relative;display:flex;flex-direction:column;align-items:center;gap:7px;min-width:0;min-height:95px;border:1px solid transparent;border-radius:12px;background:#1f2929;color:#e1e9e1;padding:9px 4px 8px}
+.club-picker-option:hover{background:#2b3936}
+.club-picker-option[aria-pressed="true"]{border-color:#d6fa39;background:#30402a}
+.club-picker-option[aria-pressed="true"]:after{content:"✓";position:absolute;top:4px;right:7px;font-size:13px;color:#d6fa39}
+.club-picker-badge.club-avatar{width:48px;height:48px;flex:0 0 48px}
+.club-picker-name{font:500 10px/1.25 Inter,system-ui,sans-serif;text-align:center;overflow-wrap:anywhere}
+.club-picker-empty{padding:28px;text-align:center;color:#b6c6bf}
+body:not(.dark) .club-picker-sheet{background:#fafdf5;color:#1a3b2c;border-color:#b8cbbb}
+body:not(.dark) .club-picker-heading p{color:#566f60}
+body:not(.dark) .club-picker-close{background:#e3eddc;color:#244330}
+body:not(.dark) .club-picker-search{background:#fff;color:#21382a;border-color:#afc4b3}
+body:not(.dark) .club-picker-tab{background:#e8f2df;color:#304e36;border-color:#abc1aa}
+body:not(.dark) .club-picker-tab.selected{background:#a8dc32;border-color:#8ebd24}
+body:not(.dark) .club-picker-option{background:#f0f6e9;color:#234333}
+body:not(.dark) .club-picker-option[aria-pressed="true"]{border-color:#78ae1d;background:#dfefcc}
+body:not(.dark) .club-picker-option[aria-pressed="true"]:after{color:#42711e}
 @media(max-width:620px){
  .broadcast-rank-row{grid-template-columns:22px minmax(0,1fr) auto;column-gap:8px;min-height:55px}
  .broadcast-rank-name{gap:8px;min-height:40px}
  .broadcast-rank-name>.leaderboard-avatar{width:40px;height:40px;flex-basis:40px}
  .ranking-table td:nth-child(2)>.leaderboard-avatar{width:40px;height:40px}
- .recent-player-avatar.pixel-avatar,.home-player-avatar.pixel-avatar{width:48px;height:48px;flex-basis:48px}
+ .recent-player-avatar.club-avatar,.home-player-avatar.club-avatar{width:48px;height:48px;flex-basis:48px}
+ .club-picker-backdrop{padding:0}
+ .club-picker-sheet{height:min(73dvh,680px);border-radius:22px 22px 0 0}
+ .club-picker-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+ .club-picker-option{min-height:88px;padding:7px 3px}
+ .club-picker-badge.club-avatar{width:43px;height:43px;flex-basis:43px}
+ .club-picker-name{font-size:9px}
 }
