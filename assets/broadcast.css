@@ -332,3 +332,7 @@ body:not(.dark) .pixel-avatar{border-color:#92ad98}
  .ranking-table td:nth-child(2)>.leaderboard-avatar{width:35px;height:35px}
  .home-player-avatar.pixel-avatar{width:48px;height:48px;flex-basis:48px}
 }
+
+/* The original, full-resolution 48-avatar atlas is loaded by assets/avatars.js
+   only when assets/football-avatars-direct.png exists. Until it is uploaded,
+   the last-known-good illustrated portraits remain in use. */
