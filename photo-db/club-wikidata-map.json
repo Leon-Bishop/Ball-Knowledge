@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "clubs": {},
+  "notes": "Map only verified football-club Wikidata QIDs. The ingestion script can suggest exact candidates and records their source. Unresolved clubs are skipped."
+}

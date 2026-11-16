@@ -1,0 +1,52 @@
+name: Build licensed footballer photo database
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 2 * * *"
+  push:
+    paths:
+      - "scripts/build_player_photo_db.py"
+      - "photo-db/club-wikidata-map.json"
+permissions:
+  contents: write
+concurrency:
+  group: player-photo-import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect small rate-limited Wikimedia batch
+        run: python scripts/build_player_photo_db.py --max-clubs 12
+      - name: Validate catalog and attribution completeness
+        run: |
+          python - <<'PY'
+          import json
+          t=json.load(open("teams.enriched.json"))
+          d=json.load(open("assets/player-photo-db.json"))
+          ids={x["id"] for x in t}
+          assert set(d["clubs"]).issubset(ids)
+          for club_id,v in d["clubs"].items():
+              players=v["players"]
+              assert len({p["wikidataQid"] for p in players})==len(players)
+              for p in players:
+                  assert p["clubId"]==club_id
+                  assert all(p.get(k) for k in ["photoUrl","sourceUrl","license","author","membershipSource"])
+          print("Verified",len(d["clubs"]),"clubs with records")
+          PY
+      - name: Commit database updates, not quiz logic
+        run: |
+          git config user.name "ball-knowledge-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add photo-db/club-wikidata-map.json assets/player-photo-db.json assets/player-photo-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Import licensed football player photos with Commons attribution"
+            git push
+          fi
