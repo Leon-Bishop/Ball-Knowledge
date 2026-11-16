@@ -99,10 +99,15 @@ Cloudflare logs showed D1 throwing inside `recentRegistrations()` on `POST /api/
 
 ## Club badge avatars (November 2026)
 
-Ball Knowledge now uses real club crest images in a searchable, 214-club avatar picker (12 leagues; Turkish Süper Lig first). **All existing and new players display Fenerbahçe by default** until they select a badge. This does not alter the existing user or score records.
+Ball Knowledge now uses real club crest images in a searchable, 214-club avatar picker (12 leagues; Turkish Süper Lig first). **No club badge is assigned by default: existing players can pick any club, and new players select one during username registration. This does not alter the existing user or score records.
 
 To synchronize a player's chosen crest across devices and other people's leaderboards, deploy the updated `leaderboard-worker/src/index.js` to the existing **ball-knowledge-api** Worker in Cloudflare, preserving `DB` and `ALLOWED_ORIGINS`. Optional: run `migrations/0003_user_avatars.sql` on that D1 database first. The Worker can create this table automatically on a player's first badge selection. If not yet created, profile and leaderboard queries fall back to the existing schema so registrations and scores keep working.
 
-The authenticated API is `POST /api/avatar` with JSON `{"clubId":"turkey-super-lig:6"}` and the existing Bearer token. The `/api/profile` and `/api/leaderboard` responses contain `avatarTeamId`; unselected users return `turkey-super-lig:6`. Without the Worker upgrade, selection is saved **locally in the current browser only** and the site remains playable.
+The authenticated API is `POST /api/avatar` with JSON `{"clubId":"turkey-super-lig:6"}` and the existing Bearer token. The `/api/profile` and `/api/leaderboard` responses contain `avatarTeamId`; unselected users return `null`. Without the Worker upgrade, selection is saved **locally in the current browser only** and the site remains playable.
 
 Club logo images are loaded from the public luukhopman/football-logos collection (European leagues), and third-party club logo repositories (Brazil). The picker displays a club abbreviation if a remote logo becomes unavailable. Club crests and trademarks belong to their respective clubs. The unused portrait sprites and credit note were removed.
+
+
+### Registration badge picker update
+
+The club picker can be opened before creating an account. A valid badge selection is required by the UI before submitting the username. The registration request includes `clubId`; the new Worker validates the choice and saves it if the avatar table is available. It never automatically assigns Fenerbahçe to existing accounts. If the old Worker is still deployed, the browser keeps the chosen badge locally and attempts to sync it after registration; cross-device visibility requires deploying the updated Worker.
