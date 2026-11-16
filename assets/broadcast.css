@@ -281,3 +281,7 @@ body:not(.dark) .recent-player-note{color:#4f6d58}
  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
  font-size:12px;font-weight:400;line-height:1.55;
 }
+
+/* Club availability is factual metadata, not an online/status signal. */
+.pool-caption{gap:0;font:600 12px/1.4 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.1px}
+.pool-dot{display:none!important}
