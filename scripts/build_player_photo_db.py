@@ -217,71 +217,96 @@ def get_wikidata_entities(qids, props):
 
 
 def category_players(club_qid):
-    """Additional verifiable players via the club's Wikidata P6112 category.
+    """Collect explicitly categorized former/current club players across Wikipedias.
 
-    This source differs from P54: English Wikipedia explicitly categorizes a
-    person as a player for the club. We preserve the category link as evidence.
-    Do not invent player/team associations from file names.
+    The Wikidata P6112 item identifies a Wikipedia category for members of this
+    exact club. Only direct category members with a human Wikidata entity and a
+    P18 photograph can qualify. Save the specific category URL per player.
+    Sampling multiple language editions avoids missing locally documented clubs.
     """
     club = get_wikidata_entities([club_qid], "claims").get(club_qid, {})
-    category_claims = club.get("claims", {}).get("P6112", [])
-    if not category_claims:
+    category_qids = []
+    for claim in club.get("claims", {}).get("P6112", []):
+        value = claim.get("mainsnak", {}).get("datavalue", {}).get("value", {})
+        qid = value.get("id") if isinstance(value, dict) else None
+        if qid and qid not in category_qids:
+            category_qids.append(qid)
+    if not category_qids:
         return [], ""
-    value = category_claims[0].get("mainsnak", {}).get("datavalue", {}).get("value", {})
-    category_qid = value.get("id") if isinstance(value, dict) else None
-    if not category_qid:
-        return [], ""
-    category = get_wikidata_entities([category_qid], "sitelinks").get(category_qid, {})
-    sites = category.get("sitelinks", {})
-    languages = ("en", "tr", "pt", "fr", "de", "es", "it", "nl", "el")
-    language = next((lang for lang in languages if sites.get(lang + "wiki", {}).get("title")), None)
-    if not language:
-        return [], ""
-    title = sites[language + "wiki"]["title"]
-    wiki = "https://" + language + ".wikipedia.org"
-    source = wiki + "/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":_()")
-    data = fetch_json(wiki + "/w/api.php", {
-        "action": "query", "list": "categorymembers", "cmtitle": title,
-        "cmtype": "page", "cmnamespace": 0, "cmlimit": 300, "format": "json",
-    })
-    titles = [p["title"] for p in data.get("query", {}).get("categorymembers", [])]
-    if not titles:
-        return [], ""
-    person_qids = {}
-    for offset in range(0, len(titles), 35):
-        pack = titles[offset:offset + 35]
-        page_data = fetch_json(wiki + "/w/api.php", {
-            "action": "query", "prop": "pageprops", "ppprop": "wikibase_item",
-            "titles": "|".join(pack), "format": "json",
-        })
-        for page in page_data.get("query", {}).get("pages", {}).values():
-            qid = page.get("pageprops", {}).get("wikibase_item")
-            if qid and re.fullmatch(r"Q\d+", qid):
-                person_qids[qid] = page.get("title", "")
-        time.sleep(REQUEST_DELAY)
-    entities = get_wikidata_entities(list(person_qids), "claims|labels")
-    players = []
-    for qid, ent in entities.items():
-        if not re.fullmatch(r"Q\d+", qid):
-            continue
-        images = ent.get("claims", {}).get("P18", [])
-        if not images:
-            continue
-        value = images[0].get("mainsnak", {}).get("datavalue", {}).get("value", "")
-        if not isinstance(value, str) or not commons_file_name(value):
-            continue
-        label = ent.get("labels", {}).get("en", {}).get("value") or person_qids.get(qid)
-        if not label:
-            continue
-        players.append({
-            "wikidataQid": qid,
-            "playerName": label,
-            "image": value,
-            "membershipSource": source,
-            "associationType": "historical_or_current_wikipedia_player_category",
-        })
-    return players, source
 
+    players = {}
+    inspected = set()
+    sampled_pages = 0
+    first_source = ""
+    languages = ("en", "tr", "pt", "fr", "de", "es", "it", "nl", "el")
+    # Bound the fallback's request volume while allowing smaller clubs from
+    # several language editions to contribute evidence.
+    for category_qid in category_qids[:3]:
+        category = get_wikidata_entities([category_qid], "sitelinks").get(category_qid, {})
+        sites = category.get("sitelinks", {})
+        for language in languages:
+            title = sites.get(language + "wiki", {}).get("title")
+            if not title or len(players) >= 36 or sampled_pages >= 450:
+                continue
+            wiki = "https://" + language + ".wikipedia.org"
+            source = wiki + "/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":_()")
+            if not first_source:
+                first_source = source
+            data = fetch_json(wiki + "/w/api.php", {
+                "action": "query", "list": "categorymembers", "cmtitle": title,
+                "cmtype": "page", "cmnamespace": 0,
+                "cmlimit": min(200, 450 - sampled_pages), "format": "json",
+            })
+            titles = [p["title"] for p in data.get("query", {}).get("categorymembers", [])]
+            sampled_pages += len(titles)
+            fresh = {}
+            for offset in range(0, len(titles), 35):
+                pack = titles[offset:offset + 35]
+                page_data = fetch_json(wiki + "/w/api.php", {
+                    "action": "query", "prop": "pageprops",
+                    "ppprop": "wikibase_item",
+                    "titles": "|".join(pack), "format": "json",
+                })
+                for page in page_data.get("query", {}).get("pages", {}).values():
+                    qid = page.get("pageprops", {}).get("wikibase_item")
+                    if qid and re.fullmatch(r"Q\\d+", qid) and qid not in inspected:
+                        fresh[qid] = (page.get("title", ""), source)
+                        inspected.add(qid)
+                time.sleep(REQUEST_DELAY)
+            if not fresh:
+                continue
+            entities = get_wikidata_entities(list(fresh), "claims|labels")
+            for qid, ent in entities.items():
+                if not re.fullmatch(r"Q\\d+", qid):
+                    continue
+                human = any(
+                    c.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id") == "Q5"
+                    for c in ent.get("claims", {}).get("P31", [])
+                    if isinstance(c.get("mainsnak", {}).get("datavalue", {}).get("value"), dict)
+                )
+                if not human:
+                    continue
+                images = ent.get("claims", {}).get("P18", [])
+                if not images:
+                    continue
+                value = images[0].get("mainsnak", {}).get("datavalue", {}).get("value", "")
+                if not isinstance(value, str) or not commons_file_name(value):
+                    continue
+                label = ent.get("labels", {}).get("en", {}).get("value") or fresh[qid][0]
+                if not label:
+                    continue
+                players[qid] = {
+                    "wikidataQid": qid,
+                    "playerName": label,
+                    "image": value,
+                    "membershipSource": fresh[qid][1],
+                    "associationType": "historical_or_current_wikipedia_player_category",
+                }
+            if len(players) >= 36 or sampled_pages >= 450:
+                break
+        if len(players) >= 36 or sampled_pages >= 450:
+            break
+    return list(players.values()), first_source
 
 def process_club(team, qid):
     try:
@@ -328,7 +353,7 @@ def process_club(team, qid):
                     "playerName": person["playerName"],
                     "wikidataQid": person["wikidataQid"],
                     "clubWikidataQid": qid,
-                    "membershipSource": source,
+                    "membershipSource": person["membershipSource"],
                     "associationType": person["associationType"],
                     **photo,
                 })
