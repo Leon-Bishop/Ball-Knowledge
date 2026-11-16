@@ -48,28 +48,41 @@ def normalize(value):
     import unicodedata
     value = unicodedata.normalize("NFKD", value)
     value = "".join(c for c in value if not unicodedata.combining(c))
-    return re.sub(r"[^a-z0-9]+", "", value)
+    # Standard club-name affixes do not determine the team's identity.
+    # Leave city/district names intact; uniqueness is still required.
+    words = re.findall(r"[a-z0-9]+", value)
+    ignore = {"fc", "cf", "afc", "sc", "ac", "fk", "sk", "rsc", "cd", "ud", "sv", "ssc"}
+    return "".join(w for w in words if w not in ignore)
 
 
 def read_json(path, fallback):
     return json.loads(path.read_text("utf8")) if path.exists() else fallback
 
 
-def search_club_qid(name):
-    """Conservatively match exact label; do not auto-match similarly named clubs."""
-    result = fetch_json("https://www.wikidata.org/w/api.php", {
-        "action": "wbsearchentities", "search": name,
-        "language": "en", "type": "item", "limit": 15, "format": "json",
-    })
-    match = []
-    for entry in result.get("search", []):
-        label = entry.get("label", "")
-        desc = entry.get("description", "").lower()
-        if (normalize(name) == normalize(label) and
-                ("football club" in desc or "soccer club" in desc or
-                 "association football" in desc or "football team" in desc)):
-            match.append(entry["id"])
-    return match[0] if len(match) == 1 else None
+def search_club_qid(name, aliases=()):
+    """Only accept an unambiguous official/supplied alias for a football club.
+
+    Search results without strong name equality are never silently accepted.
+    """
+    for query in dict.fromkeys([name, *aliases]):
+        if not query:
+            continue
+        result = fetch_json("https://www.wikidata.org/w/api.php", {
+            "action": "wbsearchentities", "search": query,
+            "language": "en", "type": "item", "limit": 15, "format": "json",
+        })
+        matches = set()
+        for entry in result.get("search", []):
+            label = entry.get("label", "")
+            desc = entry.get("description", "").lower()
+            if (normalize(query) == normalize(label) and
+                    ("football club" in desc or "soccer club" in desc or
+                     "association football" in desc or "football team" in desc)):
+                matches.add(entry["id"])
+        if len(matches) == 1:
+            return next(iter(matches))
+        time.sleep(REQUEST_DELAY)
+    return None
 
 
 def memberships(qid):
@@ -191,6 +204,12 @@ def process_club(team, qid):
 
 def run(max_clubs):
     clubs = json.loads(TEAMS.read_text("utf8"))
+    avatar_catalog = read_json(ROOT / "assets/club-avatar-catalog.json", {"clubs": []})
+    image_names = {}
+    for record in avatar_catalog.get("clubs", []):
+        path = urllib.parse.urlparse(record.get("logo", "")).path
+        if path:
+            image_names[record["id"]] = urllib.parse.unquote(path.rsplit("/", 1)[-1]).rsplit(".", 1)[0].replace("_", " ")
     mapping = read_json(CLUB_IDS, {"version": 1, "clubs": {}})
     result = read_json(OUTPUT, {"version": 1, "minimumPlayersPerClub": 10, "clubs": {}})
     records = result.setdefault("clubs", {})
@@ -211,7 +230,7 @@ def run(max_clubs):
         qid = mapping["clubs"].get(club_id)
         try:
             if not qid:
-                qid = search_club_qid(name)
+                qid = search_club_qid(name, [image_names.get(club_id, "")])
                 if qid:
                     mapping["clubs"][club_id] = qid
             if not qid:
