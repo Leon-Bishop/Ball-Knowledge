@@ -134,9 +134,11 @@ function emojiMeaning(index){
  // photo-licensed Wikidata-linked players is eligible. Every other club
  // retains its original five emoji clues and existing scoring rules.
 const PLAYER_PHOTO_REPLACE=new Set(['⚽','🏆','🥇']);
+const playerPhotoSessionSeed=Math.random().toString(36).slice(2);
 function eligiblePlayerPhoto(index){
  if(!round||!PLAYER_PHOTO_REPLACE.has(round.emojis[index]))return null;
- return window.BKPlayerPhotos?.getPlayer(round.id)||null;
+ const seed=session?.daily?String(session.date):playerPhotoSessionSeed;
+ return window.BKPlayerPhotos?.getPlayer(round.id,seed+'|'+String(session?.played??0))||null;
 }
 function displayEmojiExplanation(){
  const panel=$('emojiExplanation');
