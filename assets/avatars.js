@@ -3,7 +3,7 @@
 (()=>{
 'use strict';
 const DEFAULT='turkey-super-lig:6';
-const FENER='https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Fenerbahce.png';
+const FENER='https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Fenerbah%C3%A7e.svg';
 let catalog=null,clubs=new Map(),viewer='',profileChoice=DEFAULT,saveHandler=null,dialog=null,active='turkey-super-lig';
 const norm=s=>String(s||'').trim().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
 function local(name){try{return localStorage.getItem('bk-selected-club:'+norm(name))||''}catch{return ''}}
@@ -22,9 +22,21 @@ function badge(el,id){
  const img=document.createElement('img');img.className='club-avatar-img';img.alt='';
  img.referrerPolicy='no-referrer';img.loading='lazy';
  const fallback=document.createElement('span');fallback.className='club-avatar-letters';fallback.textContent=t.short||'FC';
- fallback.hidden=!!t.logo;img.hidden=!t.logo;
- img.onerror=()=>{img.hidden=true;fallback.hidden=false};
- if(t.logo)img.src=t.logo;
+ // Try independent verified sources in order rather than silently losing the crest
+ // when a CDN, SVG endpoint or network request fails.
+ const sources=[t.logo,t.fallbackLogo,t.lastResortLogo].filter(Boolean);
+ let sourceIndex=0;
+ fallback.hidden=sources.length>0;img.hidden=sources.length===0;
+ img.addEventListener('error',()=>{
+  sourceIndex++;
+  if(sourceIndex<sources.length){
+   img.src=sources[sourceIndex];
+  }else{
+   img.hidden=true;
+   fallback.hidden=false;
+  }
+ });
+ if(sources.length)img.src=sources[0];
  el.append(img,fallback);
  el.title=t.name;el.setAttribute('aria-hidden','true');
 }
