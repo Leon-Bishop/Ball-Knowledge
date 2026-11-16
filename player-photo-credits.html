@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Player photo credits — Ball Knowledge</title>
+<meta name="description" content="Photographer and licensing credits for footballer photographs displayed on Ball Knowledge.">
+<style>
+:root{color-scheme:dark;font-family:Inter,system-ui,sans-serif;background:#0b1112;color:#f4f5ee}
+body{margin:0;padding:24px max(16px,calc((100vw - 950px)/2))}
+a{color:#d6fa39}
+h1{font-size:clamp(25px,5vw,38px);letter-spacing:-.04em}
+p{color:#b7c5bb;line-height:1.65}
+table{width:100%;border-collapse:collapse;font-size:13px}
+td,th{padding:12px;text-align:left;border-bottom:1px solid #36443c;vertical-align:top}
+th{font-weight:700;color:#f0f8ee}
+small{color:#aabbac}
+#coverage{font-weight:600;color:#d6fa39}
+footer{padding:28px 0}
+@media(max-width:650px){table{font-size:11px}td,th{padding:8px 5px}}
+</style>
+</head>
+<body>
+<a href="./">← Ball Knowledge</a>
+<h1>Player photo credits</h1>
+<p>Player photographs used in the quiz are sourced individually from Wikimedia Commons. Each image retains its own author, source page and reuse license. A player's team relationship comes from Wikidata P54 membership and may be historical; the photograph may show another team's kit.</p>
+<p id="coverage">Loading verified photo credits…</p>
+<table><thead><tr><th>Club / player</th><th>Photographer</th><th>License</th><th>Source</th></tr></thead><tbody id="rows"></tbody></table>
+<footer><small>Ball Knowledge does not imply that a photographed player endorses the game. Licensing and factual corrections can be requested at dev.leonb@gmail.com.</small></footer>
+<script>
+fetch('./assets/player-photo-db.json').then(r=>r.json()).then(db=>{
+ const tbody=document.getElementById('rows');
+ const count=Object.values(db.clubs||{}).reduce((n,club)=>n+(club.players?.length||0),0);
+ const complete=Object.values(db.clubs||{}).filter(club=>(club.players||[]).length>=10).length;
+ document.getElementById('coverage').textContent=count+' licensed photographs collected · '+complete+' clubs with at least 10 usable photos';
+ const seen=new Set();
+ for(const club of Object.values(db.clubs||{})){
+  for(const player of club.players||[]){
+   const key=player.clubId+'|'+player.wikidataQid;
+   if(seen.has(key))continue;seen.add(key);
+   const row=document.createElement('tr');
+   const p=document.createElement('td');p.textContent=club.clubName+' — '+player.playerName;
+   const author=document.createElement('td');author.textContent=player.author;
+   const license=document.createElement('td');
+   if(player.licenseUrl){const a=document.createElement('a');a.href=player.licenseUrl;a.textContent=player.license;license.append(a)}
+   else license.textContent=player.license;
+   const source=document.createElement('td');const a=document.createElement('a');a.href=player.sourceUrl;a.textContent='Wikimedia Commons';a.target='_blank';a.rel='noopener noreferrer';source.append(a);
+   row.append(p,author,license,source);tbody.append(row);
+  }
+ }
+}).catch(()=>{
+ document.getElementById('coverage').textContent='Photo credit records are temporarily unavailable.';
+});
+</script>
+</body>
+</html>
