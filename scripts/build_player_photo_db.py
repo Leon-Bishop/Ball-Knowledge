@@ -24,6 +24,8 @@ AUDIT = ROOT / "assets/player-photo-audit.json"
 AGENT = "BallKnowledgePlayerPhotos/1.0 (noncommercial Wikimedia metadata research; game project contact: dev.leonb@gmail.com)"
 ALLOWED = {"cc0", "public domain", "cc by", "cc by-sa"}
 REQUEST_DELAY = 1.8
+TARGET_MINIMUM = 10
+FALLBACK_MINIMUM = 7
 
 
 def fetch_json(base, params, attempts=3):
@@ -211,7 +213,8 @@ def run(max_clubs):
         if path:
             image_names[record["id"]] = urllib.parse.unquote(path.rsplit("/", 1)[-1]).rsplit(".", 1)[0].replace("_", " ")
     mapping = read_json(CLUB_IDS, {"version": 1, "clubs": {}})
-    result = read_json(OUTPUT, {"version": 1, "minimumPlayersPerClub": 10, "clubs": {}})
+    result = read_json(OUTPUT, {"version": 1, "preferredMinimumPlayersPerClub": TARGET_MINIMUM,
+                                "fallbackMinimumPlayersPerClub": FALLBACK_MINIMUM, "clubs": {}})
     records = result.setdefault("clubs", {})
     audit = read_json(AUDIT, {"version": 1, "clubs": {}})
     status = audit.setdefault("clubs", {})
@@ -224,7 +227,7 @@ def run(max_clubs):
         if checked >= max_clubs:
             break
         club_id, name = club["id"], club["name"]
-        if len(records.get(club_id, {}).get("players", [])) >= 10:
+        if len(records.get(club_id, {}).get("players", [])) >= TARGET_MINIMUM:
             continue
         checked += 1
         qid = mapping["clubs"].get(club_id)
@@ -245,9 +248,12 @@ def run(max_clubs):
                 "clubName": name, "clubWikidataQid": qid, "players": players,
                 "source": "Wikidata team membership + Wikimedia Commons metadata"
             }
+            count = len(players)
+            state = ("ready_10" if count >= TARGET_MINIMUM else
+                     "ready_7" if count >= FALLBACK_MINIMUM else "needs_more_licensed_photos")
             status[club_id] = {
-                "status": "ready" if len(players) >= 10 else "needs_more_licensed_photos",
-                "count": len(players), "lastAttempt": now
+                "status": state,
+                "count": count, "lastAttempt": now
             }
         except Exception as exc:
             status[club_id] = {
@@ -255,16 +261,21 @@ def run(max_clubs):
                 "lastAttempt": now, "message": str(exc)[:180]
             }
         time.sleep(REQUEST_DELAY)
-    covered = sum(len(v.get("players", [])) >= 10 for v in records.values())
+    covered10 = sum(len(v.get("players", [])) >= TARGET_MINIMUM for v in records.values())
+    covered7 = sum(len(v.get("players", [])) >= FALLBACK_MINIMUM for v in records.values())
     photo_count = sum(len(v.get("players", [])) for v in records.values())
-    result.update({"version": 1, "minimumPlayersPerClub": 10, "lastUpdated": now})
+    result.pop("minimumPlayersPerClub", None)
+    result.update({"version": 1, "preferredMinimumPlayersPerClub": TARGET_MINIMUM,
+                   "fallbackMinimumPlayersPerClub": FALLBACK_MINIMUM, "lastUpdated": now})
     audit.update({
         "version": 1, "lastUpdated": now, "totalClubs": len(clubs),
-        "completeClubs": covered, "playersWithLicensedPhotos": photo_count,
+        "completeClubs10": covered10, "completeClubs7": covered7,
+        "completeClubs": covered7, "playersWithLicensedPhotos": photo_count,
     })
     for path, data in [(CLUB_IDS, mapping), (OUTPUT, result), (AUDIT, audit)]:
         path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", "utf8")
-    print(json.dumps({"attempted": checked, "readyClubs": covered, "licensedPhotos": photo_count}))
+    print(json.dumps({"attempted": checked, "readyClubs10": covered10,
+                      "readyClubs7": covered7, "licensedPhotos": photo_count}))
 
 
 if __name__ == "__main__":
