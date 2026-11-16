@@ -13,8 +13,8 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: player-photo-import
-  # Retire stale pre-checkpoint imports so the current, resumable collector runs.
+  group: player-photo-import-incremental
+  # Isolate checkpointed batches from the original long-running importer.
   cancel-in-progress: true
 jobs:
   import:
