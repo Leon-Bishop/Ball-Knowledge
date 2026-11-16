@@ -26,44 +26,61 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Collect small rate-limited Wikimedia batch
-        run: python scripts/build_player_photo_db.py --max-clubs 214
-      - name: Validate catalog and attribution completeness
-        run: |
-          python - <<'PY'
-          import json
-          t=json.load(open("teams.enriched.json"))
-          d=json.load(open("assets/player-photo-db.json"))
-          ids={x["id"] for x in t}
-          assert set(d["clubs"]).issubset(ids)
-          for club_id,v in d["clubs"].items():
-              players=v["players"]
-              assert len({p["wikidataQid"] for p in players})==len(players)
-              for p in players:
-                  assert p["clubId"]==club_id
-                  assert all(p.get(k) for k in ["photoUrl","sourceUrl","license","author","membershipSource"])
-          print("Verified",len(d["clubs"]),"clubs with records")
-          PY
-      - name: Commit database updates, not quiz logic
+      - name: Collect, validate and checkpoint player photos in short batches
+        env:
+          PYTHONUNBUFFERED: "1"
         run: |
           git config user.name "ball-knowledge-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add photo-db/club-wikidata-map.json assets/player-photo-db.json assets/player-photo-audit.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Import licensed football player photos with Commons attribution"
-            # The website may receive other commits during a long source import.
-            # Rebase our data-only changes safely instead of forcing main.
-            for attempt in 1 2 3 4 5; do
-              git fetch origin main
-              git rebase origin/main
-              if git push origin HEAD:main; then
-                exit 0
+          STARTED_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          for batch in $(seq 1 19); do
+            echo "Photo collection batch $batch (run start $STARTED_AT)"
+            python -u scripts/build_player_photo_db.py --max-clubs 12 --since "$STARTED_AT" | tee /tmp/photo-import-result.txt
+            python - <<'PY'
+          import json
+          t = json.load(open("teams.enriched.json"))
+          d = json.load(open("assets/player-photo-db.json"))
+          a = json.load(open("assets/player-photo-audit.json"))
+          ids = {x["id"] for x in t}
+          assert len(ids) == 214, f"Expected 214 clubs, got {len(ids)}"
+          assert set(d["clubs"]).issubset(ids)
+          assert a["totalClubs"] == len(ids)
+          for club_id, record in d["clubs"].items():
+              players = record["players"]
+              assert len({p["wikidataQid"] for p in players}) == len(players)
+              for p in players:
+                  assert p["clubId"] == club_id
+                  assert p["clubWikidataQid"] == record["clubWikidataQid"]
+                  assert all(p.get(k) for k in ["photoUrl","sourceUrl","license","author","membershipSource"])
+          covered7 = sum(len(v["players"]) >= 7 for v in d["clubs"].values())
+          covered10 = sum(len(v["players"]) >= 10 for v in d["clubs"].values())
+          assert a["completeClubs7"] == covered7
+          assert a["completeClubs10"] == covered10
+          print(f"Validated {covered7}/214 clubs (7+), {covered10}/214 (10+)")
+          PY
+            git add photo-db/club-wikidata-map.json assets/player-photo-db.json assets/player-photo-audit.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Import verified football player photo batch $batch"
+              pushed=0
+              for attempt in 1 2 3 4 5; do
+                git fetch origin main
+                git rebase origin/main
+                if git push origin HEAD:main; then
+                  pushed=1
+                  break
+                fi
+                sleep $((3 * attempt))
+              done
+              if [ "$pushed" -ne 1 ]; then
+                echo "Could not checkpoint verified photo batch $batch"
+                exit 1
               fi
-              sleep $((3 * attempt))
-            done
-            echo "Photo import collected but repository remained busy; will retry on next schedule."
-            exit 1
-          fi
+            fi
+            if grep -q '"attempted": 0' /tmp/photo-import-result.txt; then
+              echo "All incomplete clubs attempted this run"
+              break
+            fi
+          done
 
   deploy:
     # Action-created commits don't trigger other push workflows.
