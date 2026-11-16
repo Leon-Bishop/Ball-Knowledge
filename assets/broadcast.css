@@ -336,3 +336,28 @@ body:not(.dark) .pixel-avatar{border-color:#92ad98}
 /* The original, full-resolution 48-avatar atlas is loaded by assets/avatars.js
    only when assets/football-avatars-direct.png exists. Until it is uploaded,
    the last-known-good illustrated portraits remain in use. */
+
+/* Matchday leaderboard: align rank, portrait, username and score on one baseline.
+   Larger portraits keep blonde/red hair and facial details readable. */
+.broadcast-rank-row{
+ display:grid;
+ grid-template-columns:30px minmax(0,1fr) auto;
+ column-gap:12px;
+ align-items:center;
+ min-height:67px;
+ padding:9px 8px;
+}
+.broadcast-rank-number{align-self:center;justify-self:center;line-height:1}
+.broadcast-rank-name{display:flex;gap:11px;align-items:center;min-height:48px;line-height:1.35}
+.broadcast-rank-name>.leaderboard-avatar{
+ display:block;width:46px;height:46px;flex:0 0 46px;
+ border-radius:6px;vertical-align:middle;
+}
+.broadcast-rank-name>span:last-child{display:block;min-width:0;line-height:1.35}
+.broadcast-rank-score{align-self:center;line-height:1.35;font-variant-numeric:tabular-nums}
+.ranking-table td:nth-child(2)>.leaderboard-avatar{width:42px;height:42px}
+@media(max-width:620px){
+ .broadcast-rank-row{grid-template-columns:23px minmax(0,1fr) auto;column-gap:8px;min-height:60px;padding:7px 4px}
+ .broadcast-rank-name{gap:8px;min-height:42px}
+ .broadcast-rank-name>.leaderboard-avatar{width:40px;height:40px;flex-basis:40px}
+}

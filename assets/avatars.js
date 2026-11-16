@@ -17,11 +17,16 @@ atlas.onload=()=>{
 };
 atlas.onerror=()=>{newAtlasReady=false};
 atlas.src=NEW_ATLAS;
+const AVATAR_ORDER=Object.freeze([0,4,2,14,1,33,6,7,8,9,10,11,12,13,3,15,16,17,18,19,32,21,22,23,24,25,26,27,28,29,30,31,20,5,34,35,36,37,38,39,40,41,42,43,44,45,46,47]);
 function avatarIndex(username){
  const s=String(username||'').normalize('NFC').toLocaleLowerCase('und');
  let hash=2166136261;
  for(const ch of s){hash^=ch.codePointAt(0);hash=Math.imul(hash,16777619)}
- return (hash>>>0)%TOTAL;
+ // Editorially balanced portrait order: spread hair colour, skin tones and
+ // styles rather than clustering similar portraits in the leaderboard.
+ // This is a stable permutation of the same 48 original atlas portraits.
+ const slot=(hash>>>0)%TOTAL;
+ return AVATAR_ORDER[slot];
 }
 function apply(element,username){
  if(!element)return;
