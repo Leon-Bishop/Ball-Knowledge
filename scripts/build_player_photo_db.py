@@ -248,10 +248,16 @@ def run(max_clubs):
         if checked >= max_clubs:
             break
         club_id, name = club["id"], club["name"]
+        qid = mapping["clubs"].get(club_id)
+        previous_qid = records.get(club_id, {}).get("clubWikidataQid")
+        if previous_qid and qid and previous_qid != qid:
+            # A mistaken identity must never leave the wrong club's players
+            # displayed under a corrected club mapping.
+            records.pop(club_id, None)
+            status.pop(club_id, None)
         if len(records.get(club_id, {}).get("players", [])) >= TARGET_MINIMUM:
             continue
         checked += 1
-        qid = mapping["clubs"].get(club_id)
         try:
             if not qid:
                 qid = search_club_qid(name, [image_names.get(club_id, "")])
