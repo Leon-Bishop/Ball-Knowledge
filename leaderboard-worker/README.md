@@ -95,3 +95,14 @@ Before awarding Ranked prizes, require a persistent verified account, server-con
 Cloudflare logs showed D1 throwing inside `recentRegistrations()` on `POST /api/register`. This revision **removes the new daily-five-registration query and its write** until the root database exception can be diagnosed. It **retains** the previous per-IP one-minute registration throttle via the existing `rate_limits` table, and does not delete or migrate user data. It is a temporary reliability fix, not a solution to duplicate identities.
 
 **Deployment:** Update the existing `ball-knowledge-api` Worker (NOT a new Worker) with the code in `src/index.js`, preserving the production D1 `DB` binding and `ALLOWED_ORIGINS`. This GitHub commit alone does not update that live Cloudflare service. Test `POST /api/register` with a fresh username and existing-account profile/leaderboard retrieval. Before any prize-based Ranked competition, implement verified identities plus backend-issued questions and server-side attempt limits.
+
+
+## Club badge avatars (November 2026)
+
+Ball Knowledge now uses real club crest images in a searchable, 214-club avatar picker (12 leagues; Turkish Süper Lig first). **All existing and new players display Fenerbahçe by default** until they select a badge. This does not alter the existing user or score records.
+
+To synchronize a player's chosen crest across devices and other people's leaderboards, deploy the updated `leaderboard-worker/src/index.js` to the existing **ball-knowledge-api** Worker in Cloudflare, preserving `DB` and `ALLOWED_ORIGINS`. Optional: run `migrations/0003_user_avatars.sql` on that D1 database first. The Worker can create this table automatically on a player's first badge selection. If not yet created, profile and leaderboard queries fall back to the existing schema so registrations and scores keep working.
+
+The authenticated API is `POST /api/avatar` with JSON `{"clubId":"turkey-super-lig:6"}` and the existing Bearer token. The `/api/profile` and `/api/leaderboard` responses contain `avatarTeamId`; unselected users return `turkey-super-lig:6`. Without the Worker upgrade, selection is saved **locally in the current browser only** and the site remains playable.
+
+Club logo images are loaded from the public luukhopman/football-logos collection (European leagues), and third-party club logo repositories (Brazil). The picker displays a club abbreviation if a remote logo becomes unavailable. Club crests and trademarks belong to their respective clubs. The unused portrait sprites and credit note were removed.
