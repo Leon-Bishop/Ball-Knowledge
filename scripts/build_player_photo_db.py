@@ -268,8 +268,8 @@ def category_players(club_qid):
                 pack = titles[offset:offset + 35]
                 try:
                     page_data = fetch_json(wiki + "/w/api.php", {
-                        "action": "query", "prop": "pageprops",
-                        "ppprop": "wikibase_item",
+                        "action": "query", "prop": "pageprops|pageimages",
+                        "ppprop": "wikibase_item", "piprop": "name",
                         "titles": "|".join(pack), "format": "json",
                     })
                 except Exception as exc:
@@ -278,7 +278,7 @@ def category_players(club_qid):
                 for page in page_data.get("query", {}).get("pages", {}).values():
                     qid = page.get("pageprops", {}).get("wikibase_item")
                     if qid and re.fullmatch(r"Q\d+", qid) and qid not in inspected:
-                        fresh[qid] = (page.get("title", ""), source)
+                        fresh[qid] = (page.get("title", ""), source, page.get("pageimage", ""))
                         inspected.add(qid)
                 time.sleep(REQUEST_DELAY)
             if not fresh:
@@ -299,9 +299,12 @@ def category_players(club_qid):
                 if not human:
                     continue
                 images = ent.get("claims", {}).get("P18", [])
-                if not images:
-                    continue
-                value = images[0].get("mainsnak", {}).get("datavalue", {}).get("value", "")
+                value = (images[0].get("mainsnak", {}).get("datavalue", {}).get("value", "")
+                         if images else "")
+                # A human's article pageimage is an alternative to a missing
+                # Wikidata P18; its Commons file metadata is still checked.
+                if not isinstance(value, str) or not commons_file_name(value):
+                    value = fresh[qid][2]
                 if not isinstance(value, str) or not commons_file_name(value):
                     continue
                 label = ent.get("labels", {}).get("en", {}).get("value") or fresh[qid][0]
