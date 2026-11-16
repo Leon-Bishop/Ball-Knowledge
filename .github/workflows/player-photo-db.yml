@@ -2,7 +2,7 @@ name: Build licensed footballer photo database
 on:
   workflow_dispatch:
   schedule:
-    - cron: "37 2,8,14,20 * * *"
+    - cron: "37 3,15 * * *"
   push:
     paths:
       - "scripts/build_player_photo_db.py"
@@ -18,7 +18,7 @@ concurrency:
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Collect small rate-limited Wikimedia batch
-        run: python scripts/build_player_photo_db.py --max-clubs 48
+        run: python scripts/build_player_photo_db.py --max-clubs 214
       - name: Validate catalog and attribution completeness
         run: |
           python - <<'PY'
