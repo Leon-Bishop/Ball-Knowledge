@@ -150,31 +150,6 @@ async function ipLimiter(db, key, seconds) {
   return true;
 }
 
-// IP caps slow down bulk account creation but do not establish identity.
-// Household, school and mobile-network users can share the same address.
-const REGISTRATION_IP_LIMIT = 5;
-const REGISTRATION_WINDOW_SECONDS = 24 * 60 * 60;
-
-async function recentRegistrations(db, ipHash) {
-  const cutoff = Math.floor(Date.now() / 1000) - REGISTRATION_WINDOW_SECONDS;
-  const prefix = "registration-count:" + ipHash + ":";
-  const row = await db.prepare(
-    "SELECT COUNT(*) AS total FROM rate_limits " +
-    "WHERE key LIKE ? AND created_at >= ?"
-  ).bind(prefix + "%", cutoff).first();
-  return Number(row?.total || 0);
-}
-
-async function recordRegistration(db, ipHash) {
-  const now = Math.floor(Date.now() / 1000);
-  await db.prepare(
-    "INSERT INTO rate_limits(key, created_at) VALUES (?, ?)"
-  ).bind(
-    "registration-count:" + ipHash + ":" + crypto.randomUUID(),
-    now
-  ).run();
-}
-
 async function currentUser(request, env) {
   const token = authToken(request);
   if (!token) return null;
@@ -397,17 +372,14 @@ async function handle(request, env) {
     if (!ip) {
       return reply({ error: "Registration temporarily unavailable" }, 503);
     }
+    // The production D1 instance failed in the additional daily-count query.
+    // Use the previously working one-minute IP throttle until that query is
+    // diagnosed and tested against the live DB. IPs are hashed before storage.
     const ipHash = await hash(ip);
-    if (await recentRegistrations(env.DB, ipHash) >= REGISTRATION_IP_LIMIT) {
-      return reply({
-        error: "Registration limit reached for this network. Try again tomorrow."
-      }, 429);
-    }
     const allowed = await ipLimiter(env.DB, "registration:" + ipHash, 60);
     if (!allowed) {
       return reply({ error: "Too many registration attempts. Try later." }, 429);
     }
-
     try {
       const userId = crypto.randomUUID();
       const tokenHash = await hash(token);
@@ -423,9 +395,6 @@ async function handle(request, env) {
         userId, username, key, tokenHash,
         country, region, now
       ).run();
-
-      // Count successful registrations, not failed username choices.
-      await recordRegistration(env.DB, ipHash);
 
       return reply({
         profile: {

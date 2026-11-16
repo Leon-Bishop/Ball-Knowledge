@@ -88,3 +88,10 @@ The Worker already rate-limits registration attempts per hashed IP address to on
 **Deploy `src/index.js` to the actual live Cloudflare Worker at `ball-knowledge-api.cenkkingir4.workers.dev`.** GitHub Pages deployments do not automatically deploy the Worker. Preserve its DB binding and allowed-origin configuration. Cloudflare's Worker dashboard supports editing deployed code or deploying with Wrangler after confirming the correct production service.
 
 Before awarding Ranked prizes, require a persistent verified account, server-controlled matches and duplicate-account review. Blanket VPN blocking and one-account-per-IP rules cause false positives and do not guarantee identity; use network abuse signals to trigger additional verification instead. Implement a way for legitimate users to appeal an automated block.
+
+
+## Emergency fix for registration HTTP 500 (16 November 2026)
+
+Cloudflare logs showed D1 throwing inside `recentRegistrations()` on `POST /api/register`. This revision **removes the new daily-five-registration query and its write** until the root database exception can be diagnosed. It **retains** the previous per-IP one-minute registration throttle via the existing `rate_limits` table, and does not delete or migrate user data. It is a temporary reliability fix, not a solution to duplicate identities.
+
+**Deployment:** Update the existing `ball-knowledge-api` Worker (NOT a new Worker) with the code in `src/index.js`, preserving the production D1 `DB` binding and `ALLOWED_ORIGINS`. This GitHub commit alone does not update that live Cloudflare service. Test `POST /api/register` with a fresh username and existing-account profile/leaderboard retrieval. Before any prize-based Ranked competition, implement verified identities plus backend-issued questions and server-side attempt limits.
