@@ -356,3 +356,15 @@ body:not(.dark) .club-picker-option[aria-pressed="true"]:after{color:#42711e}
  .club-picker-badge.club-avatar{width:43px;height:43px;flex-basis:43px}
  .club-picker-name{font-size:9px}
 }
+
+/* Compact club badges: keep avatar alignment and tap targets unchanged,
+   but give crests breathing room instead of filling their entire slots. */
+.club-avatar .club-avatar-img,
+.club-picker-badge.club-avatar .club-avatar-img{
+ width:72%;
+ height:72%;
+ max-width:72%;
+ max-height:72%;
+ object-fit:contain;
+}
+.club-avatar .club-avatar-letters{font-size:10px}
