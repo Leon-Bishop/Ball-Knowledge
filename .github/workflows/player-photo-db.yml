@@ -7,6 +7,7 @@ on:
     paths:
       - "scripts/build_player_photo_db.py"
       - "photo-db/club-wikidata-map.json"
+      - ".github/workflows/player-photo-db.yml"
 permissions:
   contents: write
 concurrency:
@@ -48,5 +49,16 @@ jobs:
           git add photo-db/club-wikidata-map.json assets/player-photo-db.json assets/player-photo-audit.json
           if ! git diff --cached --quiet; then
             git commit -m "Import licensed football player photos with Commons attribution"
-            git push
+            # The website may receive other commits during a long source import.
+            # Rebase our data-only changes safely instead of forcing main.
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              sleep $((3 * attempt))
+            done
+            echo "Photo import collected but repository remained busy; will retry on next schedule."
+            exit 1
           fi
