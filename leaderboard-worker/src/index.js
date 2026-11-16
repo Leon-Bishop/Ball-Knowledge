@@ -122,7 +122,7 @@ function publicUser(user) {
     country: user.country,
     region: user.region || "",
     joinedAt: user.created_at,
-    avatarTeamId: user.avatarTeamId || "turkey-super-lig:6"
+    avatarTeamId: user.avatarTeamId || null
   };
 }
 
@@ -158,7 +158,7 @@ async function currentUser(request, env) {
   try {
     return await env.DB.prepare(`
       SELECT u.id, u.username, u.country, u.region, u.created_at,
-        COALESCE(a.team_id, 'turkey-super-lig:6') AS avatarTeamId
+        a.team_id AS avatarTeamId
       FROM users u
       LEFT JOIN user_avatars a ON a.user_id = u.id
       WHERE u.token_hash = ?
@@ -391,6 +391,12 @@ async function handle(request, env) {
 
     const username = normal(body.username);
     const token = authToken(request);
+    const clubId = String(body.clubId || "");
+    const match = /^([a-z0-9-]+):([1-9]\d*)$/.exec(clubId);
+    if (!match || !Object.hasOwn(LEAGUES, match[1]) ||
+        Number(match[2]) > LEAGUES[match[1]].count) {
+      return reply({error:"Choose a club badge before registering"},400);
+    }
 
     if (!validName(username) || !token) {
       return reply({
@@ -439,12 +445,33 @@ async function handle(request, env) {
         country, region, now
       ).run();
 
+      // The username was safely registered. The selected club is persisted
+      // separately so an unavailable optional avatar table never breaks signup.
+      let registeredClub = null;
+      try {
+        await env.DB.prepare(`
+          CREATE TABLE IF NOT EXISTS user_avatars(
+            user_id TEXT PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+            team_id TEXT NOT NULL,
+            updated_at INTEGER NOT NULL
+          )
+        `).run();
+        await env.DB.prepare(`
+          INSERT INTO user_avatars(user_id,team_id,updated_at) VALUES(?,?,?)
+          ON CONFLICT(user_id) DO UPDATE SET
+            team_id=excluded.team_id,updated_at=excluded.updated_at
+        `).bind(userId,clubId,now).run();
+        registeredClub=clubId;
+      }catch(error) {
+        console.error('Could not save new player club badge',error);
+      }
       return reply({
         profile: {
           username,
           country,
           region,
-          joinedAt: now
+          joinedAt: now,
+          avatarTeamId: registeredClub
         }
       }, 201);
 
@@ -504,7 +531,7 @@ async function handle(request, env) {
         s.best_total AS rounds,
         s.best_correct AS correct,
         s.best_bk_points AS bkPoints,
-        COALESCE(a.team_id, 'turkey-super-lig:6') AS avatarTeamId,
+        a.team_id AS avatarTeamId,
         s.updated_at
       FROM scores s
       JOIN users u ON u.id = s.user_id
@@ -522,7 +549,7 @@ async function handle(request, env) {
         SELECT u.username,u.country,u.region,
           s.best_score AS score,s.best_total AS rounds,
           s.best_correct AS correct,s.best_bk_points AS bkPoints,
-          'turkey-super-lig:6' AS avatarTeamId,s.updated_at
+          NULL AS avatarTeamId,s.updated_at
         FROM scores s
         JOIN users u ON u.id=s.user_id
         WHERE s.mode = ?${where}
