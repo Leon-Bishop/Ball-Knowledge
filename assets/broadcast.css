@@ -361,3 +361,22 @@ body:not(.dark) .pixel-avatar{border-color:#92ad98}
  .broadcast-rank-name{gap:8px;min-height:42px}
  .broadcast-rank-name>.leaderboard-avatar{width:40px;height:40px;flex-basis:40px}
 }
+
+/* Portrait framing: keep the entire sprite face visible rather than filling
+   the avatar box edge-to-edge. Uniform inset fixes apparent vertical cropping. */
+.pixel-avatar{
+ position:relative;
+ background-image:none!important;
+ background-color:#30443e;
+ overflow:hidden;
+}
+.pixel-avatar-art{
+ position:absolute;
+ display:block;
+ inset:7% 7% 11%;
+ background-repeat:no-repeat;
+ image-rendering:pixelated;
+ border-radius:2px;
+ pointer-events:none;
+}
+body:not(.dark) .pixel-avatar{background-color:#d7e4d0}

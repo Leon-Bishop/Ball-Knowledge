@@ -34,9 +34,7 @@ function apply(element,username){
  const name=String(username||'').trim();
  if(!name){
   element.classList.remove('pixel-avatar');
-  element.style.removeProperty('background-position');
-  element.style.removeProperty('background-image');
-  element.style.removeProperty('background-size');
+  element.replaceChildren();
   element.removeAttribute('data-avatar');
   element.removeAttribute('data-avatar-username');
   return;
@@ -48,10 +46,14 @@ function apply(element,username){
  const c=i%COLUMNS,r=Math.floor(i/COLUMNS);
  element.classList.add('pixel-avatar');
  element.dataset.avatar=String(original);
- element.style.backgroundImage=newAtlasReady?"url('"+NEW_ATLAS+"')":"url('./assets/football-avatars.svg')";
- element.style.backgroundSize='800% '+(rows*100)+'%';
- element.style.backgroundPosition=(c*100/(COLUMNS-1))+'% '+(r*100/(rows-1))+'%';
- element.textContent='';
+ // An inset art layer keeps the complete source portrait inside its frame.
+ // Previously the full-bleed atlas extended to the border, cutting off chins
+ // and making the faces appear too low in leaderboard tiles.
+ let art=element.querySelector('.pixel-avatar-art');
+ if(!art){art=document.createElement('span');art.className='pixel-avatar-art';element.replaceChildren(art)}
+ art.style.backgroundImage=newAtlasReady?"url('"+NEW_ATLAS+"')":"url('./assets/football-avatars.svg')";
+ art.style.backgroundSize='800% '+(rows*100)+'%';
+ art.style.backgroundPosition=(c*100/(COLUMNS-1))+'% '+(r*100/(rows-1))+'%';
  element.setAttribute('aria-hidden','true');
 }
 
