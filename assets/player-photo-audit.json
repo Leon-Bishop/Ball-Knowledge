@@ -1,22 +1,20 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-16T23:10:17.969709+00:00",
+  "lastUpdated": "2026-11-16T23:24:34.049554+00:00",
   "totalClubs": 214,
-  "completeClubs": 42,
-  "playersWithLicensedPhotos": 1245,
+  "completeClubs": 90,
+  "playersWithLicensedPhotos": 2616,
   "notes": "Build with scripts/build_player_photo_db.py. Never use unsupported images or invent player links.",
   "clubs": {
     "belgian-pro-league:1": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:49:42.738241+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
     },
     "belgian-pro-league:10": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:49:42.738241+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
     },
     "belgian-pro-league:11": {
       "status": "unmatched_club",
@@ -955,8 +953,238 @@
       "count": 0,
       "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
       "message": "No uniquely identified Wikidata football club"
+    },
+    "scotland-premiership:2": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "scotland-premiership:3": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "scotland-premiership:4": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "scotland-premiership:5": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "scotland-premiership:6": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "scotland-premiership:7": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "scotland-premiership:8": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "scotland-premiership:9": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:1": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:10": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:11": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:12": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:13": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:14": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:15": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:16": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:17": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:18": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:19": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:2": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:20": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:3": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:4": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:5": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:6": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:7": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:8": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "spain-la-liga:9": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:1": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:10": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:11": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:12": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:13": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:14": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:15": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:16": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:17": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:18": {
+      "status": "ready_7",
+      "count": 7,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:2": {
+      "status": "ready_7",
+      "count": 9,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:3": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:4": {
+      "status": "ready_10",
+      "count": 12,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:5": {
+      "status": "ready_10",
+      "count": 23,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:6": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:7": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:8": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
+    },
+    "turkey-super-lig:9": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-16T23:24:34.049554+00:00"
     }
   },
-  "completeClubs10": 42,
-  "completeClubs7": 42
+  "completeClubs10": 88,
+  "completeClubs7": 90
 }
