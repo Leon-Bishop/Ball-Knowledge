@@ -7,13 +7,20 @@ const root=()=>String(window.BK_LEADERBOARD_API||'').trim().replace(/\/$/,'');
 const node=id=>document.getElementById(id);
 const words=(key,args={})=>{try{return tr(key,args)}catch{return key}};
 const tokenKey='bk-anonymous-player-token';
-/* Older Workers reported Fenerbahçe for everybody, even if they had
-   never chosen a crest. Treat those legacy values as unselected. */
+/* Existing pre-picker accounts shown in the live leaderboard are
+   grandfathered to Fenerbahçe, while new users must choose a club.
+   Explicit user selections always override this visual fallback. */
+const LEGACY_FENER_PLAYERS=new Set([
+ 'sexmachine','testuser2','bktester123','test'
+]);
 const selectedClub=p=>{
- if(!p)return null;
- if(p.avatarSelected===false)return null;
- if(p.avatarSelected===undefined&&p.avatarTeamId==='turkey-super-lig:6')return null;
- return p.avatarTeamId||null;
+ if(!p||!p.username)return null;
+ if(p.avatarSelected===true)return p.avatarTeamId||null;
+ if(p.avatarTeamId&&p.avatarTeamId!=='turkey-super-lig:6'&&p.avatarSelected!==false)
+  return p.avatarTeamId;
+ return LEGACY_FENER_PLAYERS.has(p.username.trim().toLocaleLowerCase())
+  ?'turkey-super-lig:6'
+  :null;
 };
 
 
