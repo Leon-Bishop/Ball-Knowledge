@@ -122,7 +122,8 @@ function publicUser(user) {
     country: user.country,
     region: user.region || "",
     joinedAt: user.created_at,
-    avatarTeamId: user.avatarTeamId || null
+    avatarTeamId: user.avatarTeamId || null,
+    avatarSelected: Boolean(user.avatarTeamId)
   };
 }
 
@@ -471,7 +472,8 @@ async function handle(request, env) {
           country,
           region,
           joinedAt: now,
-          avatarTeamId: registeredClub
+          avatarTeamId: registeredClub,
+          avatarSelected: Boolean(registeredClub)
         }
       }, 201);
 
@@ -577,7 +579,8 @@ async function handle(request, env) {
         rounds: row.rounds,
         correct: row.correct,
         bkPoints: row.bkPoints,
-        avatarTeamId: row.avatarTeamId
+        avatarTeamId: row.avatarTeamId,
+        avatarSelected: Boolean(row.avatarTeamId)
       };
     });
 
