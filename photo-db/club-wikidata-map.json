@@ -204,7 +204,17 @@
     "turkey-super-lig:15": "Q272712",
     "turkey-super-lig:16": "Q430107",
     "turkey-super-lig:17": "Q192641",
-    "turkey-super-lig:18": "Q19613395"
+    "turkey-super-lig:18": "Q19613395",
+    "belgian-pro-league:4": "Q190916",
+    "belgian-pro-league:5": "Q509170",
+    "france-ligue-1:3": "Q180305",
+    "france-ligue-1:10": "Q185163",
+    "france-ligue-1:13": "Q19509",
+    "germany-bundesliga:2": "Q104761",
+    "germany-bundesliga:8": "Q104770",
+    "portugal-liga-portugal:12": "Q223450",
+    "spain-la-liga:2": "Q8760",
+    "turkey-super-lig:4": "Q2426819"
   },
   "notes": "Map only verified football-club Wikidata QIDs. The ingestion script can suggest exact candidates and records their source. Unresolved clubs are skipped.",
   "sources": [
