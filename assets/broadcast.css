@@ -384,3 +384,37 @@ body:not(.dark) .pixel-avatar{background-color:#d7e4d0}
 /* Corrected 48-character atlas uses true 8×6 centered portrait cells.
    Inset padding no longer needed and previously clipped the faces. */
 .pixel-avatar-art{inset:0;border-radius:0}
+
+/* Avatar treatment v3: frameless circular portraits.
+   Remove the harsh square sprite tile and center the artwork visually. */
+.pixel-avatar,
+body:not(.dark) .pixel-avatar{
+ border:0!important;
+ border-radius:50%!important;
+ background:transparent!important;
+ box-shadow:none!important;
+ overflow:visible;
+}
+.pixel-avatar .pixel-avatar-art{
+ inset:0!important;
+ border-radius:50%!important;
+ overflow:hidden;
+ /* Slightly raise the face inside its circular silhouette. */
+ transform:translateY(-5%);
+ /* Fade the source atlas's square corners into the page background. */
+ -webkit-mask-image:radial-gradient(ellipse 53% 54% at 50% 51%, #000 81%, transparent 100%);
+ mask-image:radial-gradient(ellipse 53% 54% at 50% 51%, #000 81%, transparent 100%);
+}
+.broadcast-rank-name>.leaderboard-avatar{
+ width:48px!important;
+ height:48px!important;
+ flex-basis:48px!important;
+}
+.broadcast-rank-row{min-height:69px}
+@media(max-width:620px){
+ .broadcast-rank-name>.leaderboard-avatar{
+  width:42px!important;
+  height:42px!important;
+  flex-basis:42px!important;
+ }
+}
