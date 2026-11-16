@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="google-adsense-account" content="ca-pub-8467213778102706">
-  <meta name="theme-color" content="#32117b">
+  <meta name="theme-color" content="#fff8e8">
   <meta name="description" content="Ball Knowledge — the six-language football club emoji guessing game. Pick a league, reveal clues and discover surprising club stories.">
   <meta property="og:title" content="Ball Knowledge — Find the club, Learn the History">
   <meta property="og:description" content="12 leagues. 214 club records. Five emoji clues. How much do you know?">
@@ -20,7 +20,6 @@
   <header class="stadium-hero">
     <div class="hero-topbar">
       <button type="button" data-screen="selection" class="broadcast-brand" aria-label="Ball Knowledge home">
-        <span class="bk-mark" aria-hidden="true">BK<span class="bk-slash"></span></span>
         <h1 id="gameTitle" class="brand-title"><span>BALL</span><em>KNOWLEDGE</em></h1>
       </button>
       <nav class="broadcast-top-nav" aria-label="Site sections">
@@ -35,7 +34,7 @@
           <option value="tr">🇹🇷 Türkçe</option><option value="en">🇬🇧 English</option><option value="es">🇪🇸 Español</option>
           <option value="fr">🇫🇷 Français</option><option value="it">🇮🇹 Italiano</option><option value="pt">🇵🇹 Português</option>
         </select>
-        <button id="theme" class="theme-button" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+        <button id="theme" class="theme-button" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">☾</button>
         <button type="button" data-screen="stats" class="broadcast-player-shortcut" aria-label="Your statistics">
           <span class="broadcast-player-icon" aria-hidden="true">◎</span>
           <span id="stats">Points 0 · Streak 0 · Best 0</span>
@@ -52,12 +51,9 @@
           <p class="broadcast-overline" data-bk-copy="footballTrivia">THE FOOTBALL TRIVIA GAME</p>
           <div class="broadcast-hero-title" aria-hidden="true">BALL<br>KNOWLEDGE</div>
           <div class="broadcast-strap"><span data-bk-copy="heroStrap">GUESS THE CLUB. KNOW THE STORY.</span></div>
-          <button id="broadcastPlay" class="broadcast-play-button" type="button"><span data-bk-copy="playNow">PLAY NOW</span><span aria-hidden="true">↗</span></button>
         </div>
         <div class="broadcast-scorecard" aria-label="Player summary">
-          <span class="scorecard-label" data-bk-copy="yourMatchday">YOUR MATCHDAY</span>
-          <span class="scorecard-logo" aria-hidden="true">BK</span>
-          <strong data-bk-copy="footballKnowledge">FOOTBALL KNOWLEDGE</strong>
+          <strong class="scorecard-title">Ball Knowledge</strong>
           <span class="scorecard-small" data-bk-copy="chooseLeagues">Choose your leagues and kick off a quiz.</span>
           <div class="scorecard-rule"></div>
           <span class="scorecard-stats" data-bk-copy="fiveClues">5 clues · 5 guesses · endless football stories</span>

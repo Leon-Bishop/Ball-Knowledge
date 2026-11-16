@@ -150,3 +150,92 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
  .broadcast-strap{font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Light matchday: warm paper and vivid citrus with accessible dark typography.
+   Dark mode remains the original charcoal Broadcast treatment. */
+.scorecard-title{font:900 32px/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:.15px;color:var(--fg);text-transform:none}
+.broadcast-scorecard{justify-content:center;min-height:200px}
+.broadcast-brand{gap:0}
+body:not(.dark){
+ --bg:#fff9ea;--card:#fffdf4;--fg:#192c28;--muted:#586f67;
+ --accent:#a8db17;--accent-2:#dbf66a;--line:#bfd0bf;--soft:#edf4df;
+ --shadow:0 10px 30px #34653a20;color-scheme:light;
+ background:#e8f2dc;color:var(--fg);
+ background-image:radial-gradient(circle at 15% 0%,#faffeb,transparent 62%),linear-gradient(120deg,#e9f4dd,#fdf9ed);
+}
+body:not(.dark) .app-frame{background:#fffdf4;border-color:#c7d6bd;box-shadow:0 0 70px #385b3230}
+body:not(.dark) .stadium-hero{background:#fffdf4;border-bottom-color:#bdcdbb}
+body:not(.dark) .brand-title span,body:not(.dark) .brand-title em{color:#173d31}
+body:not(.dark) .header-nav-button{color:#204035}
+body:not(.dark) .header-nav-button.active{color:#3f6b06}
+body:not(.dark) .header-nav-button.active:after{background:#76ae00}
+body:not(.dark) .header-nav-pending{color:#647d6d}
+body:not(.dark) .header-nav-pending small{color:#3e690e}
+body:not(.dark) .language-control{background:#f2f7e9;color:#1c382f;border-color:#9db4a4;box-shadow:none}
+body:not(.dark) .theme-button{background:#e0f26f;color:#1c351f;border:1px solid #abc737;box-shadow:0 2px 0 #7f983233}
+body.dark .theme-button{background:#e2fb62;color:#15201a;border:1px solid #d0ef38;box-shadow:0 0 14px #d6fa3924}
+.theme-button{display:grid;place-items:center;min-width:38px;font-size:23px;transition:background .15s}
+.theme-button:hover{filter:brightness(1.08)}
+body:not(.dark) .broadcast-player-shortcut{color:#1e3b30;border-color:#9fb5a8;background:#f0f7e6}
+body:not(.dark) .broadcast-player-icon{color:#537c10}
+body:not(.dark) .broadcast-hero{
+ background-color:#d9e6cd;
+ border-bottom-color:#b7c9a8;
+}
+body:not(.dark) .broadcast-hero:before{background:linear-gradient(90deg,rgba(246,253,224,.94) 0%,rgba(236,247,215,.86) 46%,rgba(197,221,190,.3) 100%)}
+body:not(.dark) .broadcast-kicker{color:#3b5144}
+body:not(.dark) .broadcast-overline{color:#355246}
+body:not(.dark) .broadcast-hero-title{color:#133629;text-shadow:2px 3px 0 #ffffff80}
+body:not(.dark) .broadcast-strap{background:#a8db17;color:#173820;box-shadow:3px 3px 0 #799f254d}
+body:not(.dark) .broadcast-scorecard{background:#fffdf4e8;border-color:#8fa98a;box-shadow:0 15px 35px #405f3238}
+body:not(.dark) .scorecard-title{color:#19382c}
+body:not(.dark) .scorecard-small,body:not(.dark) .scorecard-stats{color:#3c5a49}
+body:not(.dark) .scorecard-rule{border-color:#a5bda1}
+body:not(.dark) .broadcast-ranked-teaser{background:linear-gradient(113deg,#eaf4d8,#f6f9e9 67%,#d9edb9);border-color:#afc69e}
+body:not(.dark) .broadcast-ranked-teaser:before{background:radial-gradient(ellipse at 75% 100%,#b3e93b66,transparent 65%)}
+body:not(.dark) .ranked-accent{background:#7caa10}
+body:not(.dark) .ranked-teaser-heading{border-color:#b8cba5}
+body:not(.dark) .ranked-teaser-heading strong{color:#193c2f}
+body:not(.dark) .ranked-teaser-description{color:#284c35}
+body:not(.dark) .broadcast-ranked-soon{background:#b2e32b;color:#193c27}
+body:not(.dark) .section-intro .eyebrow{color:#53871a}
+body:not(.dark) .section-intro h2,body:not(.dark) .broadcast-side-heading h2,body:not(.dark) .other-screen h2,body:not(.dark) .game-card-heading h2{color:#203c31}
+body:not(.dark) .filters select,body:not(.dark) .settings-language-control,body:not(.dark) .club-directory select,body:not(.dark) .ranking-filters select{background:#f9fdf3;border-color:#a8bca6;color:#1c362c}
+body:not(.dark) .league-bulk-actions .outline-button,body:not(.dark) .outline-button{background:#f6faef;color:#244235;border-color:#9bb49e}
+body:not(.dark) .league-tile{background:#fffef9;border-color:#b9cbb6;color:#203b2f;box-shadow:0 2px 9px #3c624b12}
+body:not(.dark) .league-tile:hover{background:#edf7df;box-shadow:0 4px 14px #587d4325}
+body:not(.dark) .league-tile[aria-pressed="true"]{background:#eaf7c7;border-color:#7fb321;box-shadow:inset 0 0 0 1px #a5db1f}
+body:not(.dark) .league-tile[aria-pressed="true"]:after{background:#9dd42d;color:#1d3927}
+body:not(.dark) .league-logo-fallback{color:#27543b}
+body:not(.dark) .league-mark img{filter:none}
+body:not(.dark) .selection-footer{border-color:#bdcdbc}
+body:not(.dark) .pool-caption{color:#49674f}
+body:not(.dark) .pool-dot{background:#85bd17}
+body:not(.dark) .primary-cta,body:not(.dark) .start-button,body:not(.dark) .guess-button{background:#b3e72e;color:#142e21;box-shadow:0 3px 0 #7daa25}
+body:not(.dark) .primary-cta:hover:not(:disabled){background:#cdf46e}
+body:not(.dark) .broadcast-side-heading{border-color:#aabfaa}
+body:not(.dark) .broadcast-see-all,body:not(.dark) .broadcast-rank-score{color:#4b7e0a}
+body:not(.dark) .broadcast-rank-caption{color:#5b7466}
+body:not(.dark) .broadcast-rank-row{border-color:#c9d8c5}
+body:not(.dark) .broadcast-rank-number{color:#234b38}
+body:not(.dark) .home-player-card{background:#f3f8e8;border-color:#a9c19e}
+body:not(.dark) .home-player-avatar{background:#e3f0cd;border-color:#a4bba3;color:#386c1d}
+body:not(.dark) .home-player-kicker,body:not(.dark) .home-player-card[data-state="active"] .home-player-tag{color:#4f7e15}
+body:not(.dark) .home-player-tag{background:#e6f3d4;border-color:#b6c9a5;color:#406b3f}
+body:not(.dark) .player-claim-controls input,body:not(.dark) .search-field input{background:#fffcf4;border-color:#a4bba7;color:#1b382b}
+body:not(.dark) .game-card,body:not(.dark) .round-progress-panel,body:not(.dark) .setting-card,body:not(.dark) .club-reference,body:not(.dark) .stat-card,body:not(.dark) .result-panel{background:#fffdf5;color:#203a2e;border-color:#b7c8b3}
+body:not(.dark) .slots .slot,body:not(.dark) .slot{background:#edf6e6;border-color:#b2c4b2;color:#1f3b2d}
+body:not(.dark) .slot.revealed{border-color:#80b629}
+body:not(.dark) .attempts-badge,body:not(.dark) .mode-pill{background:#e8f2d4;color:#476b0b;border-color:#b4c887}
+body:not(.dark) .round-meter{background:#d8e8ca}
+body:not(.dark) .round-meter > div,body:not(.dark) .round-meter #sessionMeterFill{background:#92c820}
+body:not(.dark) .ranking-table th{background:#eaf2df}
+body:not(.dark) .ranking-table td{border-color:#c7d8c8}
+body:not(.dark) .ad-placement{background:#f4f7ed;border-color:#bacfb6;color:#5c7865}
+body:not(.dark) .site-legal-footer{border-color:#d4dfcd;color:#536d5d}
+body:not(.dark) .dev-warnings{color:#5c745e}
+body:not(.dark) .bottom-nav{background:#fffef8;border-color:#afc1af}
+body:not(.dark) .bottom-nav .nav-item{color:#41604b}
+body:not(.dark) .bottom-nav .nav-item.active{color:#538813}
+body:not(.dark) .status,body:not(.dark) .clue-subtext,body:not(.dark) .reference-notice{color:#3b6146}
+@media(max-width:620px){.broadcast-scorecard{display:none}}
