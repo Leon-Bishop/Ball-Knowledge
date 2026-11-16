@@ -380,3 +380,7 @@ body:not(.dark) .pixel-avatar{border-color:#92ad98}
  pointer-events:none;
 }
 body:not(.dark) .pixel-avatar{background-color:#d7e4d0}
+
+/* Corrected 48-character atlas uses true 8×6 centered portrait cells.
+   Inset padding no longer needed and previously clipped the faces. */
+.pixel-avatar-art{inset:0;border-radius:0}

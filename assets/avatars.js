@@ -4,7 +4,7 @@
 (function(){
 'use strict';
 const COLUMNS=8, ROWS=6, TOTAL=COLUMNS*ROWS;
-const NEW_ATLAS='./assets/football-avatars-direct.png';
+const NEW_ATLAS='./assets/football-avatars-direct.png?v=centered-2';
 const LEGACY_TOTAL=40;
 let newAtlasReady=false;
 const roster=new Set();
