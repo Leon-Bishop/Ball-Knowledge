@@ -154,14 +154,24 @@ async function ipLimiter(db, key, seconds) {
 async function currentUser(request, env) {
   const token = authToken(request);
   if (!token) return null;
-
-  return env.DB.prepare(`
-    SELECT u.id, u.username, u.country, u.region, u.created_at,
-      COALESCE(a.team_id, 'turkey-super-lig:6') AS avatarTeamId
-    FROM users u
-    LEFT JOIN user_avatars a ON a.user_id = u.id
-    WHERE u.token_hash = ?
-  `).bind(await hash(token)).first();
+  const tokenHash = await hash(token);
+  try {
+    return await env.DB.prepare(`
+      SELECT u.id, u.username, u.country, u.region, u.created_at,
+        COALESCE(a.team_id, 'turkey-super-lig:6') AS avatarTeamId
+      FROM users u
+      LEFT JOIN user_avatars a ON a.user_id = u.id
+      WHERE u.token_hash = ?
+    `).bind(tokenHash).first();
+  } catch(error) {
+    // Keep existing logins and registrations working before the avatar
+    // migration has been applied to a production D1 database.
+    if (!/no such table.*user_avatars/i.test(String(error))) throw error;
+    return env.DB.prepare(`
+      SELECT id, username, country, region, created_at
+      FROM users WHERE token_hash = ?
+    `).bind(tokenHash).first();
+  }
 }
 
 /*
@@ -348,11 +358,19 @@ async function handle(request, env) {
     try { body = await readBody(request); }
     catch { return reply({error:"Invalid request"}, 400); }
     const clubId = String(body.clubId || "");
-    const match = /^([a-z0-9-]+):([1-9]\\d*)$/.exec(clubId);
+    const match = /^([a-z0-9-]+):([1-9]\d*)$/.exec(clubId);
     if (!match || !Object.hasOwn(LEAGUES, match[1]) ||
         Number(match[2]) > LEAGUES[match[1]].count) {
       return reply({error:"Unknown club"}, 400);
     }
+    // First badge selection creates the optional table if not migrated yet.
+    await env.DB.prepare(`
+      CREATE TABLE IF NOT EXISTS user_avatars(
+        user_id TEXT PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+        team_id TEXT NOT NULL,
+        updated_at INTEGER NOT NULL
+      )
+    `).run();
     await env.DB.prepare(`
       INSERT INTO user_avatars(user_id, team_id, updated_at)
       VALUES(?, ?, ?)
@@ -475,7 +493,9 @@ async function handle(request, env) {
       binds.push(user.region);
     }
 
-    const rows = await env.DB.prepare(`
+    let rows;
+    try {
+      rows = await env.DB.prepare(`
       SELECT
         u.username,
         u.country,
@@ -496,6 +516,20 @@ async function handle(request, env) {
         u.username ASC
       LIMIT 100
     `).bind(...binds).all();
+    } catch(error) {
+      if (!/no such table.*user_avatars/i.test(String(error))) throw error;
+      rows = await env.DB.prepare(`
+        SELECT u.username,u.country,u.region,
+          s.best_score AS score,s.best_total AS rounds,
+          s.best_correct AS correct,s.best_bk_points AS bkPoints,
+          'turkey-super-lig:6' AS avatarTeamId,s.updated_at
+        FROM scores s
+        JOIN users u ON u.id=s.user_id
+        WHERE s.mode = ?${where}
+        ORDER BY s.best_bk_points DESC,s.updated_at ASC,u.username ASC
+        LIMIT 100
+      `).bind(...binds).all();
+    }
 
     // Players with the same BK Points share the same rank.
     // Display order among tied players does not affect their rank.
