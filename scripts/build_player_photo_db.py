@@ -232,11 +232,15 @@ def category_players(club_qid):
     if not category_qid:
         return [], ""
     category = get_wikidata_entities([category_qid], "sitelinks").get(category_qid, {})
-    title = category.get("sitelinks", {}).get("enwiki", {}).get("title", "")
-    if not title.startswith("Category:"):
+    sites = category.get("sitelinks", {})
+    languages = ("en", "tr", "pt", "fr", "de", "es", "it", "nl", "el")
+    language = next((lang for lang in languages if sites.get(lang + "wiki", {}).get("title")), None)
+    if not language:
         return [], ""
-    source = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":_()")
-    data = fetch_json("https://en.wikipedia.org/w/api.php", {
+    title = sites[language + "wiki"]["title"]
+    wiki = "https://" + language + ".wikipedia.org"
+    source = wiki + "/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":_()")
+    data = fetch_json(wiki + "/w/api.php", {
         "action": "query", "list": "categorymembers", "cmtitle": title,
         "cmtype": "page", "cmnamespace": 0, "cmlimit": 100, "format": "json",
     })
@@ -246,7 +250,7 @@ def category_players(club_qid):
     person_qids = {}
     for offset in range(0, len(titles), 35):
         pack = titles[offset:offset + 35]
-        page_data = fetch_json("https://en.wikipedia.org/w/api.php", {
+        page_data = fetch_json(wiki + "/w/api.php", {
             "action": "query", "prop": "pageprops", "ppprop": "wikibase_item",
             "titles": "|".join(pack), "format": "json",
         })
@@ -280,7 +284,11 @@ def category_players(club_qid):
 
 
 def process_club(team, qid):
-    people = memberships(qid)
+    try:
+        people = memberships(qid)
+    except Exception as exc:
+        print("Direct P54 photo query unavailable for", team["id"], str(exc)[:100])
+        people = []
     results = []
     seen = set()
     if people:
