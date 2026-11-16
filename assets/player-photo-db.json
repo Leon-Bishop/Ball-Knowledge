@@ -1,1 +1,37 @@
-{"version":1,"minimumPlayersPerClub":10,"lastUpdated":null,"clubs":{}}
+{
+  "version": 1,
+  "minimumPlayersPerClub": 10,
+  "lastUpdated": "2026-11-16T22:49:42.738241+00:00",
+  "clubs": {
+    "belgian-pro-league:12": {
+      "clubName": "Royal Charleroi SC",
+      "clubWikidataQid": "Q19585",
+      "players": [],
+      "source": "Wikidata team membership + Wikimedia Commons metadata"
+    },
+    "belgian-pro-league:13": {
+      "clubName": "Lommel SK",
+      "clubWikidataQid": "Q1668203",
+      "players": [],
+      "source": "Wikidata team membership + Wikimedia Commons metadata"
+    },
+    "belgian-pro-league:15": {
+      "clubName": "Standard Liege",
+      "clubWikidataQid": "Q190561",
+      "players": [],
+      "source": "Wikidata team membership + Wikimedia Commons metadata"
+    },
+    "belgian-pro-league:17": {
+      "clubName": "RAAL La Louvière",
+      "clubWikidataQid": "Q536651",
+      "players": [],
+      "source": "Wikidata team membership + Wikimedia Commons metadata"
+    },
+    "belgian-pro-league:3": {
+      "clubName": "Cercle Brugge KSV",
+      "clubWikidataQid": "Q364698",
+      "players": [],
+      "source": "Wikidata team membership + Wikimedia Commons metadata"
+    }
+  }
+}

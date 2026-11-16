@@ -1,5 +1,11 @@
 {
   "version": 1,
-  "clubs": {},
+  "clubs": {
+    "belgian-pro-league:12": "Q19585",
+    "belgian-pro-league:13": "Q1668203",
+    "belgian-pro-league:15": "Q190561",
+    "belgian-pro-league:17": "Q536651",
+    "belgian-pro-league:3": "Q364698"
+  },
   "notes": "Map only verified football-club Wikidata QIDs. The ingestion script can suggest exact candidates and records their source. Unresolved clubs are skipped."
 }
