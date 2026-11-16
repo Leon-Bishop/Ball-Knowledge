@@ -1,14 +1,15 @@
 /* Licensed football player photo clues. Never fabricate player/photo associations.
-   Images only appear when a club has >=10 independently attributed player records. */
+   Images appear when a club has >=7 independently attributed player records; 10 remains the target. */
 (function(){
 'use strict';
-const MINIMUM=10;
+const TARGET_MINIMUM=10;
+const FALLBACK_MINIMUM=7;
 let database={clubs:{}};
 function getPlayer(clubId,roundSeed=''){
  const list=database.clubs?.[clubId]?.players;
- if(!Array.isArray(list)||list.length<MINIMUM)return null;
+ if(!Array.isArray(list)||list.length<FALLBACK_MINIMUM)return null;
  const valid=list.filter(p=>p?.photoUrl&&p?.sourceUrl&&p?.license&&p?.author&&p?.playerName&&p?.clubId===clubId);
- if(valid.length<MINIMUM)return null;
+ if(valid.length<FALLBACK_MINIMUM)return null;
  // Stable selection for the duration of a quiz question; avoid unstable UI when
  // multiple clues are re-rendered after a guess.
  let hash=2166136261;
