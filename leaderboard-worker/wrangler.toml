@@ -10,4 +10,4 @@ database_name = "ball-knowledge-leaderboard"
 database_id = "REPLACE_WITH_D1_DATABASE_ID"
 
 [vars]
-ALLOWED_ORIGINS = "https://leon-bishop.github.io,http://localhost:8000,http://127.0.0.1:8000"
+ALLOWED_ORIGINS = "https://ballknowledge.life,https://www.ballknowledge.life,https://leon-bishop.github.io,http://localhost:8000,http://127.0.0.1:8000"

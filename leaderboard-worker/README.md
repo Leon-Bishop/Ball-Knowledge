@@ -65,3 +65,17 @@ Open http://localhost:8000. Without the Cloudflare Worker, the game still works,
 - `GET /api/health`
 
 The Worker requires an allowed Origin for all requests. Only the token hash, username, approximate country/region and submitted scores are persisted. For multi-device identity or account recovery, an optional verified account system would be needed.
+
+
+## Fix: production custom domain and leaderboard requests (November 2026)
+
+**The GitHub Pages site and the Cloudflare Worker are separate deployments.** Updating this repository alone does NOT update an existing Worker or its dashboard environment variables.
+
+The live frontend currently calls `https://ball-knowledge-api.cenkkingir4.workers.dev`, which may be a Worker with a different name from the example `wrangler.toml` in this folder. **Update the Worker actually serving that URL, not a newly created Worker.**
+
+1. In Cloudflare dashboard, open **Workers & Pages**, select the Worker serving `ball-knowledge-api.cenkkingir4.workers.dev`, and open **Settings → Variables and Secrets** (sometimes **Settings → Variables**).
+2. Update the **text** variable `ALLOWED_ORIGINS` to exactly: `https://ballknowledge.life,https://www.ballknowledge.life,https://leon-bishop.github.io,http://localhost:8000,http://127.0.0.1:8000`. Save/deploy the variable change. No trailing slashes or spaces needed. The Worker rejects other Origin headers with HTTP 403.
+3. Check the D1 database bound as **DB** to that Worker. Run `PRAGMA table_info(scores);` in its console. The `scores` table must include `best_bk_points`, used by the live leaderboard queries and score submissions. If it is missing, run `ALTER TABLE scores ADD COLUMN best_bk_points INTEGER NOT NULL DEFAULT 0;` **once**, or apply `migrations/0002_add_best_bk_points.sql` using Wrangler against the correct live DB. Do not run the ALTER if already present. Back up existing database before schema changes.
+4. Test username registration, viewing the global scoreboard, and saving a completed game from `https://ballknowledge.life`. A 403 or CORS error points to incorrect `ALLOWED_ORIGINS`; a 500 response points to Worker/database configuration or runtime errors. Examine the Worker Logs for exact details.
+
+**Important:** The current username/token method is browser-bound, not a conventional login. Someone using another browser or a browser with cleared local storage cannot recover the original username using this prototype. A verified email recovery flow is necessary before prize-based Ranked competitions.
