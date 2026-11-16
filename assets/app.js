@@ -130,15 +130,18 @@ function emojiMeaning(index){
  const emoji=round?.emojis?.[index]||'';
  return tr(EMOJI_COLOURS.has(emoji)?'emojiMeaningColor':index<=1?'emojiMeaningPlace':index===2?'emojiMeaningSymbol':'emojiMeaningIdentity');
 }
-// Keep images as optional, factual clues: only a club with 10+
- // photo-licensed Wikidata-linked players is eligible. Every other club
- // retains its original five emoji clues and existing scoring rules.
+// Display licensed portraits for ball/trophy clues. Each club must have
+// at least seven uniquely attributed players (ten preferred). Randomize
+// separately per round and select different players for different clues.
 const PLAYER_PHOTO_REPLACE=new Set(['⚽','🏆','🥇']);
 const playerPhotoSessionSeed=Math.random().toString(36).slice(2);
-function eligiblePlayerPhoto(index){
+const photoAlternates=new Map();
+function eligiblePlayerPhoto(index,alternative=null){
  if(!round||!PLAYER_PHOTO_REPLACE.has(round.emojis[index]))return null;
  const seed=session?.daily?String(session.date):playerPhotoSessionSeed;
- return window.BKPlayerPhotos?.getPlayer(round.id,seed+'|'+String(session?.played??0))||null;
+ const roundSeed=seed+'|'+String(session?.played??0);
+ const offset=alternative===null?(photoAlternates.get(round.id+'|'+roundSeed+'|'+index)||0):alternative;
+ return window.BKPlayerPhotos?.getPlayer(round.id,roundSeed,index,offset)||null;
 }
 function displayEmojiExplanation(){
  const panel=$('emojiExplanation');
@@ -178,7 +181,17 @@ function render(){
     image.decoding='async';
     image.referrerPolicy='no-referrer';
     image.onerror=()=>{
-     // Broken or restricted source cannot break this clue.
+     // Retry the other attributed club photos if a source is unavailable.
+     const seed=session?.daily?String(session.date):playerPhotoSessionSeed;
+     const roundSeed=seed+'|'+String(session?.played??0);
+     const key=round.id+'|'+roundSeed+'|'+idx;
+     const next=(photoAlternates.get(key)||0)+1;
+     const candidates=window.BKPlayerPhotos?.availablePlayers(round.id)?.length||0;
+     if(next<candidates){
+      photoAlternates.set(key,next);
+      const replacement=eligiblePlayerPhoto(idx,next);
+      if(replacement){image.src=replacement.photoUrl;return}
+     }
      image.remove();item.classList.remove('photo-clue-slot');
      item.textContent=round.emojis[idx];
     };
