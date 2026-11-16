@@ -252,21 +252,29 @@ def category_players(club_qid):
             source = wiki + "/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":_()")
             if not first_source:
                 first_source = source
-            data = fetch_json(wiki + "/w/api.php", {
-                "action": "query", "list": "categorymembers", "cmtitle": title,
-                "cmtype": "page", "cmnamespace": 0,
-                "cmlimit": min(200, 450 - sampled_pages), "format": "json",
-            })
+            try:
+                data = fetch_json(wiki + "/w/api.php", {
+                    "action": "query", "list": "categorymembers", "cmtitle": title,
+                    "cmtype": "page", "cmnamespace": 0,
+                    "cmlimit": min(200, 450 - sampled_pages), "format": "json",
+                })
+            except Exception as exc:
+                print("Player category unavailable", club_qid, language, str(exc)[:90])
+                continue
             titles = [p["title"] for p in data.get("query", {}).get("categorymembers", [])]
             sampled_pages += len(titles)
             fresh = {}
             for offset in range(0, len(titles), 35):
                 pack = titles[offset:offset + 35]
-                page_data = fetch_json(wiki + "/w/api.php", {
-                    "action": "query", "prop": "pageprops",
-                    "ppprop": "wikibase_item",
-                    "titles": "|".join(pack), "format": "json",
-                })
+                try:
+                    page_data = fetch_json(wiki + "/w/api.php", {
+                        "action": "query", "prop": "pageprops",
+                        "ppprop": "wikibase_item",
+                        "titles": "|".join(pack), "format": "json",
+                    })
+                except Exception as exc:
+                    print("Page identity lookup unavailable", club_qid, language, str(exc)[:90])
+                    continue
                 for page in page_data.get("query", {}).get("pages", {}).values():
                     qid = page.get("pageprops", {}).get("wikibase_item")
                     if qid and re.fullmatch(r"Q\d+", qid) and qid not in inspected:
@@ -275,7 +283,11 @@ def category_players(club_qid):
                 time.sleep(REQUEST_DELAY)
             if not fresh:
                 continue
-            entities = get_wikidata_entities(list(fresh), "claims|labels")
+            try:
+                entities = get_wikidata_entities(list(fresh), "claims|labels")
+            except Exception as exc:
+                print("Player identity lookup unavailable", club_qid, language, str(exc)[:90])
+                continue
             for qid, ent in entities.items():
                 if not re.fullmatch(r"Q\d+", qid):
                     continue
