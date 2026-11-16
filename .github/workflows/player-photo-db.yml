@@ -14,7 +14,8 @@ permissions:
   id-token: write
 concurrency:
   group: player-photo-import
-  cancel-in-progress: false
+  # Retire stale pre-checkpoint imports so the current, resumable collector runs.
+  cancel-in-progress: true
 jobs:
   import:
     runs-on: ubuntu-latest
