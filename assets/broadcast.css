@@ -285,3 +285,34 @@ body:not(.dark) .recent-player-note{color:#4f6d58}
 /* Club availability is factual metadata, not an online/status signal. */
 .pool-caption{gap:0;font:600 12px/1.4 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.1px}
 .pool-dot{display:none!important}
+
+/* Original 40-portrait 8-bit avatar set (8 columns × 5 rows).
+   A stable username hash chooses the same portrait for existing and new users. */
+.pixel-avatar{
+ display:inline-block;flex:none;
+ background-image:url('./football-avatars.svg');
+ background-size:800% 500%;
+ background-repeat:no-repeat;
+ image-rendering:pixelated;
+ border:1px solid #4d6259;
+ border-radius:6px;
+ box-shadow:inset 0 0 0 1px #0004;
+ overflow:hidden;
+ font-size:0!important;
+ line-height:0!important;
+}
+.recent-player-avatar.pixel-avatar{width:51px;height:51px;border-radius:7px}
+.broadcast-player-icon.pixel-avatar{width:30px;height:30px;border-radius:5px}
+.home-player-avatar.pixel-avatar{width:51px;height:51px;flex-basis:51px;border-radius:6px}
+.player-name-preview .pixel-avatar{width:27px;height:27px;vertical-align:middle}
+.leaderboard-avatar{display:inline-block;width:27px;height:27px;vertical-align:middle}
+.broadcast-rank-name{display:flex;gap:9px;align-items:center;min-width:0}
+.broadcast-rank-name>span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ranking-table td:nth-child(2){vertical-align:middle}
+.ranking-table td:nth-child(2)>.leaderboard-avatar{margin-right:9px}
+.player-profile-avatar{display:inline-block;width:39px;height:39px;margin-right:10px;vertical-align:middle}
+body:not(.dark) .pixel-avatar{border-color:#9bb59e}
+@media(max-width:620px){
+ .home-player-avatar.pixel-avatar{width:43px;height:43px;flex-basis:43px}
+ .leaderboard-avatar{width:24px;height:24px}
+}

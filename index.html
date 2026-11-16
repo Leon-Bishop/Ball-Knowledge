@@ -36,7 +36,7 @@
         </select>
         <button id="theme" class="theme-button" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">☾</button>
         <button type="button" data-screen="stats" class="broadcast-player-shortcut" aria-label="Your statistics">
-          <span class="broadcast-player-icon" aria-hidden="true">◎</span>
+          <span class="broadcast-player-icon" id="navPlayerAvatar" aria-hidden="true">◎</span>
           <span id="stats">Points 0 · Streak 0 · Best 0</span>
         </button>
       </div>
@@ -54,7 +54,7 @@
         </div>
         <section class="broadcast-scorecard broadcast-recent-player" aria-label="Player's latest completed quiz">
           <div class="recent-player-top">
-            <span class="recent-player-avatar" aria-hidden="true">◉</span>
+            <span class="recent-player-avatar" id="recentPlayerAvatar" aria-hidden="true">◉</span>
             <div class="recent-player-identity">
               <span class="recent-player-kicker" data-bk-recent="label">OYUNCU KARTI</span>
               <strong class="recent-player-name" id="recentPlayerName">Misafir</strong>
@@ -218,6 +218,7 @@
 <script src="./assets/leaderboard-config.js" defer></script>
 <script src="./assets/club-reference.js" defer></script>
 <script src="./assets/guess-matcher.js" defer></script>
+<script src="./assets/avatars.js" defer></script>
 <script src="./assets/app.js" defer></script>
 <script src="./assets/leaderboard.js" defer></script>
 <script src="./assets/broadcast.js" defer></script>

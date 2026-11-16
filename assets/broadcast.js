@@ -29,6 +29,8 @@ function refreshPlayerCard(){
  const note=document.getElementById('recentPlayerNote');
  if(!name||!score||!points||!note)return;
  name.textContent=currentUsername||dict.guest;
+ window.BKAvatars?.apply(document.getElementById('recentPlayerAvatar'),currentUsername);
+ window.BKAvatars?.apply(document.getElementById('navPlayerAvatar'),currentUsername);
  let result;
  try{result=JSON.parse(localStorage.getItem('bk-recent-completed-score')||'null')}catch{result=null}
  const valid=result&&Number.isFinite(result.score)&&Number.isFinite(result.maxScore)&&result.maxScore>0;
