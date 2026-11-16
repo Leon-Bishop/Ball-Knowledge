@@ -46,9 +46,7 @@ function apply(element,username){
  const c=i%COLUMNS,r=Math.floor(i/COLUMNS);
  element.classList.add('pixel-avatar');
  element.dataset.avatar=String(original);
- // An inset art layer keeps the complete source portrait inside its frame.
- // Previously the full-bleed atlas extended to the border, cutting off chins
- // and making the faces appear too low in leaderboard tiles.
+ // Every profile uses a uniform frameless 1:1 head-and-shoulders sprite.
  let art=element.querySelector('.pixel-avatar-art');
  if(!art){art=document.createElement('span');art.className='pixel-avatar-art';element.replaceChildren(art)}
  art.style.backgroundImage=newAtlasReady?"url('"+NEW_ATLAS+"')":"url('./assets/football-avatars.svg')";
