@@ -42,5 +42,10 @@ window.BKPlayerCard={setProfile(username){currentUsername=String(username||'');r
 window.BKMatchday={localize};
 document.addEventListener('DOMContentLoaded',()=>{
  localize();
+ for(const id of ['recentPlayerAvatar','homePlayerAvatar']){
+  const badge=document.getElementById(id);
+  if(!badge)continue;
+  badge.addEventListener('click',()=>window.BKAvatars?.openPicker());
+ }
 });
 })();
