@@ -287,76 +287,47 @@ body:not(.dark) .recent-player-note{color:#4f6d58}
 .pool-dot{display:none!important}
 
 
-/* FOOTBALL AVATARS — uniform frameless head-to-shoulders portraits.
-   One set of rules replaces the previous boxed/circular overrides. */
+/* Marvyra's original transparent 32×32 portraits. No colored backgrounds,
+   masks, frames, borders, circles, or silhouette placeholders. */
 .pixel-avatar,
 body:not(.dark) .pixel-avatar{
- position:relative;
- display:inline-block;
- flex:none;
- vertical-align:middle;
- border:0!important;
- outline:0;
- border-radius:0!important;
- background:transparent!important;
- background-image:none!important;
- box-shadow:none!important;
- padding:0!important;
- margin:0;
- overflow:visible;
- font-size:0!important;
- line-height:0!important;
+ position:relative;display:inline-block;flex:none;vertical-align:middle;
+ border:0!important;border-radius:0!important;outline:0;
+ box-shadow:none!important;background:transparent!important;
+ background-image:none!important;overflow:visible;
+ padding:0!important;margin:0;font-size:0!important;line-height:0!important;
 }
 .pixel-avatar-art{
- position:absolute;
- inset:0;
- display:block;
- width:100%;
- height:100%;
- background-repeat:no-repeat;
- image-rendering:pixelated;
- border:0;
- border-radius:0!important;
- box-shadow:none;
- transform:none!important;
- pointer-events:none;
- /* Avatar-specific crop polygons are applied from avatars.js. */
- -webkit-mask-image:none!important;
- mask-image:none!important;
+ position:absolute;inset:0;display:block;width:100%;height:100%;
+ background-repeat:no-repeat;image-rendering:pixelated;
+ background-color:transparent;
+ border:0;border-radius:0;box-shadow:none;
+ clip-path:none!important;mask-image:none!important;-webkit-mask-image:none!important;
+ transform:none!important;pointer-events:none;
 }
 .broadcast-rank-row{
- display:grid;
- grid-template-columns:26px minmax(0,1fr) auto;
- align-items:center;
- column-gap:12px;
- padding:8px 6px;
- min-height:62px;
+ display:grid;grid-template-columns:26px minmax(0,1fr) auto;
+ align-items:center;column-gap:12px;min-height:62px;padding:8px 6px;
 }
 .broadcast-rank-number{justify-self:center;align-self:center;line-height:1}
 .broadcast-rank-name{display:flex;align-items:center;gap:11px;min-width:0;min-height:46px;line-height:1.3}
-.broadcast-rank-name>.leaderboard-avatar{
- display:block;
- width:46px!important;
- height:46px!important;
- flex:0 0 46px!important;
-}
-.broadcast-rank-name>span:last-child{min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.broadcast-rank-name>.leaderboard-avatar{display:block;width:46px;height:46px;flex:0 0 46px}
+.broadcast-rank-name>span:last-child{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .broadcast-rank-score{justify-self:end;align-self:center;line-height:1.3;font-variant-numeric:tabular-nums}
 .ranking-table td:nth-child(2){vertical-align:middle}
-.ranking-table td:nth-child(2)>.leaderboard-avatar{
- width:46px;height:46px;
- margin-right:9px;
-}
-.recent-player-avatar.pixel-avatar{width:56px;height:56px;flex-basis:56px}
-.home-player-avatar.pixel-avatar{width:56px;height:56px;flex-basis:56px}
+.ranking-table td:nth-child(2)>.leaderboard-avatar{width:46px;height:46px;margin-right:9px}
+.recent-player-avatar.pixel-avatar,.home-player-avatar.pixel-avatar{width:56px;height:56px;flex-basis:56px}
 .broadcast-player-icon.pixel-avatar{width:36px;height:36px;flex-basis:36px}
 .player-name-preview .pixel-avatar{width:32px;height:32px}
 .player-profile-avatar{width:52px;height:52px;margin-right:10px}
+.avatar-art-credit{font:400 11px/1.6 Inter,system-ui,sans-serif;opacity:.86}
+.avatar-art-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.avatar-art-credit a:hover{color:var(--accent)}
+.site-legal-footer{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
 @media(max-width:620px){
  .broadcast-rank-row{grid-template-columns:22px minmax(0,1fr) auto;column-gap:8px;min-height:55px}
  .broadcast-rank-name{gap:8px;min-height:40px}
- .broadcast-rank-name>.leaderboard-avatar{width:40px!important;height:40px!important;flex-basis:40px!important}
+ .broadcast-rank-name>.leaderboard-avatar{width:40px;height:40px;flex-basis:40px}
  .ranking-table td:nth-child(2)>.leaderboard-avatar{width:40px;height:40px}
- .home-player-avatar.pixel-avatar{width:48px;height:48px;flex-basis:48px}
- .recent-player-avatar.pixel-avatar{width:48px;height:48px;flex-basis:48px}
+ .recent-player-avatar.pixel-avatar,.home-player-avatar.pixel-avatar{width:48px;height:48px;flex-basis:48px}
 }
