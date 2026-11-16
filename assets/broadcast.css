@@ -368,3 +368,38 @@ body:not(.dark) .club-picker-option[aria-pressed="true"]:after{color:#42711e}
  object-fit:contain;
 }
 .club-avatar .club-avatar-letters{font-size:10px}
+
+/* Registration: the club is chosen intentionally before account creation. */
+.registration-club-choice{
+ display:flex;
+ flex-wrap:wrap;
+ align-items:center;
+ gap:9px;
+ margin:11px 0 8px;
+}
+.registration-club-choice .club-change-button{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ min-height:38px;
+ cursor:pointer;
+ border:1px solid var(--line);
+ color:var(--fg);
+ background:var(--soft);
+ border-radius:8px;
+ font-family:Inter,system-ui,sans-serif;
+ font-size:12px;
+ font-weight:650;
+}
+.registration-club-choice .club-change-button:hover{
+ border-color:var(--accent);
+}
+.registration-club-hint{
+ font:500 11px/1.4 Inter,system-ui,sans-serif;
+ color:var(--muted);
+}
+.player-name-preview .club-avatar{
+ width:36px;
+ height:36px;
+ flex:0 0 36px;
+}
