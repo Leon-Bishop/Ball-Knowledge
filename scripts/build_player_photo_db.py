@@ -242,7 +242,7 @@ def category_players(club_qid):
     source = wiki + "/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":_()")
     data = fetch_json(wiki + "/w/api.php", {
         "action": "query", "list": "categorymembers", "cmtitle": title,
-        "cmtype": "page", "cmnamespace": 0, "cmlimit": 100, "format": "json",
+        "cmtype": "page", "cmnamespace": 0, "cmlimit": 300, "format": "json",
     })
     titles = [p["title"] for p in data.get("query", {}).get("categorymembers", [])]
     if not titles:
@@ -339,7 +339,7 @@ def process_club(team, qid):
     return sorted(results, key=lambda r: r["playerName"].casefold())[:30]
 
 
-def run(max_clubs):
+def run(max_clubs, since=None):
     clubs = json.loads(TEAMS.read_text("utf8"))
     avatar_catalog = read_json(ROOT / "assets/club-avatar-catalog.json", {"clubs": []})
     image_names = {}
@@ -370,6 +370,10 @@ def run(max_clubs):
             records.pop(club_id, None)
             status.pop(club_id, None)
         if len(records.get(club_id, {}).get("players", [])) >= TARGET_MINIMUM:
+            continue
+        # Each club is attempted at most once within an Action run, so short
+        # checkpoint batches make forward progress instead of retrying failures.
+        if since and status.get(club_id, {}).get("lastAttempt", "") >= since:
             continue
         checked += 1
         try:
@@ -428,5 +432,7 @@ def run(max_clubs):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--max-clubs", type=int, default=12)
+    parser.add_argument("--since", type=str, default=None,
+                        help="Only retry clubs not attempted since this UTC ISO timestamp")
     args = parser.parse_args()
-    run(max(1, min(args.max_clubs, 214)))
+    run(max(1, min(args.max_clubs, 214)), args.since)
