@@ -5,7 +5,10 @@
     "belgian-pro-league:13": "Q1668203",
     "belgian-pro-league:15": "Q190561",
     "belgian-pro-league:17": "Q536651",
-    "belgian-pro-league:3": "Q364698"
+    "belgian-pro-league:3": "Q364698",
+    "belgian-pro-league:7": "Q618620",
+    "belgian-pro-league:8": "Q113000",
+    "belgian-pro-league:9": "Q849544"
   },
   "notes": "Map only verified football-club Wikidata QIDs. The ingestion script can suggest exact candidates and records their source. Unresolved clubs are skipped."
 }
