@@ -339,12 +339,13 @@ function updateStats(){
 }
 function updateStartButton(){
  const button=$('new');button.textContent=tr('startGameButton');button.disabled=!pool.length||!chosenLeagues.size;
+ const hero=$('broadcastPlay');if(hero)hero.disabled=button.disabled;
 }
 function setView(view){
  if(view==='game'&&!session){if(!pool.length){view='selection'}else{startQuiz();return}}
  currentView=view;
  for(const [key,id] of Object.entries({selection:'selectionView',game:'gameView',stats:'statsView',leaderboard:'leaderboardView',settings:'settingsView'}))$(id).classList.toggle('hidden',view!==key);
- for(const btn of document.querySelectorAll('.nav-item')){const active=btn.dataset.screen===view;btn.classList.toggle('active',active);if(active)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current')}
+ for(const btn of document.querySelectorAll('.nav-item, .header-nav-button')){const active=btn.dataset.screen===view;btn.classList.toggle('active',active);if(active)btn.setAttribute('aria-current','page');else btn.removeAttribute('aria-current')}
  if(view==='stats')updateStats();
  if(view==='game')window.BallKnowledgeReference?.show(new Set(session?.leagueIds||chosenLeagues),leagues,session?.referencePool||pool);
  if(view==='leaderboard')window.BallKnowledgeLeaderboard?.refresh();
@@ -373,6 +374,7 @@ function refreshLanguage(){
  $('navLeagues').textContent=tr('navLeagues');$('navPlay').textContent=tr('navPlay');
  $('navStats').textContent=tr('navStats');$('navSettings').textContent=tr('navSettings');
  window.BallKnowledgeLeaderboard?.localize();
+ window.BKMatchday?.localize();
  window.BallKnowledgeReference?.localize();
  updateStartButton();updateStats();
  if(leagues.length){makeLeagueGrid();makeFilters();$('pool').textContent=tr('teamsAvailable',{count:pool.length});
@@ -386,6 +388,7 @@ $('guess').oninput=suggest;
 $('guess').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();submit()}};
 $('submit').onclick=submit;
 $('new').onclick=startQuiz;
+$('broadcastPlay').onclick=()=>{if(!$('new').disabled)startQuiz()};
 $('next').onclick=()=>{if(!session?.completed){newRound();setView('game')}};
 $('backToLeagues').onclick=()=>setView('selection');
 $('share').onclick=share;

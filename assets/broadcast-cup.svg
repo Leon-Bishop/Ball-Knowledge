@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 170" role="img" aria-label="Competition trophy">
+  <defs>
+    <linearGradient id="cup" x1="0" x2="1"><stop stop-color="#596664"/><stop offset=".25" stop-color="#e9f1ec"/><stop offset=".52" stop-color="#7e9189"/><stop offset=".76" stop-color="#edf4ef"/><stop offset="1" stop-color="#52625d"/></linearGradient>
+    <linearGradient id="base" x1="0" x2="1"><stop stop-color="#202b29"/><stop offset=".5" stop-color="#9baaa3"/><stop offset="1" stop-color="#24322d"/></linearGradient>
+  </defs>
+  <ellipse cx="80" cy="157" rx="63" ry="9" fill="#d6fa39" opacity=".15"/>
+  <path d="M45 24 Q16 17 18 51 Q20 80 59 83 M115 24 Q144 17 142 51 Q140 80 101 83" fill="none" stroke="url(#cup)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M37 15H123L113 75Q105 97 80 100Q55 97 47 75Z" fill="url(#cup)" stroke="#d9e5dc" stroke-width="2"/>
+  <path d="M57 23 61 77Q68 92 80 94" fill="none" stroke="#fff" stroke-width="3" opacity=".45"/>
+  <path d="M72 100H88V125H72Z" fill="url(#cup)"/><path d="M56 125H104L113 137H47Z" fill="url(#cup)"/>
+  <rect x="37" y="138" width="86" height="14" rx="2" fill="url(#base)"/><rect x="28" y="151" width="104" height="10" rx="2" fill="#1b2422" stroke="#7e9286"/>
+  <path d="M80 42l6 12 13 2-10 10 2 13-11-6-11 6 2-13-10-10 13-2Z" fill="#384c43" opacity=".72"/>
+</svg>

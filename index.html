@@ -11,70 +11,117 @@
   <title>Ball Knowledge</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="stylesheet" href="./assets/broadcast.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8467213778102706"
      crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="app-frame">
   <header class="stadium-hero">
-    <div class="hero-stars" aria-hidden="true"></div>
-    <div class="stadium-light stadium-light-left" aria-hidden="true">✦ ✦ ✦</div>
-    <div class="stadium-light stadium-light-right" aria-hidden="true">✦ ✦ ✦</div>
     <div class="hero-topbar">
-      <p id="brandTagline">Guess the club. Unlock the story.</p>
+      <button type="button" data-screen="selection" class="broadcast-brand" aria-label="Ball Knowledge home">
+        <span class="bk-mark" aria-hidden="true">BK<span class="bk-slash"></span></span>
+        <h1 id="gameTitle" class="brand-title"><span>BALL</span><em>KNOWLEDGE</em></h1>
+      </button>
+      <nav class="broadcast-top-nav" aria-label="Site sections">
+        <button type="button" class="header-nav-button active" data-screen="selection" aria-current="page" data-bk-copy="play">PLAY</button>
+        <span class="header-nav-pending" data-bk-copy="rankedTab">RANKED <small>SOON</small></span>
+        <button type="button" class="header-nav-button" data-screen="leaderboard" data-bk-copy="rankings">LEADERBOARD</button>
+        <button type="button" class="header-nav-button" data-screen="stats" data-bk-copy="stats">STATS</button>
+      </nav>
       <div class="header-actions">
         <label for="language" id="languageLabel" class="sr-only">Language</label>
         <select id="language" class="language-control" aria-label="Language">
           <option value="tr">🇹🇷 Türkçe</option><option value="en">🇬🇧 English</option><option value="es">🇪🇸 Español</option>
           <option value="fr">🇫🇷 Français</option><option value="it">🇮🇹 Italiano</option><option value="pt">🇵🇹 Português</option>
         </select>
-        <button id="theme" class="theme-button" aria-label="Toggle dark mode" title="Toggle theme">☾</button>
+        <button id="theme" class="theme-button" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+        <button type="button" data-screen="stats" class="broadcast-player-shortcut" aria-label="Your statistics">
+          <span class="broadcast-player-icon" aria-hidden="true">◎</span>
+          <span id="stats">Points 0 · Streak 0 · Best 0</span>
+        </button>
       </div>
-    </div>
-    <div class="hero-main">
-      <div class="trophy-float" aria-hidden="true">🏆</div>
-      <div class="brand-center">
-        <h1 id="gameTitle" class="brand-title"><span>BALL</span><em>KNOWLEDGE</em></h1>
-      </div>
-      <div class="ball-float" aria-hidden="true">⚽</div>
-    </div>
-    <div class="stadium-pitch" aria-hidden="true"><span></span></div>
-    <div class="hero-scorebar">
-      <div class="score-pill"><span aria-hidden="true">✨</span><span id="stats">Points 0 · Streak 0 · Best 0</span></div>
     </div>
   </header>
 
   <main class="content-shell">
     <section id="selectionView" class="screen selection-view" aria-label="Choose leagues">
-      <div class="section-intro">
-        <div class="eyebrow"><span class="sparkle">✦</span> <span id="selectionEyebrow">YOUR NEXT CHALLENGE</span></div>
-        <h2 id="leagueTitle">Choose your leagues</h2>
-        <p id="leagueHelp" class="muted">Pick one or more leagues to include in your quiz.</p>
+      <div class="broadcast-hero">
+        <div class="broadcast-hero-inner">
+          <p class="broadcast-kicker" id="brandTagline">Guess the club. Unlock the story.</p>
+          <p class="broadcast-overline" data-bk-copy="footballTrivia">THE FOOTBALL TRIVIA GAME</p>
+          <div class="broadcast-hero-title" aria-hidden="true">BALL<br>KNOWLEDGE</div>
+          <div class="broadcast-strap"><span data-bk-copy="heroStrap">GUESS THE CLUB. KNOW THE STORY.</span></div>
+          <button id="broadcastPlay" class="broadcast-play-button" type="button"><span data-bk-copy="playNow">PLAY NOW</span><span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="broadcast-scorecard" aria-label="Player summary">
+          <span class="scorecard-label" data-bk-copy="yourMatchday">YOUR MATCHDAY</span>
+          <span class="scorecard-logo" aria-hidden="true">BK</span>
+          <strong data-bk-copy="footballKnowledge">FOOTBALL KNOWLEDGE</strong>
+          <span class="scorecard-small" data-bk-copy="chooseLeagues">Choose your leagues and kick off a quiz.</span>
+          <div class="scorecard-rule"></div>
+          <span class="scorecard-stats" data-bk-copy="fiveClues">5 clues · 5 guesses · endless football stories</span>
+        </div>
       </div>
-      <section class="home-player-card" id="homePlayerCard" aria-labelledby="homePlayerTitle">
-        <div class="home-player-avatar" id="homePlayerAvatar" aria-hidden="true">⚽</div>
-        <div class="home-player-main">
-          <div class="home-player-topline">
-            <span class="home-player-kicker" id="homePlayerKicker">YOUR PLAYER CARD</span>
-            <span class="home-player-tag" id="homePlayerTag">OPTIONAL</span>
+
+      <aside class="broadcast-ranked-teaser" aria-label="Ranked competitions coming soon">
+        <div class="ranked-accent" aria-hidden="true"></div>
+        <div class="ranked-teaser-heading">
+          <span class="broadcast-overline" data-bk-copy="rankedCompetition">RANKED COMPETITION</span>
+          <strong data-bk-copy="rankedCup">TÜRKİYE KUPASI</strong>
+        </div>
+        <div class="ranked-teaser-description" data-bk-copy="rankedAnnouncement">Competitions will be announced soon.</div>
+        <img class="ranked-cup-art" src="./assets/broadcast-cup.svg" alt="" width="105" height="105">
+        <span class="broadcast-ranked-soon" aria-label="Ranked coming soon" data-bk-copy="rankedSoon">RANKED SOON</span>
+      </aside>
+
+      <div class="broadcast-home-columns">
+        <div class="broadcast-home-primary">
+          <div class="section-intro">
+            <div class="eyebrow"><span id="selectionEyebrow">YOUR NEXT CHALLENGE</span></div>
+            <h2 id="leagueTitle">Choose your leagues</h2>
+            <p id="leagueHelp" class="muted">Pick one or more leagues to include in your quiz.</p>
           </div>
-          <h3 id="homePlayerTitle">Choose your player name</h3>
-          <div class="home-player-content" id="homePlayerContent">
-            <p class="muted">Choose a name to save BK Points to the leaderboard. Playing without one is fine too.</p>
+          <div class="league-options-row">
+            <div class="filter-strip">
+              <div id="filters" class="filters"></div>
+            </div>
+            <div class="league-bulk-actions">
+              <button class="outline-button" id="selectAllLeagues" type="button">Select All</button>
+              <button class="outline-button" id="deselectAllLeagues" type="button">Deselect All</button>
+            </div>
+          </div>
+          <div class="league-grid" id="leagueGrid" aria-label="League selection"></div>
+          <div class="selection-footer">
+            <div class="pool-caption"><span class="pool-dot"></span><span id="pool">Clubs available</span></div>
+            <button class="primary-cta start-button" id="new" type="button">Start quiz</button>
           </div>
         </div>
-      </section>
-      <div class="league-options-row">
-        <div class="filter-strip">
-          <div class="filter-icon" aria-hidden="true">⚙</div>
-          <div id="filters" class="filters"></div>
-        </div>
-        <div class="league-bulk-actions"><button class="outline-button" id="selectAllLeagues" type="button">Select All</button><button class="outline-button" id="deselectAllLeagues" type="button">Deselect All</button></div>
-      </div>
-      <div class="league-grid" id="leagueGrid" aria-label="League selection"></div>
-      <div class="selection-footer">
-        <div class="pool-caption"><span class="pool-dot"></span><span id="pool">214 clubs available</span></div>
-        <button class="primary-cta start-button" id="new" type="button">Start quiz</button>
+        <aside class="broadcast-home-aside">
+          <section class="broadcast-live-rankings" aria-label="Leaderboard preview">
+            <div class="broadcast-side-heading">
+              <h2 data-bk-copy="leaderboard">LEADERBOARD</h2>
+              <button type="button" class="broadcast-see-all" data-screen="leaderboard" data-bk-copy="seeAll">SEE FULL ↗</button>
+            </div>
+            <p class="broadcast-rank-caption" data-bk-copy="casualStandings">Casual quiz · Short mode</p>
+            <ol id="homeRankRows" class="broadcast-rank-list" aria-live="polite">
+              <li class="broadcast-rank-placeholder" data-bk-copy="loadingRankings">Loading rankings…</li>
+            </ol>
+          </section>
+          <section class="home-player-card" id="homePlayerCard" aria-labelledby="homePlayerTitle">
+            <div class="home-player-avatar" id="homePlayerAvatar" aria-hidden="true">⚽</div>
+            <div class="home-player-main">
+              <div class="home-player-topline">
+                <span class="home-player-kicker" id="homePlayerKicker">YOUR PLAYER CARD</span>
+                <span class="home-player-tag" id="homePlayerTag">OPTIONAL</span>
+              </div>
+              <h3 id="homePlayerTitle">Choose your player name</h3>
+              <div class="home-player-content" id="homePlayerContent">
+                <p class="muted">Choose a name to save BK Points to the leaderboard. Playing without one is fine too.</p>
+              </div>
+            </div>
+          </section>
+        </aside>
       </div>
       <aside class="ad-placement" data-ad-slot="selection-bottom" aria-label="Advertisement"><span>Advertisement</span></aside>
     </section>
@@ -162,5 +209,6 @@
 <script src="./assets/guess-matcher.js" defer></script>
 <script src="./assets/app.js" defer></script>
 <script src="./assets/leaderboard.js" defer></script>
+<script src="./assets/broadcast.js" defer></script>
 </body>
 </html>

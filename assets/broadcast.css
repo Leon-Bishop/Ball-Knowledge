@@ -1,0 +1,152 @@
+/* Ball Knowledge: Football Broadcast. The existing game logic and IDs remain unchanged. */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{
+  --bg:#0b1112;--card:#11191a;--fg:#f4f5ee;--muted:#a4b0ad;
+  --accent:#d6fa39;--accent-2:#ddff5e;--line:#344141;--soft:#192223;
+  --shadow:0 14px 40px #0006;color-scheme:dark;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+body,body.dark{--bg:#0b1112;--card:#11191a;--fg:#f4f5ee;--muted:#a4b0ad;--accent:#d6fa39;--line:#344141;--soft:#192223;--shadow:0 14px 40px #0006;color-scheme:dark;background:#080e0f;color:var(--fg)}
+body{background-image:repeating-linear-gradient(145deg,#ffffff03 0,#ffffff03 1px,transparent 1px,transparent 9px)}
+.app-frame{max-width:1320px;background:#0c1213;border-left:1px solid #394342;border-right:1px solid #394342;box-shadow:0 0 90px #0009}
+.stadium-hero{min-height:0;background:#090e0f;border-bottom:1px solid #3a4240;overflow:visible}
+.stadium-hero:before,.stadium-hero:after{display:none}
+.hero-topbar{max-width:none;min-height:76px;margin:0;padding:12px clamp(18px,3.4vw,48px);display:flex;align-items:center;gap:24px}
+.broadcast-brand{display:flex;align-items:center;gap:11px;flex-shrink:0;background:none;border:0;color:inherit;padding:0;text-align:left}
+.bk-mark{position:relative;display:grid;place-items:center;width:55px;height:43px;color:#fff;font-family:"Barlow Condensed",Impact,sans-serif;font-size:38px;font-style:italic;line-height:1;letter-spacing:-4px;font-weight:900;transform:skew(-8deg)}
+.bk-slash{position:absolute;top:0;right:-7px;width:6px;height:43px;background:var(--accent);transform:skew(-18deg)}
+.brand-title{font:900 19px/.78 "Barlow Condensed",Impact,sans-serif;letter-spacing:0;text-shadow:none;transform:skew(-5deg);margin:0}
+.brand-title span,.brand-title em{display:block;color:#fff;font-size:1em;letter-spacing:0;font-style:normal}
+.broadcast-top-nav{display:flex;align-items:center;gap:clamp(10px,2.3vw,30px);margin:auto}
+.header-nav-button,.header-nav-pending{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap;background:transparent;border:0;color:#f2f4f0;font:800 15px/1 "Barlow Condensed",Impact,sans-serif;padding:14px 3px}
+.header-nav-button.active{color:var(--accent)}.header-nav-button.active:after{content:"";position:absolute;height:3px;bottom:3px;left:0;right:0;background:var(--accent)}
+.header-nav-pending{color:#899491}.header-nav-pending small{font-size:9px;letter-spacing:.7px;color:var(--accent)}
+.header-actions{flex-shrink:0;gap:8px}
+.language-control{background:#171e1f;color:var(--fg);border:1px solid #53605c;border-radius:7px;min-width:94px;max-width:125px;font-size:12px;font-weight:700;box-shadow:none}
+.theme-button{background:#171e1f;border:1px solid #53605c;border-radius:7px;color:#e3e9e4;font-size:20px}
+.broadcast-player-shortcut{display:flex;align-items:center;gap:8px;max-width:178px;background:transparent;border:1px solid #596360;border-radius:40px;padding:7px 11px;color:#fff;text-align:left;font:700 10px/1.5 Inter,sans-serif}
+.broadcast-player-icon{font-size:26px;line-height:1;color:var(--accent)}
+.broadcast-player-shortcut #stats{display:block;max-width:120px}
+.content-shell{background:transparent;padding:0 clamp(16px,3.2vw,46px) 25px;border-radius:0}
+.screen{max-width:none}
+.selection-view{animation:none}
+.broadcast-hero{position:relative;isolation:isolate;display:flex;justify-content:space-between;gap:20px;min-height:355px;padding:51px clamp(20px,4vw,60px) 48px;margin:0 calc(-1 * clamp(16px,3.2vw,46px));overflow:hidden;background:#0a1011 url('./broadcast-stadium.svg') center center/cover no-repeat;border-bottom:1px solid #35403d}
+.broadcast-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,11,12,.88) 0%,rgba(7,11,12,.54) 58%,rgba(7,11,12,.36) 100%)}
+.broadcast-hero-inner{max-width:650px;position:relative;z-index:1}
+.broadcast-kicker{color:#ced2ce;font:600 11px/1.3 Inter,sans-serif;letter-spacing:.3px;margin-bottom:12px}
+.broadcast-overline{color:#d7dedb;letter-spacing:3px;font:800 11px/1.4 Inter,sans-serif}
+.broadcast-hero-title{font:900 clamp(55px,7.8vw,116px)/.75 "Barlow Condensed",Impact,"Arial Narrow",sans-serif;letter-spacing:-1.6px;transform:skew(-6deg);margin:17px 0 21px;color:#f7f7f1;text-shadow:0 4px 2px #0507078a}
+.broadcast-strap{display:inline-block;background:var(--accent);color:#101614;transform:skew(-11deg);padding:8px 13px;margin-bottom:24px;font:900 clamp(15px,2vw,19px)/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:.4px}
+.broadcast-strap span{display:block;transform:skew(11deg)}
+.broadcast-play-button,.broadcast-ranked-soon{display:flex;align-items:center;justify-content:center;gap:24px;width:max-content;min-width:225px;min-height:58px;padding:11px 27px;background:var(--accent);border:0;border-radius:0;transform:skew(-11deg);color:#111612;font:900 27px/1 "Barlow Condensed",Impact,sans-serif;box-shadow:8px 8px 0 #0007}
+.broadcast-play-button span{display:block;transform:skew(11deg)}.broadcast-play-button:hover:not(:disabled){background:#e6ff80}.broadcast-play-button:disabled{background:#87904b;opacity:.7}
+.broadcast-scorecard{align-self:center;display:flex;flex-direction:column;gap:10px;position:relative;width:252px;max-width:31%;padding:24px;background:#071011de;border:1px solid #748079;border-radius:12px;box-shadow:0 15px 35px #0008;backdrop-filter:blur(6px)}
+.scorecard-label{font:800 11px "Barlow Condensed",sans-serif;color:var(--accent);letter-spacing:2px}.scorecard-logo{font:900 42px/.9 "Barlow Condensed",Impact,sans-serif;color:var(--accent);font-style:italic}.broadcast-scorecard strong{font:900 23px/1 "Barlow Condensed",sans-serif}
+.scorecard-small,.scorecard-stats{font-size:12px;color:#c1c9c6;line-height:1.6}.scorecard-rule{border-top:1px solid #6b7770}
+.broadcast-ranked-teaser{display:grid;position:relative;isolation:isolate;grid-template-columns:1fr minmax(150px,1fr) 95px auto;align-items:center;gap:25px;min-height:136px;margin:24px 0 30px;padding:19px 30px;background:linear-gradient(110deg,#101819,#0d1314 62%,#1d2721);border:1px solid #64736a;border-radius:10px;overflow:hidden}
+.broadcast-ranked-teaser:before{content:"";position:absolute;inset:auto 0 0 auto;width:50%;height:80%;background:radial-gradient(ellipse at 75% 100%,#d6fa3926,transparent 65%);z-index:-1}
+.ranked-accent{position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--accent);transform:skew(-12deg)}
+.ranked-teaser-heading{padding:0 10px 0 9px;display:flex;flex-direction:column;gap:8px;border-right:1px solid #58625e}
+.ranked-teaser-heading strong{font:900 clamp(26px,3.5vw,43px)/.97 "Barlow Condensed",Impact,sans-serif;font-style:italic;color:#fff}
+.ranked-teaser-description{font:800 clamp(16px,2vw,22px)/1.28 "Barlow Condensed",Impact,sans-serif;font-style:italic}
+.ranked-cup-art{max-width:100%;height:92px;object-fit:contain;filter:drop-shadow(0 7px 13px #000)}
+.broadcast-ranked-soon{min-width:150px;min-height:47px;padding:12px 15px;font-size:23px;box-shadow:none;cursor:default;text-align:center}
+.broadcast-home-columns{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,1fr);gap:31px;align-items:start}
+.broadcast-home-primary{min-width:0}
+.section-intro .eyebrow{font:800 10px Inter,sans-serif;letter-spacing:2px;color:var(--accent)}
+.section-intro h2,.broadcast-side-heading h2,.other-screen h2,.game-card-heading h2{font:900 clamp(30px,3.6vw,38px)/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:0;color:var(--fg);text-transform:uppercase}
+.section-intro .muted{font-size:12px}
+.league-options-row{margin:15px 0}
+.league-options-row .filter-strip{min-width:185px;max-width:310px;background:transparent;border:0;padding:0}
+.filters label{font-size:12px}.filters select,.settings-language-control,.club-directory select,.ranking-filters select{background:#10191a;border:1px solid #515f5b;color:var(--fg);border-radius:5px}
+.league-bulk-actions .outline-button,.outline-button{background:transparent;border:1px solid #61716a;color:#e5ece9;border-radius:5px;box-shadow:none}
+.league-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.league-tile{background:#10191a;border:1px solid #48544f;border-radius:7px;box-shadow:none;color:#f1f2ef;min-height:117px;padding:13px 5px;gap:5px}
+.league-tile:hover{background:#192525;box-shadow:inset 0 0 0 1px #6a786c}
+.league-tile[aria-pressed="true"]{background:#182320;border:2px solid var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.league-tile[aria-pressed="true"]:after{background:var(--accent);color:#101612;border-radius:3px;box-shadow:none;top:3px;right:3px;width:19px;height:19px;font-size:12px}
+.league-mark{height:67px;max-height:67px}.league-mark img{max-height:62px;filter:brightness(1.2) saturate(.65)}
+.league-logo-fallback{color:#f6f8f1;border-radius:5px}.league-tile .league-name{font:800 14px/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:.15px;text-transform:uppercase}
+.selection-footer{border-color:#47534e;margin-top:16px}
+.pool-caption{color:#c0ccc4}.pool-dot{background:var(--accent)}
+.primary-cta,.start-button,.guess-button{background:var(--accent);border:0;color:#101612;border-radius:6px;font:900 20px/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:.3px;text-transform:uppercase;box-shadow:none}
+.primary-cta:hover:not(:disabled){background:#e8ff91}
+.broadcast-home-aside{min-width:0}
+.broadcast-side-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;border-bottom:1px solid #56625b;padding:1px 0 12px}
+.broadcast-side-heading h2{margin:0}
+.broadcast-see-all{border:0;background:none;color:var(--accent);font:800 13px "Barlow Condensed",sans-serif;white-space:nowrap}
+.broadcast-rank-caption{color:#a7b3ac;font-size:11px;margin:11px 0 4px}
+.broadcast-rank-list{margin:0;padding:0;list-style:none}
+.broadcast-rank-row{display:grid;grid-template-columns:35px minmax(0,1fr) auto;gap:10px;align-items:center;padding:13px 8px;border-bottom:1px solid #34413e;font-size:13px}
+.broadcast-rank-number{font:900 18px "Barlow Condensed",sans-serif;color:#e3e9e5;text-align:center}
+.broadcast-rank-name{font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.broadcast-rank-score{color:var(--accent);font-size:12px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.broadcast-rank-placeholder{font-size:12px;color:var(--muted);padding:17px 5px}
+.home-player-card{margin:25px 0 0;border:1px solid #4d5a53;border-radius:8px;background:#111b1b;box-shadow:none;padding:17px 15px;gap:12px}
+.home-player-avatar{background:#25312e;border:1px solid #637469;color:var(--accent);width:41px;height:41px;flex-basis:41px;border-radius:50%;font-size:20px}
+.home-player-kicker,.home-player-card[data-state="active"] .home-player-tag{color:var(--accent)}
+.home-player-tag{background:#23302b;border:1px solid #46584a;color:#d6e0d2}
+.home-player-card h3{font:900 22px/1.1 "Barlow Condensed",sans-serif}
+.player-claim-controls input,.search-field input{color:var(--fg);background:#101a1a;border-color:#516057;border-radius:6px}
+.game-view,.other-screen{padding-top:27px}
+.game-card,.round-progress-panel,.setting-card,.club-reference,.stat-card,.result-panel{background:#121b1c;color:var(--fg);border-color:#475750;border-radius:10px;box-shadow:none}
+.game-card{border-top:3px solid var(--accent)}
+.slots .slot,.slot{background:#1d2a29;border-color:#50615a;border-radius:8px;color:var(--fg)}
+.slot.revealed{border-color:var(--accent)}
+.attempts-badge,.mode-pill{background:#27332e;color:var(--accent);border-color:#687d4b}
+.round-meter{background:#32423a}.round-meter > div,.round-meter #sessionMeterFill{background:var(--accent)}
+.ranking-table th{background:#24312e}.ranking-table td{border-color:#394840}
+.ad-placement{background:#11191a;color:#92a19b;border:1px dashed #3a4942;border-radius:5px}
+.site-legal-footer{padding:18px 0 6px;border-top:1px solid #27322e;color:#98a59e}
+.dev-warnings{color:#929f98}
+.bottom-nav{background:#090f10;border-top:1px solid #4b5b52}
+.bottom-nav .nav-item{color:#bdc8c0}.bottom-nav .nav-item.active{color:var(--accent)}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(min-width:801px){.bottom-nav{max-width:1320px}.content-shell{min-height:500px}}
+@media(max-width:1100px){
+ .broadcast-top-nav{gap:11px}.header-nav-button,.header-nav-pending{font-size:13px}
+ .broadcast-player-shortcut{display:none}
+ .broadcast-ranked-teaser{grid-template-columns:1fr 1fr 70px auto;gap:13px}
+ .ranked-teaser-heading strong{font-size:31px}
+ .broadcast-home-columns{grid-template-columns:minmax(0,1.35fr) minmax(235px,.9fr);gap:22px}
+}
+@media(max-width:800px){
+ .hero-topbar{min-height:65px}.broadcast-top-nav{display:none}
+ .broadcast-hero{min-height:325px;padding:44px 24px}.broadcast-scorecard{display:none}
+ .broadcast-ranked-teaser{grid-template-columns:minmax(0,1fr) 75px auto;padding:17px 16px;gap:10px;min-height:107px}
+ .ranked-teaser-heading{border:0}.ranked-teaser-heading strong{font-size:28px}
+ .ranked-teaser-description{grid-column:1;grid-row:2;padding-left:9px;font-size:17px}
+ .ranked-cup-art{grid-column:2;grid-row:1/3;max-height:76px}
+ .broadcast-ranked-soon{grid-column:3;grid-row:1/3;min-width:105px;font-size:18px}
+ .broadcast-home-columns{grid-template-columns:1fr;gap:28px}
+ .broadcast-home-aside{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+ .home-player-card{margin:0}
+ .bottom-nav{position:sticky;bottom:0}
+}
+@media(max-width:620px){
+ .hero-topbar{padding:10px 16px;gap:10px}.bk-mark{font-size:31px;width:45px;height:34px}.bk-slash{height:34px}
+ .brand-title{font-size:14px}.language-control{min-width:90px;max-width:100px;padding:7px 5px;font-size:11px}.theme-button{width:33px;height:33px}
+ .broadcast-hero{min-height:294px;padding:35px 21px 32px;background-position:61% center}
+ .broadcast-kicker{display:none}.broadcast-overline{font-size:9px;letter-spacing:2.2px}
+ .broadcast-hero-title{font-size:clamp(48px,13.9vw,78px);margin:17px 0 18px}
+ .broadcast-strap{font-size:15px;margin-bottom:22px}
+ .broadcast-play-button{min-width:170px;min-height:49px;font-size:24px}
+ .broadcast-ranked-teaser{grid-template-columns:minmax(0,1fr) 72px;min-height:120px;gap:5px;padding:15px 14px;margin:16px 0 25px}
+ .ranked-teaser-heading{padding:0}.ranked-teaser-heading strong{font-size:27px}
+ .ranked-teaser-description{padding:0;font-size:15px}
+ .ranked-cup-art{grid-column:2;grid-row:1/3;width:72px;height:75px}
+ .broadcast-ranked-soon{grid-column:1/3;grid-row:3;width:100%;min-height:40px;margin-top:5px;font-size:19px}
+ .league-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+ .league-tile{min-height:99px}.league-mark{height:55px;max-height:55px}.league-mark img{max-height:52px}.league-tile .league-name{font-size:13px}
+ .broadcast-home-aside{grid-template-columns:1fr}.home-player-card{margin:2px 0}
+ .selection-footer{gap:11px}
+ .site-legal-footer{padding-bottom:60px}
+ .bottom-nav{position:fixed;bottom:0;left:0;right:0;z-index:50}
+ .content-shell{padding-bottom:76px}
+}
+@media(max-width:380px){
+ .hero-topbar{padding:10px 12px}.brand-title{font-size:12px}.broadcast-hero-title{font-size:48px}
+ .league-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .broadcast-strap{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

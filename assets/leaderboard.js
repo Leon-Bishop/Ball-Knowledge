@@ -427,6 +427,29 @@ async function loadRanks(){
  }
 }
 
+async function loadHomeRanks(){
+ const list=node('homeRankRows');
+ if(!list||!root())return;
+ list.replaceChildren();
+ const show=message=>{
+   const item=document.createElement('li');item.className='broadcast-rank-placeholder';
+   item.textContent=message;list.replaceChildren(item);
+ };
+ show('Loading rankings…');
+ try{
+   const data=await api('/api/leaderboard?scope=global&mode=short');
+   if(!Array.isArray(data.players)||!data.players.length){show('No scores yet — be the first.');return;}
+   list.replaceChildren();
+   for(const player of data.players.slice(0,5)){
+     const row=document.createElement('li');row.className='broadcast-rank-row';
+     const rank=document.createElement('span');rank.className='broadcast-rank-number';rank.textContent=String(player.rank);
+     const name=document.createElement('span');name.className='broadcast-rank-name';name.textContent=String(player.username);
+     const score=document.createElement('strong');score.className='broadcast-rank-score';score.textContent=Number(player.bkPoints||0).toLocaleString()+' BK';
+     row.append(rank,name,score);list.append(row);
+   }
+ }catch(error){show('Rankings temporarily unavailable.');}
+}
+
 /*
  * Submit a completed quiz to the leaderboard.
  *
@@ -520,6 +543,7 @@ async function submit(session){
 
   if(currentView === 'leaderboard'){
    await loadRanks();
+   await loadHomeRanks();
   }
  }catch(e){
   setSaveState(session, 'bkScoreFailed', e.message, true);
@@ -589,7 +613,7 @@ function init(){
 
  localize();
 
- restoreProfile().then(loadRanks);
+ restoreProfile().then(()=>{loadRanks();loadHomeRanks()});
 }
 
 window.BallKnowledgeLeaderboard={

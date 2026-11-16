@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#060b0d"/><stop offset=".65" stop-color="#172125"/><stop offset="1" stop-color="#141b18"/></linearGradient>
+    <linearGradient id="field" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#283932"/><stop offset="1" stop-color="#101d16"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#f2f9e8" stop-opacity=".8"/><stop offset="1" stop-color="#f2f9e8" stop-opacity="0"/></radialGradient>
+    <pattern id="people" width="12" height="11" patternUnits="userSpaceOnUse"><circle cx="2" cy="5" r="1" fill="#7b8a84" opacity=".45"/><circle cx="8" cy="9" r=".8" fill="#d1d9ce" opacity=".35"/></pattern>
+    <pattern id="grass" width="70" height="70" patternUnits="userSpaceOnUse"><rect width="35" height="70" fill="#6e8c6a" opacity=".06"/></pattern>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".5" numOctaves="2" seed="13" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".1"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1400" height="600" fill="url(#sky)"/>
+  <path d="M0 80 Q690 -70 1400 70 L1400 275 Q700 178 0 280Z" fill="#0b1113"/>
+  <path d="M0 225 Q700 124 1400 226 L1400 372 Q700 324 0 374Z" fill="#26302e"/>
+  <path d="M0 225 Q700 124 1400 226 L1400 372 Q700 324 0 374Z" fill="url(#people)"/>
+  <path d="M0 380 Q700 338 1400 370 L1400 600H0Z" fill="url(#field)"/>
+  <path d="M0 380 Q700 338 1400 370 L1400 600H0Z" fill="url(#grass)"/>
+  <path d="M360 600 980 378 M1270 600 1050 378 M840 600 1000 380" fill="none" stroke="#dbe6d1" stroke-width="2.5" opacity=".35"/>
+  <path d="M0 478 Q700 418 1400 476" fill="none" stroke="#e9f2df" stroke-width="3" opacity=".22"/>
+  <path d="M0 320 Q700 255 1400 310" fill="none" stroke="#d2e3d4" stroke-width="8" opacity=".14"/>
+  <path d="M0 214 Q700 95 1400 212" fill="none" stroke="#a7beb2" stroke-width="5" opacity=".42"/>
+  <g transform="translate(910 133) rotate(-5)">
+    <path d="M0 0L0 340" stroke="#c6d3c9" stroke-width="3"/>
+    <path d="M0 0 60 16 0 34Z" fill="#c5d2c4" opacity=".8"/>
+    <path d="M0 0 60 16 0 34" fill="none" stroke="#d7dfd0" stroke-width="2"/>
+    <path d="M60 16 2 32" stroke="#4e5952" stroke-width="2"/>
+  </g>
+  <g opacity=".62">
+    <ellipse cx="720" cy="130" rx="530" ry="130" fill="url(#light)" opacity=".4"/>
+    <g fill="#faffed">
+      <circle cx="270" cy="168" r="3"/><circle cx="300" cy="160" r="4"/><circle cx="330" cy="153" r="3"/><circle cx="360" cy="146" r="4"/>
+      <circle cx="390" cy="138" r="4"/><circle cx="420" cy="134" r="3"/><circle cx="450" cy="128" r="4"/><circle cx="480" cy="124" r="3"/>
+      <circle cx="510" cy="120" r="4"/><circle cx="540" cy="116" r="3"/><circle cx="570" cy="113" r="4"/><circle cx="600" cy="110" r="3"/>
+      <circle cx="630" cy="108" r="4"/><circle cx="660" cy="105" r="3"/><circle cx="690" cy="104" r="4"/><circle cx="720" cy="103" r="3"/>
+      <circle cx="750" cy="104" r="4"/><circle cx="780" cy="105" r="3"/><circle cx="810" cy="108" r="4"/><circle cx="840" cy="110" r="3"/>
+      <circle cx="870" cy="113" r="4"/><circle cx="900" cy="116" r="3"/><circle cx="930" cy="120" r="4"/><circle cx="960" cy="125" r="3"/>
+      <circle cx="990" cy="130" r="4"/><circle cx="1020" cy="136" r="3"/><circle cx="1050" cy="143" r="4"/><circle cx="1080" cy="149" r="3"/>
+    </g>
+  </g>
+  <rect width="1400" height="600" fill="#fff" filter="url(#grain)" opacity=".32"/>
+</svg>
