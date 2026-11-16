@@ -62,27 +62,43 @@ def read_json(path, fallback):
 
 
 def search_club_qid(name, aliases=()):
-    """Only accept an unambiguous official/supplied alias for a football club.
+    """Find exactly one Wikidata football club whose name matches a known alias.
 
-    Search results without strong name equality are never silently accepted.
+    Wikidata search is prefix-based and has multiple spellings, so query variants
+    are necessary. Ambiguous candidates stay unresolved; never infer an
+    affiliation from a similarly named club or a player search hit.
     """
-    for query in dict.fromkeys([name, *aliases]):
-        if not query:
-            continue
+    names = [n for n in dict.fromkeys([name, *aliases]) if n]
+    # Common official suffixes let "Arsenal" match "Arsenal F.C." and permit
+    # long names to match the football-club rather than a city/place result.
+    lookups = list(names)
+    for n in names:
+        if not re.search(r"\\b(?:fc|cf|sc|sk|afc)\\b", n, re.I):
+            lookups.extend([n + " FC", n + " football club"])
+    expected = {normalize(n) for n in names}
+    resolved = set()
+    for query in dict.fromkeys(lookups):
         result = fetch_json("https://www.wikidata.org/w/api.php", {
             "action": "wbsearchentities", "search": query,
-            "language": "en", "type": "item", "limit": 15, "format": "json",
+            "language": "en", "type": "item", "limit": 50, "format": "json",
         })
-        matches = set()
         for entry in result.get("search", []):
-            label = entry.get("label", "")
-            desc = entry.get("description", "").lower()
-            if (normalize(query) == normalize(label) and
-                    ("football club" in desc or "soccer club" in desc or
-                     "association football" in desc or "football team" in desc)):
-                matches.add(entry["id"])
-        if len(matches) == 1:
-            return next(iter(matches))
+            description = entry.get("description", "").casefold()
+            # Team type is confirmed again by Wikidata P54 usage when fetching
+            # the players; this check rejects obvious unrelated search results.
+            if not any(w in description for w in ("football", "soccer", "futebol", "fútbol")):
+                continue
+            labels = [entry.get("label", "")]
+            if entry.get("match", {}).get("text"):
+                labels.append(entry["match"]["text"])
+            alias_items = entry.get("aliases", [])
+            labels.extend(a if isinstance(a, str) else a.get("value", "") for a in alias_items)
+            if any(normalize(label) in expected for label in labels):
+                resolved.add(entry["id"])
+        if len(resolved) == 1:
+            return next(iter(resolved))
+        if len(resolved) > 1:
+            return None
         time.sleep(REQUEST_DELAY)
     return None
 
@@ -140,8 +156,13 @@ def commons_file_name(url):
 
 
 def license_is_usable(raw):
+    """Conservative commercial-use filter, excluding -NC and -ND licenses."""
     normalized = re.sub(r"[^a-z0-9]+", " ", raw.lower()).strip()
-    return any(normalized == s or normalized.startswith(s + " ") for s in ALLOWED)
+    if any(flag in normalized.split() for flag in ("nc", "nd", "noncommercial", "non", "free")):
+        return False
+    if normalized in ("cc0", "public domain", "pd", "cc public domain mark 1 0"):
+        return True
+    return bool(re.fullmatch(r"cc by(?: sa)? (?:[1-4](?: [0-9])?)(?: [a-z]{2})?", normalized))
 
 
 def commons_info(images):
@@ -244,10 +265,16 @@ def run(max_clubs):
                 }
                 continue
             players = process_club(club, qid)
-            records[club_id] = {
-                "clubName": name, "clubWikidataQid": qid, "players": players,
-                "source": "Wikidata team membership + Wikimedia Commons metadata"
-            }
+            previous = records.get(club_id, {}).get("players", [])
+            # A temporary Wikidata/Commons outage should not erase a previously
+            # verified licensed roster. Refresh only with equal/better coverage.
+            if len(players) >= len(previous):
+                records[club_id] = {
+                    "clubName": name, "clubWikidataQid": qid, "players": players,
+                    "source": "Wikidata team membership + Wikimedia Commons metadata"
+                }
+            else:
+                players = previous
             count = len(players)
             state = ("ready_10" if count >= TARGET_MINIMUM else
                      "ready_7" if count >= FALLBACK_MINIMUM else "needs_more_licensed_photos")
