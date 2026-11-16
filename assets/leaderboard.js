@@ -346,6 +346,7 @@ function describeHomeProfile(){
 function renderProfiles(){
  describeProfile();
  describeHomeProfile();
+ window.BKPlayerCard?.setProfile(profile && profile.username ? profile.username : '');
 }
 
 async function restoreProfile(){

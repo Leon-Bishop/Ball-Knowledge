@@ -52,12 +52,27 @@
           <div class="broadcast-hero-title" aria-hidden="true">BALL<br>KNOWLEDGE</div>
           <div class="broadcast-strap"><span data-bk-copy="heroStrap">GUESS THE CLUB. KNOW THE STORY.</span></div>
         </div>
-        <div class="broadcast-scorecard" aria-label="Player summary">
-          <strong class="scorecard-title">Ball Knowledge</strong>
-          <span class="scorecard-small" data-bk-copy="chooseLeagues">Choose your leagues and kick off a quiz.</span>
+        <section class="broadcast-scorecard broadcast-recent-player" aria-label="Player's latest completed quiz">
+          <div class="recent-player-top">
+            <span class="recent-player-avatar" aria-hidden="true">◉</span>
+            <div class="recent-player-identity">
+              <span class="recent-player-kicker" data-bk-recent="label">OYUNCU KARTI</span>
+              <strong class="recent-player-name" id="recentPlayerName">Misafir</strong>
+            </div>
+          </div>
           <div class="scorecard-rule"></div>
-          <span class="scorecard-stats" data-bk-copy="fiveClues">5 clues · 5 guesses · endless football stories</span>
-        </div>
+          <div class="recent-player-stats">
+            <div>
+              <span class="recent-player-kicker" data-bk-recent="lastScore">SON OYUN</span>
+              <strong class="recent-player-score" id="recentPlayerScore">—</strong>
+            </div>
+            <div>
+              <span class="recent-player-kicker" data-bk-recent="bkPoints">BK PUANI</span>
+              <strong class="recent-player-points" id="recentPlayerPoints">—</strong>
+            </div>
+          </div>
+          <p class="recent-player-note" id="recentPlayerNote">Son tamamlanan oyunun burada görünür.</p>
+        </section>
       </div>
 
       <aside class="broadcast-ranked-teaser" aria-label="Ranked competitions coming soon">

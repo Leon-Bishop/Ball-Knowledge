@@ -8,7 +8,35 @@ function localize(){
   const key=node.dataset.bkCopy;
   if(Object.hasOwn(dict,key))node.textContent=dict[key];
  });
+ refreshPlayerCard();
 }
+const recentText={
+ tr:{label:'OYUNCU KARTI',lastScore:'SON OYUN',bkPoints:'BK PUANI',empty:'Henüz tamamlanmış oyun yok.',guest:'Misafir'},
+ en:{label:'PLAYER CARD',lastScore:'LAST GAME',bkPoints:'BK POINTS',empty:'No completed quiz yet.',guest:'Guest'},
+ es:{label:'PERFIL',lastScore:'ÚLTIMA PARTIDA',bkPoints:'PUNTOS BK',empty:'Aún no hay partidas completas.',guest:'Invitado'},
+ fr:{label:'PROFIL',lastScore:'DERNIÈRE PARTIE',bkPoints:'POINTS BK',empty:'Aucune partie terminée.',guest:'Invité'},
+ it:{label:'PROFILO',lastScore:'ULTIMA PARTITA',bkPoints:'PUNTI BK',empty:'Nessuna partita completata.',guest:'Ospite'},
+ pt:{label:'PERFIL',lastScore:'ÚLTIMO JOGO',bkPoints:'PONTOS BK',empty:'Nenhuma partida concluída.',guest:'Visitante'}
+};
+let currentUsername='';
+function refreshPlayerCard(){
+ const lang=document.documentElement.lang;
+ const dict=recentText[lang]||recentText.en;
+ document.querySelectorAll('[data-bk-recent]').forEach(el=>{el.textContent=dict[el.dataset.bkRecent]||''});
+ const name=document.getElementById('recentPlayerName');
+ const score=document.getElementById('recentPlayerScore');
+ const points=document.getElementById('recentPlayerPoints');
+ const note=document.getElementById('recentPlayerNote');
+ if(!name||!score||!points||!note)return;
+ name.textContent=currentUsername||dict.guest;
+ let result;
+ try{result=JSON.parse(localStorage.getItem('bk-recent-completed-score')||'null')}catch{result=null}
+ const valid=result&&Number.isFinite(result.score)&&Number.isFinite(result.maxScore)&&result.maxScore>0;
+ score.textContent=valid?result.score+' / '+result.maxScore:'—';
+ points.textContent=valid&&Number.isFinite(result.bkPoints)?Number(result.bkPoints).toLocaleString(lang):'—';
+ note.textContent=valid?new Date(result.completedAt||Date.now()).toLocaleDateString(lang):dict.empty;
+}
+window.BKPlayerCard={setProfile(username){currentUsername=String(username||'');refreshPlayerCard()},refresh:refreshPlayerCard};
 window.BKMatchday={localize};
 document.addEventListener('DOMContentLoaded',()=>{
  localize();

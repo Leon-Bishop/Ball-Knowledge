@@ -201,7 +201,21 @@ function finish(win,pts){
  BallKnowledgeSession.recordRound(session,round,{won:win,wrongCount:wrong.length});
  score=BallKnowledgeSession.summary(session).score;
  streak=win?streak+1:0;
- if(session.completed){best=Math.max(best,score);localStorage.setItem('bk-best-session-score',String(best))}
+ if(session.completed){
+  best=Math.max(best,score);
+  localStorage.setItem('bk-best-session-score',String(best));
+  // Record the latest completed session separately from the personal best.
+  // This is local browser history, not a verified server leaderboard result.
+  const summary=BallKnowledgeSession.summary(session);
+  let bkPoints=null;
+  try{bkPoints=window.BKPoints.calculateSession(session)}catch(error){console.warn('Latest score preview:',error)}
+  try{
+   localStorage.setItem('bk-recent-completed-score',JSON.stringify({
+    score:summary.score,maxScore:summary.maxScore,bkPoints,completedAt:Date.now()
+   }));
+  }catch(error){console.warn('Could not save latest score:',error)}
+  window.BKPlayerCard?.refresh();
+ }
  $('play').classList.add('hidden');$('endActions').classList.remove('hidden');
  const league=leagues.find(l=>l.id===round.league_id);
  $('message').textContent=win?tr('correct',{points:pts}):tr('gameOver');
@@ -409,6 +423,12 @@ $('settingsLanguage').onchange=()=>changeLanguage($('settingsLanguage').value);
 $('selectAllLeagues').onclick=()=>setAllLeagues(true);
 $('deselectAllLeagues').onclick=()=>setAllLeagues(false);
 for(const btn of document.querySelectorAll('[data-screen]'))btn.onclick=()=>setView(btn.id==='settingsChoose'&&session?'game':btn.dataset.screen);
+// Reset one inherited light preference from the earlier redesign once.
+// Subsequent explicit light-mode selections are preserved normally.
+if(localStorage.getItem('bk-default-dark-v2')!=='1'){
+ localStorage.setItem('bk-default-dark-v2','1');
+ localStorage.setItem('efq-theme','dark');
+}
 document.body.classList.toggle('dark',localStorage.getItem('efq-theme')!=='light');
 updateThemeToggle();
 setView('selection');init();

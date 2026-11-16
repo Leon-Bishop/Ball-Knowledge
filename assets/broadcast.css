@@ -239,3 +239,25 @@ body:not(.dark) .bottom-nav .nav-item{color:#41604b}
 body:not(.dark) .bottom-nav .nav-item.active{color:#538813}
 body:not(.dark) .status,body:not(.dark) .clue-subtext,body:not(.dark) .reference-notice{color:#3b6146}
 @media(max-width:620px){.broadcast-scorecard{display:none}}
+
+/* Latest completed quiz player card in the matchday hero */
+.broadcast-recent-player{gap:18px;min-height:206px;width:270px;max-width:34%;padding:23px 22px}
+.recent-player-top{display:flex;align-items:center;gap:12px;min-width:0}
+.recent-player-avatar{width:44px;height:44px;display:grid;place-items:center;flex:none;border:1px solid #a6b5ac;border-radius:50%;font-size:25px;color:#d5fa39}
+.recent-player-identity{display:flex;flex-direction:column;gap:5px;min-width:0}
+.recent-player-kicker{font:800 11px/1.2 "Barlow Condensed",Impact,sans-serif;letter-spacing:1.35px;color:#aabbb0}
+.recent-player-name{display:block;font:900 24px/1.05 "Barlow Condensed",Impact,sans-serif;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.recent-player-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.recent-player-stats>div{display:flex;flex-direction:column;gap:8px;min-width:0}
+.recent-player-stats>div+div{border-left:1px solid #54645c;padding-left:13px}
+.recent-player-score,.recent-player-points{font:900 28px/1 "Barlow Condensed",Impact,sans-serif;color:#f6fbf3;overflow-wrap:anywhere}
+.recent-player-points{color:#d6fa39}
+.recent-player-note{font-size:11px;line-height:1.4;color:#b1c2b6}
+body:not(.dark) .recent-player-avatar{border-color:#8ca38f;color:#537b20}
+body:not(.dark) .recent-player-kicker{color:#587362}
+body:not(.dark) .recent-player-name,body:not(.dark) .recent-player-score{color:#1f4532}
+body:not(.dark) .recent-player-points{color:#527b10}
+body:not(.dark) .recent-player-stats>div+div{border-color:#abc3aa}
+body:not(.dark) .recent-player-note{color:#4f6d58}
+@media(max-width:800px){.broadcast-recent-player{max-width:40%;padding:18px}}
+@media(max-width:620px){.broadcast-recent-player{display:none}}
