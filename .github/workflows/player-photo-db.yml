@@ -10,6 +10,8 @@ on:
       - ".github/workflows/player-photo-db.yml"
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency:
   group: player-photo-import
   cancel-in-progress: false
@@ -62,3 +64,26 @@ jobs:
             echo "Photo import collected but repository remained busy; will retry on next schedule."
             exit 1
           fi
+
+  deploy:
+    # Action-created commits don't trigger other push workflows.
+    # Publish the updated verified photo database as part of this workflow.
+    needs: import
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+      - name: Publish new licensed photo data
+        id: deployment
+        uses: actions/deploy-pages@v5
