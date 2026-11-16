@@ -267,15 +267,16 @@ function describeProfile(){
  identity.className='player-identity';
  const avatarEl=document.createElement('span');
  avatarEl.className='player-profile-avatar';
- window.BKAvatars?.apply(avatarEl,profile.username);
+ window.BKAvatars?.apply(avatarEl,profile.username,profile.avatarTeamId);
  identity.textContent=
   flag(profile.country)+' '+profile.username+' · '+
   countryLabel(profile.country)+
   (profile.region?' / '+regionLabel(profile.region):'');
  identity.prepend(avatarEl);
-
  p.textContent=words('oneUsernameNote');
  el.append(identity,p);
+ const changeBadge=window.BKAvatars?.changeButton();
+ if(changeBadge)el.append(changeBadge);
 }
 
 function describeHomeProfile(){
@@ -291,7 +292,7 @@ function describeHomeProfile(){
  kicker.textContent=words('homePlayerKicker');
  card.dataset.state=profile?'active':'new';
  avatar.textContent=profile?flag(profile.country):'⚽';
- window.BKAvatars?.apply(avatar,profile?.username||'');
+ window.BKAvatars?.apply(avatar,profile?.username||'',profile?.avatarTeamId);
 
  const description=document.createElement('p');
  description.className='home-player-description';
@@ -342,6 +343,8 @@ function describeHomeProfile(){
  view.textContent=words('homePlayerViewRanks');
  view.onclick=()=>node('navLeaderboard')?.click();
  actions.append(country,view);
+ const changeBadge=window.BKAvatars?.changeButton();
+ if(changeBadge)actions.append(changeBadge);
 
  const note=document.createElement('p');
  note.className='player-profile-help';
@@ -350,6 +353,7 @@ function describeHomeProfile(){
 }
 
 function renderProfiles(){
+ window.BKAvatars?.setProfile(profile?.username||'',profile?.avatarTeamId);
  describeProfile();
  describeHomeProfile();
  window.BKPlayerCard?.setProfile(profile && profile.username ? profile.username : '');
@@ -421,7 +425,7 @@ async function loadRanks(){
    const playerCell=document.createElement('td');
    const avatarEl=document.createElement('span');
    avatarEl.className='leaderboard-avatar';
-   window.BKAvatars?.apply(avatarEl,player.username);
+   window.BKAvatars?.apply(avatarEl,player.username,player.avatarTeamId);
    const label=document.createElement('span');
    label.textContent=flag(player.country)+' '+player.username;
    playerCell.append(avatarEl,label);
@@ -454,7 +458,7 @@ async function loadHomeRanks(){
      const row=document.createElement('li');row.className='broadcast-rank-row';
      const rank=document.createElement('span');rank.className='broadcast-rank-number';rank.textContent=String(player.rank);
      const name=document.createElement('span');name.className='broadcast-rank-name';
-     const avatarEl=document.createElement('span');avatarEl.className='leaderboard-avatar';window.BKAvatars?.apply(avatarEl,player.username);
+     const avatarEl=document.createElement('span');avatarEl.className='leaderboard-avatar';window.BKAvatars?.apply(avatarEl,player.username,player.avatarTeamId);
      const label=document.createElement('span');label.textContent=String(player.username);
      name.append(avatarEl,label);
      const score=document.createElement('strong');score.className='broadcast-rank-score';score.textContent=Number(player.bkPoints||0).toLocaleString()+' BK';
@@ -623,7 +627,13 @@ function init(){
 
  node('rankingScope').onchange=loadRanks;
  node('rankingLength').onchange=loadRanks;
-
+ window.BKAvatars?.setSaveHandler(async clubId=>{
+  const data=await api('/api/avatar',{method:'POST',body:{clubId}});
+  if(profile)profile.avatarTeamId=data.avatarTeamId||clubId;
+  renderProfiles();
+  await Promise.all([loadRanks(),loadHomeRanks()]);
+  return data;
+ });
  localize();
 
  restoreProfile().then(()=>{loadRanks();loadHomeRanks()});
