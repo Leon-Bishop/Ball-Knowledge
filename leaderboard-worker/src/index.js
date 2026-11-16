@@ -121,7 +121,8 @@ function publicUser(user) {
     username: user.username,
     country: user.country,
     region: user.region || "",
-    joinedAt: user.created_at
+    joinedAt: user.created_at,
+    avatarTeamId: user.avatarTeamId || "turkey-super-lig:6"
   };
 }
 
@@ -155,9 +156,11 @@ async function currentUser(request, env) {
   if (!token) return null;
 
   return env.DB.prepare(`
-    SELECT id, username, country, region, created_at
-    FROM users
-    WHERE token_hash = ?
+    SELECT u.id, u.username, u.country, u.region, u.created_at,
+      COALESCE(a.team_id, 'turkey-super-lig:6') AS avatarTeamId
+    FROM users u
+    LEFT JOIN user_avatars a ON a.user_id = u.id
+    WHERE u.token_hash = ?
   `).bind(await hash(token)).first();
 }
 
@@ -337,6 +340,28 @@ async function handle(request, env) {
       : reply({ error: "Profile not found" }, 401);
   }
 
+  // Authenticated badge selection — only clubs in the game dataset are accepted.
+  if (route === "/api/avatar" && method === "POST") {
+    const user = await currentUser(request, env);
+    if (!user) return reply({error:"Choose a username first"}, 401);
+    let body;
+    try { body = await readBody(request); }
+    catch { return reply({error:"Invalid request"}, 400); }
+    const clubId = String(body.clubId || "");
+    const match = /^([a-z0-9-]+):([1-9]\\d*)$/.exec(clubId);
+    if (!match || !Object.hasOwn(LEAGUES, match[1]) ||
+        Number(match[2]) > LEAGUES[match[1]].count) {
+      return reply({error:"Unknown club"}, 400);
+    }
+    await env.DB.prepare(`
+      INSERT INTO user_avatars(user_id, team_id, updated_at)
+      VALUES(?, ?, ?)
+      ON CONFLICT(user_id) DO UPDATE SET
+        team_id = excluded.team_id, updated_at = excluded.updated_at
+    `).bind(user.id, clubId, Math.floor(Date.now()/1000)).run();
+    return reply({avatarTeamId:clubId});
+  }
+
   if (route === "/api/register" && method === "POST") {
     let body;
 
@@ -459,9 +484,11 @@ async function handle(request, env) {
         s.best_total AS rounds,
         s.best_correct AS correct,
         s.best_bk_points AS bkPoints,
+        COALESCE(a.team_id, 'turkey-super-lig:6') AS avatarTeamId,
         s.updated_at
       FROM scores s
       JOIN users u ON u.id = s.user_id
+      LEFT JOIN user_avatars a ON a.user_id = u.id
       WHERE s.mode = ?${where}
       ORDER BY
         s.best_bk_points DESC,
@@ -488,7 +515,8 @@ async function handle(request, env) {
         score: row.score,
         rounds: row.rounds,
         correct: row.correct,
-        bkPoints: row.bkPoints
+        bkPoints: row.bkPoints,
+        avatarTeamId: row.avatarTeamId
       };
     });
 
