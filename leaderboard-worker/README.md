@@ -79,3 +79,12 @@ The live frontend currently calls `https://ball-knowledge-api.cenkkingir4.worker
 4. Test username registration, viewing the global scoreboard, and saving a completed game from `https://ballknowledge.life`. A 403 or CORS error points to incorrect `ALLOWED_ORIGINS`; a 500 response points to Worker/database configuration or runtime errors. Examine the Worker Logs for exact details.
 
 **Important:** The current username/token method is browser-bound, not a conventional login. Someone using another browser or a browser with cleared local storage cannot recover the original username using this prototype. A verified email recovery flow is necessary before prize-based Ranked competitions.
+
+
+## Registration abuse controls (November 2026)
+
+The Worker already rate-limits registration attempts per hashed IP address to one per minute. It now also limits **successful registrations to five per public IP in a rolling 24-hour period**, using the existing D1 `rate_limits` table (no new migration). Historical entries are cleared by existing cleanup. This slows incognito/browser account farming, but **is not one person per account**; families, public Wi-Fi and mobile networks may share IP addresses, while malicious users can rotate addresses. Existing players can still use their saved browser identity and play the game without new registrations.
+
+**Deploy `src/index.js` to the actual live Cloudflare Worker at `ball-knowledge-api.cenkkingir4.workers.dev`.** GitHub Pages deployments do not automatically deploy the Worker. Preserve its DB binding and allowed-origin configuration. Cloudflare's Worker dashboard supports editing deployed code or deploying with Wrangler after confirming the correct production service.
+
+Before awarding Ranked prizes, require a persistent verified account, server-controlled matches and duplicate-account review. Blanket VPN blocking and one-account-per-IP rules cause false positives and do not guarantee identity; use network abuse signals to trigger additional verification instead. Implement a way for legitimate users to appeal an automated block.

@@ -409,6 +409,6 @@ $('settingsLanguage').onchange=()=>changeLanguage($('settingsLanguage').value);
 $('selectAllLeagues').onclick=()=>setAllLeagues(true);
 $('deselectAllLeagues').onclick=()=>setAllLeagues(false);
 for(const btn of document.querySelectorAll('[data-screen]'))btn.onclick=()=>setView(btn.id==='settingsChoose'&&session?'game':btn.dataset.screen);
-if(localStorage.getItem('efq-theme')==='dark')document.body.classList.add('dark');
+document.body.classList.toggle('dark',localStorage.getItem('efq-theme')!=='light');
 updateThemeToggle();
 setView('selection');init();
