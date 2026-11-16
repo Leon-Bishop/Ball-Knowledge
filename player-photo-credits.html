@@ -31,8 +31,10 @@ footer{padding:28px 0}
 fetch('./assets/player-photo-db.json').then(r=>r.json()).then(db=>{
  const tbody=document.getElementById('rows');
  const count=Object.values(db.clubs||{}).reduce((n,club)=>n+(club.players?.length||0),0);
- const complete=Object.values(db.clubs||{}).filter(club=>(club.players||[]).length>=10).length;
- document.getElementById('coverage').textContent=count+' licensed photographs collected · '+complete+' clubs with at least 10 usable photos';
+ const clubs=Object.values(db.clubs||{});
+ const complete10=clubs.filter(club=>(club.players||[]).length>=10).length;
+ const complete7=clubs.filter(club=>(club.players||[]).length>=7).length;
+ document.getElementById('coverage').textContent=count+' licensed photographs collected · '+complete7+' clubs with at least 7 usable photos · '+complete10+' clubs with at least 10 photos';
  const seen=new Set();
  for(const club of Object.values(db.clubs||{})){
   for(const player of club.players||[]){
