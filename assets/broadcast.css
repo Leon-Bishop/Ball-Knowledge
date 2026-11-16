@@ -320,13 +320,9 @@ body:not(.dark) .pixel-avatar{
  box-shadow:none;
  transform:none!important;
  pointer-events:none;
- /* A shaped head-and-shoulder cutout, not a rectangular or circular frame. */
- -webkit-mask-image:
-  radial-gradient(ellipse 42% 48% at 50% 39%,#000 96%,transparent 100%),
-  radial-gradient(ellipse 70% 32% at 50% 102%,#000 96%,transparent 100%);
- mask-image:
-  radial-gradient(ellipse 42% 48% at 50% 39%,#000 96%,transparent 100%),
-  radial-gradient(ellipse 70% 32% at 50% 102%,#000 96%,transparent 100%);
+ /* Avatar-specific crop polygons are applied from avatars.js. */
+ -webkit-mask-image:none!important;
+ mask-image:none!important;
 }
 .broadcast-rank-row{
  display:grid;
