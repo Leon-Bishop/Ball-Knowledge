@@ -1,20 +1,21 @@
-/* Ball Knowledge club logo avatars. Data: assets/club-avatar-catalog.json.
-   All existing registered accounts default to Fenerbahçe until a choice is saved. */
+/* Ball Knowledge selectable football crests. No club is assigned by default. */
 (()=>{
 'use strict';
-const DEFAULT='turkey-super-lig:6';
+const DEFAULT='';
 const FENER='https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Fenerbah%C3%A7e.svg';
-let catalog=null,clubs=new Map(),viewer='',profileChoice=DEFAULT,saveHandler=null,dialog=null,active='turkey-super-lig';
+let catalog=null,clubs=new Map(),viewer='',profileChoice='',pendingChoice='',saveHandler=null,dialog=null,active='turkey-super-lig';
+const pendingListeners=new Set();
 const norm=s=>String(s||'').trim().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
 function local(name){try{return localStorage.getItem('bk-selected-club:'+norm(name))||''}catch{return ''}}
 function store(name,id){try{localStorage.setItem('bk-selected-club:'+norm(name),id)}catch{}}
 function chosen(name,server){
  const own=viewer&&norm(viewer)===norm(name);
- const candidate=(own?local(name):'')||server||(own?profileChoice:'')||DEFAULT;
- return clubs.has(candidate)?candidate:DEFAULT;
+ const candidate=(own?local(name):'')||server||(own?profileChoice:'')||'';
+ return clubs.has(candidate)?candidate:'';
 }
 function badge(el,id){
- const t=clubs.get(id)||clubs.get(DEFAULT)||{id:DEFAULT,name:'Fenerbahçe',short:'FB',logo:FENER};
+ const t=clubs.get(id);
+ if(!t){el.classList.remove('club-avatar','pixel-avatar');el.replaceChildren();el.textContent='⚽';el.title='';return;}
  el.classList.add('club-avatar');
  el.classList.remove('pixel-avatar');
  el.style.removeProperty('background-image');
@@ -43,24 +44,29 @@ function badge(el,id){
 function apply(el,name,serverId){
  if(!el)return;
  name=String(name||'').trim();
- if(!name){el.replaceChildren();el.textContent='⚽';el.classList.remove('club-avatar','pixel-avatar');el.removeAttribute('data-avatar-owner');el.removeAttribute('data-avatar-server');return}
+ if(!name){
+  el.replaceChildren();el.textContent='⚽';el.classList.remove('club-avatar','pixel-avatar');
+  el.removeAttribute('data-avatar-owner');el.removeAttribute('data-avatar-server');return;
+ }
  el.dataset.avatarOwner=name;
  if(serverId)el.dataset.avatarServer=serverId;else el.removeAttribute('data-avatar-server');
- badge(el,chosen(name,serverId));
+ const id=chosen(name,serverId);
+ if(id)badge(el,id);
+ else{el.classList.remove('club-avatar','pixel-avatar');el.replaceChildren();el.textContent='⚽';el.title='';}
 }
 function refresh(){
  document.querySelectorAll('[data-avatar-owner]').forEach(el=>apply(el,el.dataset.avatarOwner,el.dataset.avatarServer));
- document.querySelectorAll('[data-choose-club]').forEach(b=>{b.disabled=!viewer;b.textContent=words().change});
+ document.querySelectorAll('[data-choose-club]').forEach(b=>{b.disabled=false;b.textContent=b.dataset.pendingClub==='1'?words().choose:words().change});
 }
-function setProfile(name,avatarTeamId){viewer=String(name||'').trim();profileChoice=avatarTeamId||DEFAULT;refresh()}
+function setProfile(name,avatarTeamId){viewer=String(name||'').trim();profileChoice=avatarTeamId||'';refresh()}
 function words(){
  return document.documentElement.lang==='tr'
- ?{title:'Takım armanı seç',search:'Takım veya lig ara…',change:'Armanı değiştir',hint:'214 kulüp · 12 lig',none:'Kulüp bulunamadı',close:'Kapat'}
- :{title:'Choose your club badge',search:'Search teams or leagues…',change:'Change badge',hint:'214 clubs · 12 leagues',none:'No clubs found',close:'Close'};
+ ?{title:'Takım armanı seç',search:'Takım veya lig ara…',change:'Armanı değiştir',choose:'Takım arması seç',hint:'214 kulüp · 12 lig',none:'Kulüp bulunamadı',close:'Kapat'}
+ :{title:'Choose your club badge',search:'Search teams or leagues…',change:'Change badge',choose:'Choose club badge',hint:'214 clubs · 12 leagues',none:'No clubs found',close:'Close'};
 }
 function changeButton(){
  const b=document.createElement('button');b.type='button';b.className='outline-button club-change-button';
- b.dataset.chooseClub='1';b.textContent=words().change;b.disabled=!viewer;b.addEventListener('click',open);return b;
+ b.dataset.chooseClub='1';b.textContent=words().change;b.addEventListener('click',open);return b;
 }
 function getDialog(){
  if(dialog)return dialog;
@@ -103,7 +109,7 @@ function draw(){
  const grid=document.createElement('div');grid.className='club-picker-grid';
  for(const team of matching){
   const b=document.createElement('button');b.type='button';b.className='club-picker-option';
-  b.title=team.name;b.setAttribute('aria-label',team.name);b.setAttribute('aria-pressed',String(chosen(viewer,profileChoice)===team.id));
+  b.title=team.name;b.setAttribute('aria-label',team.name);b.setAttribute('aria-pressed',String((viewer?chosen(viewer,profileChoice):pendingChoice)===team.id));
   const pic=document.createElement('span');pic.className='club-picker-badge';badge(pic,team.id);
   const txt=document.createElement('span');txt.className='club-picker-name';txt.textContent=team.name;
   b.append(pic,txt);b.onclick=()=>select(team.id);grid.append(b);
@@ -111,20 +117,44 @@ function draw(){
  ui.list.append(grid);
 }
 function open(){
- if(!viewer)return;
  const ui=getDialog();ui.cover.hidden=false;document.body.classList.add('club-picker-visible');
  active='turkey-super-lig';ui.search.value='';draw();requestAnimationFrame(()=>ui.search.focus());
 }
 function hide(){if(dialog)dialog.cover.hidden=true;document.body.classList.remove('club-picker-visible')}
 async function select(id){
- if(!viewer||!clubs.has(id))return;
+ if(!clubs.has(id))return;
+ if(!viewer){
+  pendingChoice=id;
+  for(const callback of pendingListeners)callback(id);
+  refresh();hide();return;
+ }
  store(viewer,id);profileChoice=id;refresh();hide();
  if(saveHandler)try{
   const r=await saveHandler(id);
   if(r&&r.avatarTeamId){profileChoice=r.avatarTeamId;store(viewer,r.avatarTeamId);refresh()}
  }catch(e){console.info('Badge saved in this browser; Worker sync pending:',e.message||e)}
 }
-window.BKAvatars={apply,setProfile,setSaveHandler(fn){saveHandler=fn},changeButton,openPicker:open,refresh,count:214};
+function pendingButton(onChange){
+ if(typeof onChange==='function')pendingListeners.add(onChange);
+ const b=document.createElement('button');
+ b.type='button';b.className='outline-button club-change-button';
+ b.dataset.chooseClub='1';b.dataset.pendingClub='1';b.textContent=words().choose;
+ b.addEventListener('click',open);return b;
+}
+function pendingBadge(el){
+ const club=clubs.get(pendingChoice);
+ if(club)badge(el,pendingChoice);
+ else{el.classList.remove('club-avatar','pixel-avatar');el.replaceChildren();el.textContent='⚽';el.title='';}
+}
+function commitPending(username){
+ const id=pendingChoice;
+ if(id&&username)store(username,id);
+ pendingChoice='';
+ return id;
+}
+function resetPending(){pendingChoice='';}
+
+window.BKAvatars={apply,setProfile,setSaveHandler(fn){saveHandler=fn},changeButton,pendingButton,pendingBadge,commitPending,resetPending,getPending:()=>pendingChoice,openPicker:open,refresh,count:214};
 fetch('./assets/club-avatar-catalog.json').then(r=>{if(!r.ok)throw Error('Catalog not found');return r.json()}).then(data=>{
  if(data.clubs.length!==214)throw Error('Unexpected club count');
  catalog=data;clubs=new Map(data.clubs.map(c=>[c.id,c]));refresh();
