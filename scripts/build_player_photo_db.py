@@ -73,7 +73,7 @@ def search_club_qid(name, aliases=()):
     # long names to match the football-club rather than a city/place result.
     lookups = list(names)
     for n in names:
-        if not re.search(r"\\b(?:fc|cf|sc|sk|afc)\\b", n, re.I):
+        if not re.search(r"\b(?:fc|cf|sc|sk|afc)\b", n, re.I):
             lookups.extend([n + " FC", n + " football club"])
     expected = {normalize(n) for n in names}
     resolved = set()
