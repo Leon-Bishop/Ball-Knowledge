@@ -269,7 +269,7 @@ def category_players(club_qid):
                 })
                 for page in page_data.get("query", {}).get("pages", {}).values():
                     qid = page.get("pageprops", {}).get("wikibase_item")
-                    if qid and re.fullmatch(r"Q\\d+", qid) and qid not in inspected:
+                    if qid and re.fullmatch(r"Q\d+", qid) and qid not in inspected:
                         fresh[qid] = (page.get("title", ""), source)
                         inspected.add(qid)
                 time.sleep(REQUEST_DELAY)
@@ -277,7 +277,7 @@ def category_players(club_qid):
                 continue
             entities = get_wikidata_entities(list(fresh), "claims|labels")
             for qid, ent in entities.items():
-                if not re.fullmatch(r"Q\\d+", qid):
+                if not re.fullmatch(r"Q\d+", qid):
                     continue
                 human = any(
                     c.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id") == "Q5"
