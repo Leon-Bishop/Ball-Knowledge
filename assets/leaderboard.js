@@ -123,6 +123,17 @@ function createClaimForm(context){
  previewIcon.setAttribute('aria-hidden','true');
  const previewName=document.createElement('span');
  preview.append(previewIcon,previewName);
+ const badgeChoice=document.createElement('div');
+ badgeChoice.className='registration-club-choice';
+ const chooseBadge=window.BKAvatars?.pendingButton(()=>{
+  window.BKAvatars?.pendingBadge(previewIcon);
+  validate();
+ });
+ if(chooseBadge)badgeChoice.append(chooseBadge);
+ const badgeHint=document.createElement('span');
+ badgeHint.className='registration-club-hint';
+ badgeHint.textContent=document.documentElement.lang==='tr'?'Kayıt olmadan önce takım armanı seç.':'Choose your club badge before registering.';
+ badgeChoice.append(badgeHint);
 
  const validName=name=>{
   const length=[...name].length;
@@ -145,8 +156,10 @@ function createClaimForm(context){
   input.setAttribute('aria-invalid',String(touched&&!valid));
   count.textContent=length+'/20';
   previewName.textContent=name||words('homePlayerPreviewEmpty');
-  window.BKAvatars?.apply(previewIcon,name);
-  button.disabled=busy||!valid;
+  window.BKAvatars?.pendingBadge(previewIcon);
+  const selected=window.BKAvatars?.getPending();
+  badgeHint.textContent=selected?(document.documentElement.lang==='tr'?'Takım arman seçildi.':'Club badge selected.'):(document.documentElement.lang==='tr'?'Kayıt olmadan önce takım armanı seç.':'Choose your club badge before registering.');
+  button.disabled=busy||!valid||!selected;
  };
 
  input.addEventListener('input',()=>{
@@ -157,7 +170,8 @@ function createClaimForm(context){
  form.addEventListener('submit',async event=>{
   event.preventDefault();
   const name=input.value.trim();
-  if(busy||!validName(name))return;
+  const clubId=window.BKAvatars?.getPending();
+  if(busy||!validName(name)||!clubId)return;
 
   busy=true;
   button.disabled=true;
@@ -186,7 +200,7 @@ function createClaimForm(context){
      'Content-Type':'application/json',
      Authorization:'Bearer '+fresh
     },
-    body:JSON.stringify({username:name})
+    body:JSON.stringify({username:name,clubId})
    });
 
    const data=await res.json().catch(()=>({}));
@@ -197,7 +211,14 @@ function createClaimForm(context){
    }
 
    localStorage.setItem(tokenKey,fresh);
+   const assignedClub=window.BKAvatars?.commitPending(name)||clubId;
    profile=data.profile;
+   if(profile)profile.avatarTeamId=data.profile.avatarTeamId||assignedClub;
+   // Deploying the avatar API on Cloudflare syncs this choice to other devices.
+   // Registration still works with the previous Worker version.
+   if(assignedClub){
+    api('/api/avatar',{method:'POST',body:{clubId:assignedClub}}).catch(()=>{});
+   }
    profileLoadError='';
    nameDraft='';
    node('leaderboardStatus').textContent=words('profileCreated');
@@ -212,12 +233,12 @@ function createClaimForm(context){
    busy=false;
    input.disabled=false;
    if(form.isConnected){
-    button.disabled=!validName(input.value.trim());
+    button.disabled=!validName(input.value.trim())||!window.BKAvatars?.getPending();
    }
   }
  });
 
- form.append(label,controls,meta,preview);
+ form.append(label,controls,badgeChoice,meta,preview);
  validate();
  return form;
 }
