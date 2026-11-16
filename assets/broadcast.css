@@ -471,23 +471,29 @@ body:not(.dark) .club-picker-option[aria-pressed="true"]:after{color:#42711e}
 .player-name-preview{gap:10px}
 .home-player-card .home-player-topline{gap:8px;row-gap:6px}
 
-/* Player photo clues — active only for clubs with ten licensed portraits.
-   Images do not replace the rest of the club's five original emoji clues. */
+/* Verified player photos replace vague clues at 7+ players (target: 10).
+   Crop to the upper face/head region: the lower part with club shirts,
+   colors and sponsors stays outside the clipped clue tile. */
 .slot.photo-clue-slot{
  padding:0;
  overflow:hidden;
  position:relative;
+ isolation:isolate;
  background:var(--card);
 }
 .slot.photo-clue-slot .player-photo-clue{
  display:block;
+ position:absolute;
+ top:0;
+ left:0;
  width:100%;
- height:100%;
- max-width:100%;
- max-height:100%;
+ height:235%;
+ max-width:none;
+ max-height:none;
  object-fit:cover;
- object-position:center 20%;
- border-radius:inherit;
+ object-position:50% 0%;
+ border:0;
+ border-radius:0;
 }
 #emojiExplanation a{
  color:var(--accent);
