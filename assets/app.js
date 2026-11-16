@@ -130,10 +130,29 @@ function emojiMeaning(index){
  const emoji=round?.emojis?.[index]||'';
  return tr(EMOJI_COLOURS.has(emoji)?'emojiMeaningColor':index<=1?'emojiMeaningPlace':index===2?'emojiMeaningSymbol':'emojiMeaningIdentity');
 }
+// Keep images as optional, factual clues: only a club with 10+
+ // photo-licensed Wikidata-linked players is eligible. Every other club
+ // retains its original five emoji clues and existing scoring rules.
+const PLAYER_PHOTO_REPLACE=new Set(['⚽','🏆','🥇']);
+function eligiblePlayerPhoto(index){
+ if(!round||!PLAYER_PHOTO_REPLACE.has(round.emojis[index]))return null;
+ return window.BKPlayerPhotos?.getPlayer(round.id)||null;
+}
 function displayEmojiExplanation(){
  const panel=$('emojiExplanation');
- if(activeEmojiExplanation===null||!round){panel.classList.add('hidden');panel.textContent='';return}
- panel.textContent=round.emojis[activeEmojiExplanation]+' '+emojiMeaning(activeEmojiExplanation);
+ if(activeEmojiExplanation===null||!round){panel.classList.add('hidden');panel.replaceChildren();return}
+ panel.replaceChildren();
+ const photo=eligiblePlayerPhoto(activeEmojiExplanation);
+ if(photo){
+  const text=document.createElement('span');
+  text.textContent=(lang==='tr'?'Bu kulüpte oynamış futbolcu: ':'Player who represented this club: ')+photo.playerName+'. ';
+  const credit=document.createElement('a');
+  credit.href=photo.sourceUrl;credit.target='_blank';credit.rel='noopener noreferrer';
+  credit.textContent=(lang==='tr'?'Fotoğraf: ':'Photo: ')+photo.author+' · '+photo.license;
+  panel.append(text,credit);
+ }else{
+  panel.textContent=round.emojis[activeEmojiExplanation]+' '+emojiMeaning(activeEmojiExplanation);
+ }
  panel.classList.remove('hidden');
 }
 function render(){
@@ -145,10 +164,31 @@ function render(){
   const item=document.createElement(visible?'button':'div');
   item.className='slot'+(visible?' show emoji-explain-trigger':'');
   if(visible){
-   item.type='button';item.textContent=round.emojis[idx];
-   const hint=emojiMeaning(idx);
-   item.title=hint;
-   item.setAttribute('aria-label',round.emojis[idx]+'. '+hint);
+   item.type='button';
+   const photo=eligiblePlayerPhoto(idx);
+   if(photo){
+    item.classList.add('photo-clue-slot');
+    const image=document.createElement('img');
+    image.className='player-photo-clue';
+    image.src=photo.photoUrl;
+    image.alt=lang==='tr'?'Futbolcu fotoğrafı ipucu':'Footballer photo clue';
+    image.loading='eager';
+    image.decoding='async';
+    image.referrerPolicy='no-referrer';
+    image.onerror=()=>{
+     // Broken or restricted source cannot break this clue.
+     image.remove();item.classList.remove('photo-clue-slot');
+     item.textContent=round.emojis[idx];
+    };
+    item.append(image);
+    item.title=(lang==='tr'?'Futbolcu fotoğrafını ve kaynağını görüntüle':'View footballer clue and photo credit');
+    item.setAttribute('aria-label',image.alt);
+   }else{
+    item.textContent=round.emojis[idx];
+    const hint=emojiMeaning(idx);
+    item.title=hint;
+    item.setAttribute('aria-label',round.emojis[idx]+'. '+hint);
+   }
    item.setAttribute('aria-pressed',String(activeEmojiExplanation===idx));
    item.onclick=()=>{activeEmojiExplanation=activeEmojiExplanation===idx?null:idx;displayEmojiExplanation();
     container.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===item&&activeEmojiExplanation!==null)));
@@ -398,6 +438,7 @@ function finishViewOnly(){if(!finished||!round)return;const league=leagues.find(
 
 async function init(){try{dictionaries=await fetch('i18n.json').then(r=>{if(!r.ok)throw Error('i18n.json');return r.json()});if(!dictionaries[lang])lang='tr';refreshLanguage();[leagues,teams]=await Promise.all(['leagues.json','teams.enriched.json'].map(p=>fetch(p).then(r=>{if(!r.ok)throw Error(p);return r.json()})));
 try{const res=await fetch('tum-kulupler-ilginc-hikayeler-guncel.json');if(!res.ok)throw Error('HTTP '+res.status);const rows=await res.json();for(const item of rows){if(!item.id||!Array.isArray(item.facts))continue;clubFacts.set(item.id,item.facts)}}catch(e){warn('Kulüp bilgileri yüklenemedi: '+e.message)}validate();makeLeagueGrid();makeFilters();filter();refreshLanguage()}catch(e){warn('Load failed: '+e.message+' — run a local web server, not file://')}}
+window.addEventListener('bk-player-photos-ready',()=>{if(round)render()});
 $('guess').oninput=suggest;
 $('guess').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();submit()}};
 $('submit').onclick=submit;
