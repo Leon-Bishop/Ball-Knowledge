@@ -200,28 +200,134 @@ def commons_info(images):
     return result
 
 
+def get_wikidata_entities(qids, props):
+    """Read Wikidata entity claims/sitelinks in modest batches."""
+    result = {}
+    for offset in range(0, len(qids), 35):
+        batch = list(dict.fromkeys(qids[offset:offset + 35]))
+        if not batch:
+            continue
+        data = fetch_json("https://www.wikidata.org/w/api.php", {
+            "action": "wbgetentities", "ids": "|".join(batch),
+            "props": props, "languages": "en,tr", "format": "json",
+        })
+        result.update(data.get("entities", {}))
+        time.sleep(REQUEST_DELAY)
+    return result
+
+
+def category_players(club_qid):
+    """Additional verifiable players via the club's Wikidata P6112 category.
+
+    This source differs from P54: English Wikipedia explicitly categorizes a
+    person as a player for the club. We preserve the category link as evidence.
+    Do not invent player/team associations from file names.
+    """
+    club = get_wikidata_entities([club_qid], "claims").get(club_qid, {})
+    category_claims = club.get("claims", {}).get("P6112", [])
+    if not category_claims:
+        return [], ""
+    value = category_claims[0].get("mainsnak", {}).get("datavalue", {}).get("value", {})
+    category_qid = value.get("id") if isinstance(value, dict) else None
+    if not category_qid:
+        return [], ""
+    category = get_wikidata_entities([category_qid], "sitelinks").get(category_qid, {})
+    title = category.get("sitelinks", {}).get("enwiki", {}).get("title", "")
+    if not title.startswith("Category:"):
+        return [], ""
+    source = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":_()")
+    data = fetch_json("https://en.wikipedia.org/w/api.php", {
+        "action": "query", "list": "categorymembers", "cmtitle": title,
+        "cmtype": "page", "cmnamespace": 0, "cmlimit": 100, "format": "json",
+    })
+    titles = [p["title"] for p in data.get("query", {}).get("categorymembers", [])]
+    if not titles:
+        return [], ""
+    person_qids = {}
+    for offset in range(0, len(titles), 35):
+        pack = titles[offset:offset + 35]
+        page_data = fetch_json("https://en.wikipedia.org/w/api.php", {
+            "action": "query", "prop": "pageprops", "ppprop": "wikibase_item",
+            "titles": "|".join(pack), "format": "json",
+        })
+        for page in page_data.get("query", {}).get("pages", {}).values():
+            qid = page.get("pageprops", {}).get("wikibase_item")
+            if qid and re.fullmatch(r"Q\d+", qid):
+                person_qids[qid] = page.get("title", "")
+        time.sleep(REQUEST_DELAY)
+    entities = get_wikidata_entities(list(person_qids), "claims|labels")
+    players = []
+    for qid, ent in entities.items():
+        if not re.fullmatch(r"Q\d+", qid):
+            continue
+        images = ent.get("claims", {}).get("P18", [])
+        if not images:
+            continue
+        value = images[0].get("mainsnak", {}).get("datavalue", {}).get("value", "")
+        if not isinstance(value, str) or not commons_file_name(value):
+            continue
+        label = ent.get("labels", {}).get("en", {}).get("value") or person_qids.get(qid)
+        if not label:
+            continue
+        players.append({
+            "wikidataQid": qid,
+            "playerName": label,
+            "image": value,
+            "membershipSource": source,
+            "associationType": "historical_or_current_wikipedia_player_category",
+        })
+    return players, source
+
+
 def process_club(team, qid):
     people = memberships(qid)
-    if not people:
-        return []
-    photo_map = commons_info([r["image"] for r in people])
     results = []
     seen = set()
-    for player in people:
-        key = commons_file_name(player["image"])
-        license_data = photo_map.get(key.casefold()) if key else None
-        if not license_data or player["wikidataQid"] in seen:
-            continue
-        seen.add(player["wikidataQid"])
-        results.append({
-            "clubId": team["id"],
-            "playerName": player["playerName"],
-            "wikidataQid": player["wikidataQid"],
-            "clubWikidataQid": qid,
-            "membershipSource": "https://www.wikidata.org/wiki/" + player["wikidataQid"],
-            "associationType": "past_or_present",  # P54 does not imply 2026 squad
-            **license_data,
-        })
+    if people:
+        photo_map = commons_info([r["image"] for r in people])
+        for player in people:
+            key = commons_file_name(player["image"])
+            license_data = photo_map.get(key.casefold()) if key else None
+            if not license_data or player["wikidataQid"] in seen:
+                continue
+            seen.add(player["wikidataQid"])
+            results.append({
+                "clubId": team["id"],
+                "playerName": player["playerName"],
+                "wikidataQid": player["wikidataQid"],
+                "clubWikidataQid": qid,
+                "membershipSource": "https://www.wikidata.org/wiki/" + player["wikidataQid"],
+                "associationType": "past_or_present",
+                **license_data,
+            })
+
+    if len(results) < TARGET_MINIMUM:
+        # Try official team-player category linked from Wikidata P6112.
+        # This is explicitly marked as Wikipedia-category evidence rather
+        # than falsely claiming the person has a P54 statement.
+        try:
+            additional, source = category_players(qid)
+            additional = [p for p in additional if p["wikidataQid"] not in seen]
+            extras = commons_info([p["image"] for p in additional]) if additional else {}
+            for person in additional:
+                filename = commons_file_name(person["image"])
+                photo = extras.get(filename.casefold()) if filename else None
+                if not photo or person["wikidataQid"] in seen:
+                    continue
+                seen.add(person["wikidataQid"])
+                results.append({
+                    "clubId": team["id"],
+                    "playerName": person["playerName"],
+                    "wikidataQid": person["wikidataQid"],
+                    "clubWikidataQid": qid,
+                    "membershipSource": source,
+                    "associationType": person["associationType"],
+                    **photo,
+                })
+        except Exception as exc:
+            # Category fallback is optional. Keep all validated P54 photos.
+            print("Category fallback unavailable for", team["id"], str(exc)[:120])
+
     return sorted(results, key=lambda r: r["playerName"].casefold())[:30]
 
 
