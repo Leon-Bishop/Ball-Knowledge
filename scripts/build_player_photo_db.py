@@ -430,15 +430,25 @@ def run(max_clubs, since=None):
                 continue
             players = process_club(club, qid)
             previous = records.get(club_id, {}).get("players", [])
-            # A temporary Wikidata/Commons outage should not erase a previously
-            # verified licensed roster. Refresh only with equal/better coverage.
-            if len(players) >= len(previous):
+            # Photo sources complement one another across imports. Merge by
+            # verified Wikidata player ID rather than discarding fresh sources
+            # when a transient query returns fewer than the previous batch.
+            # Exclude records belonging to an earlier (incorrect) club mapping.
+            combined = {}
+            for person in previous + players:
+                if (person.get("clubId") != club_id or
+                    person.get("clubWikidataQid") != qid or
+                    not person.get("wikidataQid") or
+                    not all(person.get(k) for k in
+                            ("photoUrl", "sourceUrl", "license", "author", "membershipSource"))):
+                    continue
+                combined[person["wikidataQid"]] = person
+            players = sorted(combined.values(), key=lambda p: p["playerName"].casefold())[:30]
+            if players:
                 records[club_id] = {
                     "clubName": name, "clubWikidataQid": qid, "players": players,
-                    "source": "Wikidata team membership + Wikimedia Commons metadata"
+                    "source": "Wikidata team membership + Wikipedia player categories + Commons metadata"
                 }
-            else:
-                players = previous
             count = len(players)
             state = ("ready_10" if count >= TARGET_MINIMUM else
                      "ready_7" if count >= FALLBACK_MINIMUM else "needs_more_licensed_photos")
