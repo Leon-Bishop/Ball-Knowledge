@@ -7,6 +7,15 @@ const root=()=>String(window.BK_LEADERBOARD_API||'').trim().replace(/\/$/,'');
 const node=id=>document.getElementById(id);
 const words=(key,args={})=>{try{return tr(key,args)}catch{return key}};
 const tokenKey='bk-anonymous-player-token';
+/* Older Workers reported Fenerbahçe for everybody, even if they had
+   never chosen a crest. Treat those legacy values as unselected. */
+const selectedClub=p=>{
+ if(!p)return null;
+ if(p.avatarSelected===false)return null;
+ if(p.avatarSelected===undefined&&p.avatarTeamId==='turkey-super-lig:6')return null;
+ return p.avatarTeamId||null;
+};
+
 
 let profile=null,busy=false,profileLoading=true,profileLoadError='',nameDraft='';
 
@@ -288,7 +297,7 @@ function describeProfile(){
  identity.className='player-identity';
  const avatarEl=document.createElement('span');
  avatarEl.className='player-profile-avatar';
- window.BKAvatars?.apply(avatarEl,profile.username,profile.avatarTeamId);
+ window.BKAvatars?.apply(avatarEl,profile.username,selectedClub(profile));
  identity.textContent=
   flag(profile.country)+' '+profile.username+' · '+
   countryLabel(profile.country)+
@@ -313,7 +322,7 @@ function describeHomeProfile(){
  kicker.textContent=words('homePlayerKicker');
  card.dataset.state=profile?'active':'new';
  avatar.textContent=profile?flag(profile.country):'⚽';
- window.BKAvatars?.apply(avatar,profile?.username||'',profile?.avatarTeamId);
+ window.BKAvatars?.apply(avatar,profile?.username||'',selectedClub(profile));
 
  const description=document.createElement('p');
  description.className='home-player-description';
@@ -374,7 +383,7 @@ function describeHomeProfile(){
 }
 
 function renderProfiles(){
- window.BKAvatars?.setProfile(profile?.username||'',profile?.avatarTeamId);
+ window.BKAvatars?.setProfile(profile?.username||'',selectedClub(profile));
  describeProfile();
  describeHomeProfile();
  window.BKPlayerCard?.setProfile(profile && profile.username ? profile.username : '');
@@ -446,7 +455,7 @@ async function loadRanks(){
    const playerCell=document.createElement('td');
    const avatarEl=document.createElement('span');
    avatarEl.className='leaderboard-avatar';
-   window.BKAvatars?.apply(avatarEl,player.username,player.avatarTeamId);
+   window.BKAvatars?.apply(avatarEl,player.username,selectedClub(player));
    const label=document.createElement('span');
    label.textContent=flag(player.country)+' '+player.username;
    playerCell.append(avatarEl,label);
@@ -479,7 +488,7 @@ async function loadHomeRanks(){
      const row=document.createElement('li');row.className='broadcast-rank-row';
      const rank=document.createElement('span');rank.className='broadcast-rank-number';rank.textContent=String(player.rank);
      const name=document.createElement('span');name.className='broadcast-rank-name';
-     const avatarEl=document.createElement('span');avatarEl.className='leaderboard-avatar';window.BKAvatars?.apply(avatarEl,player.username,player.avatarTeamId);
+     const avatarEl=document.createElement('span');avatarEl.className='leaderboard-avatar';window.BKAvatars?.apply(avatarEl,player.username,selectedClub(player));
      const label=document.createElement('span');label.textContent=String(player.username);
      name.append(avatarEl,label);
      const score=document.createElement('strong');score.className='broadcast-rank-score';score.textContent=Number(player.bkPoints||0).toLocaleString()+' BK';
