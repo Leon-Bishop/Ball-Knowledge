@@ -19,3 +19,17 @@ jobs:
         run: npm test
       - name: Parse Worker module
         run: node --input-type=module --check < leaderboard-worker/src/index.js
+      - name: Validate Wikimedia player-photo importer
+        run: |
+          python -m py_compile scripts/build_player_photo_db.py
+          python - <<'PY'
+          import importlib.util
+          spec = importlib.util.spec_from_file_location("player_photos", "scripts/build_player_photo_db.py")
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          assert module.license_is_usable("CC BY-SA 4.0")
+          assert module.license_is_usable("CC BY 3.0")
+          assert not module.license_is_usable("CC BY-NC 4.0")
+          assert not module.license_is_usable("CC BY-ND 4.0")
+          assert module.commons_file_name("https://commons.wikimedia.org/wiki/Special:FilePath/Player.jpg") == "Player.jpg"
+          PY
