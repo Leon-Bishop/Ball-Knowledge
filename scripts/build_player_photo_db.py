@@ -87,7 +87,7 @@ def memberships(qid):
     rows = []
     for item in data.get("results", {}).get("bindings", []):
         url = item["player"]["value"]
-        m = re.search(r"/(Q\\d+)$", url)
+        m = re.search(r"/(Q\d+)$", url)
         if not m:
             continue
         rows.append({
@@ -119,7 +119,7 @@ def clean_html(value):
 def commons_file_name(url):
     # Wikidata P18 is a Commons file URL such as Special:FilePath/Name.jpg
     name = urllib.parse.unquote(url.split("/")[-1]).replace("_", " ")
-    if not re.search(r"\\.(png|jpe?g|webp)$", name, re.I):
+    if not re.search(r"\.(png|jpe?g|webp)$", name, re.I):
         return None
     return name
 
