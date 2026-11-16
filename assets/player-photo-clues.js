@@ -4,7 +4,7 @@
 'use strict';
 const MINIMUM=10;
 let database={clubs:{}};
-function getPlayer(clubId){
+function getPlayer(clubId,roundSeed=''){
  const list=database.clubs?.[clubId]?.players;
  if(!Array.isArray(list)||list.length<MINIMUM)return null;
  const valid=list.filter(p=>p?.photoUrl&&p?.sourceUrl&&p?.license&&p?.author&&p?.playerName&&p?.clubId===clubId);
@@ -12,7 +12,7 @@ function getPlayer(clubId){
  // Stable selection for the duration of a quiz question; avoid unstable UI when
  // multiple clues are re-rendered after a guess.
  let hash=2166136261;
- for(const ch of String(clubId)){hash^=ch.codePointAt(0);hash=Math.imul(hash,16777619)}
+ for(const ch of String(clubId)+'|'+String(roundSeed)){hash^=ch.codePointAt(0);hash=Math.imul(hash,16777619)}
  return valid[(hash>>>0)%valid.length];
 }
 window.BKPlayerPhotos={getPlayer,ready:null};
