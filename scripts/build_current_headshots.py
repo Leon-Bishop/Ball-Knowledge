@@ -529,44 +529,47 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET, roster_
             if not name:
                 continue
             search_attempts += 1
-            # First prefer files in the individual's Wikidata-linked
-            # Commons category, then exact P180 "depicts" matches.
-            files = commons_person_category_files(entity, name)
-            identity_method = "commons_named_person_category"
-            if not files:
-                files = commons_depicts_files(player_qid, name)
-                identity_method = "commons_structured_depicts"
-            if not files:
-                continue
-            extra_meta = commons_metadata(files)
-            for filename in files:
-                info = extra_meta.get(filename.casefold())
-                if not info:
+            # If a named gallery has no usable face, ALSO inspect structured
+            # P180 images; never stop at the first category's bad photos.
+            found = False
+            for identity_method, files in (
+                ("commons_named_person_category", commons_person_category_files(entity, name)),
+                ("commons_structured_depicts", commons_depicts_files(player_qid, name)),
+            ):
+                if not files:
                     continue
-                try:
-                    cropped = crop_face(fetch(info["photoUrl"], attempts=2))
-                except Exception:
-                    continue
-                if not cropped:
-                    continue
-                safe = re.sub(r"[^a-z0-9-]", "-", club_id.lower().replace(":", "-"))
-                relative = f"./assets/player-headshots/{safe}--{player_qid}.jpg"
-                HEADSHOTS.mkdir(parents=True, exist_ok=True)
-                (HEADSHOTS / f"{safe}--{player_qid}.jpg").write_bytes(cropped)
-                photos.append({
-                    "clubId": club_id, "playerName": name, "wikidataQid": player_qid,
-                    "clubWikidataQid": qid, "photoUrl": relative,
-                    "sourceUrl": info["sourceUrl"], "license": info["license"],
-                    "licenseUrl": info.get("licenseUrl", ""), "author": info["author"],
-                    "membershipSource": roster_url,
-                    "membershipSection": heading if heading in CURRENT_SECTIONS else "current squad",
-                    "membershipHeading": heading,
-                    "verifiedCurrent": False, "faceCrop": True,
-            "faceQualityVerified": True, "modified": True,
-                    "associationType": "current_squad_wikipedia_and_" + identity_method
-                })
-                selected.add(player_qid)
-                break
+                extra_meta = commons_metadata(files)
+                for filename in files:
+                    info = extra_meta.get(filename.casefold())
+                    if not info:
+                        continue
+                    try:
+                        cropped = crop_face(fetch(info["photoUrl"], attempts=2))
+                    except Exception:
+                        continue
+                    if not cropped:
+                        continue
+                    safe = re.sub(r"[^a-z0-9-]", "-", club_id.lower().replace(":", "-"))
+                    relative = f"./assets/player-headshots/{safe}--{player_qid}.jpg"
+                    HEADSHOTS.mkdir(parents=True, exist_ok=True)
+                    (HEADSHOTS / f"{safe}--{player_qid}.jpg").write_bytes(cropped)
+                    photos.append({
+                        "clubId": club_id, "playerName": name, "wikidataQid": player_qid,
+                        "clubWikidataQid": qid, "photoUrl": relative,
+                        "sourceUrl": info["sourceUrl"], "license": info["license"],
+                        "licenseUrl": info.get("licenseUrl", ""), "author": info["author"],
+                        "membershipSource": roster_url,
+                        "membershipSection": heading if heading in CURRENT_SECTIONS else "current squad",
+                        "membershipHeading": heading,
+                        "verifiedCurrent": False, "faceCrop": True,
+                        "faceQualityVerified": True, "modified": True,
+                        "associationType": "current_squad_wikipedia_and_" + identity_method
+                    })
+                    selected.add(player_qid)
+                    found = True
+                    break
+                if found:
+                    break
     return photos, len(titles), len(candidates), set(qids)
 
 
