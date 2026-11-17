@@ -9,6 +9,14 @@ const db=JSON.parse(fs.readFileSync(new URL('../assets/player-headshot-db.json',
 assert.equal(db.version,2);
 const official=JSON.parse(fs.readFileSync(new URL('../photo-db/official-roster-evidence.json',import.meta.url),'utf8'));
 const clubMap=JSON.parse(fs.readFileSync(new URL('../photo-db/club-wikidata-map.json',import.meta.url),'utf8')).clubs;
+for(const [clubId,expected] of Object.entries({
+ 'scotland-premiership:4':['Q65684173','Q137864483','Q28045315','Q140364405'],
+ 'turkey-super-lig:14':['Q38085271','Q16730286','Q17476763','Q28086083']
+})){
+ const c=official.officialClubs[clubId];
+ assert(c?.source?.startsWith('https://'),'Evidence must cite an official current squad page');
+ for(const qid of expected)assert(c.players[qid],'Club membership must match the correct footballer '+qid);
+}
 const qidOwners=new Map();
 for(const [clubId,club] of Object.entries(db.clubs)){
  assert.equal(club.clubWikidataQid,clubMap[clubId],'Club must match canonical game-to-Wikidata mapping');
