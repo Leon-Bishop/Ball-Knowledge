@@ -324,6 +324,7 @@
           "author": "Carlo Bruil Fotografie",
           "membershipSource": "https://en.wikipedia.org/wiki/SK_Beveren",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -341,6 +342,7 @@
           "author": "S. Plaine",
           "membershipSource": "https://en.wikipedia.org/wiki/SK_Beveren",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -358,6 +360,7 @@
           "author": "Богдан Заяц",
           "membershipSource": "https://en.wikipedia.org/wiki/SK_Beveren",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -365,7 +368,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SK_Beveren",
-      "checkedAt": "2026-11-17T09:04:05.212023+00:00"
+      "checkedAt": "2026-11-17T09:23:22.495320+00:00"
     },
     "belgian-pro-league:6": {
       "clubName": "KAA Gent",
@@ -459,6 +462,7 @@
           "author": "Станислав Ведмидь",
           "membershipSource": "https://en.wikipedia.org/wiki/KV_Kortrijk",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -476,6 +480,7 @@
           "author": "Paté kroute",
           "membershipSource": "https://en.wikipedia.org/wiki/KV_Kortrijk",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -493,6 +498,25 @@
           "author": "Jens Backeman",
           "membershipSource": "https://en.wikipedia.org/wiki/KV_Kortrijk",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "belgian-pro-league:7",
+          "playerName": "João Silva",
+          "wikidataQid": "Q106039534",
+          "clubWikidataQid": "Q618620",
+          "photoUrl": "./assets/player-headshots/belgian-pro-league-7--Q106039534.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:FC_Salzburg_gegen_Sporting_Lissabon_(UEFA_Youth_League_Play_off,_7._Februar_2018)_09.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Werner100359",
+          "membershipSource": "https://nl.wikipedia.org/wiki/KV_Kortrijk",
+          "membershipSection": "current squad",
+          "membershipHeading": "selectie 2024/25",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -500,7 +524,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/KV_Kortrijk",
-      "checkedAt": "2026-11-17T09:04:18.247680+00:00"
+      "checkedAt": "2026-11-17T09:23:36.598038+00:00"
     },
     "belgian-pro-league:8": {
       "clubName": "KV Mechelen",
@@ -670,6 +694,7 @@
           "author": "jamesboyes",
           "membershipSource": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
           "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -687,6 +712,7 @@
           "author": "Pierre.berendes",
           "membershipSource": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
           "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -704,6 +730,7 @@
           "author": "Wackotaku",
           "membershipSource": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
           "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -711,7 +738,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
-      "checkedAt": "2026-11-17T09:04:26.137064+00:00"
+      "checkedAt": "2026-11-17T09:23:53.612379+00:00"
     },
     "belgian-pro-league:11": {
       "clubName": "Racing Genk",
@@ -1185,6 +1212,7 @@
           "author": "YantsImages",
           "membershipSource": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -1202,6 +1230,7 @@
           "author": "Carolus requiescat",
           "membershipSource": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -1219,6 +1248,7 @@
           "author": "Photographe : Abdelali Bentarki ( Ali Graphy Pic ) ; recadrage : A.Nawfel",
           "membershipSource": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -1226,7 +1256,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re",
-      "checkedAt": "2026-11-17T09:04:45.338021+00:00"
+      "checkedAt": "2026-11-17T09:24:11.484089+00:00"
     },
     "belgian-pro-league:18": {
       "clubName": "Zulte-Waregem",
@@ -7255,6 +7285,7 @@
           "author": "Uviein",
           "membershipSource": "https://en.wikipedia.org/wiki/A.E._Kifisia_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7272,6 +7303,7 @@
           "author": "Bryan Berlin",
           "membershipSource": "https://en.wikipedia.org/wiki/A.E._Kifisia_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7289,6 +7321,7 @@
           "author": "Roetjhon",
           "membershipSource": "https://en.wikipedia.org/wiki/A.E._Kifisia_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7296,14 +7329,14 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/A.E._Kifisia_F.C.",
-      "checkedAt": "2026-11-17T09:09:29.314655+00:00"
+      "checkedAt": "2026-11-17T09:24:34.208433+00:00"
     },
     "greece-super-league:6": {
       "clubName": "Iraklis",
       "clubWikidataQid": "Q592241",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Iraklis_F.C._(Thessaloniki)",
-      "checkedAt": "2026-11-17T09:09:33.250011+00:00"
+      "checkedAt": "2026-11-17T09:24:43.422438+00:00"
     },
     "greece-super-league:7": {
       "clubName": "OFI Crete",
@@ -7321,6 +7354,7 @@
           "author": "Rapallo80",
           "membershipSource": "https://en.wikipedia.org/wiki/OFI_Crete_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7338,6 +7372,7 @@
           "author": "Gaillac",
           "membershipSource": "https://en.wikipedia.org/wiki/OFI_Crete_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7355,6 +7390,7 @@
           "author": "Victor van Werkhooven",
           "membershipSource": "https://en.wikipedia.org/wiki/OFI_Crete_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7362,7 +7398,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/OFI_Crete_F.C.",
-      "checkedAt": "2026-11-17T09:09:44.289374+00:00"
+      "checkedAt": "2026-11-17T09:24:54.561756+00:00"
     },
     "greece-super-league:8": {
       "clubName": "Olympiacos",
@@ -7684,6 +7720,7 @@
           "author": "Biser Todorov",
           "membershipSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7701,6 +7738,7 @@
           "author": "Антон Зайцев",
           "membershipSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7718,6 +7756,7 @@
           "author": "Silesia711",
           "membershipSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -7725,7 +7764,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
-      "checkedAt": "2026-11-17T09:09:59.827625+00:00"
+      "checkedAt": "2026-11-17T09:25:05.361414+00:00"
     },
     "greece-super-league:13": {
       "clubName": "Levadiakos",
@@ -10935,6 +10974,7 @@
           "author": "Supporterhéninois",
           "membershipSource": "https://en.wikipedia.org/wiki/Acad%C3%A9mico_de_Viseu_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -10942,7 +10982,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Acad%C3%A9mico_de_Viseu_F.C.",
-      "checkedAt": "2026-11-17T09:12:34.288424+00:00"
+      "checkedAt": "2026-11-17T09:25:14.706184+00:00"
     },
     "portugal-liga-portugal:4": {
       "clubName": "Braga",
@@ -11036,6 +11076,7 @@
           "author": "Sport Lisboa e Benfica",
           "membershipSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11053,6 +11094,7 @@
           "author": "Supporterhéninois",
           "membershipSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11070,6 +11112,7 @@
           "author": "JuanJoséLP from Alajuela, Costa Rica",
           "membershipSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11077,7 +11120,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
-      "checkedAt": "2026-11-17T09:12:40.094382+00:00"
+      "checkedAt": "2026-11-17T09:25:26.242092+00:00"
     },
     "portugal-liga-portugal:6": {
       "clubName": "Estoril",
@@ -11247,6 +11290,7 @@
           "author": "SOCCER DIGITAL",
           "membershipSource": "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11264,6 +11308,7 @@
           "author": "Steindy ( talk ) 23:00, 30 March 2017 (UTC)",
           "membershipSource": "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11271,7 +11316,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o",
-      "checkedAt": "2026-11-17T09:12:49.645565+00:00"
+      "checkedAt": "2026-11-17T09:25:36.891876+00:00"
     },
     "portugal-liga-portugal:9": {
       "clubName": "FC Porto",
@@ -11365,6 +11410,7 @@
           "author": "Carlo Bruil Fotografie",
           "membershipSource": "https://en.wikipedia.org/wiki/C.S._Mar%C3%ADtimo",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11382,6 +11428,7 @@
           "author": "Sandro Halank, Wikimedia Commons",
           "membershipSource": "https://en.wikipedia.org/wiki/C.S._Mar%C3%ADtimo",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11389,7 +11436,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/C.S._Mar%C3%ADtimo",
-      "checkedAt": "2026-11-17T09:12:55.858987+00:00"
+      "checkedAt": "2026-11-17T09:25:45.606145+00:00"
     },
     "portugal-liga-portugal:11": {
       "clubName": "Gil Vicente",
@@ -11407,6 +11454,7 @@
           "author": "SOCCER DIGITAL",
           "membershipSource": "https://en.wikipedia.org/wiki/Gil_Vicente_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11414,7 +11462,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Gil_Vicente_F.C.",
-      "checkedAt": "2026-11-17T09:13:02.252146+00:00"
+      "checkedAt": "2026-11-17T09:25:56.604034+00:00"
     },
     "portugal-liga-portugal:12": {
       "clubName": "Vitória Guimarães",
@@ -11432,6 +11480,7 @@
           "author": "Paul Vaurie",
           "membershipSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11449,6 +11498,7 @@
           "author": "Steindy ( talk ) 10:39, 30 June 2017 (UTC)",
           "membershipSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11466,6 +11516,7 @@
           "author": "Samsunspor",
           "membershipSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11473,7 +11524,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
-      "checkedAt": "2026-11-17T09:13:08.248011+00:00"
+      "checkedAt": "2026-11-17T09:26:06.720150+00:00"
     },
     "portugal-liga-portugal:13": {
       "clubName": "Moreirense",
@@ -11491,6 +11542,7 @@
           "author": "jamesboyes",
           "membershipSource": "https://en.wikipedia.org/wiki/Moreirense_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11498,7 +11550,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Moreirense_F.C.",
-      "checkedAt": "2026-11-17T09:13:12.597894+00:00"
+      "checkedAt": "2026-11-17T09:26:17.004323+00:00"
     },
     "portugal-liga-portugal:14": {
       "clubName": "C.D. Nacional",
@@ -11592,6 +11644,7 @@
           "author": "Fcstmani",
           "membershipSource": "https://en.wikipedia.org/wiki/Rio_Ave_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11609,6 +11662,7 @@
           "author": "VVV-Venlo",
           "membershipSource": "https://en.wikipedia.org/wiki/Rio_Ave_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11616,7 +11670,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Rio_Ave_F.C.",
-      "checkedAt": "2026-11-17T09:13:24.013837+00:00"
+      "checkedAt": "2026-11-17T09:26:26.402144+00:00"
     },
     "portugal-liga-portugal:16": {
       "clubName": "Santa Clara",
@@ -11634,6 +11688,7 @@
           "author": "Sven Mandel",
           "membershipSource": "https://en.wikipedia.org/wiki/C.D._Santa_Clara",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11641,7 +11696,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/C.D._Santa_Clara",
-      "checkedAt": "2026-11-17T09:13:27.733947+00:00"
+      "checkedAt": "2026-11-17T09:26:35.999320+00:00"
     },
     "portugal-liga-portugal:17": {
       "clubName": "Sporting CP",
@@ -11735,6 +11790,7 @@
           "author": "Malcon Robert from Salvador,Bahia., Brasil.",
           "membershipSource": "https://en.wikipedia.org/wiki/F.C._Alverca",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11752,6 +11808,7 @@
           "author": "Castroquini-FCB",
           "membershipSource": "https://en.wikipedia.org/wiki/F.C._Alverca",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -11759,7 +11816,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/F.C._Alverca",
-      "checkedAt": "2026-11-17T09:13:33.456241+00:00"
+      "checkedAt": "2026-11-17T09:26:47.834730+00:00"
     },
     "scotland-premiership:1": {
       "clubName": "Aberdeen",
@@ -15497,7 +15554,87 @@
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/%C3%87orum_F.K.",
       "checkedAt": "2026-11-17T09:16:23.251817+00:00"
+    },
+    "england-premier-league:12": {
+      "clubName": "Liverpool",
+      "clubWikidataQid": "Q1130849",
+      "players": [
+        {
+          "clubId": "england-premier-league:12",
+          "playerName": "Kostas Tsimikas",
+          "wikidataQid": "Q22005877",
+          "clubWikidataQid": "Q1130849",
+          "photoUrl": "./assets/player-headshots/england-premier-league-12--Q22005877.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022-07-21_Fu%C3%9Fball,_M%C3%A4nner,Freundschaftsspiel,_RB_Leipzig_-_FC_Liverpool_1DX_2184_by_Stepro.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Steffen Prößdorf",
+          "membershipSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Liverpool_F.C._season",
+          "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "england-premier-league:12",
+          "playerName": "Giorgi Mamardashvili",
+          "wikidataQid": "Q99529077",
+          "clubWikidataQid": "Q1130849",
+          "photoUrl": "./assets/player-headshots/england-premier-league-12--Q99529077.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giorgi_Mamardashvili_04012026_(1).jpg",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "author": "Timmy96",
+          "membershipSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Liverpool_F.C._season",
+          "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "england-premier-league:12",
+          "playerName": "Vítězslav Jaroš",
+          "wikidataQid": "Q112503285",
+          "clubWikidataQid": "Q1130849",
+          "photoUrl": "./assets/player-headshots/england-premier-league-12--Q112503285.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:V%C3%ADt%C4%9Bzslav_Jaro%C5%A1_06042025_(1)_(cropped).jpg",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "author": "Timmy96",
+          "membershipSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Liverpool_F.C._season",
+          "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "england-premier-league:12",
+          "playerName": "Bradley Barcola",
+          "wikidataQid": "Q99670930",
+          "clubWikidataQid": "Q1130849",
+          "photoUrl": "./assets/player-headshots/england-premier-league-12--Q99670930.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bradley_Barcola_France_v_Spain_7.24.26-112_(cropped).jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Bryan Berlin",
+          "membershipSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Liverpool_F.C._season",
+          "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_section"
+        }
+      ],
+      "rosterSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Liverpool_F.C._season",
+      "checkedAt": "2026-11-17T09:24:28.942095+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T09:16:26.483808+00:00"
+  "lastUpdated": "2026-11-17T09:26:57.443340+00:00"
 }
