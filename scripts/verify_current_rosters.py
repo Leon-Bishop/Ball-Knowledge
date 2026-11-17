@@ -307,6 +307,17 @@ def self_test():
     assert current_club_from_wikidata(e,now)==(None,"ambiguous_active_p54")
     e={"claims":{"P54":[stmt("Q1","2027-01-01")]}}
     assert current_club_from_wikidata(e,now)==(None,"no_active_p54")
+    direct = {"clubId":"team:1","playerName":"Current Player",
+              "wikidataQid":"Q333","membershipSource":"https://www.wikidata.org/wiki/Q333",
+              "membershipSection":"wikidata current club"}
+    matching_entities = {"Q333":{"claims":{"P54":[stmt("Q1","2026-07-01")]}}}
+    direct_db = {"clubs":{"team:1":{"players":[direct]}}}
+    direct_rows, _ = verify(direct_db,matching_entities,{},{"team:1":"Q1"},now,{})
+    assert direct_rows[0]["verification"]=="wikidata_current_club"
+    wrong_source = {**direct, "membershipSource":"https://example.org/bad"}
+    wrong_db = {"clubs":{"team:1":{"players":[wrong_source]}}}
+    wrong_rows, _ = verify(wrong_db,matching_entities,{},{"team:1":"Q1"},now,{})
+    assert wrong_rows[0]["verification"]=="invalid_wikidata_provenance"
     assert clean_name("GÖKDENİZ BAYRAKDAR")==clean_name("Gökdeniz Bayrakdar")
     evidence=json.loads(EVIDENCE.read_text(encoding="utf8"))
     assert official_evidence("turkey-super-lig:10","Q98829644",evidence,now)[0]=="official_club_squad"
