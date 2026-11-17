@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T09:30:00Z",
-  "description": "Independent current 2026/27 squad evidence. Official club pages for Galatasaray, Göztepe, Kasımpaşa and Kocaelispor; independently documented loans. Wikipedia-only squad membership does not by itself qualify a player for a photo clue.",
+  "checkedAt": "2026-11-17T13:51:07.216Z",
+  "description": "Current 2026-27 first-team player identities from official club squad pages, match-day teams, and dated club news; Wikipedia-only entries are not accepted independently.",
   "officialClubs": {
     "turkey-super-lig:7": {
       "club": "Galatasaray",
@@ -41,6 +41,113 @@
         "Q26704485": "Dan Agyei",
         "Q53858110": "Manuel Luis Da Silva Cafumana",
         "Q60182084": "Metehan Altunbaş"
+      }
+    },
+    "spain-la-liga:3": {
+      "club": "Athletic Club",
+      "source": "https://www.athletic-club.eus/en/teams/athletic-club/2026-27/squad/",
+      "players": {
+        "Q18608497": "Iñaki Williams",
+        "Q106644525": "Nicolás Serrano",
+        "Q104414736": "Nico Williams"
+      }
+    },
+    "scotland-premiership:9": {
+      "club": "Rangers",
+      "source": "https://www.rangers.co.uk/Article/team-news-gers-side-to-face-falkirk-tonight/xjPOCRUZIHHWOwxM8zFrU",
+      "players": {
+        "Q111994930": "Ross McCausland",
+        "Q131863254": "Findlay Curtis"
+      }
+    },
+    "scotland-premiership:7": {
+      "club": "Dundee United",
+      "source": "https://www.dundeeunitedfc.co.uk/news/9548/United-secure-valuable-point-at-Celtic-Park-to-maintain-unbeaten-run.html",
+      "players": {
+        "Q60733962": "Jack Walton",
+        "Q102276813": "Neil Farrugia"
+      }
+    },
+    "scotland-premiership:3": {
+      "club": "Dundee",
+      "source": "https://dundeefc.co.uk/news/hearts-2-1-dundee-match-report-06-09-2026/",
+      "players": {
+        "Q118470954": "Imari Samuels",
+        "Q131910302": "Joe Westley"
+      }
+    },
+    "scotland-premiership:5": {
+      "club": "Hibernian",
+      "source": "https://www.hibernianfc.co.uk/news/2026/november/11/our-mens-and-academy-2026-2027-squad-photos/",
+      "players": {
+        "Q28748042": "Jordan Smith",
+        "Q113483655": "Azeem Abdulai"
+      }
+    },
+    "scotland-premiership:12": {
+      "club": "St. Mirren",
+      "source": "https://www.stmirren.com/news/team-news-st-mirren-v-rangers-7th-nov",
+      "players": {
+        "Q123308334": "Henry Fieldson",
+        "Q5249348": "Declan John"
+      }
+    },
+    "scotland-premiership:8": {
+      "club": "Motherwell",
+      "source": "https://www.motherwellfc.co.uk/2026/10/15/team-news-for-trip-to-kilmarnock/",
+      "players": {
+        "Q27671198": "Johnny Koutroumbis"
+      }
+    },
+    "scotland-premiership:6": {
+      "club": "Kilmarnock",
+      "source": "https://kilmarnockfc.co.uk/news/international-recognition/",
+      "players": {
+        "Q130472100": "MJ Kamson-Kamara"
+      }
+    },
+    "scotland-premiership:11": {
+      "club": "St. Johnstone",
+      "source": "https://www.perthstjohnstonefc.co.uk/news/article/match-report-st-johnstone-2-1-dundee/",
+      "players": {
+        "Q122032856": "Joel Cotterill"
+      }
+    },
+    "netherlands-eredivisie:3": {
+      "club": "AZ Alkmaar",
+      "source": "https://www.az.nl/inside-az/nieuws/2026/november/liveblog-az-fc-groningen",
+      "players": {
+        "Q124420330": "Mateo Chávez",
+        "Q198068": "Jordy Clasie"
+      }
+    },
+    "netherlands-eredivisie:5": {
+      "club": "Feyenoord Rotterdam",
+      "source": "https://www.feyenoord.com/en/feyenoord-1/squad",
+      "players": {
+        "Q56787914": "Sem Steijn"
+      }
+    },
+    "italy-serie-a:11": {
+      "club": "Lazio",
+      "source": "https://www.sslazio.it/en/team/lazio/squadra",
+      "players": {
+        "Q60676459": "Nuno Tavares",
+        "Q16234793": "Adam Marušić"
+      }
+    },
+    "italy-serie-a:14": {
+      "club": "Napoli",
+      "source": "https://sscnapoli.it/en/stagione/rosa?id=3052",
+      "players": {
+        "Q21622039": "Alex Meret"
+      }
+    },
+    "italy-serie-a:15": {
+      "club": "Parma",
+      "source": "https://www.parmacalcio1913.com/en/main-news/serie-a-enilive-squad-list-parma-bologna/",
+      "players": {
+        "Q116980096": "Benjamin Cremaschi"
       }
     }
   },
