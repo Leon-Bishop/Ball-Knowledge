@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 203,
+  "clubsWithThree": 201,
   "clubsWithFour": 194,
-  "totalCurrentHeadshots": 817,
+  "totalCurrentHeadshots": 810,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -39,7 +39,7 @@
     },
     "belgian-pro-league:5": {
       "clubName": "Waasland-Beveren",
-      "checkedAt": "2026-11-17T09:57:42.937010+00:00",
+      "checkedAt": "2026-11-17T10:08:16.156064+00:00",
       "rosterNames": 26,
       "photoCandidates": 6,
       "sources": [
@@ -106,7 +106,7 @@
     },
     "belgian-pro-league:12": {
       "clubName": "Royal Charleroi SC",
-      "checkedAt": "2026-11-17T09:58:20.199024+00:00",
+      "checkedAt": "2026-11-17T10:08:29.975350+00:00",
       "rosterNames": 36,
       "photoCandidates": 4,
       "sources": [
@@ -153,18 +153,18 @@
     },
     "belgian-pro-league:17": {
       "clubName": "RAAL La Louvière",
-      "checkedAt": "2026-11-17T09:58:35.314128+00:00",
+      "checkedAt": "2026-11-17T10:08:41.821116+00:00",
       "rosterNames": 17,
       "photoCandidates": 6,
       "sources": [
         "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re"
       ],
-      "count": 3,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:18": {
       "clubName": "Zulte-Waregem",
-      "checkedAt": "2026-11-17T09:58:50.628075+00:00",
+      "checkedAt": "2026-11-17T10:08:54.250831+00:00",
       "status": "unverified",
       "count": 0,
       "reason": "No verified current squad: en:No explicit current squad heading on en Wikipedia; en:No explicit current squad heading on en Wikipedia; nl:No explicit current squad heading on nl Wikipedia"
@@ -868,7 +868,7 @@
     },
     "greece-super-league:5": {
       "clubName": "Kifisia",
-      "checkedAt": "2026-11-17T09:58:56.734994+00:00",
+      "checkedAt": "2026-11-17T10:08:58.740106+00:00",
       "rosterNames": 22,
       "photoCandidates": 5,
       "sources": [
@@ -879,7 +879,7 @@
     },
     "greece-super-league:6": {
       "clubName": "Iraklis",
-      "checkedAt": "2026-11-17T09:59:06.871853+00:00",
+      "checkedAt": "2026-11-17T10:09:06.705164+00:00",
       "rosterNames": 26,
       "photoCandidates": 8,
       "sources": [
@@ -945,7 +945,7 @@
     },
     "greece-super-league:12": {
       "clubName": "Kalamata",
-      "checkedAt": "2026-11-17T09:59:29.852468+00:00",
+      "checkedAt": "2026-11-17T10:09:16.106765+00:00",
       "rosterNames": 23,
       "photoCandidates": 4,
       "sources": [
@@ -1419,13 +1419,13 @@
     },
     "portugal-liga-portugal:3": {
       "clubName": "Académico de Viseu",
-      "checkedAt": "2026-11-17T09:59:40.364701+00:00",
+      "checkedAt": "2026-11-17T10:09:24.228254+00:00",
       "rosterNames": 27,
       "photoCandidates": 2,
       "sources": [
         "https://en.wikipedia.org/wiki/Acad%C3%A9mico_de_Viseu_F.C."
       ],
-      "count": 1,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:4": {
@@ -1441,7 +1441,7 @@
     },
     "portugal-liga-portugal:5": {
       "clubName": "Casa Pia",
-      "checkedAt": "2026-11-17T09:59:52.504499+00:00",
+      "checkedAt": "2026-11-17T10:09:34.032981+00:00",
       "rosterNames": 25,
       "photoCandidates": 5,
       "sources": [
@@ -1474,13 +1474,13 @@
     },
     "portugal-liga-portugal:8": {
       "clubName": "FC Famalicão",
-      "checkedAt": "2026-11-17T10:00:04.322352+00:00",
+      "checkedAt": "2026-11-17T10:09:43.318847+00:00",
       "rosterNames": 24,
       "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o"
       ],
-      "count": 2,
+      "count": 1,
       "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:9": {
@@ -1496,7 +1496,7 @@
     },
     "portugal-liga-portugal:10": {
       "clubName": "Marítimo",
-      "checkedAt": "2026-11-17T10:00:14.986805+00:00",
+      "checkedAt": "2026-11-17T10:09:51.704729+00:00",
       "rosterNames": 29,
       "photoCandidates": 5,
       "sources": [
@@ -1507,7 +1507,7 @@
     },
     "portugal-liga-portugal:11": {
       "clubName": "Gil Vicente",
-      "checkedAt": "2026-11-17T10:00:27.139449+00:00",
+      "checkedAt": "2026-11-17T10:10:01.614505+00:00",
       "rosterNames": 25,
       "photoCandidates": 2,
       "sources": [
@@ -1518,24 +1518,24 @@
     },
     "portugal-liga-portugal:12": {
       "clubName": "Vitória Guimarães",
-      "checkedAt": "2026-11-17T10:00:37.100899+00:00",
+      "checkedAt": "2026-11-17T10:10:09.685005+00:00",
       "rosterNames": 28,
       "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C."
       ],
-      "count": 3,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:13": {
       "clubName": "Moreirense",
-      "checkedAt": "2026-11-17T10:00:48.570062+00:00",
+      "checkedAt": "2026-11-17T10:10:19.217169+00:00",
       "rosterNames": 22,
       "photoCandidates": 1,
       "sources": [
         "https://en.wikipedia.org/wiki/Moreirense_F.C."
       ],
-      "count": 1,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:14": {
@@ -1551,7 +1551,7 @@
     },
     "portugal-liga-portugal:15": {
       "clubName": "Rio Ave",
-      "checkedAt": "2026-11-17T10:00:58.149255+00:00",
+      "checkedAt": "2026-11-17T10:10:26.696105+00:00",
       "rosterNames": 28,
       "photoCandidates": 6,
       "sources": [
@@ -1562,13 +1562,13 @@
     },
     "portugal-liga-portugal:16": {
       "clubName": "Santa Clara",
-      "checkedAt": "2026-11-17T10:01:10.172128+00:00",
+      "checkedAt": "2026-11-17T10:10:35.986405+00:00",
       "rosterNames": 21,
       "photoCandidates": 2,
       "sources": [
         "https://en.wikipedia.org/wiki/C.D._Santa_Clara"
       ],
-      "count": 1,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:17": {
@@ -1584,7 +1584,7 @@
     },
     "portugal-liga-portugal:18": {
       "clubName": "Alverca",
-      "checkedAt": "2026-11-17T10:01:22.213378+00:00",
+      "checkedAt": "2026-11-17T10:10:46.095635+00:00",
       "rosterNames": 28,
       "photoCandidates": 5,
       "sources": [
@@ -1694,7 +1694,7 @@
     },
     "scotland-premiership:10": {
       "clubName": "Falkirk",
-      "checkedAt": "2026-11-17T10:01:33.608652+00:00",
+      "checkedAt": "2026-11-17T10:10:54.930956+00:00",
       "rosterNames": 27,
       "photoCandidates": 4,
       "sources": [
@@ -1826,7 +1826,7 @@
     },
     "spain-la-liga:10": {
       "clubName": "Levante",
-      "checkedAt": "2026-11-17T10:01:52.312457+00:00",
+      "checkedAt": "2026-11-17T10:11:03.345793+00:00",
       "rosterNames": 50,
       "photoCandidates": 12,
       "sources": [
@@ -1838,7 +1838,7 @@
     },
     "spain-la-liga:11": {
       "clubName": "Málaga",
-      "checkedAt": "2026-11-17T10:02:21.047154+00:00",
+      "checkedAt": "2026-11-17T10:11:24.977003+00:00",
       "rosterNames": 47,
       "photoCandidates": 9,
       "sources": [
@@ -1846,7 +1846,7 @@
         "https://en.wikipedia.org/wiki/2026%E2%80%9327_M%C3%A1laga_CF_season",
         "https://es.wikipedia.org/wiki/M%C3%A1laga_Club_de_F%C3%BAtbol"
       ],
-      "count": 2,
+      "count": 1,
       "status": "insufficient_licensed_face_crops"
     },
     "spain-la-liga:12": {
@@ -2147,5 +2147,5 @@
       "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T10:02:52.863174+00:00"
+  "lastUpdated": "2026-11-17T10:11:50.376171+00:00"
 }
