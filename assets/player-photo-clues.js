@@ -53,6 +53,7 @@ function availablePlayers(clubId){
      !Number.isFinite(verifiedAt)||Date.now()-verifiedAt>MAX_ROSTER_AGE_MS||
      !p.secondaryRosterSource?.startsWith('https://')||
      p.verifiedCurrent!==true||p.faceCrop!==true||
+     p.faceQualityVerified!==true||
      p.photoUrl!==expectedPhoto||
      !p.sourceUrl?.startsWith('https://commons.wikimedia.org/')||
      !p.membershipSource?.startsWith('https://')||
