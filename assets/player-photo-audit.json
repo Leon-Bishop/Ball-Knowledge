@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-17T00:18:46.370320+00:00",
+  "lastUpdated": "2026-11-17T00:22:21.166503+00:00",
   "totalClubs": 214,
-  "completeClubs": 186,
-  "playersWithLicensedPhotos": 5455,
+  "completeClubs": 198,
+  "playersWithLicensedPhotos": 5803,
   "notes": "Build with scripts/build_player_photo_db.py. Never use unsupported images or invent player links.",
   "clubs": {
     "belgian-pro-league:1": {
@@ -557,28 +557,24 @@
       "lastAttempt": "2026-11-17T00:18:46.370320+00:00"
     },
     "italy-serie-a:2": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "italy-serie-a:20": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "italy-serie-a:3": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "italy-serie-a:4": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "italy-serie-a:5": {
       "status": "ready_10",
@@ -586,10 +582,9 @@
       "lastAttempt": "2026-11-16T23:10:17.969709+00:00"
     },
     "italy-serie-a:6": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "italy-serie-a:7": {
       "status": "ready_10",
@@ -597,16 +592,14 @@
       "lastAttempt": "2026-11-16T23:10:17.969709+00:00"
     },
     "italy-serie-a:8": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "italy-serie-a:9": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "netherlands-eredivisie:1": {
       "status": "ready_10",
@@ -624,10 +617,9 @@
       "lastAttempt": "2026-11-16T23:10:17.969709+00:00"
     },
     "netherlands-eredivisie:12": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "netherlands-eredivisie:13": {
       "status": "ready_10",
@@ -635,10 +627,9 @@
       "lastAttempt": "2026-11-16T23:10:17.969709+00:00"
     },
     "netherlands-eredivisie:14": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "netherlands-eredivisie:15": {
       "status": "ready_10",
@@ -656,10 +647,9 @@
       "lastAttempt": "2026-11-16T23:10:17.969709+00:00"
     },
     "netherlands-eredivisie:18": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "netherlands-eredivisie:2": {
       "status": "ready_10",
@@ -702,15 +692,9 @@
       "lastAttempt": "2026-11-16T23:10:17.969709+00:00"
     },
     "portugal-liga-portugal:1": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00",
-      "message": "No uniquely identified Wikidata football club"
-    },
-    "portugal-liga-portugal:10": {
-      "status": "needs_more_licensed_photos",
-      "count": 0,
-      "lastAttempt": "2026-11-16T23:10:17.969709+00:00"
+      "status": "ready_10",
+      "count": 18,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     },
     "portugal-liga-portugal:11": {
       "status": "unmatched_club",
@@ -1101,8 +1085,13 @@
       "status": "ready_10",
       "count": 30,
       "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
+    },
+    "portugal-liga-portugal:10": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:22:21.166503+00:00"
     }
   },
-  "completeClubs10": 184,
-  "completeClubs7": 186
+  "completeClubs10": 196,
+  "completeClubs7": 198
 }
