@@ -66,7 +66,7 @@ Promise.all([
  const playable=clubs.filter(club=>club.players.length>=1);
  const count=playable.reduce((n,club)=>n+club.players.length,0);
  const complete4=playable.filter(club=>club.players.length>=4).length;
- const complete3=playable.length;
+ const complete3=playable.filter(club=>club.players.length>=3).length;
  document.getElementById('coverage').textContent=count+' reusable current-player portraits · '+playable.length+' clubs with at least one · '+complete3+' clubs with 3 or more · '+complete4+' clubs with 4. Current-club evidence and photographer licences are linked below.';
  const seen=new Set();
  for(const club of playable){
