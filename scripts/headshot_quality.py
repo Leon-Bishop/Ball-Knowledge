@@ -112,6 +112,70 @@ def audit(apply=False):
     return output
 
 
+
+def audit_every_stored_photo():
+    """Read and inspect EVERY stored player-photo asset, including orphaned files.
+
+    The active database may reference only a subset of the JPEGs left behind
+    by past imports. Reject missing/corrupt/unsafe *approved* portraits; report
+    but don't deploy orphaned assets (the quiz cannot reference them).
+    """
+    import cv2
+    import numpy as np
+
+    db = json.loads(DATABASE.read_text(encoding="utf8"))
+    entries = {}
+    errors = []
+    for club_id, club in db["clubs"].items():
+        for player in club.get("players", []):
+            expected = club_id.replace(":", "-") + "--" + player["wikidataQid"] + ".jpg"
+            filename = Path(player.get("photoUrl", "")).name
+            if filename != expected or filename in entries:
+                errors.append("Incorrect/duplicate headshot mapping: " + club_id + "/" + expected)
+            entries[filename] = player
+    assets = sorted(p for p in HEADSHOTS.iterdir()
+                    if p.is_file() and p.suffix.lower() in {".jpg", ".jpeg", ".png", ".webp"})
+    seen = set()
+    face_count = 0
+    approved = 0
+    orphans = 0
+    invalid_geometry = 0
+    for asset in assets:
+        seen.add(asset.name)
+        raw = asset.read_bytes()
+        photo = cv2.imdecode(np.frombuffer(raw, dtype=np.uint8), cv2.IMREAD_COLOR)
+        dimensions_ok = photo is not None and tuple(photo.shape[:2]) == (192, 192)
+        detected = bool(dimensions_ok and usable_face_crop(raw))
+        face_count += int(detected)
+        if not dimensions_ok:
+            invalid_geometry += 1
+        record = entries.get(asset.name)
+        if record is None:
+            orphans += 1
+            continue
+        if record.get("faceQualityVerified") is True:
+            approved += 1
+            if not detected or record.get("faceCrop") is not True:
+                errors.append("Approved headshot has no complete centered face: " + asset.name)
+    missing = sorted(set(entries) - seen)
+    if missing:
+        errors.append(str(len(missing)) + " catalogued image files are missing: " + ", ".join(missing[:6]))
+    report = {
+        "storedPhotosScanned": len(assets),
+        "cataloguedPhotos": len(entries),
+        "approvedPhotosRevalidated": approved,
+        "photosPassingDetector": face_count,
+        "unreferencedOlderPhotosScanned": orphans,
+        "invalidGeometry": invalid_geometry,
+        "missingCatalogPhotos": len(missing),
+        "unsafeApprovedPhotos": len(errors),
+    }
+    print(json.dumps(report), flush=True)
+    if errors:
+        raise AssertionError("Every-photo audit failed: " + "; ".join(errors[:12]))
+    return report
+
+
 def self_test():
     import cv2
     import numpy as np
@@ -137,8 +201,12 @@ if __name__ == "__main__":
     cli = argparse.ArgumentParser()
     cli.add_argument("--apply", action="store_true")
     cli.add_argument("--self-test", action="store_true")
+    cli.add_argument("--check-all", action="store_true",
+                     help="Exhaustively inspect every stored photo, including unused older files")
     args = cli.parse_args()
     if args.self_test:
         self_test()
+    elif args.check_all:
+        audit_every_stored_photo()
     else:
         audit(args.apply)
