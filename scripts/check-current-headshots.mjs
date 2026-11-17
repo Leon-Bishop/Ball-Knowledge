@@ -21,7 +21,6 @@ for(const [id,club] of Object.entries(db.clubs)){
   assert(p.photoUrl.startsWith('./assets/player-headshots/'));
   assert(p.sourceUrl.startsWith('https://commons.wikimedia.org/'));
   assert(p.membershipSource.startsWith('https://en.wikipedia.org/wiki/'));
-  assert(p.membershipSection!=='players','Generic player list is not proof of current squad');
   assert(p.license&&p.author&&p.wikidataQid&&!seen.has(p.wikidataQid));
   seen.add(p.wikidataQid);
  }
@@ -36,13 +35,15 @@ const player=(n,current=true)=>({
 });
 const mock={version:2,clubs:{
  'team:1':{players:[player(1),player(2),player(3),player(4,false)]},
- 'team:2':{players:[{...player(1),clubId:'team:2'}, {...player(2),clubId:'team:2'}]}
+ 'team:2':{players:[{...player(1),clubId:'team:2'}, {...player(2),clubId:'team:2'}]},
+ 'team:3':{players:[1,2,3,4].map(i=>({...player(i),clubId:'team:3',membershipSection:'players'}))}
 }};
 const window={dispatchEvent(){}};
 vm.runInNewContext(source,{window,fetch:async()=>({ok:true,json:async()=>mock}),Event:class Event{},console});
 await window.BKPlayerPhotos.ready;
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:1').length,3);
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:2').length,0);
+assert.equal(window.BKPlayerPhotos.availablePlayers('team:3').length,0);
 assert.equal(window.BKPlayerPhotos.getPlayer('team:2','seed',0),null);
 const ids=[0,1,2].map(i=>window.BKPlayerPhotos.getPlayer('team:1','seed',i).wikidataQid);
 assert.equal(new Set(ids).size,3,'Different clues must show different players');
