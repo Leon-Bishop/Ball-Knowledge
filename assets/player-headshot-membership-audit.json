@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T17:40:43.119948+00:00",
+  "checkedAt": "2026-11-17T17:46:50.279372+00:00",
   "rule": "Official current squad/loan evidence or matching active Wikidata club; Wikipedia-only records are not independently corroborated; cross-club duplicates excluded",
   "totalClubs": 150,
-  "totalPlayers": 292,
+  "totalPlayers": 293,
   "wikipediaPagesRechecked": 129,
   "wikipediaPagesUnavailable": 0,
-  "uniquePlayers": 292,
+  "uniquePlayers": 293,
   "verifiedClubsWithThree": 17,
-  "verifiedPlayers": 162,
-  "independentlyCorroboratedPlayers": 162,
+  "verifiedPlayers": 163,
+  "independentlyCorroboratedPlayers": 163,
   "wikipediaOnlyPlayers": 128,
   "statuses": {
     "wikipedia_squad_no_p54": 57,
-    "wikidata_current_club": 145,
+    "wikidata_current_club": 146,
     "wikipedia_squad_stale_p54": 71,
     "official_club_squad": 17,
     "recent_conflicting_club": 2
@@ -1735,9 +1735,11 @@
       "verifiedNames": []
     },
     "france-ligue-1:3": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Han-Noah Massengo"
+      ]
     },
     "france-ligue-1:4": {
       "total": 1,
