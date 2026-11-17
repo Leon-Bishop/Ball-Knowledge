@@ -160,6 +160,17 @@ function displayEmojiExplanation(){
   roster.href=photo.membershipSource;roster.target='_blank';roster.rel='noopener noreferrer';
   roster.textContent=lang==='tr'?'Kadro kaynağı':'Squad source';
   panel.append(text,credit,' · ',roster);
+  if(photo.secondaryRosterSource&&photo.secondaryRosterSource!==photo.membershipSource){
+   const evidence=document.createElement('a');
+   evidence.href=photo.secondaryRosterSource;
+   evidence.target='_blank';evidence.rel='noopener noreferrer';
+   evidence.textContent=photo.rosterVerification==='official_club_squad'?
+    (lang==='tr'?'Resmî takım kadrosu':'Official squad'):
+    photo.rosterVerification==='confirmed_current_loan'?
+    (lang==='tr'?'Kiralık transfer doğrulaması':'Loan confirmation'):
+    (lang==='tr'?'Kulüp kaydı':'Club record');
+   panel.append(' · ',evidence);
+  }
  }else{
   panel.textContent=round.emojis[activeEmojiExplanation]+' '+emojiMeaning(activeEmojiExplanation);
  }
