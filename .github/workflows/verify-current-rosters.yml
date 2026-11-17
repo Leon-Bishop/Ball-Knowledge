@@ -29,7 +29,7 @@ jobs:
           python -m py_compile scripts/verify_current_rosters.py
           python scripts/verify_current_rosters.py --self-test
       - name: Validate and correct all player-to-club assignments
-        run: python -u scripts/verify_current_rosters.py --apply
+        run: python -u scripts/verify_current_rosters.py --apply --recheck-wikipedia
       - name: Publish membership audit
         run: |
           git config user.name "ball-knowledge-data-bot"
