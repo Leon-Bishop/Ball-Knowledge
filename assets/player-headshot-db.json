@@ -12518,6 +12518,7 @@
           "author": "SPFL Trust",
           "membershipSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12535,6 +12536,7 @@
           "author": "User:Tanser19",
           "membershipSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12552,6 +12554,7 @@
           "author": "Crowsus",
           "membershipSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12559,7 +12562,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-      "checkedAt": "2026-11-17T09:14:02.888358+00:00"
+      "checkedAt": "2026-11-17T09:27:04.884791+00:00"
     },
     "scotland-premiership:11": {
       "clubName": "St. Johnstone",
@@ -12577,6 +12580,7 @@
           "author": "EchetusXe",
           "membershipSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12594,6 +12598,7 @@
           "author": "Stuartp1213",
           "membershipSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12611,6 +12616,7 @@
           "author": "Bradford City AFC",
           "membershipSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12618,7 +12624,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
-      "checkedAt": "2026-11-17T09:14:05.979730+00:00"
+      "checkedAt": "2026-11-17T09:27:14.596468+00:00"
     },
     "scotland-premiership:12": {
       "clubName": "St. Mirren",
@@ -12636,6 +12642,7 @@
           "author": "@cfcunofficial (Chelsea Debs) London",
           "membershipSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
           "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12653,6 +12660,7 @@
           "author": "Bradford City AFC",
           "membershipSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
           "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12670,6 +12678,7 @@
           "author": "Destructor78052",
           "membershipSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
           "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -12677,7 +12686,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-      "checkedAt": "2026-11-17T09:14:09.099946+00:00"
+      "checkedAt": "2026-11-17T09:27:25.847688+00:00"
     },
     "spain-la-liga:1": {
       "clubName": "Deportivo Alavés",
@@ -13379,6 +13388,7 @@
           "author": "Clément Bucco-Lechat",
           "membershipSource": "https://en.wikipedia.org/wiki/Levante_UD",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -13396,6 +13406,7 @@
           "author": "Supporterhéninois",
           "membershipSource": "https://en.wikipedia.org/wiki/Levante_UD",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -13413,6 +13424,7 @@
           "author": "Werner100359",
           "membershipSource": "https://en.wikipedia.org/wiki/Levante_UD",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -13420,7 +13432,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Levante_UD",
-      "checkedAt": "2026-11-17T09:14:44.265521+00:00"
+      "checkedAt": "2026-11-17T09:27:37.298076+00:00"
     },
     "spain-la-liga:11": {
       "clubName": "Málaga",
@@ -13438,6 +13450,7 @@
           "author": "www.realvalladolid.es",
           "membershipSource": "https://en.wikipedia.org/wiki/M%C3%A1laga_CF",
           "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -13455,6 +13468,7 @@
           "author": "Supporterhéninois",
           "membershipSource": "https://en.wikipedia.org/wiki/M%C3%A1laga_CF",
           "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -13462,7 +13476,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/M%C3%A1laga_CF",
-      "checkedAt": "2026-11-17T09:14:49.177250+00:00"
+      "checkedAt": "2026-11-17T09:27:59.559149+00:00"
     },
     "spain-la-liga:12": {
       "clubName": "CA Osasuna",
@@ -14164,6 +14178,7 @@
           "author": "Rolandhino1",
           "membershipSource": "https://en.wikipedia.org/wiki/Alanyaspor",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -14181,6 +14196,7 @@
           "author": "Explicit",
           "membershipSource": "https://en.wikipedia.org/wiki/Alanyaspor",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -14198,6 +14214,7 @@
           "author": "MONUSCO Photos",
           "membershipSource": "https://en.wikipedia.org/wiki/Alanyaspor",
           "membershipSection": "current squad",
+          "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
@@ -14205,7 +14222,7 @@
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Alanyaspor",
-      "checkedAt": "2026-11-17T09:15:23.893969+00:00"
+      "checkedAt": "2026-11-17T09:28:25.727387+00:00"
     },
     "turkey-super-lig:2": {
       "clubName": "Amed SFK",
@@ -15636,5 +15653,5 @@
       "checkedAt": "2026-11-17T09:24:28.942095+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T09:26:57.443340+00:00"
+  "lastUpdated": "2026-11-17T09:28:37.161391+00:00"
 }

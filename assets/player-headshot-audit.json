@@ -1687,7 +1687,7 @@
     },
     "scotland-premiership:10": {
       "clubName": "Falkirk",
-      "checkedAt": "2026-11-17T09:14:02.888358+00:00",
+      "checkedAt": "2026-11-17T09:27:04.884791+00:00",
       "rosterNames": 27,
       "photoCandidates": 4,
       "sources": [
@@ -1698,7 +1698,7 @@
     },
     "scotland-premiership:11": {
       "clubName": "St. Johnstone",
-      "checkedAt": "2026-11-17T09:14:05.979730+00:00",
+      "checkedAt": "2026-11-17T09:27:14.596468+00:00",
       "rosterNames": 23,
       "photoCandidates": 6,
       "sources": [
@@ -1709,7 +1709,7 @@
     },
     "scotland-premiership:12": {
       "clubName": "St. Mirren",
-      "checkedAt": "2026-11-17T09:14:09.099946+00:00",
+      "checkedAt": "2026-11-17T09:27:25.847688+00:00",
       "rosterNames": 24,
       "photoCandidates": 7,
       "sources": [
@@ -1819,18 +1819,19 @@
     },
     "spain-la-liga:10": {
       "clubName": "Levante",
-      "checkedAt": "2026-11-17T09:14:44.265521+00:00",
-      "rosterNames": 25,
-      "photoCandidates": 6,
+      "checkedAt": "2026-11-17T09:27:37.298076+00:00",
+      "rosterNames": 50,
+      "photoCandidates": 12,
       "sources": [
-        "https://en.wikipedia.org/wiki/Levante_UD"
+        "https://en.wikipedia.org/wiki/Levante_UD",
+        "https://es.wikipedia.org/wiki/Levante_Uni%C3%B3n_Deportiva"
       ],
       "count": 3,
       "status": "ready"
     },
     "spain-la-liga:11": {
       "clubName": "Málaga",
-      "checkedAt": "2026-11-17T09:14:49.177250+00:00",
+      "checkedAt": "2026-11-17T09:27:59.559149+00:00",
       "rosterNames": 47,
       "photoCandidates": 9,
       "sources": [
@@ -1942,7 +1943,7 @@
     },
     "turkey-super-lig:1": {
       "clubName": "Alanyaspor",
-      "checkedAt": "2026-11-17T09:15:23.893969+00:00",
+      "checkedAt": "2026-11-17T09:28:25.727387+00:00",
       "rosterNames": 19,
       "photoCandidates": 8,
       "sources": [
@@ -2139,5 +2140,5 @@
       "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T09:26:57.443340+00:00"
+  "lastUpdated": "2026-11-17T09:28:37.161391+00:00"
 }
