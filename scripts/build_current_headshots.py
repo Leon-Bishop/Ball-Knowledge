@@ -173,27 +173,44 @@ def is_current_heading(heading):
 
 
 def squad_section(wikitext):
-    """Choose the most specific 'Current squad' heading, not former players."""
-    headings = []
-    for match in re.finditer(r"(?m)^\s*(={2,5})\s*([^\n=]+?)\s*\1\s*$", wikitext):
-        heading = re.sub(r"\{\{.*?\}\}|\[\[|\]\]", "", match.group(2)).strip().lower()
-        score = (5 if "current squad" in heading else
-                 4 if "first-team squad" in heading or "first team squad" in heading else
-                 3 if is_current_heading(heading) else
-                 1 if heading in ("players", "spelers", "joueurs", "spieler", "jugadores", "futbolcular") else 0)
-        if score:
-            headings.append((score, match.start(), match.end(), len(match.group(1)), heading))
-    if not headings:
+    """Only the CURRENT first-team squad, never the adjacent loan/youth lists."""
+    matches = list(re.finditer(
+        r"(?m)^\s*(={2,5})\s*([^\n=]+?)\s*\1\s*$", wikitext
+    ))
+    ranked = []
+    for i, match in enumerate(matches):
+        heading = re.sub(r"\{\{.*?\}\}|\[\[|\]\]", "",
+                         match.group(2)).strip().lower()
+        if not is_current_heading(heading):
+            continue
+        score = 5 if heading == "current squad" else (
+            4 if heading in ("first-team squad", "first team squad") else 3
+        )
+        ranked.append((score, i, heading))
+    if not ranked:
         return "", ""
-    headings.sort(key=lambda item: (-item[0], item[1]))
-    _, start, end, level, heading = headings[0]
-    # Stop at the next section of equal or higher hierarchy.
-    next_heading = re.search(r"(?m)^\s*(={2,5})\s*[^\n]+?\s*\1\s*$", wikitext[end:])
-    while next_heading and len(next_heading.group(1)) > level:
-        end += next_heading.end()
-        next_heading = re.search(r"(?m)^\s*(={2,5})\s*[^\n]+?\s*\1\s*$", wikitext[end:])
-    section_end = end + next_heading.start() if next_heading else len(wikitext)
-    return wikitext[headings[0][2]:section_end], heading
+    ranked.sort(key=lambda x: (-x[0], x[1]))
+    _, index, heading = ranked[0]
+    chosen = matches[index]
+    depth = len(chosen.group(1))
+    stop = len(wikitext)
+    # Nested subsections can contain loaned-out or reserve players.
+    # The previous parser incorrectly included these as first-team players.
+    excluded = (
+        "loan", "loanee", "prêt", "pretes", "verliehen", "uitgeleend",
+        "kiralık", "kiralik", "cedidos", "emprest",
+        "former", "previous", "released", "reserve", "academy",
+        "youth", "under-23", "u23", "under-21", "u21",
+        "histor", "transfers", "other players", "outgoing",
+    )
+    for later in matches[index+1:]:
+        level = len(later.group(1))
+        later_heading = re.sub(r"\{\{.*?\}\}|\[\[|\]\]", "",
+                               later.group(2)).strip().lower()
+        if level <= depth or any(term in later_heading for term in excluded):
+            stop = later.start()
+            break
+    return wikitext[chosen.end():stop], heading
 
 
 def squad_titles(section):
@@ -635,6 +652,17 @@ def self_test():
     section, heading = squad_section(sample)
     assert heading == "current squad", heading
     assert squad_titles(section) == ["Current Player", "Other Player", "Third Player"]
+    nested = """== Players ==
+=== Current squad ===
+{{Fs player|name=[[First Team Player]]}}
+==== Out on loan ====
+{{Fs player|name=[[Loaned Player]]}}
+=== Former players ===
+{{Fs player|name=[[Former Player]]}}
+"""
+    squad, heading = squad_section(nested)
+    assert heading == "current squad"
+    assert squad_titles(squad) == ["First Team Player"], squad_titles(squad)
     translated = "=== Selectie ===\n{{Fs player|name=[[Speler Een]]}}\n"
     section, heading = squad_section(translated)
     assert heading == "selectie"
