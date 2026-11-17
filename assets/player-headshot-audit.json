@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 78,
-  "clubsWithFour": 74,
-  "totalCurrentHeadshots": 308,
+  "clubsWithThree": 97,
+  "clubsWithFour": 92,
+  "totalCurrentHeadshots": 383,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -643,7 +643,227 @@
       "photoCandidates": 20,
       "count": 4,
       "status": "ready"
+    },
+    "germany-bundesliga:5": {
+      "clubName": "Borussia Monchengladbach",
+      "checkedAt": "2026-11-17T09:08:36.969110+00:00",
+      "rosterNames": 32,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:6": {
+      "clubName": "Eintracht Frankfurt",
+      "checkedAt": "2026-11-17T09:08:39.830709+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 12,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eintracht_Frankfurt"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:7": {
+      "clubName": "SV Elversberg",
+      "checkedAt": "2026-11-17T09:08:42.854876+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 11,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SV_Elversberg"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:8": {
+      "clubName": "FC Cologne",
+      "checkedAt": "2026-11-17T09:08:45.632941+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/1._FC_K%C3%B6ln"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:9": {
+      "clubName": "FC Mainz",
+      "checkedAt": "2026-11-17T09:08:48.605978+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/1._FSV_Mainz_05"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:10": {
+      "clubName": "Hamburg SV",
+      "checkedAt": "2026-11-17T09:08:50.857762+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 20,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hamburger_SV"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:11": {
+      "clubName": "RB Leipzig",
+      "checkedAt": "2026-11-17T09:08:53.736479+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 20,
+      "sources": [
+        "https://en.wikipedia.org/wiki/RB_Leipzig"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:12": {
+      "clubName": "SC Freiburg",
+      "checkedAt": "2026-11-17T09:08:56.666247+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 14,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SC_Freiburg"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:13": {
+      "clubName": "SC Paderborn 07",
+      "checkedAt": "2026-11-17T09:08:59.663082+00:00",
+      "rosterNames": 32,
+      "photoCandidates": 6,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SC_Paderborn_07"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:14": {
+      "clubName": "TSG Hoffenheim",
+      "checkedAt": "2026-11-17T09:09:02.726598+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 14,
+      "sources": [
+        "https://en.wikipedia.org/wiki/TSG_1899_Hoffenheim"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:15": {
+      "clubName": "VfB Stuttgart",
+      "checkedAt": "2026-11-17T09:09:05.536849+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 19,
+      "sources": [
+        "https://en.wikipedia.org/wiki/VfB_Stuttgart"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:16": {
+      "clubName": "Schalke 04",
+      "checkedAt": "2026-11-17T09:09:08.364178+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 17,
+      "sources": [
+        "https://en.wikipedia.org/wiki/FC_Schalke_04"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:17": {
+      "clubName": "FC Union Berlin",
+      "checkedAt": "2026-11-17T09:09:11.581505+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 20,
+      "sources": [
+        "https://en.wikipedia.org/wiki/1._FC_Union_Berlin"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "germany-bundesliga:18": {
+      "clubName": "Werder Bremen",
+      "checkedAt": "2026-11-17T09:09:14.894373+00:00",
+      "rosterNames": 33,
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SV_Werder_Bremen"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:1": {
+      "clubName": "AEK Athens",
+      "checkedAt": "2026-11-17T09:09:17.660413+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/AEK_Athens_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:2": {
+      "clubName": "Aris",
+      "checkedAt": "2026-11-17T09:09:20.559696+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 20,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aris_Thessaloniki_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:3": {
+      "clubName": "Asteras Tripoli",
+      "checkedAt": "2026-11-17T09:09:23.562419+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 8,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Asteras_Tripolis_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:4": {
+      "clubName": "Atromitos",
+      "checkedAt": "2026-11-17T09:09:26.567586+00:00",
+      "rosterNames": 20,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Atromitos_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:5": {
+      "clubName": "Kifisia",
+      "checkedAt": "2026-11-17T09:09:29.314655+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 5,
+      "sources": [
+        "https://en.wikipedia.org/wiki/A.E._Kifisia_F.C."
+      ],
+      "count": 3,
+      "status": "ready"
+    },
+    "greece-super-league:6": {
+      "clubName": "Iraklis",
+      "checkedAt": "2026-11-17T09:09:33.250011+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 8,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Iraklis_F.C._(Thessaloniki)"
+      ],
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T09:08:30.407191+00:00"
+  "lastUpdated": "2026-11-17T09:09:37.292988+00:00"
 }
