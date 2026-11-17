@@ -11,7 +11,9 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: ball-knowledge-photo-data
+  # The current-squad importer also rewrites player-headshot-db.json.
+  # Do not run these two database writers at the same time.
+  group: ball-knowledge-current-headshot-writers
   cancel-in-progress: false
 jobs:
   verify:
