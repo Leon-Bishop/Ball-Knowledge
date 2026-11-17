@@ -440,8 +440,14 @@ def crop_face(image_bytes):
     return jpeg if usable_face_crop(jpeg) else None
 
 
-def process_club(team, qid, title, old_db, language="en", target=TARGET):
+def process_club(team, qid, title, old_db, language="en", target=TARGET, roster_evidence=None):
     club_id = team["id"]
+    from verify_current_rosters import official_evidence, current_club_from_wikidata
+    roster_evidence = roster_evidence or {}
+    today = datetime.now(timezone.utc).date()
+    def independently_current(player_qid, entity):
+        method, _ = official_evidence(club_id, player_qid, roster_evidence, today)
+        return bool(method) or current_club_from_wikidata(entity, today)[0] == qid
     raw, roster_url = wiki_squad(title, language)
     section, heading = squad_section(raw)
     if not section or not is_current_heading(heading):
@@ -454,7 +460,7 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET):
     candidates = []
     for player_qid in qids:
         entity = entities.get(player_qid, {})
-        if not is_footballer(entity):
+        if not is_footballer(entity) or not independently_current(player_qid, entity):
             continue
         filename = photo_filename(entity) or pageimages.get(player_qid, "")
         if not filename:
@@ -513,7 +519,7 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET):
             if player_qid in selected:
                 continue
             entity = entities.get(player_qid, {})
-            if not is_footballer(entity):
+            if not is_footballer(entity) or not independently_current(player_qid, entity):
                 continue
             name = entity.get("labels", {}).get("en", {}).get("value", "")
             if not name:
@@ -641,7 +647,8 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
                     break
                 try:
                     extra, names_count, candidates_count, source_qids = process_club(
-                        team, qid, title, old_db, language, target=target
+                        team, qid, title, old_db, language, target=target,
+                        roster_evidence=roster_evidence
                     )
                     current_squad_qids.update(source_qids)
                     roster_count = max(roster_count, names_count)
