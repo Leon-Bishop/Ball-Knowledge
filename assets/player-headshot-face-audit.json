@@ -1,63 +1,1103 @@
 {
-  "rule": "Conservative face detection on the FINAL 192-pixel cropped JPEG",
-  "usable": 779,
-  "rejectedCount": 31,
+  "rule": "Large, centered face and two eyes independently detected in FINAL 192-pixel JPEG",
+  "usable": 292,
+  "rejectedCount": 518,
   "rejected": [
+    {
+      "clubId": "belgian-pro-league:1",
+      "wikidataQid": "Q112277165"
+    },
+    {
+      "clubId": "belgian-pro-league:2",
+      "wikidataQid": "Q139671600"
+    },
+    {
+      "clubId": "belgian-pro-league:3",
+      "wikidataQid": "Q56194601"
+    },
+    {
+      "clubId": "belgian-pro-league:4",
+      "wikidataQid": "Q105067197"
+    },
+    {
+      "clubId": "belgian-pro-league:4",
+      "wikidataQid": "Q110026553"
+    },
+    {
+      "clubId": "belgian-pro-league:4",
+      "wikidataQid": "Q106779330"
+    },
+    {
+      "clubId": "belgian-pro-league:5",
+      "wikidataQid": "Q17496664"
+    },
+    {
+      "clubId": "belgian-pro-league:5",
+      "wikidataQid": "Q1764965"
+    },
+    {
+      "clubId": "belgian-pro-league:5",
+      "wikidataQid": "Q10551618"
+    },
+    {
+      "clubId": "belgian-pro-league:6",
+      "wikidataQid": "Q104833399"
+    },
+    {
+      "clubId": "belgian-pro-league:6",
+      "wikidataQid": "Q105955008"
+    },
+    {
+      "clubId": "belgian-pro-league:6",
+      "wikidataQid": "Q99669640"
+    },
+    {
+      "clubId": "belgian-pro-league:7",
+      "wikidataQid": "Q1858098"
+    },
+    {
+      "clubId": "belgian-pro-league:7",
+      "wikidataQid": "Q47482438"
+    },
+    {
+      "clubId": "belgian-pro-league:7",
+      "wikidataQid": "Q100741735"
+    },
+    {
+      "clubId": "belgian-pro-league:7",
+      "wikidataQid": "Q106039534"
+    },
+    {
+      "clubId": "belgian-pro-league:8",
+      "wikidataQid": "Q1189443"
+    },
+    {
+      "clubId": "belgian-pro-league:8",
+      "wikidataQid": "Q104521867"
+    },
+    {
+      "clubId": "belgian-pro-league:8",
+      "wikidataQid": "Q2749549"
+    },
+    {
+      "clubId": "belgian-pro-league:9",
+      "wikidataQid": "Q113572629"
+    },
+    {
+      "clubId": "belgian-pro-league:10",
+      "wikidataQid": "Q57585336"
+    },
+    {
+      "clubId": "belgian-pro-league:10",
+      "wikidataQid": "Q4916246"
+    },
+    {
+      "clubId": "belgian-pro-league:11",
+      "wikidataQid": "Q55841485"
+    },
+    {
+      "clubId": "belgian-pro-league:11",
+      "wikidataQid": "Q113367245"
+    },
+    {
+      "clubId": "belgian-pro-league:11",
+      "wikidataQid": "Q101242938"
+    },
+    {
+      "clubId": "belgian-pro-league:12",
+      "wikidataQid": "Q66180094"
+    },
+    {
+      "clubId": "belgian-pro-league:12",
+      "wikidataQid": "Q126365092"
+    },
+    {
+      "clubId": "belgian-pro-league:13",
+      "wikidataQid": "Q117084665"
+    },
+    {
+      "clubId": "belgian-pro-league:13",
+      "wikidataQid": "Q2117578"
+    },
     {
       "clubId": "belgian-pro-league:14",
       "wikidataQid": "Q30901781"
+    },
+    {
+      "clubId": "belgian-pro-league:15",
+      "wikidataQid": "Q113991111"
+    },
+    {
+      "clubId": "belgian-pro-league:15",
+      "wikidataQid": "Q56275520"
+    },
+    {
+      "clubId": "belgian-pro-league:15",
+      "wikidataQid": "Q132306732"
+    },
+    {
+      "clubId": "belgian-pro-league:16",
+      "wikidataQid": "Q105955340"
+    },
+    {
+      "clubId": "belgian-pro-league:16",
+      "wikidataQid": "Q108615928"
+    },
+    {
+      "clubId": "belgian-pro-league:16",
+      "wikidataQid": "Q28842114"
+    },
+    {
+      "clubId": "belgian-pro-league:17",
+      "wikidataQid": "Q123193170"
+    },
+    {
+      "clubId": "belgian-pro-league:17",
+      "wikidataQid": "Q115902876"
+    },
+    {
+      "clubId": "brazil-serie-a:1",
+      "wikidataQid": "Q52418817"
+    },
+    {
+      "clubId": "brazil-serie-a:1",
+      "wikidataQid": "Q64031791"
+    },
+    {
+      "clubId": "brazil-serie-a:1",
+      "wikidataQid": "Q1753325"
+    },
+    {
+      "clubId": "brazil-serie-a:2",
+      "wikidataQid": "Q56382170"
+    },
+    {
+      "clubId": "brazil-serie-a:2",
+      "wikidataQid": "Q109349059"
+    },
+    {
+      "clubId": "brazil-serie-a:2",
+      "wikidataQid": "Q23008026"
+    },
+    {
+      "clubId": "brazil-serie-a:2",
+      "wikidataQid": "Q120913867"
+    },
+    {
+      "clubId": "brazil-serie-a:3",
+      "wikidataQid": "Q22958501"
+    },
+    {
+      "clubId": "brazil-serie-a:3",
+      "wikidataQid": "Q965448"
+    },
+    {
+      "clubId": "brazil-serie-a:4",
+      "wikidataQid": "Q2469796"
+    },
+    {
+      "clubId": "brazil-serie-a:5",
+      "wikidataQid": "Q53649203"
+    },
+    {
+      "clubId": "brazil-serie-a:5",
+      "wikidataQid": "Q56065071"
+    },
+    {
+      "clubId": "brazil-serie-a:5",
+      "wikidataQid": "Q2470512"
+    },
+    {
+      "clubId": "brazil-serie-a:5",
+      "wikidataQid": "Q51159909"
+    },
+    {
+      "clubId": "brazil-serie-a:6",
+      "wikidataQid": "Q63699796"
+    },
+    {
+      "clubId": "brazil-serie-a:6",
+      "wikidataQid": "Q137557084"
+    },
+    {
+      "clubId": "brazil-serie-a:7",
+      "wikidataQid": "Q41510959"
+    },
+    {
+      "clubId": "brazil-serie-a:7",
+      "wikidataQid": "Q21030271"
+    },
+    {
+      "clubId": "brazil-serie-a:8",
+      "wikidataQid": "Q61756460"
+    },
+    {
+      "clubId": "brazil-serie-a:8",
+      "wikidataQid": "Q17411267"
+    },
+    {
+      "clubId": "brazil-serie-a:8",
+      "wikidataQid": "Q37995105"
+    },
+    {
+      "clubId": "brazil-serie-a:8",
+      "wikidataQid": "Q58821137"
+    },
+    {
+      "clubId": "brazil-serie-a:9",
+      "wikidataQid": "Q18617137"
+    },
+    {
+      "clubId": "brazil-serie-a:9",
+      "wikidataQid": "Q3538173"
+    },
+    {
+      "clubId": "brazil-serie-a:9",
+      "wikidataQid": "Q15831118"
+    },
+    {
+      "clubId": "brazil-serie-a:10",
+      "wikidataQid": "Q551192"
+    },
+    {
+      "clubId": "brazil-serie-a:11",
+      "wikidataQid": "Q4727251"
+    },
+    {
+      "clubId": "brazil-serie-a:12",
+      "wikidataQid": "Q3928977"
+    },
+    {
+      "clubId": "brazil-serie-a:12",
+      "wikidataQid": "Q481330"
+    },
+    {
+      "clubId": "brazil-serie-a:13",
+      "wikidataQid": "Q20641619"
+    },
+    {
+      "clubId": "brazil-serie-a:13",
+      "wikidataQid": "Q10394490"
+    },
+    {
+      "clubId": "brazil-serie-a:13",
+      "wikidataQid": "Q17619227"
+    },
+    {
+      "clubId": "brazil-serie-a:13",
+      "wikidataQid": "Q76822551"
+    },
+    {
+      "clubId": "brazil-serie-a:14",
+      "wikidataQid": "Q60842153"
+    },
+    {
+      "clubId": "brazil-serie-a:14",
+      "wikidataQid": "Q26704562"
+    },
+    {
+      "clubId": "brazil-serie-a:14",
+      "wikidataQid": "Q16297591"
+    },
+    {
+      "clubId": "brazil-serie-a:15",
+      "wikidataQid": "Q1372491"
+    },
+    {
+      "clubId": "brazil-serie-a:15",
+      "wikidataQid": "Q69982022"
+    },
+    {
+      "clubId": "brazil-serie-a:15",
+      "wikidataQid": "Q923402"
+    },
+    {
+      "clubId": "brazil-serie-a:15",
+      "wikidataQid": "Q18394141"
+    },
+    {
+      "clubId": "brazil-serie-a:16",
+      "wikidataQid": "Q17619350"
+    },
+    {
+      "clubId": "brazil-serie-a:16",
+      "wikidataQid": "Q794628"
+    },
+    {
+      "clubId": "brazil-serie-a:17",
+      "wikidataQid": "Q130493306"
+    },
+    {
+      "clubId": "brazil-serie-a:17",
+      "wikidataQid": "Q109224572"
+    },
+    {
+      "clubId": "brazil-serie-a:18",
+      "wikidataQid": "Q22703917"
+    },
+    {
+      "clubId": "brazil-serie-a:18",
+      "wikidataQid": "Q57387537"
+    },
+    {
+      "clubId": "brazil-serie-a:19",
+      "wikidataQid": "Q113215516"
+    },
+    {
+      "clubId": "brazil-serie-a:19",
+      "wikidataQid": "Q137823628"
+    },
+    {
+      "clubId": "brazil-serie-a:19",
+      "wikidataQid": "Q101808484"
+    },
+    {
+      "clubId": "brazil-serie-a:19",
+      "wikidataQid": "Q32187582"
+    },
+    {
+      "clubId": "brazil-serie-a:20",
+      "wikidataQid": "Q116215934"
+    },
+    {
+      "clubId": "brazil-serie-a:20",
+      "wikidataQid": "Q21020124"
+    },
+    {
+      "clubId": "england-premier-league:1",
+      "wikidataQid": "Q53952196"
+    },
+    {
+      "clubId": "england-premier-league:2",
+      "wikidataQid": "Q69495231"
+    },
+    {
+      "clubId": "england-premier-league:3",
+      "wikidataQid": "Q123150301"
+    },
+    {
+      "clubId": "england-premier-league:3",
+      "wikidataQid": "Q98198106"
+    },
+    {
+      "clubId": "england-premier-league:4",
+      "wikidataQid": "Q45034698"
+    },
+    {
+      "clubId": "england-premier-league:4",
+      "wikidataQid": "Q5022998"
+    },
+    {
+      "clubId": "england-premier-league:5",
+      "wikidataQid": "Q118791841"
+    },
+    {
+      "clubId": "england-premier-league:5",
+      "wikidataQid": "Q509489"
+    },
+    {
+      "clubId": "england-premier-league:6",
+      "wikidataQid": "Q107542811"
+    },
+    {
+      "clubId": "england-premier-league:6",
+      "wikidataQid": "Q115059438"
+    },
+    {
+      "clubId": "england-premier-league:6",
+      "wikidataQid": "Q98970365"
+    },
+    {
+      "clubId": "england-premier-league:7",
+      "wikidataQid": "Q20039495"
+    },
+    {
+      "clubId": "england-premier-league:7",
+      "wikidataQid": "Q41259115"
+    },
+    {
+      "clubId": "england-premier-league:7",
+      "wikidataQid": "Q133920"
+    },
+    {
+      "clubId": "england-premier-league:8",
+      "wikidataQid": "Q18614641"
+    },
+    {
+      "clubId": "england-premier-league:8",
+      "wikidataQid": "Q83632882"
+    },
+    {
+      "clubId": "england-premier-league:8",
+      "wikidataQid": "Q5109980"
+    },
+    {
+      "clubId": "england-premier-league:9",
+      "wikidataQid": "Q15943423"
+    },
+    {
+      "clubId": "england-premier-league:9",
+      "wikidataQid": "Q65948590"
+    },
+    {
+      "clubId": "england-premier-league:9",
+      "wikidataQid": "Q110466658"
+    },
+    {
+      "clubId": "england-premier-league:10",
+      "wikidataQid": "Q27915090"
+    },
+    {
+      "clubId": "england-premier-league:10",
+      "wikidataQid": "Q42913004"
+    },
+    {
+      "clubId": "england-premier-league:10",
+      "wikidataQid": "Q13467456"
+    },
+    {
+      "clubId": "england-premier-league:11",
+      "wikidataQid": "Q39082413"
+    },
+    {
+      "clubId": "england-premier-league:11",
+      "wikidataQid": "Q47658470"
+    },
+    {
+      "clubId": "england-premier-league:11",
+      "wikidataQid": "Q28542599"
+    },
+    {
+      "clubId": "england-premier-league:13",
+      "wikidataQid": "Q21621168"
+    },
+    {
+      "clubId": "england-premier-league:14",
+      "wikidataQid": "Q93563"
+    },
+    {
+      "clubId": "england-premier-league:14",
+      "wikidataQid": "Q114703020"
+    },
+    {
+      "clubId": "england-premier-league:14",
+      "wikidataQid": "Q35831063"
+    },
+    {
+      "clubId": "england-premier-league:15",
+      "wikidataQid": "Q28101965"
     },
     {
       "clubId": "england-premier-league:16",
       "wikidataQid": "Q66685965"
     },
     {
+      "clubId": "england-premier-league:16",
+      "wikidataQid": "Q118220069"
+    },
+    {
+      "clubId": "england-premier-league:16",
+      "wikidataQid": "Q70068408"
+    },
+    {
       "clubId": "england-premier-league:17",
       "wikidataQid": "Q56292818"
+    },
+    {
+      "clubId": "england-premier-league:17",
+      "wikidataQid": "Q108703725"
+    },
+    {
+      "clubId": "england-premier-league:18",
+      "wikidataQid": "Q113464781"
+    },
+    {
+      "clubId": "england-premier-league:18",
+      "wikidataQid": "Q86835512"
+    },
+    {
+      "clubId": "england-premier-league:18",
+      "wikidataQid": "Q44737408"
+    },
+    {
+      "clubId": "england-premier-league:18",
+      "wikidataQid": "Q56877051"
+    },
+    {
+      "clubId": "england-premier-league:19",
+      "wikidataQid": "Q2036160"
+    },
+    {
+      "clubId": "england-premier-league:19",
+      "wikidataQid": "Q135855436"
+    },
+    {
+      "clubId": "england-premier-league:19",
+      "wikidataQid": "Q20745071"
+    },
+    {
+      "clubId": "england-premier-league:20",
+      "wikidataQid": "Q98777530"
+    },
+    {
+      "clubId": "england-premier-league:20",
+      "wikidataQid": "Q111027477"
+    },
+    {
+      "clubId": "england-premier-league:20",
+      "wikidataQid": "Q48545157"
+    },
+    {
+      "clubId": "england-premier-league:20",
+      "wikidataQid": "Q67228775"
     },
     {
       "clubId": "france-ligue-1:1",
       "wikidataQid": "Q66779547"
     },
     {
+      "clubId": "france-ligue-1:1",
+      "wikidataQid": "Q74050891"
+    },
+    {
+      "clubId": "france-ligue-1:2",
+      "wikidataQid": "Q17579882"
+    },
+    {
+      "clubId": "france-ligue-1:2",
+      "wikidataQid": "Q113543717"
+    },
+    {
+      "clubId": "france-ligue-1:2",
+      "wikidataQid": "Q21621807"
+    },
+    {
+      "clubId": "france-ligue-1:2",
+      "wikidataQid": "Q125728886"
+    },
+    {
+      "clubId": "france-ligue-1:3",
+      "wikidataQid": "Q56612830"
+    },
+    {
+      "clubId": "france-ligue-1:3",
+      "wikidataQid": "Q713627"
+    },
+    {
+      "clubId": "france-ligue-1:3",
+      "wikidataQid": "Q42299353"
+    },
+    {
+      "clubId": "france-ligue-1:3",
+      "wikidataQid": "Q105473333"
+    },
+    {
+      "clubId": "france-ligue-1:4",
+      "wikidataQid": "Q62617279"
+    },
+    {
+      "clubId": "france-ligue-1:4",
+      "wikidataQid": "Q105585138"
+    },
+    {
+      "clubId": "france-ligue-1:4",
+      "wikidataQid": "Q125505101"
+    },
+    {
+      "clubId": "france-ligue-1:4",
+      "wikidataQid": "Q19894452"
+    },
+    {
+      "clubId": "france-ligue-1:5",
+      "wikidataQid": "Q86041826"
+    },
+    {
+      "clubId": "france-ligue-1:6",
+      "wikidataQid": "Q113955589"
+    },
+    {
+      "clubId": "france-ligue-1:6",
+      "wikidataQid": "Q108542081"
+    },
+    {
+      "clubId": "france-ligue-1:6",
+      "wikidataQid": "Q113427641"
+    },
+    {
+      "clubId": "france-ligue-1:6",
+      "wikidataQid": "Q19509874"
+    },
+    {
+      "clubId": "france-ligue-1:7",
+      "wikidataQid": "Q83779164"
+    },
+    {
+      "clubId": "france-ligue-1:7",
+      "wikidataQid": "Q18637804"
+    },
+    {
+      "clubId": "france-ligue-1:7",
+      "wikidataQid": "Q60791524"
+    },
+    {
+      "clubId": "france-ligue-1:7",
+      "wikidataQid": "Q26262081"
+    },
+    {
+      "clubId": "france-ligue-1:8",
+      "wikidataQid": "Q28872567"
+    },
+    {
+      "clubId": "france-ligue-1:8",
+      "wikidataQid": "Q116838606"
+    },
+    {
       "clubId": "france-ligue-1:9",
       "wikidataQid": "Q24450997"
+    },
+    {
+      "clubId": "france-ligue-1:9",
+      "wikidataQid": "Q56289677"
+    },
+    {
+      "clubId": "france-ligue-1:9",
+      "wikidataQid": "Q65921425"
+    },
+    {
+      "clubId": "france-ligue-1:9",
+      "wikidataQid": "Q22279825"
+    },
+    {
+      "clubId": "france-ligue-1:10",
+      "wikidataQid": "Q116146104"
+    },
+    {
+      "clubId": "france-ligue-1:10",
+      "wikidataQid": "Q17350507"
+    },
+    {
+      "clubId": "france-ligue-1:10",
+      "wikidataQid": "Q59306433"
+    },
+    {
+      "clubId": "france-ligue-1:11",
+      "wikidataQid": "Q20851378"
     },
     {
       "clubId": "france-ligue-1:11",
       "wikidataQid": "Q99398043"
     },
     {
+      "clubId": "france-ligue-1:12",
+      "wikidataQid": "Q99360090"
+    },
+    {
+      "clubId": "france-ligue-1:13",
+      "wikidataQid": "Q25935553"
+    },
+    {
       "clubId": "france-ligue-1:13",
       "wikidataQid": "Q73456589"
+    },
+    {
+      "clubId": "france-ligue-1:14",
+      "wikidataQid": "Q97349446"
+    },
+    {
+      "clubId": "france-ligue-1:14",
+      "wikidataQid": "Q115466263"
+    },
+    {
+      "clubId": "france-ligue-1:15",
+      "wikidataQid": "Q105425298"
+    },
+    {
+      "clubId": "france-ligue-1:16",
+      "wikidataQid": "Q35314083"
+    },
+    {
+      "clubId": "france-ligue-1:16",
+      "wikidataQid": "Q30513763"
+    },
+    {
+      "clubId": "france-ligue-1:17",
+      "wikidataQid": "Q27476"
+    },
+    {
+      "clubId": "france-ligue-1:17",
+      "wikidataQid": "Q56223972"
+    },
+    {
+      "clubId": "france-ligue-1:17",
+      "wikidataQid": "Q40352866"
+    },
+    {
+      "clubId": "france-ligue-1:17",
+      "wikidataQid": "Q124745247"
     },
     {
       "clubId": "france-ligue-1:18",
       "wikidataQid": "Q121093987"
     },
     {
+      "clubId": "germany-bundesliga:2",
+      "wikidataQid": "Q118118504"
+    },
+    {
+      "clubId": "germany-bundesliga:2",
+      "wikidataQid": "Q51855361"
+    },
+    {
+      "clubId": "germany-bundesliga:2",
+      "wikidataQid": "Q502103"
+    },
+    {
+      "clubId": "germany-bundesliga:2",
+      "wikidataQid": "Q96391665"
+    },
+    {
+      "clubId": "germany-bundesliga:3",
+      "wikidataQid": "Q60340"
+    },
+    {
+      "clubId": "germany-bundesliga:3",
+      "wikidataQid": "Q28531111"
+    },
+    {
       "clubId": "germany-bundesliga:4",
       "wikidataQid": "Q110483835"
+    },
+    {
+      "clubId": "germany-bundesliga:4",
+      "wikidataQid": "Q66738004"
+    },
+    {
+      "clubId": "germany-bundesliga:5",
+      "wikidataQid": "Q15627096"
     },
     {
       "clubId": "germany-bundesliga:6",
       "wikidataQid": "Q123390886"
     },
     {
+      "clubId": "germany-bundesliga:6",
+      "wikidataQid": "Q65297"
+    },
+    {
+      "clubId": "germany-bundesliga:7",
+      "wikidataQid": "Q124757622"
+    },
+    {
+      "clubId": "germany-bundesliga:7",
+      "wikidataQid": "Q106938641"
+    },
+    {
+      "clubId": "germany-bundesliga:7",
+      "wikidataQid": "Q20991472"
+    },
+    {
+      "clubId": "germany-bundesliga:8",
+      "wikidataQid": "Q31355135"
+    },
+    {
+      "clubId": "germany-bundesliga:8",
+      "wikidataQid": "Q78494289"
+    },
+    {
+      "clubId": "germany-bundesliga:8",
+      "wikidataQid": "Q46351665"
+    },
+    {
+      "clubId": "germany-bundesliga:9",
+      "wikidataQid": "Q65029955"
+    },
+    {
+      "clubId": "germany-bundesliga:10",
+      "wikidataQid": "Q759710"
+    },
+    {
+      "clubId": "germany-bundesliga:10",
+      "wikidataQid": "Q24577799"
+    },
+    {
+      "clubId": "germany-bundesliga:11",
+      "wikidataQid": "Q106766554"
+    },
+    {
+      "clubId": "germany-bundesliga:11",
+      "wikidataQid": "Q102179077"
+    },
+    {
+      "clubId": "germany-bundesliga:11",
+      "wikidataQid": "Q110970778"
+    },
+    {
+      "clubId": "germany-bundesliga:12",
+      "wikidataQid": "Q573461"
+    },
+    {
+      "clubId": "germany-bundesliga:13",
+      "wikidataQid": "Q24061870"
+    },
+    {
+      "clubId": "germany-bundesliga:13",
+      "wikidataQid": "Q67157835"
+    },
+    {
+      "clubId": "germany-bundesliga:14",
+      "wikidataQid": "Q124416502"
+    },
+    {
+      "clubId": "germany-bundesliga:14",
+      "wikidataQid": "Q109653419"
+    },
+    {
+      "clubId": "germany-bundesliga:14",
+      "wikidataQid": "Q96678433"
+    },
+    {
+      "clubId": "germany-bundesliga:15",
+      "wikidataQid": "Q50384596"
+    },
+    {
+      "clubId": "germany-bundesliga:15",
+      "wikidataQid": "Q96793422"
+    },
+    {
+      "clubId": "germany-bundesliga:16",
+      "wikidataQid": "Q40785106"
+    },
+    {
+      "clubId": "germany-bundesliga:16",
+      "wikidataQid": "Q339252"
+    },
+    {
+      "clubId": "germany-bundesliga:17",
+      "wikidataQid": "Q100894027"
+    },
+    {
       "clubId": "germany-bundesliga:17",
       "wikidataQid": "Q139185338"
+    },
+    {
+      "clubId": "germany-bundesliga:17",
+      "wikidataQid": "Q19973701"
+    },
+    {
+      "clubId": "germany-bundesliga:18",
+      "wikidataQid": "Q28692516"
+    },
+    {
+      "clubId": "germany-bundesliga:18",
+      "wikidataQid": "Q110610689"
+    },
+    {
+      "clubId": "germany-bundesliga:18",
+      "wikidataQid": "Q326159"
     },
     {
       "clubId": "greece-super-league:1",
       "wikidataQid": "Q24085024"
     },
     {
+      "clubId": "greece-super-league:1",
+      "wikidataQid": "Q27000690"
+    },
+    {
+      "clubId": "greece-super-league:1",
+      "wikidataQid": "Q7179088"
+    },
+    {
+      "clubId": "greece-super-league:2",
+      "wikidataQid": "Q104793167"
+    },
+    {
+      "clubId": "greece-super-league:3",
+      "wikidataQid": "Q3028176"
+    },
+    {
+      "clubId": "greece-super-league:3",
+      "wikidataQid": "Q20740667"
+    },
+    {
+      "clubId": "greece-super-league:4",
+      "wikidataQid": "Q37453754"
+    },
+    {
+      "clubId": "greece-super-league:4",
+      "wikidataQid": "Q55366685"
+    },
+    {
+      "clubId": "greece-super-league:4",
+      "wikidataQid": "Q16233165"
+    },
+    {
+      "clubId": "greece-super-league:5",
+      "wikidataQid": "Q26838711"
+    },
+    {
+      "clubId": "greece-super-league:5",
+      "wikidataQid": "Q60842106"
+    },
+    {
+      "clubId": "greece-super-league:5",
+      "wikidataQid": "Q56787768"
+    },
+    {
+      "clubId": "greece-super-league:7",
+      "wikidataQid": "Q18608500"
+    },
+    {
       "clubId": "greece-super-league:7",
       "wikidataQid": "Q20977919"
     },
     {
+      "clubId": "greece-super-league:7",
+      "wikidataQid": "Q27048985"
+    },
+    {
+      "clubId": "greece-super-league:8",
+      "wikidataQid": "Q27048847"
+    },
+    {
+      "clubId": "greece-super-league:8",
+      "wikidataQid": "Q40467236"
+    },
+    {
+      "clubId": "greece-super-league:9",
+      "wikidataQid": "Q12808967"
+    },
+    {
+      "clubId": "greece-super-league:10",
+      "wikidataQid": "Q195953"
+    },
+    {
+      "clubId": "greece-super-league:10",
+      "wikidataQid": "Q112418644"
+    },
+    {
+      "clubId": "greece-super-league:11",
+      "wikidataQid": "Q41354096"
+    },
+    {
+      "clubId": "greece-super-league:11",
+      "wikidataQid": "Q63241604"
+    },
+    {
+      "clubId": "greece-super-league:11",
+      "wikidataQid": "Q106485307"
+    },
+    {
+      "clubId": "greece-super-league:12",
+      "wikidataQid": "Q47067187"
+    },
+    {
+      "clubId": "greece-super-league:12",
+      "wikidataQid": "Q5919779"
+    },
+    {
+      "clubId": "greece-super-league:13",
+      "wikidataQid": "Q43353344"
+    },
+    {
+      "clubId": "greece-super-league:13",
+      "wikidataQid": "Q3808761"
+    },
+    {
+      "clubId": "greece-super-league:13",
+      "wikidataQid": "Q3318533"
+    },
+    {
+      "clubId": "greece-super-league:13",
+      "wikidataQid": "Q10558955"
+    },
+    {
+      "clubId": "greece-super-league:14",
+      "wikidataQid": "Q17505089"
+    },
+    {
+      "clubId": "greece-super-league:14",
+      "wikidataQid": "Q27468610"
+    },
+    {
+      "clubId": "greece-super-league:14",
+      "wikidataQid": "Q15924139"
+    },
+    {
+      "clubId": "italy-serie-a:1",
+      "wikidataQid": "Q20994068"
+    },
+    {
+      "clubId": "italy-serie-a:1",
+      "wikidataQid": "Q61899299"
+    },
+    {
+      "clubId": "italy-serie-a:2",
+      "wikidataQid": "Q25409292"
+    },
+    {
+      "clubId": "italy-serie-a:2",
+      "wikidataQid": "Q64167417"
+    },
+    {
+      "clubId": "italy-serie-a:3",
+      "wikidataQid": "Q15220993"
+    },
+    {
+      "clubId": "italy-serie-a:3",
+      "wikidataQid": "Q47467341"
+    },
+    {
+      "clubId": "italy-serie-a:3",
+      "wikidataQid": "Q20066885"
+    },
+    {
+      "clubId": "italy-serie-a:4",
+      "wikidataQid": "Q30474499"
+    },
+    {
+      "clubId": "italy-serie-a:4",
+      "wikidataQid": "Q16648816"
+    },
+    {
       "clubId": "italy-serie-a:4",
       "wikidataQid": "Q15964494"
+    },
+    {
+      "clubId": "italy-serie-a:4",
+      "wikidataQid": "Q20949250"
+    },
+    {
+      "clubId": "italy-serie-a:5",
+      "wikidataQid": "Q56043276"
+    },
+    {
+      "clubId": "italy-serie-a:5",
+      "wikidataQid": "Q28973485"
+    },
+    {
+      "clubId": "italy-serie-a:5",
+      "wikidataQid": "Q3852953"
+    },
+    {
+      "clubId": "italy-serie-a:5",
+      "wikidataQid": "Q55865033"
+    },
+    {
+      "clubId": "italy-serie-a:6",
+      "wikidataQid": "Q115806025"
+    },
+    {
+      "clubId": "italy-serie-a:6",
+      "wikidataQid": "Q100792975"
+    },
+    {
+      "clubId": "italy-serie-a:6",
+      "wikidataQid": "Q63117980"
+    },
+    {
+      "clubId": "italy-serie-a:7",
+      "wikidataQid": "Q106266670"
     },
     {
       "clubId": "italy-serie-a:7",
@@ -68,6 +1108,50 @@
       "wikidataQid": "Q98046171"
     },
     {
+      "clubId": "italy-serie-a:8",
+      "wikidataQid": "Q100271093"
+    },
+    {
+      "clubId": "italy-serie-a:8",
+      "wikidataQid": "Q105591986"
+    },
+    {
+      "clubId": "italy-serie-a:8",
+      "wikidataQid": "Q64009408"
+    },
+    {
+      "clubId": "italy-serie-a:9",
+      "wikidataQid": "Q56222532"
+    },
+    {
+      "clubId": "italy-serie-a:9",
+      "wikidataQid": "Q20204829"
+    },
+    {
+      "clubId": "italy-serie-a:9",
+      "wikidataQid": "Q21484126"
+    },
+    {
+      "clubId": "italy-serie-a:10",
+      "wikidataQid": "Q84158344"
+    },
+    {
+      "clubId": "italy-serie-a:11",
+      "wikidataQid": "Q38218627"
+    },
+    {
+      "clubId": "italy-serie-a:11",
+      "wikidataQid": "Q28968068"
+    },
+    {
+      "clubId": "italy-serie-a:11",
+      "wikidataQid": "Q29558961"
+    },
+    {
+      "clubId": "italy-serie-a:12",
+      "wikidataQid": "Q129167404"
+    },
+    {
       "clubId": "italy-serie-a:12",
       "wikidataQid": "Q20949218"
     },
@@ -76,48 +1160,832 @@
       "wikidataQid": "Q108816588"
     },
     {
+      "clubId": "italy-serie-a:13",
+      "wikidataQid": "Q133866377"
+    },
+    {
+      "clubId": "italy-serie-a:14",
+      "wikidataQid": "Q357984"
+    },
+    {
       "clubId": "italy-serie-a:14",
       "wikidataQid": "Q21039587"
+    },
+    {
+      "clubId": "italy-serie-a:15",
+      "wikidataQid": "Q113997600"
+    },
+    {
+      "clubId": "italy-serie-a:15",
+      "wikidataQid": "Q23707676"
+    },
+    {
+      "clubId": "italy-serie-a:15",
+      "wikidataQid": "Q15830968"
+    },
+    {
+      "clubId": "italy-serie-a:16",
+      "wikidataQid": "Q24084301"
+    },
+    {
+      "clubId": "italy-serie-a:16",
+      "wikidataQid": "Q28971436"
+    },
+    {
+      "clubId": "italy-serie-a:16",
+      "wikidataQid": "Q108114747"
+    },
+    {
+      "clubId": "italy-serie-a:17",
+      "wikidataQid": "Q67539138"
+    },
+    {
+      "clubId": "italy-serie-a:17",
+      "wikidataQid": "Q30113960"
+    },
+    {
+      "clubId": "italy-serie-a:17",
+      "wikidataQid": "Q297603"
+    },
+    {
+      "clubId": "italy-serie-a:17",
+      "wikidataQid": "Q59914648"
+    },
+    {
+      "clubId": "italy-serie-a:18",
+      "wikidataQid": "Q18683792"
+    },
+    {
+      "clubId": "italy-serie-a:18",
+      "wikidataQid": "Q6439494"
+    },
+    {
+      "clubId": "italy-serie-a:18",
+      "wikidataQid": "Q23893097"
+    },
+    {
+      "clubId": "italy-serie-a:19",
+      "wikidataQid": "Q66700393"
+    },
+    {
+      "clubId": "italy-serie-a:19",
+      "wikidataQid": "Q941852"
+    },
+    {
+      "clubId": "italy-serie-a:19",
+      "wikidataQid": "Q2057994"
+    },
+    {
+      "clubId": "italy-serie-a:19",
+      "wikidataQid": "Q110714297"
+    },
+    {
+      "clubId": "italy-serie-a:20",
+      "wikidataQid": "Q37305729"
+    },
+    {
+      "clubId": "italy-serie-a:20",
+      "wikidataQid": "Q58215762"
+    },
+    {
+      "clubId": "italy-serie-a:20",
+      "wikidataQid": "Q58215731"
+    },
+    {
+      "clubId": "netherlands-eredivisie:1",
+      "wikidataQid": "Q20823439"
+    },
+    {
+      "clubId": "netherlands-eredivisie:2",
+      "wikidataQid": "Q99627695"
+    },
+    {
+      "clubId": "netherlands-eredivisie:2",
+      "wikidataQid": "Q118571358"
+    },
+    {
+      "clubId": "netherlands-eredivisie:2",
+      "wikidataQid": "Q110543507"
+    },
+    {
+      "clubId": "netherlands-eredivisie:3",
+      "wikidataQid": "Q76735102"
+    },
+    {
+      "clubId": "netherlands-eredivisie:3",
+      "wikidataQid": "Q110935258"
+    },
+    {
+      "clubId": "netherlands-eredivisie:4",
+      "wikidataQid": "Q4406552"
+    },
+    {
+      "clubId": "netherlands-eredivisie:4",
+      "wikidataQid": "Q133260303"
+    },
+    {
+      "clubId": "netherlands-eredivisie:4",
+      "wikidataQid": "Q56788069"
     },
     {
       "clubId": "netherlands-eredivisie:5",
       "wikidataQid": "Q66818142"
     },
     {
+      "clubId": "netherlands-eredivisie:5",
+      "wikidataQid": "Q110316852"
+    },
+    {
+      "clubId": "netherlands-eredivisie:5",
+      "wikidataQid": "Q111703400"
+    },
+    {
+      "clubId": "netherlands-eredivisie:5",
+      "wikidataQid": "Q40854708"
+    },
+    {
+      "clubId": "netherlands-eredivisie:6",
+      "wikidataQid": "Q16014629"
+    },
+    {
+      "clubId": "netherlands-eredivisie:6",
+      "wikidataQid": "Q84243663"
+    },
+    {
+      "clubId": "netherlands-eredivisie:7",
+      "wikidataQid": "Q113471266"
+    },
+    {
+      "clubId": "netherlands-eredivisie:7",
+      "wikidataQid": "Q114137119"
+    },
+    {
+      "clubId": "netherlands-eredivisie:7",
+      "wikidataQid": "Q102792890"
+    },
+    {
+      "clubId": "netherlands-eredivisie:8",
+      "wikidataQid": "Q122070428"
+    },
+    {
+      "clubId": "netherlands-eredivisie:8",
+      "wikidataQid": "Q104762691"
+    },
+    {
+      "clubId": "netherlands-eredivisie:8",
+      "wikidataQid": "Q15039855"
+    },
+    {
+      "clubId": "netherlands-eredivisie:8",
+      "wikidataQid": "Q105339563"
+    },
+    {
+      "clubId": "netherlands-eredivisie:9",
+      "wikidataQid": "Q28831156"
+    },
+    {
+      "clubId": "netherlands-eredivisie:9",
+      "wikidataQid": "Q24572676"
+    },
+    {
+      "clubId": "netherlands-eredivisie:10",
+      "wikidataQid": "Q116136785"
+    },
+    {
+      "clubId": "netherlands-eredivisie:10",
+      "wikidataQid": "Q123140685"
+    },
+    {
+      "clubId": "netherlands-eredivisie:11",
+      "wikidataQid": "Q81696070"
+    },
+    {
+      "clubId": "netherlands-eredivisie:11",
+      "wikidataQid": "Q30251126"
+    },
+    {
       "clubId": "netherlands-eredivisie:11",
       "wikidataQid": "Q40090502"
+    },
+    {
+      "clubId": "netherlands-eredivisie:11",
+      "wikidataQid": "Q23905451"
+    },
+    {
+      "clubId": "netherlands-eredivisie:12",
+      "wikidataQid": "Q27881565"
+    },
+    {
+      "clubId": "netherlands-eredivisie:13",
+      "wikidataQid": "Q59728235"
+    },
+    {
+      "clubId": "netherlands-eredivisie:13",
+      "wikidataQid": "Q56275371"
+    },
+    {
+      "clubId": "netherlands-eredivisie:13",
+      "wikidataQid": "Q20972384"
+    },
+    {
+      "clubId": "netherlands-eredivisie:14",
+      "wikidataQid": "Q113173947"
+    },
+    {
+      "clubId": "netherlands-eredivisie:14",
+      "wikidataQid": "Q4708679"
+    },
+    {
+      "clubId": "netherlands-eredivisie:15",
+      "wikidataQid": "Q56787668"
+    },
+    {
+      "clubId": "netherlands-eredivisie:15",
+      "wikidataQid": "Q198064"
+    },
+    {
+      "clubId": "netherlands-eredivisie:15",
+      "wikidataQid": "Q105258272"
+    },
+    {
+      "clubId": "netherlands-eredivisie:15",
+      "wikidataQid": "Q110577071"
     },
     {
       "clubId": "netherlands-eredivisie:16",
       "wikidataQid": "Q76761296"
     },
     {
+      "clubId": "netherlands-eredivisie:16",
+      "wikidataQid": "Q99600150"
+    },
+    {
+      "clubId": "netherlands-eredivisie:16",
+      "wikidataQid": "Q100969176"
+    },
+    {
+      "clubId": "netherlands-eredivisie:17",
+      "wikidataQid": "Q106412679"
+    },
+    {
+      "clubId": "netherlands-eredivisie:17",
+      "wikidataQid": "Q18923012"
+    },
+    {
+      "clubId": "netherlands-eredivisie:17",
+      "wikidataQid": "Q3180551"
+    },
+    {
+      "clubId": "netherlands-eredivisie:18",
+      "wikidataQid": "Q101628137"
+    },
+    {
+      "clubId": "netherlands-eredivisie:18",
+      "wikidataQid": "Q1818029"
+    },
+    {
       "clubId": "portugal-liga-portugal:1",
       "wikidataQid": "Q110980279"
+    },
+    {
+      "clubId": "portugal-liga-portugal:1",
+      "wikidataQid": "Q123463400"
+    },
+    {
+      "clubId": "portugal-liga-portugal:1",
+      "wikidataQid": "Q83688358"
+    },
+    {
+      "clubId": "portugal-liga-portugal:2",
+      "wikidataQid": "Q61741633"
+    },
+    {
+      "clubId": "portugal-liga-portugal:2",
+      "wikidataQid": "Q74223837"
+    },
+    {
+      "clubId": "portugal-liga-portugal:4",
+      "wikidataQid": "Q38198180"
     },
     {
       "clubId": "portugal-liga-portugal:4",
       "wikidataQid": "Q16236996"
     },
     {
+      "clubId": "portugal-liga-portugal:4",
+      "wikidataQid": "Q107316383"
+    },
+    {
+      "clubId": "portugal-liga-portugal:4",
+      "wikidataQid": "Q222151"
+    },
+    {
+      "clubId": "portugal-liga-portugal:5",
+      "wikidataQid": "Q102355655"
+    },
+    {
+      "clubId": "portugal-liga-portugal:5",
+      "wikidataQid": "Q22006336"
+    },
+    {
+      "clubId": "portugal-liga-portugal:6",
+      "wikidataQid": "Q51868085"
+    },
+    {
+      "clubId": "portugal-liga-portugal:7",
+      "wikidataQid": "Q87907791"
+    },
+    {
+      "clubId": "portugal-liga-portugal:7",
+      "wikidataQid": "Q17712747"
+    },
+    {
+      "clubId": "portugal-liga-portugal:7",
+      "wikidataQid": "Q115676064"
+    },
+    {
+      "clubId": "portugal-liga-portugal:8",
+      "wikidataQid": "Q81826968"
+    },
+    {
+      "clubId": "portugal-liga-portugal:9",
+      "wikidataQid": "Q116923606"
+    },
+    {
+      "clubId": "portugal-liga-portugal:9",
+      "wikidataQid": "Q16212492"
+    },
+    {
+      "clubId": "portugal-liga-portugal:10",
+      "wikidataQid": "Q119350762"
+    },
+    {
+      "clubId": "portugal-liga-portugal:10",
+      "wikidataQid": "Q83780921"
+    },
+    {
+      "clubId": "portugal-liga-portugal:11",
+      "wikidataQid": "Q84346821"
+    },
+    {
+      "clubId": "portugal-liga-portugal:12",
+      "wikidataQid": "Q122750893"
+    },
+    {
+      "clubId": "portugal-liga-portugal:12",
+      "wikidataQid": "Q56233291"
+    },
+    {
+      "clubId": "portugal-liga-portugal:14",
+      "wikidataQid": "Q118220047"
+    },
+    {
+      "clubId": "portugal-liga-portugal:17",
+      "wikidataQid": "Q16236537"
+    },
+    {
+      "clubId": "portugal-liga-portugal:17",
+      "wikidataQid": "Q106686485"
+    },
+    {
+      "clubId": "portugal-liga-portugal:18",
+      "wikidataQid": "Q19519846"
+    },
+    {
+      "clubId": "portugal-liga-portugal:18",
+      "wikidataQid": "Q125945"
+    },
+    {
+      "clubId": "scotland-premiership:1",
+      "wikidataQid": "Q56223508"
+    },
+    {
+      "clubId": "scotland-premiership:2",
+      "wikidataQid": "Q327227"
+    },
+    {
+      "clubId": "scotland-premiership:3",
+      "wikidataQid": "Q20877205"
+    },
+    {
+      "clubId": "scotland-premiership:3",
+      "wikidataQid": "Q113462988"
+    },
+    {
+      "clubId": "scotland-premiership:3",
+      "wikidataQid": "Q107565353"
+    },
+    {
+      "clubId": "scotland-premiership:4",
+      "wikidataQid": "Q126965696"
+    },
+    {
+      "clubId": "scotland-premiership:4",
+      "wikidataQid": "Q56043350"
+    },
+    {
+      "clubId": "scotland-premiership:5",
+      "wikidataQid": "Q6775043"
+    },
+    {
+      "clubId": "scotland-premiership:5",
+      "wikidataQid": "Q111356863"
+    },
+    {
+      "clubId": "scotland-premiership:6",
+      "wikidataQid": "Q71067354"
+    },
+    {
+      "clubId": "scotland-premiership:6",
+      "wikidataQid": "Q52731310"
+    },
+    {
+      "clubId": "scotland-premiership:6",
+      "wikidataQid": "Q27662746"
+    },
+    {
+      "clubId": "scotland-premiership:6",
+      "wikidataQid": "Q7366918"
+    },
+    {
+      "clubId": "scotland-premiership:7",
+      "wikidataQid": "Q113628688"
+    },
+    {
+      "clubId": "scotland-premiership:7",
+      "wikidataQid": "Q123235832"
+    },
+    {
+      "clubId": "scotland-premiership:7",
+      "wikidataQid": "Q33112671"
+    },
+    {
+      "clubId": "scotland-premiership:8",
+      "wikidataQid": "Q100774391"
+    },
+    {
+      "clubId": "scotland-premiership:8",
+      "wikidataQid": "Q13738942"
+    },
+    {
       "clubId": "scotland-premiership:8",
       "wikidataQid": "Q7610116"
+    },
+    {
+      "clubId": "scotland-premiership:9",
+      "wikidataQid": "Q3238952"
+    },
+    {
+      "clubId": "scotland-premiership:9",
+      "wikidataQid": "Q27625852"
+    },
+    {
+      "clubId": "scotland-premiership:9",
+      "wikidataQid": "Q84462730"
+    },
+    {
+      "clubId": "scotland-premiership:10",
+      "wikidataQid": "Q16204445"
+    },
+    {
+      "clubId": "scotland-premiership:10",
+      "wikidataQid": "Q137668412"
+    },
+    {
+      "clubId": "scotland-premiership:11",
+      "wikidataQid": "Q120913826"
+    },
+    {
+      "clubId": "scotland-premiership:11",
+      "wikidataQid": "Q21061925"
+    },
+    {
+      "clubId": "scotland-premiership:11",
+      "wikidataQid": "Q130760411"
+    },
+    {
+      "clubId": "scotland-premiership:12",
+      "wikidataQid": "Q17144215"
+    },
+    {
+      "clubId": "scotland-premiership:12",
+      "wikidataQid": "Q99292026"
+    },
+    {
+      "clubId": "spain-la-liga:1",
+      "wikidataQid": "Q2092171"
+    },
+    {
+      "clubId": "spain-la-liga:2",
+      "wikidataQid": "Q15221199"
+    },
+    {
+      "clubId": "spain-la-liga:3",
+      "wikidataQid": "Q123439972"
+    },
+    {
+      "clubId": "spain-la-liga:3",
+      "wikidataQid": "Q100386793"
+    },
+    {
+      "clubId": "spain-la-liga:3",
+      "wikidataQid": "Q112159292"
+    },
+    {
+      "clubId": "spain-la-liga:4",
+      "wikidataQid": "Q111672750"
+    },
+    {
+      "clubId": "spain-la-liga:4",
+      "wikidataQid": "Q13784739"
+    },
+    {
+      "clubId": "spain-la-liga:5",
+      "wikidataQid": "Q105681392"
+    },
+    {
+      "clubId": "spain-la-liga:5",
+      "wikidataQid": "Q118473161"
+    },
+    {
+      "clubId": "spain-la-liga:6",
+      "wikidataQid": "Q133780065"
+    },
+    {
+      "clubId": "spain-la-liga:6",
+      "wikidataQid": "Q71734964"
+    },
+    {
+      "clubId": "spain-la-liga:6",
+      "wikidataQid": "Q106475413"
     },
     {
       "clubId": "spain-la-liga:7",
       "wikidataQid": "Q99485151"
     },
     {
+      "clubId": "spain-la-liga:7",
+      "wikidataQid": "Q18719485"
+    },
+    {
+      "clubId": "spain-la-liga:7",
+      "wikidataQid": "Q123352800"
+    },
+    {
+      "clubId": "spain-la-liga:7",
+      "wikidataQid": "Q26380"
+    },
+    {
+      "clubId": "spain-la-liga:8",
+      "wikidataQid": "Q40958022"
+    },
+    {
+      "clubId": "spain-la-liga:8",
+      "wikidataQid": "Q98754851"
+    },
+    {
+      "clubId": "spain-la-liga:8",
+      "wikidataQid": "Q99514820"
+    },
+    {
+      "clubId": "spain-la-liga:9",
+      "wikidataQid": "Q649788"
+    },
+    {
+      "clubId": "spain-la-liga:9",
+      "wikidataQid": "Q5932872"
+    },
+    {
+      "clubId": "spain-la-liga:9",
+      "wikidataQid": "Q18649709"
+    },
+    {
+      "clubId": "spain-la-liga:10",
+      "wikidataQid": "Q2876432"
+    },
+    {
+      "clubId": "spain-la-liga:10",
+      "wikidataQid": "Q110157458"
+    },
+    {
+      "clubId": "spain-la-liga:11",
+      "wikidataQid": "Q16934993"
+    },
+    {
+      "clubId": "spain-la-liga:12",
+      "wikidataQid": "Q134883919"
+    },
+    {
+      "clubId": "spain-la-liga:12",
+      "wikidataQid": "Q32236556"
+    },
+    {
+      "clubId": "spain-la-liga:13",
+      "wikidataQid": "Q114060630"
+    },
+    {
       "clubId": "spain-la-liga:13",
       "wikidataQid": "Q60667184"
+    },
+    {
+      "clubId": "spain-la-liga:13",
+      "wikidataQid": "Q19422"
+    },
+    {
+      "clubId": "spain-la-liga:14",
+      "wikidataQid": "Q972933"
+    },
+    {
+      "clubId": "spain-la-liga:14",
+      "wikidataQid": "Q17410409"
     },
     {
       "clubId": "spain-la-liga:14",
       "wikidataQid": "Q67089591"
     },
     {
+      "clubId": "spain-la-liga:15",
+      "wikidataQid": "Q109327842"
+    },
+    {
+      "clubId": "spain-la-liga:15",
+      "wikidataQid": "Q71333269"
+    },
+    {
+      "clubId": "spain-la-liga:15",
+      "wikidataQid": "Q20743436"
+    },
+    {
       "clubId": "spain-la-liga:17",
       "wikidataQid": "Q108861032"
+    },
+    {
+      "clubId": "spain-la-liga:17",
+      "wikidataQid": "Q23907908"
+    },
+    {
+      "clubId": "spain-la-liga:17",
+      "wikidataQid": "Q110652731"
+    },
+    {
+      "clubId": "spain-la-liga:18",
+      "wikidataQid": "Q91531"
+    },
+    {
+      "clubId": "spain-la-liga:18",
+      "wikidataQid": "Q21044405"
+    },
+    {
+      "clubId": "spain-la-liga:18",
+      "wikidataQid": "Q28966437"
+    },
+    {
+      "clubId": "spain-la-liga:19",
+      "wikidataQid": "Q99539115"
+    },
+    {
+      "clubId": "spain-la-liga:19",
+      "wikidataQid": "Q18224850"
+    },
+    {
+      "clubId": "spain-la-liga:19",
+      "wikidataQid": "Q22694710"
+    },
+    {
+      "clubId": "spain-la-liga:19",
+      "wikidataQid": "Q122839844"
+    },
+    {
+      "clubId": "spain-la-liga:20",
+      "wikidataQid": "Q15427728"
+    },
+    {
+      "clubId": "spain-la-liga:20",
+      "wikidataQid": "Q78541955"
+    },
+    {
+      "clubId": "turkey-super-lig:1",
+      "wikidataQid": "Q22162731"
+    },
+    {
+      "clubId": "turkey-super-lig:1",
+      "wikidataQid": "Q17612369"
+    },
+    {
+      "clubId": "turkey-super-lig:2",
+      "wikidataQid": "Q107139948"
+    },
+    {
+      "clubId": "turkey-super-lig:2",
+      "wikidataQid": "Q15229440"
+    },
+    {
+      "clubId": "turkey-super-lig:2",
+      "wikidataQid": "Q23063266"
+    },
+    {
+      "clubId": "turkey-super-lig:3",
+      "wikidataQid": "Q69523791"
+    },
+    {
+      "clubId": "turkey-super-lig:3",
+      "wikidataQid": "Q115688303"
+    },
+    {
+      "clubId": "turkey-super-lig:3",
+      "wikidataQid": "Q105477844"
+    },
+    {
+      "clubId": "turkey-super-lig:3",
+      "wikidataQid": "Q123851951"
+    },
+    {
+      "clubId": "turkey-super-lig:4",
+      "wikidataQid": "Q55934972"
+    },
+    {
+      "clubId": "turkey-super-lig:4",
+      "wikidataQid": "Q18199174"
+    },
+    {
+      "clubId": "turkey-super-lig:5",
+      "wikidataQid": "Q45940576"
+    },
+    {
+      "clubId": "turkey-super-lig:5",
+      "wikidataQid": "Q64733000"
+    },
+    {
+      "clubId": "turkey-super-lig:5",
+      "wikidataQid": "Q18639945"
+    },
+    {
+      "clubId": "turkey-super-lig:6",
+      "wikidataQid": "Q16937968"
+    },
+    {
+      "clubId": "turkey-super-lig:6",
+      "wikidataQid": "Q61986758"
+    },
+    {
+      "clubId": "turkey-super-lig:7",
+      "wikidataQid": "Q125247410"
+    },
+    {
+      "clubId": "turkey-super-lig:8",
+      "wikidataQid": "Q24450472"
+    },
+    {
+      "clubId": "turkey-super-lig:8",
+      "wikidataQid": "Q1893192"
+    },
+    {
+      "clubId": "turkey-super-lig:9",
+      "wikidataQid": "Q15642548"
+    },
+    {
+      "clubId": "turkey-super-lig:9",
+      "wikidataQid": "Q554001"
+    },
+    {
+      "clubId": "turkey-super-lig:9",
+      "wikidataQid": "Q56282469"
+    },
+    {
+      "clubId": "turkey-super-lig:10",
+      "wikidataQid": "Q98829644"
+    },
+    {
+      "clubId": "turkey-super-lig:10",
+      "wikidataQid": "Q56043335"
+    },
+    {
+      "clubId": "turkey-super-lig:10",
+      "wikidataQid": "Q68593365"
+    },
+    {
+      "clubId": "turkey-super-lig:10",
+      "wikidataQid": "Q108513776"
+    },
+    {
+      "clubId": "turkey-super-lig:11",
+      "wikidataQid": "Q297441"
+    },
+    {
+      "clubId": "turkey-super-lig:11",
+      "wikidataQid": "Q96116447"
+    },
+    {
+      "clubId": "turkey-super-lig:11",
+      "wikidataQid": "Q14623225"
+    },
+    {
+      "clubId": "turkey-super-lig:12",
+      "wikidataQid": "Q297461"
+    },
+    {
+      "clubId": "turkey-super-lig:12",
+      "wikidataQid": "Q86077125"
     },
     {
       "clubId": "turkey-super-lig:12",
@@ -125,7 +1993,87 @@
     },
     {
       "clubId": "turkey-super-lig:13",
+      "wikidataQid": "Q21004899"
+    },
+    {
+      "clubId": "turkey-super-lig:13",
+      "wikidataQid": "Q26704485"
+    },
+    {
+      "clubId": "turkey-super-lig:13",
       "wikidataQid": "Q53858110"
+    },
+    {
+      "clubId": "turkey-super-lig:13",
+      "wikidataQid": "Q60182084"
+    },
+    {
+      "clubId": "turkey-super-lig:14",
+      "wikidataQid": "Q75132656"
+    },
+    {
+      "clubId": "turkey-super-lig:14",
+      "wikidataQid": "Q16010783"
+    },
+    {
+      "clubId": "turkey-super-lig:15",
+      "wikidataQid": "Q30193978"
+    },
+    {
+      "clubId": "turkey-super-lig:15",
+      "wikidataQid": "Q119980462"
+    },
+    {
+      "clubId": "turkey-super-lig:15",
+      "wikidataQid": "Q20993793"
+    },
+    {
+      "clubId": "turkey-super-lig:16",
+      "wikidataQid": "Q1339574"
+    },
+    {
+      "clubId": "turkey-super-lig:16",
+      "wikidataQid": "Q56175146"
+    },
+    {
+      "clubId": "turkey-super-lig:16",
+      "wikidataQid": "Q17046219"
+    },
+    {
+      "clubId": "turkey-super-lig:17",
+      "wikidataQid": "Q47510762"
+    },
+    {
+      "clubId": "turkey-super-lig:17",
+      "wikidataQid": "Q69512938"
+    },
+    {
+      "clubId": "turkey-super-lig:17",
+      "wikidataQid": "Q15729123"
+    },
+    {
+      "clubId": "turkey-super-lig:18",
+      "wikidataQid": "Q60050428"
+    },
+    {
+      "clubId": "turkey-super-lig:18",
+      "wikidataQid": "Q88069926"
+    },
+    {
+      "clubId": "turkey-super-lig:18",
+      "wikidataQid": "Q41896054"
+    },
+    {
+      "clubId": "england-premier-league:12",
+      "wikidataQid": "Q99529077"
+    },
+    {
+      "clubId": "england-premier-league:12",
+      "wikidataQid": "Q112503285"
+    },
+    {
+      "clubId": "england-premier-league:12",
+      "wikidataQid": "Q99670930"
     }
   ]
 }
