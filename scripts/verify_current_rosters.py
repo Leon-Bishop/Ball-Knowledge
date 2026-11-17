@@ -83,6 +83,20 @@ def current_club_from_wikidata(entity, today):
     return None, "ambiguous_active_p54"
 
 
+def latest_active_start_for_club(entity, club_qid, today):
+    dates = []
+    for statement in entity.get("claims", {}).get("P54", []):
+        if statement.get("rank") == "deprecated":
+            continue
+        value = (statement.get("mainsnak", {}).get("datavalue") or {}).get("value")
+        if not isinstance(value, dict) or value.get("id") != club_qid:
+            continue
+        start, end = qualifier_date(statement, "P580"), qualifier_date(statement, "P582")
+        if (not start or start <= today) and (not end or end >= today):
+            dates.append(start)
+    return max((d for d in dates if d), default=None)
+
+
 def official_evidence(club_id, qid, evidence, today):
     official = evidence.get("officialClubs", {}).get(club_id, {})
     if qid in official.get("players", {}):
@@ -112,21 +126,33 @@ def verify(db, entities, evidence, mapping, today):
             duplicate = len(occurrences[qid]) > 1
             if official:
                 status, evidence_url = official, official_source
-            elif not expected or not actual:
+            elif not expected:
                 status, evidence_url = "unconfirmed", None
             elif actual == expected:
                 status, evidence_url = "wikidata_current_club", "https://www.wikidata.org/wiki/" + qid
+            elif actual:
+                # Wikidata club memberships often remain unclosed after
+                # transfers. Only a *new* conflicting 2026/27 membership
+                # is strong enough to overrule an explicit current roster.
+                recent = latest_active_start_for_club(
+                    entities.get(qid, {}), actual, today)
+                if recent and recent >= date(2026, 7, 1):
+                    status, evidence_url = "recent_conflicting_club", "https://www.wikidata.org/wiki/" + qid
+                else:
+                    status, evidence_url = "wikipedia_squad_stale_p54", p.get("membershipSource")
             else:
-                status, evidence_url = "different_current_club", "https://www.wikidata.org/wiki/" + qid
+                status, evidence_url = "wikipedia_squad_no_p54", p.get("membershipSource")
             entry = {
                 "clubId": club_id, "playerName": p["playerName"],
                 "wikidataQid": qid, "clubWikidataQid": expected,
                 "p54CurrentClub": actual, "p54Reason": p54_reason,
+                "p54ActiveClubStart": str(latest_active_start_for_club(entities.get(qid, {}), actual, today)) if actual else None,
                 "verification": status, "evidenceUrl": evidence_url,
                 "duplicateInClubs": sorted(occurrences[qid]) if duplicate else []
             }
             entries.append(entry)
-            if status in ("official_club_squad", "confirmed_current_loan", "wikidata_current_club"):
+            if status in ("official_club_squad", "confirmed_current_loan", "wikidata_current_club",
+                          "wikipedia_squad_stale_p54", "wikipedia_squad_no_p54"):
                 verified[club_id].append(entry)
     # A player cannot represent two first teams in the same 2026-27 quiz.
     # If one entry is backed by a primary source, keep only that club;
@@ -147,7 +173,8 @@ def verify(db, entities, evidence, mapping, today):
                 row["evidenceUrl"] = None
     verified = defaultdict(list)
     for row in entries:
-        if row["verification"] in ("official_club_squad", "confirmed_current_loan", "wikidata_current_club"):
+        if row["verification"] in ("official_club_squad", "confirmed_current_loan", "wikidata_current_club",
+                                    "wikipedia_squad_stale_p54", "wikipedia_squad_no_p54"):
             verified[row["clubId"]].append(row)
     return entries, verified
 
@@ -167,14 +194,15 @@ def main(apply):
     count_by_status = Counter(row["verification"] for row in entries)
     report = {
         "version": 1, "checkedAt": utcnow().isoformat(),
-        "rule": "Current official club squad or loan evidence, or unambiguous current Wikidata P54 for the exact club",
+        "rule": "Official current squad/loan evidence, or explicit Wikipedia current squad without recent conflicting 2026-27 Wikidata P54; all cross-club duplicates excluded",
         "totalClubs": total, "totalPlayers": len(entries),
         "uniquePlayers": len(qids), "verifiedClubsWithThree": ready,
         "verifiedPlayers": sum(len(v) for v in verified.values()),
         "statuses": dict(count_by_status),
         "conflictingPlayers": [r for r in entries if r["duplicateInClubs"]],
         "unconfirmed": [r for r in entries if r["verification"] not in (
-            "official_club_squad", "confirmed_current_loan", "wikidata_current_club"
+            "official_club_squad", "confirmed_current_loan", "wikidata_current_club",
+            "wikipedia_squad_stale_p54", "wikipedia_squad_no_p54"
         )],
         "perClub": {id: {
             "total": len(club.get("players", [])),
@@ -193,7 +221,8 @@ def main(apply):
                 row = by_key[(club_id, p["wikidataQid"])]
                 p["rosterVerification"] = row["verification"]
                 p["verifiedCurrent"] = row["verification"] in (
-                    "official_club_squad", "confirmed_current_loan", "wikidata_current_club"
+                    "official_club_squad", "confirmed_current_loan", "wikidata_current_club",
+                    "wikipedia_squad_stale_p54", "wikipedia_squad_no_p54"
                 )
                 if row["evidenceUrl"]:
                     p["secondaryRosterSource"] = row["evidenceUrl"]
@@ -228,7 +257,8 @@ def self_test():
     assert official_evidence("turkey-super-lig:10","Q822762",evidence,now)[0] is None
     assert official_evidence("belgian-pro-league:12","Q115902876",evidence,now)[0] is None
     assert official_evidence("belgian-pro-league:17","Q115902876",evidence,now)[0]=="confirmed_current_loan"
-    print("✓ Independent current-club checks, loan disambiguation and official club evidence",flush=True)
+    assert latest_active_start_for_club({"claims":{"P54":[stmt("Q1","2026-08-01")]}}, "Q1", now)==date(2026,8,1)
+    print("✓ Current-club checks, 2026/27 conflict detection, loans and official club evidence",flush=True)
 
 
 if __name__=="__main__":
