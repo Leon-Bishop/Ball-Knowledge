@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 107,
-  "clubsWithFour": 84,
-  "totalCurrentHeadshots": 512,
+  "clubsWithThree": 99,
+  "clubsWithFour": 72,
+  "totalCurrentHeadshots": 484,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -1859,7 +1859,7 @@
     },
     "portugal-liga-portugal:16": {
       "clubName": "Santa Clara",
-      "checkedAt": "2026-11-17T10:10:35.986405+00:00",
+      "checkedAt": "2026-11-17T12:02:09.059794+00:00",
       "rosterNames": 21,
       "photoCandidates": 2,
       "sources": [
@@ -1870,40 +1870,41 @@
     },
     "portugal-liga-portugal:17": {
       "clubName": "Sporting CP",
-      "checkedAt": "2026-11-17T09:13:30.680498+00:00",
+      "checkedAt": "2026-11-17T12:02:21.681329+00:00",
       "rosterNames": 29,
-      "photoCandidates": 9,
+      "photoCandidates": 20,
       "sources": [
-        "https://en.wikipedia.org/wiki/Sporting_CP"
+        "https://en.wikipedia.org/wiki/Sporting_CP",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Sporting_CP_season"
       ],
-      "count": 4,
+      "count": 3,
       "status": "ready"
     },
     "portugal-liga-portugal:18": {
       "clubName": "Alverca",
-      "checkedAt": "2026-11-17T10:10:46.095635+00:00",
+      "checkedAt": "2026-11-17T12:02:48.696599+00:00",
       "rosterNames": 28,
       "photoCandidates": 5,
       "sources": [
         "https://en.wikipedia.org/wiki/F.C._Alverca"
       ],
-      "count": 2,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "scotland-premiership:1": {
       "clubName": "Aberdeen",
-      "checkedAt": "2026-11-17T09:13:38.172656+00:00",
+      "checkedAt": "2026-11-17T12:03:00.092231+00:00",
       "rosterNames": 27,
       "photoCandidates": 11,
       "sources": [
         "https://en.wikipedia.org/wiki/Aberdeen_F.C."
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "scotland-premiership:2": {
       "clubName": "Celtic",
-      "checkedAt": "2026-11-17T09:13:40.744012+00:00",
+      "checkedAt": "2026-11-17T12:03:24.272928+00:00",
       "rosterNames": 29,
       "photoCandidates": 18,
       "sources": [
@@ -1914,7 +1915,7 @@
     },
     "scotland-premiership:3": {
       "clubName": "Dundee",
-      "checkedAt": "2026-11-17T09:13:43.527746+00:00",
+      "checkedAt": "2026-11-17T12:03:47.603383+00:00",
       "rosterNames": 24,
       "photoCandidates": 17,
       "sources": [
@@ -1925,7 +1926,7 @@
     },
     "scotland-premiership:4": {
       "clubName": "Heart of Midlothian",
-      "checkedAt": "2026-11-17T09:13:46.240020+00:00",
+      "checkedAt": "2026-11-17T12:03:55.117889+00:00",
       "rosterNames": 32,
       "photoCandidates": 22,
       "sources": [
@@ -1936,31 +1937,31 @@
     },
     "scotland-premiership:5": {
       "clubName": "Hibernian",
-      "checkedAt": "2026-11-17T09:13:49.262918+00:00",
+      "checkedAt": "2026-11-17T12:04:04.627223+00:00",
       "rosterNames": 27,
       "photoCandidates": 14,
       "sources": [
         "https://en.wikipedia.org/wiki/Hibernian_F.C."
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "scotland-premiership:6": {
       "clubName": "Kilmarnock",
-      "checkedAt": "2026-11-17T09:13:51.860948+00:00",
+      "checkedAt": "2026-11-17T12:04:28.977324+00:00",
       "rosterNames": 22,
       "photoCandidates": 11,
       "sources": [
         "https://en.wikipedia.org/wiki/Kilmarnock_F.C."
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "scotland-premiership:7": {
       "clubName": "Dundee United",
-      "checkedAt": "2026-11-17T09:13:54.530178+00:00",
-      "rosterNames": 25,
-      "photoCandidates": 23,
+      "checkedAt": "2026-11-17T12:04:44.190439+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 21,
       "sources": [
         "https://en.wikipedia.org/wiki/Dundee_United_F.C."
       ],
@@ -1969,106 +1970,114 @@
     },
     "scotland-premiership:8": {
       "clubName": "Motherwell",
-      "checkedAt": "2026-11-17T09:13:57.401778+00:00",
-      "rosterNames": 29,
-      "photoCandidates": 14,
+      "checkedAt": "2026-11-17T12:04:51.712318+00:00",
+      "rosterNames": 63,
+      "photoCandidates": 31,
       "sources": [
-        "https://en.wikipedia.org/wiki/Motherwell_F.C."
+        "https://en.wikipedia.org/wiki/Motherwell_F.C.",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Motherwell_F.C._season"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "scotland-premiership:9": {
       "clubName": "Rangers",
-      "checkedAt": "2026-11-17T09:13:59.970524+00:00",
+      "checkedAt": "2026-11-17T12:05:35.422927+00:00",
       "rosterNames": 28,
-      "photoCandidates": 18,
+      "photoCandidates": 29,
       "sources": [
-        "https://en.wikipedia.org/wiki/Rangers_F.C."
+        "https://en.wikipedia.org/wiki/Rangers_F.C.",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Rangers_F.C._season"
       ],
-      "count": 4,
+      "count": 3,
       "status": "ready"
     },
     "scotland-premiership:10": {
       "clubName": "Falkirk",
-      "checkedAt": "2026-11-17T10:10:54.930956+00:00",
+      "checkedAt": "2026-11-17T12:06:11.284129+00:00",
       "rosterNames": 27,
       "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/Falkirk_F.C."
       ],
-      "count": 3,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "scotland-premiership:11": {
       "clubName": "St. Johnstone",
-      "checkedAt": "2026-11-17T09:41:31.316955+00:00",
+      "checkedAt": "2026-11-17T12:06:22.375012+00:00",
       "rosterNames": 23,
       "photoCandidates": 6,
       "sources": [
         "https://en.wikipedia.org/wiki/St_Johnstone_F.C."
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "scotland-premiership:12": {
       "clubName": "St. Mirren",
-      "checkedAt": "2026-11-17T09:41:42.600926+00:00",
+      "checkedAt": "2026-11-17T12:06:35.722852+00:00",
       "rosterNames": 24,
       "photoCandidates": 7,
       "sources": [
         "https://en.wikipedia.org/wiki/St_Mirren_F.C."
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "spain-la-liga:1": {
       "clubName": "Deportivo Alavés",
-      "checkedAt": "2026-11-17T09:14:12.546038+00:00",
-      "rosterNames": 27,
-      "photoCandidates": 12,
+      "checkedAt": "2026-11-17T12:06:49.596369+00:00",
+      "rosterNames": 60,
+      "photoCandidates": 38,
       "sources": [
-        "https://en.wikipedia.org/wiki/Deportivo_Alav%C3%A9s"
+        "https://en.wikipedia.org/wiki/Deportivo_Alav%C3%A9s",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Deportivo_Alav%C3%A9s_season",
+        "https://es.wikipedia.org/wiki/Deportivo_Alav%C3%A9s"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "spain-la-liga:2": {
       "clubName": "Deportivo La Coruña",
-      "checkedAt": "2026-11-17T09:14:15.445553+00:00",
-      "rosterNames": 26,
-      "photoCandidates": 14,
+      "checkedAt": "2026-11-17T12:07:47.532917+00:00",
+      "rosterNames": 61,
+      "photoCandidates": 45,
       "sources": [
-        "https://en.wikipedia.org/wiki/Deportivo_de_A_Coru%C3%B1a"
+        "https://en.wikipedia.org/wiki/Deportivo_de_A_Coru%C3%B1a",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Deportivo_de_A_Coru%C3%B1a_season",
+        "https://es.wikipedia.org/wiki/Real_Club_Deportivo_de_La_Coru%C3%B1a"
       ],
-      "count": 4,
+      "count": 3,
       "status": "ready"
     },
     "spain-la-liga:3": {
       "clubName": "Athletic Club",
-      "checkedAt": "2026-11-17T09:14:18.317620+00:00",
-      "rosterNames": 29,
-      "photoCandidates": 17,
+      "checkedAt": "2026-11-17T12:08:45.789889+00:00",
+      "rosterNames": 65,
+      "photoCandidates": 42,
       "sources": [
-        "https://en.wikipedia.org/wiki/Athletic_Bilbao"
+        "https://en.wikipedia.org/wiki/Athletic_Bilbao",
+        "https://es.wikipedia.org/wiki/Athletic_Club"
       ],
-      "count": 4,
+      "count": 3,
       "status": "ready"
     },
     "spain-la-liga:4": {
       "clubName": "Atlético Madrid",
-      "checkedAt": "2026-11-17T09:14:21.035865+00:00",
-      "rosterNames": 24,
-      "photoCandidates": 19,
+      "checkedAt": "2026-11-17T12:09:28.206958+00:00",
+      "rosterNames": 65,
+      "photoCandidates": 44,
       "sources": [
-        "https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid"
+        "https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid",
+        "https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_de_Madrid"
       ],
-      "count": 4,
+      "count": 3,
       "status": "ready"
     },
     "spain-la-liga:5": {
       "clubName": "FC Barcelona",
-      "checkedAt": "2026-11-17T09:14:30.404285+00:00",
+      "checkedAt": "2026-11-17T12:10:30.241108+00:00",
       "rosterNames": 27,
       "photoCandidates": 24,
       "sources": [
@@ -2444,5 +2453,5 @@
       "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T12:02:00.916988+00:00"
+  "lastUpdated": "2026-11-17T12:10:39.788058+00:00"
 }
