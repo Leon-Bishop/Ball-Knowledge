@@ -25,18 +25,24 @@ footer{padding:28px 0}
 <h1>Player photo credits</h1>
 <p>Player photographs used in the quiz are sourced individually from Wikimedia Commons. Each image retains its own author, source page and reuse license. Players are selected from the current-squad section of their club's Wikipedia article or current-season page. Wikimedia Commons photographs are automatically cropped to the detected face, excluding team shirts as far as possible. These are modified images: original authors and licenses are credited below. A club needs at least three qualifying portraits before its photos appear in the game.</p>
 <p id="coverage">Loading verified photo credits…</p>
-<table><thead><tr><th>Club / player</th><th>Photographer</th><th>License</th><th>Source</th></tr></thead><tbody id="rows"></tbody></table>
+<table><thead><tr><th>Club / player</th><th>Photographer</th><th>License</th><th>Photo source</th><th>Squad evidence</th></tr></thead><tbody id="rows"></tbody></table>
 <footer><small>Ball Knowledge does not imply that a photographed player endorses the game. Licensing and factual corrections can be requested at dev.leonb@gmail.com.</small></footer>
 <script>
 fetch('./assets/player-headshot-db.json').then(r=>r.json()).then(db=>{
  const tbody=document.getElementById('rows');
- const count=Object.values(db.clubs||{}).reduce((n,club)=>n+(club.players?.length||0),0);
- const clubs=Object.values(db.clubs||{});
- const complete4=clubs.filter(club=>(club.players||[]).length>=4).length;
- const complete3=clubs.filter(club=>(club.players||[]).length>=3).length;
- document.getElementById('coverage').textContent=count+' cropped, licensed current-squad headshots · '+complete3+' clubs with at least 3 portraits · '+complete4+' clubs with 4 portraits';
+ const now=Date.now(),fresh=t=>Number.isFinite(Date.parse(t||''))&&now-Date.parse(t)<21*86400000;
+ const allowed=new Set(['official_club_squad','confirmed_current_loan','wikidata_current_club','wikipedia_squad_stale_p54','wikipedia_squad_no_p54']);
+ const clubs=Object.values(db.clubs||{}).map(club=>({
+  ...club,players:fresh(db.rosterAuditAt)&&fresh(club.checkedAt)?
+   (club.players||[]).filter(p=>p.verifiedCurrent===true&&fresh(p.verifiedAt)&&allowed.has(p.rosterVerification)):[]
+ }));
+ const playable=clubs.filter(club=>club.players.length>=3);
+ const count=playable.reduce((n,club)=>n+club.players.length,0);
+ const complete4=playable.filter(club=>club.players.length>=4).length;
+ const complete3=playable.length;
+ document.getElementById('coverage').textContent=count+' eligible face-only current-squad portraits · '+complete3+' clubs with at least 3 · '+complete4+' clubs with 4. Some memberships are sourced only from Wikipedia; see evidence links.';
  const seen=new Set();
- for(const club of Object.values(db.clubs||{})){
+ for(const club of playable){
   for(const player of club.players||[]){
    const key=player.clubId+'|'+player.wikidataQid;
    if(seen.has(key))continue;seen.add(key);
@@ -47,7 +53,15 @@ fetch('./assets/player-headshot-db.json').then(r=>r.json()).then(db=>{
    if(player.licenseUrl){const a=document.createElement('a');a.href=player.licenseUrl;a.textContent=player.license;license.append(a)}
    else license.textContent=player.license;
    const source=document.createElement('td');const a=document.createElement('a');a.href=player.sourceUrl;a.textContent='Wikimedia Commons';a.target='_blank';a.rel='noopener noreferrer';source.append(a);
-   row.append(p,author,license,source);tbody.append(row);
+   const roster=document.createElement('td');
+   const sourceLink=document.createElement('a');
+   sourceLink.href=player.secondaryRosterSource||player.membershipSource;
+   sourceLink.target='_blank';sourceLink.rel='noopener noreferrer';
+   sourceLink.textContent=player.rosterVerification==='official_club_squad'?'Official club squad':
+     player.rosterVerification==='confirmed_current_loan'?'Transfer confirmation':
+     player.rosterVerification==='wikidata_current_club'?'Wikidata club record':'Wikipedia squad';
+   roster.append(sourceLink);
+   row.append(p,author,license,source,roster);tbody.append(row);
   }
  }
 }).catch(()=>{
