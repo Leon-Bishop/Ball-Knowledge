@@ -119,7 +119,19 @@ def self_test():
     valid, encoded = cv2.imencode(".jpg", blank)
     assert valid and not usable_face_crop(encoded.tobytes())
     assert not usable_face_crop(b"not a jpeg")
-    print("✓ Blank images and invalid JPEGs are not accepted as player faces")
+    # Regression examples checked against the current site's licensed photos.
+    good = HEADSHOTS / "turkey-super-lig-13--Q60182084.jpg"
+    if good.is_file():
+        assert usable_face_crop(good.read_bytes()), "Clear frontal player face was rejected"
+    for filename in (
+        "turkey-super-lig-10--Q56043335.jpg",  # banner/lettering, no head
+        "turkey-super-lig-12--Q40991902.jpg",  # player shirt, no head
+        "turkey-super-lig-13--Q26704485.jpg",  # arm, no head
+    ):
+        bad = HEADSHOTS / filename
+        if bad.is_file():
+            assert not usable_face_crop(bad.read_bytes()), "Non-face passed QA: " + filename
+    print("✓ Full visible faces pass; blank images, jerseys and arms are rejected")
 
 
 if __name__ == "__main__":
