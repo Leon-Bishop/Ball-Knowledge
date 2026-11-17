@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 117,
-  "clubsWithFour": 110,
-  "totalCurrentHeadshots": 461,
+  "clubsWithThree": 137,
+  "clubsWithFour": 130,
+  "totalCurrentHeadshots": 541,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -1083,7 +1083,228 @@
       ],
       "count": 4,
       "status": "ready"
+    },
+    "italy-serie-a:13": {
+      "clubName": "Monza",
+      "checkedAt": "2026-11-17T09:10:50.614348+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 14,
+      "sources": [
+        "https://en.wikipedia.org/wiki/AC_Monza"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:14": {
+      "clubName": "Napoli",
+      "checkedAt": "2026-11-17T09:10:53.980653+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 17,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SSC_Napoli"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:15": {
+      "clubName": "Parma",
+      "checkedAt": "2026-11-17T09:10:57.014058+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 7,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Parma_Calcio_1913"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:16": {
+      "clubName": "AS Roma",
+      "checkedAt": "2026-11-17T09:10:59.789669+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/AS_Roma"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:17": {
+      "clubName": "Sassuolo",
+      "checkedAt": "2026-11-17T09:11:02.798280+00:00",
+      "rosterNames": 33,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/US_Sassuolo_Calcio"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:18": {
+      "clubName": "Torino",
+      "checkedAt": "2026-11-17T09:11:05.442949+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 22,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Torino_FC"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:19": {
+      "clubName": "Udinese",
+      "checkedAt": "2026-11-17T09:11:08.733803+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Udinese_Calcio"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:20": {
+      "clubName": "Venezia",
+      "checkedAt": "2026-11-17T09:11:12.886776+00:00",
+      "rosterNames": 35,
+      "photoCandidates": 17,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Venezia_FC"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:1": {
+      "clubName": "Ajax Amsterdam",
+      "checkedAt": "2026-11-17T09:11:16.306260+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 25,
+      "sources": [
+        "https://en.wikipedia.org/wiki/AFC_Ajax"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:2": {
+      "clubName": "ADO Den Haag",
+      "checkedAt": "2026-11-17T09:11:19.974466+00:00",
+      "rosterNames": 42,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/ADO_Den_Haag",
+        "https://nl.wikipedia.org/wiki/ADO_Den_Haag"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:3": {
+      "clubName": "AZ Alkmaar",
+      "checkedAt": "2026-11-17T09:11:29.252939+00:00",
+      "rosterNames": 48,
+      "photoCandidates": 16,
+      "sources": [
+        "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:4": {
+      "clubName": "Excelsior",
+      "checkedAt": "2026-11-17T09:11:34.275597+00:00",
+      "rosterNames": 19,
+      "photoCandidates": 7,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Excelsior_Rotterdam"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:5": {
+      "clubName": "Feyenoord Rotterdam",
+      "checkedAt": "2026-11-17T09:11:37.017801+00:00",
+      "rosterNames": 59,
+      "photoCandidates": 24,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Feyenoord"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:6": {
+      "clubName": "Fortuna Sittard",
+      "checkedAt": "2026-11-17T09:11:40.335531+00:00",
+      "rosterNames": 21,
+      "photoCandidates": 14,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fortuna_Sittard"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:7": {
+      "clubName": "Go Ahead Eagles",
+      "checkedAt": "2026-11-17T09:11:42.953450+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Go_Ahead_Eagles"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:8": {
+      "clubName": "FC Twente",
+      "checkedAt": "2026-11-17T09:11:46.694140+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 23,
+      "sources": [
+        "https://en.wikipedia.org/wiki/FC_Twente"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:9": {
+      "clubName": "FC Utrecht",
+      "checkedAt": "2026-11-17T09:11:49.834374+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 17,
+      "sources": [
+        "https://en.wikipedia.org/wiki/FC_Utrecht"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:10": {
+      "clubName": "FC Groningen",
+      "checkedAt": "2026-11-17T09:11:52.640057+00:00",
+      "rosterNames": 23,
+      "photoCandidates": 13,
+      "sources": [
+        "https://en.wikipedia.org/wiki/FC_Groningen"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:11": {
+      "clubName": "Heerenveen",
+      "checkedAt": "2026-11-17T09:11:55.471935+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SC_Heerenveen"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "netherlands-eredivisie:12": {
+      "clubName": "NEC Nijmegen",
+      "checkedAt": "2026-11-17T09:11:58.426822+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/NEC_Nijmegen"
+      ],
+      "count": 4,
+      "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T09:10:43.466982+00:00"
+  "lastUpdated": "2026-11-17T09:12:01.652914+00:00"
 }
