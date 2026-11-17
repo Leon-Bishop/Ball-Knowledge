@@ -94,3 +94,6 @@ Club facts include draft research; publishing the project does not independently
 - Changing league/quiz-length selections affects **the next session**, not the ongoing session. Returning to the Play tab resumes the current run.
 - The Premier League list contains **20 distinct playable clubs**.
 - `npm test` now checks finite session length, uniqueness, daily determinism, final scoring and all six translations.
+
+### Photo editing pack
+After every update to the live headshot catalog, the **Export editable player photos matched to verified clubs** GitHub Action creates a downloadable ZIP named **Ball-Knowledge-Player-Photos**. Download it from the latest successful run's **Artifacts** section. Inside are `PHOTOS_BY_TEAM` (named for the verified player and club), the `PLAYER_TEAM_PHOTO_MATCHES.csv` spreadsheet-style index, `ORIGINAL_FILE_NAMES` for lossless reintegration, and a local `PHOTO_GALLERY.html` preview. Only actual game-eligible headshots are included; no historical or wrong-club images. Preserve filenames when returning edited images.
