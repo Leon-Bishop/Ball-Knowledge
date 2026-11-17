@@ -12,7 +12,8 @@ assert(links.includes('styles.css')&&links.includes('broadcast.css'),
   'Both base and broadcast CSS must be included in the headshot regression');
 const rules=[];
 for(const name of links){
- const css=fs.readFileSync(path.join(root,'assets',name),'utf8');
+ // Comments in declarations must not be mistaken for CSS property names.
+ const css=fs.readFileSync(path.join(root,'assets',name),'utf8').replace(/\/\*[\s\S]*?\*\//g,'');
  // CSS rules are simple declaration blocks; this also scans nested media rules.
  for(const match of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)){
   if(!match[1].includes('.player-photo-clue'))continue;
