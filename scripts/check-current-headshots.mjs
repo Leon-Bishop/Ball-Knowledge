@@ -19,6 +19,10 @@ for(const [id,club] of Object.entries(db.clubs)){
   assert.equal(p.verifiedCurrent,true);
   assert.equal(p.faceCrop,true);
   assert(p.photoUrl.startsWith('./assets/player-headshots/'));
+  assert.equal(p.modified,true,'Cropping must be disclosed');
+  const localImage=new URL('../'+p.photoUrl.slice(2),import.meta.url);
+  assert(fs.existsSync(localImage),'Curated headshot file missing: '+p.photoUrl);
+  assert(fs.statSync(localImage).size>1500,'Curated headshot image unexpectedly small');
   assert(p.sourceUrl.startsWith('https://commons.wikimedia.org/'));
   assert(/^https:\/\/[a-z]+\.wikipedia\.org\/wiki\//.test(p.membershipSource));
   assert(p.license&&p.author&&p.wikidataQid&&!seen.has(p.wikidataQid));
