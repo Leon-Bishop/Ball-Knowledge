@@ -769,6 +769,28 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
 
 
 def self_test():
+    # Structured-media query must return ONLY files explicitly depicting the
+    # exact footballer QID, not similarly named players or generic team media.
+    global api
+    original_api = api
+    def fake_api(host, params):
+        if params.get("generator") == "search":
+            assert params["gsrsearch"] == "haswbstatement:P180=Q123"
+            return {"query": {"pages": {
+                "101": {"pageid": 101, "title": "File:Valid player.jpg"},
+                "102": {"pageid": 102, "title": "File:Wrong footballer.jpg"}
+            }}}
+        if params.get("action") == "wbgetentities":
+            return {"entities": {
+                "M101": {"claims": {"P180": [{"mainsnak":{"datavalue":{"value":{"id":"Q123"}}}}]}},
+                "M102": {"claims": {"P180": [{"mainsnak":{"datavalue":{"value":{"id":"Q456"}}}}]}}
+            }}
+        raise AssertionError("Unexpected Commons request")
+    try:
+        api = fake_api
+        assert commons_depicts_files("Q123", "Current Player") == ["Valid player.jpg"]
+    finally:
+        api = original_api
     sample = """== History ==
 [[Old Player]]
 == Players ==
