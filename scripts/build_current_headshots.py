@@ -545,6 +545,9 @@ def process_club(team, qid, title, old_db, language="en"):
 def run(max_clubs, force=False, since=None):
     teams = read_json(TEAMS, [])
     mapping = read_json(CLUBS, {}).get("clubs", {})
+    roster_evidence = read_json(ROOT / "photo-db/official-roster-evidence.json", {})
+    confirmed_loans = roster_evidence.get("loanAssignments", {})
+    official_squads = roster_evidence.get("officialClubs", {})
     old_db = read_json(OLD_DB, {"clubs": {}})
     db = read_json(OUTPUT, {"version": 2, "clubs": {}})
     audit = read_json(AUDIT, {"version": 2, "clubs": {}})
@@ -599,9 +602,17 @@ def run(max_clubs, force=False, since=None):
                     roster_count = max(roster_count, names_count)
                     candidates += candidates_count
                     for player in extra:
-                        if player["wikidataQid"] not in seen and len(players) < TARGET:
+                        player_qid = player["wikidataQid"]
+                        # Loan parent is NOT the club represented on the pitch.
+                        loan = confirmed_loans.get(player_qid)
+                        if loan and loan.get("clubId") != club_id:
+                            continue
+                        official = official_squads.get(club_id)
+                        if official and player_qid not in official.get("players", {}):
+                            continue
+                        if player_qid not in seen and len(players) < TARGET:
                             players.append(player)
-                            seen.add(player["wikidataQid"])
+                            seen.add(player_qid)
                     used_sources.append(wiki_title_url(title, language))
                 except Exception as source_exc:
                     errors.append(language + ":" + str(source_exc)[:90])
@@ -621,6 +632,25 @@ def run(max_clubs, force=False, since=None):
             status.update({"status": "unverified", "count": len(previous.get("players", [])),
                            "reason": str(exc)[:250]})
             print("  Unverified:", str(exc)[:130], flush=True)
+        # Never assign the same individual to two game clubs.
+        owners = {}
+        for owner_id, record in db.get("clubs", {}).items():
+            for candidate in record.get("players", []):
+                owners.setdefault(candidate["wikidataQid"], set()).add(owner_id)
+        for player_qid, club_ids in owners.items():
+            if len(club_ids) <= 1:
+                continue
+            loan = confirmed_loans.get(player_qid)
+            preferred = loan.get("clubId") if loan else None
+            if not preferred:
+                approved = [id for id in club_ids
+                            if player_qid in official_squads.get(id, {}).get("players", {})]
+                preferred = approved[0] if len(approved) == 1 else None
+            for other_id in club_ids:
+                if other_id != preferred:
+                    db["clubs"][other_id]["players"] = [
+                        p for p in db["clubs"][other_id]["players"]
+                        if p["wikidataQid"] != player_qid]
         audit["clubs"][club_id] = status
         db["lastUpdated"] = datetime.now(timezone.utc).isoformat()
         OUTPUT.write_text(json.dumps(db, ensure_ascii=False, indent=2) + "\n", encoding="utf8")
