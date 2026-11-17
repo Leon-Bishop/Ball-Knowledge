@@ -41,7 +41,9 @@ function renderTable(league,standings){
    tr.append(el('td','',String(value??'–')));
   }return tr;
  }));
- $('standingsSource').textContent=tx('standingsSource')+' · '+league.name;
+ const data=standings.leagues[league.id];
+ const provider=data.source||standings.provider||'Football data';
+ $('standingsSource').textContent=provider+' · '+league.name+(data.calculated?' · Calculated table; official tie-breaks may differ':'')+(data.stale?' · Cached (update delayed)':'');
 }
 async function fetchStandings(){
  if(latest)return latest;
