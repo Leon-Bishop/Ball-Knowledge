@@ -34,9 +34,10 @@ const player=(n,current=true)=>({
  author:'Photographer',license:'CC BY-SA 4.0'
 });
 const mock={version:2,clubs:{
- 'team:1':{players:[player(1),player(2),player(3),player(4,false)]},
- 'team:2':{players:[{...player(1),clubId:'team:2'}, {...player(2),clubId:'team:2'}]},
- 'team:3':{players:[1,2,3,4].map(i=>({...player(i),clubId:'team:3',membershipSection:'players'}))}
+ 'team:1':{checkedAt:new Date().toISOString(),players:[player(1),player(2),player(3),player(4,false)]},
+ 'team:2':{checkedAt:new Date().toISOString(),players:[{...player(1),clubId:'team:2'}, {...player(2),clubId:'team:2'}]},
+ 'team:3':{checkedAt:new Date().toISOString(),players:[1,2,3,4].map(i=>({...player(i),clubId:'team:3',membershipSection:'players'}))},
+ 'team:4':{checkedAt:'2020-01-01T00:00:00Z',players:[1,2,3,4].map(i=>({...player(i),clubId:'team:4'}))}
 }};
 const window={dispatchEvent(){}};
 vm.runInNewContext(source,{window,fetch:async()=>({ok:true,json:async()=>mock}),Event:class Event{},console});
@@ -44,6 +45,7 @@ await window.BKPlayerPhotos.ready;
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:1').length,3);
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:2').length,0);
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:3').length,0);
+assert.equal(window.BKPlayerPhotos.availablePlayers('team:4').length,0);
 assert.equal(window.BKPlayerPhotos.getPlayer('team:2','seed',0),null);
 const ids=[0,1,2].map(i=>window.BKPlayerPhotos.getPlayer('team:1','seed',i).wikidataQid);
 assert.equal(new Set(ids).size,3,'Different clues must show different players');
