@@ -19,6 +19,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "assets/player-headshot-db.json"
@@ -314,13 +315,18 @@ def commons_metadata(names):
     return result
 
 
-def commons_person_category_files(entity):
+def commons_person_category_files(entity, player_name):
     """A Wikidata P373 Commons category belongs to the exact person entity.
 
     This is stronger identity evidence than a filename search; category
     membership alone is still checked for a single dominant face in the crop.
     """
     categories = [v for v in claim_value(entity, "P373") if isinstance(v, str)]
+    def normalize(value):
+        value = unicodedata.normalize("NFKD", value.casefold())
+        return re.sub(r"[^a-z0-9]+", " ", "".join(
+            ch for ch in value if not unicodedata.combining(ch))).strip()
+    name_tokens = [token for token in normalize(player_name).split() if len(token) >= 3]
     files = []
     for category in categories[:1]:
         try:
@@ -331,7 +337,14 @@ def commons_person_category_files(entity):
             })
             for page in data.get("query", {}).get("categorymembers", []):
                 title = page.get("title", "")
-                if title.startswith("File:") and re.search(r"\\.(?:jpe?g|png|webp)$", title, re.I):
+                # A person category may also contain team or crowd shots.
+                # Require the exact player's full name in the filename,
+                # otherwise use the stronger structured P180 match instead.
+                normalized_title = normalize(title)
+                if (len(name_tokens) >= 2 and
+                        all(token in normalized_title.split() for token in name_tokens) and
+                        title.startswith("File:") and
+                        re.search(r"\\.(?:jpe?g|png|webp)$", title, re.I)):
                     files.append(title.removeprefix("File:"))
         except Exception as exc:
             print("  Commons player category unavailable", category, str(exc)[:75], flush=True)
@@ -506,9 +519,11 @@ def process_club(team, qid, title, old_db, language="en"):
             search_attempts += 1
             # First prefer files in the individual's Wikidata-linked
             # Commons category, then exact P180 "depicts" matches.
-            files = commons_person_category_files(entity)
+            files = commons_person_category_files(entity, name)
+            identity_method = "commons_named_person_category"
             if not files:
                 files = commons_depicts_files(player_qid, name)
+                identity_method = "commons_structured_depicts"
             if not files:
                 continue
             extra_meta = commons_metadata(files)
@@ -535,7 +550,7 @@ def process_club(team, qid, title, old_db, language="en"):
                     "membershipSection": heading if heading in CURRENT_SECTIONS else "current squad",
                     "membershipHeading": heading,
                     "verifiedCurrent": True, "faceCrop": True, "modified": True,
-                    "associationType": "current_squad_wikipedia_and_commons_p180"
+                    "associationType": "current_squad_wikipedia_and_" + identity_method
                 })
                 selected.add(player_qid)
                 break
