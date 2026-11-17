@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 79,
+  "clubsWithThree": 80,
   "clubsWithFour": 45,
-  "totalCurrentHeadshots": 415,
+  "totalCurrentHeadshots": 416,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -556,7 +556,7 @@
     },
     "england-premier-league:11": {
       "clubName": "Leeds United",
-      "checkedAt": "2026-11-17T11:06:17.769617+00:00",
+      "checkedAt": "2026-11-17T12:53:30.958335+00:00",
       "rosterNames": 24,
       "photoCandidates": 21,
       "sources": [
@@ -611,7 +611,7 @@
     },
     "england-premier-league:16": {
       "clubName": "Nottm Forest",
-      "checkedAt": "2026-11-17T11:07:30.682992+00:00",
+      "checkedAt": "2026-11-17T12:54:00.577015+00:00",
       "rosterNames": 65,
       "photoCandidates": 44,
       "sources": [
@@ -623,7 +623,7 @@
     },
     "england-premier-league:17": {
       "clubName": "Coventry City",
-      "checkedAt": "2026-11-17T11:08:28.083581+00:00",
+      "checkedAt": "2026-11-17T12:54:54.015150+00:00",
       "rosterNames": 30,
       "photoCandidates": 25,
       "sources": [
@@ -634,7 +634,7 @@
     },
     "england-premier-league:18": {
       "clubName": "Tottenham",
-      "checkedAt": "2026-11-17T11:08:55.903131+00:00",
+      "checkedAt": "2026-11-17T12:55:20.297616+00:00",
       "rosterNames": 37,
       "photoCandidates": 28,
       "sources": [
@@ -667,7 +667,7 @@
     },
     "france-ligue-1:1": {
       "clubName": "AJ Auxerre",
-      "checkedAt": "2026-11-17T11:10:02.378662+00:00",
+      "checkedAt": "2026-11-17T12:55:51.570849+00:00",
       "rosterNames": 26,
       "photoCandidates": 10,
       "sources": [
@@ -678,7 +678,7 @@
     },
     "france-ligue-1:2": {
       "clubName": "Angers",
-      "checkedAt": "2026-11-17T11:10:19.238235+00:00",
+      "checkedAt": "2026-11-17T12:56:07.421465+00:00",
       "rosterNames": 22,
       "photoCandidates": 12,
       "sources": [
@@ -689,7 +689,7 @@
     },
     "france-ligue-1:3": {
       "clubName": "AS Monaco",
-      "checkedAt": "2026-11-17T11:11:04.629598+00:00",
+      "checkedAt": "2026-11-17T12:56:44.584181+00:00",
       "rosterNames": 26,
       "photoCandidates": 36,
       "sources": [
@@ -701,7 +701,7 @@
     },
     "france-ligue-1:4": {
       "clubName": "Brest",
-      "checkedAt": "2026-11-17T11:12:25.274814+00:00",
+      "checkedAt": "2026-11-17T12:58:01.797550+00:00",
       "rosterNames": 40,
       "photoCandidates": 21,
       "sources": [
@@ -713,7 +713,7 @@
     },
     "france-ligue-1:5": {
       "clubName": "Le Havre AC",
-      "checkedAt": "2026-11-17T11:13:09.589869+00:00",
+      "checkedAt": "2026-11-17T12:58:41.887999+00:00",
       "rosterNames": 26,
       "photoCandidates": 18,
       "sources": [
@@ -725,7 +725,7 @@
     },
     "france-ligue-1:6": {
       "clubName": "Lille",
-      "checkedAt": "2026-11-17T11:13:57.644584+00:00",
+      "checkedAt": "2026-11-17T12:59:28.055942+00:00",
       "rosterNames": 25,
       "photoCandidates": 36,
       "sources": [
@@ -748,7 +748,7 @@
     },
     "france-ligue-1:8": {
       "clubName": "Marseille",
-      "checkedAt": "2026-11-17T11:15:11.531155+00:00",
+      "checkedAt": "2026-11-17T13:00:30.743675+00:00",
       "rosterNames": 22,
       "photoCandidates": 36,
       "sources": [
@@ -760,7 +760,7 @@
     },
     "france-ligue-1:9": {
       "clubName": "Le Mans",
-      "checkedAt": "2026-11-17T11:16:24.716692+00:00",
+      "checkedAt": "2026-11-17T13:01:36.172718+00:00",
       "rosterNames": 28,
       "photoCandidates": 9,
       "sources": [
@@ -771,7 +771,7 @@
     },
     "france-ligue-1:10": {
       "clubName": "Nice",
-      "checkedAt": "2026-11-17T11:16:42.789937+00:00",
+      "checkedAt": "2026-11-17T13:01:53.808571+00:00",
       "rosterNames": 27,
       "photoCandidates": 18,
       "sources": [
@@ -782,7 +782,7 @@
     },
     "france-ligue-1:11": {
       "clubName": "Lorient",
-      "checkedAt": "2026-11-17T11:17:30.016485+00:00",
+      "checkedAt": "2026-11-17T13:02:37.516047+00:00",
       "rosterNames": 26,
       "photoCandidates": 12,
       "sources": [
@@ -804,7 +804,7 @@
     },
     "france-ligue-1:13": {
       "clubName": "Rennes",
-      "checkedAt": "2026-11-17T11:18:20.953077+00:00",
+      "checkedAt": "2026-11-17T13:03:15.891250+00:00",
       "rosterNames": 27,
       "photoCandidates": 34,
       "sources": [
@@ -816,7 +816,7 @@
     },
     "france-ligue-1:14": {
       "clubName": "Paris FC",
-      "checkedAt": "2026-11-17T11:19:28.638006+00:00",
+      "checkedAt": "2026-11-17T13:04:19.002497+00:00",
       "rosterNames": 24,
       "photoCandidates": 15,
       "sources": [
@@ -827,7 +827,7 @@
     },
     "france-ligue-1:15": {
       "clubName": "Strasbourg",
-      "checkedAt": "2026-11-17T11:20:15.309295+00:00",
+      "checkedAt": "2026-11-17T13:05:03.638166+00:00",
       "rosterNames": 29,
       "photoCandidates": 26,
       "sources": [
@@ -839,7 +839,7 @@
     },
     "france-ligue-1:16": {
       "clubName": "Toulouse",
-      "checkedAt": "2026-11-17T11:21:06.723215+00:00",
+      "checkedAt": "2026-11-17T13:05:51.942668+00:00",
       "rosterNames": 23,
       "photoCandidates": 14,
       "sources": [
@@ -850,7 +850,7 @@
     },
     "france-ligue-1:17": {
       "clubName": "Lens",
-      "checkedAt": "2026-11-17T11:21:52.012563+00:00",
+      "checkedAt": "2026-11-17T13:06:32.859666+00:00",
       "rosterNames": 28,
       "photoCandidates": 40,
       "sources": [
@@ -914,7 +914,7 @@
     },
     "germany-bundesliga:5": {
       "clubName": "Borussia Monchengladbach",
-      "checkedAt": "2026-11-17T11:23:41.397176+00:00",
+      "checkedAt": "2026-11-17T13:07:32.842535+00:00",
       "rosterNames": 35,
       "photoCandidates": 46,
       "sources": [
@@ -2476,5 +2476,5 @@
       "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T12:53:22.159081+00:00"
+  "lastUpdated": "2026-11-17T13:08:20.464717+00:00"
 }
