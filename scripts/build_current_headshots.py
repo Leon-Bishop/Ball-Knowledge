@@ -625,6 +625,9 @@ def run(max_clubs, force=False, since=None):
                         official = official_squads.get(club_id)
                         if official and player_qid not in official.get("players", {}):
                             continue
+                        if official:
+                            # Prefer the player's name as listed by their club.
+                            player["playerName"] = official["players"][player_qid]
                         if player_qid not in seen and len(players) < TARGET:
                             players.append(player)
                             seen.add(player_qid)
