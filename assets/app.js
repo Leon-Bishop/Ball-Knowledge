@@ -141,7 +141,9 @@ function eligiblePlayerPhoto(index,alternative=null){
  const seed=session?.daily?String(session.date):playerPhotoSessionSeed;
  const roundSeed=seed+'|'+String(session?.played??0);
  const offset=alternative===null?(photoAlternates.get(round.id+'|'+roundSeed+'|'+index)||0):alternative;
- return window.BKPlayerPhotos?.getPlayer(round.id,roundSeed,index,offset)||null;
+ // Assign each photo clue a unique portrait, even when emoji slots are nonadjacent.
+ const portraitIndex=round.emojis.slice(0,index).filter(e=>PLAYER_PHOTO_REPLACE.has(e)).length;
+ return window.BKPlayerPhotos?.getPlayer(round.id,roundSeed,portraitIndex,offset)||null;
 }
 function displayEmojiExplanation(){
  const panel=$('emojiExplanation');
