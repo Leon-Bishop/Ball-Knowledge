@@ -343,7 +343,8 @@ def commons_person_category_files(entity, player_name):
                 # otherwise use the stronger structured P180 match instead.
                 normalized_title = normalize(title)
                 if (len(name_tokens) >= 2 and
-                        all(token in normalized_title.split() for token in name_tokens) and
+                        name_tokens[0] in normalized_title.split() and
+                        name_tokens[-1] in normalized_title.split() and
                         title.startswith("File:") and
                         re.search(r"\.(?:jpe?g|png|webp)$", title, re.I)):
                     files.append(title.removeprefix("File:"))
@@ -468,7 +469,6 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET):
     candidates.sort(key=lambda c: hashlib.sha256((club_id + c[0]).encode()).hexdigest())
     candidates = candidates[:MAX_PHOTO_TRIES]
     metadata = commons_metadata([p[2] for p in candidates])
-    prior = {p["wikidataQid"]: p for p in old_db.get("clubs", {}).get(club_id, {}).get("players", [])}
     photos = []
     for player_qid, name, filename in candidates:
         if len(photos) >= target:
@@ -501,7 +501,7 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET):
             "faceQualityVerified": True, "modified": True,
             "associationType": "current_squad_wikipedia_section"
         })
-    # Targeted second pass for clubs short of four portraits. Wikimedia
+    # Targeted second pass for clubs short of the needed portrait target. Wikimedia
     # Structured Data P180 must explicitly depict this exact player QID.
     # Never infer identity from a similar-looking filename or face alone.
     if len(photos) < target:
