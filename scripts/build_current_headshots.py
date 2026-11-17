@@ -29,8 +29,9 @@ CLUBS = ROOT / "photo-db/club-wikidata-map.json"
 TEAMS = ROOT / "teams.enriched.json"
 OLD_DB = ROOT / "assets/player-photo-db.json"
 AGENT = "BallKnowledgeHeadshots/2.0 (Wikimedia Commons attributed cropped image project; contact dev.leonb@gmail.com)"
-MINIMUM = 3
+MINIMUM = 1
 TARGET = 4
+TROPHY_TARGET = 1
 CURRENT_SECTIONS = {
     "current squad", "first-team squad", "first team squad", "squad",
     "senior squad", "first team", "first-team",
@@ -51,7 +52,7 @@ LEAGUE_LANGUAGES = {
     "spain-la-liga": ("es",),
     "turkey-super-lig": ("tr",)
 }
-MAX_PHOTO_TRIES = 28
+MAX_PHOTO_TRIES = 65
 MAX_ROSTER_CANDIDATES = 65
 SLEEP_SECONDS = 0.35
 
@@ -333,7 +334,7 @@ def commons_person_category_files(entity, player_name):
             data = api("commons.wikimedia.org", {
                 "action": "query", "format": "json", "list": "categorymembers",
                 "cmtitle": "Category:" + category,
-                "cmnamespace": 6, "cmlimit": 25
+                "cmnamespace": 6, "cmlimit": 65
             })
             for page in data.get("query", {}).get("categorymembers", []):
                 title = page.get("title", "")
@@ -348,7 +349,7 @@ def commons_person_category_files(entity, player_name):
                     files.append(title.removeprefix("File:"))
         except Exception as exc:
             print("  Commons player category unavailable", category, str(exc)[:75], flush=True)
-    return list(dict.fromkeys(files))[:10]
+    return list(dict.fromkeys(files))[:24]
 
 
 def commons_depicts_files(player_qid, player_name):
@@ -360,7 +361,7 @@ def commons_depicts_files(player_qid, player_name):
         data = api("commons.wikimedia.org", {
             "action": "query", "format": "json", "generator": "search",
             "gsrsearch": '"' + player_name + '"', "gsrnamespace": 6,
-            "gsrlimit": 8, "prop": "info"
+            "gsrlimit": 30, "prop": "info"
         })
         pages = [p for p in data.get("query", {}).get("pages", {}).values()
                  if p.get("pageid") and p.get("title", "").startswith("File:")]
@@ -382,7 +383,7 @@ def commons_depicts_files(player_qid, player_name):
                 filename = page["title"].removeprefix("File:")
                 if re.search(r"\.(?:jpe?g|png|webp)$", filename, re.I):
                     files.append(filename)
-        return files[:3]
+        return files[:12]
     except Exception as exc:
         print("  Commons identity search unavailable", player_name, str(exc)[:75], flush=True)
         return []
@@ -438,7 +439,7 @@ def crop_face(image_bytes):
     return jpeg if usable_face_crop(jpeg) else None
 
 
-def process_club(team, qid, title, old_db, language="en"):
+def process_club(team, qid, title, old_db, language="en", target=TARGET):
     club_id = team["id"]
     raw, roster_url = wiki_squad(title, language)
     section, heading = squad_section(raw)
@@ -461,8 +462,7 @@ def process_club(team, qid, title, old_db, language="en"):
         if not name:
             continue
         candidates.append((player_qid, name, filename))
-    if not candidates:
-        raise ValueError("No roster footballers with Wikimedia photos")
+    # Missing main P18 portraits is not a reason to skip licensed Commons galleries.
     # Shuffle deterministically so we don't always pick alphabetical old faces.
     import hashlib
     candidates.sort(key=lambda c: hashlib.sha256((club_id + c[0]).encode()).hexdigest())
@@ -471,7 +471,7 @@ def process_club(team, qid, title, old_db, language="en"):
     prior = {p["wikidataQid"]: p for p in old_db.get("clubs", {}).get(club_id, {}).get("players", [])}
     photos = []
     for player_qid, name, filename in candidates:
-        if len(photos) >= TARGET:
+        if len(photos) >= target:
             break
         info = metadata.get(filename.casefold())
         if not info:
@@ -501,17 +501,18 @@ def process_club(team, qid, title, old_db, language="en"):
             "membershipSource": roster_url,
             "membershipSection": heading if heading in CURRENT_SECTIONS else "current squad",
             "membershipHeading": heading,
-            "verifiedCurrent": True, "faceCrop": True, "modified": True,
+            "verifiedCurrent": False, "faceCrop": True,
+            "faceQualityVerified": True, "modified": True,
             "associationType": "current_squad_wikipedia_section"
         })
     # Targeted second pass for clubs short of four portraits. Wikimedia
     # Structured Data P180 must explicitly depict this exact player QID.
     # Never infer identity from a similar-looking filename or face alone.
-    if len(photos) < TARGET:
+    if len(photos) < target:
         selected = {p["wikidataQid"] for p in photos}
         search_attempts = 0
         for player_qid in qids:
-            if len(photos) >= TARGET or search_attempts >= 8:
+            if len(photos) >= target or search_attempts >= 30:
                 break
             if player_qid in selected:
                 continue
@@ -554,7 +555,8 @@ def process_club(team, qid, title, old_db, language="en"):
                     "membershipSource": roster_url,
                     "membershipSection": heading if heading in CURRENT_SECTIONS else "current squad",
                     "membershipHeading": heading,
-                    "verifiedCurrent": True, "faceCrop": True, "modified": True,
+                    "verifiedCurrent": False, "faceCrop": True,
+            "faceQualityVerified": True, "modified": True,
                     "associationType": "current_squad_wikipedia_and_" + identity_method
                 })
                 selected.add(player_qid)
@@ -562,13 +564,14 @@ def process_club(team, qid, title, old_db, language="en"):
     return photos, len(titles), len(candidates)
 
 
-def run(max_clubs, force=False, since=None):
+def run(max_clubs, force=False, since=None, only_missing_cups=False):
     teams = read_json(TEAMS, [])
     mapping = read_json(CLUBS, {}).get("clubs", {})
     roster_evidence = read_json(ROOT / "photo-db/official-roster-evidence.json", {})
     confirmed_loans = roster_evidence.get("loanAssignments", {})
     official_squads = roster_evidence.get("officialClubs", {})
-    old_db = read_json(OLD_DB, {"clubs": {}})
+    # Reuse metadata only from the curated current-headshot catalog.
+    old_db = read_json(OUTPUT, {"clubs": {}})
     db = read_json(OUTPUT, {"version": 2, "clubs": {}})
     audit = read_json(AUDIT, {"version": 2, "clubs": {}})
     db["version"] = 2
@@ -585,6 +588,20 @@ def run(max_clubs, force=False, since=None):
     club_qids = list(dict.fromkeys(qid for qid in mapping.values() if qid))
     wiki_pages = club_wikipedia_pages(club_qids)
     attempted = 0
+    def already_covered(team):
+        return any(
+            p.get("faceCrop") is True and p.get("faceQualityVerified") is True
+            and p.get("verifiedCurrent") is True
+            and p.get("rosterVerification") in
+                ("official_club_squad", "confirmed_current_loan", "wikidata_current_club")
+            for p in db.get("clubs", {}).get(team["id"], {}).get("players", [])
+        )
+    if only_missing_cups:
+        teams = [t for t in teams if "🏆" in t.get("emojis", []) and not already_covered(t)]
+    # Prioritize uncovered trophy clubs over already-served clubs.
+    teams.sort(key=lambda t: (
+        "🏆" not in t.get("emojis", []) or already_covered(t), t["league_id"], t["name"]
+    ))
     for team in teams:
         club_id, qid = team["id"], mapping.get(team["id"])
         previous = db.get("clubs", {}).get(club_id, {})
@@ -595,7 +612,8 @@ def run(max_clubs, force=False, since=None):
             p.get("faceCrop") is True and p.get("faceQualityVerified") is True
             for p in previous.get("players", [])
         )
-        if (not force and usable_previous >= TARGET
+        target = TROPHY_TARGET if "🏆" in team.get("emojis", []) else TARGET
+        if (not force and usable_previous >= target
                 and previous.get("checkedAt", "") >= fresh_since):
             continue
         if since and audit["clubs"].get(club_id, {}).get("checkedAt", "") >= since:
@@ -619,11 +637,11 @@ def run(max_clubs, force=False, since=None):
             players, seen, errors, used_sources = [], set(), [], []
             roster_count, candidates = 0, 0
             for language, title in sources:
-                if len(players) >= TARGET:
+                if len(players) >= target:
                     break
                 try:
                     extra, names_count, candidates_count = process_club(
-                        team, qid, title, old_db, language
+                        team, qid, title, old_db, language, target=target
                     )
                     roster_count = max(roster_count, names_count)
                     candidates += candidates_count
@@ -639,7 +657,7 @@ def run(max_clubs, force=False, since=None):
                         if official:
                             # Prefer the player's name as listed by their club.
                             player["playerName"] = official["players"][player_qid]
-                        if player_qid not in seen and len(players) < TARGET:
+                        if player_qid not in seen and len(players) < target:
                             players.append(player)
                             seen.add(player_qid)
                     used_sources.append(wiki_title_url(title, language))
@@ -647,6 +665,24 @@ def run(max_clubs, force=False, since=None):
                     errors.append(language + ":" + str(source_exc)[:90])
             if not used_sources:
                 raise ValueError("No verified current squad: " + "; ".join(errors[:3]))
+            # The entire acquired-photo batch is independently checked against
+            # a current club P54 or the explicit official/loan roster evidence.
+            from verify_current_rosters import official_evidence, current_club_from_wikidata
+            now = datetime.now(timezone.utc)
+            identities = wikidata_entities([p["wikidataQid"] for p in players]) if players else {}
+            for p in players:
+                player_qid = p["wikidataQid"]
+                method, evidence_url = official_evidence(club_id, player_qid, roster_evidence, now.date())
+                if not method and current_club_from_wikidata(
+                        identities.get(player_qid, {}), now.date())[0] == qid:
+                    method = "wikidata_current_club"
+                    evidence_url = "https://www.wikidata.org/wiki/" + player_qid
+                p["rosterVerification"] = method or "independent_current_club_not_confirmed"
+                p["verifiedCurrent"] = bool(method)
+                p["verifiedAt"] = now.isoformat()
+                if evidence_url:
+                    p["secondaryRosterSource"] = evidence_url
+            db["rosterAuditAt"] = now.isoformat()
             status.update({"rosterNames": roster_count, "photoCandidates": candidates,
                            "sources": used_sources})
             # A new roster snapshot supersedes historical and previously stale data.
@@ -741,8 +777,9 @@ if __name__ == "__main__":
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--since", default=None)
     parser.add_argument("--self-test", action="store_true")
+    parser.add_argument("--only-missing-cups", action="store_true")
     args = parser.parse_args()
     if args.self_test:
         self_test()
     else:
-        run(args.max_clubs, args.force, args.since)
+        run(args.max_clubs, args.force, args.since, args.only_missing_cups)
