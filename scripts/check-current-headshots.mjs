@@ -10,7 +10,6 @@ assert.equal(db.version,2);
 const official=JSON.parse(fs.readFileSync(new URL('../photo-db/official-roster-evidence.json',import.meta.url),'utf8'));
 const clubMap=JSON.parse(fs.readFileSync(new URL('../photo-db/club-wikidata-map.json',import.meta.url),'utf8')).clubs;
 for(const [clubId,expected] of Object.entries({
- 'scotland-premiership:4':['Q65684173','Q137864483','Q28045315','Q140364405'],
  'turkey-super-lig:14':['Q38085271','Q16730286','Q17476763','Q28086083']
 })){
  const c=official.officialClubs[clubId];
@@ -87,7 +86,7 @@ const mock={version:2,rosterAuditAt:new Date().toISOString(),clubs:{
  'team:4':{clubWikidataQid:'Q999',checkedAt:'2020-01-01T00:00:00Z',players:[20,21,22,23].map(i=>({...player(i),clubId:'team:4'}))},
  'team:5':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[{...player(99),clubId:'team:5'},{...player(100),clubId:'team:5'},{...player(101),clubId:'team:5'}]},
  'team:6':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[{...player(99),clubId:'team:6'},{...player(102),clubId:'team:6'},{...player(103),clubId:'team:6'}]},
- 'belgian-pro-league:12':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[30,31,32].map(i=>({...player(i),clubId:'belgian-pro-league:12',photoUrl:'./assets/player-headshots/belgian-pro-league-12--Q'+i+'.jpg'})).concat([{...player(33),clubId:'belgian-pro-league:12',wikidataQid:'Q115902876'}])}
+ 'netherlands-eredivisie:5':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[30,31,32].map(i=>({...player(i),clubId:'netherlands-eredivisie:5',photoUrl:'./assets/player-headshots/belgian-pro-league-12--Q'+i+'.jpg'})).concat([{...player(33),clubId:'netherlands-eredivisie:5',wikidataQid:'Q134470771'}])}
 }};
 mock.clubs['team:8']={clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[80,81,82].map(n=>({
  ...player(n,false),clubId:'team:8',photoUrl:'./assets/player-headshots/team-8--Q'+n+'.jpg',
@@ -114,7 +113,7 @@ assert.equal(window.BKPlayerPhotos.availablePlayers('team:3').length,0);
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:4').length,0);
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:5').length,0,'Cross-club duplicate invalidates incomplete club set');
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:6').length,0,'A duplicate must be rejected in both clubs');
-assert.equal(window.BKPlayerPhotos.availablePlayers('belgian-pro-league:12').length,3);
+assert.equal(window.BKPlayerPhotos.availablePlayers('netherlands-eredivisie:5').length,3);
 assert.equal(window.BKPlayerPhotos.getPlayer('team:2','seed',0),null);
 const single={...player(90),clubId:'team:9',photoUrl:'./assets/player-headshots/team-9--Q90.jpg'};
 const pair=[91,92].map(n=>({...player(n),clubId:'team:10',photoUrl:'./assets/player-headshots/team-10--Q'+n+'.jpg'}));

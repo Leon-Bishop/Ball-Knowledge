@@ -14,16 +14,12 @@ const output = {provider:'OpenLigaDB / OpenFootball',licenses:{
  OpenFootball:'CC0 1.0 — https://github.com/openfootball/football.json/blob/master/LICENSE.md'
 },leagues:{}};
 const leagues = {
- 'belgian-pro-league':{txt:'https://raw.githubusercontent.com/openfootball/belgium/master/2026-27/be1.txt',expected:18},
- 'brazil-serie-a':{json:'2026/br.1.json',expected:20},
  'england-premier-league':{json:'2026-27/en.1.json',shortcut:'pl',expected:20},
  'france-ligue-1':{json:'2026-27/fr.1.json',expected:18},
  'germany-bundesliga':{json:'2026-27/de.1.json',shortcut:'bl1',expected:18},
- 'greece-super-league':{txt:'https://raw.githubusercontent.com/openfootball/europe/master/greece/2026-27_gr1.txt',expected:14},
  'italy-serie-a':{json:'2026-27/it.1.json',expected:20},
  'netherlands-eredivisie':{json:'2026-27/nl.1.json',expected:18},
  'portugal-liga-portugal':{json:'2026-27/pt.1.json',expected:18},
- 'scotland-premiership':{txt:'https://raw.githubusercontent.com/openfootball/europe/master/scotland/2026-27_sco1.txt',expected:12},
  'spain-la-liga':{json:'2026-27/es.1.json',shortcut:'la1',expected:20},
  'turkey-super-lig':{txt:'https://raw.githubusercontent.com/openfootball/europe/master/turkey/2026-27_tr1.txt',expected:18}
 };

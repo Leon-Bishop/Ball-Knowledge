@@ -345,8 +345,7 @@ def self_test():
     evidence=json.loads(EVIDENCE.read_text(encoding="utf8"))
     assert official_evidence("turkey-super-lig:10","Q98829644",evidence,now)[0]=="official_club_squad"
     assert official_evidence("turkey-super-lig:10","Q822762",evidence,now)[0] is None
-    assert official_evidence("belgian-pro-league:12","Q115902876",evidence,now)[0] is None
-    assert official_evidence("belgian-pro-league:17","Q115902876",evidence,now)[0]=="confirmed_current_loan"
+    assert official_evidence("netherlands-eredivisie:4","Q134470771",evidence,now)[0]=="confirmed_current_loan"
     assert latest_active_start_for_club({"claims":{"P54":[stmt("Q1","2026-08-01")]}}, "Q1", now)==date(2026,8,1)
     old_checked = "2026-10-01T00:00:00+00:00"
     refreshed = "2026-11-17T14:54:00+00:00"

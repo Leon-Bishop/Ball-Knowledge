@@ -14,8 +14,6 @@ const ALLOWED_VERIFICATION=new Set([
 // Parent-club Wikipedia rosters can retain loaned-out players.
 // These exclusions are backed by current-season transfer announcements.
 const LOANED_OUT={
- 'belgian-pro-league:12':new Set(['Q115902876']), // Boukamir → RAAL
- 'belgian-pro-league:13':new Set(['Q59728235']),  // Krastev → PEC Zwolle
  'netherlands-eredivisie:5':new Set(['Q134470771']) // Plug → Excelsior
 };
 // Rejected after inspecting the final JPEGs: missing heads, a club sign and torso-only crops.

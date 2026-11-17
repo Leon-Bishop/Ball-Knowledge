@@ -36,12 +36,12 @@ const report={
  totalClubs:teams.length,trophyClubs:targets.length,covered:verified.length,
  missingCount:missing.length,missing,verified
 };
-assert.equal(report.trophyClubs,105,'Verify the expected quiz trophy population');
+assert.equal(report.trophyClubs,69,'Verify the retained eight-league trophy population');
 if(process.argv.includes('--write')){
  fs.writeFileSync(new URL('../assets/trophy-photo-coverage.json',import.meta.url),
   JSON.stringify(report,null,2)+'\n');
 }
 console.log('Current-trophy photo coverage: '+verified.length+'/'+targets.length);
 console.log('Missing: '+missing.map(x=>x.club).join(', '));
-if(missing.length===0)console.log('✓ All 105 trophy-clue clubs have a real current-player face.');
+if(missing.length===0)console.log('✓ All 69 trophy-clue clubs have a real current-player face.');
 if(process.argv.includes('--require-complete')&&missing.length)process.exitCode=1;

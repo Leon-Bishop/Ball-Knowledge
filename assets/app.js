@@ -6,26 +6,20 @@ function valid(t){return t.id&&t.name&&t.league_id&&Array.isArray(t.emojis)&&t.e
 function quizLength(){return quizLengths[$('f-quizLength')?.value]||pool.length}
 function roundCount(){return Math.min(pool.length,quizLength())}
 const officialLogos={
- "belgian-pro-league": ["https://upload.wikimedia.org/wikipedia/commons/2/26/Belgian_Pro_League_logo_%282020%2C_boxed%29.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Belgian%20Pro%20League%20logo%20%282020%2C%20boxed%29.svg"],
- "brazil-serie-a": ["https://upload.wikimedia.org/wikipedia/commons/c/c2/Campeonato_Brasileiro_S%C3%A9rie_A_logo_%282026%29.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato%20Brasileiro%20S%C3%A9rie%20A%20logo%20%282026%29.svg"],
  "england-premier-league": ["https://upload.wikimedia.org/wikipedia/commons/b/bf/Pl-logo-light.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Pl-logo-light.svg"],
  "france-ligue-1": ["https://upload.wikimedia.org/wikipedia/commons/7/7b/Logo_Ligue_1_McDonald%27s_2024.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Ligue%201%20McDonald%27s%202024.svg"],
  "germany-bundesliga": ["https://assets.footylogos.com/logos/bundesliga-germany/bundesliga-germany-logo-footylogos.svg","https://upload.wikimedia.org/wikipedia/commons/1/15/Bundesliga_logo.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Bundesliga_logo.svg"],
- "greece-super-league": ["https://upload.wikimedia.org/wikipedia/commons/7/7a/Stoiximan_Super_League_Greece_logo.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Stoiximan%20Super%20League%20Greece%20logo.svg"],
  "italy-serie-a": ["https://upload.wikimedia.org/wikipedia/commons/e/e9/Serie_A_logo_2022.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Serie%20A%20logo%202022.svg"],
  "netherlands-eredivisie": ["https://upload.wikimedia.org/wikipedia/commons/8/81/VriendenLoterij_Eredivisie_Logo.png","https://commons.wikimedia.org/wiki/Special:FilePath/VriendenLoterij%20Eredivisie%20Logo.png"],
  "portugal-liga-portugal": ["https://upload.wikimedia.org/wikipedia/commons/d/d5/Liga_Portugal_Betclic_logo.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Liga%20Portugal%20Betclic%20logo.svg"],
  "spain-la-liga": ["https://upload.wikimedia.org/wikipedia/commons/5/54/LaLiga_EA_Sports_2023_Vertical_Logo.svg","https://commons.wikimedia.org/wiki/Special:FilePath/LaLiga%20EA%20Sports%202023%20Vertical%20Logo.svg"],
- "scotland-premiership": ["https://images.seeklogo.com/logo-png/27/1/scottish-premiership-logo-png_seeklogo-277110.png","https://images.seeklogo.com/logo-png/27/1/scottish-premiership-logo-png_seeklogo-277110.png"],
  "turkey-super-lig": ["https://upload.wikimedia.org/wikipedia/commons/b/b2/Trendyol_S%C3%BCper_Lig_logo_dikey.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Trendyol%20S%C3%BCper%20Lig%20logo%20dikey.svg"]
 };
-const displayOrder=['england-premier-league','spain-la-liga','italy-serie-a','germany-bundesliga','france-ligue-1','turkey-super-lig','netherlands-eredivisie','portugal-liga-portugal','belgian-pro-league','brazil-serie-a','scotland-premiership','greece-super-league'];
+const displayOrder=['england-premier-league','spain-la-liga','italy-serie-a','germany-bundesliga','france-ligue-1','turkey-super-lig','netherlands-eredivisie','portugal-liga-portugal'];
 const leagueMarks={
  'england-premier-league':['♛','PL'],'spain-la-liga':['◆','LIGA'],'italy-serie-a':['▲','SERIE A'],
  'germany-bundesliga':['⚽','BL'],'france-ligue-1':['◢','L1'],'turkey-super-lig':['★','SÜPER LİG'],
- 'netherlands-eredivisie':['◎','ERED.'],'portugal-liga-portugal':['↗','LIGA PT'],
- 'belgian-pro-league':['◩','PRO'],'brazil-serie-a':['🏆','SÉRIE A'],
- 'scotland-premiership':['◈','SPFL'],'greece-super-league':['▤','SL']};
+ 'netherlands-eredivisie':['◎','ERED.'],'portugal-liga-portugal':['↗','LIGA PT'],};
 function makeLeagueGrid(){
  const grid=$('leagueGrid');grid.replaceChildren();
  for(const l of [...leagues].sort((a,b)=>displayOrder.indexOf(a.id)-displayOrder.indexOf(b.id))){
@@ -475,7 +469,7 @@ function refreshLanguage(){
 }
 function finishViewOnly(){if(!finished||!round)return;const league=leagues.find(l=>l.id===round.league_id);$('message').textContent=outcomes.includes('🟩')?tr('correct',{points:5-wrong.length}):tr('gameOver');const title=$('result').querySelector('h3');if(title)title.textContent=round.name;const sub=$('result').querySelector('p.muted');if(sub)sub.textContent=`${league?.name||round.league_id} · ${localizedCountry(round.country)}`;const strong=$('result').querySelector('strong');if(strong)strong.textContent=tr('didYouKnow');refreshFactInResult();if(session?.completed)renderFinalSummary();renderProgress()}
 
-async function init(){try{dictionaries=await fetch('i18n.json').then(r=>{if(!r.ok)throw Error('i18n.json');return r.json()});if(!dictionaries[lang])lang='tr';refreshLanguage();[leagues,teams]=await Promise.all(['leagues.json','teams.enriched.json'].map(p=>fetch(p).then(r=>{if(!r.ok)throw Error(p);return r.json()})));
+async function init(){try{dictionaries=await fetch('i18n.json').then(r=>{if(!r.ok)throw Error('i18n.json');return r.json()});if(!dictionaries[lang])lang='tr';refreshLanguage();[leagues,teams]=await Promise.all(['leagues.json','teams.enriched.json'].map(p=>fetch(p).then(r=>{if(!r.ok)throw Error(p);return r.json()})));const supportedLeagues=new Set(leagues.map(l=>l.id));chosenLeagues=new Set([...chosenLeagues].filter(id=>supportedLeagues.has(id)));localStorage.setItem('bk-leagues',JSON.stringify([...chosenLeagues]));
 try{const res=await fetch('tum-kulupler-ilginc-hikayeler-guncel.json');if(!res.ok)throw Error('HTTP '+res.status);const rows=await res.json();for(const item of rows){if(!item.id||!Array.isArray(item.facts))continue;clubFacts.set(item.id,item.facts)}}catch(e){warn('Kulüp bilgileri yüklenemedi: '+e.message)}validate();makeLeagueGrid();makeFilters();filter();refreshLanguage()}catch(e){warn('Load failed: '+e.message+' — run a local web server, not file://')}}
 window.addEventListener('bk-player-photos-ready',()=>{if(round)render()});
 $('guess').oninput=suggest;
