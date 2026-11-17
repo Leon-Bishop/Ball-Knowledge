@@ -155,7 +155,7 @@ function commitPending(username){
 function resetPending(){pendingChoice='';}
 
 window.BKAvatars={apply,setProfile,setSaveHandler(fn){saveHandler=fn},changeButton,pendingButton,pendingBadge,commitPending,resetPending,getPending:()=>pendingChoice,openPicker:open,refresh,count:150};
-fetch('./assets/club-avatar-catalog.json').then(r=>{if(!r.ok)throw Error('Catalog not found');return r.json()}).then(data=>{
+fetch('./assets/club-avatar-catalog.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Catalog not found');return r.json()}).then(data=>{
  if(data.clubs.length!==150)throw Error('Unexpected club count');
  catalog=data;clubs=new Map(data.clubs.map(c=>[c.id,c]));refresh();
  if(dialog&&!dialog.cover.hidden)draw();
