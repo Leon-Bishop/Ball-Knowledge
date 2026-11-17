@@ -37,7 +37,7 @@ weekly automatic updates. No Cloudflare configuration is needed.
 - Light/dark mode; a separate, fully designed league-selection screen and game screen.
 - Official league logo URLs are referenced where available. Tiles have **clearly distinct typographic fallbacks** if a logo cannot load. Logo imagery is **not bundled**, and use may be subject to trademark restrictions.
 
-> **Fact coverage note:** There are **400 populated stories across 150 club records**, including **287 source-tagged** stories and **242 stories with all six translations**. The long-term target is **486 stories**; **86 slots remain**. All 150 club records have at least one playable story. Sources and editorial review are documented in `RESEARCH_COVERAGE.md`.
+> **Fact coverage note:** There are **396 populated stories across 150 club records**, including **285 source-tagged** stories and **240 stories with all six translations**. The long-term target is **486 stories**; **90 slots remain**. All 150 club records have at least one playable story. Sources and editorial review are documented in `RESEARCH_COVERAGE.md`.
 
 ## Running locally
 

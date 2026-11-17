@@ -2,9 +2,9 @@
   "england-premier-league": {
     "clubs": 20,
     "target": 60,
-    "populated": 60,
-    "source_tagged": 42,
-    "six_languages": 37
+    "populated": 56,
+    "source_tagged": 40,
+    "six_languages": 35
   },
   "france-ligue-1": {
     "clubs": 18,
