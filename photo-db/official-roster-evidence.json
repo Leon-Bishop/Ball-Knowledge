@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T13:51:07.216Z",
+  "checkedAt": "2026-11-17T13:54:34.016Z",
   "description": "Current 2026-27 first-team player identities from official club squad pages, match-day teams, and dated club news; Wikipedia-only entries are not accepted independently.",
   "officialClubs": {
     "turkey-super-lig:7": {
@@ -153,6 +153,52 @@
       "source": "https://www.parmacalcio1913.com/en/main-news/serie-a-enilive-squad-list-parma-bologna/",
       "players": {
         "Q116980096": "Benjamin Cremaschi"
+      }
+    },
+    "france-ligue-1:16": {
+      "club": "Toulouse",
+      "source": "https://www.toulousefc.com/equipes/equipe-professionnelle/effectif",
+      "players": {
+        "Q117830854": "Niko Sigur",
+        "Q114356315": "Santiago Hidalgo",
+        "Q121423825": "Guillaume Restes"
+      }
+    },
+    "germany-bundesliga:5": {
+      "club": "Borussia Mönchengladbach",
+      "source": "https://www.borussia.de/news/borussia-unterliegt-mainz-mit-3-4",
+      "players": {
+        "Q21860037": "Isac Lidberg"
+      }
+    },
+    "germany-bundesliga:16": {
+      "club": "Schalke 04",
+      "source": "https://schalke04.de/kader-2026-2027/",
+      "players": {
+        "Q47003664": "Hasan Kuruçay"
+      }
+    },
+    "netherlands-eredivisie:9": {
+      "club": "FC Utrecht",
+      "source": "https://www.fcutrecht.nl/nieuws/2026/augustus/alle-rugnummers-van-fc-utrecht-op-een-rijtje/",
+      "players": {
+        "Q47510517": "Victor Jensen",
+        "Q3183928": "Joris van Overeem"
+      }
+    },
+    "netherlands-eredivisie:13": {
+      "club": "PEC Zwolle",
+      "source": "https://peczwolle.nl/nieuws/selectie-trainingskamp-portugal",
+      "players": {
+        "Q61062388": "Simon Graves"
+      }
+    },
+    "portugal-liga-portugal:7": {
+      "club": "Estrela da Amadora",
+      "source": "https://estrelamadora.pt/futebol/",
+      "players": {
+        "Q121410218": "Jeremy Arévalo",
+        "Q112978315": "Stefan Leković"
       }
     }
   },
