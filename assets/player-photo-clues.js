@@ -25,7 +25,7 @@ const UNUSABLE_CROPS={
  'turkey-super-lig:12':new Set(['Q40991902']),
  'turkey-super-lig:13':new Set(['Q26704485'])
 };
-const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster','ρόστερ','ροστερ','ομάδα','elenco atual','effectif actuel','plantilla actual','huidige selectie','aktueller kader','güncel kadro']);
+const CURRENT_SECTIONS=new Set(['wikidata current club','current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster','ρόστερ','ροστερ','ομάδα','elenco atual','effectif actuel','plantilla actual','huidige selectie','aktueller kader','güncel kadro']);
 let database={clubs:{}};
 let officialEvidence=null;
 let conflictedQids=new Set();
@@ -60,6 +60,9 @@ function availablePlayers(clubId){
      !p.sourceUrl?.startsWith('https://commons.wikimedia.org/')||
      !p.membershipSource?.startsWith('https://')||
      !CURRENT_SECTIONS.has(p.membershipSection)||
+     (p.membershipSection==='wikidata current club'&&(
+       p.rosterVerification!=='wikidata_current_club'||
+       p.membershipSource!=='https://www.wikidata.org/wiki/'+p.wikidataQid))||
      !p.license||!p.author||!p.playerName||!p.wikidataQid||
      LOANED_OUT[clubId]?.has(p.wikidataQid)||
      UNUSABLE_CROPS[clubId]?.has(p.wikidataQid)||

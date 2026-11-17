@@ -158,7 +158,7 @@ def wiki_squad(title, language="en"):
 
 
 def is_current_heading(heading):
-    if heading in CURRENT_SECTIONS:
+    if heading in CURRENT_SECTIONS or heading == "wikidata current club":
         return True
     # Some local-language squad headings append a season or "professional".
     # Never accept generic headings for "players", "alumni" or "history".
@@ -574,6 +574,165 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET, roster_
     return photos, len(titles), len(candidates), set(qids)
 
 
+def archived_licensed_current_headshots(team, club_qid, target=1, excluded=None):
+    """Mine the old image *source catalog*, NOT its old club memberships.
+
+    Former-player photos are only possible candidates. To show one, independently
+    verify ACTIVE Wikidata P54 today, re-fetch the original Commons licence and
+    author metadata, and re-crop the original image with strict face QA. The old
+    catalog is never served directly by the game.
+    """
+    from verify_current_rosters import current_club_from_wikidata
+    club_id = team["id"]
+    archive = read_json(OLD_DB, {"clubs": {}})
+    candidates = archive.get("clubs", {}).get(club_id, {}).get("players", [])
+    excluded = set(excluded or ())
+    old_records = [p for p in candidates
+        if p.get("clubId") == club_id and
+        p.get("clubWikidataQid") == club_qid and
+        re.fullmatch(r"Q\d+", p.get("wikidataQid", "")) and
+        p.get("wikidataQid") not in excluded
+    ][:50]
+    if not old_records:
+        return []
+    entities = wikidata_entities([p["wikidataQid"] for p in old_records])
+    today = datetime.now(timezone.utc).date()
+    eligible = []
+    for p in old_records:
+        player_qid = p["wikidataQid"]
+        entity = entities.get(player_qid, {})
+        if not is_footballer(entity):
+            continue
+        if current_club_from_wikidata(entity, today)[0] != club_qid:
+            continue
+        source = p.get("sourceUrl", "")
+        parsed = urllib.parse.urlparse(source)
+        if parsed.hostname != "commons.wikimedia.org" or not parsed.path.startswith("/wiki/File:"):
+            continue
+        filename = urllib.parse.unquote(parsed.path.split("/wiki/File:", 1)[1]).replace("_", " ")
+        if not re.search(r"\.(?:jpe?g|png|webp)$", filename, re.I):
+            continue
+        name = entity.get("labels", {}).get("en", {}).get("value") or p.get("playerName")
+        if name:
+            eligible.append((player_qid, name, filename))
+    meta = commons_metadata([p[2] for p in eligible])
+    found = []
+    for player_qid, name, filename in eligible:
+        if len(found) >= target:
+            break
+        info = meta.get(filename.casefold())
+        if not info:
+            continue
+        try:
+            cropped = crop_face(fetch(info["photoUrl"], attempts=2))
+        except Exception:
+            continue
+        if not cropped:
+            continue
+        safe = re.sub(r"[^a-z0-9-]", "-", club_id.lower().replace(":", "-"))
+        image_name = safe + "--" + player_qid + ".jpg"
+        HEADSHOTS.mkdir(parents=True, exist_ok=True)
+        (HEADSHOTS / image_name).write_bytes(cropped)
+        record_url = "https://www.wikidata.org/wiki/" + player_qid
+        found.append({
+            "clubId": club_id, "playerName": name, "wikidataQid": player_qid,
+            "clubWikidataQid": club_qid, "photoUrl": "./assets/player-headshots/" + image_name,
+            "sourceUrl": info["sourceUrl"], "license": info["license"],
+            "licenseUrl": info.get("licenseUrl", ""), "author": info["author"],
+            "membershipSource": record_url, "membershipSection": "wikidata current club",
+            "membershipHeading": "Active P54 current-club statement",
+            "verifiedCurrent": True, "faceCrop": True, "faceQualityVerified": True,
+            "modified": True, "rosterVerification": "wikidata_current_club",
+            "verifiedAt": datetime.now(timezone.utc).isoformat(),
+            "secondaryRosterSource": record_url,
+            "associationType": "old_commons_source_fresh_active_P54_verified"
+        })
+    return found
+
+
+def wikidata_current_club_headshots(team, club_qid, target=1, excluded=None):
+    """Obtain licensed portraits by *active* P54 membership without a Wiki squad.
+
+    Wikidata's documented haswbstatement search is not proof of CURRENT
+    membership (it also includes historical P54 claims). Every candidate is
+    independently tested with the full qualified P54 current-club resolver.
+    """
+    from verify_current_rosters import current_club_from_wikidata
+    today = datetime.now(timezone.utc).date()
+    excluded = set(excluded or ())
+    club_id = team["id"]
+    records = []
+    tried = set()
+    for offset in (0, 100, 200):
+        if len(records) >= target:
+            break
+        try:
+            data = api("www.wikidata.org", {
+                "action": "query", "format": "json", "list": "search",
+                "srsearch": "haswbstatement:P54=" + club_qid + " haswbstatement:P18",
+                "srnamespace": 0, "srlimit": 100, "sroffset": offset
+            })
+            found = [p.get("title", "") for p in data.get("query", {}).get("search", [])
+                     if re.fullmatch(r"Q\d+", p.get("title", ""))]
+        except Exception as exc:
+            print("  Club Wikidata media search unavailable", club_id, str(exc)[:90], flush=True)
+            break
+        qids = [qid for qid in found if qid not in tried and qid not in excluded]
+        tried.update(qids)
+        if not qids:
+            break
+        entities = wikidata_entities(qids)
+        eligible = []
+        for player_qid in qids:
+            ent = entities.get(player_qid, {})
+            if not is_footballer(ent):
+                continue
+            if current_club_from_wikidata(ent, today)[0] != club_qid:
+                continue
+            filename = photo_filename(ent)
+            name = ent.get("labels", {}).get("en", {}).get("value")
+            if filename and name:
+                eligible.append((player_qid, name, filename))
+        # Preserve a stable source order and limit image bandwidth.
+        for group in chunks(eligible[:50], 25):
+            meta = commons_metadata([row[2] for row in group])
+            for player_qid, name, filename in group:
+                if len(records) >= target:
+                    break
+                info = meta.get(filename.casefold())
+                if not info:
+                    continue
+                try:
+                    cropped = crop_face(fetch(info["photoUrl"], attempts=2))
+                except Exception:
+                    continue
+                if not cropped:
+                    continue
+                safe = re.sub(r"[^a-z0-9-]", "-", club_id.lower().replace(":", "-"))
+                relative = "./assets/player-headshots/" + safe + "--" + player_qid + ".jpg"
+                HEADSHOTS.mkdir(parents=True, exist_ok=True)
+                (HEADSHOTS / (safe + "--" + player_qid + ".jpg")).write_bytes(cropped)
+                record_url = "https://www.wikidata.org/wiki/" + player_qid
+                records.append({
+                    "clubId": club_id, "playerName": name, "wikidataQid": player_qid,
+                    "clubWikidataQid": club_qid, "photoUrl": relative,
+                    "sourceUrl": info["sourceUrl"], "license": info["license"],
+                    "licenseUrl": info.get("licenseUrl", ""), "author": info["author"],
+                    "membershipSource": record_url,
+                    "membershipSection": "wikidata current club",
+                    "membershipHeading": "Active P54 current-club statement",
+                    "verifiedCurrent": True, "faceCrop": True,
+                    "faceQualityVerified": True, "modified": True,
+                    "rosterVerification": "wikidata_current_club",
+                    "verifiedAt": datetime.now(timezone.utc).isoformat(),
+                    "secondaryRosterSource": record_url,
+                    "associationType": "wikidata_current_P54_and_commons_P18"
+                })
+        if len(found) < 100:
+            break
+    return records
+
+
 def run(max_clubs, force=False, since=None, only_missing_cups=False):
     teams = read_json(TEAMS, [])
     mapping = read_json(CLUBS, {}).get("clubs", {})
@@ -636,9 +795,11 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
         attempted += 1
         status = {"clubName": team["name"], "checkedAt": datetime.now(timezone.utc).isoformat()}
         try:
-            if not qid or not wiki_pages.get(qid):
-                raise ValueError("No confirmed club Wikidata QID / Wikipedia article")
-            pages = wiki_pages[qid]
+            if not qid:
+                raise ValueError("No confirmed club Wikidata QID")
+            # Lack of a current Wikipedia squad heading must not suppress
+            # the independently verified Wikidata P54 / Commons fallback.
+            pages = wiki_pages.get(qid, {})
             sources = []
             if pages.get("en"):
                 sources.append(("en", pages["en"]))
@@ -679,8 +840,34 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
                     used_sources.append(wiki_title_url(title, language))
                 except Exception as source_exc:
                     errors.append(language + ":" + str(source_exc)[:90])
+            # Search our own existing Commons source catalog first, but ONLY
+            # after fresh active-P54 and Commons metadata/face verification.
+            if len(players) < target:
+                try:
+                    recovered = archived_licensed_current_headshots(
+                        team, qid, target - len(players), seen)
+                    for p in recovered:
+                        if p["wikidataQid"] not in seen and len(players) < target:
+                            players.append(p)
+                            seen.add(p["wikidataQid"])
+                    if recovered:
+                        used_sources.append("https://www.wikidata.org/wiki/" + qid)
+                except Exception as archive_exc:
+                    errors.append("current-club-archived-source:" + str(archive_exc)[:90])
+            if len(players) < target:
+                try:
+                    direct = wikidata_current_club_headshots(
+                        team, qid, target - len(players), seen)
+                    for player in direct:
+                        if player["wikidataQid"] not in seen and len(players) < target:
+                            players.append(player)
+                            seen.add(player["wikidataQid"])
+                    if direct:
+                        used_sources.append("https://www.wikidata.org/wiki/" + qid)
+                except Exception as fallback_exc:
+                    errors.append("wikidata-current-p54:" + str(fallback_exc)[:90])
             if not used_sources:
-                raise ValueError("No verified current squad: " + "; ".join(errors[:3]))
+                raise ValueError("No verified current squad or active P54 photo: " + "; ".join(errors[:3]))
             # The entire acquired-photo batch is independently checked against
             # a current club P54 or the explicit official/loan roster evidence.
             from verify_current_rosters import official_evidence, current_club_from_wikidata
@@ -820,6 +1007,7 @@ def self_test():
     section, heading = squad_section(translated)
     assert heading == "selectie"
     assert squad_titles(section) == ["Speler Een"]
+    assert is_current_heading("wikidata current club")
     assert is_current_heading("plantel principal")
     assert is_current_heading("ρόστερ")
     assert not is_current_heading("former players")

@@ -51,7 +51,10 @@ for(const [id,club] of Object.entries(db.clubs)){
   assert(fs.existsSync(localImage),'Curated headshot file missing: '+p.photoUrl);
   assert(fs.statSync(localImage).size>1500,'Curated headshot image unexpectedly small');
   assert(p.sourceUrl.startsWith('https://commons.wikimedia.org/'));
-  assert(/^https:\/\/[a-z]+\.wikipedia\.org\/wiki\//.test(p.membershipSource));
+  assert(/^https:\/\/[a-z]+\.wikipedia\.org\/wiki\//.test(p.membershipSource)||
+   (p.membershipSection==='wikidata current club'&&
+    p.membershipSource==='https://www.wikidata.org/wiki/'+p.wikidataQid),
+   'Player roster source must be explicit Wikipedia current squad or active Wikidata P54');
   assert(p.license&&p.author&&p.wikidataQid&&!seen.has(p.wikidataQid));
   seen.add(p.wikidataQid);
  }
