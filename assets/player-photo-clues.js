@@ -48,6 +48,7 @@ function availablePlayers(clubId){
      !CURRENT_SECTIONS.has(p.membershipSection)||
      !p.license||!p.author||!p.playerName||!p.wikidataQid||
      LOANED_OUT[clubId]?.has(p.wikidataQid)||
+     conflictedQids.has(p.wikidataQid)||
      seen.has(p.wikidataQid))return false;
   seen.add(p.wikidataQid);
   return true;
