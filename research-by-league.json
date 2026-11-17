@@ -1,18 +1,4 @@
 {
-  "belgian-pro-league": {
-    "clubs": 18,
-    "target": 54,
-    "populated": 40,
-    "source_tagged": 27,
-    "six_languages": 24
-  },
-  "brazil-serie-a": {
-    "clubs": 20,
-    "target": 60,
-    "populated": 47,
-    "source_tagged": 30,
-    "six_languages": 27
-  },
   "england-premier-league": {
     "clubs": 20,
     "target": 60,
@@ -34,13 +20,6 @@
     "source_tagged": 36,
     "six_languages": 30
   },
-  "greece-super-league": {
-    "clubs": 14,
-    "target": 42,
-    "populated": 31,
-    "source_tagged": 18,
-    "six_languages": 15
-  },
   "italy-serie-a": {
     "clubs": 20,
     "target": 60,
@@ -61,13 +40,6 @@
     "populated": 37,
     "source_tagged": 23,
     "six_languages": 17
-  },
-  "scotland-premiership": {
-    "clubs": 12,
-    "target": 36,
-    "populated": 35,
-    "source_tagged": 26,
-    "six_languages": 26
   },
   "spain-la-liga": {
     "clubs": 20,

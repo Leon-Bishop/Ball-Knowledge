@@ -52,72 +52,6 @@
         "Q104414736": "Nico Williams"
       }
     },
-    "scotland-premiership:9": {
-      "club": "Rangers",
-      "source": "https://www.rangers.co.uk/Article/team-news-gers-side-to-face-falkirk-tonight/xjPOCRUZIHHWOwxM8zFrU",
-      "players": {
-        "Q111994930": "Ross McCausland",
-        "Q131863254": "Findlay Curtis",
-        "Q84462730": "Ivor Pandur"
-      }
-    },
-    "scotland-premiership:7": {
-      "club": "Dundee United",
-      "source": "https://www.christmas.dundeeunitedfc.co.uk/news/9557/United-see-points-shared-in-home-clash-with-Motherwell.html",
-      "players": {
-        "Q60733962": "Jack Walton",
-        "Q102276813": "Neil Farrugia",
-        "Q104884130": "Lachlan Rose",
-        "Q38167881": "Mehdi Merghem"
-      }
-    },
-    "scotland-premiership:3": {
-      "club": "Dundee",
-      "source": "https://dundeefc.co.uk/team/first-team/",
-      "players": {
-        "Q118470954": "Imari Samuels",
-        "Q131910302": "Joe Westley",
-        "Q122195115": "Charlie Reilly",
-        "Q111711024": "Matai Akinmboni"
-      }
-    },
-    "scotland-premiership:5": {
-      "club": "Hibernian",
-      "source": "https://www.hibernianfc.co.uk/news/2026/november/11/our-mens-and-academy-2026-2027-squad-photos/",
-      "players": {
-        "Q28748042": "Jordan Smith",
-        "Q113483655": "Azeem Abdulai"
-      }
-    },
-    "scotland-premiership:12": {
-      "club": "St. Mirren",
-      "source": "https://www.stmirren.com/news/team-news-st-mirren-v-rangers-7th-nov",
-      "players": {
-        "Q123308334": "Henry Fieldson",
-        "Q5249348": "Declan John"
-      }
-    },
-    "scotland-premiership:8": {
-      "club": "Motherwell",
-      "source": "https://www.motherwellfc.co.uk/2026/10/15/team-news-for-trip-to-kilmarnock/",
-      "players": {
-        "Q27671198": "Johnny Koutroumbis"
-      }
-    },
-    "scotland-premiership:6": {
-      "club": "Kilmarnock",
-      "source": "https://kilmarnockfc.co.uk/news/international-recognition/",
-      "players": {
-        "Q130472100": "MJ Kamson-Kamara"
-      }
-    },
-    "scotland-premiership:11": {
-      "club": "St. Johnstone",
-      "source": "https://www.perthstjohnstonefc.co.uk/news/article/match-report-st-johnstone-2-1-dundee/",
-      "players": {
-        "Q122032856": "Joel Cotterill"
-      }
-    },
     "netherlands-eredivisie:3": {
       "club": "AZ Alkmaar",
       "source": "https://www.az.nl/inside-az/nieuws/2026/november/liveblog-az-fc-groningen",
@@ -201,16 +135,6 @@
         "Q112978315": "Stefan Leković"
       }
     },
-    "scotland-premiership:4": {
-      "club": "Heart of Midlothian",
-      "source": "https://www.heartsfc.co.uk/pages/first-team-squad",
-      "players": {
-        "Q65684173": "Josh McPake",
-        "Q137864483": "Laurent Mendy",
-        "Q28045315": "Calvin Miller",
-        "Q140364405": "Sabri Guendouz"
-      }
-    },
     "turkey-super-lig:14": {
       "club": "Konyaspor",
       "source": "https://www.konyaspor.org.tr/futbolcular",
@@ -228,23 +152,6 @@
         "Q18614641": "Ainsley Maitland-Niles",
         "Q83632882": "Kiernan Dewsbury-Hall",
         "Q110565461": "Jake O'Brien"
-      }
-    },
-    "belgian-pro-league:5": {
-      "club": "Waasland-Beveren",
-      "source": "https://www.skbeveren.be/ploegen/a-kern",
-      "players": {
-        "Q17496664": "Arno Verschueren",
-        "Q1764965": "Christian Brüls",
-        "Q10551618": "Laurent Jans"
-      }
-    },
-    "brazil-serie-a:17": {
-      "club": "Red Bull Bragantino",
-      "source": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20007",
-      "players": {
-        "Q5340762": "Eduardo Sasha",
-        "Q14921884": "Gabriel Girotto Franco"
       }
     },
     "france-ligue-1:3": {
@@ -265,13 +172,6 @@
     }
   },
   "loanAssignments": {
-    "Q115902876": {
-      "clubId": "belgian-pro-league:17",
-      "club": "RAAL La Louvière",
-      "source": "https://www.sporting-charleroi.be/news/mehdi-boukamir-prete-a-la-raal-la-louviere/",
-      "player": "Mehdi Boukamir",
-      "until": "2027-06-30"
-    },
     "Q59728235": {
       "clubId": "netherlands-eredivisie:13",
       "club": "PEC Zwolle",

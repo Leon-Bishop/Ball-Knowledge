@@ -1,1 +1,1389 @@
-{"defaultTeamId":"turkey-super-lig:6","leagues":[{"id":"turkey-super-lig","name":"Turkish Süper Lig"},{"id":"belgian-pro-league","name":"Belgian Pro League"},{"id":"brazil-serie-a","name":"Brazilian Série A"},{"id":"england-premier-league","name":"English Premier League"},{"id":"france-ligue-1","name":"French Ligue 1"},{"id":"germany-bundesliga","name":"German Bundesliga"},{"id":"greece-super-league","name":"Greek Super League"},{"id":"italy-serie-a","name":"Italian Serie A"},{"id":"netherlands-eredivisie","name":"Dutch Eredivisie"},{"id":"portugal-liga-portugal","name":"Liga Portugal"},{"id":"scotland-premiership","name":"Scottish Premiership"},{"id":"spain-la-liga","name":"Spanish La Liga"}],"clubs":[{"id":"belgian-pro-league:1","name":"Anderlecht","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/RSC_Anderlecht.svg","short":"AND","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/RSC%20Anderlecht.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/RSC%20Anderlecht.png"},{"id":"belgian-pro-league:2","name":"Antwerp","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Royal_Antwerp_FC.svg","short":"ANT","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Royal%20Antwerp%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Royal%20Antwerp%20FC.png"},{"id":"belgian-pro-league:3","name":"Cercle Brugge KSV","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Cercle_Brugge_KSV.svg","short":"CER","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Cercle%20Brugge.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Cercle%20Brugge.png"},{"id":"belgian-pro-league:4","name":"Club Brugge","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Club_Brugge.svg","short":"CLU","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Belgium%20-%20Jupiler%20Pro%20League/Club%20Brugge.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Belgium%20-%20Jupiler%20Pro%20League/Club%20Brugge.png"},{"id":"belgian-pro-league:5","name":"Waasland-Beveren","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/S.K._Beveren.svg","short":"WAA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/SK%20Beveren.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/SK%20Beveren.png"},{"id":"belgian-pro-league:6","name":"KAA Gent","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/KAA_Gent.svg","short":"GNT","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/KAA%20Gent.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/KAA%20Gent.png"},{"id":"belgian-pro-league:7","name":"KV Kortrijk","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/KV_Kortrijk.svg","short":"KVK","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/KV%20Kortrijk.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/KV%20Kortrijk.png"},{"id":"belgian-pro-league:8","name":"KV Mechelen","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/KV_Mechelen.svg","short":"KVM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/KV%20Mechelen.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/KV%20Mechelen.png"},{"id":"belgian-pro-league:9","name":"KVC Westerlo","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/KVC_Westerlo.svg","short":"WES","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/KVC%20Westerlo.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/KVC%20Westerlo.png"},{"id":"belgian-pro-league:10","name":"Oud-Heverlee Leuven","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Oud-Heverlee_Leuven.svg","short":"OHL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Oud-Heverlee%20Leuven.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Oud-Heverlee%20Leuven.png"},{"id":"belgian-pro-league:11","name":"Racing Genk","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/KRC_Genk.svg","short":"GNK","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/KRC%20Genk.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/KRC%20Genk.png"},{"id":"belgian-pro-league:12","name":"Royal Charleroi SC","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Royal_Charleroi_S.C..svg","short":"CHA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Royal%20Charleroi%20SC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Royal%20Charleroi%20SC.png"},{"id":"belgian-pro-league:13","name":"Lommel SK","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Lommel_SK.svg","short":"LOM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Lommel%20SK.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Lommel%20SK.png"},{"id":"belgian-pro-league:14","name":"Sint-Truidense","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Sint-Truidense_VV.svg","short":"STV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Sint-Truidense%20VV.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Sint-Truidense%20VV.png"},{"id":"belgian-pro-league:15","name":"Standard Liege","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Standard_Li%C3%A8ge.svg","short":"STA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Standard%20Li%C3%A8ge.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Standard%20Li%C3%A8ge.png"},{"id":"belgian-pro-league:16","name":"Union St.-Gilloise","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Union_Saint-Gilloise.svg","short":"USG","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Union%20Saint-Gilloise.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Union%20Saint-Gilloise.png"},{"id":"belgian-pro-league:17","name":"RAAL La Louvière","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/RAAL_La_Louvi%C3%A8re.svg","short":"RLL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/RAAL%20La%20Louvi%C3%A8re.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/RAAL%20La%20Louvi%C3%A8re.png"},{"id":"belgian-pro-league:18","name":"Zulte-Waregem","leagueId":"belgian-pro-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/belgium/Zulte_Waregem.svg","short":"ZW","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Belgium%20-%20Jupiler%20Pro%20League/Zulte%20Waregem.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Belgium%20-%20Jupiler%20Pro%20League/Zulte%20Waregem.png"},{"id":"brazil-serie-a:1","name":"Vitória","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Vit%C3%B3ria.svg","short":"VIT","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Vit%C3%B3ria.svg"},{"id":"brazil-serie-a:2","name":"Athletico Paranaense","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Athletico_Paranaense.svg","short":"CAP","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Athletico_Paranaense.svg"},{"id":"brazil-serie-a:3","name":"Atlético-MG","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Atl%C3%A9tico_Mineiro.svg","short":"CAM","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Atl%C3%A9tico_Mineiro.svg"},{"id":"brazil-serie-a:4","name":"Bahia","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Bahia.svg","short":"BAH","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Bahia.svg"},{"id":"brazil-serie-a:5","name":"Botafogo","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Botafogo_FR.svg","short":"BOT","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Botafogo_FR.svg"},{"id":"brazil-serie-a:6","name":"Corinthians","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Corinthians.svg","short":"COR","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Corinthians.svg"},{"id":"brazil-serie-a:7","name":"Coritiba","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Coritiba.svg","short":"CFC","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Coritiba.svg"},{"id":"brazil-serie-a:8","name":"Mirassol","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Mirassol.svg","short":"MIR","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Mirassol.svg"},{"id":"brazil-serie-a:9","name":"Cruzeiro","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Cruzeiro.svg","short":"CRU","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Cruzeiro.svg"},{"id":"brazil-serie-a:10","name":"Flamengo","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Flamengo.svg","short":"FLA","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Flamengo.svg"},{"id":"brazil-serie-a:11","name":"Fluminense","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Fluminense.svg","short":"FLU","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Fluminense.svg"},{"id":"brazil-serie-a:12","name":"São Paulo","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/S%C3%A3o_Paulo.svg","short":"SAO","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/S%C3%A3o_Paulo.svg"},{"id":"brazil-serie-a:13","name":"Remo","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Clube_do_Remo.svg","short":"REM","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Clube_do_Remo.svg"},{"id":"brazil-serie-a:14","name":"Grêmio","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Gr%C3%AAmio.svg","short":"GRE","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Gr%C3%AAmio.svg"},{"id":"brazil-serie-a:15","name":"Internacional","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Internacional.svg","short":"INT","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Internacional.svg"},{"id":"brazil-serie-a:16","name":"Palmeiras","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Palmeiras.svg","short":"PAL","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Palmeiras.svg"},{"id":"brazil-serie-a:17","name":"Red Bull Bragantino","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/RB_Bragantino.svg","short":"BRA","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/RB_Bragantino.svg"},{"id":"brazil-serie-a:18","name":"Santos","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Santos_FC.svg","short":"SAN","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Santos_FC.svg"},{"id":"brazil-serie-a:19","name":"Chapecoense","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Chapecoense.svg","short":"CHA","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Chapecoense.svg"},{"id":"brazil-serie-a:20","name":"Vasco da Gama","leagueId":"brazil-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/brazil/Vasco_da_Gama.svg","short":"VAS","fallbackLogo":"https://cdn.jsdelivr.net/gh/JoseArroyave/football-logos@main/logos/brazil/Vasco_da_Gama.svg"},{"id":"england-premier-league:1","name":"Arsenal","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Arsenal.svg","short":"ARS","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Arsenal%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Arsenal%20FC.png"},{"id":"england-premier-league:2","name":"Aston Villa","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Aston_Villa.svg","short":"AVL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Aston%20Villa.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Aston%20Villa.png"},{"id":"england-premier-league:3","name":"Bournemouth","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Bournemouth.svg","short":"BOU","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/AFC%20Bournemouth.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/AFC%20Bournemouth.png"},{"id":"england-premier-league:4","name":"Brentford","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Brentford.svg","short":"BRE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Brentford%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Brentford%20FC.png"},{"id":"england-premier-league:5","name":"Brighton","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Brighton.svg","short":"BHA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/England%20-%20Premier%20League/Brighton.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/England%20-%20Premier%20League/Brighton.png"},{"id":"england-premier-league:6","name":"Chelsea","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Chelsea.svg","short":"CHE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Chelsea%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Chelsea%20FC.png"},{"id":"england-premier-league:7","name":"Crystal Palace","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Crystal_Palace.svg","short":"CRY","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Crystal%20Palace.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Crystal%20Palace.png"},{"id":"england-premier-league:8","name":"Everton","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Everton.svg","short":"EVE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Everton%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Everton%20FC.png"},{"id":"england-premier-league:9","name":"Fulham","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Fulham.svg","short":"FUL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Fulham%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Fulham%20FC.png"},{"id":"england-premier-league:10","name":"Ipswich Town","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Ipswich.svg","short":"IPS","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Ipswich%20Town.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Ipswich%20Town.png"},{"id":"england-premier-league:11","name":"Leeds United","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Leeds_United.svg","short":"LEE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Leeds%20United.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Leeds%20United.png"},{"id":"england-premier-league:12","name":"Liverpool","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Liverpool_FC.svg","short":"LIV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Liverpool%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Liverpool%20FC.png"},{"id":"england-premier-league:13","name":"Manchester City","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Manchester_City.svg","short":"MCI","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Manchester%20City.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Manchester%20City.png"},{"id":"england-premier-league:14","name":"Manchester United","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Manchester_United.svg","short":"MUN","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Manchester%20United.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Manchester%20United.png"},{"id":"england-premier-league:15","name":"Newcastle","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Newcastle.svg","short":"NEW","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Newcastle%20United.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Newcastle%20United.png"},{"id":"england-premier-league:16","name":"Nottm Forest","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Nottingham_Forest.svg","short":"NFO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Nottingham%20Forest.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Nottingham%20Forest.png"},{"id":"england-premier-league:17","name":"Coventry City","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Coventry_City.svg","short":"COV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Coventry%20City.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Coventry%20City.png"},{"id":"england-premier-league:18","name":"Tottenham","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Tottenham.svg","short":"TOT","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Tottenham%20Hotspur.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Tottenham%20Hotspur.png"},{"id":"england-premier-league:19","name":"Sunderland","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Sunderland.svg","short":"SUN","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Sunderland%20AFC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Sunderland%20AFC.png"},{"id":"england-premier-league:20","name":"Hull City","leagueId":"england-premier-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Hull_City.svg","short":"HUL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Hull%20City.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Hull%20City.png"},{"id":"france-ligue-1:1","name":"AJ Auxerre","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Auxerre.svg","short":"AUX","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/AJ%20Auxerre.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/AJ%20Auxerre.png"},{"id":"france-ligue-1:2","name":"Angers","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Angers.svg","short":"ANG","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Angers%20SCO.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Angers%20SCO.png"},{"id":"france-ligue-1:3","name":"AS Monaco","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/AS_Monaco.svg","short":"ASM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/AS%20Monaco.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/AS%20Monaco.png"},{"id":"france-ligue-1:4","name":"Brest","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/AS_Brest.svg","short":"BRE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Stade%20Brestois%2029.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Stade%20Brestois%2029.png"},{"id":"france-ligue-1:5","name":"Le Havre AC","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Le_Havre_AC.svg","short":"HAC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Le%20Havre%20AC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Le%20Havre%20AC.png"},{"id":"france-ligue-1:6","name":"Lille","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Lille.svg","short":"LIL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/LOSC%20Lille.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/LOSC%20Lille.png"},{"id":"france-ligue-1:7","name":"Lyon","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Olympique_Lyonnais.svg","short":"OL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Olympique%20Lyon.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Olympique%20Lyon.png"},{"id":"france-ligue-1:8","name":"Marseille","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Marseille.svg","short":"OM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/France%20-%20Ligue%201/Marseille.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/France%20-%20Ligue%201/Marseille.png"},{"id":"france-ligue-1:9","name":"Le Mans","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Le_Mans_FC.svg","short":"MNS","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Le%20Mans%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Le%20Mans%20FC.png"},{"id":"france-ligue-1:10","name":"Nice","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Nice.svg","short":"NIC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/OGC%20Nice.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/OGC%20Nice.png"},{"id":"france-ligue-1:11","name":"Lorient","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Lorient_FC.svg","short":"LOR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/FC%20Lorient.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/FC%20Lorient.png"},{"id":"france-ligue-1:12","name":"Paris Saint-Germain","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Paris_Saint-Germain_(PSG).svg","short":"PSG","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Paris%20Saint-Germain.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Paris%20Saint-Germain.png"},{"id":"france-ligue-1:13","name":"Rennes","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Rennes.svg","short":"REN","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Stade%20Rennais%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Stade%20Rennais%20FC.png"},{"id":"france-ligue-1:14","name":"Paris FC","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Paris_FC.svg","short":"PAR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Paris%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Paris%20FC.png"},{"id":"france-ligue-1:15","name":"Strasbourg","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/AS_Strasbourg.svg","short":"STR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/RC%20Strasbourg%20Alsace.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/RC%20Strasbourg%20Alsace.png"},{"id":"france-ligue-1:16","name":"Toulouse","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Toulouse.svg","short":"TFC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/FC%20Toulouse.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/FC%20Toulouse.png"},{"id":"france-ligue-1:17","name":"Lens","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/RC_Lens.svg","short":"RCL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/RC%20Lens.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/RC%20Lens.png"},{"id":"france-ligue-1:18","name":"Troyes","leagueId":"france-ligue-1","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Troyes.svg","short":"TRY","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/ESTAC%20Troyes.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/ESTAC%20Troyes.png"},{"id":"germany-bundesliga:1","name":"FC Augsburg","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Augsburg.svg","short":"FCA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/FC%20Augsburg.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/FC%20Augsburg.png"},{"id":"germany-bundesliga:2","name":"Bayer Leverkusen","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Bayer_Leverkusen.svg","short":"LEV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Bayer%2004%20Leverkusen.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Bayer%2004%20Leverkusen.png"},{"id":"germany-bundesliga:3","name":"Bayern Munich","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Bayern_Munich.svg","short":"FCB","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Bayern%20Munich.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Bayern%20Munich.png"},{"id":"germany-bundesliga:4","name":"Borussia Dortmund","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Borussia_Dortmund.svg","short":"BVB","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Borussia%20Dortmund.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Borussia%20Dortmund.png"},{"id":"germany-bundesliga:5","name":"Borussia Monchengladbach","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Borussia_M%C3%B6nchengladbach.svg","short":"BMG","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Borussia%20M%C3%B6nchengladbach.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Borussia%20M%C3%B6nchengladbach.png"},{"id":"germany-bundesliga:6","name":"Eintracht Frankfurt","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Eintracht_Frankfurt.svg","short":"SGE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Eintracht%20Frankfurt.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Eintracht%20Frankfurt.png"},{"id":"germany-bundesliga:7","name":"SV Elversberg","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/SV_Elversberg.svg","short":"ELV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/SV%2007%20Elversberg.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/SV%2007%20Elversberg.png"},{"id":"germany-bundesliga:8","name":"FC Cologne","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Cologne.svg","short":"KOE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/1.FC%20K%C3%B6ln.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/1.FC%20K%C3%B6ln.png"},{"id":"germany-bundesliga:9","name":"FC Mainz","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Mainz_05.svg","short":"M05","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/1.FSV%20Mainz%2005.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/1.FSV%20Mainz%2005.png"},{"id":"germany-bundesliga:10","name":"Hamburg SV","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Hamburger_SV.svg","short":"HSV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Hamburger%20SV.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Hamburger%20SV.png"},{"id":"germany-bundesliga:11","name":"RB Leipzig","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/RB_Leipzig.svg","short":"RBL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/RB%20Leipzig.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/RB%20Leipzig.png"},{"id":"germany-bundesliga:12","name":"SC Freiburg","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Freiburg.svg","short":"SCF","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/SC%20Freiburg.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/SC%20Freiburg.png"},{"id":"germany-bundesliga:13","name":"SC Paderborn 07","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/SC_Paderborn.svg","short":"SCP","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/SC%20Paderborn%2007.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/SC%20Paderborn%2007.png"},{"id":"germany-bundesliga:14","name":"TSG Hoffenheim","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Hoffenheim.svg","short":"TSG","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/TSG%201899%20Hoffenheim.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/TSG%201899%20Hoffenheim.png"},{"id":"germany-bundesliga:15","name":"VfB Stuttgart","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/VfB_Stuttgart.svg","short":"VFB","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/VfB%20Stuttgart.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/VfB%20Stuttgart.png"},{"id":"germany-bundesliga:16","name":"Schalke 04","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Schalke_04.svg","short":"S04","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/FC%20Schalke%2004.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/FC%20Schalke%2004.png"},{"id":"germany-bundesliga:17","name":"FC Union Berlin","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Union_Berlin.svg","short":"FCU","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/1.FC%20Union%20Berlin.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/1.FC%20Union%20Berlin.png"},{"id":"germany-bundesliga:18","name":"Werder Bremen","leagueId":"germany-bundesliga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Werder_Bremen.svg","short":"SVW","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/SV%20Werder%20Bremen.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/SV%20Werder%20Bremen.png"},{"id":"greece-super-league:1","name":"AEK Athens","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/AEK_Athens.svg","short":"AEK","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/AEK%20Athens.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/AEK%20Athens.png"},{"id":"greece-super-league:2","name":"Aris","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Aris_Thessaloniki.svg","short":"ARI","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/Aris%20Thessaloniki.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/Aris%20Thessaloniki.png"},{"id":"greece-super-league:3","name":"Asteras Tripoli","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Asteras_Tripolis.svg","short":"AST","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Greece%20-%20Super%20League%201/Asteras%20Tripoli.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Greece%20-%20Super%20League%201/Asteras%20Tripoli.png"},{"id":"greece-super-league:4","name":"Atromitos","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Atromitos.svg","short":"ATR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/Atromitos%20Athens.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/Atromitos%20Athens.png"},{"id":"greece-super-league:5","name":"Kifisia","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/A.E._Kifisia.svg","short":"KIF","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/AE%20Kifisia.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/AE%20Kifisia.png"},{"id":"greece-super-league:6","name":"Iraklis","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Iraklis_Thessaloniki.svg","short":"IRK","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/Iraklis%20Thessaloniki.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/Iraklis%20Thessaloniki.png"},{"id":"greece-super-league:7","name":"OFI Crete","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/OFI.svg","short":"OFI","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/OFI%20Crete.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/OFI%20Crete.png"},{"id":"greece-super-league:8","name":"Olympiacos","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Olympiacos.svg","short":"OLY","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Greece%20-%20Super%20League%201/Olympiacos.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Greece%20-%20Super%20League%201/Olympiacos.png"},{"id":"greece-super-league:9","name":"PAOK","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/PAOK.svg","short":"PKT","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/PAOK%20Thessaloniki.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/PAOK%20Thessaloniki.png"},{"id":"greece-super-league:10","name":"Panathinaikos","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Panathinaikos.svg","short":"PAO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/Panathinaikos.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/Panathinaikos.png"},{"id":"greece-super-league:11","name":"Panetolikos","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Panetolikos.svg","short":"PTL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/Panetolikos.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/Panetolikos.png"},{"id":"greece-super-league:12","name":"Kalamata","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Kalamata.svg","short":"KAL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/Kalamata%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/Kalamata%20FC.png"},{"id":"greece-super-league:13","name":"Levadiakos","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Levadiakos.svg","short":"LEV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/Levadiakos.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/Levadiakos.png"},{"id":"greece-super-league:14","name":"Volos NFC","leagueId":"greece-super-league","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/greece/Volos_NFC.svg","short":"VLO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Greece%20-%20Super%20League%201/Volos%20NFC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Greece%20-%20Super%20League%201/Volos%20NFC.png"},{"id":"italy-serie-a:1","name":"AC Milan","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Milan.svg","short":"MIL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/AC%20Milan.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/AC%20Milan.png"},{"id":"italy-serie-a:2","name":"Atalanta","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Atalanta.svg","short":"ATA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Atalanta%20BC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Atalanta%20BC.png"},{"id":"italy-serie-a:3","name":"Bologna","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Bologna.svg","short":"BOL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Bologna%20FC%201909.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Bologna%20FC%201909.png"},{"id":"italy-serie-a:4","name":"Cagliari","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Cagliari.svg","short":"CAG","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Cagliari%20Calcio.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Cagliari%20Calcio.png"},{"id":"italy-serie-a:5","name":"Como","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Como_1907.svg","short":"COM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Como%201907.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Como%201907.png"},{"id":"italy-serie-a:6","name":"Fiorentina","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Fiorentina.svg","short":"FIO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/ACF%20Fiorentina.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/ACF%20Fiorentina.png"},{"id":"italy-serie-a:7","name":"Frosinone","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Frosinone_Calcio.svg","short":"FRO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Frosinone%20Calcio.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Frosinone%20Calcio.png"},{"id":"italy-serie-a:8","name":"Genoa","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Genoa.svg","short":"GEN","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Genoa%20CFC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Genoa%20CFC.png"},{"id":"italy-serie-a:9","name":"Internazionale","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Inter.svg","short":"INT","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Inter%20Milan.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Inter%20Milan.png"},{"id":"italy-serie-a:10","name":"Juventus","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Juventus.svg","short":"JUV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Juventus%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Juventus%20FC.png"},{"id":"italy-serie-a:11","name":"Lazio","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Lazio.svg","short":"LAZ","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Italy%20-%20Serie%20A/Lazio.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Italy%20-%20Serie%20A/Lazio.png"},{"id":"italy-serie-a:12","name":"Lecce","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Lecce.svg","short":"LEC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/US%20Lecce.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/US%20Lecce.png"},{"id":"italy-serie-a:13","name":"Monza","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/AC_Monza.svg","short":"MON","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/AC%20Monza.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/AC%20Monza.png"},{"id":"italy-serie-a:14","name":"Napoli","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Napoli.svg","short":"NAP","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/SSC%20Napoli.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/SSC%20Napoli.png"},{"id":"italy-serie-a:15","name":"Parma","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Parma.svg","short":"PAR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Parma%20Calcio%201913.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Parma%20Calcio%201913.png"},{"id":"italy-serie-a:16","name":"AS Roma","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/AS_Roma.svg","short":"ROMA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/AS%20Roma.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/AS%20Roma.png"},{"id":"italy-serie-a:17","name":"Sassuolo","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Sassuolo.svg","short":"SAS","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Italy%20-%20Serie%20A/Sassuolo.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Italy%20-%20Serie%20A/Sassuolo.png"},{"id":"italy-serie-a:18","name":"Torino","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Torino.svg","short":"TOR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Torino%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Torino%20FC.png"},{"id":"italy-serie-a:19","name":"Udinese","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Udinese.svg","short":"UDI","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Udinese%20Calcio.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Udinese%20Calcio.png"},{"id":"italy-serie-a:20","name":"Venezia","leagueId":"italy-serie-a","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Venezia.svg","short":"VEN","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Venezia%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Venezia%20FC.png"},{"id":"netherlands-eredivisie:1","name":"Ajax Amsterdam","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Ajax.svg","short":"AJX","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Ajax%20Amsterdam.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Ajax%20Amsterdam.png"},{"id":"netherlands-eredivisie:2","name":"ADO Den Haag","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/ADO_Den_Haag.svg","short":"ADO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/ADO%20Den%20Haag.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/ADO%20Den%20Haag.png"},{"id":"netherlands-eredivisie:3","name":"AZ Alkmaar","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/AZ_Alkmaar.svg","short":"AZ","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/AZ%20Alkmaar.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/AZ%20Alkmaar.png"},{"id":"netherlands-eredivisie:4","name":"Excelsior","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Excelsior_Rotterdam.svg","short":"EXC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Excelsior%20Rotterdam.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Excelsior%20Rotterdam.png"},{"id":"netherlands-eredivisie:5","name":"Feyenoord Rotterdam","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Feyenoord.svg","short":"FEY","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Feyenoord%20Rotterdam.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Feyenoord%20Rotterdam.png"},{"id":"netherlands-eredivisie:6","name":"Fortuna Sittard","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Fortuna_Sittard.svg","short":"FOR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Fortuna%20Sittard.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Fortuna%20Sittard.png"},{"id":"netherlands-eredivisie:7","name":"Go Ahead Eagles","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Go_Ahead_Eagles.svg","short":"GAE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Go%20Ahead%20Eagles.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Go%20Ahead%20Eagles.png"},{"id":"netherlands-eredivisie:8","name":"FC Twente","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Twente.svg","short":"TWE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/FC%20Twente%20Enschede.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/FC%20Twente%20Enschede.png"},{"id":"netherlands-eredivisie:9","name":"FC Utrecht","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/FC_Utrecht.svg","short":"UTR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/FC%20Utrecht.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/FC%20Utrecht.png"},{"id":"netherlands-eredivisie:10","name":"FC Groningen","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/FC_Groningen.svg","short":"GRO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/FC%20Groningen.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/FC%20Groningen.png"},{"id":"netherlands-eredivisie:11","name":"Heerenveen","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/sc_Heerenveen.svg","short":"HEE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/SC%20Heerenveen.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/SC%20Heerenveen.png"},{"id":"netherlands-eredivisie:12","name":"NEC Nijmegen","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/N.E.C._Nijmegen.svg","short":"NEC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/NEC%20Nijmegen.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/NEC%20Nijmegen.png"},{"id":"netherlands-eredivisie:13","name":"PEC Zwolle","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/PEC_Zwolle.svg","short":"PEC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/PEC%20Zwolle.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/PEC%20Zwolle.png"},{"id":"netherlands-eredivisie:14","name":"PSV Eindhoven","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/PSV_Eindhoven.svg","short":"PSV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/PSV%20Eindhoven.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/PSV%20Eindhoven.png"},{"id":"netherlands-eredivisie:15","name":"Sparta Rotterdam","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Sparta_Rotterdam.svg","short":"SPA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Sparta%20Rotterdam.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Sparta%20Rotterdam.png"},{"id":"netherlands-eredivisie:16","name":"SC Cambuur","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/SC_Cambuur.svg","short":"CAM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Netherlands%20-%20Eredivisie/SC%20Cambuur.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Netherlands%20-%20Eredivisie/SC%20Cambuur.png"},{"id":"netherlands-eredivisie:17","name":"Telstar","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Telstar.svg","short":"TEL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/SC%20Telstar.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/SC%20Telstar.png"},{"id":"netherlands-eredivisie:18","name":"Willem II","leagueId":"netherlands-eredivisie","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Willem_II.svg","short":"WIL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Netherlands%20-%20Eredivisie/Willem%20II.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Netherlands%20-%20Eredivisie/Willem%20II.png"},{"id":"portugal-liga-portugal:1","name":"Arouca","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Arouca.svg","short":"ARO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Arouca.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/FC%20Arouca.png"},{"id":"portugal-liga-portugal:2","name":"Benfica","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Benfica.svg","short":"SLB","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Portugal%20-%20Liga%20Portugal/Benfica.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Portugal%20-%20Liga%20Portugal/Benfica.png"},{"id":"portugal-liga-portugal:3","name":"Académico de Viseu","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Acad%C3%A9mico_de_Viseu.svg","short":"AVF","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Acad%C3%A9mico%20Viseu%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Acad%C3%A9mico%20Viseu%20FC.png"},{"id":"portugal-liga-portugal:4","name":"Braga","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/SC_Braga.svg","short":"SCB","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/SC%20Braga.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/SC%20Braga.png"},{"id":"portugal-liga-portugal:5","name":"Casa Pia","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Casa_Pia_AC.svg","short":"CSP","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Casa%20Pia%20AC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Casa%20Pia%20AC.png"},{"id":"portugal-liga-portugal:6","name":"Estoril","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Estoril.svg","short":"EST","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/GD%20Estoril%20Praia.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/GD%20Estoril%20Praia.png"},{"id":"portugal-liga-portugal:7","name":"Estrela","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Estrela_da_Amadora.svg","short":"ESA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/CF%20Estrela%20Amadora.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/CF%20Estrela%20Amadora.png"},{"id":"portugal-liga-portugal:8","name":"FC Famalicão","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Famalicao.svg","short":"FAM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Famalic%C3%A3o.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/FC%20Famalic%C3%A3o.png"},{"id":"portugal-liga-portugal:9","name":"FC Porto","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/FC_Porto.svg","short":"POR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Porto.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/FC%20Porto.png"},{"id":"portugal-liga-portugal:10","name":"Marítimo","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Mar%C3%ADtimo.svg","short":"MAR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Portugal%20-%20Liga%20Portugal/Mar%C3%ADtimo.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Portugal%20-%20Liga%20Portugal/Mar%C3%ADtimo.png"},{"id":"portugal-liga-portugal:11","name":"Gil Vicente","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Gil_Vicente.svg","short":"GIL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Gil%20Vicente%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Gil%20Vicente%20FC.png"},{"id":"portugal-liga-portugal:12","name":"Vitória Guimarães","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Vit%C3%B3ria_de_Guimar%C3%A3es.svg","short":"VSC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Vit%C3%B3ria%20Guimar%C3%A3es%20SC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Vit%C3%B3ria%20Guimar%C3%A3es%20SC.png"},{"id":"portugal-liga-portugal:13","name":"Moreirense","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Moreirense.svg","short":"MOR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Moreirense%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Moreirense%20FC.png"},{"id":"portugal-liga-portugal:14","name":"C.D. Nacional","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Nacional_da_Madeira.svg","short":"NAC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/CD%20Nacional.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/CD%20Nacional.png"},{"id":"portugal-liga-portugal:15","name":"Rio Ave","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Rio_Ave.svg","short":"RIO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Rio%20Ave%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Rio%20Ave%20FC.png"},{"id":"portugal-liga-portugal:16","name":"Santa Clara","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Santa_Clara.svg","short":"SCL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/CD%20Santa%20Clara.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/CD%20Santa%20Clara.png"},{"id":"portugal-liga-portugal:17","name":"Sporting CP","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Sporting_CP.svg","short":"SCP","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Sporting%20CP.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Sporting%20CP.png"},{"id":"portugal-liga-portugal:18","name":"Alverca","leagueId":"portugal-liga-portugal","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Alverca.svg","short":"ALV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Alverca.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/FC%20Alverca.png"},{"id":"scotland-premiership:1","name":"Aberdeen","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Aberdeen.svg","short":"ABE","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Aberdeen%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Aberdeen%20FC.png"},{"id":"scotland-premiership:2","name":"Celtic","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Celtic.svg","short":"CEL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Celtic%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Celtic%20FC.png"},{"id":"scotland-premiership:3","name":"Dundee","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Dundee.svg","short":"DND","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Dundee%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Dundee%20FC.png"},{"id":"scotland-premiership:4","name":"Heart of Midlothian","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Hearts.svg","short":"HEA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Heart%20of%20Midlothian%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Heart%20of%20Midlothian%20FC.png"},{"id":"scotland-premiership:5","name":"Hibernian","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Hibernian.svg","short":"HIB","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Hibernian%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Hibernian%20FC.png"},{"id":"scotland-premiership:6","name":"Kilmarnock","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Kilmarnock.svg","short":"KIL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Kilmarnock%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Kilmarnock%20FC.png"},{"id":"scotland-premiership:7","name":"Dundee United","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Dundee_United.svg","short":"DNU","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Dundee%20United%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Dundee%20United%20FC.png"},{"id":"scotland-premiership:8","name":"Motherwell","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Motherwell.svg","short":"MOT","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Motherwell%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Motherwell%20FC.png"},{"id":"scotland-premiership:9","name":"Rangers","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Rangers.svg","short":"RAN","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Rangers%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Rangers%20FC.png"},{"id":"scotland-premiership:10","name":"Falkirk","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/Falkirk.svg","short":"FAL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/Falkirk%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/Falkirk%20FC.png"},{"id":"scotland-premiership:11","name":"St. Johnstone","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/St_Johnstone.svg","short":"STJ","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/St.%20Johnstone%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/St.%20Johnstone%20FC.png"},{"id":"scotland-premiership:12","name":"St. Mirren","leagueId":"scotland-premiership","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/scotland/St._Mirren.svg","short":"STM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Scotland%20-%20Scottish%20Premiership/St.%20Mirren%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Scotland%20-%20Scottish%20Premiership/St.%20Mirren%20FC.png"},{"id":"spain-la-liga:1","name":"Deportivo Alavés","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Deportivo_Alav%C3%A9s.svg","short":"ALA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Deportivo%20Alav%C3%A9s.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Deportivo%20Alav%C3%A9s.png"},{"id":"spain-la-liga:2","name":"Deportivo La Coruña","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Deportivo_La_Coru%C3%B1a.svg","short":"DEP","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Deportivo%20A%20Coru%C3%B1a.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Deportivo%20A%20Coru%C3%B1a.png"},{"id":"spain-la-liga:3","name":"Athletic Club","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Athletic_Club_Bilbao.svg","short":"ATH","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Spain%20-%20LaLiga/Athletic.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Spain%20-%20LaLiga/Athletic.png"},{"id":"spain-la-liga:4","name":"Atlético Madrid","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Atletico_Madrid.svg","short":"ATM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Atl%C3%A9tico%20de%20Madrid.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Atl%C3%A9tico%20de%20Madrid.png"},{"id":"spain-la-liga:5","name":"FC Barcelona","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Barcelona.svg","short":"BAR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/FC%20Barcelona.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/FC%20Barcelona.png"},{"id":"spain-la-liga:6","name":"Elche","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Elche.svg","short":"ELC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Elche%20CF.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Elche%20CF.png"},{"id":"spain-la-liga:7","name":"Celta Vigo","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Celta.svg","short":"CEL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Celta%20de%20Vigo.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Celta%20de%20Vigo.png"},{"id":"spain-la-liga:8","name":"Espanyol","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Espanyol.svg","short":"ESP","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Spain%20-%20LaLiga/Espanyol.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Spain%20-%20LaLiga/Espanyol.png"},{"id":"spain-la-liga:9","name":"Getafe CF","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Getafe.svg","short":"GET","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Getafe%20CF.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Getafe%20CF.png"},{"id":"spain-la-liga:10","name":"Levante","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Levante.svg","short":"LEV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Levante%20UD.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Levante%20UD.png"},{"id":"spain-la-liga:11","name":"Málaga","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/M%C3%A1laga.svg","short":"MCF","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/M%C3%A1laga%20CF.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/M%C3%A1laga%20CF.png"},{"id":"spain-la-liga:12","name":"CA Osasuna","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Osasuna.svg","short":"OSA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/CA%20Osasuna.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/CA%20Osasuna.png"},{"id":"spain-la-liga:13","name":"Racing Santander","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Racing_Santander.svg","short":"RAC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Racing%20Santander.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Racing%20Santander.png"},{"id":"spain-la-liga:14","name":"Rayo Vallecano","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Rayo_Vallecano.svg","short":"RAY","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Rayo%20Vallecano.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Rayo%20Vallecano.png"},{"id":"spain-la-liga:15","name":"Real Betis","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Real_Betis.svg","short":"BET","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Real%20Betis%20Balompi%C3%A9.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Real%20Betis%20Balompi%C3%A9.png"},{"id":"spain-la-liga:16","name":"Real Madrid","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Real_Madrid.svg","short":"RMA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Real%20Madrid.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Real%20Madrid.png"},{"id":"spain-la-liga:17","name":"Real Sociedad","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Real_Sociedad.svg","short":"RSO","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Real%20Sociedad.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Real%20Sociedad.png"},{"id":"spain-la-liga:18","name":"Sevilla FC","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Sevilla.svg","short":"SEV","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Sevilla%20FC.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Sevilla%20FC.png"},{"id":"spain-la-liga:19","name":"Valencia CF","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Valencia.svg","short":"VAL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Valencia%20CF.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Valencia%20CF.png"},{"id":"spain-la-liga:20","name":"Villarreal CF","leagueId":"spain-la-liga","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Villarreal.svg","short":"VIL","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Villarreal%20CF.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Villarreal%20CF.png"},{"id":"turkey-super-lig:1","name":"Alanyaspor","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Alanyaspor.svg","short":"ALA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Alanyaspor.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Alanyaspor.png"},{"id":"turkey-super-lig:2","name":"Amed SFK","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Amed_SFK.svg","short":"AMED","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Amed%20SK.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Amed%20SK.png"},{"id":"turkey-super-lig:3","name":"Beşiktaş","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Be%C5%9Fikta%C5%9F.svg","short":"BJK","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Besiktas%20JK.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Besiktas%20JK.png"},{"id":"turkey-super-lig:4","name":"Erzurum BB","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/erzurumspor.svg","short":"ERZ","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Erzurumspor%20FK.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Erzurumspor%20FK.png"},{"id":"turkey-super-lig:5","name":"Eyüpspor","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Ey%C3%BCpspor.svg","short":"EYU","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Ey%C3%BCpspor.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Ey%C3%BCpspor.png"},{"id":"turkey-super-lig:6","name":"Fenerbahçe","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Fenerbah%C3%A7e.svg","short":"FB","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Fenerbahce.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Fenerbahce.png"},{"id":"turkey-super-lig:7","name":"Galatasaray","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Galatasaray.svg","short":"GS","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Galatasaray.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Galatasaray.png"},{"id":"turkey-super-lig:8","name":"Gaziantep FK","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Gaziantep.svg","short":"GAZ","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Gaziantep%20FK.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Gaziantep%20FK.png"},{"id":"turkey-super-lig:9","name":"Gençlerbirliği","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Gen%C3%A7lerbirli%C4%9Fi.svg","short":"GNC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Genclerbirligi%20Ankara.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Genclerbirligi%20Ankara.png"},{"id":"turkey-super-lig:10","name":"Göztepe","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/G%C3%B6ztepe_Izmir.svg","short":"GOZ","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/G%C3%B6ztepe.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/G%C3%B6ztepe.png"},{"id":"turkey-super-lig:11","name":"Başakşehir","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Ba%C5%9Fak%C5%9Fehir.svg","short":"IBA","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Basaksehir%20FK.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Basaksehir%20FK.png"},{"id":"turkey-super-lig:12","name":"Kasımpaşa","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Kas%C4%B1mpa%C5%9Fa.svg","short":"KAS","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Kasimpasa.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Kasimpasa.png"},{"id":"turkey-super-lig:13","name":"Kocaelispor","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Kocaelispor.svg","short":"KOC","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Kocaelispor.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Kocaelispor.png"},{"id":"turkey-super-lig:14","name":"Konyaspor","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Konyaspor.svg","short":"KON","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Konyaspor.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Konyaspor.png"},{"id":"turkey-super-lig:15","name":"Çaykur Rizespor","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/%C3%87aykur_Rizespor.svg","short":"CAY","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Caykur%20Rizespor.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Caykur%20Rizespor.png"},{"id":"turkey-super-lig:16","name":"Samsunspor","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Samsunspor.svg","short":"SAM","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Samsunspor.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Samsunspor.png"},{"id":"turkey-super-lig:17","name":"Trabzonspor","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Trabzonspor.svg","short":"TS","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Trabzonspor.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Trabzonspor.png"},{"id":"turkey-super-lig:18","name":"Çorum FK","leagueId":"turkey-super-lig","logo":"https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/%C3%87orum_FK.svg","short":"COR","fallbackLogo":"https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Corum%20FK.png","lastResortLogo":"https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Corum%20FK.png"}]}
+{
+  "defaultTeamId": "turkey-super-lig:6",
+  "leagues": [
+    {
+      "id": "turkey-super-lig",
+      "name": "Turkish Süper Lig"
+    },
+    {
+      "id": "england-premier-league",
+      "name": "English Premier League"
+    },
+    {
+      "id": "france-ligue-1",
+      "name": "French Ligue 1"
+    },
+    {
+      "id": "germany-bundesliga",
+      "name": "German Bundesliga"
+    },
+    {
+      "id": "italy-serie-a",
+      "name": "Italian Serie A"
+    },
+    {
+      "id": "netherlands-eredivisie",
+      "name": "Dutch Eredivisie"
+    },
+    {
+      "id": "portugal-liga-portugal",
+      "name": "Liga Portugal"
+    },
+    {
+      "id": "spain-la-liga",
+      "name": "Spanish La Liga"
+    }
+  ],
+  "clubs": [
+    {
+      "id": "england-premier-league:1",
+      "name": "Arsenal",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Arsenal.svg",
+      "short": "ARS",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Arsenal%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Arsenal%20FC.png"
+    },
+    {
+      "id": "england-premier-league:2",
+      "name": "Aston Villa",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Aston_Villa.svg",
+      "short": "AVL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Aston%20Villa.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Aston%20Villa.png"
+    },
+    {
+      "id": "england-premier-league:3",
+      "name": "Bournemouth",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Bournemouth.svg",
+      "short": "BOU",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/AFC%20Bournemouth.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/AFC%20Bournemouth.png"
+    },
+    {
+      "id": "england-premier-league:4",
+      "name": "Brentford",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Brentford.svg",
+      "short": "BRE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Brentford%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Brentford%20FC.png"
+    },
+    {
+      "id": "england-premier-league:5",
+      "name": "Brighton",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Brighton.svg",
+      "short": "BHA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/England%20-%20Premier%20League/Brighton.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/England%20-%20Premier%20League/Brighton.png"
+    },
+    {
+      "id": "england-premier-league:6",
+      "name": "Chelsea",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Chelsea.svg",
+      "short": "CHE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Chelsea%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Chelsea%20FC.png"
+    },
+    {
+      "id": "england-premier-league:7",
+      "name": "Crystal Palace",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Crystal_Palace.svg",
+      "short": "CRY",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Crystal%20Palace.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Crystal%20Palace.png"
+    },
+    {
+      "id": "england-premier-league:8",
+      "name": "Everton",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Everton.svg",
+      "short": "EVE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Everton%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Everton%20FC.png"
+    },
+    {
+      "id": "england-premier-league:9",
+      "name": "Fulham",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Fulham.svg",
+      "short": "FUL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Fulham%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Fulham%20FC.png"
+    },
+    {
+      "id": "england-premier-league:10",
+      "name": "Ipswich Town",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Ipswich.svg",
+      "short": "IPS",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Ipswich%20Town.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Ipswich%20Town.png"
+    },
+    {
+      "id": "england-premier-league:11",
+      "name": "Leeds United",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Leeds_United.svg",
+      "short": "LEE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Leeds%20United.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Leeds%20United.png"
+    },
+    {
+      "id": "england-premier-league:12",
+      "name": "Liverpool",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Liverpool_FC.svg",
+      "short": "LIV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Liverpool%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Liverpool%20FC.png"
+    },
+    {
+      "id": "england-premier-league:13",
+      "name": "Manchester City",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Manchester_City.svg",
+      "short": "MCI",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Manchester%20City.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Manchester%20City.png"
+    },
+    {
+      "id": "england-premier-league:14",
+      "name": "Manchester United",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Manchester_United.svg",
+      "short": "MUN",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Manchester%20United.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Manchester%20United.png"
+    },
+    {
+      "id": "england-premier-league:15",
+      "name": "Newcastle",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Newcastle.svg",
+      "short": "NEW",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Newcastle%20United.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Newcastle%20United.png"
+    },
+    {
+      "id": "england-premier-league:16",
+      "name": "Nottm Forest",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Nottingham_Forest.svg",
+      "short": "NFO",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Nottingham%20Forest.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Nottingham%20Forest.png"
+    },
+    {
+      "id": "england-premier-league:17",
+      "name": "Coventry City",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Coventry_City.svg",
+      "short": "COV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Coventry%20City.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Coventry%20City.png"
+    },
+    {
+      "id": "england-premier-league:18",
+      "name": "Tottenham",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Tottenham.svg",
+      "short": "TOT",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Tottenham%20Hotspur.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Tottenham%20Hotspur.png"
+    },
+    {
+      "id": "england-premier-league:19",
+      "name": "Sunderland",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Sunderland.svg",
+      "short": "SUN",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Sunderland%20AFC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Sunderland%20AFC.png"
+    },
+    {
+      "id": "england-premier-league:20",
+      "name": "Hull City",
+      "leagueId": "england-premier-league",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/england/Hull_City.svg",
+      "short": "HUL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/England%20-%20Premier%20League/Hull%20City.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/England%20-%20Premier%20League/Hull%20City.png"
+    },
+    {
+      "id": "france-ligue-1:1",
+      "name": "AJ Auxerre",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Auxerre.svg",
+      "short": "AUX",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/AJ%20Auxerre.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/AJ%20Auxerre.png"
+    },
+    {
+      "id": "france-ligue-1:2",
+      "name": "Angers",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Angers.svg",
+      "short": "ANG",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Angers%20SCO.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Angers%20SCO.png"
+    },
+    {
+      "id": "france-ligue-1:3",
+      "name": "AS Monaco",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/AS_Monaco.svg",
+      "short": "ASM",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/AS%20Monaco.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/AS%20Monaco.png"
+    },
+    {
+      "id": "france-ligue-1:4",
+      "name": "Brest",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/AS_Brest.svg",
+      "short": "BRE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Stade%20Brestois%2029.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Stade%20Brestois%2029.png"
+    },
+    {
+      "id": "france-ligue-1:5",
+      "name": "Le Havre AC",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Le_Havre_AC.svg",
+      "short": "HAC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Le%20Havre%20AC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Le%20Havre%20AC.png"
+    },
+    {
+      "id": "france-ligue-1:6",
+      "name": "Lille",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Lille.svg",
+      "short": "LIL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/LOSC%20Lille.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/LOSC%20Lille.png"
+    },
+    {
+      "id": "france-ligue-1:7",
+      "name": "Lyon",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Olympique_Lyonnais.svg",
+      "short": "OL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Olympique%20Lyon.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Olympique%20Lyon.png"
+    },
+    {
+      "id": "france-ligue-1:8",
+      "name": "Marseille",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Marseille.svg",
+      "short": "OM",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/France%20-%20Ligue%201/Marseille.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/France%20-%20Ligue%201/Marseille.png"
+    },
+    {
+      "id": "france-ligue-1:9",
+      "name": "Le Mans",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Le_Mans_FC.svg",
+      "short": "MNS",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Le%20Mans%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Le%20Mans%20FC.png"
+    },
+    {
+      "id": "france-ligue-1:10",
+      "name": "Nice",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Nice.svg",
+      "short": "NIC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/OGC%20Nice.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/OGC%20Nice.png"
+    },
+    {
+      "id": "france-ligue-1:11",
+      "name": "Lorient",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Lorient_FC.svg",
+      "short": "LOR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/FC%20Lorient.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/FC%20Lorient.png"
+    },
+    {
+      "id": "france-ligue-1:12",
+      "name": "Paris Saint-Germain",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Paris_Saint-Germain_(PSG).svg",
+      "short": "PSG",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Paris%20Saint-Germain.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Paris%20Saint-Germain.png"
+    },
+    {
+      "id": "france-ligue-1:13",
+      "name": "Rennes",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Rennes.svg",
+      "short": "REN",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Stade%20Rennais%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Stade%20Rennais%20FC.png"
+    },
+    {
+      "id": "france-ligue-1:14",
+      "name": "Paris FC",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Paris_FC.svg",
+      "short": "PAR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/Paris%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/Paris%20FC.png"
+    },
+    {
+      "id": "france-ligue-1:15",
+      "name": "Strasbourg",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/AS_Strasbourg.svg",
+      "short": "STR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/RC%20Strasbourg%20Alsace.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/RC%20Strasbourg%20Alsace.png"
+    },
+    {
+      "id": "france-ligue-1:16",
+      "name": "Toulouse",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Toulouse.svg",
+      "short": "TFC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/FC%20Toulouse.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/FC%20Toulouse.png"
+    },
+    {
+      "id": "france-ligue-1:17",
+      "name": "Lens",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/RC_Lens.svg",
+      "short": "RCL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/RC%20Lens.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/RC%20Lens.png"
+    },
+    {
+      "id": "france-ligue-1:18",
+      "name": "Troyes",
+      "leagueId": "france-ligue-1",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/france/Troyes.svg",
+      "short": "TRY",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/France%20-%20Ligue%201/ESTAC%20Troyes.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/France%20-%20Ligue%201/ESTAC%20Troyes.png"
+    },
+    {
+      "id": "germany-bundesliga:1",
+      "name": "FC Augsburg",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Augsburg.svg",
+      "short": "FCA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/FC%20Augsburg.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/FC%20Augsburg.png"
+    },
+    {
+      "id": "germany-bundesliga:2",
+      "name": "Bayer Leverkusen",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Bayer_Leverkusen.svg",
+      "short": "LEV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Bayer%2004%20Leverkusen.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Bayer%2004%20Leverkusen.png"
+    },
+    {
+      "id": "germany-bundesliga:3",
+      "name": "Bayern Munich",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Bayern_Munich.svg",
+      "short": "FCB",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Bayern%20Munich.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Bayern%20Munich.png"
+    },
+    {
+      "id": "germany-bundesliga:4",
+      "name": "Borussia Dortmund",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Borussia_Dortmund.svg",
+      "short": "BVB",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Borussia%20Dortmund.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Borussia%20Dortmund.png"
+    },
+    {
+      "id": "germany-bundesliga:5",
+      "name": "Borussia Monchengladbach",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Borussia_M%C3%B6nchengladbach.svg",
+      "short": "BMG",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Borussia%20M%C3%B6nchengladbach.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Borussia%20M%C3%B6nchengladbach.png"
+    },
+    {
+      "id": "germany-bundesliga:6",
+      "name": "Eintracht Frankfurt",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Eintracht_Frankfurt.svg",
+      "short": "SGE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Eintracht%20Frankfurt.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Eintracht%20Frankfurt.png"
+    },
+    {
+      "id": "germany-bundesliga:7",
+      "name": "SV Elversberg",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/SV_Elversberg.svg",
+      "short": "ELV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/SV%2007%20Elversberg.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/SV%2007%20Elversberg.png"
+    },
+    {
+      "id": "germany-bundesliga:8",
+      "name": "FC Cologne",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Cologne.svg",
+      "short": "KOE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/1.FC%20K%C3%B6ln.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/1.FC%20K%C3%B6ln.png"
+    },
+    {
+      "id": "germany-bundesliga:9",
+      "name": "FC Mainz",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Mainz_05.svg",
+      "short": "M05",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/1.FSV%20Mainz%2005.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/1.FSV%20Mainz%2005.png"
+    },
+    {
+      "id": "germany-bundesliga:10",
+      "name": "Hamburg SV",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Hamburger_SV.svg",
+      "short": "HSV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/Hamburger%20SV.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/Hamburger%20SV.png"
+    },
+    {
+      "id": "germany-bundesliga:11",
+      "name": "RB Leipzig",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/RB_Leipzig.svg",
+      "short": "RBL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/RB%20Leipzig.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/RB%20Leipzig.png"
+    },
+    {
+      "id": "germany-bundesliga:12",
+      "name": "SC Freiburg",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Freiburg.svg",
+      "short": "SCF",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/SC%20Freiburg.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/SC%20Freiburg.png"
+    },
+    {
+      "id": "germany-bundesliga:13",
+      "name": "SC Paderborn 07",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/SC_Paderborn.svg",
+      "short": "SCP",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/SC%20Paderborn%2007.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/SC%20Paderborn%2007.png"
+    },
+    {
+      "id": "germany-bundesliga:14",
+      "name": "TSG Hoffenheim",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Hoffenheim.svg",
+      "short": "TSG",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/TSG%201899%20Hoffenheim.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/TSG%201899%20Hoffenheim.png"
+    },
+    {
+      "id": "germany-bundesliga:15",
+      "name": "VfB Stuttgart",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/VfB_Stuttgart.svg",
+      "short": "VFB",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/VfB%20Stuttgart.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/VfB%20Stuttgart.png"
+    },
+    {
+      "id": "germany-bundesliga:16",
+      "name": "Schalke 04",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Schalke_04.svg",
+      "short": "S04",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/FC%20Schalke%2004.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/FC%20Schalke%2004.png"
+    },
+    {
+      "id": "germany-bundesliga:17",
+      "name": "FC Union Berlin",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Union_Berlin.svg",
+      "short": "FCU",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/1.FC%20Union%20Berlin.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/1.FC%20Union%20Berlin.png"
+    },
+    {
+      "id": "germany-bundesliga:18",
+      "name": "Werder Bremen",
+      "leagueId": "germany-bundesliga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/germany/Werder_Bremen.svg",
+      "short": "SVW",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Germany%20-%20Bundesliga/SV%20Werder%20Bremen.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Germany%20-%20Bundesliga/SV%20Werder%20Bremen.png"
+    },
+    {
+      "id": "italy-serie-a:1",
+      "name": "AC Milan",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Milan.svg",
+      "short": "MIL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/AC%20Milan.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/AC%20Milan.png"
+    },
+    {
+      "id": "italy-serie-a:2",
+      "name": "Atalanta",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Atalanta.svg",
+      "short": "ATA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Atalanta%20BC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Atalanta%20BC.png"
+    },
+    {
+      "id": "italy-serie-a:3",
+      "name": "Bologna",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Bologna.svg",
+      "short": "BOL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Bologna%20FC%201909.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Bologna%20FC%201909.png"
+    },
+    {
+      "id": "italy-serie-a:4",
+      "name": "Cagliari",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Cagliari.svg",
+      "short": "CAG",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Cagliari%20Calcio.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Cagliari%20Calcio.png"
+    },
+    {
+      "id": "italy-serie-a:5",
+      "name": "Como",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Como_1907.svg",
+      "short": "COM",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Como%201907.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Como%201907.png"
+    },
+    {
+      "id": "italy-serie-a:6",
+      "name": "Fiorentina",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Fiorentina.svg",
+      "short": "FIO",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/ACF%20Fiorentina.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/ACF%20Fiorentina.png"
+    },
+    {
+      "id": "italy-serie-a:7",
+      "name": "Frosinone",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Frosinone_Calcio.svg",
+      "short": "FRO",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Frosinone%20Calcio.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Frosinone%20Calcio.png"
+    },
+    {
+      "id": "italy-serie-a:8",
+      "name": "Genoa",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Genoa.svg",
+      "short": "GEN",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Genoa%20CFC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Genoa%20CFC.png"
+    },
+    {
+      "id": "italy-serie-a:9",
+      "name": "Internazionale",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Inter.svg",
+      "short": "INT",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Inter%20Milan.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Inter%20Milan.png"
+    },
+    {
+      "id": "italy-serie-a:10",
+      "name": "Juventus",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Juventus.svg",
+      "short": "JUV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Juventus%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Juventus%20FC.png"
+    },
+    {
+      "id": "italy-serie-a:11",
+      "name": "Lazio",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Lazio.svg",
+      "short": "LAZ",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Italy%20-%20Serie%20A/Lazio.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Italy%20-%20Serie%20A/Lazio.png"
+    },
+    {
+      "id": "italy-serie-a:12",
+      "name": "Lecce",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Lecce.svg",
+      "short": "LEC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/US%20Lecce.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/US%20Lecce.png"
+    },
+    {
+      "id": "italy-serie-a:13",
+      "name": "Monza",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/AC_Monza.svg",
+      "short": "MON",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/AC%20Monza.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/AC%20Monza.png"
+    },
+    {
+      "id": "italy-serie-a:14",
+      "name": "Napoli",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Napoli.svg",
+      "short": "NAP",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/SSC%20Napoli.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/SSC%20Napoli.png"
+    },
+    {
+      "id": "italy-serie-a:15",
+      "name": "Parma",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Parma.svg",
+      "short": "PAR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Parma%20Calcio%201913.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Parma%20Calcio%201913.png"
+    },
+    {
+      "id": "italy-serie-a:16",
+      "name": "AS Roma",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/AS_Roma.svg",
+      "short": "ROMA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/AS%20Roma.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/AS%20Roma.png"
+    },
+    {
+      "id": "italy-serie-a:17",
+      "name": "Sassuolo",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Sassuolo.svg",
+      "short": "SAS",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Italy%20-%20Serie%20A/Sassuolo.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Italy%20-%20Serie%20A/Sassuolo.png"
+    },
+    {
+      "id": "italy-serie-a:18",
+      "name": "Torino",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Torino.svg",
+      "short": "TOR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Torino%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Torino%20FC.png"
+    },
+    {
+      "id": "italy-serie-a:19",
+      "name": "Udinese",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Udinese.svg",
+      "short": "UDI",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Udinese%20Calcio.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Udinese%20Calcio.png"
+    },
+    {
+      "id": "italy-serie-a:20",
+      "name": "Venezia",
+      "leagueId": "italy-serie-a",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/italy/Venezia.svg",
+      "short": "VEN",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Italy%20-%20Serie%20A/Venezia%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Italy%20-%20Serie%20A/Venezia%20FC.png"
+    },
+    {
+      "id": "netherlands-eredivisie:1",
+      "name": "Ajax Amsterdam",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Ajax.svg",
+      "short": "AJX",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Ajax%20Amsterdam.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Ajax%20Amsterdam.png"
+    },
+    {
+      "id": "netherlands-eredivisie:2",
+      "name": "ADO Den Haag",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/ADO_Den_Haag.svg",
+      "short": "ADO",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/ADO%20Den%20Haag.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/ADO%20Den%20Haag.png"
+    },
+    {
+      "id": "netherlands-eredivisie:3",
+      "name": "AZ Alkmaar",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/AZ_Alkmaar.svg",
+      "short": "AZ",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/AZ%20Alkmaar.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/AZ%20Alkmaar.png"
+    },
+    {
+      "id": "netherlands-eredivisie:4",
+      "name": "Excelsior",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Excelsior_Rotterdam.svg",
+      "short": "EXC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Excelsior%20Rotterdam.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Excelsior%20Rotterdam.png"
+    },
+    {
+      "id": "netherlands-eredivisie:5",
+      "name": "Feyenoord Rotterdam",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Feyenoord.svg",
+      "short": "FEY",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Feyenoord%20Rotterdam.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Feyenoord%20Rotterdam.png"
+    },
+    {
+      "id": "netherlands-eredivisie:6",
+      "name": "Fortuna Sittard",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Fortuna_Sittard.svg",
+      "short": "FOR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Fortuna%20Sittard.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Fortuna%20Sittard.png"
+    },
+    {
+      "id": "netherlands-eredivisie:7",
+      "name": "Go Ahead Eagles",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Go_Ahead_Eagles.svg",
+      "short": "GAE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Go%20Ahead%20Eagles.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Go%20Ahead%20Eagles.png"
+    },
+    {
+      "id": "netherlands-eredivisie:8",
+      "name": "FC Twente",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Twente.svg",
+      "short": "TWE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/FC%20Twente%20Enschede.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/FC%20Twente%20Enschede.png"
+    },
+    {
+      "id": "netherlands-eredivisie:9",
+      "name": "FC Utrecht",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/FC_Utrecht.svg",
+      "short": "UTR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/FC%20Utrecht.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/FC%20Utrecht.png"
+    },
+    {
+      "id": "netherlands-eredivisie:10",
+      "name": "FC Groningen",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/FC_Groningen.svg",
+      "short": "GRO",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/FC%20Groningen.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/FC%20Groningen.png"
+    },
+    {
+      "id": "netherlands-eredivisie:11",
+      "name": "Heerenveen",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/sc_Heerenveen.svg",
+      "short": "HEE",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/SC%20Heerenveen.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/SC%20Heerenveen.png"
+    },
+    {
+      "id": "netherlands-eredivisie:12",
+      "name": "NEC Nijmegen",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/N.E.C._Nijmegen.svg",
+      "short": "NEC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/NEC%20Nijmegen.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/NEC%20Nijmegen.png"
+    },
+    {
+      "id": "netherlands-eredivisie:13",
+      "name": "PEC Zwolle",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/PEC_Zwolle.svg",
+      "short": "PEC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/PEC%20Zwolle.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/PEC%20Zwolle.png"
+    },
+    {
+      "id": "netherlands-eredivisie:14",
+      "name": "PSV Eindhoven",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/PSV_Eindhoven.svg",
+      "short": "PSV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/PSV%20Eindhoven.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/PSV%20Eindhoven.png"
+    },
+    {
+      "id": "netherlands-eredivisie:15",
+      "name": "Sparta Rotterdam",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Sparta_Rotterdam.svg",
+      "short": "SPA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/Sparta%20Rotterdam.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/Sparta%20Rotterdam.png"
+    },
+    {
+      "id": "netherlands-eredivisie:16",
+      "name": "SC Cambuur",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/SC_Cambuur.svg",
+      "short": "CAM",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Netherlands%20-%20Eredivisie/SC%20Cambuur.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Netherlands%20-%20Eredivisie/SC%20Cambuur.png"
+    },
+    {
+      "id": "netherlands-eredivisie:17",
+      "name": "Telstar",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Telstar.svg",
+      "short": "TEL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Netherlands%20-%20Eredivisie/SC%20Telstar.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Netherlands%20-%20Eredivisie/SC%20Telstar.png"
+    },
+    {
+      "id": "netherlands-eredivisie:18",
+      "name": "Willem II",
+      "leagueId": "netherlands-eredivisie",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/netherlands/Willem_II.svg",
+      "short": "WIL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Netherlands%20-%20Eredivisie/Willem%20II.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Netherlands%20-%20Eredivisie/Willem%20II.png"
+    },
+    {
+      "id": "portugal-liga-portugal:1",
+      "name": "Arouca",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Arouca.svg",
+      "short": "ARO",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Arouca.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/FC%20Arouca.png"
+    },
+    {
+      "id": "portugal-liga-portugal:2",
+      "name": "Benfica",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Benfica.svg",
+      "short": "SLB",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Portugal%20-%20Liga%20Portugal/Benfica.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Portugal%20-%20Liga%20Portugal/Benfica.png"
+    },
+    {
+      "id": "portugal-liga-portugal:3",
+      "name": "Académico de Viseu",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Acad%C3%A9mico_de_Viseu.svg",
+      "short": "AVF",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Acad%C3%A9mico%20Viseu%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Acad%C3%A9mico%20Viseu%20FC.png"
+    },
+    {
+      "id": "portugal-liga-portugal:4",
+      "name": "Braga",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/SC_Braga.svg",
+      "short": "SCB",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/SC%20Braga.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/SC%20Braga.png"
+    },
+    {
+      "id": "portugal-liga-portugal:5",
+      "name": "Casa Pia",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Casa_Pia_AC.svg",
+      "short": "CSP",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Casa%20Pia%20AC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Casa%20Pia%20AC.png"
+    },
+    {
+      "id": "portugal-liga-portugal:6",
+      "name": "Estoril",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Estoril.svg",
+      "short": "EST",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/GD%20Estoril%20Praia.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/GD%20Estoril%20Praia.png"
+    },
+    {
+      "id": "portugal-liga-portugal:7",
+      "name": "Estrela",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Estrela_da_Amadora.svg",
+      "short": "ESA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/CF%20Estrela%20Amadora.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/CF%20Estrela%20Amadora.png"
+    },
+    {
+      "id": "portugal-liga-portugal:8",
+      "name": "FC Famalicão",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Famalicao.svg",
+      "short": "FAM",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Famalic%C3%A3o.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/FC%20Famalic%C3%A3o.png"
+    },
+    {
+      "id": "portugal-liga-portugal:9",
+      "name": "FC Porto",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/FC_Porto.svg",
+      "short": "POR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Porto.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/FC%20Porto.png"
+    },
+    {
+      "id": "portugal-liga-portugal:10",
+      "name": "Marítimo",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Mar%C3%ADtimo.svg",
+      "short": "MAR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Portugal%20-%20Liga%20Portugal/Mar%C3%ADtimo.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Portugal%20-%20Liga%20Portugal/Mar%C3%ADtimo.png"
+    },
+    {
+      "id": "portugal-liga-portugal:11",
+      "name": "Gil Vicente",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Gil_Vicente.svg",
+      "short": "GIL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Gil%20Vicente%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Gil%20Vicente%20FC.png"
+    },
+    {
+      "id": "portugal-liga-portugal:12",
+      "name": "Vitória Guimarães",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Vit%C3%B3ria_de_Guimar%C3%A3es.svg",
+      "short": "VSC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Vit%C3%B3ria%20Guimar%C3%A3es%20SC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Vit%C3%B3ria%20Guimar%C3%A3es%20SC.png"
+    },
+    {
+      "id": "portugal-liga-portugal:13",
+      "name": "Moreirense",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Moreirense.svg",
+      "short": "MOR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Moreirense%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Moreirense%20FC.png"
+    },
+    {
+      "id": "portugal-liga-portugal:14",
+      "name": "C.D. Nacional",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Nacional_da_Madeira.svg",
+      "short": "NAC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/CD%20Nacional.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/CD%20Nacional.png"
+    },
+    {
+      "id": "portugal-liga-portugal:15",
+      "name": "Rio Ave",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Rio_Ave.svg",
+      "short": "RIO",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Rio%20Ave%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Rio%20Ave%20FC.png"
+    },
+    {
+      "id": "portugal-liga-portugal:16",
+      "name": "Santa Clara",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Santa_Clara.svg",
+      "short": "SCL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/CD%20Santa%20Clara.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/CD%20Santa%20Clara.png"
+    },
+    {
+      "id": "portugal-liga-portugal:17",
+      "name": "Sporting CP",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Sporting_CP.svg",
+      "short": "SCP",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/Sporting%20CP.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/Sporting%20CP.png"
+    },
+    {
+      "id": "portugal-liga-portugal:18",
+      "name": "Alverca",
+      "leagueId": "portugal-liga-portugal",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/portugal/Alverca.svg",
+      "short": "ALV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Portugal%20-%20Liga%20Portugal/FC%20Alverca.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Portugal%20-%20Liga%20Portugal/FC%20Alverca.png"
+    },
+    {
+      "id": "spain-la-liga:1",
+      "name": "Deportivo Alavés",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Deportivo_Alav%C3%A9s.svg",
+      "short": "ALA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Deportivo%20Alav%C3%A9s.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Deportivo%20Alav%C3%A9s.png"
+    },
+    {
+      "id": "spain-la-liga:2",
+      "name": "Deportivo La Coruña",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Deportivo_La_Coru%C3%B1a.svg",
+      "short": "DEP",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Deportivo%20A%20Coru%C3%B1a.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Deportivo%20A%20Coru%C3%B1a.png"
+    },
+    {
+      "id": "spain-la-liga:3",
+      "name": "Athletic Club",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Athletic_Club_Bilbao.svg",
+      "short": "ATH",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Spain%20-%20LaLiga/Athletic.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Spain%20-%20LaLiga/Athletic.png"
+    },
+    {
+      "id": "spain-la-liga:4",
+      "name": "Atlético Madrid",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Atletico_Madrid.svg",
+      "short": "ATM",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Atl%C3%A9tico%20de%20Madrid.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Atl%C3%A9tico%20de%20Madrid.png"
+    },
+    {
+      "id": "spain-la-liga:5",
+      "name": "FC Barcelona",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Barcelona.svg",
+      "short": "BAR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/FC%20Barcelona.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/FC%20Barcelona.png"
+    },
+    {
+      "id": "spain-la-liga:6",
+      "name": "Elche",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Elche.svg",
+      "short": "ELC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Elche%20CF.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Elche%20CF.png"
+    },
+    {
+      "id": "spain-la-liga:7",
+      "name": "Celta Vigo",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Celta.svg",
+      "short": "CEL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Celta%20de%20Vigo.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Celta%20de%20Vigo.png"
+    },
+    {
+      "id": "spain-la-liga:8",
+      "name": "Espanyol",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Espanyol.svg",
+      "short": "ESP",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/history/2021-22/Spain%20-%20LaLiga/Espanyol.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/history/2021-22/Spain%20-%20LaLiga/Espanyol.png"
+    },
+    {
+      "id": "spain-la-liga:9",
+      "name": "Getafe CF",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Getafe.svg",
+      "short": "GET",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Getafe%20CF.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Getafe%20CF.png"
+    },
+    {
+      "id": "spain-la-liga:10",
+      "name": "Levante",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Levante.svg",
+      "short": "LEV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Levante%20UD.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Levante%20UD.png"
+    },
+    {
+      "id": "spain-la-liga:11",
+      "name": "Málaga",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/M%C3%A1laga.svg",
+      "short": "MCF",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/M%C3%A1laga%20CF.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/M%C3%A1laga%20CF.png"
+    },
+    {
+      "id": "spain-la-liga:12",
+      "name": "CA Osasuna",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Osasuna.svg",
+      "short": "OSA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/CA%20Osasuna.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/CA%20Osasuna.png"
+    },
+    {
+      "id": "spain-la-liga:13",
+      "name": "Racing Santander",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Racing_Santander.svg",
+      "short": "RAC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Racing%20Santander.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Racing%20Santander.png"
+    },
+    {
+      "id": "spain-la-liga:14",
+      "name": "Rayo Vallecano",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Rayo_Vallecano.svg",
+      "short": "RAY",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Rayo%20Vallecano.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Rayo%20Vallecano.png"
+    },
+    {
+      "id": "spain-la-liga:15",
+      "name": "Real Betis",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Real_Betis.svg",
+      "short": "BET",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Real%20Betis%20Balompi%C3%A9.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Real%20Betis%20Balompi%C3%A9.png"
+    },
+    {
+      "id": "spain-la-liga:16",
+      "name": "Real Madrid",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Real_Madrid.svg",
+      "short": "RMA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Real%20Madrid.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Real%20Madrid.png"
+    },
+    {
+      "id": "spain-la-liga:17",
+      "name": "Real Sociedad",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Real_Sociedad.svg",
+      "short": "RSO",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Real%20Sociedad.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Real%20Sociedad.png"
+    },
+    {
+      "id": "spain-la-liga:18",
+      "name": "Sevilla FC",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Sevilla.svg",
+      "short": "SEV",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Sevilla%20FC.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Sevilla%20FC.png"
+    },
+    {
+      "id": "spain-la-liga:19",
+      "name": "Valencia CF",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Valencia.svg",
+      "short": "VAL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Valencia%20CF.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Valencia%20CF.png"
+    },
+    {
+      "id": "spain-la-liga:20",
+      "name": "Villarreal CF",
+      "leagueId": "spain-la-liga",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/spain/Villarreal.svg",
+      "short": "VIL",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/Spain%20-%20LaLiga/Villarreal%20CF.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/Spain%20-%20LaLiga/Villarreal%20CF.png"
+    },
+    {
+      "id": "turkey-super-lig:1",
+      "name": "Alanyaspor",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Alanyaspor.svg",
+      "short": "ALA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Alanyaspor.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Alanyaspor.png"
+    },
+    {
+      "id": "turkey-super-lig:2",
+      "name": "Amed SFK",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Amed_SFK.svg",
+      "short": "AMED",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Amed%20SK.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Amed%20SK.png"
+    },
+    {
+      "id": "turkey-super-lig:3",
+      "name": "Beşiktaş",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Be%C5%9Fikta%C5%9F.svg",
+      "short": "BJK",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Besiktas%20JK.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Besiktas%20JK.png"
+    },
+    {
+      "id": "turkey-super-lig:4",
+      "name": "Erzurum BB",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/erzurumspor.svg",
+      "short": "ERZ",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Erzurumspor%20FK.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Erzurumspor%20FK.png"
+    },
+    {
+      "id": "turkey-super-lig:5",
+      "name": "Eyüpspor",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Ey%C3%BCpspor.svg",
+      "short": "EYU",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Ey%C3%BCpspor.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Ey%C3%BCpspor.png"
+    },
+    {
+      "id": "turkey-super-lig:6",
+      "name": "Fenerbahçe",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Fenerbah%C3%A7e.svg",
+      "short": "FB",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Fenerbahce.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Fenerbahce.png"
+    },
+    {
+      "id": "turkey-super-lig:7",
+      "name": "Galatasaray",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Galatasaray.svg",
+      "short": "GS",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Galatasaray.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Galatasaray.png"
+    },
+    {
+      "id": "turkey-super-lig:8",
+      "name": "Gaziantep FK",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Gaziantep.svg",
+      "short": "GAZ",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Gaziantep%20FK.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Gaziantep%20FK.png"
+    },
+    {
+      "id": "turkey-super-lig:9",
+      "name": "Gençlerbirliği",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Gen%C3%A7lerbirli%C4%9Fi.svg",
+      "short": "GNC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Genclerbirligi%20Ankara.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Genclerbirligi%20Ankara.png"
+    },
+    {
+      "id": "turkey-super-lig:10",
+      "name": "Göztepe",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/G%C3%B6ztepe_Izmir.svg",
+      "short": "GOZ",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/G%C3%B6ztepe.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/G%C3%B6ztepe.png"
+    },
+    {
+      "id": "turkey-super-lig:11",
+      "name": "Başakşehir",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Ba%C5%9Fak%C5%9Fehir.svg",
+      "short": "IBA",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Basaksehir%20FK.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Basaksehir%20FK.png"
+    },
+    {
+      "id": "turkey-super-lig:12",
+      "name": "Kasımpaşa",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Kas%C4%B1mpa%C5%9Fa.svg",
+      "short": "KAS",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Kasimpasa.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Kasimpasa.png"
+    },
+    {
+      "id": "turkey-super-lig:13",
+      "name": "Kocaelispor",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Kocaelispor.svg",
+      "short": "KOC",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Kocaelispor.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Kocaelispor.png"
+    },
+    {
+      "id": "turkey-super-lig:14",
+      "name": "Konyaspor",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Konyaspor.svg",
+      "short": "KON",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Konyaspor.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Konyaspor.png"
+    },
+    {
+      "id": "turkey-super-lig:15",
+      "name": "Çaykur Rizespor",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/%C3%87aykur_Rizespor.svg",
+      "short": "CAY",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Caykur%20Rizespor.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Caykur%20Rizespor.png"
+    },
+    {
+      "id": "turkey-super-lig:16",
+      "name": "Samsunspor",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Samsunspor.svg",
+      "short": "SAM",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Samsunspor.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Samsunspor.png"
+    },
+    {
+      "id": "turkey-super-lig:17",
+      "name": "Trabzonspor",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/Trabzonspor.svg",
+      "short": "TS",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Trabzonspor.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Trabzonspor.png"
+    },
+    {
+      "id": "turkey-super-lig:18",
+      "name": "Çorum FK",
+      "leagueId": "turkey-super-lig",
+      "logo": "https://raw.githubusercontent.com/JoseArroyave/football-logos/main/logos/turkey/%C3%87orum_FK.svg",
+      "short": "COR",
+      "fallbackLogo": "https://raw.githubusercontent.com/luukhopman/football-logos/master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Corum%20FK.png",
+      "lastResortLogo": "https://cdn.jsdelivr.net/gh/luukhopman/football-logos@master/logos/T%C3%BCrkiye%20-%20S%C3%BCper%20Lig/Corum%20FK.png"
+    }
+  ]
+}

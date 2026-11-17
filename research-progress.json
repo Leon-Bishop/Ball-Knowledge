@@ -1,10 +1,10 @@
 {
   "updated": "2026-11-14",
-  "club_records": 214,
-  "target_facts": 678,
-  "populated_facts": 553,
-  "source_tagged": 388,
-  "translated_all_six": 334,
-  "unfilled": 125,
+  "club_records": 150,
+  "target_facts": 486,
+  "populated_facts": 400,
+  "source_tagged": 287,
+  "translated_all_six": 242,
+  "unfilled": 86,
   "note": "Source-tagged != independently reverified; player-facing facts may include older unverified candidates."
 }
