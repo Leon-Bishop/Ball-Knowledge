@@ -2,8 +2,8 @@
   "version": 2,
   "totalClubs": 214,
   "clubsWithThree": 203,
-  "clubsWithFour": 189,
-  "totalCurrentHeadshots": 812,
+  "clubsWithFour": 192,
+  "totalCurrentHeadshots": 815,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -1572,7 +1572,7 @@
     },
     "portugal-liga-portugal:18": {
       "clubName": "Alverca",
-      "checkedAt": "2026-11-17T09:26:47.834730+00:00",
+      "checkedAt": "2026-11-17T09:41:08.834436+00:00",
       "rosterNames": 28,
       "photoCandidates": 5,
       "sources": [
@@ -1682,7 +1682,7 @@
     },
     "scotland-premiership:10": {
       "clubName": "Falkirk",
-      "checkedAt": "2026-11-17T09:27:04.884791+00:00",
+      "checkedAt": "2026-11-17T09:41:20.307793+00:00",
       "rosterNames": 27,
       "photoCandidates": 4,
       "sources": [
@@ -1693,24 +1693,24 @@
     },
     "scotland-premiership:11": {
       "clubName": "St. Johnstone",
-      "checkedAt": "2026-11-17T09:27:14.596468+00:00",
+      "checkedAt": "2026-11-17T09:41:31.316955+00:00",
       "rosterNames": 23,
       "photoCandidates": 6,
       "sources": [
         "https://en.wikipedia.org/wiki/St_Johnstone_F.C."
       ],
-      "count": 3,
+      "count": 4,
       "status": "ready"
     },
     "scotland-premiership:12": {
       "clubName": "St. Mirren",
-      "checkedAt": "2026-11-17T09:27:25.847688+00:00",
+      "checkedAt": "2026-11-17T09:41:42.600926+00:00",
       "rosterNames": 24,
       "photoCandidates": 7,
       "sources": [
         "https://en.wikipedia.org/wiki/St_Mirren_F.C."
       ],
-      "count": 3,
+      "count": 4,
       "status": "ready"
     },
     "spain-la-liga:1": {
@@ -1814,7 +1814,7 @@
     },
     "spain-la-liga:10": {
       "clubName": "Levante",
-      "checkedAt": "2026-11-17T09:27:37.298076+00:00",
+      "checkedAt": "2026-11-17T09:41:52.130677+00:00",
       "rosterNames": 50,
       "photoCandidates": 12,
       "sources": [
@@ -1826,7 +1826,7 @@
     },
     "spain-la-liga:11": {
       "clubName": "Málaga",
-      "checkedAt": "2026-11-17T09:27:59.559149+00:00",
+      "checkedAt": "2026-11-17T09:42:21.741851+00:00",
       "rosterNames": 47,
       "photoCandidates": 9,
       "sources": [
@@ -1938,13 +1938,13 @@
     },
     "turkey-super-lig:1": {
       "clubName": "Alanyaspor",
-      "checkedAt": "2026-11-17T09:28:25.727387+00:00",
+      "checkedAt": "2026-11-17T09:42:52.056834+00:00",
       "rosterNames": 19,
       "photoCandidates": 8,
       "sources": [
         "https://en.wikipedia.org/wiki/Alanyaspor"
       ],
-      "count": 3,
+      "count": 4,
       "status": "ready"
     },
     "turkey-super-lig:2": {
@@ -2135,5 +2135,5 @@
       "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T09:41:00.200058+00:00"
+  "lastUpdated": "2026-11-17T09:43:01.794730+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "source": "Current squad sections of English Wikipedia + Wikidata P18 + licensed Commons face crops",
+  "source": "Current squad sections of multilingual Wikipedia + Wikidata player identity + licensed Commons face crops",
   "minimumCurrentHeadshotsPerClub": 3,
   "targetCurrentHeadshotsPerClub": 4,
   "clubs": {
@@ -13507,10 +13507,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/F.C._Alverca",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:18",
@@ -13528,14 +13525,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q125945",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/F.C._Alverca",
-      "checkedAt": "2026-11-17T09:26:47.834730+00:00"
+      "checkedAt": "2026-11-17T09:41:08.834436+00:00"
     },
     "scotland-premiership:1": {
       "clubName": "Aberdeen",
@@ -14349,10 +14343,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "scotland-premiership:10",
@@ -14370,10 +14361,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "scotland-premiership:10",
@@ -14391,14 +14379,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-      "checkedAt": "2026-11-17T09:27:04.884791+00:00"
+      "checkedAt": "2026-11-17T09:41:20.307793+00:00"
     },
     "scotland-premiership:11": {
       "clubName": "St. Johnstone",
@@ -14420,10 +14405,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "scotland-premiership:11",
@@ -14441,10 +14423,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "scotland-premiership:11",
@@ -14462,14 +14441,29 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "scotland-premiership:11",
+          "playerName": "Danny Schmidt",
+          "wikidataQid": "Q130760411",
+          "clubWikidataQid": "Q268776",
+          "photoUrl": "./assets/player-headshots/scotland-premiership-11--Q130760411.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danny-Schmidt-2025.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Fuguito",
+          "membershipSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
+          "membershipSection": "current squad",
+          "membershipHeading": "current squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
-      "checkedAt": "2026-11-17T09:27:14.596468+00:00"
+      "checkedAt": "2026-11-17T09:41:31.316955+00:00"
     },
     "scotland-premiership:12": {
       "clubName": "St. Mirren",
@@ -14491,10 +14485,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "scotland-premiership:12",
@@ -14512,10 +14503,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "scotland-premiership:12",
@@ -14533,14 +14521,29 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "scotland-premiership:12",
+          "playerName": "Declan John",
+          "wikidataQid": "Q5249348",
+          "clubWikidataQid": "Q319136",
+          "photoUrl": "./assets/player-headshots/scotland-premiership-12--Q5249348.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Declan_John_Ashkahn_Dejagah_(cropped).jpg",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "author": "Jon Candy",
+          "membershipSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
+          "membershipSection": "first-team squad",
+          "membershipHeading": "first-team squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-      "checkedAt": "2026-11-17T09:27:25.847688+00:00"
+      "checkedAt": "2026-11-17T09:41:42.600926+00:00"
     },
     "spain-la-liga:1": {
       "clubName": "Deportivo Alavés",
@@ -15354,10 +15357,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q2876432",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "spain-la-liga:10",
@@ -15375,10 +15375,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Levante_UD",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "spain-la-liga:10",
@@ -15396,14 +15393,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110157458",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Levante_UD",
-      "checkedAt": "2026-11-17T09:27:37.298076+00:00"
+      "checkedAt": "2026-11-17T09:41:52.130677+00:00"
     },
     "spain-la-liga:11": {
       "clubName": "Málaga",
@@ -15425,10 +15419,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q38681499",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "spain-la-liga:11",
@@ -15446,14 +15437,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/M%C3%A1laga_CF",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/M%C3%A1laga_CF",
-      "checkedAt": "2026-11-17T09:27:59.559149+00:00"
+      "checkedAt": "2026-11-17T09:42:21.741851+00:00"
     },
     "spain-la-liga:12": {
       "clubName": "CA Osasuna",
@@ -16267,10 +16255,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q17045723",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "turkey-super-lig:1",
@@ -16288,10 +16273,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q14320553",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "turkey-super-lig:1",
@@ -16309,14 +16291,29 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Alanyaspor",
-          "verifiedAt": "2026-11-17T09:33:35.871114+00:00"
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "turkey-super-lig:1",
+          "playerName": "Florent Hadergjonaj",
+          "wikidataQid": "Q17612369",
+          "clubWikidataQid": "Q1636019",
+          "photoUrl": "./assets/player-headshots/turkey-super-lig-1--Q17612369.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chelsea_1_Huddersfield_1_(Florent_Hadergjonaj).jpg",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "author": "@cfcunofficial (Chelsea Debs) London from London, UK",
+          "membershipSource": "https://en.wikipedia.org/wiki/Alanyaspor",
+          "membershipSection": "current squad",
+          "membershipHeading": "current squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Alanyaspor",
-      "checkedAt": "2026-11-17T09:28:25.727387+00:00"
+      "checkedAt": "2026-11-17T09:42:52.056834+00:00"
     },
     "turkey-super-lig:2": {
       "clubName": "Amed SFK",
@@ -17963,6 +17960,6 @@
       "checkedAt": "2026-11-17T09:24:28.942095+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T09:41:00.200058+00:00",
+  "lastUpdated": "2026-11-17T09:43:01.794730+00:00",
   "rosterAuditAt": "2026-11-17T09:33:35.871114+00:00"
 }
