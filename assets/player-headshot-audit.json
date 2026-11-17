@@ -1,8 +1,170 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 0,
-  "clubsWithFour": 0,
-  "totalCurrentHeadshots": 0,
-  "clubs": {}
+  "clubsWithThree": 19,
+  "clubsWithFour": 15,
+  "totalCurrentHeadshots": 73,
+  "clubs": {
+    "belgian-pro-league:1": {
+      "clubName": "Anderlecht",
+      "checkedAt": "2026-11-17T09:03:54.355103+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 23,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:2": {
+      "clubName": "Antwerp",
+      "checkedAt": "2026-11-17T09:03:57.293155+00:00",
+      "rosterNames": 21,
+      "photoCandidates": 15,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:3": {
+      "clubName": "Cercle Brugge KSV",
+      "checkedAt": "2026-11-17T09:04:00.069190+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 10,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:4": {
+      "clubName": "Club Brugge",
+      "checkedAt": "2026-11-17T09:04:02.873514+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 12,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:5": {
+      "clubName": "Waasland-Beveren",
+      "checkedAt": "2026-11-17T09:04:05.212023+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 6,
+      "count": 3,
+      "status": "ready"
+    },
+    "belgian-pro-league:6": {
+      "clubName": "KAA Gent",
+      "checkedAt": "2026-11-17T09:04:08.027374+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 17,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:7": {
+      "clubName": "KV Kortrijk",
+      "checkedAt": "2026-11-17T09:04:18.247680+00:00",
+      "rosterNames": 19,
+      "photoCandidates": 4,
+      "count": 3,
+      "status": "ready"
+    },
+    "belgian-pro-league:8": {
+      "clubName": "KV Mechelen",
+      "checkedAt": "2026-11-17T09:04:20.556021+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 7,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:9": {
+      "clubName": "KVC Westerlo",
+      "checkedAt": "2026-11-17T09:04:23.155693+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 8,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:10": {
+      "clubName": "Oud-Heverlee Leuven",
+      "checkedAt": "2026-11-17T09:04:26.137064+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 5,
+      "count": 3,
+      "status": "ready"
+    },
+    "belgian-pro-league:11": {
+      "clubName": "Racing Genk",
+      "checkedAt": "2026-11-17T09:04:28.920049+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 7,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:12": {
+      "clubName": "Royal Charleroi SC",
+      "checkedAt": "2026-11-17T09:04:31.690692+00:00",
+      "rosterNames": 19,
+      "photoCandidates": 5,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:13": {
+      "clubName": "Lommel SK",
+      "checkedAt": "2026-11-17T09:04:34.195652+00:00",
+      "rosterNames": 21,
+      "photoCandidates": 7,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:14": {
+      "clubName": "Sint-Truidense",
+      "checkedAt": "2026-11-17T09:04:36.815005+00:00",
+      "rosterNames": 20,
+      "photoCandidates": 7,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:15": {
+      "clubName": "Standard Liege",
+      "checkedAt": "2026-11-17T09:04:39.463843+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 9,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:16": {
+      "clubName": "Union St.-Gilloise",
+      "checkedAt": "2026-11-17T09:04:42.329296+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 12,
+      "count": 4,
+      "status": "ready"
+    },
+    "belgian-pro-league:17": {
+      "clubName": "RAAL La Louvière",
+      "checkedAt": "2026-11-17T09:04:45.338021+00:00",
+      "rosterNames": 17,
+      "photoCandidates": 6,
+      "count": 3,
+      "status": "ready"
+    },
+    "belgian-pro-league:18": {
+      "clubName": "Zulte-Waregem",
+      "checkedAt": "2026-11-17T09:04:48.056519+00:00",
+      "rosterNames": 18,
+      "photoCandidates": 3,
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
+    },
+    "brazil-serie-a:1": {
+      "clubName": "Vitória",
+      "checkedAt": "2026-11-17T09:04:50.185901+00:00",
+      "rosterNames": 65,
+      "photoCandidates": 11,
+      "count": 4,
+      "status": "ready"
+    },
+    "brazil-serie-a:2": {
+      "clubName": "Athletico Paranaense",
+      "checkedAt": "2026-11-17T09:04:54.126463+00:00",
+      "rosterNames": 48,
+      "photoCandidates": 10,
+      "count": 4,
+      "status": "ready"
+    }
+  },
+  "lastUpdated": "2026-11-17T09:04:57.792262+00:00"
 }
