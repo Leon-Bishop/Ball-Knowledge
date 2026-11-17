@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 97,
-  "clubsWithFour": 92,
-  "totalCurrentHeadshots": 383,
+  "clubsWithThree": 117,
+  "clubsWithFour": 110,
+  "totalCurrentHeadshots": 461,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -863,7 +863,227 @@
       ],
       "count": 0,
       "status": "insufficient_licensed_face_crops"
+    },
+    "greece-super-league:7": {
+      "clubName": "OFI Crete",
+      "checkedAt": "2026-11-17T09:09:44.289374+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 6,
+      "sources": [
+        "https://en.wikipedia.org/wiki/OFI_Crete_F.C."
+      ],
+      "count": 3,
+      "status": "ready"
+    },
+    "greece-super-league:8": {
+      "clubName": "Olympiacos",
+      "checkedAt": "2026-11-17T09:09:47.988908+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 20,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Olympiacos_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:9": {
+      "clubName": "PAOK",
+      "checkedAt": "2026-11-17T09:09:50.522137+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 23,
+      "sources": [
+        "https://en.wikipedia.org/wiki/PAOK_FC"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:10": {
+      "clubName": "Panathinaikos",
+      "checkedAt": "2026-11-17T09:09:53.889717+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 22,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panathinaikos_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:11": {
+      "clubName": "Panetolikos",
+      "checkedAt": "2026-11-17T09:09:56.799210+00:00",
+      "rosterNames": 23,
+      "photoCandidates": 8,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panetolikos_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:12": {
+      "clubName": "Kalamata",
+      "checkedAt": "2026-11-17T09:09:59.827625+00:00",
+      "rosterNames": 23,
+      "photoCandidates": 4,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kalamata_F.C."
+      ],
+      "count": 3,
+      "status": "ready"
+    },
+    "greece-super-league:13": {
+      "clubName": "Levadiakos",
+      "checkedAt": "2026-11-17T09:10:03.350661+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 7,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Levadiakos_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "greece-super-league:14": {
+      "clubName": "Volos NFC",
+      "checkedAt": "2026-11-17T09:10:06.384388+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Volos_F.C."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:1": {
+      "clubName": "AC Milan",
+      "checkedAt": "2026-11-17T09:10:08.804318+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 19,
+      "sources": [
+        "https://en.wikipedia.org/wiki/AC_Milan"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:2": {
+      "clubName": "Atalanta",
+      "checkedAt": "2026-11-17T09:10:11.428213+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 19,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Atalanta_BC"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:3": {
+      "clubName": "Bologna",
+      "checkedAt": "2026-11-17T09:10:14.100543+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bologna_FC_1909"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:4": {
+      "clubName": "Cagliari",
+      "checkedAt": "2026-11-17T09:10:17.013639+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 12,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cagliari_Calcio"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:5": {
+      "clubName": "Como",
+      "checkedAt": "2026-11-17T09:10:19.781964+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Como_1907"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:6": {
+      "clubName": "Fiorentina",
+      "checkedAt": "2026-11-17T09:10:22.394996+00:00",
+      "rosterNames": 23,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/ACF_Fiorentina"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:7": {
+      "clubName": "Frosinone",
+      "checkedAt": "2026-11-17T09:10:25.252233+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 13,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Frosinone_Calcio"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:8": {
+      "clubName": "Genoa",
+      "checkedAt": "2026-11-17T09:10:28.719750+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Genoa_CFC"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:9": {
+      "clubName": "Internazionale",
+      "checkedAt": "2026-11-17T09:10:31.570622+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 21,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Inter_Milan"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:10": {
+      "clubName": "Juventus",
+      "checkedAt": "2026-11-17T09:10:34.182777+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 27,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Juventus_FC"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:11": {
+      "clubName": "Lazio",
+      "checkedAt": "2026-11-17T09:10:37.774235+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SS_Lazio"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "italy-serie-a:12": {
+      "clubName": "Lecce",
+      "checkedAt": "2026-11-17T09:10:40.207412+00:00",
+      "rosterNames": 32,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/US_Lecce"
+      ],
+      "count": 4,
+      "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T09:09:37.292988+00:00"
+  "lastUpdated": "2026-11-17T09:10:43.466982+00:00"
 }
