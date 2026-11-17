@@ -1,0 +1,87 @@
+name: Curate current-squad face-only player photos
+on:
+  workflow_dispatch:
+  schedule:
+    # Recheck squads weekly; football transfers and roster changes matter.
+    - cron: "27 3 * * 0"
+  push:
+    paths:
+      - "scripts/build_current_headshots.py"
+      - ".github/workflows/current-headshots.yml"
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: curated-current-headshots
+  cancel-in-progress: false
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install face detection and crop dependencies
+        run: python -m pip install --disable-pip-version-check "pillow>=11,<13" "numpy>=2,<3" "opencv-python-headless>=4.10,<5"
+      - name: Verify roster parser and photo license safeguards
+        run: python scripts/build_current_headshots.py --self-test
+      - name: Verify and crop headshots in checkpointed batches
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -euo pipefail
+          git config user.name "ball-knowledge-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          STARTED_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          for batch in $(seq 1 11); do
+            echo "Curating headshots: batch $batch"
+            python -u scripts/build_current_headshots.py --max-clubs 20 --since "$STARTED_AT" | tee /tmp/headshots-batch.log
+            git add assets/player-headshot-db.json assets/player-headshot-audit.json assets/player-headshots/
+            if ! git diff --cached --quiet; then
+              git commit -m "Import verified current-squad face crops, batch $batch"
+              pushed=0
+              for attempt in 1 2 3 4; do
+                git fetch origin main
+                git rebase origin/main
+                if git push origin HEAD:main; then
+                  pushed=1
+                  break
+                fi
+                sleep $((attempt * 3))
+              done
+              if [ "$pushed" -ne 1 ]; then
+                echo "Unable to checkpoint licensed headshots"
+                exit 1
+              fi
+            fi
+            if grep -q '"attempted": 0' /tmp/headshots-batch.log; then
+              echo "All clubs checked in this run"
+              break
+            fi
+          done
+  deploy:
+    if: ${{ always() && needs.curate.result != 'cancelled' }}
+    needs: curate
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+      - name: Publish verified headshots
+        id: deployment
+        uses: actions/deploy-pages@v5
