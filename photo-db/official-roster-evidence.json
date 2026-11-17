@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T13:54:34.016Z",
-  "description": "Current 2026-27 first-team player identities from official club squad pages, match-day teams, and dated club news; Wikipedia-only entries are not accepted independently.",
+  "checkedAt": "2026-11-17T14:22:27.075Z",
+  "description": "Independently reviewed current 2026/27 first-team squad evidence from official club sites and dated first-team appearances; Wikipedia-only evidence does not qualify. Hearts and Konyaspor verified directly on 17 November 2026.",
   "officialClubs": {
     "turkey-super-lig:7": {
       "club": "Galatasaray",
@@ -199,6 +199,26 @@
       "players": {
         "Q121410218": "Jeremy Arévalo",
         "Q112978315": "Stefan Leković"
+      }
+    },
+    "scotland-premiership:4": {
+      "club": "Heart of Midlothian",
+      "source": "https://www.heartsfc.co.uk/pages/first-team-squad",
+      "players": {
+        "Q65684173": "Josh McPake",
+        "Q137864483": "Laurent Mendy",
+        "Q28045315": "Calvin Miller",
+        "Q140364405": "Sabri Guendouz"
+      }
+    },
+    "turkey-super-lig:14": {
+      "club": "Konyaspor",
+      "source": "https://www.konyaspor.org.tr/futbolcular",
+      "players": {
+        "Q38085271": "Adil Demirbağ",
+        "Q16730286": "Marko Jevtović",
+        "Q17476763": "Jean-Luc Dompé",
+        "Q28086083": "Mostafa Mohamed"
       }
     }
   },
