@@ -866,8 +866,6 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
                         used_sources.append("https://www.wikidata.org/wiki/" + qid)
                 except Exception as fallback_exc:
                     errors.append("wikidata-current-p54:" + str(fallback_exc)[:90])
-            if not used_sources:
-                raise ValueError("No verified current squad or active P54 photo: " + "; ".join(errors[:3]))
             # The entire acquired-photo batch is independently checked against
             # a current club P54 or the explicit official/loan roster evidence.
             from verify_current_rosters import official_evidence, current_club_from_wikidata
@@ -877,7 +875,8 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
             # club verification again. This prevents wiping good photos when a
             # Commons download temporarily fails or the new gallery is sparse.
             preserved = [p.copy() for p in previous.get("players", [])
-                if p.get("wikidataQid") in current_squad_qids
+                if (p.get("wikidataQid") in current_squad_qids
+                    or p.get("membershipSection") == "wikidata current club")
                 and p.get("faceQualityVerified") is True
                 and p.get("faceCrop") is True
                 and p.get("verifiedCurrent") is True
@@ -905,6 +904,13 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
                 if p["verifiedCurrent"] and len(players) < target:
                     players.append(p)
                     seen.add(p["wikidataQid"])
+                    # An active P54 member with an approved photo can remain
+                    # eligible even if source APIs failed in this refresh.
+                    if not used_sources:
+                        used_sources.append("https://www.wikidata.org/wiki/" + qid)
+            if not used_sources:
+                raise ValueError("No independently verified current club/photo: " +
+                                 "; ".join(errors[:3]))
             db["rosterAuditAt"] = now.isoformat()
             status.update({"rosterNames": roster_count, "photoCandidates": candidates,
                            "sources": used_sources})
