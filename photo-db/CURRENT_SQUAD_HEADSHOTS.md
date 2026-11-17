@@ -13,10 +13,11 @@ or full-kit photograph.
 ## Evidence and image selection
 
 1. `photo-db/club-wikidata-map.json` maps each of the 214 game clubs to a
-   Wikidata club identifier; only the matching English Wikipedia article is
-   consulted for its explicit **Current squad**, **First-team squad** or
-   **Squad** section. Generic `Players` headings are rejected because they
-   may mix historical players with current players.
+   Wikidata club identifier; the matching Wikipedia club article, season page or local-language article
+   is consulted for its explicit **Current squad**, **First-team squad**,
+   **Squad** or equivalent local-language heading. Generic `Players`
+   headings are rejected because they may mix historical players with
+   current players.
 2. Linked squad members are resolved to individual Wikidata human footballers.
    The importer retrieves their Commons image filename from Wikidata P18 or
    Wikipedia pageimages.
@@ -48,7 +49,9 @@ paid photo service or API key is required.
 
 The importer rechecks successful four-photo clubs after six days; clubs with
 fewer photos are attempted on each run. A previous verified set is kept when
-the source temporarily fails, but an unverified player is never substituted.
+the source temporarily fails, but the browser stops displaying it if the
+roster verification is more than 21 days old. An unverified player is never
+substituted.
 
 Review `assets/player-headshot-audit.json` for exact coverage, counts and
 reasons clubs could not reach the three-photo minimum. This is an honest
