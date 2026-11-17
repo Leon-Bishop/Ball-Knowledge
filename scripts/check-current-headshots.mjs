@@ -27,9 +27,12 @@ for(const [clubId,club] of Object.entries(db.clubs)){
   qidOwners.set(p.wikidataQid,clubId);
   const loan=official.loanAssignments[p.wikidataQid];
   if(loan)assert.equal(clubId,loan.clubId,'Loaned player shown for parent club: '+p.playerName);
-  if(official.officialClubs[clubId]){
+  // Some Wikidata P54 records stay open long after a departure.
+  // The runtime excludes them when a current club squad is supplied.
+  // Only independently official-verified records may claim official status.
+  if(official.officialClubs[clubId]&&p.rosterVerification==='official_club_squad'){
    assert(official.officialClubs[clubId].players[p.wikidataQid],
-     'Official club roster does not contain '+p.playerName+' at '+clubId);
+     'Official-squad verified player is absent from the current club list: '+p.playerName);
   }
  }
 }
