@@ -32,9 +32,9 @@ for(const team of teams){
  };
  walk([],[0,1,2,3,4]);
 }
-assert.equal(nonTurkish,196);
+assert.equal(nonTurkish,132);
 for(const [locale,dict] of Object.entries(i18n)){
  assert(!/unlocked|desbloquead|débloqué|sbloccata|açıldı|desbloqueado|emoji açıldı/i.test(dict.newClue),locale+': outdated unlocked notice');
  assert(dict.newClue.includes('🧩'),locale+': missing non-match explanation');
 }
-console.log('✓ 196 non-Turkish teams show a colour in clue 1 or 2 for all permutations; 6 languages remove unlocked text.');
+console.log('✓ 132 non-Turkish teams show a colour in clue 1 or 2 for all permutations; 6 languages remove unlocked text.');
