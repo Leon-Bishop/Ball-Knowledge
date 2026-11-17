@@ -14,6 +14,18 @@ A new **Rankings** tab supports a one-time username, a nearby country flag, and 
 
 When one league is selected, a sidebar displays **real current-season standings** (ranking, club, matches played, points) whenever the connected standings provider returns data. With multiple leagues, a read-only dropdown lists every club grouped by league. Neither reference searches, filters nor reveals the hidden quiz answers. The answer field accepts club names and aliases without autocomplete. The data API requires a secret configured in GitHub Actions; no fictitious standings are displayed before activation. See [LIVE_STANDINGS_SETUP.md](LIVE_STANDINGS_SETUP.md) for source licensing and setup.
 
+### Current-squad face-only player clues
+
+Footballer photo clues now use **3–4 current-squad headshots per club** where
+verified, commercially reusable Wikimedia photos and detectable faces exist.
+The images are tightly cropped to faces (not shirts), with photographer and
+license credits. Historical player photos are no longer used by the quiz.
+Clubs without three verified current-squad crops retain the original emoji
+clue rather than showing an unrelated or former player. Coverage and missing
+photos are recorded in [the headshot audit](assets/player-headshot-audit.json);
+the [collection method](photo-db/CURRENT_SQUAD_HEADSHOTS.md) explains the
+weekly automatic updates. No Cloudflare configuration is needed.
+
 ### Game
 
 - **12 leagues**, **214 input club records** (**214 unique playable clubs**).
