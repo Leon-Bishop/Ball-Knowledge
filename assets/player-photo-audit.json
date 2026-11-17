@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-17T00:01:35.539610+00:00",
+  "lastUpdated": "2026-11-17T00:04:14.899098+00:00",
   "totalClubs": 214,
-  "completeClubs": 114,
-  "playersWithLicensedPhotos": 3325,
+  "completeClubs": 126,
+  "playersWithLicensedPhotos": 3675,
   "notes": "Build with scripts/build_player_photo_db.py. Never use unsupported images or invent player links.",
   "clubs": {
     "belgian-pro-league:1": {
@@ -151,74 +151,50 @@
       "count": 30,
       "lastAttempt": "2026-11-17T00:01:35.539610+00:00"
     },
-    "brazil-serie-a:20": {
-      "status": "needs_more_licensed_photos",
-      "count": 6,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00"
-    },
     "brazil-serie-a:3": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "brazil-serie-a:4": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
-    },
-    "brazil-serie-a:5": {
-      "status": "needs_more_licensed_photos",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "brazil-serie-a:6": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "brazil-serie-a:7": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "brazil-serie-a:8": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 26,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "brazil-serie-a:9": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "england-premier-league:1": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "england-premier-league:10": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
-    },
-    "england-premier-league:11": {
-      "status": "needs_more_licensed_photos",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "england-premier-league:12": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:56:38.368552+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     },
     "england-premier-league:13": {
       "status": "unmatched_club",
@@ -1165,8 +1141,23 @@
       "status": "ready_10",
       "count": 30,
       "lastAttempt": "2026-11-17T00:01:35.539610+00:00"
+    },
+    "brazil-serie-a:20": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
+    },
+    "brazil-serie-a:5": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
+    },
+    "england-premier-league:11": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:04:14.899098+00:00"
     }
   },
-  "completeClubs10": 112,
-  "completeClubs7": 114
+  "completeClubs10": 124,
+  "completeClubs7": 126
 }
