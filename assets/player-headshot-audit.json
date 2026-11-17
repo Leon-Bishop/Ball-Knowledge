@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "totalClubs": 27,
-  "clubsWithThree": 183,
-  "clubsWithFour": 41,
-  "totalCurrentHeadshots": 374,
+  "totalClubs": 8,
+  "clubsWithThree": 185,
+  "clubsWithFour": 40,
+  "totalCurrentHeadshots": 373,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -2374,14 +2374,15 @@
     },
     "turkey-super-lig:10": {
       "clubName": "Göztepe",
-      "checkedAt": "2026-11-17T12:25:18.337354+00:00",
+      "checkedAt": "2026-11-17T14:31:11.347387+00:00",
       "rosterNames": 22,
-      "photoCandidates": 8,
+      "photoCandidates": 5,
       "sources": [
-        "https://en.wikipedia.org/wiki/G%C3%B6ztepe_S.K."
+        "https://en.wikipedia.org/wiki/G%C3%B6ztepe_S.K.",
+        "https://www.wikidata.org/wiki/Q1423118"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "turkey-super-lig:11": {
       "clubName": "Başakşehir",
@@ -2407,24 +2408,25 @@
     },
     "turkey-super-lig:13": {
       "clubName": "Kocaelispor",
-      "checkedAt": "2026-11-17T12:26:38.712146+00:00",
+      "checkedAt": "2026-11-17T14:31:31.945220+00:00",
       "rosterNames": 22,
-      "photoCandidates": 11,
+      "photoCandidates": 5,
       "sources": [
-        "https://en.wikipedia.org/wiki/Kocaelispor"
+        "https://en.wikipedia.org/wiki/Kocaelispor",
+        "https://www.wikidata.org/wiki/Q513237"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "turkey-super-lig:14": {
       "clubName": "Konyaspor",
-      "checkedAt": "2026-11-17T12:27:00.741444+00:00",
+      "checkedAt": "2026-11-17T14:31:38.392446+00:00",
       "rosterNames": 22,
-      "photoCandidates": 12,
+      "photoCandidates": 6,
       "sources": [
         "https://en.wikipedia.org/wiki/Konyaspor"
       ],
-      "count": 4,
+      "count": 1,
       "status": "ready"
     },
     "turkey-super-lig:15": {
@@ -2473,5 +2475,5 @@
       "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T14:31:04.449297+00:00"
+  "lastUpdated": "2026-11-17T14:31:41.084028+00:00"
 }

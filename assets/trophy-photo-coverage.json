@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-17T14:31:04.517Z",
-  "catalogUpdatedAt": "2026-11-17T14:31:04.449297+00:00",
+  "checkedAt": "2026-11-17T14:31:41.155Z",
+  "catalogUpdatedAt": "2026-11-17T14:31:41.084028+00:00",
   "totalClubs": 214,
   "trophyClubs": 105,
   "covered": 98,
@@ -45,15 +45,15 @@
       "id": "turkey-super-lig:10",
       "club": "Göztepe",
       "league": "turkey-super-lig",
-      "catalogued": 0,
-      "approvedCrops": 0
+      "catalogued": 1,
+      "approvedCrops": 1
     },
     {
       "id": "turkey-super-lig:13",
       "club": "Kocaelispor",
       "league": "turkey-super-lig",
-      "catalogued": 0,
-      "approvedCrops": 0
+      "catalogued": 1,
+      "approvedCrops": 1
     }
   ],
   "verified": [
@@ -880,10 +880,7 @@
       "club": "Konyaspor",
       "league": "turkey-super-lig",
       "players": [
-        "Adil Demirbağ",
-        "Marko Jevtović",
-        "Jean-Luc Dompé",
-        "Mostafa Mohamed"
+        "Adil Demirbağ"
       ]
     }
   ]
