@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 39,
-  "clubsWithFour": 35,
-  "totalCurrentHeadshots": 153,
+  "clubsWithThree": 58,
+  "clubsWithFour": 54,
+  "totalCurrentHeadshots": 228,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -324,7 +324,166 @@
       "photoCandidates": 23,
       "count": 4,
       "status": "ready"
+    },
+    "england-premier-league:3": {
+      "clubName": "Bournemouth",
+      "checkedAt": "2026-11-17T09:06:19.143407+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 28,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:4": {
+      "clubName": "Brentford",
+      "checkedAt": "2026-11-17T09:06:22.683374+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 25,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:5": {
+      "clubName": "Brighton",
+      "checkedAt": "2026-11-17T09:06:25.996881+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 24,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:6": {
+      "clubName": "Chelsea",
+      "checkedAt": "2026-11-17T09:06:28.764085+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 21,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:7": {
+      "clubName": "Crystal Palace",
+      "checkedAt": "2026-11-17T09:06:31.400409+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 26,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:8": {
+      "clubName": "Everton",
+      "checkedAt": "2026-11-17T09:06:34.545857+00:00",
+      "rosterNames": 21,
+      "photoCandidates": 16,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:9": {
+      "clubName": "Fulham",
+      "checkedAt": "2026-11-17T09:06:37.809235+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 25,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:10": {
+      "clubName": "Ipswich Town",
+      "checkedAt": "2026-11-17T09:06:40.426451+00:00",
+      "rosterNames": 35,
+      "photoCandidates": 28,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:11": {
+      "clubName": "Leeds United",
+      "checkedAt": "2026-11-17T09:06:43.666356+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 21,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:12": {
+      "clubName": "Liverpool",
+      "checkedAt": "2026-11-17T09:06:46.310013+00:00",
+      "status": "unverified",
+      "count": 0,
+      "reason": "No explicit current squad heading on English Wikipedia"
+    },
+    "england-premier-league:13": {
+      "clubName": "Manchester City",
+      "checkedAt": "2026-11-17T09:06:46.762754+00:00",
+      "rosterNames": 34,
+      "photoCandidates": 28,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:14": {
+      "clubName": "Manchester United",
+      "checkedAt": "2026-11-17T09:06:50.401138+00:00",
+      "rosterNames": 32,
+      "photoCandidates": 28,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:15": {
+      "clubName": "Newcastle",
+      "checkedAt": "2026-11-17T09:06:53.754316+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 24,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:16": {
+      "clubName": "Nottm Forest",
+      "checkedAt": "2026-11-17T09:06:57.054384+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 23,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:17": {
+      "clubName": "Coventry City",
+      "checkedAt": "2026-11-17T09:06:59.910934+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 25,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:18": {
+      "clubName": "Tottenham",
+      "checkedAt": "2026-11-17T09:07:03.115400+00:00",
+      "rosterNames": 37,
+      "photoCandidates": 28,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:19": {
+      "clubName": "Sunderland",
+      "checkedAt": "2026-11-17T09:07:07.268922+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 27,
+      "count": 4,
+      "status": "ready"
+    },
+    "england-premier-league:20": {
+      "clubName": "Hull City",
+      "checkedAt": "2026-11-17T09:07:10.553676+00:00",
+      "rosterNames": 38,
+      "photoCandidates": 28,
+      "count": 4,
+      "status": "ready"
+    },
+    "france-ligue-1:1": {
+      "clubName": "AJ Auxerre",
+      "checkedAt": "2026-11-17T09:07:14.729598+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 10,
+      "count": 4,
+      "status": "ready"
+    },
+    "france-ligue-1:2": {
+      "clubName": "Angers",
+      "checkedAt": "2026-11-17T09:07:18.149484+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 12,
+      "count": 4,
+      "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T09:06:12.211150+00:00"
+  "lastUpdated": "2026-11-17T09:07:20.593088+00:00"
 }
