@@ -28,15 +28,15 @@ jobs:
         run: |
           python -m py_compile scripts/verify_current_rosters.py
           python scripts/verify_current_rosters.py --self-test
-      - name: Audit every photo against independent roster evidence
-        run: python -u scripts/verify_current_rosters.py
+      - name: Validate and correct all player-to-club assignments
+        run: python -u scripts/verify_current_rosters.py --apply
       - name: Publish membership audit
         run: |
           git config user.name "ball-knowledge-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/player-headshot-membership-audit.json
+          git add assets/player-headshot-membership-audit.json assets/player-headshot-db.json
           if ! git diff --cached --quiet; then
-            git commit -m "Audit current-squad headshot club membership"
+            git commit -m "Verify current squad assignments and exclude conflicting player photos"
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
