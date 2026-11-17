@@ -376,10 +376,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SK_Beveren",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "belgian-pro-league:5",
@@ -397,10 +394,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SK_Beveren",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "belgian-pro-league:5",
@@ -418,14 +412,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SK_Beveren",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SK_Beveren",
-      "checkedAt": "2026-11-17T09:36:00.120882+00:00"
+      "checkedAt": "2026-11-17T09:57:42.937010+00:00"
     },
     "belgian-pro-league:6": {
       "clubName": "KAA Gent",
@@ -803,10 +794,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "belgian-pro-league:10",
@@ -824,10 +812,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "belgian-pro-league:10",
@@ -845,14 +830,29 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "belgian-pro-league:10",
+          "playerName": "Timmy Simons",
+          "wikidataQid": "Q350306",
+          "clubWikidataQid": "Q916199",
+          "photoUrl": "./assets/player-headshots/belgian-pro-league-10--Q350306.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timmy_Simons_-_Belgium.jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "author": "Steindy ( talk ) 13:19, 28 March 2011 (UTC)",
+          "membershipSource": "https://fr.wikipedia.org/wiki/Oud-Heverlee_Louvain",
+          "membershipSection": "current squad",
+          "membershipHeading": "effectif professionnel actuel",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
-      "checkedAt": "2026-11-17T09:36:16.172159+00:00"
+      "checkedAt": "2026-11-17T09:58:00.171580+00:00"
     },
     "belgian-pro-league:11": {
       "clubName": "Racing Genk",
@@ -962,10 +962,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Royal_Charleroi_SC",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "belgian-pro-league:12",
@@ -983,10 +980,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Royal_Charleroi_SC",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "belgian-pro-league:12",
@@ -1004,14 +998,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Royal_Charleroi_SC",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Royal_Charleroi_SC",
-      "checkedAt": "2026-11-17T09:36:35.897762+00:00"
+      "checkedAt": "2026-11-17T09:58:20.199024+00:00"
     },
     "belgian-pro-league:13": {
       "clubName": "Lommel SK",
@@ -1389,10 +1380,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "belgian-pro-league:17",
@@ -1410,10 +1398,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "belgian-pro-league:17",
@@ -1431,14 +1416,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "confirmed_current_loan",
-          "secondaryRosterSource": "https://www.sporting-charleroi.be/news/mehdi-boukamir-prete-a-la-raal-la-louviere/",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re",
-      "checkedAt": "2026-11-17T09:37:15.666773+00:00"
+      "checkedAt": "2026-11-17T09:58:35.314128+00:00"
     },
     "belgian-pro-league:18": {
       "clubName": "Zulte-Waregem",
@@ -8414,10 +8396,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/A.E._Kifisia_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:5",
@@ -8435,10 +8414,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q60842106",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:5",
@@ -8456,21 +8432,18 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q56787768",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/A.E._Kifisia_F.C.",
-      "checkedAt": "2026-11-17T09:24:34.208433+00:00"
+      "checkedAt": "2026-11-17T09:58:56.734994+00:00"
     },
     "greece-super-league:6": {
       "clubName": "Iraklis",
       "clubWikidataQid": "Q592241",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Iraklis_F.C._(Thessaloniki)",
-      "checkedAt": "2026-11-17T09:38:02.865704+00:00"
+      "checkedAt": "2026-11-17T09:59:06.871853+00:00"
     },
     "greece-super-league:7": {
       "clubName": "OFI Crete",
@@ -8492,10 +8465,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/OFI_Crete_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:7",
@@ -8513,10 +8483,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q18608500",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:7",
@@ -8534,14 +8501,29 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q20977919",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
+        },
+        {
+          "clubId": "greece-super-league:7",
+          "playerName": "Dimitris Nikolaou",
+          "wikidataQid": "Q27048985",
+          "clubWikidataQid": "Q931704",
+          "photoUrl": "./assets/player-headshots/greece-super-league-7--Q27048985.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dimitris_Nikolaou_%26_Ond%C5%99ej_%C5%A0a%C5%A1inka,_U21_CZE-GRE_2019-10-10_(2).jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Tadeáš Bednarz",
+          "membershipSource": "https://en.wikipedia.org/wiki/OFI_Crete_F.C.",
+          "membershipSection": "current squad",
+          "membershipHeading": "current squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/OFI_Crete_F.C.",
-      "checkedAt": "2026-11-17T09:38:14.666392+00:00"
+      "checkedAt": "2026-11-17T09:59:19.892091+00:00"
     },
     "greece-super-league:8": {
       "clubName": "Olympiacos",
@@ -8915,10 +8897,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:12",
@@ -8936,10 +8915,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q47067187",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:12",
@@ -8957,14 +8933,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q5919779",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
-      "checkedAt": "2026-11-17T09:38:25.709306+00:00"
+      "checkedAt": "2026-11-17T09:59:29.852468+00:00"
     },
     "greece-super-league:13": {
       "clubName": "Levadiakos",
@@ -12686,14 +12659,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Acad%C3%A9mico_de_Viseu_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Acad%C3%A9mico_de_Viseu_F.C.",
-      "checkedAt": "2026-11-17T09:25:14.706184+00:00"
+      "checkedAt": "2026-11-17T09:59:40.364701+00:00"
     },
     "portugal-liga-portugal:4": {
       "clubName": "Braga",
@@ -12803,10 +12773,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:5",
@@ -12824,10 +12791,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:5",
@@ -12845,14 +12809,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
-      "checkedAt": "2026-11-17T09:39:00.793261+00:00"
+      "checkedAt": "2026-11-17T09:59:52.504499+00:00"
     },
     "portugal-liga-portugal:6": {
       "clubName": "Estoril",
@@ -13050,10 +13011,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:8",
@@ -13071,14 +13029,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o",
-      "checkedAt": "2026-11-17T09:39:11.596694+00:00"
+      "checkedAt": "2026-11-17T10:00:04.322352+00:00"
     },
     "portugal-liga-portugal:9": {
       "clubName": "FC Porto",
@@ -13188,10 +13143,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/C.S._Mar%C3%ADtimo",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:10",
@@ -13209,14 +13161,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/C.S._Mar%C3%ADtimo",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/C.S._Mar%C3%ADtimo",
-      "checkedAt": "2026-11-17T09:39:21.797465+00:00"
+      "checkedAt": "2026-11-17T10:00:14.986805+00:00"
     },
     "portugal-liga-portugal:11": {
       "clubName": "Gil Vicente",
@@ -13238,14 +13187,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Gil_Vicente_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Gil_Vicente_F.C.",
-      "checkedAt": "2026-11-17T09:39:33.534279+00:00"
+      "checkedAt": "2026-11-17T10:00:27.139449+00:00"
     },
     "portugal-liga-portugal:12": {
       "clubName": "Vitória Guimarães",
@@ -13267,10 +13213,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:12",
@@ -13288,10 +13231,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:12",
@@ -13309,14 +13249,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
-      "checkedAt": "2026-11-17T09:40:09.910633+00:00"
+      "checkedAt": "2026-11-17T10:00:37.100899+00:00"
     },
     "portugal-liga-portugal:13": {
       "clubName": "Moreirense",
@@ -13338,14 +13275,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Moreirense_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Moreirense_F.C.",
-      "checkedAt": "2026-11-17T09:40:20.096726+00:00"
+      "checkedAt": "2026-11-17T10:00:48.570062+00:00"
     },
     "portugal-liga-portugal:14": {
       "clubName": "C.D. Nacional",
@@ -13455,10 +13389,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rio_Ave_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:15",
@@ -13476,14 +13407,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rio_Ave_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Rio_Ave_F.C.",
-      "checkedAt": "2026-11-17T09:40:28.927927+00:00"
+      "checkedAt": "2026-11-17T10:00:58.149255+00:00"
     },
     "portugal-liga-portugal:16": {
       "clubName": "Santa Clara",
@@ -13505,14 +13433,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q16236424",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/C.D._Santa_Clara",
-      "checkedAt": "2026-11-17T09:26:35.999320+00:00"
+      "checkedAt": "2026-11-17T10:01:10.172128+00:00"
     },
     "portugal-liga-portugal:17": {
       "clubName": "Sporting CP",
@@ -13622,10 +13547,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/F.C._Alverca",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "portugal-liga-portugal:18",
@@ -13643,14 +13565,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q125945",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/F.C._Alverca",
-      "checkedAt": "2026-11-17T09:41:08.834436+00:00"
+      "checkedAt": "2026-11-17T10:01:22.213378+00:00"
     },
     "scotland-premiership:1": {
       "clubName": "Aberdeen",
@@ -14463,10 +14382,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "scotland-premiership:10",
@@ -14484,10 +14400,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "scotland-premiership:10",
@@ -14505,14 +14418,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-      "checkedAt": "2026-11-17T09:41:20.307793+00:00"
+      "checkedAt": "2026-11-17T10:01:33.608652+00:00"
     },
     "scotland-premiership:11": {
       "clubName": "St. Johnstone",
@@ -18138,6 +18048,6 @@
       "checkedAt": "2026-11-17T09:24:28.942095+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T09:43:01.794730+00:00",
+  "lastUpdated": "2026-11-17T10:01:44.508083+00:00",
   "rosterAuditAt": "2026-11-17T09:57:21.964496+00:00"
 }
