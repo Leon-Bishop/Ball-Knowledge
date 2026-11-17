@@ -5,6 +5,7 @@
 (function(){
 'use strict';
 const MINIMUM=3;
+const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team']);
 let database={clubs:{}};
 const shuffledCache=new Map();
 function hashString(text){
@@ -21,6 +22,7 @@ function availablePlayers(clubId){
      !p.photoUrl?.startsWith('./assets/player-headshots/')||
      !p.sourceUrl?.startsWith('https://commons.wikimedia.org/')||
      !p.membershipSource?.startsWith('https://')||
+     !CURRENT_SECTIONS.has(p.membershipSection)||
      !p.license||!p.author||!p.playerName||!p.wikidataQid||
      seen.has(p.wikidataQid))return false;
   seen.add(p.wikidataQid);
