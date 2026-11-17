@@ -1826,7 +1826,7 @@
     },
     "spain-la-liga:10": {
       "clubName": "Levante",
-      "checkedAt": "2026-11-17T09:41:52.130677+00:00",
+      "checkedAt": "2026-11-17T10:01:52.312457+00:00",
       "rosterNames": 50,
       "photoCandidates": 12,
       "sources": [
@@ -1838,7 +1838,7 @@
     },
     "spain-la-liga:11": {
       "clubName": "Málaga",
-      "checkedAt": "2026-11-17T09:42:21.741851+00:00",
+      "checkedAt": "2026-11-17T10:02:21.047154+00:00",
       "rosterNames": 47,
       "photoCandidates": 9,
       "sources": [
@@ -2147,5 +2147,5 @@
       "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T10:01:44.508083+00:00"
+  "lastUpdated": "2026-11-17T10:02:52.863174+00:00"
 }

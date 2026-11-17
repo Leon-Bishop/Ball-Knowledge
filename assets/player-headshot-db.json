@@ -15420,10 +15420,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q2876432",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "spain-la-liga:10",
@@ -15441,10 +15438,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Levante_UD",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "spain-la-liga:10",
@@ -15462,14 +15456,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110157458",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Levante_UD",
-      "checkedAt": "2026-11-17T09:41:52.130677+00:00"
+      "checkedAt": "2026-11-17T10:01:52.312457+00:00"
     },
     "spain-la-liga:11": {
       "clubName": "Málaga",
@@ -15491,10 +15482,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q38681499",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "spain-la-liga:11",
@@ -15512,14 +15500,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/M%C3%A1laga_CF",
-          "verifiedAt": "2026-11-17T09:57:21.964496+00:00"
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/M%C3%A1laga_CF",
-      "checkedAt": "2026-11-17T09:42:21.741851+00:00"
+      "checkedAt": "2026-11-17T10:02:21.047154+00:00"
     },
     "spain-la-liga:12": {
       "clubName": "CA Osasuna",
@@ -18048,6 +18033,6 @@
       "checkedAt": "2026-11-17T09:24:28.942095+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T10:01:44.508083+00:00",
+  "lastUpdated": "2026-11-17T10:02:52.863174+00:00",
   "rosterAuditAt": "2026-11-17T09:57:21.964496+00:00"
 }
