@@ -1143,12 +1143,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Sint-Truidense_VV",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Sint-Truidense_VV",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "belgian-pro-league:14",
@@ -4451,12 +4452,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "england-premier-league:16",
@@ -4559,12 +4561,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Coventry_City_F.C.",
           "membershipSection": "first-team squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Coventry_City_F.C.",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "england-premier-league:17",
@@ -4891,12 +4894,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/AJ_Auxerre",
           "membershipSection": "current squad",
           "verifiedCurrent": true,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q66779547",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "france-ligue-1:1",
@@ -5595,12 +5599,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Le_Mans_FC",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Le_Mans_FC",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "france-ligue-1:9",
@@ -5831,12 +5836,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/FC_Lorient",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Lorient",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/FC_Lorient",
@@ -6007,12 +6013,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Stade_Rennais_FC",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Stade_Rennais_FC",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Stade_Rennais_FC",
@@ -6427,12 +6434,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/ES_Troyes_AC",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/ES_Troyes_AC",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "france-ligue-1:18",
@@ -6739,12 +6747,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
           "membershipSection": "current squad",
           "verifiedCurrent": true,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110483835",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "germany-bundesliga:4",
@@ -6915,12 +6924,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "germany-bundesliga:6",
@@ -7903,12 +7913,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/1._FC_Union_Berlin",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/1._FC_Union_Berlin",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "germany-bundesliga:17",
@@ -8059,12 +8070,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/AEK_Athens_F.C.",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/AEK_Athens_F.C.",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "greece-super-league:1",
@@ -8532,12 +8544,13 @@
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q20977919",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "greece-super-league:7",
@@ -9484,12 +9497,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Cagliari_Calcio",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Cagliari_Calcio",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "italy-serie-a:4",
@@ -9748,12 +9762,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Frosinone_Calcio",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Frosinone_Calcio",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "italy-serie-a:7",
@@ -9768,12 +9783,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Frosinone_Calcio",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Frosinone_Calcio",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Frosinone_Calcio",
@@ -10188,12 +10204,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/US_Lecce",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/US_Lecce",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "italy-serie-a:12",
@@ -10236,12 +10253,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/AC_Monza",
           "membershipSection": "first-team squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/AC_Monza",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "italy-serie-a:13",
@@ -10384,12 +10402,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SSC_Napoli",
           "membershipSection": "current squad",
           "verifiedCurrent": true,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q21039587",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SSC_Napoli",
@@ -11293,12 +11312,13 @@
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Feyenoord",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "netherlands-eredivisie:5",
@@ -11864,12 +11884,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SC_Heerenveen",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Heerenveen",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "netherlands-eredivisie:11",
@@ -12264,12 +12285,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SC_Cambuur",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Cambuur",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "netherlands-eredivisie:16",
@@ -12528,12 +12550,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/F.C._Arouca",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/F.C._Arouca",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "portugal-liga-portugal:1",
@@ -12731,12 +12754,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/S.C._Braga",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/S.C._Braga",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "portugal-liga-portugal:4",
@@ -14257,12 +14281,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Motherwell_F.C.",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Motherwell_F.C.",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Motherwell_F.C.",
@@ -15156,12 +15181,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/RC_Celta_de_Vigo",
           "membershipSection": "first-team squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/RC_Celta_de_Vigo",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "spain-la-liga:7",
@@ -15647,12 +15673,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Racing_de_Santander",
           "membershipSection": "current squad",
           "verifiedCurrent": true,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q60667184",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "spain-la-liga:13",
@@ -15735,12 +15762,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Rayo_Vallecano",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rayo_Vallecano",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "spain-la-liga:14",
@@ -15959,12 +15987,13 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Real_Sociedad",
           "membershipSection": "current squad",
           "verifiedCurrent": false,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Real_Sociedad",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "spain-la-liga:17",
@@ -17375,12 +17404,13 @@
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
           "secondaryRosterSource": "https://www.kasimpasa.com.tr/en/teams/kasimpasa-first-team",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Kas%C4%B1mpa%C5%9Fa_S.K.",
@@ -17446,12 +17476,13 @@
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
-          "faceCrop": true,
+          "faceCrop": false,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
           "secondaryRosterSource": "https://kocaelispor.com.tr/takim",
-          "verifiedAt": "2026-11-17T10:15:21.261123+00:00"
+          "verifiedAt": "2026-11-17T10:15:21.261123+00:00",
+          "photoQuality": "rejected: full centered face not verified"
         },
         {
           "clubId": "turkey-super-lig:13",

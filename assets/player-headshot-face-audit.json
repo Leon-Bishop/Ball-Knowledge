@@ -1,0 +1,131 @@
+{
+  "rule": "Conservative face detection on the FINAL 192-pixel cropped JPEG",
+  "usable": 779,
+  "rejectedCount": 31,
+  "rejected": [
+    {
+      "clubId": "belgian-pro-league:14",
+      "wikidataQid": "Q30901781"
+    },
+    {
+      "clubId": "england-premier-league:16",
+      "wikidataQid": "Q66685965"
+    },
+    {
+      "clubId": "england-premier-league:17",
+      "wikidataQid": "Q56292818"
+    },
+    {
+      "clubId": "france-ligue-1:1",
+      "wikidataQid": "Q66779547"
+    },
+    {
+      "clubId": "france-ligue-1:9",
+      "wikidataQid": "Q24450997"
+    },
+    {
+      "clubId": "france-ligue-1:11",
+      "wikidataQid": "Q99398043"
+    },
+    {
+      "clubId": "france-ligue-1:13",
+      "wikidataQid": "Q73456589"
+    },
+    {
+      "clubId": "france-ligue-1:18",
+      "wikidataQid": "Q121093987"
+    },
+    {
+      "clubId": "germany-bundesliga:4",
+      "wikidataQid": "Q110483835"
+    },
+    {
+      "clubId": "germany-bundesliga:6",
+      "wikidataQid": "Q123390886"
+    },
+    {
+      "clubId": "germany-bundesliga:17",
+      "wikidataQid": "Q139185338"
+    },
+    {
+      "clubId": "greece-super-league:1",
+      "wikidataQid": "Q24085024"
+    },
+    {
+      "clubId": "greece-super-league:7",
+      "wikidataQid": "Q20977919"
+    },
+    {
+      "clubId": "italy-serie-a:4",
+      "wikidataQid": "Q15964494"
+    },
+    {
+      "clubId": "italy-serie-a:7",
+      "wikidataQid": "Q60734883"
+    },
+    {
+      "clubId": "italy-serie-a:7",
+      "wikidataQid": "Q98046171"
+    },
+    {
+      "clubId": "italy-serie-a:12",
+      "wikidataQid": "Q20949218"
+    },
+    {
+      "clubId": "italy-serie-a:13",
+      "wikidataQid": "Q108816588"
+    },
+    {
+      "clubId": "italy-serie-a:14",
+      "wikidataQid": "Q21039587"
+    },
+    {
+      "clubId": "netherlands-eredivisie:5",
+      "wikidataQid": "Q66818142"
+    },
+    {
+      "clubId": "netherlands-eredivisie:11",
+      "wikidataQid": "Q40090502"
+    },
+    {
+      "clubId": "netherlands-eredivisie:16",
+      "wikidataQid": "Q76761296"
+    },
+    {
+      "clubId": "portugal-liga-portugal:1",
+      "wikidataQid": "Q110980279"
+    },
+    {
+      "clubId": "portugal-liga-portugal:4",
+      "wikidataQid": "Q16236996"
+    },
+    {
+      "clubId": "scotland-premiership:8",
+      "wikidataQid": "Q7610116"
+    },
+    {
+      "clubId": "spain-la-liga:7",
+      "wikidataQid": "Q99485151"
+    },
+    {
+      "clubId": "spain-la-liga:13",
+      "wikidataQid": "Q60667184"
+    },
+    {
+      "clubId": "spain-la-liga:14",
+      "wikidataQid": "Q67089591"
+    },
+    {
+      "clubId": "spain-la-liga:17",
+      "wikidataQid": "Q108861032"
+    },
+    {
+      "clubId": "turkey-super-lig:12",
+      "wikidataQid": "Q40991902"
+    },
+    {
+      "clubId": "turkey-super-lig:13",
+      "wikidataQid": "Q53858110"
+    }
+  ]
+}
