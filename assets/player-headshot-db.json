@@ -27,7 +27,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q4806248"
         }
       ],
@@ -58,7 +58,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Royal_Antwerp_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "belgian-pro-league:2",
@@ -80,7 +80,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Royal_Antwerp_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Royal_Antwerp_FC",
@@ -108,7 +108,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:19:49.566449+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3251241",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -140,7 +140,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "belgian-pro-league:4",
@@ -162,7 +162,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "belgian-pro-league:4",
@@ -184,7 +184,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Club_Brugge_KV",
@@ -219,7 +219,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:20:20.109789+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q1032681",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -257,7 +257,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q1189443"
         }
       ],
@@ -287,7 +287,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/KVC_Westerlo",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -309,7 +309,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/KVC_Westerlo",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -331,7 +331,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/KVC_Westerlo",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -353,7 +353,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://fr.wikipedia.org/wiki/KVC_Westerlo",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -389,7 +389,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:20:57.451717+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q27119679",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -421,7 +421,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Royal_Charleroi_SC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Royal_Charleroi_SC",
@@ -451,7 +451,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Lommel_SK",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "belgian-pro-league:13",
@@ -473,7 +473,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q1894909",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Lommel_SK",
@@ -503,7 +503,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q132432615",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "belgian-pro-league:14",
@@ -525,7 +525,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Sint-Truidense_VV",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Sint-Truidense_VV",
@@ -554,7 +554,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15020937"
         }
       ],
@@ -584,7 +584,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q26838763",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -606,7 +606,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q115132592",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -628,7 +628,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q124639921",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -650,7 +650,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110985833",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -686,7 +686,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:21:17.968910+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q2025988",
           "associationType": "old_commons_source_fresh_active_P54_verified"
         }
@@ -724,7 +724,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q329451"
         }
       ],
@@ -754,7 +754,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q64606160"
         }
       ],
@@ -785,7 +785,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Esporte_Clube_Bahia",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "brazil-serie-a:4",
@@ -807,7 +807,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Esporte_Clube_Bahia",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Esporte_Clube_Bahia",
@@ -836,7 +836,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q327456"
         }
       ],
@@ -866,7 +866,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Corinthians_Paulista",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -888,7 +888,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Corinthians_Paulista",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -910,7 +910,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Corinthians_Paulista",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -932,7 +932,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q5621422",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -962,7 +962,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q101230488"
         }
       ],
@@ -993,7 +993,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Mirassol_Futebol_Clube",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Mirassol_Futebol_Clube",
@@ -1023,7 +1023,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Cruzeiro_EC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Cruzeiro_EC",
@@ -1052,7 +1052,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19362872"
         }
       ],
@@ -1082,7 +1082,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15696665"
         }
       ],
@@ -1112,7 +1112,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15131398"
         }
       ],
@@ -1150,7 +1150,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_FBPA",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_FBPA",
@@ -1178,7 +1178,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:22:03.488316+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q75058907",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -1209,7 +1209,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110160871"
         }
       ],
@@ -1247,7 +1247,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Santos_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Santos_FC",
@@ -1275,7 +1275,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:21:24.351188+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q16336243",
           "associationType": "old_commons_source_fresh_active_P54_verified"
         }
@@ -1307,7 +1307,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "brazil-serie-a:20",
@@ -1329,7 +1329,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama",
@@ -1358,7 +1358,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Arsenal_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1380,7 +1380,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q63384759",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1402,7 +1402,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q47075606",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1424,7 +1424,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q28445512",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -1454,7 +1454,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Aston_Villa_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1476,7 +1476,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q43384100",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1498,7 +1498,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q10547335",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1520,7 +1520,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Aston_Villa_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -1550,7 +1550,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19871581",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1572,7 +1572,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/AFC_Bournemouth",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1594,7 +1594,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/AFC_Bournemouth",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1616,7 +1616,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/AFC_Bournemouth",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -1647,7 +1647,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Brentford_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "england-premier-league:4",
@@ -1669,7 +1669,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Brentford_F.C._season",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "england-premier-league:4",
@@ -1691,7 +1691,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Brentford_F.C._season",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Brentford_F.C.",
@@ -1721,7 +1721,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "england-premier-league:5",
@@ -1743,7 +1743,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q115162374",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "england-premier-league:5",
@@ -1765,7 +1765,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q115978703",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C.",
@@ -1794,7 +1794,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3275904"
         }
       ],
@@ -1824,7 +1824,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1846,7 +1846,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1868,7 +1868,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q100735281",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1890,7 +1890,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Crystal_Palace_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -1927,7 +1927,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q18041089",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1949,7 +1949,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q35778151",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1971,7 +1971,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q309966",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -1993,7 +1993,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Fulham_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -2023,7 +2023,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19345715"
         }
       ],
@@ -2053,7 +2053,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19956709"
         }
       ],
@@ -2083,7 +2083,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q73400656",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2105,7 +2105,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2127,7 +2127,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2149,7 +2149,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q44737396",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -2179,7 +2179,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q4979316",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2201,7 +2201,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q112039295",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2223,7 +2223,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Manchester_United_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2245,7 +2245,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q14327453",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -2275,7 +2275,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Newcastle_United_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2297,7 +2297,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q129887028",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2319,7 +2319,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q65948595",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2341,7 +2341,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110487162",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -2371,7 +2371,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q116753805"
         }
       ],
@@ -2401,7 +2401,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19787021"
         }
       ],
@@ -2431,7 +2431,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q114870703"
         }
       ],
@@ -2461,7 +2461,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q514427",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2483,7 +2483,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Sunderland_A.F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2505,7 +2505,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Sunderland_A.F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2527,7 +2527,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Sunderland_A.F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -2557,7 +2557,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Hull_City_A.F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2579,7 +2579,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q27832286",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2601,7 +2601,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Hull_City_A.F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2623,7 +2623,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Hull_City_A.F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -2652,7 +2652,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:23:48.471627+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q16208222",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -2684,7 +2684,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Angers_SCO",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "france-ligue-1:2",
@@ -2706,7 +2706,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Angers_SCO",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Angers_SCO",
@@ -2743,7 +2743,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Stade_Brestois_29",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Stade_Brestois_29",
@@ -2778,7 +2778,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:26:51.646860+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q586731",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -2809,7 +2809,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Olympique_Lyonnais",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2831,7 +2831,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3876530",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2853,7 +2853,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q56183407",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -2875,7 +2875,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Olympique_Lyonnais",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -2905,7 +2905,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q724147"
         }
       ],
@@ -2936,7 +2936,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Le_Mans_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Le_Mans_FC",
@@ -2966,7 +2966,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/OGC_Nice",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "france-ligue-1:10",
@@ -2988,7 +2988,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q41932444",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "france-ligue-1:10",
@@ -3010,7 +3010,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q151838",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/OGC_Nice",
@@ -3039,7 +3039,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q30118244"
         }
       ],
@@ -3069,7 +3069,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q44297797",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3091,7 +3091,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q87767569",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3113,7 +3113,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3135,7 +3135,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -3166,7 +3166,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q27909473",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Stade_Rennais_FC",
@@ -3196,7 +3196,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q118207",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "france-ligue-1:14",
@@ -3218,7 +3218,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Paris_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Paris_FC",
@@ -3248,7 +3248,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/RC_Strasbourg_Alsace",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "france-ligue-1:15",
@@ -3270,7 +3270,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/RC_Strasbourg_Alsace",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/RC_Strasbourg_Alsace",
@@ -3299,7 +3299,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:26:54.020978+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.toulousefc.com/equipes/equipe-professionnelle/effectif"
         }
       ],
@@ -3329,7 +3329,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q23799421"
         }
       ],
@@ -3359,7 +3359,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/ES_Troyes_AC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3381,7 +3381,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/ES_Troyes_AC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3403,7 +3403,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/ES_Troyes_AC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3425,7 +3425,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/ES_Troyes_AC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -3454,7 +3454,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Augsburg",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3475,7 +3475,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Augsburg",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3496,7 +3496,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "recent_conflicting_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q699094",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -3526,7 +3526,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19968626",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3548,7 +3548,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Bayer_04_Leverkusen",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3570,7 +3570,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Bayer_04_Leverkusen",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3592,7 +3592,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Bayer_04_Leverkusen",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -3622,7 +3622,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3644,7 +3644,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q98784065",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3666,7 +3666,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q14640027",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3688,7 +3688,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Bayern_Munich",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -3718,7 +3718,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3740,7 +3740,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3762,7 +3762,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q21923379",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3784,7 +3784,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q36184031",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -3814,7 +3814,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:26:56.711198+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.borussia.de/news/borussia-unterliegt-mainz-mit-3-4"
         }
       ],
@@ -3845,7 +3845,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q104454",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "germany-bundesliga:6",
@@ -3867,7 +3867,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
@@ -3897,7 +3897,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SV_Elversberg",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SV_Elversberg",
@@ -3927,7 +3927,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://de.wikipedia.org/wiki/1._FC_K%C3%B6ln",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/1._FC_K%C3%B6ln",
@@ -3956,7 +3956,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/1._FSV_Mainz_05",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -3978,7 +3978,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/1._FSV_Mainz_05",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4000,7 +4000,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/1._FSV_Mainz_05",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4022,7 +4022,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/1._FSV_Mainz_05",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -4052,7 +4052,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Hamburger_SV",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4074,7 +4074,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Hamburger_SV",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4096,7 +4096,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q105754161",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4118,7 +4118,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15120696",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -4149,7 +4149,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q107745867",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "germany-bundesliga:11",
@@ -4171,7 +4171,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/RB_Leipzig",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "germany-bundesliga:11",
@@ -4193,7 +4193,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/RB_Leipzig",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/RB_Leipzig",
@@ -4222,7 +4222,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Freiburg",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4244,7 +4244,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q102399064",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4266,7 +4266,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q18580880",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4288,7 +4288,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Freiburg",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -4319,7 +4319,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Paderborn_07",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SC_Paderborn_07",
@@ -4348,7 +4348,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/TSG_1899_Hoffenheim",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4370,7 +4370,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q59782306",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4392,7 +4392,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q53280628",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4414,7 +4414,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/TSG_1899_Hoffenheim",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -4444,7 +4444,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/VfB_Stuttgart",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4466,7 +4466,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/VfB_Stuttgart",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4488,7 +4488,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/VfB_Stuttgart",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4510,7 +4510,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q105955374",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -4540,7 +4540,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:26:59.711262+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://schalke04.de/kader-2026-2027/"
         }
       ],
@@ -4571,7 +4571,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q583000",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/1._FC_Union_Berlin",
@@ -4601,7 +4601,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q22965497",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "germany-bundesliga:18",
@@ -4623,7 +4623,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SV_Werder_Bremen",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "germany-bundesliga:18",
@@ -4645,7 +4645,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/SV_Werder_Bremen",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SV_Werder_Bremen",
@@ -4675,7 +4675,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q17399584",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "greece-super-league:1",
@@ -4697,7 +4697,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q39336454",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/AEK_Athens_F.C.",
@@ -4727,7 +4727,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q60791151",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "greece-super-league:2",
@@ -4749,7 +4749,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Aris_Thessaloniki_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Aris_Thessaloniki_F.C.",
@@ -4779,7 +4779,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Asteras_Tripolis_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Asteras_Tripolis_F.C.",
@@ -4809,7 +4809,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q673702",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Atromitos_F.C.",
@@ -4845,7 +4845,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:27:16.983387+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q20435993"
         }
       ],
@@ -4882,7 +4882,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q42948040",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4904,7 +4904,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q821646",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4926,7 +4926,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q59268631",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -4948,7 +4948,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q40467236",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -4979,7 +4979,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q28811942",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         },
         {
           "clubId": "greece-super-league:9",
@@ -5001,7 +5001,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q303108",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/PAOK_FC",
@@ -5030,7 +5030,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q104764325",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5052,7 +5052,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q72091732",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5074,7 +5074,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Panathinaikos_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5096,7 +5096,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q108109586",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5134,7 +5134,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
@@ -5171,7 +5171,7 @@
           "faceQualityVerified": true,
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Volos_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Volos_F.C.",
@@ -5200,7 +5200,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q17274709",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5222,7 +5222,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q111145131",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5244,7 +5244,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q60621615",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5266,7 +5266,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q108200391",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5296,7 +5296,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q22237703",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5318,7 +5318,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q68607008",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5340,7 +5340,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q5241591",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5362,7 +5362,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q18044401",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5392,7 +5392,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Bologna_FC_1909",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5414,7 +5414,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Bologna_FC_1909",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5436,7 +5436,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q108024285",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5458,7 +5458,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Bologna_FC_1909",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5487,7 +5487,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:28:21.154747+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3737807",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -5518,7 +5518,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Como_1907",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5548,7 +5548,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q24084221",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5570,7 +5570,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/ACF_Fiorentina",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5600,7 +5600,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://it.wikipedia.org/wiki/Frosinone_Calcio",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5630,7 +5630,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q39161128",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5660,7 +5660,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Inter_Milan",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5682,7 +5682,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19903718",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5704,7 +5704,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q20090225",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5726,7 +5726,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q56222532",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5756,7 +5756,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q21573188",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5778,7 +5778,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q50628268",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5800,7 +5800,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Juventus_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5830,7 +5830,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:28:23.993085+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.sslazio.it/en/team/lazio/squadra"
         }
       ],
@@ -5860,7 +5860,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/US_Lecce",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5890,7 +5890,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/AC_Monza",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -5912,7 +5912,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/AC_Monza",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -5942,7 +5942,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:28:28.022451+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://sscnapoli.it/en/stagione/rosa?id=3052"
         }
       ],
@@ -5972,7 +5972,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:28:32.286913+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.parmacalcio1913.com/en/main-news/serie-a-enilive-squad-list-parma-bologna/"
         }
       ],
@@ -6002,7 +6002,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q63966349",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6024,7 +6024,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q50233588",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6054,7 +6054,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/US_Sassuolo_Calcio",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6076,7 +6076,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/US_Sassuolo_Calcio",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6106,7 +6106,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110486415",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6128,7 +6128,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Torino_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6150,7 +6150,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q17501875",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6172,7 +6172,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q26251753",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6202,7 +6202,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q2057994",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6224,7 +6224,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Udinese_Calcio",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6254,7 +6254,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Venezia_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6276,7 +6276,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q62059870",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6306,7 +6306,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q107742783",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6328,7 +6328,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q128912",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6350,7 +6350,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q18428483",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6372,7 +6372,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q98534760",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6409,7 +6409,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:28:45.444004+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.az.nl/inside-az/nieuws/2026/november/liveblog-az-fc-groningen"
         }
       ],
@@ -6439,7 +6439,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q4406552",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6469,7 +6469,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:28:51.179288+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.feyenoord.com/en/feyenoord-1/squad"
         }
       ],
@@ -6499,7 +6499,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Fortuna_Sittard",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6521,7 +6521,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Fortuna_Sittard",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6543,7 +6543,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Fortuna_Sittard",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6572,7 +6572,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:29:30.933321+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q47982266",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -6603,7 +6603,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q111977453",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6625,7 +6625,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q99677252",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6647,7 +6647,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://nl.wikipedia.org/wiki/FC_Twente",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6677,7 +6677,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:28:47.974076+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.fcutrecht.nl/nieuws/2026/augustus/alle-rugnummers-van-fc-utrecht-op-een-rijtje/"
         }
       ],
@@ -6707,7 +6707,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q112193624",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6736,7 +6736,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:29:57.344192+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q1342780",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -6767,7 +6767,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q47015496",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6797,7 +6797,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:29:59.997194+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://peczwolle.nl/nieuws/selectie-trainingskamp-portugal"
         }
       ],
@@ -6827,7 +6827,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q161054",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6849,7 +6849,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q249198",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6871,7 +6871,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q26385193",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6893,7 +6893,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q57456989",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6923,7 +6923,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Sparta_Rotterdam",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -6960,7 +6960,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q135880981",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -6982,7 +6982,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://nl.wikipedia.org/wiki/Telstar_(voetbalclub)",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7011,7 +7011,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:30:19.544399+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q50227154",
           "associationType": "wikidata_current_P54_and_commons_P18"
         }
@@ -7049,7 +7049,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/S.L._Benfica",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7071,7 +7071,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q57408482",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7115,7 +7115,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Casa_Pia_A.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7145,7 +7145,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/G.D._Estoril_Praia",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7175,7 +7175,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:21.952646+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://estrelamadora.pt/futebol/"
         }
       ],
@@ -7212,7 +7212,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Porto",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7234,7 +7234,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Porto",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7284,7 +7284,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:30:26.740962+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q61761734",
           "associationType": "old_commons_source_fresh_active_P54_verified"
         }
@@ -7315,7 +7315,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/C.D._Nacional",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7337,7 +7337,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/C.D._Nacional",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7359,7 +7359,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/C.D._Nacional",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7381,7 +7381,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/C.D._Nacional",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7411,7 +7411,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rio_Ave_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7433,7 +7433,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rio_Ave_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7470,7 +7470,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Sporting_CP",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7492,7 +7492,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q96064959",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7514,7 +7514,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Sporting_CP",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7551,7 +7551,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Aberdeen_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7581,7 +7581,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Celtic_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7603,7 +7603,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Celtic_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7625,7 +7625,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q81878309",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -7647,7 +7647,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q24007335",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7677,7 +7677,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:40.299884+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://dundeefc.co.uk/team/first-team/"
         }
       ],
@@ -7707,7 +7707,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:45.263305+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.heartsfc.co.uk/pages/first-team-squad"
         }
       ],
@@ -7737,7 +7737,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:47.925784+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.hibernianfc.co.uk/news/2026/november/11/our-mens-and-academy-2026-2027-squad-photos/"
         }
       ],
@@ -7767,7 +7767,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:50.513019+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://kilmarnockfc.co.uk/news/international-recognition/"
         }
       ],
@@ -7797,7 +7797,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:42.862058+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.christmas.dundeeunitedfc.co.uk/news/9557/United-see-points-shared-in-home-clash-with-Motherwell.html"
         }
       ],
@@ -7827,7 +7827,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:53.047932+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.motherwellfc.co.uk/2026/10/15/team-news-for-trip-to-kilmarnock/"
         }
       ],
@@ -7857,7 +7857,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:55.833653+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.rangers.co.uk/Article/team-news-gers-side-to-face-falkirk-tonight/xjPOCRUZIHHWOwxM8zFrU"
         }
       ],
@@ -7887,7 +7887,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Falkirk_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -7917,7 +7917,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:30:58.267533+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.perthstjohnstonefc.co.uk/news/article/match-report-st-johnstone-2-1-dundee/"
         }
       ],
@@ -7947,7 +7947,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:31:00.863793+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.stmirren.com/news/team-news-st-mirren-v-rangers-7th-nov"
         }
       ],
@@ -7977,7 +7977,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3180002",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8007,7 +8007,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Deportivo_de_A_Coru%C3%B1a",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8029,7 +8029,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q38681528",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8051,7 +8051,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q105227202",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8081,7 +8081,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:31:03.995906+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.athletic-club.eus/en/teams/athletic-club/2026-27/squad/"
         }
       ],
@@ -8111,7 +8111,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q56085180",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8133,7 +8133,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110220404",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8155,7 +8155,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q28058687",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8185,7 +8185,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q16063229",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8207,7 +8207,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q47170176",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8229,7 +8229,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Barcelona",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8251,7 +8251,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Barcelona",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8281,7 +8281,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Elche_CF",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8303,7 +8303,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q16554916",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8325,7 +8325,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q113027711",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8355,7 +8355,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q18719485",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8377,7 +8377,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "recent_conflicting_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q113433814",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8399,7 +8399,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q26380",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8436,7 +8436,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q14637461",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8458,7 +8458,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q22166596",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8480,7 +8480,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q127452",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8510,7 +8510,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Levante_UD",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8547,7 +8547,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q17505049",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8584,7 +8584,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rayo_Vallecano",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8606,7 +8606,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q641387",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8636,7 +8636,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q67243168",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8658,7 +8658,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q27037962",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8687,7 +8687,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q66241169",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8708,7 +8708,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q27342447",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8729,7 +8729,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15521306",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8750,7 +8750,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q112184628",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8780,7 +8780,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Real_Sociedad",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8802,7 +8802,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q26707913",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8824,7 +8824,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q16729477",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8854,7 +8854,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q38053896",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8884,7 +8884,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://es.wikipedia.org/wiki/Valencia_Club_de_F%C3%BAtbol",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8914,7 +8914,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q20641306",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8936,7 +8936,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q113564288",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -8958,7 +8958,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q111604014",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -8988,7 +8988,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q17045723",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9010,7 +9010,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Alanyaspor",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9040,7 +9040,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Amed_S.F.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9062,7 +9062,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q21590318",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9092,7 +9092,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Be%C5%9Fikta%C5%9F_J.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9114,7 +9114,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19587938",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9136,7 +9136,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q20435178",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9158,7 +9158,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q56788302",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9188,7 +9188,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Erzurumspor_F.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9210,7 +9210,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Erzurumspor_F.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9232,7 +9232,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Erzurumspor_F.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9254,7 +9254,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Erzurumspor_F.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9284,7 +9284,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Ey%C3%BCpspor",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9314,7 +9314,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q27663808",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9336,7 +9336,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q66391676",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9358,7 +9358,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q99243784",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9388,7 +9388,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
           "secondaryRosterSource": "https://www.galatasaray.org/en/pl/squad/48",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9410,7 +9410,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
           "secondaryRosterSource": "https://www.galatasaray.org/en/pl/squad/48",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9432,7 +9432,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
           "secondaryRosterSource": "https://www.galatasaray.org/en/pl/squad/48",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9462,7 +9462,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Gaziantep_F.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9492,7 +9492,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Gen%C3%A7lerbirli%C4%9Fi_S.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9521,7 +9521,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:31:31.529331+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q60050618",
           "associationType": "old_commons_source_fresh_active_P54_verified"
         }
@@ -9552,7 +9552,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/%C4%B0stanbul_Ba%C5%9Fak%C5%9Fehir_F.K.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9574,7 +9574,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q41791648",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9596,7 +9596,7 @@
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q550742",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9626,7 +9626,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
           "secondaryRosterSource": "https://www.kasimpasa.com.tr/en/teams/kasimpasa-first-team",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9655,7 +9655,7 @@
           "faceQualityVerified": true,
           "modified": true,
           "rosterVerification": "wikidata_current_club",
-          "verifiedAt": "2026-11-17T14:31:37.977041+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q113652626",
           "associationType": "old_commons_source_fresh_active_P54_verified"
         }
@@ -9686,7 +9686,7 @@
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "official_club_squad",
-          "verifiedAt": "2026-11-17T14:31:40.630871+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "secondaryRosterSource": "https://www.konyaspor.org.tr/futbolcular"
         }
       ],
@@ -9716,7 +9716,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/%C3%87aykur_Rizespor",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9746,7 +9746,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/Samsunspor",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9776,7 +9776,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q641425",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9813,7 +9813,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q33297140",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9835,7 +9835,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_stale_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Liverpool_F.C._season",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9857,7 +9857,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikidata_current_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110874376",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         },
         {
@@ -9879,7 +9879,7 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "wikipedia_squad_no_p54",
           "secondaryRosterSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Liverpool_F.C._season",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
+          "verifiedAt": "2026-11-17T14:34:42.757094+00:00",
           "faceQualityVerified": true
         }
       ],
@@ -9888,5 +9888,5 @@
     }
   },
   "lastUpdated": "2026-11-17T14:31:41.084028+00:00",
-  "rosterAuditAt": "2026-11-17T14:31:40.630871+00:00"
+  "rosterAuditAt": "2026-11-17T14:34:42.757094+00:00"
 }

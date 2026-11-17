@@ -1,22 +1,22 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T13:45:30.090186+00:00",
+  "checkedAt": "2026-11-17T14:34:42.757094+00:00",
   "rule": "Official current squad/loan evidence or matching active Wikidata club; Wikipedia-only records are not independently corroborated; cross-club duplicates excluded",
   "totalClubs": 214,
-  "totalPlayers": 382,
+  "totalPlayers": 373,
   "wikipediaPagesRechecked": 181,
   "wikipediaPagesUnavailable": 0,
-  "uniquePlayers": 382,
+  "uniquePlayers": 373,
   "verifiedClubsWithThree": 20,
-  "verifiedPlayers": 173,
-  "independentlyCorroboratedPlayers": 173,
-  "wikipediaOnlyPlayers": 207,
+  "verifiedPlayers": 211,
+  "independentlyCorroboratedPlayers": 211,
+  "wikipediaOnlyPlayers": 160,
   "statuses": {
-    "wikidata_current_club": 169,
-    "wikipedia_squad_stale_p54": 112,
-    "wikipedia_squad_no_p54": 95,
-    "recent_conflicting_club": 2,
-    "official_club_squad": 4
+    "wikidata_current_club": 185,
+    "wikipedia_squad_stale_p54": 87,
+    "wikipedia_squad_no_p54": 73,
+    "official_club_squad": 26,
+    "recent_conflicting_club": 2
   },
   "conflictingPlayers": [],
   "unconfirmed": [
@@ -729,42 +729,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "france-ligue-1:16",
-      "playerName": "Niko Sigur",
-      "wikidataQid": "Q117830854",
-      "clubWikidataQid": "Q19518",
-      "p54CurrentClub": "Q208635",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2024-11-09",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Toulouse_FC",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "france-ligue-1:16",
-      "playerName": "Santiago Hidalgo",
-      "wikidataQid": "Q114356315",
-      "clubWikidataQid": "Q19518",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Toulouse_FC",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "france-ligue-1:16",
-      "playerName": "Guillaume Restes",
-      "wikidataQid": "Q121423825",
-      "clubWikidataQid": "Q19518",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Toulouse_FC",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "france-ligue-1:18",
       "playerName": "Michel Junior Diaz",
       "wikidataQid": "Q129259885",
@@ -849,18 +813,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "germany-bundesliga:1",
-      "playerName": "Han-Noah Massengo",
-      "wikidataQid": "Q58313463",
-      "clubWikidataQid": "Q15755",
-      "p54CurrentClub": "Q180305",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/FC_Augsburg",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "germany-bundesliga:2",
       "playerName": "Victor Boniface",
       "wikidataQid": "Q61968862",
@@ -942,18 +894,6 @@
       "p54ActiveClubStart": "2024-01-01",
       "verification": "wikipedia_squad_stale_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/Borussia_Dortmund",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "germany-bundesliga:5",
-      "playerName": "Isac Lidberg",
-      "wikidataQid": "Q21860037",
-      "clubWikidataQid": "Q101959",
-      "p54CurrentClub": "Q5380023",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2016-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach",
       "duplicateInClubs": []
     },
     {
@@ -1185,18 +1125,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "germany-bundesliga:16",
-      "playerName": "Hasan Kuruçay",
-      "wikidataQid": "Q47003664",
-      "clubWikidataQid": "Q32494",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/FC_Schalke_04",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "germany-bundesliga:18",
       "playerName": "Moussa N'Diaye",
       "wikidataQid": "Q64433049",
@@ -1377,30 +1305,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "italy-serie-a:11",
-      "playerName": "Nuno Tavares",
-      "wikidataQid": "Q60676459",
-      "clubWikidataQid": "Q2609",
-      "p54CurrentClub": "Q9617",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2021-07-10",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/SS_Lazio",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "italy-serie-a:11",
-      "playerName": "Adam Marušić",
-      "wikidataQid": "Q16234793",
-      "clubWikidataQid": "Q2609",
-      "p54CurrentClub": "Q189018",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2015-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/SS_Lazio",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "italy-serie-a:12",
       "playerName": "Willem Geubbels",
       "wikidataQid": "Q40848615",
@@ -1434,30 +1338,6 @@
       "p54ActiveClubStart": "None",
       "verification": "wikipedia_squad_stale_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/AC_Monza",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "italy-serie-a:14",
-      "playerName": "Alex Meret",
-      "wikidataQid": "Q21622039",
-      "clubWikidataQid": "Q2641",
-      "p54CurrentClub": "Q676899",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2019-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/SSC_Napoli",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "italy-serie-a:15",
-      "playerName": "Benjamin Cremaschi",
-      "wikidataQid": "Q116980096",
-      "clubWikidataQid": "Q2693",
-      "p54CurrentClub": "Q16844931",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2023-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Parma_Calcio_1913",
       "duplicateInClubs": []
     },
     {
@@ -1521,42 +1401,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "netherlands-eredivisie:3",
-      "playerName": "Mateo Chávez",
-      "wikidataQid": "Q124420330",
-      "clubWikidataQid": "Q191264",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "netherlands-eredivisie:3",
-      "playerName": "Jordy Clasie",
-      "wikidataQid": "Q198068",
-      "clubWikidataQid": "Q191264",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "netherlands-eredivisie:5",
-      "playerName": "Sem Steijn",
-      "wikidataQid": "Q56787914",
-      "clubWikidataQid": "Q134241",
-      "p54CurrentClub": "Q24904",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Feyenoord",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "netherlands-eredivisie:6",
       "playerName": "Mattijs Branderhorst",
       "wikidataQid": "Q21079295",
@@ -1602,42 +1446,6 @@
       "p54ActiveClubStart": null,
       "verification": "wikipedia_squad_no_p54",
       "evidenceUrl": "https://nl.wikipedia.org/wiki/FC_Twente",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "netherlands-eredivisie:9",
-      "playerName": "Victor Jensen",
-      "wikidataQid": "Q47510517",
-      "clubWikidataQid": "Q24680",
-      "p54CurrentClub": "Q81888",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/FC_Utrecht",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "netherlands-eredivisie:9",
-      "playerName": "Joris van Overeem",
-      "wikidataQid": "Q3183928",
-      "clubWikidataQid": "Q24680",
-      "p54CurrentClub": "Q223728",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2022-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://nl.wikipedia.org/wiki/FC_Utrecht",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "netherlands-eredivisie:13",
-      "playerName": "Simon Graves",
-      "wikidataQid": "Q61062388",
-      "clubWikidataQid": "Q269151",
-      "p54CurrentClub": "Q729560",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/PEC_Zwolle",
       "duplicateInClubs": []
     },
     {
@@ -1698,30 +1506,6 @@
       "p54ActiveClubStart": "2016-01-01",
       "verification": "wikipedia_squad_stale_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/G.D._Estoril_Praia",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "portugal-liga-portugal:7",
-      "playerName": "Jeremy Arévalo",
-      "wikidataQid": "Q121410218",
-      "clubWikidataQid": "Q838134",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "portugal-liga-portugal:7",
-      "playerName": "Stefan Leković",
-      "wikidataQid": "Q112978315",
-      "clubWikidataQid": "Q838134",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora",
       "duplicateInClubs": []
     },
     {
@@ -1881,234 +1665,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "scotland-premiership:3",
-      "playerName": "Charlie Reilly",
-      "wikidataQid": "Q122195115",
-      "clubWikidataQid": "Q335483",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:3",
-      "playerName": "Imari Samuels",
-      "wikidataQid": "Q118470954",
-      "clubWikidataQid": "Q335483",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:3",
-      "playerName": "Joe Westley",
-      "wikidataQid": "Q131910302",
-      "clubWikidataQid": "Q335483",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:3",
-      "playerName": "Matai Akinmboni",
-      "wikidataQid": "Q111711024",
-      "clubWikidataQid": "Q335483",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:4",
-      "playerName": "Josh McPake",
-      "wikidataQid": "Q65684173",
-      "clubWikidataQid": "Q202093",
-      "p54CurrentClub": "Q19597",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:4",
-      "playerName": "Laurent Mendy",
-      "wikidataQid": "Q137864483",
-      "clubWikidataQid": "Q202093",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:4",
-      "playerName": "Calvin Miller",
-      "wikidataQid": "Q28045315",
-      "clubWikidataQid": "Q202093",
-      "p54CurrentClub": "Q19593",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:4",
-      "playerName": "Sabri Guendouz",
-      "wikidataQid": "Q140364405",
-      "clubWikidataQid": "Q202093",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:5",
-      "playerName": "Jordan Smith",
-      "wikidataQid": "Q28748042",
-      "clubWikidataQid": "Q192597",
-      "p54CurrentClub": "Q19490",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Hibernian_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:5",
-      "playerName": "Azeem Abdulai",
-      "wikidataQid": "Q113483655",
-      "clubWikidataQid": "Q192597",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Hibernian_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:6",
-      "playerName": "MJ Kamson-Kamara",
-      "wikidataQid": "Q130472100",
-      "clubWikidataQid": "Q210961",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Kilmarnock_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:7",
-      "playerName": "Lachlan Rose",
-      "wikidataQid": "Q104884130",
-      "clubWikidataQid": "Q192873",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:7",
-      "playerName": "Jack Walton",
-      "wikidataQid": "Q60733962",
-      "clubWikidataQid": "Q192873",
-      "p54CurrentClub": "Q19442",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:7",
-      "playerName": "Mehdi Merghem",
-      "wikidataQid": "Q38167881",
-      "clubWikidataQid": "Q192873",
-      "p54CurrentClub": "Q459148",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2019-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:7",
-      "playerName": "Neil Farrugia",
-      "wikidataQid": "Q102276813",
-      "clubWikidataQid": "Q192873",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:8",
-      "playerName": "Johnny Koutroumbis",
-      "wikidataQid": "Q27671198",
-      "clubWikidataQid": "Q216523",
-      "p54CurrentClub": "Q732929",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Motherwell_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:9",
-      "playerName": "Ivor Pandur",
-      "wikidataQid": "Q84462730",
-      "clubWikidataQid": "Q19597",
-      "p54CurrentClub": "Q8639",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2020-09-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:9",
-      "playerName": "Ross McCausland",
-      "wikidataQid": "Q111994930",
-      "clubWikidataQid": "Q19597",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:9",
-      "playerName": "Findlay Curtis",
-      "wikidataQid": "Q131863254",
-      "clubWikidataQid": "Q19597",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "scotland-premiership:10",
       "playerName": "Scott Tanser",
       "wikidataQid": "Q16245873",
@@ -2121,42 +1677,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "scotland-premiership:11",
-      "playerName": "Joel Cotterill",
-      "wikidataQid": "Q122032856",
-      "clubWikidataQid": "Q268776",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:12",
-      "playerName": "Henry Fieldson",
-      "wikidataQid": "Q123308334",
-      "clubWikidataQid": "Q319136",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "scotland-premiership:12",
-      "playerName": "Declan John",
-      "wikidataQid": "Q5249348",
-      "clubWikidataQid": "Q319136",
-      "p54CurrentClub": "Q946297",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2014-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "spain-la-liga:2",
       "playerName": "Luismi Cruz",
       "wikidataQid": "Q110292960",
@@ -2166,42 +1686,6 @@
       "p54ActiveClubStart": null,
       "verification": "wikipedia_squad_no_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/Deportivo_de_A_Coru%C3%B1a",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "spain-la-liga:3",
-      "playerName": "Iñaki Williams",
-      "wikidataQid": "Q18608497",
-      "clubWikidataQid": "Q8687",
-      "p54CurrentClub": "Q738846",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2018-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "spain-la-liga:3",
-      "playerName": "Nicolás Serrano",
-      "wikidataQid": "Q106644525",
-      "clubWikidataQid": "Q8687",
-      "p54CurrentClub": "Q738846",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2025-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "spain-la-liga:3",
-      "playerName": "Nico Williams",
-      "wikidataQid": "Q104414736",
-      "clubWikidataQid": "Q8687",
-      "p54CurrentClub": "Q42267",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2022-09-24",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
       "duplicateInClubs": []
     },
     {
@@ -2433,54 +1917,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "turkey-super-lig:14",
-      "playerName": "Adil Demirbağ",
-      "wikidataQid": "Q38085271",
-      "clubWikidataQid": "Q513840",
-      "p54CurrentClub": "Q630348",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Konyaspor",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "turkey-super-lig:14",
-      "playerName": "Marko Jevtović",
-      "wikidataQid": "Q16730286",
-      "clubWikidataQid": "Q513840",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Konyaspor",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "turkey-super-lig:14",
-      "playerName": "Jean-Luc Dompé",
-      "wikidataQid": "Q17476763",
-      "clubWikidataQid": "Q513840",
-      "p54CurrentClub": "Q376635",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2020-01-31",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Konyaspor",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "turkey-super-lig:14",
-      "playerName": "Mostafa Mohamed",
-      "wikidataQid": "Q28086083",
-      "clubWikidataQid": "Q513840",
-      "p54CurrentClub": "Q192071",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2023-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Konyaspor",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "turkey-super-lig:15",
       "playerName": "Ali Sowe",
       "wikidataQid": "Q14774514",
@@ -2543,9 +1979,11 @@
       "verifiedNames": []
     },
     "belgian-pro-league:3": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Thomas Jutten"
+      ]
     },
     "belgian-pro-league:4": {
       "total": 3,
@@ -2558,9 +1996,11 @@
       "verifiedNames": []
     },
     "belgian-pro-league:6": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Gianni Bruno"
+      ]
     },
     "belgian-pro-league:7": {
       "total": 0,
@@ -2585,9 +2025,11 @@
       "verifiedNames": []
     },
     "belgian-pro-league:11": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Gerardo Arteaga"
+      ]
     },
     "belgian-pro-league:12": {
       "total": 1,
@@ -2631,9 +2073,11 @@
       "verifiedNames": []
     },
     "belgian-pro-league:18": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Chuks Aneke"
+      ]
     },
     "brazil-serie-a:1": {
       "total": 0,
@@ -2722,9 +2166,11 @@
       "verifiedNames": []
     },
     "brazil-serie-a:15": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "João Peglow"
+      ]
     },
     "brazil-serie-a:16": {
       "total": 1,
@@ -2744,9 +2190,11 @@
       "verifiedNames": []
     },
     "brazil-serie-a:19": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Alan Ruschel"
+      ]
     },
     "brazil-serie-a:20": {
       "total": 2,
@@ -2894,9 +2342,11 @@
       ]
     },
     "france-ligue-1:1": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Damien Dufour"
+      ]
     },
     "france-ligue-1:2": {
       "total": 2,
@@ -2919,9 +2369,11 @@
       "verifiedNames": []
     },
     "france-ligue-1:6": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Joseph Alcazar"
+      ]
     },
     "france-ligue-1:7": {
       "total": 4,
@@ -2986,9 +2438,11 @@
       "verifiedNames": []
     },
     "france-ligue-1:16": {
-      "total": 3,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Niko Sigur"
+      ]
     },
     "france-ligue-1:17": {
       "total": 1,
@@ -3003,7 +2457,7 @@
       "verifiedNames": []
     },
     "germany-bundesliga:1": {
-      "total": 4,
+      "total": 3,
       "verified": 0,
       "verifiedNames": []
     },
@@ -3032,8 +2486,10 @@
     },
     "germany-bundesliga:5": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "Isac Lidberg"
+      ]
     },
     "germany-bundesliga:6": {
       "total": 2,
@@ -3102,8 +2558,10 @@
     },
     "germany-bundesliga:16": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "Hasan Kuruçay"
+      ]
     },
     "germany-bundesliga:17": {
       "total": 1,
@@ -3152,9 +2610,11 @@
       "verifiedNames": []
     },
     "greece-super-league:6": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Sofian Chakla"
+      ]
     },
     "greece-super-league:7": {
       "total": 0,
@@ -3236,9 +2696,11 @@
       ]
     },
     "italy-serie-a:4": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Fabio Pisacane"
+      ]
     },
     "italy-serie-a:5": {
       "total": 1,
@@ -3282,9 +2744,11 @@
       ]
     },
     "italy-serie-a:11": {
-      "total": 2,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Nuno Tavares"
+      ]
     },
     "italy-serie-a:12": {
       "total": 1,
@@ -3298,13 +2762,17 @@
     },
     "italy-serie-a:14": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "Alex Meret"
+      ]
     },
     "italy-serie-a:15": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "Benjamin Cremaschi"
+      ]
     },
     "italy-serie-a:16": {
       "total": 2,
@@ -3358,9 +2826,11 @@
       "verifiedNames": []
     },
     "netherlands-eredivisie:3": {
-      "total": 2,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Mateo Chávez"
+      ]
     },
     "netherlands-eredivisie:4": {
       "total": 1,
@@ -3371,8 +2841,10 @@
     },
     "netherlands-eredivisie:5": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "Sem Steijn"
+      ]
     },
     "netherlands-eredivisie:6": {
       "total": 3,
@@ -3380,9 +2852,11 @@
       "verifiedNames": []
     },
     "netherlands-eredivisie:7": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Hamid Zarbaf"
+      ]
     },
     "netherlands-eredivisie:8": {
       "total": 3,
@@ -3393,9 +2867,11 @@
       ]
     },
     "netherlands-eredivisie:9": {
-      "total": 2,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Victor Jensen"
+      ]
     },
     "netherlands-eredivisie:10": {
       "total": 1,
@@ -3405,9 +2881,11 @@
       ]
     },
     "netherlands-eredivisie:11": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Simon Thern"
+      ]
     },
     "netherlands-eredivisie:12": {
       "total": 1,
@@ -3418,8 +2896,10 @@
     },
     "netherlands-eredivisie:13": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "Simon Graves"
+      ]
     },
     "netherlands-eredivisie:14": {
       "total": 4,
@@ -3449,9 +2929,11 @@
       ]
     },
     "netherlands-eredivisie:18": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Kristófer Kristinsson"
+      ]
     },
     "portugal-liga-portugal:1": {
       "total": 0,
@@ -3486,9 +2968,11 @@
       "verifiedNames": []
     },
     "portugal-liga-portugal:7": {
-      "total": 2,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Jeremy Arévalo"
+      ]
     },
     "portugal-liga-portugal:8": {
       "total": 0,
@@ -3516,9 +3000,11 @@
       "verifiedNames": []
     },
     "portugal-liga-portugal:13": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Ibrahima Camará"
+      ]
     },
     "portugal-liga-portugal:14": {
       "total": 4,
@@ -3561,39 +3047,53 @@
       ]
     },
     "scotland-premiership:3": {
-      "total": 4,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Charlie Reilly"
+      ]
     },
     "scotland-premiership:4": {
-      "total": 4,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Josh McPake"
+      ]
     },
     "scotland-premiership:5": {
-      "total": 2,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Jordan Smith"
+      ]
     },
     "scotland-premiership:6": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "MJ Kamson-Kamara"
+      ]
     },
     "scotland-premiership:7": {
-      "total": 4,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Lachlan Rose"
+      ]
     },
     "scotland-premiership:8": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "Johnny Koutroumbis"
+      ]
     },
     "scotland-premiership:9": {
-      "total": 3,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Ivor Pandur"
+      ]
     },
     "scotland-premiership:10": {
       "total": 1,
@@ -3602,13 +3102,17 @@
     },
     "scotland-premiership:11": {
       "total": 1,
-      "verified": 0,
-      "verifiedNames": []
+      "verified": 1,
+      "verifiedNames": [
+        "Joel Cotterill"
+      ]
     },
     "scotland-premiership:12": {
-      "total": 2,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Henry Fieldson"
+      ]
     },
     "spain-la-liga:1": {
       "total": 1,
@@ -3626,9 +3130,11 @@
       ]
     },
     "spain-la-liga:3": {
-      "total": 3,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Iñaki Williams"
+      ]
     },
     "spain-la-liga:4": {
       "total": 3,
@@ -3815,9 +3321,11 @@
       "verifiedNames": []
     },
     "turkey-super-lig:10": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Eren Bilen"
+      ]
     },
     "turkey-super-lig:11": {
       "total": 3,
@@ -3835,14 +3343,18 @@
       ]
     },
     "turkey-super-lig:13": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Ahmet Hasan Göcen"
+      ]
     },
     "turkey-super-lig:14": {
-      "total": 4,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Adil Demirbağ"
+      ]
     },
     "turkey-super-lig:15": {
       "total": 1,
