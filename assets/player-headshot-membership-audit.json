@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T16:58:36.054550+00:00",
+  "checkedAt": "2026-11-17T17:40:43.119948+00:00",
   "rule": "Official current squad/loan evidence or matching active Wikidata club; Wikipedia-only records are not independently corroborated; cross-club duplicates excluded",
   "totalClubs": 150,
   "totalPlayers": 292,
-  "wikipediaPagesRechecked": 0,
+  "wikipediaPagesRechecked": 129,
   "wikipediaPagesUnavailable": 0,
   "uniquePlayers": 292,
   "verifiedClubsWithThree": 17,
