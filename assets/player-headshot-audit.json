@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "totalClubs": 58,
-  "clubsWithThree": 169,
-  "clubsWithFour": 45,
-  "totalCurrentHeadshots": 382,
+  "totalClubs": 43,
+  "clubsWithThree": 179,
+  "clubsWithFour": 44,
+  "totalCurrentHeadshots": 388,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -30,15 +30,16 @@
     },
     "belgian-pro-league:3": {
       "clubName": "Cercle Brugge KSV",
-      "checkedAt": "2026-11-17T13:30:32.345433+00:00",
+      "checkedAt": "2026-11-17T14:19:08.728551+00:00",
       "rosterNames": 59,
       "photoCandidates": 0,
       "sources": [
         "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
-        "https://nl.wikipedia.org/wiki/Cercle_Brugge"
+        "https://nl.wikipedia.org/wiki/Cercle_Brugge",
+        "https://www.wikidata.org/wiki/Q364698"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "belgian-pro-league:4": {
       "clubName": "Club Brugge",
@@ -53,7 +54,7 @@
     },
     "belgian-pro-league:5": {
       "clubName": "Waasland-Beveren",
-      "checkedAt": "2026-11-17T13:31:52.074666+00:00",
+      "checkedAt": "2026-11-17T14:20:57.906535+00:00",
       "rosterNames": 40,
       "photoCandidates": 0,
       "sources": [
@@ -65,15 +66,16 @@
     },
     "belgian-pro-league:6": {
       "clubName": "KAA Gent",
-      "checkedAt": "2026-11-17T13:31:03.314117+00:00",
+      "checkedAt": "2026-11-17T14:19:49.979833+00:00",
       "rosterNames": 41,
-      "photoCandidates": 3,
+      "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/KAA_Gent",
-        "https://fr.wikipedia.org/wiki/KAA_La_Gantoise"
+        "https://fr.wikipedia.org/wiki/KAA_La_Gantoise",
+        "https://www.wikidata.org/wiki/Q18232"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "belgian-pro-league:7": {
       "clubName": "KV Kortrijk",
@@ -125,14 +127,15 @@
     },
     "belgian-pro-league:11": {
       "clubName": "Racing Genk",
-      "checkedAt": "2026-11-17T13:31:21.219866+00:00",
+      "checkedAt": "2026-11-17T14:20:20.528687+00:00",
       "rosterNames": 26,
       "photoCandidates": 1,
       "sources": [
-        "https://en.wikipedia.org/wiki/KRC_Genk"
+        "https://en.wikipedia.org/wiki/KRC_Genk",
+        "https://www.wikidata.org/wiki/Q216032"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "belgian-pro-league:12": {
       "clubName": "Royal Charleroi SC",
@@ -208,14 +211,15 @@
     },
     "belgian-pro-league:18": {
       "clubName": "Zulte-Waregem",
-      "checkedAt": "2026-11-17T13:32:00.116326+00:00",
+      "checkedAt": "2026-11-17T14:21:11.007191+00:00",
       "rosterNames": 40,
       "photoCandidates": 0,
       "sources": [
-        "https://fr.wikipedia.org/wiki/SV_Zulte_Waregem"
+        "https://fr.wikipedia.org/wiki/SV_Zulte_Waregem",
+        "https://www.wikidata.org/wiki/Q376635"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "brazil-serie-a:1": {
       "clubName": "Vitória",
@@ -376,15 +380,16 @@
     },
     "brazil-serie-a:15": {
       "clubName": "Internacional",
-      "checkedAt": "2026-11-17T13:32:10.964406+00:00",
+      "checkedAt": "2026-11-17T14:21:24.786831+00:00",
       "rosterNames": 26,
       "photoCandidates": 6,
       "sources": [
         "https://en.wikipedia.org/wiki/SC_Internacional",
-        "https://pt.wikipedia.org/wiki/Sport_Club_Internacional"
+        "https://pt.wikipedia.org/wiki/Sport_Club_Internacional",
+        "https://www.wikidata.org/wiki/Q80845"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "brazil-serie-a:16": {
       "clubName": "Palmeiras",
@@ -399,7 +404,7 @@
     },
     "brazil-serie-a:17": {
       "clubName": "Red Bull Bragantino",
-      "checkedAt": "2026-11-17T13:32:42.659857+00:00",
+      "checkedAt": "2026-11-17T14:22:03.914562+00:00",
       "rosterNames": 32,
       "photoCandidates": 5,
       "sources": [
@@ -423,14 +428,15 @@
     },
     "brazil-serie-a:19": {
       "clubName": "Chapecoense",
-      "checkedAt": "2026-11-17T13:32:05.610978+00:00",
+      "checkedAt": "2026-11-17T14:21:18.386805+00:00",
       "rosterNames": 34,
       "photoCandidates": 0,
       "sources": [
-        "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol"
+        "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
+        "https://www.wikidata.org/wiki/Q2536715"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "brazil-serie-a:20": {
       "clubName": "Vasco da Gama",
@@ -523,7 +529,7 @@
     },
     "england-premier-league:8": {
       "clubName": "Everton",
-      "checkedAt": "2026-11-17T13:33:11.803011+00:00",
+      "checkedAt": "2026-11-17T14:22:29.320427+00:00",
       "rosterNames": 41,
       "photoCandidates": 10,
       "sources": [
@@ -667,14 +673,15 @@
     },
     "france-ligue-1:1": {
       "clubName": "AJ Auxerre",
-      "checkedAt": "2026-11-17T13:35:57.470103+00:00",
+      "checkedAt": "2026-11-17T14:23:29.829457+00:00",
       "rosterNames": 26,
       "photoCandidates": 2,
       "sources": [
-        "https://en.wikipedia.org/wiki/AJ_Auxerre"
+        "https://en.wikipedia.org/wiki/AJ_Auxerre",
+        "https://www.wikidata.org/wiki/Q182876"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "france-ligue-1:2": {
       "clubName": "Angers",
@@ -689,15 +696,16 @@
     },
     "france-ligue-1:3": {
       "clubName": "AS Monaco",
-      "checkedAt": "2026-11-17T13:36:08.377058+00:00",
+      "checkedAt": "2026-11-17T14:23:48.905196+00:00",
       "rosterNames": 26,
       "photoCandidates": 18,
       "sources": [
         "https://en.wikipedia.org/wiki/AS_Monaco_FC",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_AS_Monaco_FC_season"
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_AS_Monaco_FC_season",
+        "https://www.wikidata.org/wiki/Q180305"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "france-ligue-1:4": {
       "clubName": "Brest",
@@ -725,15 +733,16 @@
     },
     "france-ligue-1:6": {
       "clubName": "Lille",
-      "checkedAt": "2026-11-17T13:38:36.015669+00:00",
+      "checkedAt": "2026-11-17T14:25:38.235479+00:00",
       "rosterNames": 25,
       "photoCandidates": 12,
       "sources": [
         "https://en.wikipedia.org/wiki/Lille_OSC",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Lille_OSC_season"
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Lille_OSC_season",
+        "https://www.wikidata.org/wiki/Q19516"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "france-ligue-1:7": {
       "clubName": "Lyon",
@@ -838,13 +847,13 @@
     },
     "france-ligue-1:16": {
       "clubName": "Toulouse",
-      "checkedAt": "2026-11-17T13:05:51.942668+00:00",
+      "checkedAt": "2026-11-17T14:26:52.061071+00:00",
       "rosterNames": 23,
-      "photoCandidates": 14,
+      "photoCandidates": 6,
       "sources": [
         "https://en.wikipedia.org/wiki/Toulouse_FC"
       ],
-      "count": 3,
+      "count": 1,
       "status": "ready"
     },
     "france-ligue-1:17": {
@@ -912,16 +921,14 @@
     },
     "germany-bundesliga:5": {
       "clubName": "Borussia Monchengladbach",
-      "checkedAt": "2026-11-17T13:07:32.842535+00:00",
-      "rosterNames": 35,
-      "photoCandidates": 46,
+      "checkedAt": "2026-11-17T14:26:54.463695+00:00",
+      "rosterNames": 32,
+      "photoCandidates": 7,
       "sources": [
-        "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Borussia_M%C3%B6nchengladbach_season",
-        "https://de.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach"
+        "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach"
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "germany-bundesliga:6": {
       "clubName": "Eintracht Frankfurt",
@@ -1042,15 +1049,14 @@
     },
     "germany-bundesliga:16": {
       "clubName": "Schalke 04",
-      "checkedAt": "2026-11-17T13:11:27.959340+00:00",
-      "rosterNames": 28,
-      "photoCandidates": 34,
+      "checkedAt": "2026-11-17T14:26:57.128374+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 9,
       "sources": [
-        "https://en.wikipedia.org/wiki/FC_Schalke_04",
-        "https://de.wikipedia.org/wiki/FC_Schalke_04"
+        "https://en.wikipedia.org/wiki/FC_Schalke_04"
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "germany-bundesliga:17": {
       "clubName": "FC Union Berlin",
@@ -1132,14 +1138,14 @@
     },
     "greece-super-league:6": {
       "clubName": "Iraklis",
-      "checkedAt": "2026-11-17T13:14:20.863871+00:00",
+      "checkedAt": "2026-11-17T14:27:00.155203+00:00",
       "rosterNames": 26,
-      "photoCandidates": 8,
+      "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/Iraklis_F.C._(Thessaloniki)"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "greece-super-league:7": {
       "clubName": "OFI Crete",
@@ -1266,15 +1272,16 @@
     },
     "italy-serie-a:4": {
       "clubName": "Cagliari",
-      "checkedAt": "2026-11-17T11:36:17.170618+00:00",
+      "checkedAt": "2026-11-17T14:27:17.397308+00:00",
       "rosterNames": 31,
-      "photoCandidates": 25,
+      "photoCandidates": 10,
       "sources": [
         "https://en.wikipedia.org/wiki/Cagliari_Calcio",
-        "https://it.wikipedia.org/wiki/Cagliari_Calcio"
+        "https://it.wikipedia.org/wiki/Cagliari_Calcio",
+        "https://www.wikidata.org/wiki/Q1900"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "italy-serie-a:5": {
       "clubName": "Como",
@@ -1350,16 +1357,14 @@
     },
     "italy-serie-a:11": {
       "clubName": "Lazio",
-      "checkedAt": "2026-11-17T11:40:24.536919+00:00",
-      "rosterNames": 61,
-      "photoCandidates": 51,
+      "checkedAt": "2026-11-17T14:28:21.574758+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 7,
       "sources": [
-        "https://en.wikipedia.org/wiki/SS_Lazio",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_SS_Lazio_season",
-        "https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Lazio"
+        "https://en.wikipedia.org/wiki/SS_Lazio"
       ],
-      "count": 2,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "italy-serie-a:12": {
       "clubName": "Lecce",
@@ -1388,28 +1393,25 @@
     },
     "italy-serie-a:14": {
       "clubName": "Napoli",
-      "checkedAt": "2026-11-17T11:42:43.237553+00:00",
+      "checkedAt": "2026-11-17T14:28:24.415113+00:00",
       "rosterNames": 27,
-      "photoCandidates": 51,
+      "photoCandidates": 15,
       "sources": [
-        "https://en.wikipedia.org/wiki/SSC_Napoli",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_SSC_Napoli_season",
-        "https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Calcio_Napoli"
+        "https://en.wikipedia.org/wiki/SSC_Napoli"
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "italy-serie-a:15": {
       "clubName": "Parma",
-      "checkedAt": "2026-11-17T11:43:41.049709+00:00",
+      "checkedAt": "2026-11-17T14:28:28.487529+00:00",
       "rosterNames": 28,
-      "photoCandidates": 14,
+      "photoCandidates": 2,
       "sources": [
-        "https://en.wikipedia.org/wiki/Parma_Calcio_1913",
-        "https://it.wikipedia.org/wiki/Parma_Calcio_1913"
+        "https://en.wikipedia.org/wiki/Parma_Calcio_1913"
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "italy-serie-a:16": {
       "clubName": "AS Roma",
@@ -2474,5 +2476,5 @@
       "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T13:40:08.124015+00:00"
+  "lastUpdated": "2026-11-17T14:28:32.717875+00:00"
 }

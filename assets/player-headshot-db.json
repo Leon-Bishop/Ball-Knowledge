@@ -89,9 +89,32 @@
     "belgian-pro-league:3": {
       "clubName": "Cercle Brugge KSV",
       "clubWikidataQid": "Q364698",
-      "players": [],
+      "players": [
+        {
+          "clubId": "belgian-pro-league:3",
+          "playerName": "Thomas Jutten",
+          "wikidataQid": "Q3251241",
+          "clubWikidataQid": "Q364698",
+          "photoUrl": "./assets/player-headshots/belgian-pro-league-3--Q3251241.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thomas_jutten_lommel_united.jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "author": "Sjepolleke",
+          "membershipSource": "https://www.wikidata.org/wiki/Q3251241",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:19:49.566449+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3251241",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
-      "checkedAt": "2026-11-17T13:30:32.345433+00:00"
+      "checkedAt": "2026-11-17T14:19:08.728551+00:00"
     },
     "belgian-pro-league:4": {
       "clubName": "Club Brugge",
@@ -172,14 +195,37 @@
       "clubWikidataQid": "Q509170",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/SK_Beveren",
-      "checkedAt": "2026-11-17T13:31:52.074666+00:00"
+      "checkedAt": "2026-11-17T14:20:57.906535+00:00"
     },
     "belgian-pro-league:6": {
       "clubName": "KAA Gent",
       "clubWikidataQid": "Q18232",
-      "players": [],
+      "players": [
+        {
+          "clubId": "belgian-pro-league:6",
+          "playerName": "Gianni Bruno",
+          "wikidataQid": "Q1032681",
+          "clubWikidataQid": "Q18232",
+          "photoUrl": "./assets/player-headshots/belgian-pro-league-6--Q1032681.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gianni_Bruno_2016_(cropped).jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "author": "Екатерина Лаут",
+          "membershipSource": "https://www.wikidata.org/wiki/Q1032681",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:20:20.109789+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q1032681",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/KAA_Gent",
-      "checkedAt": "2026-11-17T13:31:03.314117+00:00"
+      "checkedAt": "2026-11-17T14:19:49.979833+00:00"
     },
     "belgian-pro-league:7": {
       "clubName": "KV Kortrijk",
@@ -324,9 +370,32 @@
     "belgian-pro-league:11": {
       "clubName": "Racing Genk",
       "clubWikidataQid": "Q216032",
-      "players": [],
+      "players": [
+        {
+          "clubId": "belgian-pro-league:11",
+          "playerName": "Gerardo Arteaga",
+          "wikidataQid": "Q27119679",
+          "clubWikidataQid": "Q216032",
+          "photoUrl": "./assets/player-headshots/belgian-pro-league-11--Q27119679.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gerardo_Arteaga.png",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "author": "Selección Nacional de México",
+          "membershipSource": "https://www.wikidata.org/wiki/Q27119679",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:20:57.451717+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q27119679",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/KRC_Genk",
-      "checkedAt": "2026-11-17T13:31:21.219866+00:00"
+      "checkedAt": "2026-11-17T14:20:20.528687+00:00"
     },
     "belgian-pro-league:12": {
       "clubName": "Royal Charleroi SC",
@@ -598,9 +667,32 @@
     "belgian-pro-league:18": {
       "clubName": "Zulte-Waregem",
       "clubWikidataQid": "Q376635",
-      "players": [],
+      "players": [
+        {
+          "clubId": "belgian-pro-league:18",
+          "playerName": "Chuks Aneke",
+          "wikidataQid": "Q2025988",
+          "clubWikidataQid": "Q376635",
+          "photoUrl": "./assets/player-headshots/belgian-pro-league-18--Q2025988.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chuks_Aneke_0802025_(3).jpg",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "author": "Timmy96",
+          "membershipSource": "https://www.wikidata.org/wiki/Q2025988",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:21:17.968910+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q2025988",
+          "associationType": "old_commons_source_fresh_active_P54_verified"
+        }
+      ],
       "rosterSource": "https://fr.wikipedia.org/wiki/SV_Zulte_Waregem",
-      "checkedAt": "2026-11-17T13:32:00.116326+00:00"
+      "checkedAt": "2026-11-17T14:21:11.007191+00:00"
     },
     "brazil-serie-a:1": {
       "clubName": "Vitória",
@@ -1067,9 +1159,32 @@
     "brazil-serie-a:15": {
       "clubName": "Internacional",
       "clubWikidataQid": "Q80845",
-      "players": [],
+      "players": [
+        {
+          "clubId": "brazil-serie-a:15",
+          "playerName": "João Peglow",
+          "wikidataQid": "Q75058907",
+          "clubWikidataQid": "Q80845",
+          "photoUrl": "./assets/player-headshots/brazil-serie-a-15--Q75058907.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jo%C3%A3o_Peglow_NYCFC_vs_DC_United_on_Aug_30_2025-021_(cropped).jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Bryan Berlin",
+          "membershipSource": "https://www.wikidata.org/wiki/Q75058907",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:22:03.488316+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q75058907",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-      "checkedAt": "2026-11-17T13:32:10.964406+00:00"
+      "checkedAt": "2026-11-17T14:21:24.786831+00:00"
     },
     "brazil-serie-a:16": {
       "clubName": "Palmeiras",
@@ -1106,7 +1221,7 @@
       "clubWikidataQid": "Q541744",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Red_Bull_Bragantino",
-      "checkedAt": "2026-11-17T13:32:42.659857+00:00"
+      "checkedAt": "2026-11-17T14:22:03.914562+00:00"
     },
     "brazil-serie-a:18": {
       "clubName": "Santos",
@@ -1141,9 +1256,32 @@
     "brazil-serie-a:19": {
       "clubName": "Chapecoense",
       "clubWikidataQid": "Q2536715",
-      "players": [],
+      "players": [
+        {
+          "clubId": "brazil-serie-a:19",
+          "playerName": "Alan Ruschel",
+          "wikidataQid": "Q16336243",
+          "clubWikidataQid": "Q2536715",
+          "photoUrl": "./assets/player-headshots/brazil-serie-a-19--Q16336243.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alanruschel.jpg",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "author": "Sirli Freitas/Chapecoense",
+          "membershipSource": "https://www.wikidata.org/wiki/Q16336243",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:21:24.351188+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q16336243",
+          "associationType": "old_commons_source_fresh_active_P54_verified"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
-      "checkedAt": "2026-11-17T13:32:05.610978+00:00"
+      "checkedAt": "2026-11-17T14:21:18.386805+00:00"
     },
     "brazil-serie-a:20": {
       "clubName": "Vasco da Gama",
@@ -1764,7 +1902,7 @@
       "clubWikidataQid": "Q5794",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Everton_F.C.",
-      "checkedAt": "2026-11-17T13:33:11.803011+00:00"
+      "checkedAt": "2026-11-17T14:22:29.320427+00:00"
     },
     "england-premier-league:9": {
       "clubName": "Fulham",
@@ -2495,9 +2633,32 @@
     "france-ligue-1:1": {
       "clubName": "AJ Auxerre",
       "clubWikidataQid": "Q182876",
-      "players": [],
+      "players": [
+        {
+          "clubId": "france-ligue-1:1",
+          "playerName": "Damien Dufour",
+          "wikidataQid": "Q16208222",
+          "clubWikidataQid": "Q182876",
+          "photoUrl": "./assets/player-headshots/france-ligue-1-1--Q16208222.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lens_B_-_Sedan_(24-01-2015)_55.jpg",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "author": "Supporterhéninois",
+          "membershipSource": "https://www.wikidata.org/wiki/Q16208222",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:23:48.471627+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q16208222",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/AJ_Auxerre",
-      "checkedAt": "2026-11-17T13:35:57.470103+00:00"
+      "checkedAt": "2026-11-17T14:23:29.829457+00:00"
     },
     "france-ligue-1:2": {
       "clubName": "Angers",
@@ -2556,7 +2717,7 @@
       "clubWikidataQid": "Q180305",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
-      "checkedAt": "2026-11-17T13:36:08.377058+00:00"
+      "checkedAt": "2026-11-17T14:23:48.905196+00:00"
     },
     "france-ligue-1:4": {
       "clubName": "Brest",
@@ -2598,9 +2759,32 @@
     "france-ligue-1:6": {
       "clubName": "Lille",
       "clubWikidataQid": "Q19516",
-      "players": [],
+      "players": [
+        {
+          "clubId": "france-ligue-1:6",
+          "playerName": "Joseph Alcazar",
+          "wikidataQid": "Q586731",
+          "clubWikidataQid": "Q19516",
+          "photoUrl": "./assets/player-headshots/france-ligue-1-6--Q586731.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Alcazar_1930.jpg",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "author": "Agence Rol",
+          "membershipSource": "https://www.wikidata.org/wiki/Q586731",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:26:51.646860+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q586731",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Lille_OSC",
-      "checkedAt": "2026-11-17T13:38:36.015669+00:00"
+      "checkedAt": "2026-11-17T14:25:38.235479+00:00"
     },
     "france-ligue-1:7": {
       "clubName": "Lyon",
@@ -3109,62 +3293,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Toulouse_FC",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true,
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Toulouse_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
-        },
-        {
-          "clubId": "france-ligue-1:16",
-          "playerName": "Santiago Hidalgo",
-          "wikidataQid": "Q114356315",
-          "clubWikidataQid": "Q19518",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-16--Q114356315.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santiago_Hidalgo.png",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Stbann",
-          "membershipSource": "https://en.wikipedia.org/wiki/Toulouse_FC",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true,
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Toulouse_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
-        },
-        {
-          "clubId": "france-ligue-1:16",
-          "playerName": "Guillaume Restes",
-          "wikidataQid": "Q121423825",
-          "clubWikidataQid": "Q19518",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-16--Q121423825.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guillaume_Restes.png",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Stbann",
-          "membershipSource": "https://en.wikipedia.org/wiki/Toulouse_FC",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true,
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Toulouse_FC",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:26:54.020978+00:00",
+          "secondaryRosterSource": "https://www.toulousefc.com/equipes/equipe-professionnelle/effectif"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Toulouse_FC",
-      "checkedAt": "2026-11-17T13:05:51.942668+00:00"
+      "checkedAt": "2026-11-17T14:26:52.061071+00:00"
     },
     "france-ligue-1:17": {
       "clubName": "Lens",
@@ -3356,27 +3496,6 @@
           "associationType": "current_squad_wikipedia_section",
           "rosterVerification": "recent_conflicting_club",
           "secondaryRosterSource": "https://www.wikidata.org/wiki/Q699094",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "germany-bundesliga:1",
-          "playerName": "Han-Noah Massengo",
-          "wikidataQid": "Q58313463",
-          "clubWikidataQid": "Q15755",
-          "photoUrl": "./assets/player-headshots/germany-bundesliga-1--Q58313463.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Massengo_aja_asse_2425.png",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Paté kroute",
-          "membershipSource": "https://en.wikipedia.org/wiki/FC_Augsburg",
-          "membershipSection": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Augsburg",
           "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
           "faceQualityVerified": true
         }
@@ -3689,18 +3808,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true,
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:26:56.711198+00:00",
+          "secondaryRosterSource": "https://www.borussia.de/news/borussia-unterliegt-mainz-mit-3-4"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Borussia_M%C3%B6nchengladbach",
-      "checkedAt": "2026-11-17T13:07:32.842535+00:00"
+      "checkedAt": "2026-11-17T14:26:54.463695+00:00"
     },
     "germany-bundesliga:6": {
       "clubName": "Eintracht Frankfurt",
@@ -4415,18 +4534,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/FC_Schalke_04",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true,
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Schalke_04",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00"
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:26:59.711262+00:00",
+          "secondaryRosterSource": "https://schalke04.de/kader-2026-2027/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/FC_Schalke_04",
-      "checkedAt": "2026-11-17T13:11:27.959340+00:00"
+      "checkedAt": "2026-11-17T14:26:57.128374+00:00"
     },
     "germany-bundesliga:17": {
       "clubName": "FC Union Berlin",
@@ -4706,9 +4825,32 @@
     "greece-super-league:6": {
       "clubName": "Iraklis",
       "clubWikidataQid": "Q592241",
-      "players": [],
+      "players": [
+        {
+          "clubId": "greece-super-league:6",
+          "playerName": "Sofian Chakla",
+          "wikidataQid": "Q20435993",
+          "clubWikidataQid": "Q592241",
+          "photoUrl": "./assets/player-headshots/greece-super-league-6--Q20435993.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sofian_Chakla_2.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Sofian Chakla",
+          "membershipSource": "https://en.wikipedia.org/wiki/Iraklis_F.C._(Thessaloniki)",
+          "membershipSection": "current squad",
+          "membershipHeading": "current squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:27:16.983387+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q20435993"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Iraklis_F.C._(Thessaloniki)",
-      "checkedAt": "2026-11-17T13:14:20.863871+00:00"
+      "checkedAt": "2026-11-17T14:27:00.155203+00:00"
     },
     "greece-super-league:7": {
       "clubName": "OFI Crete",
@@ -5326,9 +5468,32 @@
     "italy-serie-a:4": {
       "clubName": "Cagliari",
       "clubWikidataQid": "Q1900",
-      "players": [],
+      "players": [
+        {
+          "clubId": "italy-serie-a:4",
+          "playerName": "Fabio Pisacane",
+          "wikidataQid": "Q3737807",
+          "clubWikidataQid": "Q1900",
+          "photoUrl": "./assets/player-headshots/italy-serie-a-4--Q3737807.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pisacane2425.png",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Sandrino 14",
+          "membershipSource": "https://www.wikidata.org/wiki/Q3737807",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:28:21.154747+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3737807",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Cagliari_Calcio",
-      "checkedAt": "2026-11-17T11:36:17.170618+00:00"
+      "checkedAt": "2026-11-17T14:27:17.397308+00:00"
     },
     "italy-serie-a:5": {
       "clubName": "Como",
@@ -5659,40 +5824,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SS_Lazio",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SS_Lazio",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "italy-serie-a:11",
-          "playerName": "Adam Marušić",
-          "wikidataQid": "Q16234793",
-          "clubWikidataQid": "Q2609",
-          "photoUrl": "./assets/player-headshots/italy-serie-a-11--Q16234793.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frosinone_Calcio_-_Benito_Stirpe_-_vs_Lazio_0-1_4_2_2019_ANT_2974_-_Adam_Maru%C5%A1i%C4%87_(cropped).jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Original: Antonio Fraioli Derivative work: Danyele",
-          "membershipSource": "https://en.wikipedia.org/wiki/SS_Lazio",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SS_Lazio",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:28:23.993085+00:00",
+          "secondaryRosterSource": "https://www.sslazio.it/en/team/lazio/squadra"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SS_Lazio",
-      "checkedAt": "2026-11-17T11:40:24.536919+00:00"
+      "checkedAt": "2026-11-17T14:28:21.574758+00:00"
     },
     "italy-serie-a:12": {
       "clubName": "Lecce",
@@ -5793,18 +5936,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SSC_Napoli",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SSC_Napoli",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:28:28.022451+00:00",
+          "secondaryRosterSource": "https://sscnapoli.it/en/stagione/rosa?id=3052"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SSC_Napoli",
-      "checkedAt": "2026-11-17T11:42:43.237553+00:00"
+      "checkedAt": "2026-11-17T14:28:24.415113+00:00"
     },
     "italy-serie-a:15": {
       "clubName": "Parma",
@@ -5823,18 +5966,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Parma_Calcio_1913",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Parma_Calcio_1913",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:28:32.286913+00:00",
+          "secondaryRosterSource": "https://www.parmacalcio1913.com/en/main-news/serie-a-enilive-squad-list-parma-bologna/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Parma_Calcio_1913",
-      "checkedAt": "2026-11-17T11:43:41.049709+00:00"
+      "checkedAt": "2026-11-17T14:28:28.487529+00:00"
     },
     "italy-serie-a:16": {
       "clubName": "AS Roma",
@@ -10068,6 +10211,6 @@
       "checkedAt": "2026-11-17T11:06:48.531998+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T13:40:08.124015+00:00",
-  "rosterAuditAt": "2026-11-17T13:45:30.090186+00:00"
+  "lastUpdated": "2026-11-17T14:28:32.717875+00:00",
+  "rosterAuditAt": "2026-11-17T14:28:32.286913+00:00"
 }
