@@ -28,7 +28,7 @@ weekly automatic updates. No Cloudflare configuration is needed.
 
 ### Game
 
-- **12 leagues**, **214 input club records** (**214 unique playable clubs**).
+- **8 leagues**, **150 input club records** (**150 unique playable clubs**).
 - **6 interface languages:** Turkish, English, Spanish, French, Italian and Portuguese. The name **Ball Knowledge** is unchanged in all six.
 - Five guess attempts **per round**, forgiving guesses (short names, common nicknames, accent-insensitive spelling and small typos), final session score, streak, progress tracker and spoiler-free share.
 - Ambiguous short names (for example, Manchester or Madrid) ask for a more specific club name without costing an attempt. The guess input does not reveal answer suggestions.
@@ -37,7 +37,7 @@ weekly automatic updates. No Cloudflare configuration is needed.
 - Light/dark mode; a separate, fully designed league-selection screen and game screen.
 - Official league logo URLs are referenced where available. Tiles have **clearly distinct typographic fallbacks** if a logo cannot load. Logo imagery is **not bundled**, and use may be subject to trademark restrictions.
 
-> **Fact coverage note:** There are **553 populated stories across 214 club records**, including **388 source-tagged** stories and **334 stories with all six translations**. The long-term target is **678 stories**; **125 slots remain**. All 214 club records have at least one playable story. Sources and editorial review are documented in `RESEARCH_COVERAGE.md`.
+> **Fact coverage note:** There are **396 populated stories across 150 club records**, including **285 source-tagged** stories and **240 stories with all six translations**. The long-term target is **486 stories**; **90 slots remain**. All 150 club records have at least one playable story. Sources and editorial review are documented in `RESEARCH_COVERAGE.md`.
 
 ## Running locally
 
@@ -94,3 +94,6 @@ Club facts include draft research; publishing the project does not independently
 - Changing league/quiz-length selections affects **the next session**, not the ongoing session. Returning to the Play tab resumes the current run.
 - The Premier League list contains **20 distinct playable clubs**.
 - `npm test` now checks finite session length, uniqueness, daily determinism, final scoring and all six translations.
+
+### Photo editing pack
+After every update to the live headshot catalog, the **Export editable player photos matched to verified clubs** GitHub Action creates a downloadable ZIP named **Ball-Knowledge-Player-Photos**. Download it from the latest successful run's **Artifacts** section. Inside are `PHOTOS_BY_TEAM` (named for the verified player and club), the `PLAYER_TEAM_PHOTO_MATCHES.csv` spreadsheet-style index, `ORIGINAL_FILE_NAMES` for lossless reintegration, and a local `PHOTO_GALLERY.html` preview. Only actual game-eligible headshots are included; no historical or wrong-club images. Preserve filenames when returning edited images.

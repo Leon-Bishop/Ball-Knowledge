@@ -1,0 +1,57 @@
+name: Export editable player photos matched to verified clubs
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    paths:
+      - "leagues.json"
+      - "teams.enriched.json"
+      - "assets/player-headshot-db.json"
+      - "assets/player-headshot-manual-review.json"
+      - "assets/player-photo-clues.js"
+      - "assets/player-headshots/**"
+      - "photo-db/official-roster-evidence.json"
+      - "scripts/export-photo-eligibility.mjs"
+      - "scripts/build-photo-edit-pack.py"
+      - ".github/workflows/editable-player-photos.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  photo-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Export real game-eligible player, club and photo identities
+        run: node scripts/export-photo-eligibility.mjs /tmp/bk-photo-eligibility.json
+      - name: Prepare editable named photos and player-team matching index
+        run: python3 scripts/build-photo-edit-pack.py --eligibility /tmp/bk-photo-eligibility.json --output out/Ball-Knowledge-Player-Photos
+      - name: Validate every mapped image exists and is downloadable
+        run: |
+          python3 - <<'PY'
+          import csv
+          from pathlib import Path
+          root=Path('out/Ball-Knowledge-Player-Photos')
+          with (root/'PLAYER_TEAM_PHOTO_MATCHES.csv').open(encoding='utf-8-sig',newline='') as fh:
+              rows=list(csv.DictReader(fh))
+          assert rows and len(rows)>=69, len(rows)
+          assert len({(r['club_id'],r['player_qid']) for r in rows})==len(rows)
+          for row in rows:
+              assert (root/row['editable_photo_path']).is_file(), row
+              assert (root/row['original_copy_path']).is_file(), row
+              assert not row['league_id'] in {
+                  'belgian-pro-league','brazil-serie-a',
+                  'scotland-premiership','greece-super-league'}, row
+          print(f'Validated {len(rows)} verified named portraits across 8 remaining leagues')
+          PY
+      - name: Downloadable ZIP with photographs, CSV, JSON and review gallery
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ball-Knowledge-Player-Photos
+          path: out/Ball-Knowledge-Player-Photos/
+          if-no-files-found: error
+          retention-days: 90

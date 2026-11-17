@@ -41,11 +41,8 @@ CURRENT_SECTIONS = {
     "plantilla actual", "huidige selectie", "aktueller kader", "güncel kadro"
 }
 LEAGUE_LANGUAGES = {
-    "belgian-pro-league": ("nl", "fr"),
-    "brazil-serie-a": ("pt",),
     "france-ligue-1": ("fr",),
     "germany-bundesliga": ("de",),
-    "greece-super-league": ("el",),
     "italy-serie-a": ("it",),
     "netherlands-eredivisie": ("nl",),
     "portugal-liga-portugal": ("pt",),
@@ -803,8 +800,7 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
             sources = []
             if pages.get("en"):
                 sources.append(("en", pages["en"]))
-                if team["league_id"] != "brazil-serie-a":
-                    sources.append(("en", "2026–27 " + pages["en"] + " season"))
+                sources.append(("en", "2026–27 " + pages["en"] + " season"))
             for language in LEAGUE_LANGUAGES.get(team["league_id"], ()):
                 if pages.get(language):
                     sources.append((language, pages[language]))
@@ -1025,7 +1021,7 @@ def self_test():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--max-clubs", type=int, default=214)
+    parser.add_argument("--max-clubs", type=int, default=150)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--since", default=None)
     parser.add_argument("--self-test", action="store_true")

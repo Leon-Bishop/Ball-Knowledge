@@ -1,18 +1,4 @@
 {
-  "belgian-pro-league": {
-    "file": "Belgian Pro League logo (2020, boxed).svg",
-    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Belgian%20Pro%20League%20logo%20%282020%2C%20boxed%29.svg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Belgian_Pro_League_logo_%282020%2C_boxed%29.svg",
-    "status": "Official artwork source identified on Wikimedia Commons; live browser display not independently verified",
-    "primary_cdn_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Belgian_Pro_League_logo_%282020%2C_boxed%29.svg"
-  },
-  "brazil-serie-a": {
-    "file": "Campeonato Brasileiro Série A logo (2026).svg",
-    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato%20Brasileiro%20S%C3%A9rie%20A%20logo%20%282026%29.svg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Campeonato_Brasileiro_S%C3%A9rie_A_logo_%282026%29.svg",
-    "status": "Official artwork source identified on Wikimedia Commons; live browser display not independently verified",
-    "primary_cdn_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Campeonato_Brasileiro_S%C3%A9rie_A_logo_%282026%29.svg"
-  },
   "england-premier-league": {
     "file": "Pl-logo-light.svg",
     "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pl-logo-light.svg",
@@ -34,13 +20,6 @@
     "status": "Current Bundesliga emblem (red player silhouette and wordmark); secondary Wikimedia SVG wordmark URL retained in app",
     "primary_cdn_url": "https://assets.footylogos.com/logos/bundesliga-germany/bundesliga-germany-logo-footylogos.svg",
     "secondary_cdn_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Bundesliga_logo.svg"
-  },
-  "greece-super-league": {
-    "file": "Stoiximan Super League Greece logo.svg",
-    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stoiximan%20Super%20League%20Greece%20logo.svg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Stoiximan_Super_League_Greece_logo.svg",
-    "status": "Official artwork source identified on Wikimedia Commons; live browser display not independently verified",
-    "primary_cdn_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Stoiximan_Super_League_Greece_logo.svg"
   },
   "italy-serie-a": {
     "file": "Serie A logo 2022.svg",
@@ -76,11 +55,5 @@
     "source_page": "https://commons.wikimedia.org/wiki/File:S%C3%BCper_Lig_logo.svg",
     "status": "Official artwork source identified on Wikimedia Commons; live browser display not independently verified",
     "primary_cdn_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Trendyol_S%C3%BCper_Lig_logo_dikey.svg"
-  },
-  "scotland-premiership": {
-    "file": "Scottish Premiership lion logo (PNG)",
-    "asset_url": "https://images.seeklogo.com/logo-png/27/1/scottish-premiership-logo-png_seeklogo-277110.png",
-    "source_page": "https://seeklogo.com/vector-logo/277110/scottish-premiership",
-    "status": "Existing SPFL Premiership artwork from Seeklogo; external browser display not independently verified"
   }
 }

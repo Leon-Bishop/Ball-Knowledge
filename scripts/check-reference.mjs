@@ -23,6 +23,6 @@ assert(!ui.includes('directory-club'),'Dropdown must not show an ordinary team-l
 assert(html.includes('aria-controls="standingsRows"'),'Dropdown must control the standings table');
 assert(!ui.includes("getElementById('guess')")&&!ui.includes("node('guess')"),'Directory must not filter answers');
 assert(css.includes('.game-layout{display:grid;')&&css.includes('grid-template-columns:minmax(0,1fr)'));
-for(const id of ['belgian-pro-league','brazil-serie-a','england-premier-league','france-ligue-1','germany-bundesliga','greece-super-league','italy-serie-a','netherlands-eredivisie','portugal-liga-portugal','scotland-premiership','spain-la-liga','turkey-super-lig'])assert(source.includes("'"+id+"':"),id+' standings integration missing');
+for(const id of ['england-premier-league','france-ligue-1','germany-bundesliga','italy-serie-a','netherlands-eredivisie','portugal-liga-portugal','spain-la-liga','turkey-super-lig'])assert(source.includes("'"+id+"':"),id+' standings integration missing');
 for(const [lang,d] of Object.entries(strings))for(const key of ['unknownClub','liveStandings','standingsUnavailable','clubDirectory','referenceBrowse','referenceClubCount'])assert(d[key],lang+' missing '+key);
-console.log('✓ Direct guesses, single/multi league live standings, dropdown switching, 12 leagues, six translations');
+console.log('✓ Direct guesses, single/multi league live standings, dropdown switching, 8 leagues, six translations');

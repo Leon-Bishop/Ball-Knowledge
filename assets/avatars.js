@@ -61,8 +61,8 @@ function refresh(){
 function setProfile(name,avatarTeamId){viewer=String(name||'').trim();profileChoice=avatarTeamId||'';refresh()}
 function words(){
  return document.documentElement.lang==='tr'
- ?{title:'Takım armanı seç',search:'Takım veya lig ara…',change:'Armanı değiştir',choose:'Takım arması seç',hint:'214 kulüp · 12 lig',none:'Kulüp bulunamadı',close:'Kapat'}
- :{title:'Choose your club badge',search:'Search teams or leagues…',change:'Change badge',choose:'Choose club badge',hint:'214 clubs · 12 leagues',none:'No clubs found',close:'Close'};
+ ?{title:'Takım armanı seç',search:'Takım veya lig ara…',change:'Armanı değiştir',choose:'Takım arması seç',hint:'150 kulüp · 8 lig',none:'Kulüp bulunamadı',close:'Kapat'}
+ :{title:'Choose your club badge',search:'Search teams or leagues…',change:'Change badge',choose:'Choose club badge',hint:'150 clubs · 8 leagues',none:'No clubs found',close:'Close'};
 }
 function changeButton(){
  const b=document.createElement('button');b.type='button';b.className='outline-button club-change-button';
@@ -154,9 +154,9 @@ function commitPending(username){
 }
 function resetPending(){pendingChoice='';}
 
-window.BKAvatars={apply,setProfile,setSaveHandler(fn){saveHandler=fn},changeButton,pendingButton,pendingBadge,commitPending,resetPending,getPending:()=>pendingChoice,openPicker:open,refresh,count:214};
-fetch('./assets/club-avatar-catalog.json').then(r=>{if(!r.ok)throw Error('Catalog not found');return r.json()}).then(data=>{
- if(data.clubs.length!==214)throw Error('Unexpected club count');
+window.BKAvatars={apply,setProfile,setSaveHandler(fn){saveHandler=fn},changeButton,pendingButton,pendingBadge,commitPending,resetPending,getPending:()=>pendingChoice,openPicker:open,refresh,count:150};
+fetch('./assets/club-avatar-catalog.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Catalog not found');return r.json()}).then(data=>{
+ if(data.clubs.length!==150)throw Error('Unexpected club count');
  catalog=data;clubs=new Map(data.clubs.map(c=>[c.id,c]));refresh();
  if(dialog&&!dialog.cover.hidden)draw();
 }).catch(e=>console.warn('Club badge catalog failed:',e));

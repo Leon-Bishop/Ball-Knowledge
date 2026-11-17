@@ -1,25 +1,5 @@
 [
   {
-    "id": "belgian-pro-league",
-    "name": "Belgian Pro League",
-    "country": "Belgium",
-    "continent": "Europe",
-    "tags": [
-      "uploaded",
-      "sample-season"
-    ]
-  },
-  {
-    "id": "brazil-serie-a",
-    "name": "Brazilian Série A",
-    "country": "Brazil",
-    "continent": "South America",
-    "tags": [
-      "uploaded",
-      "sample-season"
-    ]
-  },
-  {
     "id": "england-premier-league",
     "name": "English Premier League",
     "country": "England",
@@ -50,16 +30,6 @@
     ]
   },
   {
-    "id": "greece-super-league",
-    "name": "Greek Super League",
-    "country": "Greece",
-    "continent": "Europe",
-    "tags": [
-      "uploaded",
-      "sample-season"
-    ]
-  },
-  {
     "id": "italy-serie-a",
     "name": "Italian Serie A",
     "country": "Italy",
@@ -83,16 +53,6 @@
     "id": "portugal-liga-portugal",
     "name": "Liga Portugal",
     "country": "Portugal",
-    "continent": "Europe",
-    "tags": [
-      "uploaded",
-      "sample-season"
-    ]
-  },
-  {
-    "id": "scotland-premiership",
-    "name": "Scottish Premiership",
-    "country": "Scotland",
     "continent": "Europe",
     "tags": [
       "uploaded",

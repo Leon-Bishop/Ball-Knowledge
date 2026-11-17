@@ -15,8 +15,6 @@ const selected={
  'turkey-super-lig:10':['Q68593365','Q108513776'],
  'turkey-super-lig:13':['Q21004899','Q60182084'],
  'england-premier-league:8':['Q18614641','Q83632882','Q110565461'],
- 'belgian-pro-league:5':['Q17496664','Q1764965','Q10551618'],
- 'brazil-serie-a:17':['Q5340762','Q14921884'],
  'france-ligue-1:3':['Q105473333','Q56612830','Q713627'],
  'portugal-liga-portugal:12':['Q56233291']
 };

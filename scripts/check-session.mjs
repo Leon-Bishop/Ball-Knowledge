@@ -5,8 +5,8 @@ import Session from '../assets/session-core.js';
 const data=JSON.parse(fs.readFileSync(new URL('../teams.enriched.json',import.meta.url),'utf8'));
 const i18n=JSON.parse(fs.readFileSync(new URL('../i18n.json',import.meta.url),'utf8'));
 const unique=Session.uniqueClubs(data);
-assert.equal(data.length,214,'The original club list must stay intact');
-assert.equal(unique.length,214,'All 214 clubs should be unique and playable');
+assert.equal(data.length,150,'The original club list must stay intact');
+assert.equal(unique.length,150,'All 150 clubs should be unique and playable');
 const league=unique.filter(t=>t.league_id==='turkey-super-lig');
 assert.equal(league.length,18,'Turkish league must have 18 unique clubs');
 for(const [limit,expected] of [[5,5],[10,10],[20,18],[Infinity,18]]){
@@ -35,18 +35,18 @@ assert.equal(Session.currentClub(single),null,'No additional rounds');
 assert.equal(Session.summary(single).score,90,'Perfect session should score 90');
 assert.equal(Session.summary(single).bestStreak,18);
 assert.throws(()=>Session.recordRound(single,single.order[0],{won:true,wrongCount:0}),/complete/,'Never refill the deck');
-const mixed=unique.filter(x=>['greece-super-league','belgian-pro-league','turkey-super-lig'].includes(x.league_id));
-assert.equal(mixed.length,50,'The supplied 14+18+18-club example should produce 50 rounds');
+const mixed=unique.filter(x=>['england-premier-league','italy-serie-a','turkey-super-lig'].includes(x.league_id));
+assert.equal(mixed.length,58,'The retained 20+20+18-club example should produce 58 rounds');
 const combined=Session.createSession(mixed,{random:()=>.34});
-assert.equal(combined.order.length,50);
-assert.equal(new Set(combined.order.map(t=>t.id)).size,50);
+assert.equal(combined.order.length,58);
+assert.equal(new Set(combined.order.map(t=>t.id)).size,58);
 for(let i=0;i<combined.order.length;i++){
  const club=Session.currentClub(combined);
  Session.recordRound(combined,club,{won:i%2===0,wrongCount:i%2===0?2:5});
 }
 const summary=Session.summary(combined);
 assert.deepEqual({total:summary.total,played:summary.played,correct:summary.correct,missed:summary.missed,score:summary.score,maxScore:summary.maxScore},
- {total:50,played:50,correct:25,missed:25,score:75,maxScore:250});
+ {total:58,played:58,correct:29,missed:29,score:87,maxScore:290});
 assert.equal(combined.completed,true);
 const europe=unique.filter(x=>x.league_id==='england-premier-league');
 assert.equal(europe.length,20,'Premier League must include 20 unique clubs');
@@ -65,4 +65,4 @@ const source=fs.readFileSync(new URL('../assets/app.js',import.meta.url),'utf8')
 assert(!source.includes('deck=[]'),'No automatic deck-refill logic in the game');
 assert.match(source,/function renderFinalSummary\(\)/);
 assert.match(source,/BallKnowledgeSession\.recordRound/);
-console.log('✓ Finite session: 18/18 and 50/50 rounds; no repeat answers; scores, daily order, deduplication, translations.');
+console.log('✓ Finite session: 18/18 and 58/58 rounds; no repeat answers; scores, daily order, deduplication, translations.');
