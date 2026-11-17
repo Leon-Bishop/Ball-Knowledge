@@ -85,7 +85,7 @@
       "clubWikidataQid": "Q364698",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
-      "checkedAt": "2026-11-17T13:24:09.667838+00:00"
+      "checkedAt": "2026-11-17T13:30:32.345433+00:00"
     },
     "belgian-pro-league:4": {
       "clubName": "Club Brugge",
@@ -157,14 +157,14 @@
       "clubWikidataQid": "Q509170",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/SK_Beveren",
-      "checkedAt": "2026-11-17T13:25:33.730949+00:00"
+      "checkedAt": "2026-11-17T13:31:52.074666+00:00"
     },
     "belgian-pro-league:6": {
       "clubName": "KAA Gent",
       "clubWikidataQid": "Q18232",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/KAA_Gent",
-      "checkedAt": "2026-11-17T13:24:39.443714+00:00"
+      "checkedAt": "2026-11-17T13:31:03.314117+00:00"
     },
     "belgian-pro-league:7": {
       "clubName": "KV Kortrijk",
@@ -311,7 +311,7 @@
       "clubWikidataQid": "Q216032",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/KRC_Genk",
-      "checkedAt": "2026-11-17T13:25:00.816418+00:00"
+      "checkedAt": "2026-11-17T13:31:21.219866+00:00"
     },
     "belgian-pro-league:12": {
       "clubName": "Royal Charleroi SC",
@@ -570,7 +570,7 @@
       "clubWikidataQid": "Q376635",
       "players": [],
       "rosterSource": "https://fr.wikipedia.org/wiki/SV_Zulte_Waregem",
-      "checkedAt": "2026-11-17T13:25:41.815728+00:00"
+      "checkedAt": "2026-11-17T13:32:00.116326+00:00"
     },
     "brazil-serie-a:1": {
       "clubName": "Vitória",
@@ -1024,7 +1024,7 @@
       "clubWikidataQid": "Q80845",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-      "checkedAt": "2026-11-17T13:26:59.100695+00:00"
+      "checkedAt": "2026-11-17T13:32:10.964406+00:00"
     },
     "brazil-serie-a:16": {
       "clubName": "Palmeiras",
@@ -1061,7 +1061,7 @@
       "clubWikidataQid": "Q541744",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Red_Bull_Bragantino",
-      "checkedAt": "2026-11-17T13:27:25.519034+00:00"
+      "checkedAt": "2026-11-17T13:32:42.659857+00:00"
     },
     "brazil-serie-a:18": {
       "clubName": "Santos",
@@ -1095,7 +1095,7 @@
       "clubWikidataQid": "Q2536715",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
-      "checkedAt": "2026-11-17T13:26:20.777601+00:00"
+      "checkedAt": "2026-11-17T13:32:05.610978+00:00"
     },
     "brazil-serie-a:20": {
       "clubName": "Vasco da Gama",
@@ -1692,7 +1692,7 @@
       "clubWikidataQid": "Q5794",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Everton_F.C.",
-      "checkedAt": "2026-11-17T12:51:37.251049+00:00"
+      "checkedAt": "2026-11-17T13:33:11.803011+00:00"
     },
     "england-premier-league:9": {
       "clubName": "Fulham",
@@ -1809,56 +1809,21 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:34:19.937558+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19345715"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Ipswich_Town_F.C.",
-      "checkedAt": "2026-11-17T12:52:24.050047+00:00"
+      "checkedAt": "2026-11-17T13:34:14.830826+00:00"
     },
     "england-premier-league:11": {
       "clubName": "Leeds United",
       "clubWikidataQid": "Q1128631",
       "players": [
-        {
-          "clubId": "england-premier-league:11",
-          "playerName": "Alex Cairns",
-          "wikidataQid": "Q4716779",
-          "clubWikidataQid": "Q1128631",
-          "photoUrl": "./assets/player-headshots/england-premier-league-11--Q4716779.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alex_Cairns_13092025_(6).jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Timmy96",
-          "membershipSource": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "england-premier-league:11",
-          "playerName": "Jayden Bogle",
-          "wikidataQid": "Q56223640",
-          "clubWikidataQid": "Q1128631",
-          "photoUrl": "./assets/player-headshots/england-premier-league-11--Q56223640.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jayden_Bogle_13092025_(6).jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Timmy96",
-          "membershipSource": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
         {
           "clubId": "england-premier-league:11",
           "playerName": "Dominic Calvert-Lewin",
@@ -1874,13 +1839,16 @@
           "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:34:43.594589+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19956709"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
-      "checkedAt": "2026-11-17T12:53:30.958335+00:00"
+      "checkedAt": "2026-11-17T13:34:20.519019+00:00"
     },
     "england-premier-league:13": {
       "clubName": "Manchester City",
@@ -2176,30 +2144,11 @@
       "players": [
         {
           "clubId": "england-premier-league:16",
-          "playerName": "Ryan Yates",
-          "wikidataQid": "Q28794002",
+          "playerName": "Ousmane Diomande",
+          "wikidataQid": "Q116753805",
           "clubWikidataQid": "Q19490",
-          "photoUrl": "./assets/player-headshots/england-premier-league-16--Q28794002.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ryan_Yates.jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Nottingham Forest F.C.",
-          "membershipSource": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "england-premier-league:16",
-          "playerName": "Ibrahim Sangaré",
-          "wikidataQid": "Q27832634",
-          "clubWikidataQid": "Q19490",
-          "photoUrl": "./assets/player-headshots/england-premier-league-16--Q27832634.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ibrahim_Sangare_Cote_D%27Ivoire_v_Ecuador_14_June_2026-21.jpg",
+          "photoUrl": "./assets/player-headshots/england-premier-league-16--Q116753805.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ousmane_Diomande_Cote_D%27Ivoire_v_Ecuador_14_June_2026-55.jpg",
           "license": "CC BY-SA 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "author": "Bryan Berlin",
@@ -2208,13 +2157,16 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:35:48.976078+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q116753805"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
-      "checkedAt": "2026-11-17T12:54:00.577015+00:00"
+      "checkedAt": "2026-11-17T13:34:44.200244+00:00"
     },
     "england-premier-league:17": {
       "clubName": "Coventry City",
@@ -2235,51 +2187,16 @@
           "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "england-premier-league:17",
-          "playerName": "Yann Gboho",
-          "wikidataQid": "Q66107406",
-          "clubWikidataQid": "Q19580",
-          "photoUrl": "./assets/player-headshots/england-premier-league-17--Q66107406.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:TFC_players_on_Fan_days_-_Gboho_(cropped)_-_1.jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Gaillac",
-          "membershipSource": "https://en.wikipedia.org/wiki/Coventry_City_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "england-premier-league:17",
-          "playerName": "Oliver Dovin",
-          "wikidataQid": "Q96834825",
-          "clubWikidataQid": "Q19580",
-          "photoUrl": "./assets/player-headshots/england-premier-league-17--Q96834825.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oliver_Dovin_(Sweden_U21_starting_XI_vs_Moldova_U21,_13_October_2023).jpg",
-          "license": "Public domain",
-          "licenseUrl": "",
-          "author": "Amanda Aikioniemi",
-          "membershipSource": "https://en.wikipedia.org/wiki/Coventry_City_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:33:11.216279+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19787021"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Coventry_City_F.C.",
-      "checkedAt": "2026-11-17T12:54:54.015150+00:00"
+      "checkedAt": "2026-11-17T13:33:07.740248+00:00"
     },
     "england-premier-league:18": {
       "clubName": "Tottenham",
@@ -2300,51 +2217,16 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "england-premier-league:18",
-          "playerName": "Richarlison",
-          "wikidataQid": "Q20806743",
-          "clubWikidataQid": "Q18741",
-          "photoUrl": "./assets/player-headshots/england-premier-league-18--Q20806743.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richarlison_%C3%A9_homenageado_na_ALES_(10.July.2019)_08_(cropped).jpg",
-          "license": "CC BY 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-          "author": "Assembleia Legislativa do Espírito Santo",
-          "membershipSource": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "england-premier-league:18",
-          "playerName": "Guglielmo Vicario",
-          "wikidataQid": "Q44083681",
-          "clubWikidataQid": "Q18741",
-          "photoUrl": "./assets/player-headshots/england-premier-league-18--Q44083681.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guglielmo_Vicario.png",
-          "license": "CC BY 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-          "author": "AFC Bournemouth",
-          "membershipSource": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:35:56.909140+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q114870703"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.",
-      "checkedAt": "2026-11-17T12:55:20.297616+00:00"
+      "checkedAt": "2026-11-17T13:35:49.594385+00:00"
     },
     "england-premier-league:19": {
       "clubName": "Sunderland",
@@ -2541,48 +2423,9 @@
     "france-ligue-1:1": {
       "clubName": "AJ Auxerre",
       "clubWikidataQid": "Q182876",
-      "players": [
-        {
-          "clubId": "france-ligue-1:1",
-          "playerName": "Paul Nardi",
-          "wikidataQid": "Q15503377",
-          "clubWikidataQid": "Q182876",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-1--Q15503377.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stade_rennais_vs_USM_Alger,_July_16th_2016_-_Paul_Nardi_3.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "S. Plaine",
-          "membershipSource": "https://en.wikipedia.org/wiki/AJ_Auxerre",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "france-ligue-1:1",
-          "playerName": "Marvin Senaya",
-          "wikidataQid": "Q108606228",
-          "clubWikidataQid": "Q182876",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-1--Q108606228.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marvin_Senaya_England_v_Ghana_23_June_2026-211.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/AJ_Auxerre",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        }
-      ],
+      "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/AJ_Auxerre",
-      "checkedAt": "2026-11-17T12:55:51.570849+00:00"
+      "checkedAt": "2026-11-17T13:35:57.470103+00:00"
     },
     "france-ligue-1:2": {
       "clubName": "Angers",
@@ -2633,29 +2476,9 @@
     "france-ligue-1:3": {
       "clubName": "AS Monaco",
       "clubWikidataQid": "Q180305",
-      "players": [
-        {
-          "clubId": "france-ligue-1:3",
-          "playerName": "Lamine Camara",
-          "wikidataQid": "Q116896436",
-          "clubWikidataQid": "Q180305",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-3--Q116896436.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bara_Ndiaye_France_v_Senegal_16_June_2026-239_(cropped).jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        }
-      ],
+      "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
-      "checkedAt": "2026-11-17T12:56:44.584181+00:00"
+      "checkedAt": "2026-11-17T13:36:08.377058+00:00"
     },
     "france-ligue-1:4": {
       "clubName": "Brest",
@@ -2696,7 +2519,7 @@
       "clubWikidataQid": "Q19516",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Lille_OSC",
-      "checkedAt": "2026-11-17T12:59:28.055942+00:00"
+      "checkedAt": "2026-11-17T13:38:36.015669+00:00"
     },
     "france-ligue-1:7": {
       "clubName": "Lyon",
@@ -2800,25 +2623,6 @@
       "players": [
         {
           "clubId": "france-ligue-1:8",
-          "playerName": "Himad Abdelli",
-          "wikidataQid": "Q58303150",
-          "clubWikidataQid": "Q132885",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-8--Q58303150.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abdelli_asse_sco_2425.png",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Paté kroute",
-          "membershipSource": "https://en.wikipedia.org/wiki/Olympique_de_Marseille",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "france-ligue-1:8",
           "playerName": "Geoffrey Kondogbia",
           "wikidataQid": "Q724147",
           "clubWikidataQid": "Q132885",
@@ -2832,32 +2636,16 @@
           "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "france-ligue-1:8",
-          "playerName": "Bamo Meïté",
-          "wikidataQid": "Q116838606",
-          "clubWikidataQid": "Q132885",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-8--Q116838606.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bamo_Meite_MHSC.png",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "author": "MHSC TV - Montpellier Hérault Sport Club",
-          "membershipSource": "https://en.wikipedia.org/wiki/Olympique_de_Marseille",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:40:07.532986+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q724147"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Olympique_de_Marseille",
-      "checkedAt": "2026-11-17T13:00:30.743675+00:00"
+      "checkedAt": "2026-11-17T13:40:03.194853+00:00"
     },
     "france-ligue-1:9": {
       "clubName": "Le Mans",
@@ -2957,25 +2745,6 @@
       "players": [
         {
           "clubId": "france-ligue-1:11",
-          "playerName": "Ibrahima Baldé",
-          "wikidataQid": "Q109661032",
-          "clubWikidataQid": "Q48911",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-11--Q109661032.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entra%C3%AEnement_du_RC_Lens_-_3_juillet_2023_35.jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Supporterhéninois",
-          "membershipSource": "https://en.wikipedia.org/wiki/FC_Lorient",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "france-ligue-1:11",
           "playerName": "Montassar Talbi",
           "wikidataQid": "Q30118244",
           "clubWikidataQid": "Q48911",
@@ -2989,32 +2758,16 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "france-ligue-1:11",
-          "playerName": "Benjamin Leroy",
-          "wikidataQid": "Q2896147",
-          "clubWikidataQid": "Q48911",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-11--Q2896147.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prince_Oniangue_et_Benjamin_Leroy.JPG",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Supporterhéninois",
-          "membershipSource": "https://en.wikipedia.org/wiki/FC_Lorient",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:40:02.635579+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q30118244"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/FC_Lorient",
-      "checkedAt": "2026-11-17T13:02:37.516047+00:00"
+      "checkedAt": "2026-11-17T13:40:00.042922+00:00"
     },
     "france-ligue-1:12": {
       "clubName": "Paris Saint-Germain",
@@ -3302,44 +3055,6 @@
       "players": [
         {
           "clubId": "france-ligue-1:17",
-          "playerName": "Mathieu Gorgelin",
-          "wikidataQid": "Q13057",
-          "clubWikidataQid": "Q191843",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-17--Q13057.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-03-03_Match_Brest-OL_-_Gorgelin.JPG",
-          "license": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "author": "Jejecam",
-          "membershipSource": "https://en.wikipedia.org/wiki/RC_Lens",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "france-ligue-1:17",
-          "playerName": "Nidal Čelik",
-          "wikidataQid": "Q131149776",
-          "clubWikidataQid": "Q191843",
-          "photoUrl": "./assets/player-headshots/france-ligue-1-17--Q131149776.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C4%8Celik_rcl_asse_2425.png",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Paté kroute",
-          "membershipSource": "https://en.wikipedia.org/wiki/RC_Lens",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "france-ligue-1:17",
           "playerName": "Florian Sotoca",
           "wikidataQid": "Q23799421",
           "clubWikidataQid": "Q191843",
@@ -3353,13 +3068,16 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:38:35.439469+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q23799421"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/RC_Lens",
-      "checkedAt": "2026-11-17T13:06:32.859666+00:00"
+      "checkedAt": "2026-11-17T13:38:27.745615+00:00"
     },
     "france-ligue-1:18": {
       "clubName": "Troyes",
@@ -10161,6 +9879,6 @@
       "checkedAt": "2026-11-17T11:06:48.531998+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T13:28:04.884114+00:00",
-  "rosterAuditAt": "2026-11-17T13:28:04.227105+00:00"
+  "lastUpdated": "2026-11-17T13:40:08.124015+00:00",
+  "rosterAuditAt": "2026-11-17T13:40:07.532986+00:00"
 }
