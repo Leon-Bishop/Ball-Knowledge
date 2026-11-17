@@ -138,19 +138,23 @@ window.BKPlayerPhotos.ready=Promise.all([
     const official=officialEvidence.officialClubs?.[clubId];
     if(!club||!official||!Array.isArray(club.players)||
        club.clubWikidataQid!==saved?.clubWikidataQid)continue;
-    const found=new Set(club.players.map(p=>p.wikidataQid));
     for(const player of saved.players||[]){
      if(!player.manualFaceReviewed||player.clubId!==clubId||
         player.clubWikidataQid!==club.clubWikidataQid||
-        !official.players?.[player.wikidataQid]||
-        found.has(player.wikidataQid))continue;
+        !official.players?.[player.wikidataQid])continue;
      const photo='./assets/player-headshots/'+clubId.replace(/:/g,'-')+
        '--'+player.wikidataQid+'.jpg';
      if(player.photoUrl!==photo)continue;
+     const existingIndex=club.players.findIndex(p=>p.wikidataQid===player.wikidataQid);
+     const existing=club.players[existingIndex];
+     // Prefer a new usable verified import. Restore the previously reviewed
+     // headshot only when the generated record is missing or was rejected.
+     if(existing?.verifiedCurrent===true&&existing.faceQualityVerified===true&&
+        existing.faceCrop===true)continue;
+     if(existingIndex>=0)club.players.splice(existingIndex,1);
      club.players.push({...player,playerName:official.players[player.wikidataQid],
       rosterVerification:'official_club_squad',verifiedCurrent:true,
       verifiedAt:manualReview.reviewedAt,secondaryRosterSource:official.source});
-     found.add(player.wikidataQid);
     }
    }
   }
