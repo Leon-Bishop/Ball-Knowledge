@@ -33,3 +33,7 @@ jobs:
           assert not module.license_is_usable("CC BY-ND 4.0")
           assert module.commons_file_name("https://commons.wikimedia.org/wiki/Special:FilePath/Player.jpg") == "Player.jpg"
           PY
+      - name: Validate current-squad roster parser and headshot license rules
+        run: |
+          python -m py_compile scripts/build_current_headshots.py
+          python scripts/build_current_headshots.py --self-test
