@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 169,
-  "clubsWithFour": 157,
-  "totalCurrentHeadshots": 676,
+  "clubsWithThree": 188,
+  "clubsWithFour": 174,
+  "totalCurrentHeadshots": 752,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -1744,7 +1744,229 @@
       ],
       "count": 4,
       "status": "ready"
+    },
+    "spain-la-liga:5": {
+      "clubName": "FC Barcelona",
+      "checkedAt": "2026-11-17T09:14:30.404285+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 24,
+      "sources": [
+        "https://en.wikipedia.org/wiki/FC_Barcelona"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:6": {
+      "clubName": "Elche",
+      "checkedAt": "2026-11-17T09:14:33.282548+00:00",
+      "rosterNames": 35,
+      "photoCandidates": 17,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Elche_CF"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:7": {
+      "clubName": "Celta Vigo",
+      "checkedAt": "2026-11-17T09:14:35.774025+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 14,
+      "sources": [
+        "https://en.wikipedia.org/wiki/RC_Celta_de_Vigo"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:8": {
+      "clubName": "Espanyol",
+      "checkedAt": "2026-11-17T09:14:38.947078+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/RCD_Espanyol"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:9": {
+      "clubName": "Getafe CF",
+      "checkedAt": "2026-11-17T09:14:41.886479+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 13,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Getafe_CF"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:10": {
+      "clubName": "Levante",
+      "checkedAt": "2026-11-17T09:14:44.265521+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 6,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Levante_UD"
+      ],
+      "count": 3,
+      "status": "ready"
+    },
+    "spain-la-liga:11": {
+      "clubName": "Málaga",
+      "checkedAt": "2026-11-17T09:14:49.177250+00:00",
+      "rosterNames": 47,
+      "photoCandidates": 9,
+      "sources": [
+        "https://en.wikipedia.org/wiki/M%C3%A1laga_CF",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_M%C3%A1laga_CF_season",
+        "https://es.wikipedia.org/wiki/M%C3%A1laga_Club_de_F%C3%BAtbol"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
+    },
+    "spain-la-liga:12": {
+      "clubName": "CA Osasuna",
+      "checkedAt": "2026-11-17T09:14:57.078945+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/CA_Osasuna"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:13": {
+      "clubName": "Racing Santander",
+      "checkedAt": "2026-11-17T09:15:00.520229+00:00",
+      "rosterNames": 38,
+      "photoCandidates": 11,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Racing_de_Santander"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:14": {
+      "clubName": "Rayo Vallecano",
+      "checkedAt": "2026-11-17T09:15:04.043146+00:00",
+      "rosterNames": 34,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rayo_Vallecano"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:15": {
+      "clubName": "Real Betis",
+      "checkedAt": "2026-11-17T09:15:06.760771+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 19,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Real_Betis"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:16": {
+      "clubName": "Real Madrid",
+      "checkedAt": "2026-11-17T09:15:09.754370+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 24,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Real_Madrid_CF"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:17": {
+      "clubName": "Real Sociedad",
+      "checkedAt": "2026-11-17T09:15:12.477696+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 20,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Real_Sociedad"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:18": {
+      "clubName": "Sevilla FC",
+      "checkedAt": "2026-11-17T09:15:15.534182+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sevilla_FC"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:19": {
+      "clubName": "Valencia CF",
+      "checkedAt": "2026-11-17T09:15:18.189446+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Valencia_CF"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "spain-la-liga:20": {
+      "clubName": "Villarreal CF",
+      "checkedAt": "2026-11-17T09:15:21.133491+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Villarreal_CF"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:1": {
+      "clubName": "Alanyaspor",
+      "checkedAt": "2026-11-17T09:15:23.893969+00:00",
+      "rosterNames": 19,
+      "photoCandidates": 8,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alanyaspor"
+      ],
+      "count": 3,
+      "status": "ready"
+    },
+    "turkey-super-lig:2": {
+      "clubName": "Amed SFK",
+      "checkedAt": "2026-11-17T09:15:28.845854+00:00",
+      "rosterNames": 20,
+      "photoCandidates": 8,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Amed_S.F.K."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:3": {
+      "clubName": "Beşiktaş",
+      "checkedAt": "2026-11-17T09:15:31.799699+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 23,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Be%C5%9Fikta%C5%9F_J.K."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:4": {
+      "clubName": "Erzurum BB",
+      "checkedAt": "2026-11-17T09:15:35.237187+00:00",
+      "rosterNames": 18,
+      "photoCandidates": 13,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Erzurumspor_F.K."
+      ],
+      "count": 4,
+      "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T09:14:23.838466+00:00"
+  "lastUpdated": "2026-11-17T09:15:38.017098+00:00"
 }
