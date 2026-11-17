@@ -1,61 +1,11 @@
 {
-  "checkedAt": "2026-11-17T14:35:36.416Z",
+  "checkedAt": "2026-11-17T14:54:47.233Z",
   "catalogUpdatedAt": "2026-11-17T14:31:41.084028+00:00",
   "totalClubs": 214,
   "trophyClubs": 105,
-  "covered": 98,
-  "missingCount": 7,
-  "missing": [
-    {
-      "id": "belgian-pro-league:5",
-      "club": "Waasland-Beveren",
-      "league": "belgian-pro-league",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
-      "id": "brazil-serie-a:17",
-      "club": "Red Bull Bragantino",
-      "league": "brazil-serie-a",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
-      "id": "england-premier-league:8",
-      "club": "Everton",
-      "league": "england-premier-league",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
-      "id": "france-ligue-1:3",
-      "club": "AS Monaco",
-      "league": "france-ligue-1",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
-      "id": "portugal-liga-portugal:12",
-      "club": "Vitória Guimarães",
-      "league": "portugal-liga-portugal",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
-      "id": "turkey-super-lig:10",
-      "club": "Göztepe",
-      "league": "turkey-super-lig",
-      "catalogued": 1,
-      "approvedCrops": 1
-    },
-    {
-      "id": "turkey-super-lig:13",
-      "club": "Kocaelispor",
-      "league": "turkey-super-lig",
-      "catalogued": 1,
-      "approvedCrops": 1
-    }
-  ],
+  "covered": 105,
+  "missingCount": 0,
+  "missing": [],
   "verified": [
     {
       "id": "belgian-pro-league:1",
@@ -71,6 +21,16 @@
       "league": "belgian-pro-league",
       "players": [
         "Thomas Jutten"
+      ]
+    },
+    {
+      "id": "belgian-pro-league:5",
+      "club": "Waasland-Beveren",
+      "league": "belgian-pro-league",
+      "players": [
+        "Arno Verschueren",
+        "Christian Brüls",
+        "Laurent Jans"
       ]
     },
     {
@@ -197,6 +157,15 @@
       ]
     },
     {
+      "id": "brazil-serie-a:17",
+      "club": "Red Bull Bragantino",
+      "league": "brazil-serie-a",
+      "players": [
+        "Eduardo Sasha",
+        "Gabriel Girotto Franco"
+      ]
+    },
+    {
       "id": "brazil-serie-a:19",
       "club": "Chapecoense",
       "league": "brazil-serie-a",
@@ -237,6 +206,16 @@
       "league": "england-premier-league",
       "players": [
         "Yéremy Pino"
+      ]
+    },
+    {
+      "id": "england-premier-league:8",
+      "club": "Everton",
+      "league": "england-premier-league",
+      "players": [
+        "Ainsley Maitland-Niles",
+        "Kiernan Dewsbury-Hall",
+        "Jake O'Brien"
       ]
     },
     {
@@ -321,6 +300,16 @@
       "league": "france-ligue-1",
       "players": [
         "Damien Dufour"
+      ]
+    },
+    {
+      "id": "france-ligue-1:3",
+      "club": "AS Monaco",
+      "league": "france-ligue-1",
+      "players": [
+        "Vanderson",
+        "Philipp Köhn",
+        "Lukáš Hrádecký"
       ]
     },
     {
@@ -676,6 +665,14 @@
       ]
     },
     {
+      "id": "portugal-liga-portugal:12",
+      "club": "Vitória Guimarães",
+      "league": "portugal-liga-portugal",
+      "players": [
+        "Toni Borevković"
+      ]
+    },
+    {
       "id": "portugal-liga-portugal:13",
       "club": "Moreirense",
       "league": "portugal-liga-portugal",
@@ -867,12 +864,30 @@
       ]
     },
     {
+      "id": "turkey-super-lig:10",
+      "club": "Göztepe",
+      "league": "turkey-super-lig",
+      "players": [
+        "Luka Gugeshashvili",
+        "Novatus Miroshi"
+      ]
+    },
+    {
       "id": "turkey-super-lig:11",
       "club": "Başakşehir",
       "league": "turkey-super-lig",
       "players": [
         "Christopher Opéri",
         "Edin Višća"
+      ]
+    },
+    {
+      "id": "turkey-super-lig:13",
+      "club": "Kocaelispor",
+      "league": "turkey-super-lig",
+      "players": [
+        "Florian Ayé",
+        "Metehan Altunbaş"
       ]
     },
     {
