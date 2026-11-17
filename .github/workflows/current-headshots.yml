@@ -118,6 +118,16 @@ jobs:
             git rebase origin/main
             git push origin HEAD:main
           fi
+      - name: Publish precise trophy-photo coverage after roster and face audits
+        run: |
+          node scripts/check-trophy-photo-coverage.mjs --write
+          git add assets/trophy-photo-coverage.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record remaining trophy club portrait gaps"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
   deploy:
     if: ${{ always() && needs.curate.result != 'cancelled' }}
     needs: curate
