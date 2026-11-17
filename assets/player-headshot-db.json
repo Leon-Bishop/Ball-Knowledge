@@ -72,24 +72,6 @@
       "players": [
         {
           "clubId": "belgian-pro-league:2",
-          "playerName": "Arthur Vermeeren",
-          "wikidataQid": "Q113499581",
-          "clubWikidataQid": "Q732002",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-2--Q113499581.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur_vermeeren-1691915252.png",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Tom Van de Velde",
-          "membershipSource": "https://en.wikipedia.org/wiki/Royal_Antwerp_FC",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section"
-        },
-        {
-          "clubId": "belgian-pro-league:2",
           "playerName": "Yannick Thoelen",
           "wikidataQid": "Q2353698",
           "clubWikidataQid": "Q732002",
@@ -4098,11 +4080,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q104454",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "germany-bundesliga:6",
@@ -4117,18 +4095,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Eintracht_Frankfurt",
-      "checkedAt": "2026-11-17T11:24:41.521423+00:00"
+      "checkedAt": "2026-11-17T13:08:29.272816+00:00"
     },
     "germany-bundesliga:7": {
       "clubName": "SV Elversberg",
@@ -4147,18 +4121,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SV_Elversberg",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SV_Elversberg",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SV_Elversberg",
-      "checkedAt": "2026-11-17T11:25:29.268177+00:00"
+      "checkedAt": "2026-11-17T13:08:57.403054+00:00"
     },
     "germany-bundesliga:8": {
       "clubName": "FC Cologne",
@@ -4177,18 +4147,14 @@
           "membershipSource": "https://de.wikipedia.org/wiki/1._FC_K%C3%B6ln",
           "membershipSection": "current squad",
           "membershipHeading": "aktueller kader 2026/27",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://de.wikipedia.org/wiki/1._FC_K%C3%B6ln",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/1._FC_K%C3%B6ln",
-      "checkedAt": "2026-11-17T11:26:01.971678+00:00"
+      "checkedAt": "2026-11-17T13:09:27.774391+00:00"
     },
     "germany-bundesliga:9": {
       "clubName": "FC Mainz",
@@ -4402,11 +4368,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q107745867",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "germany-bundesliga:11",
@@ -4421,14 +4383,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/RB_Leipzig",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/RB_Leipzig",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "germany-bundesliga:11",
@@ -4443,18 +4401,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/RB_Leipzig",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/RB_Leipzig",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/RB_Leipzig",
-      "checkedAt": "2026-11-17T11:27:21.023497+00:00"
+      "checkedAt": "2026-11-17T13:10:17.711530+00:00"
     },
     "germany-bundesliga:12": {
       "clubName": "SC Freiburg",
@@ -4569,18 +4523,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SC_Paderborn_07",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Paderborn_07",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SC_Paderborn_07",
-      "checkedAt": "2026-11-17T11:28:31.638506+00:00"
+      "checkedAt": "2026-11-17T13:11:09.714564+00:00"
     },
     "germany-bundesliga:14": {
       "clubName": "TSG Hoffenheim",
@@ -4791,18 +4741,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/FC_Schalke_04",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Schalke_04",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/FC_Schalke_04",
-      "checkedAt": "2026-11-17T11:29:13.639591+00:00"
+      "checkedAt": "2026-11-17T13:11:27.959340+00:00"
     },
     "germany-bundesliga:17": {
       "clubName": "FC Union Berlin",
@@ -4824,15 +4770,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q583000",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/1._FC_Union_Berlin",
-      "checkedAt": "2026-11-17T11:29:50.199624+00:00"
+      "checkedAt": "2026-11-17T13:12:01.615001+00:00"
     },
     "germany-bundesliga:18": {
       "clubName": "Werder Bremen",
@@ -4854,11 +4796,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q22965497",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "germany-bundesliga:18",
@@ -4873,14 +4811,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SV_Werder_Bremen",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SV_Werder_Bremen",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "germany-bundesliga:18",
@@ -4895,18 +4829,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SV_Werder_Bremen",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SV_Werder_Bremen",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SV_Werder_Bremen",
-      "checkedAt": "2026-11-17T11:30:33.273536+00:00"
+      "checkedAt": "2026-11-17T13:12:41.604966+00:00"
     },
     "greece-super-league:1": {
       "clubName": "AEK Athens",
@@ -4928,11 +4858,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q17399584",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:1",
@@ -4950,15 +4876,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q39336454",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/AEK_Athens_F.C.",
-      "checkedAt": "2026-11-17T11:30:52.641558+00:00"
+      "checkedAt": "2026-11-17T13:12:59.852800+00:00"
     },
     "greece-super-league:2": {
       "clubName": "Aris",
@@ -4980,11 +4902,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q60791151",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:2",
@@ -4999,18 +4917,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Aris_Thessaloniki_F.C.",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Aris_Thessaloniki_F.C.",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Aris_Thessaloniki_F.C.",
-      "checkedAt": "2026-11-17T11:31:15.363342+00:00"
+      "checkedAt": "2026-11-17T13:13:21.029725+00:00"
     },
     "greece-super-league:3": {
       "clubName": "Asteras Tripoli",
@@ -5029,18 +4943,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Asteras_Tripolis_F.C.",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Asteras_Tripolis_F.C.",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Asteras_Tripolis_F.C.",
-      "checkedAt": "2026-11-17T11:31:39.265686+00:00"
+      "checkedAt": "2026-11-17T13:13:43.357760+00:00"
     },
     "greece-super-league:4": {
       "clubName": "Atromitos",
@@ -5062,36 +4972,32 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q673702",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Atromitos_F.C.",
-      "checkedAt": "2026-11-17T11:31:52.754251+00:00"
+      "checkedAt": "2026-11-17T13:13:55.523260+00:00"
     },
     "greece-super-league:5": {
       "clubName": "Kifisia",
       "clubWikidataQid": "Q16245443",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/A.E._Kifisia_F.C.",
-      "checkedAt": "2026-11-17T11:32:09.091708+00:00"
+      "checkedAt": "2026-11-17T13:14:10.670206+00:00"
     },
     "greece-super-league:6": {
       "clubName": "Iraklis",
       "clubWikidataQid": "Q592241",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Iraklis_F.C._(Thessaloniki)",
-      "checkedAt": "2026-11-17T11:32:19.153459+00:00"
+      "checkedAt": "2026-11-17T13:14:20.863871+00:00"
     },
     "greece-super-league:7": {
       "clubName": "OFI Crete",
       "clubWikidataQid": "Q931704",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/OFI_Crete_F.C.",
-      "checkedAt": "2026-11-17T11:32:31.938523+00:00"
+      "checkedAt": "2026-11-17T13:14:33.186013+00:00"
     },
     "greece-super-league:8": {
       "clubName": "Olympiacos",
@@ -5209,11 +5115,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q28811942",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "greece-super-league:9",
@@ -5231,15 +5133,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q303108",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/PAOK_FC",
-      "checkedAt": "2026-11-17T11:33:41.369930+00:00"
+      "checkedAt": "2026-11-17T13:14:50.967442+00:00"
     },
     "greece-super-league:10": {
       "clubName": "Panathinaikos",
@@ -5342,7 +5240,7 @@
       "clubWikidataQid": "Q1460053",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Panetolikos_F.C.",
-      "checkedAt": "2026-11-17T11:34:45.425850+00:00"
+      "checkedAt": "2026-11-17T13:15:31.074130+00:00"
     },
     "greece-super-league:12": {
       "clubName": "Kalamata",
@@ -5361,25 +5259,21 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Kalamata_F.C.",
-      "checkedAt": "2026-11-17T11:35:00.486167+00:00"
+      "checkedAt": "2026-11-17T13:15:45.003637+00:00"
     },
     "greece-super-league:13": {
       "clubName": "Levadiakos",
       "clubWikidataQid": "Q824450",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Levadiakos_F.C.",
-      "checkedAt": "2026-11-17T11:35:11.828642+00:00"
+      "checkedAt": "2026-11-17T13:15:55.723442+00:00"
     },
     "greece-super-league:14": {
       "clubName": "Volos NFC",
@@ -5398,18 +5292,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Volos_F.C.",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Volos_F.C.",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Volos_F.C.",
-      "checkedAt": "2026-11-17T11:35:25.093995+00:00"
+      "checkedAt": "2026-11-17T13:16:07.788535+00:00"
     },
     "italy-serie-a:1": {
       "clubName": "AC Milan",
@@ -10444,6 +10334,6 @@
       "checkedAt": "2026-11-17T11:06:48.531998+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T13:08:20.464717+00:00",
+  "lastUpdated": "2026-11-17T13:16:23.041187+00:00",
   "rosterAuditAt": "2026-11-17T12:32:37.061933+00:00"
 }

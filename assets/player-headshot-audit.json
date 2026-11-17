@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 80,
+  "clubsWithThree": 79,
   "clubsWithFour": 45,
-  "totalCurrentHeadshots": 416,
+  "totalCurrentHeadshots": 415,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -927,7 +927,7 @@
     },
     "germany-bundesliga:6": {
       "clubName": "Eintracht Frankfurt",
-      "checkedAt": "2026-11-17T11:24:41.521423+00:00",
+      "checkedAt": "2026-11-17T13:08:29.272816+00:00",
       "rosterNames": 28,
       "photoCandidates": 24,
       "sources": [
@@ -939,7 +939,7 @@
     },
     "germany-bundesliga:7": {
       "clubName": "SV Elversberg",
-      "checkedAt": "2026-11-17T11:25:29.268177+00:00",
+      "checkedAt": "2026-11-17T13:08:57.403054+00:00",
       "rosterNames": 50,
       "photoCandidates": 22,
       "sources": [
@@ -951,7 +951,7 @@
     },
     "germany-bundesliga:8": {
       "clubName": "FC Cologne",
-      "checkedAt": "2026-11-17T11:26:01.971678+00:00",
+      "checkedAt": "2026-11-17T13:09:27.774391+00:00",
       "rosterNames": 33,
       "photoCandidates": 49,
       "sources": [
@@ -986,7 +986,7 @@
     },
     "germany-bundesliga:11": {
       "clubName": "RB Leipzig",
-      "checkedAt": "2026-11-17T11:27:21.023497+00:00",
+      "checkedAt": "2026-11-17T13:10:17.711530+00:00",
       "rosterNames": 36,
       "photoCandidates": 62,
       "sources": [
@@ -1010,7 +1010,7 @@
     },
     "germany-bundesliga:13": {
       "clubName": "SC Paderborn 07",
-      "checkedAt": "2026-11-17T11:28:31.638506+00:00",
+      "checkedAt": "2026-11-17T13:11:09.714564+00:00",
       "rosterNames": 35,
       "photoCandidates": 12,
       "sources": [
@@ -1044,7 +1044,7 @@
     },
     "germany-bundesliga:16": {
       "clubName": "Schalke 04",
-      "checkedAt": "2026-11-17T11:29:13.639591+00:00",
+      "checkedAt": "2026-11-17T13:11:27.959340+00:00",
       "rosterNames": 28,
       "photoCandidates": 34,
       "sources": [
@@ -1056,7 +1056,7 @@
     },
     "germany-bundesliga:17": {
       "clubName": "FC Union Berlin",
-      "checkedAt": "2026-11-17T11:29:50.199624+00:00",
+      "checkedAt": "2026-11-17T13:12:01.615001+00:00",
       "rosterNames": 30,
       "photoCandidates": 40,
       "sources": [
@@ -1068,7 +1068,7 @@
     },
     "germany-bundesliga:18": {
       "clubName": "Werder Bremen",
-      "checkedAt": "2026-11-17T11:30:33.273536+00:00",
+      "checkedAt": "2026-11-17T13:12:41.604966+00:00",
       "rosterNames": 33,
       "photoCandidates": 16,
       "sources": [
@@ -1079,7 +1079,7 @@
     },
     "greece-super-league:1": {
       "clubName": "AEK Athens",
-      "checkedAt": "2026-11-17T11:30:52.641558+00:00",
+      "checkedAt": "2026-11-17T13:12:59.852800+00:00",
       "rosterNames": 26,
       "photoCandidates": 18,
       "sources": [
@@ -1090,7 +1090,7 @@
     },
     "greece-super-league:2": {
       "clubName": "Aris",
-      "checkedAt": "2026-11-17T11:31:15.363342+00:00",
+      "checkedAt": "2026-11-17T13:13:21.029725+00:00",
       "rosterNames": 25,
       "photoCandidates": 20,
       "sources": [
@@ -1101,7 +1101,7 @@
     },
     "greece-super-league:3": {
       "clubName": "Asteras Tripoli",
-      "checkedAt": "2026-11-17T11:31:39.265686+00:00",
+      "checkedAt": "2026-11-17T13:13:43.357760+00:00",
       "rosterNames": 24,
       "photoCandidates": 8,
       "sources": [
@@ -1112,7 +1112,7 @@
     },
     "greece-super-league:4": {
       "clubName": "Atromitos",
-      "checkedAt": "2026-11-17T11:31:52.754251+00:00",
+      "checkedAt": "2026-11-17T13:13:55.523260+00:00",
       "rosterNames": 20,
       "photoCandidates": 10,
       "sources": [
@@ -1123,7 +1123,7 @@
     },
     "greece-super-league:5": {
       "clubName": "Kifisia",
-      "checkedAt": "2026-11-17T11:32:09.091708+00:00",
+      "checkedAt": "2026-11-17T13:14:10.670206+00:00",
       "rosterNames": 22,
       "photoCandidates": 5,
       "sources": [
@@ -1134,7 +1134,7 @@
     },
     "greece-super-league:6": {
       "clubName": "Iraklis",
-      "checkedAt": "2026-11-17T11:32:19.153459+00:00",
+      "checkedAt": "2026-11-17T13:14:20.863871+00:00",
       "rosterNames": 26,
       "photoCandidates": 8,
       "sources": [
@@ -1145,7 +1145,7 @@
     },
     "greece-super-league:7": {
       "clubName": "OFI Crete",
-      "checkedAt": "2026-11-17T11:32:31.938523+00:00",
+      "checkedAt": "2026-11-17T13:14:33.186013+00:00",
       "rosterNames": 25,
       "photoCandidates": 6,
       "sources": [
@@ -1168,7 +1168,7 @@
     },
     "greece-super-league:9": {
       "clubName": "PAOK",
-      "checkedAt": "2026-11-17T11:33:41.369930+00:00",
+      "checkedAt": "2026-11-17T13:14:50.967442+00:00",
       "rosterNames": 30,
       "photoCandidates": 46,
       "sources": [
@@ -1191,7 +1191,7 @@
     },
     "greece-super-league:11": {
       "clubName": "Panetolikos",
-      "checkedAt": "2026-11-17T11:34:45.425850+00:00",
+      "checkedAt": "2026-11-17T13:15:31.074130+00:00",
       "rosterNames": 23,
       "photoCandidates": 8,
       "sources": [
@@ -1202,7 +1202,7 @@
     },
     "greece-super-league:12": {
       "clubName": "Kalamata",
-      "checkedAt": "2026-11-17T11:35:00.486167+00:00",
+      "checkedAt": "2026-11-17T13:15:45.003637+00:00",
       "rosterNames": 23,
       "photoCandidates": 4,
       "sources": [
@@ -1213,7 +1213,7 @@
     },
     "greece-super-league:13": {
       "clubName": "Levadiakos",
-      "checkedAt": "2026-11-17T11:35:11.828642+00:00",
+      "checkedAt": "2026-11-17T13:15:55.723442+00:00",
       "rosterNames": 26,
       "photoCandidates": 7,
       "sources": [
@@ -1224,7 +1224,7 @@
     },
     "greece-super-league:14": {
       "clubName": "Volos NFC",
-      "checkedAt": "2026-11-17T11:35:25.093995+00:00",
+      "checkedAt": "2026-11-17T13:16:07.788535+00:00",
       "rosterNames": 22,
       "photoCandidates": 10,
       "sources": [
@@ -2476,5 +2476,5 @@
       "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T13:08:20.464717+00:00"
+  "lastUpdated": "2026-11-17T13:16:23.041187+00:00"
 }
