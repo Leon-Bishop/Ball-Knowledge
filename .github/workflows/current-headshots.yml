@@ -13,10 +13,10 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: curated-current-headshots
+  group: ball-knowledge-photo-data
   # Importer checkpoints each batch; superseded runs should not continue
   # from stale database snapshots and race against a newer run.
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   curate:
     runs-on: ubuntu-latest
