@@ -474,12 +474,8 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET):
         if len(photos) >= target:
             break
         info = metadata.get(filename.casefold())
-        if not info:
-            # Previously verified Wikimedia license metadata is acceptable
-            # only for an independently verified current squad member.
-            existing = prior.get(player_qid)
-            if existing and license_allowed(existing.get("license", "")):
-                info = {k: existing.get(k, "") for k in ("photoUrl", "sourceUrl", "author", "license", "licenseUrl")}
+        # A previously stored local JPEG URL is not a valid downloadable
+        # Commons original. Only reuse independently fetched license metadata.
         if not info or not info.get("photoUrl"):
             continue
         try:
@@ -561,7 +557,7 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET):
                 })
                 selected.add(player_qid)
                 break
-    return photos, len(titles), len(candidates)
+    return photos, len(titles), len(candidates), set(qids)
 
 
 def run(max_clubs, force=False, since=None, only_missing_cups=False):
@@ -610,6 +606,9 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
         # face-and-eye QA; attempt to find replacement licensed headshots.
         usable_previous = sum(
             p.get("faceCrop") is True and p.get("faceQualityVerified") is True
+            and p.get("verifiedCurrent") is True
+            and p.get("rosterVerification") in
+               ("official_club_squad", "confirmed_current_loan", "wikidata_current_club")
             for p in previous.get("players", [])
         )
         target = TROPHY_TARGET if "🏆" in team.get("emojis", []) else TARGET
@@ -635,14 +634,16 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
                 if pages.get(language):
                     sources.append((language, pages[language]))
             players, seen, errors, used_sources = [], set(), [], []
+            current_squad_qids = set()
             roster_count, candidates = 0, 0
             for language, title in sources:
                 if len(players) >= target:
                     break
                 try:
-                    extra, names_count, candidates_count = process_club(
+                    extra, names_count, candidates_count, source_qids = process_club(
                         team, qid, title, old_db, language, target=target
                     )
+                    current_squad_qids.update(source_qids)
                     roster_count = max(roster_count, names_count)
                     candidates += candidates_count
                     for player in extra:
@@ -669,8 +670,22 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
             # a current club P54 or the explicit official/loan roster evidence.
             from verify_current_rosters import official_evidence, current_club_from_wikidata
             now = datetime.now(timezone.utc)
-            identities = wikidata_entities([p["wikidataQid"] for p in players]) if players else {}
-            for p in players:
+            # Keep a previously audited, high-quality crop only if that player
+            # remains named in this fresh current squad *and* passes independent
+            # club verification again. This prevents wiping good photos when a
+            # Commons download temporarily fails or the new gallery is sparse.
+            preserved = [p.copy() for p in previous.get("players", [])
+                if p.get("wikidataQid") in current_squad_qids
+                and p.get("faceQualityVerified") is True
+                and p.get("faceCrop") is True
+                and p.get("verifiedCurrent") is True
+                and p.get("rosterVerification") in
+                   ("official_club_squad", "confirmed_current_loan", "wikidata_current_club")
+                and p.get("wikidataQid") not in seen]
+            identities = wikidata_entities(
+                [p["wikidataQid"] for p in players + preserved]
+            ) if (players or preserved) else {}
+            for p in players + preserved:
                 player_qid = p["wikidataQid"]
                 method, evidence_url = official_evidence(club_id, player_qid, roster_evidence, now.date())
                 if not method and current_club_from_wikidata(
@@ -682,6 +697,12 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
                 p["verifiedAt"] = now.isoformat()
                 if evidence_url:
                     p["secondaryRosterSource"] = evidence_url
+                else:
+                    p.pop("secondaryRosterSource", None)
+            for p in preserved:
+                if p["verifiedCurrent"] and len(players) < target:
+                    players.append(p)
+                    seen.add(p["wikidataQid"])
             db["rosterAuditAt"] = now.isoformat()
             status.update({"rosterNames": roster_count, "photoCandidates": candidates,
                            "sources": used_sources})
