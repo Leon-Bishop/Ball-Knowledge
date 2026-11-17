@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 118,
-  "clubsWithFour": 94,
-  "totalCurrentHeadshots": 550,
+  "clubsWithThree": 107,
+  "clubsWithFour": 84,
+  "totalCurrentHeadshots": 512,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -1631,7 +1631,7 @@
     },
     "netherlands-eredivisie:14": {
       "clubName": "PSV Eindhoven",
-      "checkedAt": "2026-11-17T09:12:11.111778+00:00",
+      "checkedAt": "2026-11-17T11:55:11.723415+00:00",
       "rosterNames": 30,
       "photoCandidates": 22,
       "sources": [
@@ -1642,73 +1642,79 @@
     },
     "netherlands-eredivisie:15": {
       "clubName": "Sparta Rotterdam",
-      "checkedAt": "2026-11-17T09:12:14.366573+00:00",
-      "rosterNames": 45,
-      "photoCandidates": 12,
+      "checkedAt": "2026-11-17T11:55:22.616130+00:00",
+      "rosterNames": 36,
+      "photoCandidates": 22,
       "sources": [
-        "https://en.wikipedia.org/wiki/Sparta_Rotterdam"
+        "https://en.wikipedia.org/wiki/Sparta_Rotterdam",
+        "https://nl.wikipedia.org/wiki/Sparta_Rotterdam"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "netherlands-eredivisie:16": {
       "clubName": "SC Cambuur",
-      "checkedAt": "2026-11-17T09:12:17.909785+00:00",
-      "rosterNames": 22,
-      "photoCandidates": 6,
+      "checkedAt": "2026-11-17T11:56:02.552278+00:00",
+      "rosterNames": 48,
+      "photoCandidates": 11,
       "sources": [
-        "https://en.wikipedia.org/wiki/SC_Cambuur"
+        "https://en.wikipedia.org/wiki/SC_Cambuur",
+        "https://nl.wikipedia.org/wiki/SC_Cambuur"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "netherlands-eredivisie:17": {
       "clubName": "Telstar",
-      "checkedAt": "2026-11-17T09:12:20.541965+00:00",
-      "rosterNames": 23,
-      "photoCandidates": 22,
+      "checkedAt": "2026-11-17T11:56:31.860139+00:00",
+      "rosterNames": 49,
+      "photoCandidates": 47,
       "sources": [
-        "https://en.wikipedia.org/wiki/SC_Telstar"
+        "https://en.wikipedia.org/wiki/SC_Telstar",
+        "https://nl.wikipedia.org/wiki/Telstar_(voetbalclub)"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "netherlands-eredivisie:18": {
       "clubName": "Willem II",
-      "checkedAt": "2026-11-17T09:12:25.697300+00:00",
-      "rosterNames": 23,
-      "photoCandidates": 10,
+      "checkedAt": "2026-11-17T11:57:14.996150+00:00",
+      "rosterNames": 37,
+      "photoCandidates": 27,
       "sources": [
-        "https://en.wikipedia.org/wiki/Willem_II_Tilburg"
+        "https://en.wikipedia.org/wiki/Willem_II_Tilburg",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Willem_II_Tilburg_season",
+        "https://nl.wikipedia.org/wiki/Willem_II_(voetbalclub)"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:1": {
       "clubName": "Arouca",
-      "checkedAt": "2026-11-17T09:12:28.143734+00:00",
+      "checkedAt": "2026-11-17T11:57:52.229914+00:00",
       "rosterNames": 24,
       "photoCandidates": 5,
       "sources": [
         "https://en.wikipedia.org/wiki/F.C._Arouca"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:2": {
       "clubName": "Benfica",
-      "checkedAt": "2026-11-17T09:12:30.769169+00:00",
+      "checkedAt": "2026-11-17T11:58:06.693708+00:00",
       "rosterNames": 27,
-      "photoCandidates": 19,
+      "photoCandidates": 38,
       "sources": [
-        "https://en.wikipedia.org/wiki/S.L._Benfica"
+        "https://en.wikipedia.org/wiki/S.L._Benfica",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_S.L._Benfica_season"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:3": {
       "clubName": "Académico de Viseu",
-      "checkedAt": "2026-11-17T10:09:24.228254+00:00",
+      "checkedAt": "2026-11-17T11:58:42.517839+00:00",
       "rosterNames": 27,
       "photoCandidates": 2,
       "sources": [
@@ -1719,106 +1725,108 @@
     },
     "portugal-liga-portugal:4": {
       "clubName": "Braga",
-      "checkedAt": "2026-11-17T09:12:37.370316+00:00",
+      "checkedAt": "2026-11-17T11:58:54.656706+00:00",
       "rosterNames": 27,
       "photoCandidates": 15,
       "sources": [
         "https://en.wikipedia.org/wiki/S.C._Braga"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:5": {
       "clubName": "Casa Pia",
-      "checkedAt": "2026-11-17T10:09:34.032981+00:00",
+      "checkedAt": "2026-11-17T11:59:14.189475+00:00",
       "rosterNames": 25,
       "photoCandidates": 5,
       "sources": [
         "https://en.wikipedia.org/wiki/Casa_Pia_A.C."
       ],
-      "count": 3,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:6": {
       "clubName": "Estoril",
-      "checkedAt": "2026-11-17T09:12:43.544491+00:00",
+      "checkedAt": "2026-11-17T11:59:26.154318+00:00",
       "rosterNames": 29,
-      "photoCandidates": 7,
+      "photoCandidates": 11,
       "sources": [
-        "https://en.wikipedia.org/wiki/G.D._Estoril_Praia"
+        "https://en.wikipedia.org/wiki/G.D._Estoril_Praia",
+        "https://pt.wikipedia.org/wiki/Grupo_Desportivo_Estoril_Praia"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:7": {
       "clubName": "Estrela",
-      "checkedAt": "2026-11-17T09:12:46.656795+00:00",
+      "checkedAt": "2026-11-17T11:59:49.901283+00:00",
       "rosterNames": 22,
       "photoCandidates": 9,
       "sources": [
         "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:8": {
       "clubName": "FC Famalicão",
-      "checkedAt": "2026-11-17T10:09:43.318847+00:00",
+      "checkedAt": "2026-11-17T12:00:06.942430+00:00",
       "rosterNames": 24,
       "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/F.C._Famalic%C3%A3o"
       ],
-      "count": 1,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:9": {
       "clubName": "FC Porto",
-      "checkedAt": "2026-11-17T09:12:52.759702+00:00",
+      "checkedAt": "2026-11-17T12:00:17.879217+00:00",
       "rosterNames": 29,
-      "photoCandidates": 18,
+      "photoCandidates": 36,
       "sources": [
-        "https://en.wikipedia.org/wiki/FC_Porto"
+        "https://en.wikipedia.org/wiki/FC_Porto",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_FC_Porto_season"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:10": {
       "clubName": "Marítimo",
-      "checkedAt": "2026-11-17T10:09:51.704729+00:00",
+      "checkedAt": "2026-11-17T12:01:00.186750+00:00",
       "rosterNames": 29,
       "photoCandidates": 5,
       "sources": [
         "https://en.wikipedia.org/wiki/C.S._Mar%C3%ADtimo"
       ],
-      "count": 2,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:11": {
       "clubName": "Gil Vicente",
-      "checkedAt": "2026-11-17T10:10:01.614505+00:00",
+      "checkedAt": "2026-11-17T12:01:13.135145+00:00",
       "rosterNames": 25,
       "photoCandidates": 2,
       "sources": [
         "https://en.wikipedia.org/wiki/Gil_Vicente_F.C."
       ],
-      "count": 1,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:12": {
       "clubName": "Vitória Guimarães",
-      "checkedAt": "2026-11-17T10:10:09.685005+00:00",
+      "checkedAt": "2026-11-17T12:01:22.994245+00:00",
       "rosterNames": 28,
       "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C."
       ],
-      "count": 2,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "portugal-liga-portugal:13": {
       "clubName": "Moreirense",
-      "checkedAt": "2026-11-17T10:10:19.217169+00:00",
+      "checkedAt": "2026-11-17T12:01:34.841586+00:00",
       "rosterNames": 22,
       "photoCandidates": 1,
       "sources": [
@@ -1829,7 +1837,7 @@
     },
     "portugal-liga-portugal:14": {
       "clubName": "C.D. Nacional",
-      "checkedAt": "2026-11-17T09:13:15.458933+00:00",
+      "checkedAt": "2026-11-17T12:01:44.361821+00:00",
       "rosterNames": 28,
       "photoCandidates": 7,
       "sources": [
@@ -1840,7 +1848,7 @@
     },
     "portugal-liga-portugal:15": {
       "clubName": "Rio Ave",
-      "checkedAt": "2026-11-17T10:10:26.696105+00:00",
+      "checkedAt": "2026-11-17T12:01:48.943645+00:00",
       "rosterNames": 28,
       "photoCandidates": 6,
       "sources": [
@@ -2436,5 +2444,5 @@
       "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T11:55:03.601586+00:00"
+  "lastUpdated": "2026-11-17T12:02:00.916988+00:00"
 }
