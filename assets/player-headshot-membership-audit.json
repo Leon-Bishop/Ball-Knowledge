@@ -1,61 +1,25 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T12:32:37.061933+00:00",
+  "checkedAt": "2026-11-17T13:45:30.090186+00:00",
   "rule": "Official current squad/loan evidence or matching active Wikidata club; Wikipedia-only records are not independently corroborated; cross-club duplicates excluded",
   "totalClubs": 214,
-  "totalPlayers": 414,
-  "wikipediaPagesRechecked": 187,
+  "totalPlayers": 382,
+  "wikipediaPagesRechecked": 181,
   "wikipediaPagesUnavailable": 0,
-  "uniquePlayers": 414,
+  "uniquePlayers": 382,
   "verifiedClubsWithThree": 20,
-  "verifiedPlayers": 171,
-  "independentlyCorroboratedPlayers": 171,
-  "wikipediaOnlyPlayers": 241,
+  "verifiedPlayers": 173,
+  "independentlyCorroboratedPlayers": 173,
+  "wikipediaOnlyPlayers": 207,
   "statuses": {
-    "wikipedia_squad_no_p54": 112,
-    "wikipedia_squad_stale_p54": 129,
-    "wikidata_current_club": 167,
+    "wikidata_current_club": 169,
+    "wikipedia_squad_stale_p54": 112,
+    "wikipedia_squad_no_p54": 95,
     "recent_conflicting_club": 2,
     "official_club_squad": 4
   },
   "conflictingPlayers": [],
   "unconfirmed": [
-    {
-      "clubId": "belgian-pro-league:1",
-      "playerName": "Adriano Bertaccini",
-      "wikidataQid": "Q98100668",
-      "clubWikidataQid": "Q187528",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/RSC_Anderlecht",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "belgian-pro-league:1",
-      "playerName": "Léo Pétrot",
-      "wikidataQid": "Q108320195",
-      "clubWikidataQid": "Q187528",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/RSC_Anderlecht",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "belgian-pro-league:1",
-      "playerName": "Giulian Biancone",
-      "wikidataQid": "Q59270465",
-      "clubWikidataQid": "Q187528",
-      "p54CurrentClub": "Q180305",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/RSC_Anderlecht",
-      "duplicateInClubs": []
-    },
     {
       "clubId": "belgian-pro-league:2",
       "playerName": "Yannick Thoelen",
@@ -78,42 +42,6 @@
       "p54ActiveClubStart": "2024-08-30",
       "verification": "wikipedia_squad_stale_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/Royal_Antwerp_FC",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "belgian-pro-league:3",
-      "playerName": "Ibrahim Diakité",
-      "wikidataQid": "Q110243712",
-      "clubWikidataQid": "Q364698",
-      "p54CurrentClub": "Q1423718",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2023-01-13",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "belgian-pro-league:3",
-      "playerName": "Tayo Adaramola",
-      "wikidataQid": "Q110821229",
-      "clubWikidataQid": "Q364698",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "belgian-pro-league:3",
-      "playerName": "Wouter Biebauw",
-      "wikidataQid": "Q1808293",
-      "clubWikidataQid": "Q364698",
-      "p54CurrentClub": "Q370206",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2015-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://nl.wikipedia.org/wiki/Cercle_Brugge",
       "duplicateInClubs": []
     },
     {
@@ -237,30 +165,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "belgian-pro-league:15",
-      "playerName": "Jean-François Gillet",
-      "wikidataQid": "Q509996",
-      "clubWikidataQid": "Q190561",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://nl.wikipedia.org/wiki/Standard_Luik",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "brazil-serie-a:3",
-      "playerName": "Léo Duarte",
-      "wikidataQid": "Q25175945",
-      "clubWikidataQid": "Q270995",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Clube_Atl%C3%A9tico_Mineiro",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "brazil-serie-a:4",
       "playerName": "Jean Lucas Oliveira",
       "wikidataQid": "Q52427585",
@@ -321,18 +225,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "brazil-serie-a:7",
-      "playerName": "Maicon Pereira Roque",
-      "wikidataQid": "Q560329",
-      "clubWikidataQid": "Q478317",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Coritiba_Foot_Ball_Club",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "brazil-serie-a:8",
       "playerName": "Gustavo Cazonatti",
       "wikidataQid": "Q124131995",
@@ -357,42 +249,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "brazil-serie-a:10",
-      "playerName": "Bruno Henrique",
-      "wikidataQid": "Q19956526",
-      "clubWikidataQid": "Q17479",
-      "p54CurrentClub": "Q101859",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2016-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/CR_Flamengo",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "brazil-serie-a:11",
-      "playerName": "Paulo Henrique Ganso",
-      "wikidataQid": "Q313835",
-      "clubWikidataQid": "Q80987",
-      "p54CurrentClub": "Q83459",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2010-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Fluminense_FC",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "brazil-serie-a:11",
-      "playerName": "Agustín Canobbio",
-      "wikidataQid": "Q26838705",
-      "clubWikidataQid": "Q80987",
-      "p54CurrentClub": "Q506832",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Fluminense_FC",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "brazil-serie-a:14",
       "playerName": "Filip Krovinović",
       "wikidataQid": "Q19594158",
@@ -405,66 +261,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "brazil-serie-a:15",
-      "playerName": "Félix Torres",
-      "wikidataQid": "Q30916190",
-      "clubWikidataQid": "Q80845",
-      "p54CurrentClub": "Q35933",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2024-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/SC_Internacional",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "brazil-serie-a:15",
-      "playerName": "Vitinho",
-      "wikidataQid": "Q65704481",
-      "clubWikidataQid": "Q80845",
-      "p54CurrentClub": "Q4810263",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/SC_Internacional",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "brazil-serie-a:15",
-      "playerName": "Kayky",
-      "wikidataQid": "Q105969622",
-      "clubWikidataQid": "Q80845",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/SC_Internacional",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "brazil-serie-a:16",
-      "playerName": "Bruno Fuchs",
-      "wikidataQid": "Q66685601",
-      "clubWikidataQid": "Q80964",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/SE_Palmeiras",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "brazil-serie-a:17",
-      "playerName": "Vagner Mancini",
-      "wikidataQid": "Q1625330",
-      "clubWikidataQid": "Q541744",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://pt.wikipedia.org/wiki/Red_Bull_Bragantino",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "brazil-serie-a:18",
       "playerName": "Christian Oliva",
       "wikidataQid": "Q50807612",
@@ -474,18 +270,6 @@
       "p54ActiveClubStart": "None",
       "verification": "wikipedia_squad_stale_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/Santos_FC",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "brazil-serie-a:19",
-      "playerName": "Giovanni Augusto",
-      "wikidataQid": "Q10289882",
-      "clubWikidataQid": "Q2536715",
-      "p54CurrentClub": "Q21707173",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2018-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
       "duplicateInClubs": []
     },
     {
@@ -633,30 +417,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "england-premier-league:6",
-      "playerName": "Malo Gusto",
-      "wikidataQid": "Q78752401",
-      "clubWikidataQid": "Q9616",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "england-premier-league:6",
-      "playerName": "Mike Penders",
-      "wikidataQid": "Q113515002",
-      "clubWikidataQid": "Q9616",
-      "p54CurrentClub": "Q216032",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2024-08-28",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "england-premier-league:7",
       "playerName": "Jean-Philippe Mateta",
       "wikidataQid": "Q26964668",
@@ -705,30 +465,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "england-premier-league:11",
-      "playerName": "Alex Cairns",
-      "wikidataQid": "Q4716779",
-      "clubWikidataQid": "Q1128631",
-      "p54CurrentClub": "Q48950",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2016-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "england-premier-league:11",
-      "playerName": "Jayden Bogle",
-      "wikidataQid": "Q56223640",
-      "clubWikidataQid": "Q1128631",
-      "p54CurrentClub": "Q19470",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Leeds_United_F.C.",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "england-premier-league:13",
       "playerName": "Rayan Cherki",
       "wikidataQid": "Q64736321",
@@ -774,54 +510,6 @@
       "p54ActiveClubStart": "2022-01-01",
       "verification": "wikipedia_squad_stale_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/Newcastle_United_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "england-premier-league:16",
-      "playerName": "Ryan Yates",
-      "wikidataQid": "Q28794002",
-      "clubWikidataQid": "Q19490",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "england-premier-league:16",
-      "playerName": "Ibrahim Sangaré",
-      "wikidataQid": "Q27832634",
-      "clubWikidataQid": "Q19490",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "england-premier-league:17",
-      "playerName": "Yann Gboho",
-      "wikidataQid": "Q66107406",
-      "clubWikidataQid": "Q19580",
-      "p54CurrentClub": "Q219233",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2021-07-22",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Coventry_City_F.C.",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "england-premier-league:17",
-      "playerName": "Oliver Dovin",
-      "wikidataQid": "Q96834825",
-      "clubWikidataQid": "Q19580",
-      "p54CurrentClub": null,
-      "p54Reason": "ambiguous_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Coventry_City_F.C.",
       "duplicateInClubs": []
     },
     {
@@ -897,30 +585,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "france-ligue-1:1",
-      "playerName": "Paul Nardi",
-      "wikidataQid": "Q15503377",
-      "clubWikidataQid": "Q182876",
-      "p54CurrentClub": "Q18723",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2024-07-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/AJ_Auxerre",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "france-ligue-1:1",
-      "playerName": "Marvin Senaya",
-      "wikidataQid": "Q108606228",
-      "clubWikidataQid": "Q182876",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/AJ_Auxerre",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "france-ligue-1:2",
       "playerName": "Ousmane Camara",
       "wikidataQid": "Q104833668",
@@ -942,18 +606,6 @@
       "p54ActiveClubStart": null,
       "verification": "wikipedia_squad_no_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/Angers_SCO",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "france-ligue-1:3",
-      "playerName": "Lamine Camara",
-      "wikidataQid": "Q116896436",
-      "clubWikidataQid": "Q180305",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/AS_Monaco_FC",
       "duplicateInClubs": []
     },
     {
@@ -993,18 +645,6 @@
       "duplicateInClubs": []
     },
     {
-      "clubId": "france-ligue-1:8",
-      "playerName": "Himad Abdelli",
-      "wikidataQid": "Q58303150",
-      "clubWikidataQid": "Q132885",
-      "p54CurrentClub": "Q328658",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "None",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/Olympique_de_Marseille",
-      "duplicateInClubs": []
-    },
-    {
       "clubId": "france-ligue-1:9",
       "playerName": "Mouhamadou Diallo",
       "wikidataQid": "Q22004047",
@@ -1026,30 +666,6 @@
       "p54ActiveClubStart": null,
       "verification": "wikipedia_squad_no_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/OGC_Nice",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "france-ligue-1:11",
-      "playerName": "Ibrahima Baldé",
-      "wikidataQid": "Q109661032",
-      "clubWikidataQid": "Q48911",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/FC_Lorient",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "france-ligue-1:11",
-      "playerName": "Benjamin Leroy",
-      "wikidataQid": "Q2896147",
-      "clubWikidataQid": "Q48911",
-      "p54CurrentClub": null,
-      "p54Reason": "no_active_p54",
-      "p54ActiveClubStart": null,
-      "verification": "wikipedia_squad_no_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/FC_Lorient",
       "duplicateInClubs": []
     },
     {
@@ -1146,30 +762,6 @@
       "p54ActiveClubStart": null,
       "verification": "wikipedia_squad_no_p54",
       "evidenceUrl": "https://en.wikipedia.org/wiki/Toulouse_FC",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "france-ligue-1:17",
-      "playerName": "Mathieu Gorgelin",
-      "wikidataQid": "Q13057",
-      "clubWikidataQid": "Q191843",
-      "p54CurrentClub": "Q328658",
-      "p54Reason": "single_active_p54",
-      "p54ActiveClubStart": "2019-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/RC_Lens",
-      "duplicateInClubs": []
-    },
-    {
-      "clubId": "france-ligue-1:17",
-      "playerName": "Nidal Čelik",
-      "wikidataQid": "Q131149776",
-      "clubWikidataQid": "Q191843",
-      "p54CurrentClub": "Q181190",
-      "p54Reason": "latest_active_p54",
-      "p54ActiveClubStart": "2026-01-01",
-      "verification": "wikipedia_squad_stale_p54",
-      "evidenceUrl": "https://en.wikipedia.org/wiki/RC_Lens",
       "duplicateInClubs": []
     },
     {
@@ -2939,9 +2531,11 @@
   ],
   "perClub": {
     "belgian-pro-league:1": {
-      "total": 3,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Ludwig Augustinsson"
+      ]
     },
     "belgian-pro-league:2": {
       "total": 2,
@@ -2949,7 +2543,7 @@
       "verifiedNames": []
     },
     "belgian-pro-league:3": {
-      "total": 3,
+      "total": 0,
       "verified": 0,
       "verifiedNames": []
     },
@@ -3015,7 +2609,7 @@
       ]
     },
     "belgian-pro-league:15": {
-      "total": 2,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Casper Nielsen"
@@ -3047,12 +2641,14 @@
       "verifiedNames": []
     },
     "brazil-serie-a:2": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Luiz Gustavo"
+      ]
     },
     "brazil-serie-a:3": {
-      "total": 2,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Reinier"
@@ -3064,9 +2660,11 @@
       "verifiedNames": []
     },
     "brazil-serie-a:5": {
-      "total": 0,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Hakim Ziyech"
+      ]
     },
     "brazil-serie-a:6": {
       "total": 4,
@@ -3076,7 +2674,7 @@
       ]
     },
     "brazil-serie-a:7": {
-      "total": 2,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Breno Lopes"
@@ -3093,17 +2691,18 @@
       "verifiedNames": []
     },
     "brazil-serie-a:10": {
-      "total": 3,
-      "verified": 2,
+      "total": 1,
+      "verified": 1,
       "verifiedNames": [
-        "Jorge Carrascalle",
-        "Alex Sandro"
+        "Jorge Carrascalle"
       ]
     },
     "brazil-serie-a:11": {
-      "total": 2,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Luciano Acosta"
+      ]
     },
     "brazil-serie-a:12": {
       "total": 1,
@@ -3123,19 +2722,19 @@
       "verifiedNames": []
     },
     "brazil-serie-a:15": {
-      "total": 3,
+      "total": 0,
       "verified": 0,
       "verifiedNames": []
     },
     "brazil-serie-a:16": {
-      "total": 2,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Ramón Sosa"
       ]
     },
     "brazil-serie-a:17": {
-      "total": 1,
+      "total": 0,
       "verified": 0,
       "verifiedNames": []
     },
@@ -3145,7 +2744,7 @@
       "verifiedNames": []
     },
     "brazil-serie-a:19": {
-      "total": 1,
+      "total": 0,
       "verified": 0,
       "verifiedNames": []
     },
@@ -3192,7 +2791,7 @@
       ]
     },
     "england-premier-league:6": {
-      "total": 3,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Emiliano Martínez"
@@ -3227,7 +2826,7 @@
       ]
     },
     "england-premier-league:11": {
-      "total": 3,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Dominic Calvert-Lewin"
@@ -3260,23 +2859,24 @@
       ]
     },
     "england-premier-league:16": {
-      "total": 2,
-      "verified": 0,
-      "verifiedNames": []
+      "total": 1,
+      "verified": 1,
+      "verifiedNames": [
+        "Ousmane Diomande"
+      ]
     },
     "england-premier-league:17": {
-      "total": 3,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Haji Wright"
       ]
     },
     "england-premier-league:18": {
-      "total": 2,
-      "verified": 2,
+      "total": 1,
+      "verified": 1,
       "verifiedNames": [
-        "Mateus Fernandes",
-        "Richarlison"
+        "Mateus Fernandes"
       ]
     },
     "england-premier-league:19": {
@@ -3294,7 +2894,7 @@
       ]
     },
     "france-ligue-1:1": {
-      "total": 2,
+      "total": 0,
       "verified": 0,
       "verifiedNames": []
     },
@@ -3304,7 +2904,7 @@
       "verifiedNames": []
     },
     "france-ligue-1:3": {
-      "total": 1,
+      "total": 0,
       "verified": 0,
       "verifiedNames": []
     },
@@ -3332,11 +2932,10 @@
       ]
     },
     "france-ligue-1:8": {
-      "total": 3,
-      "verified": 2,
+      "total": 1,
+      "verified": 1,
       "verifiedNames": [
-        "Geoffrey Kondogbia",
-        "Bamo Meïté"
+        "Geoffrey Kondogbia"
       ]
     },
     "france-ligue-1:9": {
@@ -3353,7 +2952,7 @@
       ]
     },
     "france-ligue-1:11": {
-      "total": 3,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Montassar Talbi"
@@ -3392,7 +2991,7 @@
       "verifiedNames": []
     },
     "france-ligue-1:17": {
-      "total": 3,
+      "total": 1,
       "verified": 1,
       "verifiedNames": [
         "Florian Sotoca"
