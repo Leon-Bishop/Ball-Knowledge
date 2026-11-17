@@ -21,6 +21,7 @@ for(const [id,club] of Object.entries(db.clubs)){
   assert(p.photoUrl.startsWith('./assets/player-headshots/'));
   assert(p.sourceUrl.startsWith('https://commons.wikimedia.org/'));
   assert(p.membershipSource.startsWith('https://en.wikipedia.org/wiki/'));
+  assert(p.membershipSection!=='players','Generic player list is not proof of current squad');
   assert(p.license&&p.author&&p.wikidataQid&&!seen.has(p.wikidataQid));
   seen.add(p.wikidataQid);
  }
@@ -30,7 +31,7 @@ const player=(n,current=true)=>({
  verifiedCurrent:current,faceCrop:true,
  photoUrl:'./assets/player-headshots/team-1--Q'+n+'.jpg',
  sourceUrl:'https://commons.wikimedia.org/wiki/File:Portrait.jpg',
- membershipSource:'https://en.wikipedia.org/wiki/Team',
+ membershipSource:'https://en.wikipedia.org/wiki/Team',membershipSection:'current squad',
  author:'Photographer',license:'CC BY-SA 4.0'
 });
 const mock={version:2,clubs:{
