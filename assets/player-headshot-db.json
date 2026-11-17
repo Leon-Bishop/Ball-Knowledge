@@ -1,7 +1,7 @@
 {
   "version": 2,
   "source": "Current squad sections of multilingual Wikipedia + Wikidata player identity + licensed Commons face crops",
-  "minimumCurrentHeadshotsPerClub": 3,
+  "minimumCurrentHeadshotsPerClub": 1,
   "targetCurrentHeadshotsPerClub": 4,
   "clubs": {
     "belgian-pro-league:1": {
@@ -10,11 +10,11 @@
       "players": [
         {
           "clubId": "belgian-pro-league:1",
-          "playerName": "Adriano Bertaccini",
-          "wikidataQid": "Q98100668",
+          "playerName": "Ludwig Augustinsson",
+          "wikidataQid": "Q4806248",
           "clubWikidataQid": "Q187528",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-1--Q98100668.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adriano_Bertaccini_RSC_Anderlecht_2025.jpg",
+          "photoUrl": "./assets/player-headshots/belgian-pro-league-1--Q4806248.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ludwig_Augustinsson_RSC_Anderlecht_2025.jpg",
           "license": "CC BY-SA 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "author": "Sidney.Cortez",
@@ -23,51 +23,16 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "belgian-pro-league:1",
-          "playerName": "Léo Pétrot",
-          "wikidataQid": "Q108320195",
-          "clubWikidataQid": "Q187528",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-1--Q108320195.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%A9o_P%C3%A9trot_ASSE_RCL_2425.jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Paté kroute",
-          "membershipSource": "https://en.wikipedia.org/wiki/RSC_Anderlecht",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "belgian-pro-league:1",
-          "playerName": "Giulian Biancone",
-          "wikidataQid": "Q59270465",
-          "clubWikidataQid": "Q187528",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-1--Q59270465.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giulian_Biancone_(2021).jpg",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "author": "ESTAC Troyes",
-          "membershipSource": "https://en.wikipedia.org/wiki/RSC_Anderlecht",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:24:08.778038+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q4806248"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/RSC_Anderlecht",
-      "checkedAt": "2026-11-17T12:33:45.340987+00:00"
+      "checkedAt": "2026-11-17T13:23:57.992973+00:00"
     },
     "belgian-pro-league:2": {
       "clubName": "Antwerp",
@@ -118,67 +83,9 @@
     "belgian-pro-league:3": {
       "clubName": "Cercle Brugge KSV",
       "clubWikidataQid": "Q364698",
-      "players": [
-        {
-          "clubId": "belgian-pro-league:3",
-          "playerName": "Ibrahim Diakité",
-          "wikidataQid": "Q110243712",
-          "clubWikidataQid": "Q364698",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-3--Q110243712.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ibrahim_Diakit%C3%A9.jpg",
-          "license": "Public domain",
-          "licenseUrl": "",
-          "author": "feguifoot",
-          "membershipSource": "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "belgian-pro-league:3",
-          "playerName": "Tayo Adaramola",
-          "wikidataQid": "Q110821229",
-          "clubWikidataQid": "Q364698",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-3--Q110821229.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tayo_Adaramola_26072025_(1).jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Timmy96",
-          "membershipSource": "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "belgian-pro-league:3",
-          "playerName": "Wouter Biebauw",
-          "wikidataQid": "Q1808293",
-          "clubWikidataQid": "Q364698",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-3--Q1808293.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wouter_Biebauw.jpg",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "author": "Karl Van Dessel",
-          "membershipSource": "https://nl.wikipedia.org/wiki/Cercle_Brugge",
-          "membershipSection": "current squad",
-          "membershipHeading": "selectie 2026/27",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        }
-      ],
+      "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
-      "checkedAt": "2026-11-17T12:35:19.307043+00:00"
+      "checkedAt": "2026-11-17T13:24:09.667838+00:00"
     },
     "belgian-pro-league:4": {
       "clubName": "Club Brugge",
@@ -250,14 +157,14 @@
       "clubWikidataQid": "Q509170",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/SK_Beveren",
-      "checkedAt": "2026-11-17T12:36:43.580737+00:00"
+      "checkedAt": "2026-11-17T13:25:33.730949+00:00"
     },
     "belgian-pro-league:6": {
       "clubName": "KAA Gent",
       "clubWikidataQid": "Q18232",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/KAA_Gent",
-      "checkedAt": "2026-11-17T12:37:01.213012+00:00"
+      "checkedAt": "2026-11-17T13:24:39.443714+00:00"
     },
     "belgian-pro-league:7": {
       "clubName": "KV Kortrijk",
@@ -285,13 +192,16 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:25:00.176021+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q1189443"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/KV_Mechelen",
-      "checkedAt": "2026-11-17T12:38:04.334900+00:00"
+      "checkedAt": "2026-11-17T13:24:54.478817+00:00"
     },
     "belgian-pro-league:9": {
       "clubName": "KVC Westerlo",
@@ -401,7 +311,7 @@
       "clubWikidataQid": "Q216032",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/KRC_Genk",
-      "checkedAt": "2026-11-17T12:38:47.232809+00:00"
+      "checkedAt": "2026-11-17T13:25:00.816418+00:00"
     },
     "belgian-pro-league:12": {
       "clubName": "Royal Charleroi SC",
@@ -541,32 +451,16 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "belgian-pro-league:15",
-          "playerName": "Jean-François Gillet",
-          "wikidataQid": "Q509996",
-          "clubWikidataQid": "Q190561",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-15--Q509996.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gilletbologna.png",
-          "license": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "author": "BlackHarlok",
-          "membershipSource": "https://nl.wikipedia.org/wiki/Standard_Luik",
-          "membershipSection": "current squad",
-          "membershipHeading": "selectie 2025-2026",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:25:33.150740+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15020937"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Standard_Li%C3%A8ge",
-      "checkedAt": "2026-11-17T12:40:32.486467+00:00"
+      "checkedAt": "2026-11-17T13:25:30.161609+00:00"
     },
     "belgian-pro-league:16": {
       "clubName": "Union St.-Gilloise",
@@ -675,8 +569,8 @@
       "clubName": "Zulte-Waregem",
       "clubWikidataQid": "Q376635",
       "players": [],
-      "rosterSource": "https://en.wikipedia.org/wiki/SV_Zulte_Waregem",
-      "checkedAt": "2026-11-17T09:04:48.056519+00:00"
+      "rosterSource": "https://fr.wikipedia.org/wiki/SV_Zulte_Waregem",
+      "checkedAt": "2026-11-17T13:25:41.815728+00:00"
     },
     "brazil-serie-a:1": {
       "clubName": "Vitória",
@@ -688,33 +582,37 @@
     "brazil-serie-a:2": {
       "clubName": "Athletico Paranaense",
       "clubWikidataQid": "Q506832",
-      "players": [],
+      "players": [
+        {
+          "clubId": "brazil-serie-a:2",
+          "playerName": "Luiz Gustavo",
+          "wikidataQid": "Q329451",
+          "clubWikidataQid": "Q506832",
+          "photoUrl": "./assets/player-headshots/brazil-serie-a-2--Q329451.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luiz_Gustavo_Dias_(2020-21)_-_beIN-Sports-Reklam.png",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "author": "beIN SPORTS Türkiye",
+          "membershipSource": "https://en.wikipedia.org/wiki/Club_Athletico_Paranaense",
+          "membershipSection": "current squad",
+          "membershipHeading": "current squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:25:58.415027+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q329451"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Club_Athletico_Paranaense",
-      "checkedAt": "2026-11-17T12:41:55.802240+00:00"
+      "checkedAt": "2026-11-17T13:25:47.729694+00:00"
     },
     "brazil-serie-a:3": {
       "clubName": "Atlético-MG",
       "clubWikidataQid": "Q270995",
       "players": [
-        {
-          "clubId": "brazil-serie-a:3",
-          "playerName": "Léo Duarte",
-          "wikidataQid": "Q25175945",
-          "clubWikidataQid": "Q270995",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-3--Q25175945.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%A9o_Duarte_Basaksehir.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Leonardo Duarte",
-          "membershipSource": "https://en.wikipedia.org/wiki/Clube_Atl%C3%A9tico_Mineiro",
-          "membershipSection": "first team squad",
-          "membershipHeading": "first team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
         {
           "clubId": "brazil-serie-a:3",
           "playerName": "Reinier",
@@ -730,13 +628,16 @@
           "membershipHeading": "first team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:26:03.647248+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q64606160"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Clube_Atl%C3%A9tico_Mineiro",
-      "checkedAt": "2026-11-17T12:42:09.167370+00:00"
+      "checkedAt": "2026-11-17T13:25:59.177489+00:00"
     },
     "brazil-serie-a:4": {
       "clubName": "Bahia",
@@ -787,9 +688,32 @@
     "brazil-serie-a:5": {
       "clubName": "Botafogo",
       "clubWikidataQid": "Q80958",
-      "players": [],
+      "players": [
+        {
+          "clubId": "brazil-serie-a:5",
+          "playerName": "Hakim Ziyech",
+          "wikidataQid": "Q327456",
+          "clubWikidataQid": "Q80958",
+          "photoUrl": "./assets/player-headshots/brazil-serie-a-5--Q327456.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hakim_Ziyech_Zenit_vs_Chelsea_8_December_2021.jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "author": "Kirill Venediktov",
+          "membershipSource": "https://en.wikipedia.org/wiki/Botafogo_FR",
+          "membershipSection": "current squad",
+          "membershipHeading": "current squad",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:26:20.110562+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q327456"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Botafogo_FR",
-      "checkedAt": "2026-11-17T12:42:56.420993+00:00"
+      "checkedAt": "2026-11-17T13:26:04.237022+00:00"
     },
     "brazil-serie-a:6": {
       "clubName": "Corinthians",
@@ -893,25 +817,6 @@
       "players": [
         {
           "clubId": "brazil-serie-a:7",
-          "playerName": "Maicon Pereira Roque",
-          "wikidataQid": "Q560329",
-          "clubWikidataQid": "Q478317",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-7--Q560329.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valais_Cup_2013_-_OM-FC_Porto_13-07-2013_-_Maicon_(cropped).jpg",
-          "license": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "author": "Clément Bucco-Lechat",
-          "membershipSource": "https://en.wikipedia.org/wiki/Coritiba_Foot_Ball_Club",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "brazil-serie-a:7",
           "playerName": "Breno Lopes",
           "wikidataQid": "Q101230488",
           "clubWikidataQid": "Q478317",
@@ -925,13 +830,16 @@
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:26:29.190517+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q101230488"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Coritiba_Foot_Ball_Club",
-      "checkedAt": "2026-11-17T12:43:19.197552+00:00"
+      "checkedAt": "2026-11-17T13:26:25.582332+00:00"
     },
     "brazil-serie-a:8": {
       "clubName": "Mirassol",
@@ -1006,51 +914,16 @@
           "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "brazil-serie-a:10",
-          "playerName": "Alex Sandro",
-          "wikidataQid": "Q551192",
-          "clubWikidataQid": "Q17479",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-10--Q551192.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alex_Sandro_Brazil_V_Morocco_13_June_2026-137_(cropped).jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/CR_Flamengo",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "brazil-serie-a:10",
-          "playerName": "Bruno Henrique",
-          "wikidataQid": "Q19956526",
-          "clubWikidataQid": "Q17479",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-10--Q19956526.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruno_Henrique_(35129405450)_(cropped).jpg",
-          "license": "CC BY 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-          "author": "Douglas Teixeira from Santos, Brasil",
-          "membershipSource": "https://en.wikipedia.org/wiki/CR_Flamengo",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:26:35.349242+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19362872"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/CR_Flamengo",
-      "checkedAt": "2026-11-17T12:44:30.740100+00:00"
+      "checkedAt": "2026-11-17T13:26:29.847344+00:00"
     },
     "brazil-serie-a:11": {
       "clubName": "Fluminense",
@@ -1058,45 +931,29 @@
       "players": [
         {
           "clubId": "brazil-serie-a:11",
-          "playerName": "Paulo Henrique Ganso",
-          "wikidataQid": "Q313835",
+          "playerName": "Luciano Acosta",
+          "wikidataQid": "Q15696665",
           "clubWikidataQid": "Q80987",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-11--Q313835.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paulo_Henrique_brazil.jpg",
-          "license": "CC BY-SA 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-          "author": "Sergio Savarese from Sao Paulo City / Ipiranga, Brasil",
+          "photoUrl": "./assets/player-headshots/brazil-serie-a-11--Q15696665.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:CINvNYC_2022-06-29_-_Geoff_Cameron,_Nick_Hagglund,_Roman_Celentano,_Luciano_Acosta_(52186352542)_(cropped).jpg",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "author": "Hayden Schiff from Cincinnati, USA",
           "membershipSource": "https://en.wikipedia.org/wiki/Fluminense_FC",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "brazil-serie-a:11",
-          "playerName": "Agustín Canobbio",
-          "wikidataQid": "Q26838705",
-          "clubWikidataQid": "Q80987",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-11--Q26838705.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agust%C3%ADn_Canobbio_2018.jpg",
-          "license": "CC BY-SA 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-          "author": "Jimmy Baikovicius from Montevideo, Uruguay",
-          "membershipSource": "https://en.wikipedia.org/wiki/Fluminense_FC",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:26:58.401641+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15696665"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Fluminense_FC",
-      "checkedAt": "2026-11-17T12:44:48.405298+00:00"
+      "checkedAt": "2026-11-17T13:26:35.945032+00:00"
     },
     "brazil-serie-a:12": {
       "clubName": "São Paulo",
@@ -1117,13 +974,16 @@
           "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:27:43.502298+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15131398"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_FC",
-      "checkedAt": "2026-11-17T12:45:17.377785+00:00"
+      "checkedAt": "2026-11-17T13:27:38.887020+00:00"
     },
     "brazil-serie-a:13": {
       "clubName": "Remo",
@@ -1162,67 +1022,9 @@
     "brazil-serie-a:15": {
       "clubName": "Internacional",
       "clubWikidataQid": "Q80845",
-      "players": [
-        {
-          "clubId": "brazil-serie-a:15",
-          "playerName": "Félix Torres",
-          "wikidataQid": "Q30916190",
-          "clubWikidataQid": "Q80845",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-15--Q30916190.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Felix_Torres_Cote_D%27Ivoire_v_Ecuador_14_June_2026-75.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-          "membershipSection": "first team",
-          "membershipHeading": "first team",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "brazil-serie-a:15",
-          "playerName": "Vitinho",
-          "wikidataQid": "Q65704481",
-          "clubWikidataQid": "Q80845",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-15--Q65704481.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vitinho_in_Dynamo_Kyiv_2021.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Yuliia Perekopaiko",
-          "membershipSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-          "membershipSection": "first team",
-          "membershipHeading": "first team",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "brazil-serie-a:15",
-          "playerName": "Kayky",
-          "wikidataQid": "Q105969622",
-          "clubWikidataQid": "Q80845",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-15--Q105969622.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kayky_da_Silva_Chagas.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "0futura",
-          "membershipSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-          "membershipSection": "first team",
-          "membershipHeading": "first team",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        }
-      ],
+      "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-      "checkedAt": "2026-11-17T12:46:32.809667+00:00"
+      "checkedAt": "2026-11-17T13:26:59.100695+00:00"
     },
     "brazil-serie-a:16": {
       "clubName": "Palmeiras",
@@ -1243,59 +1045,23 @@
           "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "brazil-serie-a:16",
-          "playerName": "Bruno Fuchs",
-          "wikidataQid": "Q66685601",
-          "clubWikidataQid": "Q80964",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-16--Q66685601.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruno_Fuchs_2022.jpg",
-          "license": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "author": "Артем Гусев",
-          "membershipSource": "https://en.wikipedia.org/wiki/SE_Palmeiras",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:27:24.938138+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110160871"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SE_Palmeiras",
-      "checkedAt": "2026-11-17T12:47:06.404966+00:00"
+      "checkedAt": "2026-11-17T13:27:19.760088+00:00"
     },
     "brazil-serie-a:17": {
       "clubName": "Red Bull Bragantino",
       "clubWikidataQid": "Q541744",
-      "players": [
-        {
-          "clubId": "brazil-serie-a:17",
-          "playerName": "Vagner Mancini",
-          "wikidataQid": "Q1625330",
-          "clubWikidataQid": "Q541744",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-17--Q1625330.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wagner_Mancini.jpg",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "author": "Show do Esporte",
-          "membershipSource": "https://pt.wikipedia.org/wiki/Red_Bull_Bragantino",
-          "membershipSection": "elenco atual",
-          "membershipHeading": "elenco atual",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        }
-      ],
+      "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Red_Bull_Bragantino",
-      "checkedAt": "2026-11-17T12:47:42.003467+00:00"
+      "checkedAt": "2026-11-17T13:27:25.519034+00:00"
     },
     "brazil-serie-a:18": {
       "clubName": "Santos",
@@ -1327,29 +1093,9 @@
     "brazil-serie-a:19": {
       "clubName": "Chapecoense",
       "clubWikidataQid": "Q2536715",
-      "players": [
-        {
-          "clubId": "brazil-serie-a:19",
-          "playerName": "Giovanni Augusto",
-          "wikidataQid": "Q10289882",
-          "clubWikidataQid": "Q2536715",
-          "photoUrl": "./assets/player-headshots/brazil-serie-a-19--Q10289882.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giovanni_Augusto_2019.png",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "author": "Record TV Goiás",
-          "membershipSource": "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        }
-      ],
+      "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
-      "checkedAt": "2026-11-17T12:49:14.833998+00:00"
+      "checkedAt": "2026-11-17T13:26:20.777601+00:00"
     },
     "brazil-serie-a:20": {
       "clubName": "Vasco da Gama",
@@ -1821,44 +1567,6 @@
       "players": [
         {
           "clubId": "england-premier-league:6",
-          "playerName": "Malo Gusto",
-          "wikidataQid": "Q78752401",
-          "clubWikidataQid": "Q9616",
-          "photoUrl": "./assets/player-headshots/england-premier-league-6--Q78752401.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malo_Gusto_France_v_Senegal_16_June_2026-399.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "england-premier-league:6",
-          "playerName": "Mike Penders",
-          "wikidataQid": "Q113515002",
-          "clubWikidataQid": "Q9616",
-          "photoUrl": "./assets/player-headshots/england-premier-league-6--Q113515002.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mike_Penders_Belgium_v_USA_6_July_2026-155.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "england-premier-league:6",
           "playerName": "Emiliano Martínez",
           "wikidataQid": "Q3275904",
           "clubWikidataQid": "Q9616",
@@ -1872,13 +1580,16 @@
           "membershipHeading": "first-team squad",
           "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "faceQualityVerified": true
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T13:28:04.227105+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3275904"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
-      "checkedAt": "2026-11-17T12:51:12.666257+00:00"
+      "checkedAt": "2026-11-17T13:27:44.103692+00:00"
     },
     "england-premier-league:7": {
       "clubName": "Crystal Palace",
@@ -10450,6 +10161,6 @@
       "checkedAt": "2026-11-17T11:06:48.531998+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T13:16:23.041187+00:00",
-  "rosterAuditAt": "2026-11-17T12:32:37.061933+00:00"
+  "lastUpdated": "2026-11-17T13:28:04.884114+00:00",
+  "rosterAuditAt": "2026-11-17T13:28:04.227105+00:00"
 }
