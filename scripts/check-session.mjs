@@ -39,7 +39,7 @@ const mixed=unique.filter(x=>['england-premier-league','italy-serie-a','turkey-s
 assert.equal(mixed.length,58,'The retained 20+20+18-club example should produce 58 rounds');
 const combined=Session.createSession(mixed,{random:()=>.34});
 assert.equal(combined.order.length,58);
-assert.equal(new Set(combined.order.map(t=>t.id)).size,50);
+assert.equal(new Set(combined.order.map(t=>t.id)).size,58);
 for(let i=0;i<combined.order.length;i++){
  const club=Session.currentClub(combined);
  Session.recordRound(combined,club,{won:i%2===0,wrongCount:i%2===0?2:5});
