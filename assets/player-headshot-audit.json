@@ -1,189 +1,241 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 201,
-  "clubsWithFour": 194,
-  "totalCurrentHeadshots": 810,
+  "clubsWithThree": 189,
+  "clubsWithFour": 181,
+  "totalCurrentHeadshots": 767,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
-      "checkedAt": "2026-11-17T09:03:54.355103+00:00",
+      "checkedAt": "2026-11-17T10:42:15.031283+00:00",
       "rosterNames": 30,
-      "photoCandidates": 23,
-      "count": 4,
+      "photoCandidates": 45,
+      "sources": [
+        "https://en.wikipedia.org/wiki/RSC_Anderlecht",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_RSC_Anderlecht_season"
+      ],
+      "count": 3,
       "status": "ready"
     },
     "belgian-pro-league:2": {
       "clubName": "Antwerp",
-      "checkedAt": "2026-11-17T09:03:57.293155+00:00",
-      "rosterNames": 21,
-      "photoCandidates": 15,
+      "checkedAt": "2026-11-17T10:43:17.656686+00:00",
+      "rosterNames": 48,
+      "photoCandidates": 34,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Royal_Antwerp_FC",
+        "https://nl.wikipedia.org/wiki/Royal_Antwerp_FC"
+      ],
       "count": 4,
       "status": "ready"
     },
     "belgian-pro-league:3": {
       "clubName": "Cercle Brugge KSV",
-      "checkedAt": "2026-11-17T09:04:00.069190+00:00",
-      "rosterNames": 25,
-      "photoCandidates": 10,
-      "count": 4,
+      "checkedAt": "2026-11-17T10:43:58.554831+00:00",
+      "rosterNames": 59,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cercle_Brugge_KSV",
+        "https://nl.wikipedia.org/wiki/Cercle_Brugge"
+      ],
+      "count": 3,
       "status": "ready"
     },
     "belgian-pro-league:4": {
       "clubName": "Club Brugge",
-      "checkedAt": "2026-11-17T09:04:02.873514+00:00",
+      "checkedAt": "2026-11-17T10:44:49.829405+00:00",
       "rosterNames": 26,
       "photoCandidates": 12,
-      "count": 4,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Club_Brugge_KV"
+      ],
+      "count": 3,
       "status": "ready"
     },
     "belgian-pro-league:5": {
       "clubName": "Waasland-Beveren",
-      "checkedAt": "2026-11-17T10:08:16.156064+00:00",
+      "checkedAt": "2026-11-17T10:45:31.772820+00:00",
       "rosterNames": 26,
       "photoCandidates": 6,
       "sources": [
         "https://en.wikipedia.org/wiki/SK_Beveren"
       ],
-      "count": 3,
-      "status": "ready"
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:6": {
       "clubName": "KAA Gent",
-      "checkedAt": "2026-11-17T09:04:08.027374+00:00",
-      "rosterNames": 25,
-      "photoCandidates": 17,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:45:50.995087+00:00",
+      "rosterNames": 41,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/KAA_Gent",
+        "https://fr.wikipedia.org/wiki/KAA_La_Gantoise"
+      ],
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:7": {
       "clubName": "KV Kortrijk",
-      "checkedAt": "2026-11-17T09:23:36.598038+00:00",
+      "checkedAt": "2026-11-17T10:46:22.987693+00:00",
       "rosterNames": 54,
-      "photoCandidates": 11,
+      "photoCandidates": 13,
       "sources": [
         "https://en.wikipedia.org/wiki/KV_Kortrijk",
-        "https://nl.wikipedia.org/wiki/KV_Kortrijk"
+        "https://nl.wikipedia.org/wiki/KV_Kortrijk",
+        "https://fr.wikipedia.org/wiki/KV_Courtrai"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:8": {
       "clubName": "KV Mechelen",
-      "checkedAt": "2026-11-17T09:04:20.556021+00:00",
-      "rosterNames": 22,
-      "photoCandidates": 7,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:46:59.807513+00:00",
+      "rosterNames": 45,
+      "photoCandidates": 8,
+      "sources": [
+        "https://en.wikipedia.org/wiki/KV_Mechelen",
+        "https://fr.wikipedia.org/wiki/Yellow_Red_KV_Malines"
+      ],
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:9": {
       "clubName": "KVC Westerlo",
-      "checkedAt": "2026-11-17T09:04:23.155693+00:00",
-      "rosterNames": 24,
-      "photoCandidates": 8,
+      "checkedAt": "2026-11-17T10:47:22.492677+00:00",
+      "rosterNames": 49,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/KVC_Westerlo",
+        "https://fr.wikipedia.org/wiki/KVC_Westerlo"
+      ],
       "count": 4,
       "status": "ready"
     },
     "belgian-pro-league:10": {
       "clubName": "Oud-Heverlee Leuven",
-      "checkedAt": "2026-11-17T09:58:00.171580+00:00",
+      "checkedAt": "2026-11-17T10:47:43.894696+00:00",
       "rosterNames": 48,
       "photoCandidates": 7,
       "sources": [
         "https://en.wikipedia.org/wiki/Oud-Heverlee_Leuven",
         "https://fr.wikipedia.org/wiki/Oud-Heverlee_Louvain"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:11": {
       "clubName": "Racing Genk",
-      "checkedAt": "2026-11-17T09:04:28.920049+00:00",
+      "checkedAt": "2026-11-17T10:48:06.257755+00:00",
       "rosterNames": 26,
       "photoCandidates": 7,
-      "count": 4,
-      "status": "ready"
+      "sources": [
+        "https://en.wikipedia.org/wiki/KRC_Genk"
+      ],
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:12": {
       "clubName": "Royal Charleroi SC",
-      "checkedAt": "2026-11-17T10:08:29.975350+00:00",
+      "checkedAt": "2026-11-17T10:48:40.868244+00:00",
       "rosterNames": 36,
       "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/Royal_Charleroi_SC",
         "https://fr.wikipedia.org/wiki/Royal_Charleroi_Sporting_Club"
       ],
-      "count": 3,
-      "status": "ready"
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:13": {
       "clubName": "Lommel SK",
-      "checkedAt": "2026-11-17T09:37:12.134615+00:00",
-      "rosterNames": 19,
-      "photoCandidates": 7,
+      "checkedAt": "2026-11-17T10:48:57.413629+00:00",
+      "rosterNames": 49,
+      "photoCandidates": 10,
       "sources": [
-        "https://en.wikipedia.org/wiki/Lommel_SK"
+        "https://en.wikipedia.org/wiki/Lommel_SK",
+        "https://fr.wikipedia.org/wiki/Lommel_SK"
       ],
-      "count": 4,
-      "status": "ready"
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:14": {
       "clubName": "Sint-Truidense",
-      "checkedAt": "2026-11-17T09:04:36.815005+00:00",
-      "rosterNames": 20,
-      "photoCandidates": 7,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:49:22.558506+00:00",
+      "rosterNames": 64,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sint-Truidense_VV",
+        "https://nl.wikipedia.org/wiki/Sint-Truidense_VV",
+        "https://fr.wikipedia.org/wiki/K_Saint-Trond_VV"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:15": {
       "clubName": "Standard Liege",
-      "checkedAt": "2026-11-17T09:04:39.463843+00:00",
-      "rosterNames": 24,
-      "photoCandidates": 9,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:49:59.949322+00:00",
+      "rosterNames": 45,
+      "photoCandidates": 18,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Standard_Li%C3%A8ge",
+        "https://nl.wikipedia.org/wiki/Standard_Luik"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:16": {
       "clubName": "Union St.-Gilloise",
-      "checkedAt": "2026-11-17T09:04:42.329296+00:00",
-      "rosterNames": 22,
-      "photoCandidates": 12,
+      "checkedAt": "2026-11-17T10:50:49.724511+00:00",
+      "rosterNames": 65,
+      "photoCandidates": 49,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Royale_Union_Saint-Gilloise",
+        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Royale_Union_Saint-Gilloise_season",
+        "https://nl.wikipedia.org/wiki/Union_Sint-Gillis"
+      ],
       "count": 4,
       "status": "ready"
     },
     "belgian-pro-league:17": {
       "clubName": "RAAL La Louvière",
-      "checkedAt": "2026-11-17T10:08:41.821116+00:00",
+      "checkedAt": "2026-11-17T10:51:51.004492+00:00",
       "rosterNames": 17,
       "photoCandidates": 6,
       "sources": [
         "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re"
       ],
-      "count": 2,
+      "count": 0,
       "status": "insufficient_licensed_face_crops"
     },
     "belgian-pro-league:18": {
       "clubName": "Zulte-Waregem",
-      "checkedAt": "2026-11-17T10:08:54.250831+00:00",
+      "checkedAt": "2026-11-17T10:52:06.916181+00:00",
       "status": "unverified",
       "count": 0,
       "reason": "No verified current squad: en:No explicit current squad heading on en Wikipedia; en:No explicit current squad heading on en Wikipedia; nl:No explicit current squad heading on nl Wikipedia"
     },
     "brazil-serie-a:1": {
       "clubName": "Vitória",
-      "checkedAt": "2026-11-17T09:04:50.185901+00:00",
-      "rosterNames": 65,
+      "checkedAt": "2026-11-17T10:52:12.414791+00:00",
+      "rosterNames": 37,
       "photoCandidates": 11,
-      "count": 4,
-      "status": "ready"
+      "sources": [
+        "https://en.wikipedia.org/wiki/Esporte_Clube_Vit%C3%B3ria"
+      ],
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:2": {
       "clubName": "Athletico Paranaense",
-      "checkedAt": "2026-11-17T09:04:54.126463+00:00",
-      "rosterNames": 48,
-      "photoCandidates": 10,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:52:28.356040+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 9,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Club_Athletico_Paranaense"
+      ],
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:3": {
       "clubName": "Atlético-MG",
@@ -2147,5 +2199,5 @@
       "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T10:11:50.376171+00:00"
+  "lastUpdated": "2026-11-17T10:52:42.687768+00:00"
 }
