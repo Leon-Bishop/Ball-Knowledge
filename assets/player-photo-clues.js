@@ -5,6 +5,7 @@
 (function(){
 'use strict';
 const MINIMUM=3;
+const MAX_ROSTER_AGE_MS=21*24*60*60*1000;
 const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster']);
 let database={clubs:{}};
 const shuffledCache=new Map();
@@ -14,7 +15,10 @@ function hashString(text){
  return hash>>>0;
 }
 function availablePlayers(clubId){
- const list=database.clubs?.[clubId]?.players;
+ const club=database.clubs?.[clubId];
+ const checkedAt=Date.parse(club?.checkedAt||'');
+ if(!Number.isFinite(checkedAt)||Date.now()-checkedAt>MAX_ROSTER_AGE_MS||checkedAt>Date.now()+86_400_000)return [];
+ const list=club?.players;
  if(!Array.isArray(list))return [];
  const seen=new Set();
  const valid=list.filter(p=>{
