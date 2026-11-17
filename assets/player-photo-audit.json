@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-17T00:30:16.139530+00:00",
+  "lastUpdated": "2026-11-17T04:29:29.668799+00:00",
   "totalClubs": 214,
   "completeClubs": 214,
   "playersWithLicensedPhotos": 6288,
@@ -984,7 +984,7 @@
     "turkey-super-lig:2": {
       "status": "ready_7",
       "count": 9,
-      "lastAttempt": "2026-11-17T00:28:40.611407+00:00"
+      "lastAttempt": "2026-11-17T04:29:29.668799+00:00"
     },
     "turkey-super-lig:3": {
       "status": "ready_10",
