@@ -589,7 +589,13 @@ def run(max_clubs, force=False, since=None):
         club_id, qid = team["id"], mapping.get(team["id"])
         previous = db.get("clubs", {}).get(club_id, {})
         fresh_since = (datetime.now(timezone.utc) - timedelta(days=6)).isoformat()
-        if (not force and len(previous.get("players", [])) >= TARGET
+        # Never skip a recently refreshed club if its images failed final
+        # face-and-eye QA; attempt to find replacement licensed headshots.
+        usable_previous = sum(
+            p.get("faceCrop") is True and p.get("faceQualityVerified") is True
+            for p in previous.get("players", [])
+        )
+        if (not force and usable_previous >= TARGET
                 and previous.get("checkedAt", "") >= fresh_since):
             continue
         if since and audit["clubs"].get(club_id, {}).get("checkedAt", "") >= since:
