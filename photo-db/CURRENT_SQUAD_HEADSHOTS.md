@@ -67,3 +67,29 @@ node scripts/check-current-headshots.mjs
 
 The full importer needs Python 3.12, Pillow, NumPy, OpenCV, and network
 access to Wikimedia APIs. The GitHub workflow installs these dependencies.
+
+## Correct club assignment and loan safeguards
+
+The importer no longer treats a loaned-out player in a parent club's
+Wikipedia roster as a current first-team player. It stops at the first
+loan, reserve or former-player subsection and excludes known loaned-out
+players. A player Wikidata QID cannot be assigned to two game clubs.
+
+Every headshot also passes a weekly squad-membership audit:
+- Reparse the **current first-team subsection** of the linked Wikipedia
+  club article and confirm that the player QID appears there
+- Check the player's Wikidata P54 club history, rejecting a contradictory
+  2026/27 club assignment when it has a recent start date
+- Use club-published current squad pages for Galatasaray, Göztepe and
+  Kasımpaşa, and documented loan announcements for ambiguous players
+- Expire the audit and fall back to emoji clues after 21 days if verification
+  is not refreshed
+
+Sources and audit statuses are saved in
+[the membership audit](../assets/player-headshot-membership-audit.json)
+and [the roster evidence registry](official-roster-evidence.json).
+An entry supported only by an explicit Wikipedia squad page is **not
+independently confirmed**; the audit distinguishes these from independently
+corroborated players. No claim of guaranteed correctness for all 214 clubs
+is made. Players without sufficiently current, consistent evidence do not
+appear as photo clues.
