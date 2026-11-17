@@ -10,8 +10,8 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: audit-current-rosters
-  cancel-in-progress: true
+  group: ball-knowledge-photo-data
+  cancel-in-progress: false
 jobs:
   verify:
     runs-on: ubuntu-latest
