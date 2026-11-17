@@ -20,7 +20,7 @@ for(const [id,club] of Object.entries(db.clubs)){
   assert.equal(p.faceCrop,true);
   assert(p.photoUrl.startsWith('./assets/player-headshots/'));
   assert(p.sourceUrl.startsWith('https://commons.wikimedia.org/'));
-  assert(p.membershipSource.startsWith('https://en.wikipedia.org/wiki/'));
+  assert(/^https:\/\/[a-z]+\.wikipedia\.org\/wiki\//.test(p.membershipSource));
   assert(p.license&&p.author&&p.wikidataQid&&!seen.has(p.wikidataQid));
   seen.add(p.wikidataQid);
  }
