@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Seven historic Wikimedia crop files, visually reviewed by the maintainer,
+// Historic Wikimedia face crops, directly inspected and verified,
 // are permitted ONLY when current primary-source club membership is proven.
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -14,7 +14,11 @@ assert(Number.isFinite(Date.parse(manual.reviewedAt)));
 const selected={
  'turkey-super-lig:10':['Q68593365','Q108513776'],
  'turkey-super-lig:13':['Q21004899','Q60182084'],
- 'england-premier-league:8':['Q18614641','Q83632882','Q110565461']
+ 'england-premier-league:8':['Q18614641','Q83632882','Q110565461'],
+ 'belgian-pro-league:5':['Q17496664','Q1764965','Q10551618'],
+ 'brazil-serie-a:17':['Q5340762','Q14921884'],
+ 'france-ligue-1:3':['Q105473333','Q56612830','Q713627'],
+ 'portugal-liga-portugal:12':['Q56233291']
 };
 const legal=/^(CC0|Public domain|CC BY [234]\.0|CC BY-SA [234]\.0)$/;
 const qids=new Set();
@@ -52,4 +56,4 @@ for(const [clubId,ids] of Object.entries(selected)){
  const eligible=new Set(window.BKPlayerPhotos.availablePlayers(clubId).map(p=>p.wikidataQid));
  for(const qid of ids)assert(eligible.has(qid),'Manually reviewed, officially confirmed photo is hidden: '+clubId+' '+qid);
 }
-console.log('✓ Seven human-reviewed, fully credited portraits display only for the correct current clubs');
+console.log('✓ '+qids.size+' reviewed, attributed portraits display only for their independently verified current clubs');

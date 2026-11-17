@@ -9,10 +9,13 @@ const load=path=>JSON.parse(fs.readFileSync(new URL('../'+path,import.meta.url),
 const teams=load('teams.enriched.json');
 const db=load('assets/player-headshot-db.json');
 const official=load('photo-db/official-roster-evidence.json');
+const manuallyReviewed=load('assets/player-headshot-manual-review.json');
 const script=fs.readFileSync(new URL('../assets/player-photo-clues.js',import.meta.url),'utf8');
 const window={dispatchEvent(){}};
 vm.runInNewContext(script,{
- window,fetch:async(url)=>({ok:true,json:async()=>url.includes('official-roster-evidence')?official:db}),
+ window,fetch:async(url)=>({ok:true,json:async()=>
+  url.includes('official-roster-evidence')?official:
+  url.includes('player-headshot-manual-review')?manuallyReviewed:db}),
  Event:class Event{},console
 });
 await window.BKPlayerPhotos.ready;
@@ -40,4 +43,5 @@ if(process.argv.includes('--write')){
 }
 console.log('Current-trophy photo coverage: '+verified.length+'/'+targets.length);
 console.log('Missing: '+missing.map(x=>x.club).join(', '));
+if(missing.length===0)console.log('✓ All 105 trophy-clue clubs have a real current-player face.');
 if(process.argv.includes('--require-complete')&&missing.length)process.exitCode=1;

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T14:29:30.813Z",
-  "description": "Independently reviewed current 2026/27 first-team squad evidence from official club sites and dated first-team appearances; Wikipedia-only evidence does not qualify. Hearts and Konyaspor verified directly on 17 November 2026.",
+  "checkedAt": "2026-11-17T14:48:38.209Z",
+  "description": "Independently reviewed current 2026/27 first-team squad evidence from official club sites and dated first-team appearances; Wikipedia-only evidence does not qualify. Hearts and Konyaspor verified directly on 17 November 2026.; additional verified 2026/27 squads for SK Beveren, Red Bull Bragantino, AS Monaco, Vitória Guimarães.",
   "officialClubs": {
     "turkey-super-lig:7": {
       "club": "Galatasaray",
@@ -228,6 +228,39 @@
         "Q18614641": "Ainsley Maitland-Niles",
         "Q83632882": "Kiernan Dewsbury-Hall",
         "Q110565461": "Jake O'Brien"
+      }
+    },
+    "belgian-pro-league:5": {
+      "club": "Waasland-Beveren",
+      "source": "https://www.skbeveren.be/ploegen/a-kern",
+      "players": {
+        "Q17496664": "Arno Verschueren",
+        "Q1764965": "Christian Brüls",
+        "Q10551618": "Laurent Jans"
+      }
+    },
+    "brazil-serie-a:17": {
+      "club": "Red Bull Bragantino",
+      "source": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20007",
+      "players": {
+        "Q5340762": "Eduardo Sasha",
+        "Q14921884": "Gabriel Girotto Franco"
+      }
+    },
+    "france-ligue-1:3": {
+      "club": "AS Monaco",
+      "source": "https://www.asmonaco.com/en/pros/players",
+      "players": {
+        "Q105473333": "Vanderson",
+        "Q56612830": "Philipp Köhn",
+        "Q713627": "Lukáš Hrádecký"
+      }
+    },
+    "portugal-liga-portugal:12": {
+      "club": "Vitória Guimarães",
+      "source": "https://www.ligaportugal.pt/backoffice/assets/SL_Benfica_Vitoria_SC_Jornada_8_c9b916a810.pdf",
+      "players": {
+        "Q56233291": "Toni Borevković"
       }
     }
   },
