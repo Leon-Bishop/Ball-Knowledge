@@ -1,0 +1,66 @@
+# Current-squad face-only photo clues
+
+The historical `assets/player-photo-db.json` contains past **and** present
+footballers, including action shots. It is kept only as a research archive and
+is **never read by the game**.
+
+The game instead loads `assets/player-headshot-db.json` (schema version 2).
+Every displayed club must have **at least 3 distinct** licensed, face-detected,
+current-squad portraits. Four is the collection target. If a club lacks three,
+the quiz shows its ordinary emoji clue rather than a historical, unidentified
+or full-kit photograph.
+
+## Evidence and image selection
+
+1. `photo-db/club-wikidata-map.json` maps each of the 214 game clubs to a
+   Wikidata club identifier; only the matching English Wikipedia article is
+   consulted for its explicit **Current squad**, **First-team squad** or
+   **Squad** section. Generic `Players` headings are rejected because they
+   may mix historical players with current players.
+2. Linked squad members are resolved to individual Wikidata human footballers.
+   The importer retrieves their Commons image filename from Wikidata P18 or
+   Wikipedia pageimages.
+3. Wikimedia Commons image metadata must specify a photographer/author,
+   source page and commercially reusable license (CC0, public domain, CC BY,
+   or CC BY-SA). Noncommercial and no-derivatives files are rejected.
+4. OpenCV detects a single dominant human face. Photos without a clear face,
+   with multiple similar-sized faces or too little image resolution are
+   rejected. A 192×192 JPEG **face-only crop** is saved to
+   `assets/player-headshots/`. These are adaptations of the original images;
+   author and license are preserved in the JSON and
+   `player-photo-credits.html`.
+5. A set is published only when three or four valid current-squad face crops
+   exist. Player identities and their original image sources are available
+   when revealing a clue; the photo itself does not show a full kit.
+
+Current squad evidence is a snapshot of a Wikipedia article, not a real-time
+official registration database. Rosters can change between weekly checks,
+especially during transfer windows. Do not claim official squad verification
+or absolute image identity certainty.
+
+## Automated refresh and deployment
+
+`.github/workflows/current-headshots.yml` runs on updates to the importer,
+on manual dispatch and every Sunday at 03:27 UTC. It verifies/crops all
+214 clubs in checkpointed batches of 20, commits the source-linked data and
+face crops to `main`, and republishes GitHub Pages. No Cloudflare work,
+paid photo service or API key is required.
+
+The importer rechecks successful four-photo clubs after six days; clubs with
+fewer photos are attempted on each run. A previous verified set is kept when
+the source temporarily fails, but an unverified player is never substituted.
+
+Review `assets/player-headshot-audit.json` for exact coverage, counts and
+reasons clubs could not reach the three-photo minimum. This is an honest
+audit: **a source page existing is not proof that three usable headshots
+exist**. All 214 clubs are attempted; only verified records are displayed.
+
+Manual test:
+
+```bash
+python scripts/build_current_headshots.py --self-test
+node scripts/check-current-headshots.mjs
+```
+
+The full importer needs Python 3.12, Pillow, NumPy, OpenCV, and network
+access to Wikimedia APIs. The GitHub workflow installs these dependencies.
