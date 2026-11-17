@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Independent, fail-closed current-club verification for quiz headshot photos.
 
-A Wikipedia squad entry alone is insufficient: it can contain loans,
-stale entries or players under contract but representing another club.
-Accept a player only when the club's official squad confirms the identity,
-a current transfer announcement confirms a loan, or Wikidata P54 independently
-identifies this same current playing club without a newer conflicting club.
+A Wikipedia squad entry alone is not infallible: it can contain loans or
+outdated transfers. Reparse only the current first-team section, reject
+cross-club duplicates and new conflicting Wikidata P54 transfers, and use
+official club squad pages and confirmed loans wherever available. Wikipedia-
+only entries remain explicitly labelled as such, not independently verified.
 """
 from __future__ import annotations
 import argparse
@@ -244,6 +244,14 @@ def main(apply, recheck_wikipedia=False):
         "wikipediaPagesUnavailable": sum(v is None for v in roster_qids.values()) if roster_qids is not None else 0,
         "uniquePlayers": len(qids), "verifiedClubsWithThree": ready,
         "verifiedPlayers": sum(len(v) for v in verified.values()),
+        "independentlyCorroboratedPlayers": sum(
+            count_by_status.get(status, 0) for status in
+            ("official_club_squad", "confirmed_current_loan", "wikidata_current_club")
+        ),
+        "wikipediaOnlyPlayers": sum(
+            count_by_status.get(status, 0) for status in
+            ("wikipedia_squad_stale_p54", "wikipedia_squad_no_p54")
+        ),
         "statuses": dict(count_by_status),
         "conflictingPlayers": [r for r in entries if r["duplicateInClubs"]],
         "unconfirmed": [r for r in entries if r["verification"] not in (
