@@ -130,9 +130,9 @@ function emojiMeaning(index){
  const emoji=round?.emojis?.[index]||'';
  return tr(EMOJI_COLOURS.has(emoji)?'emojiMeaningColor':index<=1?'emojiMeaningPlace':index===2?'emojiMeaningSymbol':'emojiMeaningIdentity');
 }
-// Display licensed portraits for ball/trophy clues. Each club must have
-// at least seven uniquely attributed players (ten preferred). Randomize
-// separately per round and select different players for different clues.
+// Display face-only portraits of verified current-squad players.
+// Three distinct, attributed and face-detected crops are required for a club.
+// Randomize separately per round and never use the historical photo database.
 const PLAYER_PHOTO_REPLACE=new Set(['⚽','🏆','🥇']);
 const playerPhotoSessionSeed=Math.random().toString(36).slice(2);
 const photoAlternates=new Map();
@@ -150,7 +150,7 @@ function displayEmojiExplanation(){
  const photo=eligiblePlayerPhoto(activeEmojiExplanation);
  if(photo){
   const text=document.createElement('span');
-  text.textContent=(lang==='tr'?'Bu kulüpte oynamış futbolcu: ':'Player who represented this club: ')+photo.playerName+'. ';
+  text.textContent=(lang==='tr'?'Güncel kadro futbolcusu: ':'Current squad player: ')+photo.playerName+'. ';
   const credit=document.createElement('a');
   credit.href=photo.sourceUrl;credit.target='_blank';credit.rel='noopener noreferrer';
   credit.textContent=(lang==='tr'?'Fotoğraf: ':'Photo: ')+photo.author+' · '+photo.license;
