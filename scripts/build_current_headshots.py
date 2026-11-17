@@ -532,10 +532,11 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET, roster_
             # If a named gallery has no usable face, ALSO inspect structured
             # P180 images; never stop at the first category's bad photos.
             found = False
-            for identity_method, files in (
-                ("commons_named_person_category", commons_person_category_files(entity, name)),
-                ("commons_structured_depicts", commons_depicts_files(player_qid, name)),
+            for identity_method, find_files in (
+                ("commons_named_person_category", lambda: commons_person_category_files(entity, name)),
+                ("commons_structured_depicts", lambda: commons_depicts_files(player_qid, name)),
             ):
+                files = find_files()
                 if not files:
                     continue
                 extra_meta = commons_metadata(files)
