@@ -367,7 +367,7 @@ def process_club(team, qid, title, old_db):
     return photos, len(titles), len(candidates)
 
 
-def run(max_clubs, force=False):
+def run(max_clubs, force=False, since=None):
     teams = read_json(TEAMS, [])
     mapping = read_json(CLUBS, {}).get("clubs", {})
     old_db = read_json(OLD_DB, {"clubs": {}})
@@ -386,6 +386,8 @@ def run(max_clubs, force=False):
         club_id, qid = team["id"], mapping.get(team["id"])
         previous = db.get("clubs", {}).get(club_id, {})
         if not force and len(previous.get("players", [])) >= TARGET:
+            continue
+        if since and audit["clubs"].get(club_id, {}).get("checkedAt", "") >= since:
             continue
         if attempted >= max_clubs:
             break
@@ -449,9 +451,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--max-clubs", type=int, default=214)
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--since", default=None)
     parser.add_argument("--self-test", action="store_true")
     args = parser.parse_args()
     if args.self_test:
         self_test()
     else:
-        run(args.max_clubs, args.force)
+        run(args.max_clubs, args.force, args.since)
