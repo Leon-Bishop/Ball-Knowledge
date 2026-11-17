@@ -719,9 +719,11 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
         attempted += 1
         status = {"clubName": team["name"], "checkedAt": datetime.now(timezone.utc).isoformat()}
         try:
-            if not qid or not wiki_pages.get(qid):
-                raise ValueError("No confirmed club Wikidata QID / Wikipedia article")
-            pages = wiki_pages[qid]
+            if not qid:
+                raise ValueError("No confirmed club Wikidata QID")
+            # Lack of a current Wikipedia squad heading must not suppress
+            # the independently verified Wikidata P54 / Commons fallback.
+            pages = wiki_pages.get(qid, {})
             sources = []
             if pages.get("en"):
                 sources.append(("en", pages["en"]))
