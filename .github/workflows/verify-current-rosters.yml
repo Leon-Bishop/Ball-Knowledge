@@ -1,0 +1,43 @@
+name: Independently audit player-to-club assignments
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/verify_current_rosters.py"
+      - ".github/workflows/verify-current-rosters.yml"
+  schedule:
+    - cron: "19 4 * * 1"
+permissions:
+  contents: write
+concurrency:
+  group: audit-current-rosters
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test independent club and loan verification
+        run: |
+          python -m py_compile scripts/verify_current_rosters.py
+          python scripts/verify_current_rosters.py --self-test
+      - name: Audit every photo against independent roster evidence
+        run: python -u scripts/verify_current_rosters.py
+      - name: Publish membership audit
+        run: |
+          git config user.name "ball-knowledge-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/player-headshot-membership-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit current-squad headshot club membership"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
