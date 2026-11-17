@@ -2,8 +2,8 @@
   "version": 2,
   "totalClubs": 214,
   "clubsWithThree": 79,
-  "clubsWithFour": 46,
-  "totalCurrentHeadshots": 416,
+  "clubsWithFour": 45,
+  "totalCurrentHeadshots": 415,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -262,7 +262,7 @@
     },
     "brazil-serie-a:5": {
       "clubName": "Botafogo",
-      "checkedAt": "2026-11-17T10:53:32.231140+00:00",
+      "checkedAt": "2026-11-17T12:42:56.420993+00:00",
       "rosterNames": 32,
       "photoCandidates": 16,
       "sources": [
@@ -284,7 +284,7 @@
     },
     "brazil-serie-a:7": {
       "clubName": "Coritiba",
-      "checkedAt": "2026-11-17T10:54:04.282295+00:00",
+      "checkedAt": "2026-11-17T12:43:19.197552+00:00",
       "rosterNames": 31,
       "photoCandidates": 15,
       "sources": [
@@ -295,7 +295,7 @@
     },
     "brazil-serie-a:8": {
       "clubName": "Mirassol",
-      "checkedAt": "2026-11-17T10:54:24.891234+00:00",
+      "checkedAt": "2026-11-17T12:43:38.284171+00:00",
       "rosterNames": 32,
       "photoCandidates": 14,
       "sources": [
@@ -306,7 +306,7 @@
     },
     "brazil-serie-a:9": {
       "clubName": "Cruzeiro",
-      "checkedAt": "2026-11-17T10:54:44.390703+00:00",
+      "checkedAt": "2026-11-17T12:43:56.055392+00:00",
       "rosterNames": 34,
       "photoCandidates": 34,
       "sources": [
@@ -318,7 +318,7 @@
     },
     "brazil-serie-a:10": {
       "clubName": "Flamengo",
-      "checkedAt": "2026-11-17T10:55:22.200230+00:00",
+      "checkedAt": "2026-11-17T12:44:30.740100+00:00",
       "rosterNames": 27,
       "photoCandidates": 22,
       "sources": [
@@ -329,7 +329,7 @@
     },
     "brazil-serie-a:11": {
       "clubName": "Fluminense",
-      "checkedAt": "2026-11-17T10:55:41.531791+00:00",
+      "checkedAt": "2026-11-17T12:44:48.405298+00:00",
       "rosterNames": 30,
       "photoCandidates": 19,
       "sources": [
@@ -340,7 +340,7 @@
     },
     "brazil-serie-a:12": {
       "clubName": "São Paulo",
-      "checkedAt": "2026-11-17T10:56:04.333971+00:00",
+      "checkedAt": "2026-11-17T12:45:17.377785+00:00",
       "rosterNames": 36,
       "photoCandidates": 16,
       "sources": [
@@ -351,7 +351,7 @@
     },
     "brazil-serie-a:13": {
       "clubName": "Remo",
-      "checkedAt": "2026-11-17T10:56:25.878946+00:00",
+      "checkedAt": "2026-11-17T12:45:37.070899+00:00",
       "rosterNames": 30,
       "photoCandidates": 11,
       "sources": [
@@ -362,7 +362,7 @@
     },
     "brazil-serie-a:14": {
       "clubName": "Grêmio",
-      "checkedAt": "2026-11-17T10:56:41.471175+00:00",
+      "checkedAt": "2026-11-17T12:45:50.500969+00:00",
       "rosterNames": 33,
       "photoCandidates": 35,
       "sources": [
@@ -374,7 +374,7 @@
     },
     "brazil-serie-a:15": {
       "clubName": "Internacional",
-      "checkedAt": "2026-11-17T10:57:28.207336+00:00",
+      "checkedAt": "2026-11-17T12:46:32.809667+00:00",
       "rosterNames": 26,
       "photoCandidates": 27,
       "sources": [
@@ -386,7 +386,7 @@
     },
     "brazil-serie-a:16": {
       "clubName": "Palmeiras",
-      "checkedAt": "2026-11-17T10:58:05.709594+00:00",
+      "checkedAt": "2026-11-17T12:47:06.404966+00:00",
       "rosterNames": 25,
       "photoCandidates": 23,
       "sources": [
@@ -397,7 +397,7 @@
     },
     "brazil-serie-a:17": {
       "clubName": "Red Bull Bragantino",
-      "checkedAt": "2026-11-17T10:58:41.833868+00:00",
+      "checkedAt": "2026-11-17T12:47:42.003467+00:00",
       "rosterNames": 32,
       "photoCandidates": 30,
       "sources": [
@@ -409,7 +409,7 @@
     },
     "brazil-serie-a:18": {
       "clubName": "Santos",
-      "checkedAt": "2026-11-17T10:59:19.829776+00:00",
+      "checkedAt": "2026-11-17T12:48:16.305538+00:00",
       "rosterNames": 37,
       "photoCandidates": 49,
       "sources": [
@@ -421,7 +421,7 @@
     },
     "brazil-serie-a:19": {
       "clubName": "Chapecoense",
-      "checkedAt": "2026-11-17T11:00:25.376733+00:00",
+      "checkedAt": "2026-11-17T12:49:14.833998+00:00",
       "rosterNames": 34,
       "photoCandidates": 9,
       "sources": [
@@ -432,7 +432,7 @@
     },
     "brazil-serie-a:20": {
       "clubName": "Vasco da Gama",
-      "checkedAt": "2026-11-17T11:00:38.742536+00:00",
+      "checkedAt": "2026-11-17T12:49:26.809149+00:00",
       "rosterNames": 32,
       "photoCandidates": 15,
       "sources": [
@@ -476,7 +476,7 @@
     },
     "england-premier-league:4": {
       "clubName": "Brentford",
-      "checkedAt": "2026-11-17T11:01:46.352924+00:00",
+      "checkedAt": "2026-11-17T12:49:46.985277+00:00",
       "rosterNames": 65,
       "photoCandidates": 49,
       "sources": [
@@ -488,7 +488,7 @@
     },
     "england-premier-league:5": {
       "clubName": "Brighton",
-      "checkedAt": "2026-11-17T11:02:52.575635+00:00",
+      "checkedAt": "2026-11-17T12:50:47.067117+00:00",
       "rosterNames": 30,
       "photoCandidates": 24,
       "sources": [
@@ -499,7 +499,7 @@
     },
     "england-premier-league:6": {
       "clubName": "Chelsea",
-      "checkedAt": "2026-11-17T11:03:19.964915+00:00",
+      "checkedAt": "2026-11-17T12:51:12.666257+00:00",
       "rosterNames": 30,
       "photoCandidates": 21,
       "sources": [
@@ -521,7 +521,7 @@
     },
     "england-premier-league:8": {
       "clubName": "Everton",
-      "checkedAt": "2026-11-17T11:04:10.258297+00:00",
+      "checkedAt": "2026-11-17T12:51:37.251049+00:00",
       "rosterNames": 41,
       "photoCandidates": 32,
       "sources": [
@@ -544,7 +544,7 @@
     },
     "england-premier-league:10": {
       "clubName": "Ipswich Town",
-      "checkedAt": "2026-11-17T11:05:25.016234+00:00",
+      "checkedAt": "2026-11-17T12:52:24.050047+00:00",
       "rosterNames": 65,
       "photoCandidates": 51,
       "sources": [
@@ -2476,5 +2476,5 @@
       "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T12:42:47.747602+00:00"
+  "lastUpdated": "2026-11-17T12:53:22.159081+00:00"
 }

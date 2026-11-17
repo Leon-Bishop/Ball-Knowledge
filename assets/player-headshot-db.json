@@ -123,24 +123,6 @@
           "faceCrop": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section"
-        },
-        {
-          "clubId": "belgian-pro-league:2",
-          "playerName": "Anthony Valencia",
-          "wikidataQid": "Q101247266",
-          "clubWikidataQid": "Q732002",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-2--Q101247266.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anthony_Valencia_Cote_D%27Ivoire_v_Ecuador_14_June_2026-46.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://nl.wikipedia.org/wiki/Royal_Antwerp_FC",
-          "membershipSection": "selectie",
-          "membershipHeading": "selectie",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Royal_Antwerp_FC",
@@ -802,7 +784,7 @@
       "clubWikidataQid": "Q80958",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Botafogo_FR",
-      "checkedAt": "2026-11-17T10:53:32.231140+00:00"
+      "checkedAt": "2026-11-17T12:42:56.420993+00:00"
     },
     "brazil-serie-a:6": {
       "clubName": "Corinthians",
@@ -917,14 +899,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Coritiba_Foot_Ball_Club",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Coritiba_Foot_Ball_Club",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "brazil-serie-a:7",
@@ -942,15 +920,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q101230488",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Coritiba_Foot_Ball_Club",
-      "checkedAt": "2026-11-17T10:54:04.282295+00:00"
+      "checkedAt": "2026-11-17T12:43:19.197552+00:00"
     },
     "brazil-serie-a:8": {
       "clubName": "Mirassol",
@@ -969,18 +943,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Mirassol_Futebol_Clube",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Mirassol_Futebol_Clube",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Mirassol_Futebol_Clube",
-      "checkedAt": "2026-11-17T10:54:24.891234+00:00"
+      "checkedAt": "2026-11-17T12:43:38.284171+00:00"
     },
     "brazil-serie-a:9": {
       "clubName": "Cruzeiro",
@@ -999,18 +969,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Cruzeiro_EC",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Cruzeiro_EC",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Cruzeiro_EC",
-      "checkedAt": "2026-11-17T10:54:44.390703+00:00"
+      "checkedAt": "2026-11-17T12:43:56.055392+00:00"
     },
     "brazil-serie-a:10": {
       "clubName": "Flamengo",
@@ -1032,11 +998,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19362872",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "brazil-serie-a:10",
@@ -1054,11 +1016,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q551192",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         },
         {
           "clubId": "brazil-serie-a:10",
@@ -1073,18 +1031,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/CR_Flamengo",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/CR_Flamengo",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/CR_Flamengo",
-      "checkedAt": "2026-11-17T10:55:22.200230+00:00"
+      "checkedAt": "2026-11-17T12:44:30.740100+00:00"
     },
     "brazil-serie-a:11": {
       "clubName": "Fluminense",
@@ -1103,14 +1057,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Fluminense_FC",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Fluminense_FC",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "brazil-serie-a:11",
@@ -1125,18 +1075,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Fluminense_FC",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Fluminense_FC",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Fluminense_FC",
-      "checkedAt": "2026-11-17T10:55:41.531791+00:00"
+      "checkedAt": "2026-11-17T12:44:48.405298+00:00"
     },
     "brazil-serie-a:12": {
       "clubName": "São Paulo",
@@ -1158,22 +1104,18 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q15131398",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_FC",
-      "checkedAt": "2026-11-17T10:56:04.333971+00:00"
+      "checkedAt": "2026-11-17T12:45:17.377785+00:00"
     },
     "brazil-serie-a:13": {
       "clubName": "Remo",
       "clubWikidataQid": "Q2552872",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Clube_do_Remo",
-      "checkedAt": "2026-11-17T10:56:25.878946+00:00"
+      "checkedAt": "2026-11-17T12:45:37.070899+00:00"
     },
     "brazil-serie-a:14": {
       "clubName": "Grêmio",
@@ -1192,18 +1134,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_FBPA",
           "membershipSection": "first team squad",
           "membershipHeading": "first team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_FBPA",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_FBPA",
-      "checkedAt": "2026-11-17T10:56:41.471175+00:00"
+      "checkedAt": "2026-11-17T12:45:50.500969+00:00"
     },
     "brazil-serie-a:15": {
       "clubName": "Internacional",
@@ -1222,14 +1160,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SC_Internacional",
           "membershipSection": "first team",
           "membershipHeading": "first team",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "brazil-serie-a:15",
@@ -1244,14 +1178,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SC_Internacional",
           "membershipSection": "first team",
           "membershipHeading": "first team",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "brazil-serie-a:15",
@@ -1266,18 +1196,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SC_Internacional",
           "membershipSection": "first team",
           "membershipHeading": "first team",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SC_Internacional",
-      "checkedAt": "2026-11-17T10:57:28.207336+00:00"
+      "checkedAt": "2026-11-17T12:46:32.809667+00:00"
     },
     "brazil-serie-a:16": {
       "clubName": "Palmeiras",
@@ -1299,11 +1225,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q110160871",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "brazil-serie-a:16",
@@ -1318,18 +1240,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/SE_Palmeiras",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/SE_Palmeiras",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/SE_Palmeiras",
-      "checkedAt": "2026-11-17T10:58:05.709594+00:00"
+      "checkedAt": "2026-11-17T12:47:06.404966+00:00"
     },
     "brazil-serie-a:17": {
       "clubName": "Red Bull Bragantino",
@@ -1348,18 +1266,14 @@
           "membershipSource": "https://pt.wikipedia.org/wiki/Red_Bull_Bragantino",
           "membershipSection": "elenco atual",
           "membershipHeading": "elenco atual",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://pt.wikipedia.org/wiki/Red_Bull_Bragantino",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Red_Bull_Bragantino",
-      "checkedAt": "2026-11-17T10:58:41.833868+00:00"
+      "checkedAt": "2026-11-17T12:47:42.003467+00:00"
     },
     "brazil-serie-a:18": {
       "clubName": "Santos",
@@ -1378,18 +1292,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Santos_FC",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Santos_FC",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Santos_FC",
-      "checkedAt": "2026-11-17T10:59:19.829776+00:00"
+      "checkedAt": "2026-11-17T12:48:16.305538+00:00"
     },
     "brazil-serie-a:19": {
       "clubName": "Chapecoense",
@@ -1408,18 +1318,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol",
-      "checkedAt": "2026-11-17T11:00:25.376733+00:00"
+      "checkedAt": "2026-11-17T12:49:14.833998+00:00"
     },
     "brazil-serie-a:20": {
       "clubName": "Vasco da Gama",
@@ -1438,14 +1344,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "brazil-serie-a:20",
@@ -1460,18 +1362,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama",
-      "checkedAt": "2026-11-17T11:00:38.742536+00:00"
+      "checkedAt": "2026-11-17T12:49:26.809149+00:00"
     },
     "england-premier-league:1": {
       "clubName": "Arsenal",
@@ -1778,14 +1676,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Brentford_F.C.",
           "membershipSection": "first team squad",
           "membershipHeading": "first team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Brentford_F.C.",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "england-premier-league:4",
@@ -1800,14 +1694,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Brentford_F.C._season",
           "membershipSection": "first team squad",
           "membershipHeading": "first team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Brentford_F.C._season",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "england-premier-league:4",
@@ -1822,18 +1712,14 @@
           "membershipSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Brentford_F.C._season",
           "membershipSection": "first team squad",
           "membershipHeading": "first team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/2026%E2%80%9327_Brentford_F.C._season",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Brentford_F.C.",
-      "checkedAt": "2026-11-17T11:01:46.352924+00:00"
+      "checkedAt": "2026-11-17T12:49:46.985277+00:00"
     },
     "england-premier-league:5": {
       "clubName": "Brighton",
@@ -1852,14 +1738,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C.",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C.",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "england-premier-league:5",
@@ -1877,11 +1759,7 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q115162374",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "england-premier-league:5",
@@ -1899,15 +1777,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q115978703",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C.",
-      "checkedAt": "2026-11-17T11:02:52.575635+00:00"
+      "checkedAt": "2026-11-17T12:50:47.067117+00:00"
     },
     "england-premier-league:6": {
       "clubName": "Chelsea",
@@ -1926,14 +1800,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "england-premier-league:6",
@@ -1948,14 +1818,10 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         },
         {
           "clubId": "england-premier-league:6",
@@ -1973,15 +1839,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q3275904",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_and_commons_named_person_category"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Chelsea_F.C.",
-      "checkedAt": "2026-11-17T11:03:19.964915+00:00"
+      "checkedAt": "2026-11-17T12:51:12.666257+00:00"
     },
     "england-premier-league:7": {
       "clubName": "Crystal Palace",
@@ -2084,7 +1946,7 @@
       "clubWikidataQid": "Q5794",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Everton_F.C.",
-      "checkedAt": "2026-11-17T11:04:10.258297+00:00"
+      "checkedAt": "2026-11-17T12:51:37.251049+00:00"
     },
     "england-premier-league:9": {
       "clubName": "Fulham",
@@ -2202,15 +2064,11 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikidata_current_club",
-          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q19345715",
-          "verifiedAt": "2026-11-17T12:32:37.061933+00:00",
-          "faceQualityVerified": true
+          "associationType": "current_squad_wikipedia_section"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Ipswich_Town_F.C.",
-      "checkedAt": "2026-11-17T11:05:25.016234+00:00"
+      "checkedAt": "2026-11-17T12:52:24.050047+00:00"
     },
     "england-premier-league:11": {
       "clubName": "Leeds United",
@@ -10720,6 +10578,6 @@
       "checkedAt": "2026-11-17T11:06:48.531998+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T12:42:47.747602+00:00",
+  "lastUpdated": "2026-11-17T12:53:22.159081+00:00",
   "rosterAuditAt": "2026-11-17T12:32:37.061933+00:00"
 }
