@@ -85,8 +85,8 @@ vm.runInNewContext(source,{window,fetch:async(url)=>({ok:true,json:async()=>url.
 await window.BKPlayerPhotos.ready;
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:1').length,3);
 mock.clubs['team:1'].players[0].faceQualityVerified=false;
-assert.equal(window.BKPlayerPhotos.availablePlayers('team:1').length,0,
- 'An unverified face is excluded even when the roster and initial crop were approved');
+assert.equal(window.BKPlayerPhotos.availablePlayers('team:1').length,2,
+ 'Only the bad photo is removed; other approved faces still appear');
 mock.clubs['team:1'].players[0].faceQualityVerified=true;
 const wikipediaOnly=[70,71,72].map(n=>({...player(n),clubId:'team:7',
  photoUrl:'./assets/player-headshots/team-7--Q'+n+'.jpg',rosterVerification:'wikipedia_squad_no_p54'}));
@@ -100,6 +100,15 @@ assert.equal(window.BKPlayerPhotos.availablePlayers('team:5').length,0,'Cross-cl
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:6').length,0,'A duplicate must be rejected in both clubs');
 assert.equal(window.BKPlayerPhotos.availablePlayers('belgian-pro-league:12').length,3);
 assert.equal(window.BKPlayerPhotos.getPlayer('team:2','seed',0),null);
+const single={...player(90),clubId:'team:9',photoUrl:'./assets/player-headshots/team-9--Q90.jpg'};
+const pair=[91,92].map(n=>({...player(n),clubId:'team:10',photoUrl:'./assets/player-headshots/team-10--Q'+n+'.jpg'}));
+mock.clubs['team:9']={clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[single]};
+mock.clubs['team:10']={clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:pair};
+assert.equal(window.BKPlayerPhotos.availablePlayers('team:9').length,1,'A single approved face appears');
+assert.equal(window.BKPlayerPhotos.availablePlayers('team:10').length,2,'Two approved faces appear');
+assert.equal(window.BKPlayerPhotos.getPlayer('team:9','seed',0).wikidataQid,'Q90');
+assert.equal(window.BKPlayerPhotos.getPlayer('team:9','seed',1),null,'Never duplicate a player headshot');
+assert.equal(window.BKPlayerPhotos.getPlayer('team:10','seed',2),null,'Missing photos fall back to emojis');
 const ids=[0,1,2].map(i=>window.BKPlayerPhotos.getPlayer('team:1','seed',i).wikidataQid);
 assert.equal(new Set(ids).size,3,'Different clues must show different players');
-console.log('✓ Current squad only, three-headshot minimum, license metadata, tight crops and historical exclusion');
+console.log('✓ Approved player faces appear without duplicates; bad crops and uncertain rosters stay excluded');

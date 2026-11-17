@@ -4,7 +4,9 @@
  */
 (function(){
 'use strict';
-const MINIMUM=3;
+// One independently corroborated, quality-approved face is useful; do not
+// block it just because a club has fewer than three licensed portraits.
+const MINIMUM=1;
 const MAX_ROSTER_AGE_MS=21*24*60*60*1000;
 const ALLOWED_VERIFICATION=new Set([
  'official_club_squad','confirmed_current_loan','wikidata_current_club'
@@ -66,8 +68,9 @@ function availablePlayers(clubId){
   seen.add(p.wikidataQid);
   return true;
  });
- // Never present one or two old/uncertain portraits as a complete club set.
- return valid.length>=MINIMUM?valid.slice(0,4):[];
+ // Every item has passed roster, identity, filename and facial-feature QA.
+ // A small pool is fine: missing portrait slots stay as their original emojis.
+ return valid.slice(0,4);
 }
 function shuffledPlayers(clubId,roundSeed=''){
  const key=String(clubId)+'|'+String(roundSeed);
@@ -83,8 +86,10 @@ function shuffledPlayers(clubId,roundSeed=''){
 }
 function getPlayer(clubId,roundSeed='',clueIndex=0,alternative=0){
  const pool=shuffledPlayers(clubId,roundSeed);
- if(pool.length<MINIMUM)return null;
- return pool[((Number(clueIndex)||0)+(Number(alternative)||0))%pool.length];
+ const pos=(Number(clueIndex)||0)+(Number(alternative)||0);
+ if(pos<0||pos>=pool.length)return null;
+ // Never repeat the same headshot merely to fill another emoji slot.
+ return pool[pos];
 }
 window.BKPlayerPhotos={getPlayer,availablePlayers,ready:null};
 window.BKPlayerPhotos.ready=Promise.all([
