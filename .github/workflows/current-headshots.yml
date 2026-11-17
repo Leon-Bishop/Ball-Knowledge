@@ -72,7 +72,7 @@ jobs:
       - name: Recheck every refreshed player against current club evidence
         run: |
           python -u scripts/verify_current_rosters.py --self-test
-          python -u scripts/verify_current_rosters.py --apply
+          python -u scripts/verify_current_rosters.py --apply --recheck-wikipedia
           git add assets/player-headshot-db.json assets/player-headshot-membership-audit.json
           if ! git diff --cached --quiet; then
             git commit -m "Validate refreshed headshots against current playing clubs"
