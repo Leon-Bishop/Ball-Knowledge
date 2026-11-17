@@ -57,23 +57,28 @@
       "source": "https://www.rangers.co.uk/Article/team-news-gers-side-to-face-falkirk-tonight/xjPOCRUZIHHWOwxM8zFrU",
       "players": {
         "Q111994930": "Ross McCausland",
-        "Q131863254": "Findlay Curtis"
+        "Q131863254": "Findlay Curtis",
+        "Q84462730": "Ivor Pandur"
       }
     },
     "scotland-premiership:7": {
       "club": "Dundee United",
-      "source": "https://www.dundeeunitedfc.co.uk/news/9548/United-secure-valuable-point-at-Celtic-Park-to-maintain-unbeaten-run.html",
+      "source": "https://www.christmas.dundeeunitedfc.co.uk/news/9557/United-see-points-shared-in-home-clash-with-Motherwell.html",
       "players": {
         "Q60733962": "Jack Walton",
-        "Q102276813": "Neil Farrugia"
+        "Q102276813": "Neil Farrugia",
+        "Q104884130": "Lachlan Rose",
+        "Q38167881": "Mehdi Merghem"
       }
     },
     "scotland-premiership:3": {
       "club": "Dundee",
-      "source": "https://dundeefc.co.uk/news/hearts-2-1-dundee-match-report-06-09-2026/",
+      "source": "https://dundeefc.co.uk/team/first-team/",
       "players": {
         "Q118470954": "Imari Samuels",
-        "Q131910302": "Joe Westley"
+        "Q131910302": "Joe Westley",
+        "Q122195115": "Charlie Reilly",
+        "Q111711024": "Matai Akinmboni"
       }
     },
     "scotland-premiership:5": {
