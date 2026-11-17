@@ -344,7 +344,7 @@ def commons_person_category_files(entity, player_name):
                 if (len(name_tokens) >= 2 and
                         all(token in normalized_title.split() for token in name_tokens) and
                         title.startswith("File:") and
-                        re.search(r"\\.(?:jpe?g|png|webp)$", title, re.I)):
+                        re.search(r"\.(?:jpe?g|png|webp)$", title, re.I)):
                     files.append(title.removeprefix("File:"))
         except Exception as exc:
             print("  Commons player category unavailable", category, str(exc)[:75], flush=True)
@@ -380,7 +380,7 @@ def commons_depicts_files(player_qid, player_name):
             ]
             if player_qid in depicted:
                 filename = page["title"].removeprefix("File:")
-                if re.search(r"\\.(?:jpe?g|png|webp)$", filename, re.I):
+                if re.search(r"\.(?:jpe?g|png|webp)$", filename, re.I):
                     files.append(filename)
         return files[:3]
     except Exception as exc:
