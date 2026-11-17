@@ -15,6 +15,7 @@ const LOANED_OUT={
 };
 const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster','ρόστερ','ροστερ','ομάδα','elenco atual','effectif actuel','plantilla actual','huidige selectie','aktueller kader','güncel kadro']);
 let database={clubs:{}};
+let conflictedQids=new Set();
 const shuffledCache=new Map();
 function hashString(text){
  let hash=2166136261;
@@ -65,7 +66,20 @@ window.BKPlayerPhotos.ready=fetch('./assets/player-headshot-db.json',{cache:'no-
  .then(r=>{if(!r.ok)throw Error('Curated headshot catalog missing');return r.json()})
  .then(j=>{
   if(j.version!==2||!j.clubs||typeof j.clubs!=='object')throw Error('Unexpected headshot catalog');
-  database=j;shuffledCache.clear();
+  database=j;
+  // Never show the same player as belonging to two different clubs,
+  // even when a source has outdated loan/parent-club rosters.
+  const byPlayer=new Map();
+  conflictedQids=new Set();
+  for(const [clubId,club] of Object.entries(database.clubs)){
+   for(const player of club.players||[]){
+    if(!player.wikidataQid)continue;
+    const previous=byPlayer.get(player.wikidataQid);
+    if(previous&&previous!==clubId)conflictedQids.add(player.wikidataQid);
+    else byPlayer.set(player.wikidataQid,clubId);
+   }
+  }
+  shuffledCache.clear();
   window.dispatchEvent(new Event('bk-player-photos-ready'));
  }).catch(e=>console.info('Current-squad headshots unavailable:',e.message));
 })();
