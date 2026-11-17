@@ -6,7 +6,7 @@
 'use strict';
 const MINIMUM=3;
 const MAX_ROSTER_AGE_MS=21*24*60*60*1000;
-const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster']);
+const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster','ρόστερ','ροστερ','ομάδα','elenco atual','effectif actuel','plantilla actual','huidige selectie','aktueller kader','güncel kadro']);
 let database={clubs:{}};
 const shuffledCache=new Map();
 function hashString(text){
