@@ -6,6 +6,10 @@
 'use strict';
 const MINIMUM=3;
 const MAX_ROSTER_AGE_MS=21*24*60*60*1000;
+const ALLOWED_VERIFICATION=new Set([
+ 'official_club_squad','confirmed_current_loan','wikidata_current_club',
+ 'wikipedia_squad_stale_p54','wikipedia_squad_no_p54'
+]);
 // Parent-club Wikipedia rosters can retain loaned-out players.
 // These exclusions are backed by current-season transfer announcements.
 const LOANED_OUT={
@@ -26,11 +30,18 @@ function availablePlayers(clubId){
  const club=database.clubs?.[clubId];
  const checkedAt=Date.parse(club?.checkedAt||'');
  if(!Number.isFinite(checkedAt)||Date.now()-checkedAt>MAX_ROSTER_AGE_MS||checkedAt>Date.now()+86_400_000)return [];
+ const auditAt=Date.parse(database.rosterAuditAt||'');
+ if(!Number.isFinite(auditAt)||Date.now()-auditAt>MAX_ROSTER_AGE_MS)return [];
  const list=club?.players;
  if(!Array.isArray(list))return [];
  const seen=new Set();
  const valid=list.filter(p=>{
-  if(!p||p.clubId!==clubId||p.verifiedCurrent!==true||p.faceCrop!==true||
+  const verifiedAt=Date.parse(p?.verifiedAt||'');
+  if(!p||p.clubId!==clubId||p.clubWikidataQid!==club.clubWikidataQid||
+     !ALLOWED_VERIFICATION.has(p.rosterVerification)||
+     !Number.isFinite(verifiedAt)||Date.now()-verifiedAt>MAX_ROSTER_AGE_MS||
+     !p.secondaryRosterSource?.startsWith('https://')||
+     p.verifiedCurrent!==true||p.faceCrop!==true||
      !p.photoUrl?.startsWith('./assets/player-headshots/')||
      !p.sourceUrl?.startsWith('https://commons.wikimedia.org/')||
      !p.membershipSource?.startsWith('https://')||
