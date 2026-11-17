@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T09:57:21.964496+00:00",
+  "checkedAt": "2026-11-17T10:07:29.091759+00:00",
   "rule": "Official current squad/loan evidence, or explicit Wikipedia current squad without recent conflicting 2026-27 Wikidata P54; all cross-club duplicates excluded",
   "totalClubs": 214,
-  "totalPlayers": 815,
-  "wikipediaPagesRechecked": 214,
+  "totalPlayers": 817,
+  "wikipediaPagesRechecked": 215,
   "wikipediaPagesUnavailable": 0,
-  "uniquePlayers": 815,
+  "uniquePlayers": 817,
   "verifiedClubsWithThree": 203,
-  "verifiedPlayers": 805,
-  "independentlyCorroboratedPlayers": 295,
-  "wikipediaOnlyPlayers": 510,
+  "verifiedPlayers": 807,
+  "independentlyCorroboratedPlayers": 296,
+  "wikipediaOnlyPlayers": 511,
   "statuses": {
     "wikipedia_squad_no_p54": 223,
-    "wikipedia_squad_stale_p54": 287,
-    "wikidata_current_club": 280,
+    "wikipedia_squad_stale_p54": 288,
+    "wikidata_current_club": 281,
     "confirmed_current_loan": 3,
     "not_on_current_squad": 8,
     "recent_conflicting_club": 2,
@@ -234,12 +234,13 @@
       ]
     },
     "belgian-pro-league:10": {
-      "total": 3,
-      "verified": 3,
+      "total": 4,
+      "verified": 4,
       "verifiedNames": [
         "Óscar Gil",
         "Łukasz Łakomy",
-        "Birger Verstraete"
+        "Birger Verstraete",
+        "Timmy Simons"
       ]
     },
     "belgian-pro-league:11": {
@@ -1113,12 +1114,13 @@
       "verifiedNames": []
     },
     "greece-super-league:7": {
-      "total": 3,
-      "verified": 3,
+      "total": 4,
+      "verified": 4,
       "verifiedNames": [
         "Lorenzo Dickmann",
         "Aaron Leya Iseka",
-        "Aitor Cantalapiedra"
+        "Aitor Cantalapiedra",
+        "Dimitris Nikolaou"
       ]
     },
     "greece-super-league:8": {
