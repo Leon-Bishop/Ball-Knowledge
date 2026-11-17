@@ -9,8 +9,20 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   schedule:
-    # Four refresh attempts a day. API access requires API_NINJAS_KEY repository secret.
-    - cron: "13 */6 * * *"
+    # Türkiye uses UTC+3 year-round. Match-end-oriented local times:
+    # 00:20 late matches, 06:20 Brazil/overnight, 16:15 early kickoff,
+    # 18:45 afternoon kickoff, 22:20 prime-time kickoff.
+    # Each scheduled refresh builds one shared cache for all visitors.
+    - cron: "20 0 * * *"
+      timezone: "Europe/Istanbul"
+    - cron: "20 6 * * *"
+      timezone: "Europe/Istanbul"
+    - cron: "15 16 * * *"
+      timezone: "Europe/Istanbul"
+    - cron: "45 18 * * *"
+      timezone: "Europe/Istanbul"
+    - cron: "20 22 * * *"
+      timezone: "Europe/Istanbul"
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
