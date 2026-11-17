@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 import re
 import unicodedata
+import urllib.parse
 
 import build_current_headshots as photos
 
@@ -110,7 +111,42 @@ def official_evidence(club_id, qid, evidence, today):
     return None, None
 
 
-def verify(db, entities, evidence, mapping, today):
+def recheck_wikipedia_squad_memberships(db):
+    """Reparse exact CURRENT squad subsection for each photo's source page.
+
+    This catches players in 'out on loan' subsections that the old importer
+    accidentally included. A failed page lookup cannot prove membership.
+    """
+    sources = set(p.get("membershipSource") for club in db.get("clubs", {}).values()
+                  for p in club.get("players", []) if p.get("membershipSource"))
+    membership = {}
+    for index, url in enumerate(sorted(sources), 1):
+        try:
+            parsed = urllib.parse.urlparse(url)
+            if not parsed.hostname or not parsed.hostname.endswith(".wikipedia.org"):
+                raise ValueError("Unexpected roster source host")
+            language = parsed.hostname.split(".")[0]
+            title = urllib.parse.unquote(parsed.path.removeprefix("/wiki/")).replace("_", " ")
+            raw, _ = photos.wiki_squad(title, language)
+            section, heading = photos.squad_section(raw)
+            if not section or not photos.is_current_heading(heading):
+                raise ValueError("No explicit current squad heading")
+            names = photos.squad_titles(section)
+            if len(names) < 3:
+                raise ValueError("Fewer than three linked current squad players")
+            qids, _ = photos.wikipedia_qids(names, language)
+            if len(qids) < 3:
+                raise ValueError("Unable to resolve squad identities")
+            membership[url] = set(qids)
+        except Exception as exc:
+            membership[url] = None
+            print("  Roster source unavailable:", url, str(exc)[:100], flush=True)
+        if index % 25 == 0:
+            print(f"  Rechecked {index}/{len(sources)} current squad pages", flush=True)
+    return membership
+
+
+def verify(db, entities, evidence, mapping, today, roster_qids=None):
     entries = []
     occurrences = defaultdict(set)
     for club_id, club in db.get("clubs", {}).items():
@@ -126,6 +162,13 @@ def verify(db, entities, evidence, mapping, today):
             duplicate = len(occurrences[qid]) > 1
             if official:
                 status, evidence_url = official, official_source
+            elif roster_qids is not None and (
+                p.get("membershipSource") not in roster_qids or
+                roster_qids[p.get("membershipSource")] is None
+            ):
+                status, evidence_url = "roster_source_unavailable", None
+            elif roster_qids is not None and qid not in roster_qids[p["membershipSource"]]:
+                status, evidence_url = "not_on_current_squad", None
             elif not expected:
                 status, evidence_url = "unconfirmed", None
             elif actual == expected:
@@ -179,7 +222,7 @@ def verify(db, entities, evidence, mapping, today):
     return entries, verified
 
 
-def main(apply):
+def main(apply, recheck_wikipedia=False):
     db = json.loads(DATABASE.read_text(encoding="utf8"))
     evidence = json.loads(EVIDENCE.read_text(encoding="utf8"))
     mapping = json.loads(MAPPING.read_text(encoding="utf8"))["clubs"]
@@ -188,7 +231,8 @@ def main(apply):
     print(f"Checking {len(qids)} distinct players against independent current-club evidence", flush=True)
     entities = photos.wikidata_entities(qids)
     today = utcnow().date()
-    entries, verified = verify(db, entities, evidence, mapping, today)
+    roster_qids = recheck_wikipedia_squad_memberships(db) if recheck_wikipedia else None
+    entries, verified = verify(db, entities, evidence, mapping, today, roster_qids)
     total = len(db["clubs"])
     ready = sum(len(verified.get(id, [])) >= 3 for id in db["clubs"])
     count_by_status = Counter(row["verification"] for row in entries)
@@ -196,6 +240,8 @@ def main(apply):
         "version": 1, "checkedAt": utcnow().isoformat(),
         "rule": "Official current squad/loan evidence, or explicit Wikipedia current squad without recent conflicting 2026-27 Wikidata P54; all cross-club duplicates excluded",
         "totalClubs": total, "totalPlayers": len(entries),
+        "wikipediaPagesRechecked": len(roster_qids) if roster_qids is not None else 0,
+        "wikipediaPagesUnavailable": sum(v is None for v in roster_qids.values()) if roster_qids is not None else 0,
         "uniquePlayers": len(qids), "verifiedClubsWithThree": ready,
         "verifiedPlayers": sum(len(v) for v in verified.values()),
         "statuses": dict(count_by_status),
@@ -265,6 +311,7 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("--apply",action="store_true")
     parser.add_argument("--self-test",action="store_true")
+    parser.add_argument("--recheck-wikipedia",action="store_true")
     args=parser.parse_args()
     if args.self_test:self_test()
-    else:main(args.apply)
+    else:main(args.apply,args.recheck_wikipedia)
