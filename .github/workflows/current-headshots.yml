@@ -14,7 +14,9 @@ permissions:
   id-token: write
 concurrency:
   group: curated-current-headshots
-  cancel-in-progress: false
+  # Importer checkpoints each batch; superseded runs should not continue
+  # from stale database snapshots and race against a newer run.
+  cancel-in-progress: true
 jobs:
   curate:
     runs-on: ubuntu-latest
