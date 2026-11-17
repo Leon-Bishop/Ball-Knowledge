@@ -572,7 +572,7 @@ def run(max_clubs, force=False, since=None):
     for club in db.get("clubs", {}).values():
         club["players"] = [p for p in club.get("players", [])
                            if is_current_heading(p.get("membershipSection", ""))]
-    db["source"] = "Current squad sections of English Wikipedia + Wikidata P18 + licensed Commons face crops"
+    db["source"] = "Current squad sections of multilingual Wikipedia + Wikidata player identity + licensed Commons face crops"
     db["minimumCurrentHeadshotsPerClub"] = MINIMUM
     db["targetCurrentHeadshotsPerClub"] = TARGET
     audit["version"] = 2
