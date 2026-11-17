@@ -9,7 +9,7 @@ CC BY, or CC BY-SA terms; cropped versions preserve attribution and license.
 """
 from __future__ import annotations
 import argparse
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from html.parser import HTMLParser
 from io import BytesIO
 import json
@@ -385,7 +385,9 @@ def run(max_clubs, force=False, since=None):
     for team in teams:
         club_id, qid = team["id"], mapping.get(team["id"])
         previous = db.get("clubs", {}).get(club_id, {})
-        if not force and len(previous.get("players", [])) >= TARGET:
+        fresh_since = (datetime.now(timezone.utc) - timedelta(days=6)).isoformat()
+        if (not force and len(previous.get("players", [])) >= TARGET
+                and previous.get("checkedAt", "") >= fresh_since):
             continue
         if since and audit["clubs"].get(club_id, {}).get("checkedAt", "") >= since:
             continue
