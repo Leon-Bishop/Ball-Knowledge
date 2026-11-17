@@ -1,13 +1,13 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 78,
-  "clubsWithFour": 45,
-  "totalCurrentHeadshots": 414,
+  "clubsWithThree": 79,
+  "clubsWithFour": 46,
+  "totalCurrentHeadshots": 416,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
-      "checkedAt": "2026-11-17T10:42:15.031283+00:00",
+      "checkedAt": "2026-11-17T12:33:45.340987+00:00",
       "rosterNames": 30,
       "photoCandidates": 45,
       "sources": [
@@ -19,7 +19,7 @@
     },
     "belgian-pro-league:2": {
       "clubName": "Antwerp",
-      "checkedAt": "2026-11-17T10:43:17.656686+00:00",
+      "checkedAt": "2026-11-17T12:34:41.480204+00:00",
       "rosterNames": 48,
       "photoCandidates": 34,
       "sources": [
@@ -31,7 +31,7 @@
     },
     "belgian-pro-league:3": {
       "clubName": "Cercle Brugge KSV",
-      "checkedAt": "2026-11-17T10:43:58.554831+00:00",
+      "checkedAt": "2026-11-17T12:35:19.307043+00:00",
       "rosterNames": 59,
       "photoCandidates": 18,
       "sources": [
@@ -43,7 +43,7 @@
     },
     "belgian-pro-league:4": {
       "clubName": "Club Brugge",
-      "checkedAt": "2026-11-17T10:44:49.829405+00:00",
+      "checkedAt": "2026-11-17T12:36:04.592307+00:00",
       "rosterNames": 26,
       "photoCandidates": 12,
       "sources": [
@@ -54,7 +54,7 @@
     },
     "belgian-pro-league:5": {
       "clubName": "Waasland-Beveren",
-      "checkedAt": "2026-11-17T10:45:31.772820+00:00",
+      "checkedAt": "2026-11-17T12:36:43.580737+00:00",
       "rosterNames": 26,
       "photoCandidates": 6,
       "sources": [
@@ -65,7 +65,7 @@
     },
     "belgian-pro-league:6": {
       "clubName": "KAA Gent",
-      "checkedAt": "2026-11-17T10:45:50.995087+00:00",
+      "checkedAt": "2026-11-17T12:37:01.213012+00:00",
       "rosterNames": 41,
       "photoCandidates": 18,
       "sources": [
@@ -77,7 +77,7 @@
     },
     "belgian-pro-league:7": {
       "clubName": "KV Kortrijk",
-      "checkedAt": "2026-11-17T10:46:22.987693+00:00",
+      "checkedAt": "2026-11-17T12:37:30.085549+00:00",
       "rosterNames": 54,
       "photoCandidates": 13,
       "sources": [
@@ -90,7 +90,7 @@
     },
     "belgian-pro-league:8": {
       "clubName": "KV Mechelen",
-      "checkedAt": "2026-11-17T10:46:59.807513+00:00",
+      "checkedAt": "2026-11-17T12:38:04.334900+00:00",
       "rosterNames": 45,
       "photoCandidates": 8,
       "sources": [
@@ -114,7 +114,7 @@
     },
     "belgian-pro-league:10": {
       "clubName": "Oud-Heverlee Leuven",
-      "checkedAt": "2026-11-17T10:47:43.894696+00:00",
+      "checkedAt": "2026-11-17T12:38:26.311571+00:00",
       "rosterNames": 48,
       "photoCandidates": 7,
       "sources": [
@@ -126,7 +126,7 @@
     },
     "belgian-pro-league:11": {
       "clubName": "Racing Genk",
-      "checkedAt": "2026-11-17T10:48:06.257755+00:00",
+      "checkedAt": "2026-11-17T12:38:47.232809+00:00",
       "rosterNames": 26,
       "photoCandidates": 7,
       "sources": [
@@ -137,7 +137,7 @@
     },
     "belgian-pro-league:12": {
       "clubName": "Royal Charleroi SC",
-      "checkedAt": "2026-11-17T10:48:40.868244+00:00",
+      "checkedAt": "2026-11-17T12:39:19.124931+00:00",
       "rosterNames": 36,
       "photoCandidates": 4,
       "sources": [
@@ -149,7 +149,7 @@
     },
     "belgian-pro-league:13": {
       "clubName": "Lommel SK",
-      "checkedAt": "2026-11-17T10:48:57.413629+00:00",
+      "checkedAt": "2026-11-17T12:39:34.954965+00:00",
       "rosterNames": 49,
       "photoCandidates": 10,
       "sources": [
@@ -161,7 +161,7 @@
     },
     "belgian-pro-league:14": {
       "clubName": "Sint-Truidense",
-      "checkedAt": "2026-11-17T10:49:22.558506+00:00",
+      "checkedAt": "2026-11-17T12:39:58.513583+00:00",
       "rosterNames": 64,
       "photoCandidates": 15,
       "sources": [
@@ -174,7 +174,7 @@
     },
     "belgian-pro-league:15": {
       "clubName": "Standard Liege",
-      "checkedAt": "2026-11-17T10:49:59.949322+00:00",
+      "checkedAt": "2026-11-17T12:40:32.486467+00:00",
       "rosterNames": 45,
       "photoCandidates": 18,
       "sources": [
@@ -199,7 +199,7 @@
     },
     "belgian-pro-league:17": {
       "clubName": "RAAL La Louvière",
-      "checkedAt": "2026-11-17T10:51:51.004492+00:00",
+      "checkedAt": "2026-11-17T12:41:21.478300+00:00",
       "rosterNames": 17,
       "photoCandidates": 6,
       "sources": [
@@ -210,14 +210,14 @@
     },
     "belgian-pro-league:18": {
       "clubName": "Zulte-Waregem",
-      "checkedAt": "2026-11-17T10:52:06.916181+00:00",
+      "checkedAt": "2026-11-17T12:41:37.009545+00:00",
       "status": "unverified",
       "count": 0,
       "reason": "No verified current squad: en:No explicit current squad heading on en Wikipedia; en:No explicit current squad heading on en Wikipedia; nl:No explicit current squad heading on nl Wikipedia"
     },
     "brazil-serie-a:1": {
       "clubName": "Vitória",
-      "checkedAt": "2026-11-17T10:52:12.414791+00:00",
+      "checkedAt": "2026-11-17T12:41:42.582277+00:00",
       "rosterNames": 37,
       "photoCandidates": 11,
       "sources": [
@@ -228,7 +228,7 @@
     },
     "brazil-serie-a:2": {
       "clubName": "Athletico Paranaense",
-      "checkedAt": "2026-11-17T10:52:28.356040+00:00",
+      "checkedAt": "2026-11-17T12:41:55.802240+00:00",
       "rosterNames": 31,
       "photoCandidates": 9,
       "sources": [
@@ -239,7 +239,7 @@
     },
     "brazil-serie-a:3": {
       "clubName": "Atlético-MG",
-      "checkedAt": "2026-11-17T10:52:51.361847+00:00",
+      "checkedAt": "2026-11-17T12:42:09.167370+00:00",
       "rosterNames": 32,
       "photoCandidates": 19,
       "sources": [
@@ -250,7 +250,7 @@
     },
     "brazil-serie-a:4": {
       "clubName": "Bahia",
-      "checkedAt": "2026-11-17T10:53:13.169827+00:00",
+      "checkedAt": "2026-11-17T12:42:29.840818+00:00",
       "rosterNames": 29,
       "photoCandidates": 11,
       "sources": [
@@ -2476,5 +2476,5 @@
       "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T12:28:43.443925+00:00"
+  "lastUpdated": "2026-11-17T12:42:47.747602+00:00"
 }
