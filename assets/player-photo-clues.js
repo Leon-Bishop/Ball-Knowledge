@@ -5,7 +5,7 @@
 (function(){
 'use strict';
 const MINIMUM=3;
-const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team']);
+const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster']);
 let database={clubs:{}};
 const shuffledCache=new Map();
 function hashString(text){
