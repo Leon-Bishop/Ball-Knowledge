@@ -30,6 +30,7 @@ OLD_DB = ROOT / "assets/player-photo-db.json"
 AGENT = "BallKnowledgeHeadshots/2.0 (Wikimedia Commons attributed cropped image project; contact dev.leonb@gmail.com)"
 MINIMUM = 3
 TARGET = 4
+CURRENT_SECTIONS = {"current squad", "first-team squad", "first team squad", "squad", "senior squad", "first team", "first-team"}
 MAX_PHOTO_TRIES = 28
 MAX_ROSTER_CANDIDATES = 65
 SLEEP_SECONDS = 0.35
@@ -304,8 +305,8 @@ def process_club(team, qid, title, old_db):
     club_id = team["id"]
     raw, roster_url = wiki_squad(title)
     section, heading = squad_section(raw)
-    if not section:
-        raise ValueError("No current squad section on English Wikipedia")
+    if not section or heading not in CURRENT_SECTIONS:
+        raise ValueError("No explicit current squad heading on English Wikipedia")
     titles = squad_titles(section)
     if len(titles) < 3:
         raise ValueError("Current squad has fewer than 3 linked player names")
@@ -374,6 +375,11 @@ def run(max_clubs, force=False, since=None):
     db = read_json(OUTPUT, {"version": 2, "clubs": {}})
     audit = read_json(AUDIT, {"version": 2, "clubs": {}})
     db["version"] = 2
+    # Generic "Players" headings may mix current and historical players.
+    # Remove such ambiguous records before counting or publishing them.
+    for club in db.get("clubs", {}).values():
+        club["players"] = [p for p in club.get("players", [])
+                           if p.get("membershipSection") in CURRENT_SECTIONS]
     db["source"] = "Current squad sections of English Wikipedia + Wikidata P18 + licensed Commons face crops"
     db["minimumCurrentHeadshotsPerClub"] = MINIMUM
     db["targetCurrentHeadshotsPerClub"] = TARGET
