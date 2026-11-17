@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 188,
-  "clubsWithFour": 174,
-  "totalCurrentHeadshots": 752,
+  "clubsWithThree": 202,
+  "clubsWithFour": 188,
+  "totalCurrentHeadshots": 808,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -1966,7 +1966,161 @@
       ],
       "count": 4,
       "status": "ready"
+    },
+    "turkey-super-lig:5": {
+      "clubName": "Eyüpspor",
+      "checkedAt": "2026-11-17T09:15:44.531259+00:00",
+      "rosterNames": 18,
+      "photoCandidates": 7,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ey%C3%BCpspor"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:6": {
+      "clubName": "Fenerbahçe",
+      "checkedAt": "2026-11-17T09:15:47.228362+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 25,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fenerbah%C3%A7e_S.K._(football)"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:7": {
+      "clubName": "Galatasaray",
+      "checkedAt": "2026-11-17T09:15:50.405795+00:00",
+      "rosterNames": 30,
+      "photoCandidates": 22,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Galatasaray_S.K._(football)"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:8": {
+      "clubName": "Gaziantep FK",
+      "checkedAt": "2026-11-17T09:15:53.791226+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 12,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gaziantep_F.K."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:9": {
+      "clubName": "Gençlerbirliği",
+      "checkedAt": "2026-11-17T09:15:56.535033+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 9,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gen%C3%A7lerbirli%C4%9Fi_S.K."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:10": {
+      "clubName": "Göztepe",
+      "checkedAt": "2026-11-17T09:15:59.250059+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/G%C3%B6ztepe_S.K."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:11": {
+      "clubName": "Başakşehir",
+      "checkedAt": "2026-11-17T09:16:01.842806+00:00",
+      "rosterNames": 27,
+      "photoCandidates": 21,
+      "sources": [
+        "https://en.wikipedia.org/wiki/%C4%B0stanbul_Ba%C5%9Fak%C5%9Fehir_F.K."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:12": {
+      "clubName": "Kasımpaşa",
+      "checkedAt": "2026-11-17T09:16:05.045470+00:00",
+      "rosterNames": 24,
+      "photoCandidates": 10,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kas%C4%B1mpa%C5%9Fa_S.K."
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:13": {
+      "clubName": "Kocaelispor",
+      "checkedAt": "2026-11-17T09:16:08.143697+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 11,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kocaelispor"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:14": {
+      "clubName": "Konyaspor",
+      "checkedAt": "2026-11-17T09:16:10.803987+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 12,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Konyaspor"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:15": {
+      "clubName": "Çaykur Rizespor",
+      "checkedAt": "2026-11-17T09:16:14.412416+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 14,
+      "sources": [
+        "https://en.wikipedia.org/wiki/%C3%87aykur_Rizespor"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:16": {
+      "clubName": "Samsunspor",
+      "checkedAt": "2026-11-17T09:16:18.149938+00:00",
+      "rosterNames": 21,
+      "photoCandidates": 17,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Samsunspor"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:17": {
+      "clubName": "Trabzonspor",
+      "checkedAt": "2026-11-17T09:16:20.638993+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trabzonspor"
+      ],
+      "count": 4,
+      "status": "ready"
+    },
+    "turkey-super-lig:18": {
+      "clubName": "Çorum FK",
+      "checkedAt": "2026-11-17T09:16:23.251817+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 13,
+      "sources": [
+        "https://en.wikipedia.org/wiki/%C3%87orum_F.K."
+      ],
+      "count": 4,
+      "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T09:15:38.017098+00:00"
+  "lastUpdated": "2026-11-17T09:16:26.483808+00:00"
 }
