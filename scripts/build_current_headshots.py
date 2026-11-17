@@ -917,6 +917,7 @@ def self_test():
     section, heading = squad_section(translated)
     assert heading == "selectie"
     assert squad_titles(section) == ["Speler Een"]
+    assert is_current_heading("wikidata current club")
     assert is_current_heading("plantel principal")
     assert is_current_heading("ρόστερ")
     assert not is_current_heading("former players")
