@@ -60,7 +60,14 @@ jobs:
           STARTED_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
           for batch in $(seq 1 11); do
             echo "Curating headshots: batch $batch"
-            python -u scripts/build_current_headshots.py --max-clubs 20 --since "$STARTED_AT" | tee /tmp/headshots-batch.log
+            # Use the first five checkpoints to fill missing trophy clues
+            # before enriching already-covered clubs. Then resume broad curation.
+            if [ "$batch" -le 5 ]; then
+              echo "Prioritizing missing 🏆 player portraits"
+              python -u scripts/build_current_headshots.py --only-missing-cups --max-clubs 20 --since "$STARTED_AT" | tee /tmp/headshots-batch.log
+            else
+              python -u scripts/build_current_headshots.py --max-clubs 20 --since "$STARTED_AT" | tee /tmp/headshots-batch.log
+            fi
             git add assets/player-headshot-db.json assets/player-headshot-audit.json assets/player-headshots/
             if ! git diff --cached --quiet; then
               git commit -m "Import verified current-squad face crops, batch $batch"
@@ -80,8 +87,12 @@ jobs:
               fi
             fi
             if grep -q '"attempted": 0' /tmp/headshots-batch.log; then
-              echo "All clubs checked in this run"
-              break
+              if [ "$batch" -le 5 ]; then
+                echo "Trophy-first pass exhausted; continuing other clubs next"
+              else
+                echo "All clubs checked in this run"
+                break
+              fi
             fi
           done
       - name: Recheck every refreshed player against current club evidence
