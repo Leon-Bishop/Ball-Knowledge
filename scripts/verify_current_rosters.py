@@ -226,6 +226,27 @@ def verify(db, entities, evidence, mapping, today, roster_qids=None):
     return entries, verified
 
 
+def refresh_verified_club_checked_at(db, checked_at):
+    """Keep a club's photo eligibility current after independently rechecking its squad.
+
+    The game rejects portraits when the club snapshot is over 21 days old.
+    Roster re-verification updates players but must also update the club date;
+    otherwise even currently verified portraits disappear after 21 days.
+    Never renew a club with no independently verified, quality-approved face.
+    """
+    for club in db.get("clubs", {}).values():
+        if any(
+            p.get("verifiedCurrent") is True
+            and p.get("faceCrop") is True
+            and p.get("faceQualityVerified") is True
+            and p.get("rosterVerification") in
+                ("official_club_squad", "confirmed_current_loan", "wikidata_current_club")
+            and p.get("secondaryRosterSource", "").startswith("https://")
+            for p in club.get("players", [])
+        ):
+            club["checkedAt"] = checked_at
+
+
 def main(apply, recheck_wikipedia=False):
     db = json.loads(DATABASE.read_text(encoding="utf8"))
     evidence = json.loads(EVIDENCE.read_text(encoding="utf8"))
@@ -285,6 +306,8 @@ def main(apply, recheck_wikipedia=False):
                 else:
                     p.pop("secondaryRosterSource", None)
                 p["verifiedAt"] = report["checkedAt"]
+        if recheck_wikipedia:
+            refresh_verified_club_checked_at(db, report["checkedAt"])
         db["rosterAuditAt"] = report["checkedAt"]
         DATABASE.write_text(json.dumps(db, ensure_ascii=False, indent=2) + "\n", encoding="utf8")
         print("Applied fail-closed independent current-squad validation", flush=True)
@@ -325,6 +348,24 @@ def self_test():
     assert official_evidence("belgian-pro-league:12","Q115902876",evidence,now)[0] is None
     assert official_evidence("belgian-pro-league:17","Q115902876",evidence,now)[0]=="confirmed_current_loan"
     assert latest_active_start_for_club({"claims":{"P54":[stmt("Q1","2026-08-01")]}}, "Q1", now)==date(2026,8,1)
+    old_checked = "2026-10-01T00:00:00+00:00"
+    refreshed = "2026-11-17T14:54:00+00:00"
+    good = {"verifiedCurrent": True, "faceCrop": True,
+            "faceQualityVerified": True, "rosterVerification": "wikidata_current_club",
+            "secondaryRosterSource": "https://www.wikidata.org/wiki/Q333"}
+    sample = {"clubs": {
+        "verified": {"checkedAt": old_checked, "players": [good]},
+        "wrong_club": {"checkedAt": old_checked,
+                       "players": [{**good, "verifiedCurrent": False}]},
+        "bad_crop": {"checkedAt": old_checked,
+                     "players": [{**good, "faceQualityVerified": False}]},
+        "no_proof": {"checkedAt": old_checked,
+                     "players": [{**good, "secondaryRosterSource": ""}]}
+    }}
+    refresh_verified_club_checked_at(sample, refreshed)
+    assert sample["clubs"]["verified"]["checkedAt"] == refreshed
+    assert all(sample["clubs"][key]["checkedAt"] == old_checked
+               for key in ("wrong_club", "bad_crop", "no_proof"))
     print("✓ Current-club checks, 2026/27 conflict detection, loans and official club evidence",flush=True)
 
 
