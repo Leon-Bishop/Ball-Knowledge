@@ -14,10 +14,10 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: ball-knowledge-photo-data
-  # The importer checkpoints every batch. A new, corrected import must
-  # supersede the old job and resume from the newest main-branch snapshot.
-  cancel-in-progress: true
+  # Keep the photo importer separate from independent roster-verification jobs.
+  # Neither job should cancel the other's progress.
+  group: ball-knowledge-current-headshot-import-v3
+  cancel-in-progress: false
 jobs:
   curate:
     runs-on: ubuntu-latest
