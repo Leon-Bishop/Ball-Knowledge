@@ -131,7 +131,7 @@ function emojiMeaning(index){
  return tr(EMOJI_COLOURS.has(emoji)?'emojiMeaningColor':index<=1?'emojiMeaningPlace':index===2?'emojiMeaningSymbol':'emojiMeaningIdentity');
 }
 // Display face-only portraits of verified current-squad players.
-// Three distinct, attributed and face-detected crops are required for a club.
+// One verified face replaces 🏆; additional distinct faces can replace ⚽ and 🥇.
 // Randomize separately per round and never use the historical photo database.
 const PLAYER_PHOTO_PRIORITY=['🏆','⚽','🥇'];
 const PLAYER_PHOTO_REPLACE=new Set(PLAYER_PHOTO_PRIORITY);
