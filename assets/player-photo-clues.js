@@ -99,8 +99,10 @@ window.BKPlayerPhotos.ready=Promise.all([
  fetch('./assets/player-headshot-db.json',{cache:'no-cache'})
   .then(r=>{if(!r.ok)throw Error('Curated headshot catalog missing');return r.json()}),
  fetch('./photo-db/official-roster-evidence.json',{cache:'no-cache'})
+  .then(r=>r.ok?r.json():null).catch(()=>null),
+ fetch('./assets/player-headshot-manual-review.json',{cache:'no-cache'})
   .then(r=>r.ok?r.json():null).catch(()=>null)
-]).then(([j,evidence])=>{
+]).then(([j,evidence,manualReview])=>{
   if(j.version!==2||!j.clubs||typeof j.clubs!=='object')throw Error('Unexpected headshot catalog');
   database=j;
   const evidenceAt=Date.parse(evidence?.checkedAt||'');
@@ -119,6 +121,36 @@ window.BKPlayerPhotos.ready=Promise.all([
       player.verifiedAt=evidence.checkedAt;
       player.secondaryRosterSource=official.source;
      }
+    }
+   }
+  }
+  // Restore narrowly curated Commons headshots that were wrongly dropped
+  // from the auto-generated roster database. Every recovered item has its
+  // own rights/author record, visually reviewed full face and a verified
+  // exact-player current first-team membership from the club itself.
+  const reviewedAt=Date.parse(manualReview?.reviewedAt||'');
+  if(officialEvidence&&manualReview?.version===1&&
+     manualReview.manuallyReviewed===true&&
+     Number.isFinite(reviewedAt)&&Date.now()-reviewedAt<=MAX_ROSTER_AGE_MS&&
+     reviewedAt<=Date.now()+86_400_000){
+   for(const [clubId,saved] of Object.entries(manualReview.clubs||{})){
+    const club=database.clubs?.[clubId];
+    const official=officialEvidence.officialClubs?.[clubId];
+    if(!club||!official||!Array.isArray(club.players)||
+       club.clubWikidataQid!==saved?.clubWikidataQid)continue;
+    const found=new Set(club.players.map(p=>p.wikidataQid));
+    for(const player of saved.players||[]){
+     if(!player.manualFaceReviewed||player.clubId!==clubId||
+        player.clubWikidataQid!==club.clubWikidataQid||
+        !official.players?.[player.wikidataQid]||
+        found.has(player.wikidataQid))continue;
+     const photo='./assets/player-headshots/'+clubId.replace(/:/g,'-')+
+       '--'+player.wikidataQid+'.jpg';
+     if(player.photoUrl!==photo)continue;
+     club.players.push({...player,playerName:official.players[player.wikidataQid],
+      rosterVerification:'official_club_squad',verifiedCurrent:true,
+      verifiedAt:manualReview.reviewedAt,secondaryRosterSource:official.source});
+     found.add(player.wikidataQid);
     }
    }
   }
