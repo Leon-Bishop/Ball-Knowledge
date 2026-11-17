@@ -7,6 +7,24 @@ const css=fs.readFileSync(new URL('../assets/styles.css',import.meta.url),'utf8'
 const credits=fs.readFileSync(new URL('../player-photo-credits.html',import.meta.url),'utf8');
 const db=JSON.parse(fs.readFileSync(new URL('../assets/player-headshot-db.json',import.meta.url),'utf8'));
 assert.equal(db.version,2);
+const official=JSON.parse(fs.readFileSync(new URL('../photo-db/official-roster-evidence.json',import.meta.url),'utf8'));
+const clubMap=JSON.parse(fs.readFileSync(new URL('../photo-db/club-wikidata-map.json',import.meta.url),'utf8')).clubs;
+const qidOwners=new Map();
+for(const [clubId,club] of Object.entries(db.clubs)){
+ assert.equal(club.clubWikidataQid,clubMap[clubId],'Club must match canonical game-to-Wikidata mapping');
+ for(const p of club.players||[]){
+  assert.equal(p.clubWikidataQid,clubMap[clubId],'Player must match canonical club ID');
+  const prior=qidOwners.get(p.wikidataQid);
+  assert(!prior||prior===clubId,'A player cannot be assigned to two quiz clubs: '+p.playerName);
+  qidOwners.set(p.wikidataQid,clubId);
+  const loan=official.loanAssignments[p.wikidataQid];
+  if(loan)assert.equal(clubId,loan.clubId,'Loaned player shown for parent club: '+p.playerName);
+  if(official.officialClubs[clubId]){
+   assert(official.officialClubs[clubId].players[p.wikidataQid],
+     'Official club roster does not contain '+p.playerName+' at '+clubId);
+  }
+ }
+}
 assert(!source.includes('fetch(\'./assets/player-photo-db.json\''),'Historical photos must never appear in quiz');
 assert(source.includes('verifiedCurrent!==true')&&source.includes('faceCrop!==true'));
 assert(source.includes('ALLOWED_VERIFICATION')&&source.includes('rosterAuditAt'));
