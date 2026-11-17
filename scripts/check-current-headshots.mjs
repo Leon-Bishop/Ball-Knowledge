@@ -9,6 +9,7 @@ const db=JSON.parse(fs.readFileSync(new URL('../assets/player-headshot-db.json',
 assert.equal(db.version,2);
 assert(!source.includes('fetch(\'./assets/player-photo-db.json\''),'Historical photos must never appear in quiz');
 assert(source.includes('verifiedCurrent!==true')&&source.includes('faceCrop!==true'));
+assert(source.includes('ALLOWED_VERIFICATION')&&source.includes('rosterAuditAt'));
 assert(css.includes('.slot .player-photo-clue')&&css.includes('object-fit:cover'));
 assert(credits.includes('player-headshot-db.json'));
 assert(app.includes('Current squad player:'));
@@ -30,20 +31,22 @@ for(const [id,club] of Object.entries(db.clubs)){
  }
 }
 const player=(n,current=true)=>({
- clubId:'team:1',wikidataQid:'Q'+n,playerName:'Player '+n,
+ clubId:'team:1',clubWikidataQid:'Q999',wikidataQid:'Q'+n,playerName:'Player '+n,
+ rosterVerification:'wikidata_current_club',verifiedAt:new Date().toISOString(),
+ secondaryRosterSource:'https://www.wikidata.org/wiki/Q'+n,
  verifiedCurrent:current,faceCrop:true,
  photoUrl:'./assets/player-headshots/team-1--Q'+n+'.jpg',
  sourceUrl:'https://commons.wikimedia.org/wiki/File:Portrait.jpg',
  membershipSource:'https://en.wikipedia.org/wiki/Team',membershipSection:'current squad',
  author:'Photographer',license:'CC BY-SA 4.0'
 });
-const mock={version:2,clubs:{
- 'team:1':{checkedAt:new Date().toISOString(),players:[player(1),player(2),player(3),player(4,false)]},
- 'team:2':{checkedAt:new Date().toISOString(),players:[{...player(10),clubId:'team:2'}, {...player(11),clubId:'team:2'}]},
- 'team:3':{checkedAt:new Date().toISOString(),players:[12,13,14,15].map(i=>({...player(i),clubId:'team:3',membershipSection:'players'}))},
- 'team:4':{checkedAt:'2020-01-01T00:00:00Z',players:[20,21,22,23].map(i=>({...player(i),clubId:'team:4'}))},
- 'team:5':{checkedAt:new Date().toISOString(),players:[{...player(99),clubId:'team:5'},{...player(100),clubId:'team:5'},{...player(101),clubId:'team:5'}]},
- 'team:6':{checkedAt:new Date().toISOString(),players:[{...player(99),clubId:'team:6'},{...player(102),clubId:'team:6'},{...player(103),clubId:'team:6'}]},
+const mock={version:2,rosterAuditAt:new Date().toISOString(),clubs:{
+ 'team:1':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[player(1),player(2),player(3),player(4,false)]},
+ 'team:2':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[{...player(10),clubId:'team:2'}, {...player(11),clubId:'team:2'}]},
+ 'team:3':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[12,13,14,15].map(i=>({...player(i),clubId:'team:3',membershipSection:'players'}))},
+ 'team:4':{clubWikidataQid:'Q999',checkedAt:'2020-01-01T00:00:00Z',players:[20,21,22,23].map(i=>({...player(i),clubId:'team:4'}))},
+ 'team:5':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[{...player(99),clubId:'team:5'},{...player(100),clubId:'team:5'},{...player(101),clubId:'team:5'}]},
+ 'team:6':{clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:[{...player(99),clubId:'team:6'},{...player(102),clubId:'team:6'},{...player(103),clubId:'team:6'}]},
  'belgian-pro-league:12':{checkedAt:new Date().toISOString(),players:[1,2,3].map(i=>({...player(i),clubId:'belgian-pro-league:12'})).concat([{...player(4),clubId:'belgian-pro-league:12',wikidataQid:'Q115902876'}])}
 }};
 const window={dispatchEvent(){}};
