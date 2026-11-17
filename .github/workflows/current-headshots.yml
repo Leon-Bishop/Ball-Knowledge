@@ -14,9 +14,9 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  # Keep the photo importer separate from independent roster-verification jobs.
-  # Neither job should cancel the other's progress.
-  group: ball-knowledge-current-headshot-import-v3
+  # The importer and roster verifier WRITE the same headshot database.
+  # Serialize them across workflows to prevent Git rebase conflicts.
+  group: ball-knowledge-current-headshot-writers
   cancel-in-progress: false
 jobs:
   curate:
@@ -58,17 +58,16 @@ jobs:
             done
           fi
           STARTED_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          for batch in $(seq 1 11); do
+          # Focus this run on filling every remaining trophy clue first.
+          # Full four-portrait enrichment is a separate phase after coverage.
+          for batch in $(seq 1 6); do
             echo "Curating headshots: batch $batch"
-            # Use the first five checkpoints to fill missing trophy clues
-            # before enriching already-covered clubs. Then resume broad curation.
-            if [ "$batch" -le 5 ]; then
-              echo "Prioritizing missing 🏆 player portraits"
-              python -u scripts/build_current_headshots.py --only-missing-cups --max-clubs 20 --since "$STARTED_AT" | tee /tmp/headshots-batch.log
-            else
-              python -u scripts/build_current_headshots.py --max-clubs 20 --since "$STARTED_AT" | tee /tmp/headshots-batch.log
-            fi
-            git add assets/player-headshot-db.json assets/player-headshot-audit.json assets/player-headshots/
+            echo "Prioritizing missing 🏆 player portraits"
+            python -u scripts/build_current_headshots.py --only-missing-cups --max-clubs 20 --since "$STARTED_AT" | tee /tmp/headshots-batch.log
+            # Record real, in-game coverage at every checkpoint, not merely
+            # after the entire long-running source collection completes.
+            node scripts/check-trophy-photo-coverage.mjs --write
+            git add assets/player-headshot-db.json assets/player-headshot-audit.json assets/trophy-photo-coverage.json assets/player-headshots/
             if ! git diff --cached --quiet; then
               git commit -m "Import verified current-squad face crops, batch $batch"
               pushed=0
@@ -87,12 +86,8 @@ jobs:
               fi
             fi
             if grep -q '"attempted": 0' /tmp/headshots-batch.log; then
-              if [ "$batch" -le 5 ]; then
-                echo "Trophy-first pass exhausted; continuing other clubs next"
-              else
-                echo "All clubs checked in this run"
-                break
-              fi
+              echo "All missing trophy clubs checked in this run"
+              break
             fi
           done
       - name: Recheck every refreshed player against current club evidence
