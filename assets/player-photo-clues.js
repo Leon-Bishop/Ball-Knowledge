@@ -6,6 +6,13 @@
 'use strict';
 const MINIMUM=3;
 const MAX_ROSTER_AGE_MS=21*24*60*60*1000;
+// Parent-club Wikipedia rosters can retain loaned-out players.
+// These exclusions are backed by current-season transfer announcements.
+const LOANED_OUT={
+ 'belgian-pro-league:12':new Set(['Q115902876']), // Boukamir → RAAL
+ 'belgian-pro-league:13':new Set(['Q59728235']),  // Krastev → PEC Zwolle
+ 'netherlands-eredivisie:5':new Set(['Q134470771']) // Plug → Excelsior
+};
 const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster','ρόστερ','ροστερ','ομάδα','elenco atual','effectif actuel','plantilla actual','huidige selectie','aktueller kader','güncel kadro']);
 let database={clubs:{}};
 const shuffledCache=new Map();
@@ -28,6 +35,7 @@ function availablePlayers(clubId){
      !p.membershipSource?.startsWith('https://')||
      !CURRENT_SECTIONS.has(p.membershipSection)||
      !p.license||!p.author||!p.playerName||!p.wikidataQid||
+     LOANED_OUT[clubId]?.has(p.wikidataQid)||
      seen.has(p.wikidataQid))return false;
   seen.add(p.wikidataQid);
   return true;
