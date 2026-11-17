@@ -14587,7 +14587,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.galatasaray.org/en/pl/squad/48",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:7",
@@ -14605,7 +14608,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.galatasaray.org/en/pl/squad/48",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:7",
@@ -14623,7 +14629,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.galatasaray.org/en/pl/squad/48",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:7",
@@ -14641,7 +14650,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.galatasaray.org/en/pl/squad/48",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Galatasaray_S.K._(football)",
@@ -14827,7 +14839,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.goztepe.org.tr/futbol/erkek-a-takim/sporcular",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:10",
@@ -14845,7 +14860,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.goztepe.org.tr/futbol/erkek-a-takim/sporcular",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:10",
@@ -14863,7 +14881,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.goztepe.org.tr/futbol/erkek-a-takim/sporcular",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:10",
@@ -14881,7 +14902,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.goztepe.org.tr/futbol/erkek-a-takim/sporcular",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/G%C3%B6ztepe_S.K.",
@@ -14987,7 +15011,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.kasimpasa.com.tr/en/teams/kasimpasa-first-team",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:12",
@@ -15005,7 +15032,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.kasimpasa.com.tr/en/teams/kasimpasa-first-team",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:12",
@@ -15023,7 +15053,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.kasimpasa.com.tr/en/teams/kasimpasa-first-team",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         },
         {
           "clubId": "turkey-super-lig:12",
@@ -15041,7 +15074,10 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "rosterVerification": "official_club_squad",
+          "secondaryRosterSource": "https://www.kasimpasa.com.tr/en/teams/kasimpasa-first-team",
+          "verifiedAt": "2026-11-17T09:30:00Z"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Kas%C4%B1mpa%C5%9Fa_S.K.",
