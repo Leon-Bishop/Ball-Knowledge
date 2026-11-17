@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "source": "Current-squad Wikipedia roster + licensed Commons face crops",
+  "minimumCurrentHeadshotsPerClub": 3,
+  "targetCurrentHeadshotsPerClub": 4,
+  "clubs": {}
+}
