@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-17T00:12:43.991677+00:00",
+  "lastUpdated": "2026-11-17T00:15:50.986165+00:00",
   "totalClubs": 214,
-  "completeClubs": 162,
-  "playersWithLicensedPhotos": 4755,
+  "completeClubs": 174,
+  "playersWithLicensedPhotos": 5107,
   "notes": "Build with scripts/build_player_photo_db.py. Never use unsupported images or invent player links.",
   "clubs": {
     "belgian-pro-league:1": {
@@ -397,10 +397,9 @@
       "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
     },
     "germany-bundesliga:17": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "germany-bundesliga:18": {
       "status": "ready",
@@ -408,29 +407,18 @@
       "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
     },
     "germany-bundesliga:2": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "germany-bundesliga:3": {
       "status": "ready",
       "count": 30,
       "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
     },
-    "germany-bundesliga:4": {
-      "status": "needs_more_licensed_photos",
-      "count": 1,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
-    },
     "germany-bundesliga:5": {
       "status": "ready",
       "count": 30,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
-    },
-    "germany-bundesliga:6": {
-      "status": "needs_more_licensed_photos",
-      "count": 6,
       "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
     },
     "germany-bundesliga:7": {
@@ -439,55 +427,43 @@
       "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
     },
     "germany-bundesliga:8": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "germany-bundesliga:9": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "greece-super-league:1": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "greece-super-league:10": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "greece-super-league:11": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "greece-super-league:12": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "greece-super-league:13": {
-      "status": "unmatched_club",
-      "count": 0,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00",
-      "message": "No uniquely identified Wikidata football club"
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     },
     "greece-super-league:14": {
       "status": "ready",
       "count": 30,
-      "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
-    },
-    "greece-super-league:2": {
-      "status": "needs_more_licensed_photos",
-      "count": 1,
       "lastAttempt": "2026-11-16T22:58:05.910277+00:00"
     },
     "greece-super-league:3": {
@@ -1122,8 +1098,23 @@
       "status": "ready_10",
       "count": 30,
       "lastAttempt": "2026-11-17T00:12:43.991677+00:00"
+    },
+    "germany-bundesliga:4": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
+    },
+    "germany-bundesliga:6": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
+    },
+    "greece-super-league:2": {
+      "status": "ready_10",
+      "count": 30,
+      "lastAttempt": "2026-11-17T00:15:50.986165+00:00"
     }
   },
-  "completeClubs10": 160,
-  "completeClubs7": 162
+  "completeClubs10": 172,
+  "completeClubs7": 174
 }
