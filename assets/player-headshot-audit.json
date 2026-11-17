@@ -1,9 +1,9 @@
 {
   "version": 2,
   "totalClubs": 214,
-  "clubsWithThree": 189,
-  "clubsWithFour": 181,
-  "totalCurrentHeadshots": 767,
+  "clubsWithThree": 174,
+  "clubsWithFour": 163,
+  "totalCurrentHeadshots": 723,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -239,161 +239,227 @@
     },
     "brazil-serie-a:3": {
       "clubName": "Atlético-MG",
-      "checkedAt": "2026-11-17T09:05:04.427549+00:00",
+      "checkedAt": "2026-11-17T10:52:51.361847+00:00",
       "rosterNames": 32,
-      "photoCandidates": 18,
-      "count": 4,
-      "status": "ready"
+      "photoCandidates": 19,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clube_Atl%C3%A9tico_Mineiro"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:4": {
       "clubName": "Bahia",
-      "checkedAt": "2026-11-17T09:05:07.168857+00:00",
-      "rosterNames": 46,
-      "photoCandidates": 10,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:53:13.169827+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 11,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Esporte_Clube_Bahia",
+        "https://pt.wikipedia.org/wiki/Esporte_Clube_Bahia"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:5": {
       "clubName": "Botafogo",
-      "checkedAt": "2026-11-17T09:05:10.745090+00:00",
+      "checkedAt": "2026-11-17T10:53:32.231140+00:00",
       "rosterNames": 32,
-      "photoCandidates": 15,
-      "count": 4,
-      "status": "ready"
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Botafogo_FR"
+      ],
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:6": {
       "clubName": "Corinthians",
-      "checkedAt": "2026-11-17T09:05:14.199896+00:00",
+      "checkedAt": "2026-11-17T10:53:56.176005+00:00",
       "rosterNames": 33,
       "photoCandidates": 28,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SC_Corinthians_Paulista"
+      ],
       "count": 4,
       "status": "ready"
     },
     "brazil-serie-a:7": {
       "clubName": "Coritiba",
-      "checkedAt": "2026-11-17T09:05:18.646908+00:00",
-      "rosterNames": 40,
-      "photoCandidates": 16,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:54:04.282295+00:00",
+      "rosterNames": 31,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Coritiba_Foot_Ball_Club"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:8": {
       "clubName": "Mirassol",
-      "checkedAt": "2026-11-17T09:05:23.340654+00:00",
-      "rosterNames": 37,
+      "checkedAt": "2026-11-17T10:54:24.891234+00:00",
+      "rosterNames": 32,
       "photoCandidates": 14,
-      "count": 4,
-      "status": "ready"
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mirassol_Futebol_Clube"
+      ],
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:9": {
       "clubName": "Cruzeiro",
-      "checkedAt": "2026-11-17T09:05:26.947679+00:00",
-      "rosterNames": 53,
-      "photoCandidates": 16,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:54:44.390703+00:00",
+      "rosterNames": 34,
+      "photoCandidates": 34,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cruzeiro_EC",
+        "https://pt.wikipedia.org/wiki/Cruzeiro_Esporte_Clube"
+      ],
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:10": {
       "clubName": "Flamengo",
-      "checkedAt": "2026-11-17T09:05:31.072682+00:00",
+      "checkedAt": "2026-11-17T10:55:22.200230+00:00",
       "rosterNames": 27,
-      "photoCandidates": 21,
+      "photoCandidates": 22,
+      "sources": [
+        "https://en.wikipedia.org/wiki/CR_Flamengo"
+      ],
       "count": 4,
       "status": "ready"
     },
     "brazil-serie-a:11": {
       "clubName": "Fluminense",
-      "checkedAt": "2026-11-17T09:05:33.722404+00:00",
+      "checkedAt": "2026-11-17T10:55:41.531791+00:00",
       "rosterNames": 30,
-      "photoCandidates": 17,
-      "count": 4,
-      "status": "ready"
+      "photoCandidates": 19,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fluminense_FC"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:12": {
       "clubName": "São Paulo",
-      "checkedAt": "2026-11-17T09:05:36.773289+00:00",
+      "checkedAt": "2026-11-17T10:56:04.333971+00:00",
       "rosterNames": 36,
-      "photoCandidates": 15,
-      "count": 4,
-      "status": "ready"
+      "photoCandidates": 16,
+      "sources": [
+        "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_FC"
+      ],
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:13": {
       "clubName": "Remo",
-      "checkedAt": "2026-11-17T09:05:40.109416+00:00",
+      "checkedAt": "2026-11-17T10:56:25.878946+00:00",
       "rosterNames": 30,
-      "photoCandidates": 8,
-      "count": 4,
-      "status": "ready"
+      "photoCandidates": 11,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clube_do_Remo"
+      ],
+      "count": 0,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:14": {
       "clubName": "Grêmio",
-      "checkedAt": "2026-11-17T09:05:43.186959+00:00",
+      "checkedAt": "2026-11-17T10:56:41.471175+00:00",
       "rosterNames": 33,
-      "photoCandidates": 17,
-      "count": 4,
-      "status": "ready"
+      "photoCandidates": 35,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gr%C3%AAmio_FBPA",
+        "https://pt.wikipedia.org/wiki/Gr%C3%AAmio_Foot-Ball_Porto_Alegrense"
+      ],
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:15": {
       "clubName": "Internacional",
-      "checkedAt": "2026-11-17T09:05:45.994809+00:00",
-      "rosterNames": 50,
-      "photoCandidates": 14,
-      "count": 4,
+      "checkedAt": "2026-11-17T10:57:28.207336+00:00",
+      "rosterNames": 26,
+      "photoCandidates": 27,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SC_Internacional",
+        "https://pt.wikipedia.org/wiki/Sport_Club_Internacional"
+      ],
+      "count": 3,
       "status": "ready"
     },
     "brazil-serie-a:16": {
       "clubName": "Palmeiras",
-      "checkedAt": "2026-11-17T09:05:49.364615+00:00",
+      "checkedAt": "2026-11-17T10:58:05.709594+00:00",
       "rosterNames": 25,
-      "photoCandidates": 21,
-      "count": 4,
-      "status": "ready"
+      "photoCandidates": 23,
+      "sources": [
+        "https://en.wikipedia.org/wiki/SE_Palmeiras"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:17": {
       "clubName": "Red Bull Bragantino",
-      "checkedAt": "2026-11-17T09:05:52.150060+00:00",
-      "rosterNames": 56,
-      "photoCandidates": 17,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T10:58:41.833868+00:00",
+      "rosterNames": 32,
+      "photoCandidates": 30,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Red_Bull_Bragantino",
+        "https://pt.wikipedia.org/wiki/Red_Bull_Bragantino"
+      ],
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:18": {
       "clubName": "Santos",
-      "checkedAt": "2026-11-17T09:05:55.725543+00:00",
+      "checkedAt": "2026-11-17T10:59:19.829776+00:00",
       "rosterNames": 37,
-      "photoCandidates": 24,
-      "count": 4,
-      "status": "ready"
+      "photoCandidates": 49,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Santos_FC",
+        "https://pt.wikipedia.org/wiki/Santos_Futebol_Clube"
+      ],
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:19": {
       "clubName": "Chapecoense",
-      "checkedAt": "2026-11-17T09:05:59.469802+00:00",
-      "rosterNames": 46,
-      "photoCandidates": 7,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T11:00:25.376733+00:00",
+      "rosterNames": 34,
+      "photoCandidates": 9,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol"
+      ],
+      "count": 1,
+      "status": "insufficient_licensed_face_crops"
     },
     "brazil-serie-a:20": {
       "clubName": "Vasco da Gama",
-      "checkedAt": "2026-11-17T09:06:03.001404+00:00",
-      "rosterNames": 41,
-      "photoCandidates": 16,
-      "count": 4,
-      "status": "ready"
+      "checkedAt": "2026-11-17T11:00:38.742536+00:00",
+      "rosterNames": 32,
+      "photoCandidates": 15,
+      "sources": [
+        "https://en.wikipedia.org/wiki/CR_Vasco_da_Gama"
+      ],
+      "count": 2,
+      "status": "insufficient_licensed_face_crops"
     },
     "england-premier-league:1": {
       "clubName": "Arsenal",
-      "checkedAt": "2026-11-17T09:06:06.763114+00:00",
+      "checkedAt": "2026-11-17T11:01:01.607067+00:00",
       "rosterNames": 25,
       "photoCandidates": 25,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arsenal_F.C."
+      ],
       "count": 4,
       "status": "ready"
     },
     "england-premier-league:2": {
       "clubName": "Aston Villa",
-      "checkedAt": "2026-11-17T09:06:09.453347+00:00",
+      "checkedAt": "2026-11-17T11:01:07.491713+00:00",
       "rosterNames": 28,
-      "photoCandidates": 23,
+      "photoCandidates": 25,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aston_Villa_F.C."
+      ],
       "count": 4,
       "status": "ready"
     },
@@ -2199,5 +2265,5 @@
       "status": "ready"
     }
   },
-  "lastUpdated": "2026-11-17T10:52:42.687768+00:00"
+  "lastUpdated": "2026-11-17T11:01:29.564059+00:00"
 }
