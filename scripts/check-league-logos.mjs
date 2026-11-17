@@ -9,6 +9,8 @@ for(const id of ids){
  assert(app.includes('"'+id+'": ['),'Missing logo image definition: '+id);
 }
 assert(app.includes('Pl-logo-light.svg'),'Premier League lion artwork missing');
+assert(app.includes('bundesliga-germany-logo-footylogos.svg'),'Bundesliga emblem URL missing');
+assert(app.includes('Bundesliga_logo.svg'),'Bundesliga backup wordmark missing');
 assert(app.includes('sourceIndex<sources.length'),'League logo backup URL handling missing');
 assert(app.includes("mark.classList.add('logo-ready')"),'Logo load visibility handler missing');
 console.log('✓ All '+ids.length+' leagues have logo sources and image fallback handling.');
