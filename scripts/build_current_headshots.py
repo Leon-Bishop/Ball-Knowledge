@@ -354,41 +354,45 @@ def commons_person_category_files(entity, player_name):
 
 
 def commons_depicts_files(player_qid, player_name):
-    """Search Commons only when needed; require structured P180 identity proof.
+    """Find explicitly QID-depicted Commons images, even with generic filenames.
 
-    A matching filename alone is not enough to attribute a face to a player.
+    Commons' documented CirrusSearch "haswbstatement:P180=Q..." is a better
+    match than Google Images or guessing a filename. Always cross-check the
+    structured depicts statement on each returned media entity.
     """
-    try:
-        data = api("commons.wikimedia.org", {
-            "action": "query", "format": "json", "generator": "search",
-            "gsrsearch": '"' + player_name + '"', "gsrnamespace": 6,
-            "gsrlimit": 30, "prop": "info"
-        })
-        pages = [p for p in data.get("query", {}).get("pages", {}).values()
-                 if p.get("pageid") and p.get("title", "").startswith("File:")]
-        if not pages:
-            return []
-        ids = ["M" + str(p["pageid"]) for p in pages]
-        entities = api("commons.wikimedia.org", {
-            "action": "wbgetentities", "format": "json",
-            "ids": "|".join(ids), "props": "claims"
-        }).get("entities", {})
-        files = []
-        for page in pages:
-            entity = entities.get("M" + str(page["pageid"]), {})
-            depicted = [
-                claim.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id")
-                for claim in entity.get("claims", {}).get("P180", [])
-            ]
-            if player_qid in depicted:
-                filename = page["title"].removeprefix("File:")
-                if re.search(r"\.(?:jpe?g|png|webp)$", filename, re.I):
-                    files.append(filename)
-        return files[:12]
-    except Exception as exc:
-        print("  Commons identity search unavailable", player_name, str(exc)[:75], flush=True)
-        return []
-
+    results = []
+    for query in ("haswbstatement:P180=" + player_qid, '"' + player_name + '"'):
+        try:
+            data = api("commons.wikimedia.org", {
+                "action": "query", "format": "json", "generator": "search",
+                "gsrsearch": query, "gsrnamespace": 6,
+                "gsrlimit": 40, "prop": "info"
+            })
+            pages = [p for p in data.get("query", {}).get("pages", {}).values()
+                     if p.get("pageid") and p.get("title", "").startswith("File:")]
+            for group in chunks(pages, 30):
+                ids = ["M" + str(p["pageid"]) for p in group]
+                entities = api("commons.wikimedia.org", {
+                    "action": "wbgetentities", "format": "json",
+                    "ids": "|".join(ids), "props": "claims"
+                }).get("entities", {})
+                for page in group:
+                    media = entities.get("M" + str(page["pageid"]), {})
+                    depicted = [
+                        claim.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id")
+                        for claim in media.get("claims", {}).get("P180", [])
+                    ]
+                    if player_qid not in depicted:
+                        continue
+                    name = page["title"].removeprefix("File:")
+                    if re.search(r"\.(?:jpe?g|png|webp)$", name, re.I):
+                        results.append(name)
+            if results:
+                break
+        except Exception as exc:
+            print("  Commons structured depicts search unavailable",
+                  player_name, str(exc)[:90], flush=True)
+    return list(dict.fromkeys(results))[:16]
 
 def crop_face(image_bytes):
     """Detect a single dominant human face; export a tight face-only JPEG."""
