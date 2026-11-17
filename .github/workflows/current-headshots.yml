@@ -5,6 +5,7 @@ on:
     # Recheck squads weekly; football transfers and roster changes matter.
     - cron: "27 3 * * 0"
   push:
+    branches: [main]
     paths:
       - "scripts/build_current_headshots.py"
       - ".github/workflows/current-headshots.yml"
@@ -76,6 +77,17 @@ jobs:
           git add assets/player-headshot-db.json assets/player-headshot-membership-audit.json
           if ! git diff --cached --quiet; then
             git commit -m "Validate refreshed headshots against current playing clubs"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
+      - name: Audit final JPEGs and remove face-less or off-center clues
+        run: |
+          python scripts/headshot_quality.py --self-test
+          python scripts/headshot_quality.py --apply
+          git add assets/player-headshot-db.json assets/player-headshot-face-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Reject headshots without full visible centered faces"
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main

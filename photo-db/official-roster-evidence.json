@@ -1,7 +1,7 @@
 {
   "version": 1,
   "checkedAt": "2026-11-17T09:30:00Z",
-  "description": "Independent current 2026/27 squad evidence. Club pages are primary for Turkish clubs; loan announcements or current player listings resolve three conflicting Wikipedia memberships. A historical photo/kit is never proof of current membership.",
+  "description": "Independent current 2026/27 squad evidence. Official club pages for Galatasaray, Göztepe, Kasımpaşa and Kocaelispor; independently documented loans. Wikipedia-only squad membership does not by itself qualify a player for a photo clue.",
   "officialClubs": {
     "turkey-super-lig:7": {
       "club": "Galatasaray",
@@ -31,6 +31,16 @@
         "Q297461": "Ömer Bayram",
         "Q86077125": "Andri Baldursson",
         "Q40991902": "Fousseni Diabaté"
+      }
+    },
+    "turkey-super-lig:13": {
+      "club": "Kocaelispor",
+      "source": "https://kocaelispor.com.tr/takim",
+      "players": {
+        "Q21004899": "Florian Ayé",
+        "Q26704485": "Dan Agyei",
+        "Q53858110": "Manuel Luis Da Silva Cafumana",
+        "Q60182084": "Metehan Altunbaş"
       }
     }
   },

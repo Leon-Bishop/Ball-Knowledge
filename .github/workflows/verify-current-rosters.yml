@@ -2,6 +2,7 @@ name: Independently audit player-to-club assignments
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - "scripts/verify_current_rosters.py"
       - ".github/workflows/verify-current-rosters.yml"

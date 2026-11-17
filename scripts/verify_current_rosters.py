@@ -194,8 +194,7 @@ def verify(db, entities, evidence, mapping, today, roster_qids=None):
                 "duplicateInClubs": sorted(occurrences[qid]) if duplicate else []
             }
             entries.append(entry)
-            if status in ("official_club_squad", "confirmed_current_loan", "wikidata_current_club",
-                          "wikipedia_squad_stale_p54", "wikipedia_squad_no_p54"):
+            if status in ("official_club_squad", "confirmed_current_loan", "wikidata_current_club"):
                 verified[club_id].append(entry)
     # A player cannot represent two first teams in the same 2026-27 quiz.
     # If one entry is backed by a primary source, keep only that club;
@@ -216,8 +215,7 @@ def verify(db, entities, evidence, mapping, today, roster_qids=None):
                 row["evidenceUrl"] = None
     verified = defaultdict(list)
     for row in entries:
-        if row["verification"] in ("official_club_squad", "confirmed_current_loan", "wikidata_current_club",
-                                    "wikipedia_squad_stale_p54", "wikipedia_squad_no_p54"):
+        if row["verification"] in ("official_club_squad", "confirmed_current_loan", "wikidata_current_club"):
             verified[row["clubId"]].append(row)
     return entries, verified
 
@@ -238,7 +236,7 @@ def main(apply, recheck_wikipedia=False):
     count_by_status = Counter(row["verification"] for row in entries)
     report = {
         "version": 1, "checkedAt": utcnow().isoformat(),
-        "rule": "Official current squad/loan evidence, or explicit Wikipedia current squad without recent conflicting 2026-27 Wikidata P54; all cross-club duplicates excluded",
+        "rule": "Official current squad/loan evidence or matching active Wikidata club; Wikipedia-only records are not independently corroborated; cross-club duplicates excluded",
         "totalClubs": total, "totalPlayers": len(entries),
         "wikipediaPagesRechecked": len(roster_qids) if roster_qids is not None else 0,
         "wikipediaPagesUnavailable": sum(v is None for v in roster_qids.values()) if roster_qids is not None else 0,
@@ -255,9 +253,8 @@ def main(apply, recheck_wikipedia=False):
         "statuses": dict(count_by_status),
         "conflictingPlayers": [r for r in entries if r["duplicateInClubs"]],
         "unconfirmed": [r for r in entries if r["verification"] not in (
-            "official_club_squad", "confirmed_current_loan", "wikidata_current_club",
-            "wikipedia_squad_stale_p54", "wikipedia_squad_no_p54"
-        )],
+             "official_club_squad", "confirmed_current_loan", "wikidata_current_club"
+         )],
         "perClub": {id: {
             "total": len(club.get("players", [])),
             "verified": len(verified.get(id, [])),
@@ -275,8 +272,7 @@ def main(apply, recheck_wikipedia=False):
                 row = by_key[(club_id, p["wikidataQid"])]
                 p["rosterVerification"] = row["verification"]
                 p["verifiedCurrent"] = row["verification"] in (
-                    "official_club_squad", "confirmed_current_loan", "wikidata_current_club",
-                    "wikipedia_squad_stale_p54", "wikipedia_squad_no_p54"
+                    "official_club_squad", "confirmed_current_loan", "wikidata_current_club"
                 )
                 if row["evidenceUrl"]:
                     p["secondaryRosterSource"] = row["evidenceUrl"]
