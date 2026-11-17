@@ -7,8 +7,7 @@
 const MINIMUM=3;
 const MAX_ROSTER_AGE_MS=21*24*60*60*1000;
 const ALLOWED_VERIFICATION=new Set([
- 'official_club_squad','confirmed_current_loan','wikidata_current_club',
- 'wikipedia_squad_stale_p54','wikipedia_squad_no_p54'
+ 'official_club_squad','confirmed_current_loan','wikidata_current_club'
 ]);
 // Parent-club Wikipedia rosters can retain loaned-out players.
 // These exclusions are backed by current-season transfer announcements.
@@ -17,8 +16,16 @@ const LOANED_OUT={
  'belgian-pro-league:13':new Set(['Q59728235']),  // Krastev → PEC Zwolle
  'netherlands-eredivisie:5':new Set(['Q134470771']) // Plug → Excelsior
 };
+// Rejected after inspecting the final JPEGs: missing heads, a club sign and torso-only crops.
+// Keep these exclusions until the importer publishes replacement verified portraits.
+const UNUSABLE_CROPS={
+ 'turkey-super-lig:10':new Set(['Q98829644','Q56043335']),
+ 'turkey-super-lig:12':new Set(['Q40991902']),
+ 'turkey-super-lig:13':new Set(['Q26704485'])
+};
 const CURRENT_SECTIONS=new Set(['current squad','first-team squad','first team squad','squad','senior squad','first team','first-team','selectie','kern','effectif','kader','kadro','plantel','plantilla','rosa','squadra','giocatori in rosa','roster','ρόστερ','ροστερ','ομάδα','elenco atual','effectif actuel','plantilla actual','huidige selectie','aktueller kader','güncel kadro']);
 let database={clubs:{}};
+let officialEvidence=null;
 let conflictedQids=new Set();
 const shuffledCache=new Map();
 function hashString(text){
@@ -35,19 +42,24 @@ function availablePlayers(clubId){
  const list=club?.players;
  if(!Array.isArray(list))return [];
  const seen=new Set();
+ const official=officialEvidence?.officialClubs?.[clubId];
  const valid=list.filter(p=>{
   const verifiedAt=Date.parse(p?.verifiedAt||'');
+  // Prevent a portrait saved under another quiz club or player being shown.
+  const expectedPhoto='./assets/player-headshots/'+clubId.replace(/:/g,'-')+'--'+p?.wikidataQid+'.jpg';
   if(!p||p.clubId!==clubId||p.clubWikidataQid!==club.clubWikidataQid||
      !ALLOWED_VERIFICATION.has(p.rosterVerification)||
+     (official&&!official.players?.[p.wikidataQid])||
      !Number.isFinite(verifiedAt)||Date.now()-verifiedAt>MAX_ROSTER_AGE_MS||
      !p.secondaryRosterSource?.startsWith('https://')||
      p.verifiedCurrent!==true||p.faceCrop!==true||
-     !p.photoUrl?.startsWith('./assets/player-headshots/')||
+     p.photoUrl!==expectedPhoto||
      !p.sourceUrl?.startsWith('https://commons.wikimedia.org/')||
      !p.membershipSource?.startsWith('https://')||
      !CURRENT_SECTIONS.has(p.membershipSection)||
      !p.license||!p.author||!p.playerName||!p.wikidataQid||
      LOANED_OUT[clubId]?.has(p.wikidataQid)||
+     UNUSABLE_CROPS[clubId]?.has(p.wikidataQid)||
      conflictedQids.has(p.wikidataQid)||
      seen.has(p.wikidataQid))return false;
   seen.add(p.wikidataQid);
@@ -74,11 +86,33 @@ function getPlayer(clubId,roundSeed='',clueIndex=0,alternative=0){
  return pool[((Number(clueIndex)||0)+(Number(alternative)||0))%pool.length];
 }
 window.BKPlayerPhotos={getPlayer,availablePlayers,ready:null};
-window.BKPlayerPhotos.ready=fetch('./assets/player-headshot-db.json',{cache:'no-cache'})
- .then(r=>{if(!r.ok)throw Error('Curated headshot catalog missing');return r.json()})
- .then(j=>{
+window.BKPlayerPhotos.ready=Promise.all([
+ fetch('./assets/player-headshot-db.json',{cache:'no-cache'})
+  .then(r=>{if(!r.ok)throw Error('Curated headshot catalog missing');return r.json()}),
+ fetch('./photo-db/official-roster-evidence.json',{cache:'no-cache'})
+  .then(r=>r.ok?r.json():null).catch(()=>null)
+]).then(([j,evidence])=>{
   if(j.version!==2||!j.clubs||typeof j.clubs!=='object')throw Error('Unexpected headshot catalog');
   database=j;
+  const evidenceAt=Date.parse(evidence?.checkedAt||'');
+  if(Number.isFinite(evidenceAt)&&Date.now()-evidenceAt<=MAX_ROSTER_AGE_MS&&
+     evidenceAt<=Date.now()+86_400_000){
+   officialEvidence=evidence;
+   // Official 2026/27 first-team lists can corroborate players whose
+   // cached Wikidata histories are incomplete or stale. Names are keyed by QID.
+   for(const [clubId,official] of Object.entries(evidence.officialClubs||{})){
+    const club=database.clubs?.[clubId];
+    for(const player of club?.players||[]){
+     if(official.players?.[player.wikidataQid]){
+      player.playerName=official.players[player.wikidataQid];
+      player.rosterVerification='official_club_squad';
+      player.verifiedCurrent=true;
+      player.verifiedAt=evidence.checkedAt;
+      player.secondaryRosterSource=official.source;
+     }
+    }
+   }
+  }
   // Never show the same player as belonging to two different clubs,
   // even when a source has outdated loan/parent-club rosters.
   const byPlayer=new Map();

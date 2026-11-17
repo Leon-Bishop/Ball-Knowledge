@@ -150,7 +150,10 @@ function displayEmojiExplanation(){
  if(activeEmojiExplanation===null||!round){panel.classList.add('hidden');panel.replaceChildren();return}
  panel.replaceChildren();
  const photo=eligiblePlayerPhoto(activeEmojiExplanation);
- if(photo){
+ if(photo&&!finished){
+  // No names, source URLs or image filenames before the round is resolved.
+  panel.textContent=lang==='tr'?'Güncel kadro futbolcusu. İsim ve fotoğraf bilgileri tur sonunda açılır.':'Current squad player. Identity and photo credits unlock after the round.';
+ }else if(photo){
   const text=document.createElement('span');
   text.textContent=(lang==='tr'?'Güncel kadro futbolcusu: ':'Current squad player: ')+photo.playerName+'. ';
   const credit=document.createElement('a');
@@ -195,6 +198,7 @@ function render(){
     image.alt=lang==='tr'?'Futbolcu fotoğrafı ipucu':'Footballer photo clue';
     image.loading='eager';
     image.decoding='async';
+    image.draggable=false;
     image.referrerPolicy='no-referrer';
     image.onerror=()=>{
      // Retry the other attributed club photos if a source is unavailable.
@@ -212,7 +216,6 @@ function render(){
      item.textContent=round.emojis[idx];
     };
     item.append(image);
-    item.title=(lang==='tr'?'Futbolcu fotoğrafını ve kaynağını görüntüle':'View footballer clue and photo credit');
     item.setAttribute('aria-label',image.alt);
    }else{
     item.textContent=round.emojis[idx];

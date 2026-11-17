@@ -35,5 +35,10 @@ jobs:
           PY
       - name: Validate current-squad roster parser and headshot license rules
         run: |
-          python -m py_compile scripts/build_current_headshots.py
+          python -m py_compile scripts/build_current_headshots.py scripts/headshot_quality.py scripts/verify_current_rosters.py
           python scripts/build_current_headshots.py --self-test
+          python scripts/verify_current_rosters.py --self-test
+      - name: Verify final-crop face detection rejects non-faces
+        run: |
+          python -m pip install --disable-pip-version-check "numpy>=2,<3" "opencv-python-headless>=4.10,<5"
+          python scripts/headshot_quality.py --self-test

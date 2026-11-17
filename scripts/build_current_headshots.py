@@ -417,9 +417,10 @@ def crop_face(image_bytes):
         return None
     if len(faces) > 1 and faces[1][2] * faces[1][3] > w * h * 0.5:
         return None  # Group photo: cannot verify which detected face is player.
-    side = int(max(w, h) * 1.75)
-    cx, cy = x + w / 2, y + h * 0.52
-    left, top = round(cx - side / 2), round(cy - side * 0.49)
+    # Capture the whole head (hair, ears and chin) with a little context.
+    side = int(max(w, h) * 2.1)
+    cx, cy = x + w / 2, y + h * 0.50
+    left, top = round(cx - side / 2), round(cy - side * 0.48)
     # Reject crops that would require large fake borders outside the source.
     if left < -side * 0.12 or top < -side * 0.12 or left + side > image.width + side * 0.12 or top + side > image.height + side * 0.12:
         return None
@@ -430,7 +431,11 @@ def crop_face(image_bytes):
     result = image.crop((left, top, left + side, top + side)).resize((192, 192), Image.Resampling.LANCZOS)
     out = BytesIO()
     result.save(out, "JPEG", quality=85, optimize=True)
-    return out.getvalue()
+    from headshot_quality import usable_face_crop
+    jpeg = out.getvalue()
+    # The first detection could have targeted someone in the background.
+    # Check the actual saved crop, not merely the original source image.
+    return jpeg if usable_face_crop(jpeg) else None
 
 
 def process_club(team, qid, title, old_db, language="en"):
