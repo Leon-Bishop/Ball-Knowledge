@@ -155,8 +155,11 @@ function displayEmojiExplanation(){
   text.textContent=(lang==='tr'?'Güncel kadro futbolcusu: ':'Current squad player: ')+photo.playerName+'. ';
   const credit=document.createElement('a');
   credit.href=photo.sourceUrl;credit.target='_blank';credit.rel='noopener noreferrer';
-  credit.textContent=(lang==='tr'?'Fotoğraf: ':'Photo: ')+photo.author+' · '+photo.license;
-  panel.append(text,credit);
+  credit.textContent=(lang==='tr'?'Kırpılmış fotoğraf: ':'Cropped photo: ')+photo.author+' · '+photo.license;
+  const roster=document.createElement('a');
+  roster.href=photo.membershipSource;roster.target='_blank';roster.rel='noopener noreferrer';
+  roster.textContent=lang==='tr'?'Kadro kaynağı':'Squad source';
+  panel.append(text,credit,' · ',roster);
  }else{
   panel.textContent=round.emojis[activeEmojiExplanation]+' '+emojiMeaning(activeEmojiExplanation);
  }
