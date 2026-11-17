@@ -297,6 +297,30 @@ def commons_metadata(names):
     return result
 
 
+def commons_person_category_files(entity):
+    """A Wikidata P373 Commons category belongs to the exact person entity.
+
+    This is stronger identity evidence than a filename search; category
+    membership alone is still checked for a single dominant face in the crop.
+    """
+    categories = [v for v in claim_value(entity, "P373") if isinstance(v, str)]
+    files = []
+    for category in categories[:1]:
+        try:
+            data = api("commons.wikimedia.org", {
+                "action": "query", "format": "json", "list": "categorymembers",
+                "cmtitle": "Category:" + category,
+                "cmnamespace": 6, "cmlimit": 25
+            })
+            for page in data.get("query", {}).get("categorymembers", []):
+                title = page.get("title", "")
+                if title.startswith("File:") and re.search(r"\\.(?:jpe?g|png|webp)$", title, re.I):
+                    files.append(title.removeprefix("File:"))
+        except Exception as exc:
+            print("  Commons player category unavailable", category, str(exc)[:75], flush=True)
+    return list(dict.fromkeys(files))[:10]
+
+
 def commons_depicts_files(player_qid, player_name):
     """Search Commons only when needed; require structured P180 identity proof.
 
@@ -463,7 +487,11 @@ def process_club(team, qid, title, old_db, language="en"):
             if not name:
                 continue
             search_attempts += 1
-            files = commons_depicts_files(player_qid, name)
+            # First prefer files in the individual's Wikidata-linked
+            # Commons category, then exact P180 "depicts" matches.
+            files = commons_person_category_files(entity)
+            if not files:
+                files = commons_depicts_files(player_qid, name)
             if not files:
                 continue
             extra_meta = commons_metadata(files)
