@@ -839,23 +839,6 @@
         },
         {
           "clubId": "belgian-pro-league:12",
-          "playerName": "Mehdi Boukamir",
-          "wikidataQid": "Q115902876",
-          "clubWikidataQid": "Q19585",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-12--Q115902876.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mehdi_Boukamir_at_the_Olympic_Games_2024_(cropped).jpg",
-          "license": "CC BY 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-          "author": "Photographe : Abdelali Bentarki ( Ali Graphy Pic ) ; recadrage : A.Nawfel",
-          "membershipSource": "https://en.wikipedia.org/wiki/Royal_Charleroi_SC",
-          "membershipSection": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section"
-        },
-        {
-          "clubId": "belgian-pro-league:12",
           "playerName": "Aurélien Scheidler",
           "wikidataQid": "Q66180094",
           "clubWikidataQid": "Q19585",
@@ -923,23 +906,6 @@
           "license": "CC BY-SA 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "author": "Werner100359",
-          "membershipSource": "https://en.wikipedia.org/wiki/Lommel_SK",
-          "membershipSection": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section"
-        },
-        {
-          "clubId": "belgian-pro-league:13",
-          "playerName": "Filip Krastev",
-          "wikidataQid": "Q59728235",
-          "clubWikidataQid": "Q1668203",
-          "photoUrl": "./assets/player-headshots/belgian-pro-league-13--Q59728235.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filip_krustev.jpg",
-          "license": "CC BY 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-          "author": "Biser Todorov",
           "membershipSource": "https://en.wikipedia.org/wiki/Lommel_SK",
           "membershipSection": "current squad",
           "verifiedCurrent": true,
@@ -1252,7 +1218,9 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "secondaryRosterSource": "https://www.sporting-charleroi.be/news/mehdi-boukamir-prete-a-la-raal-la-louviere/",
+          "rosterVerification": "official_transfer"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/RAAL_La_Louvi%C3%A8re",
@@ -9719,7 +9687,9 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "secondaryRosterSource": "https://www.feyenoord.com/nl/news/plug-op-huurbasis-naar-excelsior-130726",
+          "rosterVerification": "official_transfer"
         },
         {
           "clubId": "netherlands-eredivisie:4",
@@ -9746,23 +9716,6 @@
       "clubName": "Feyenoord Rotterdam",
       "clubWikidataQid": "Q134241",
       "players": [
-        {
-          "clubId": "netherlands-eredivisie:5",
-          "playerName": "Jan Plug",
-          "wikidataQid": "Q134470771",
-          "clubWikidataQid": "Q134241",
-          "photoUrl": "./assets/player-headshots/netherlands-eredivisie-5--Q134470771.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Feyenoord_Rotterdam_U19_vs._FC_Salburg_U19_(Uefa_Youth_League_2024-11-06_Vierte_Runde)_24_(cropped).jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Werner100359",
-          "membershipSource": "https://en.wikipedia.org/wiki/Feyenoord",
-          "membershipSection": "current squad",
-          "verifiedCurrent": true,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section"
-        },
         {
           "clubId": "netherlands-eredivisie:5",
           "playerName": "Gonçalo Borges",
@@ -10369,7 +10322,9 @@
           "verifiedCurrent": true,
           "faceCrop": true,
           "modified": true,
-          "associationType": "current_squad_wikipedia_section"
+          "associationType": "current_squad_wikipedia_section",
+          "secondaryRosterSource": "https://www.sofascore.com/football/player/filip-krastev/935556",
+          "rosterVerification": "official_transfer"
         },
         {
           "clubId": "netherlands-eredivisie:13",
