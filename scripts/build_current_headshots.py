@@ -30,7 +30,24 @@ OLD_DB = ROOT / "assets/player-photo-db.json"
 AGENT = "BallKnowledgeHeadshots/2.0 (Wikimedia Commons attributed cropped image project; contact dev.leonb@gmail.com)"
 MINIMUM = 3
 TARGET = 4
-CURRENT_SECTIONS = {"current squad", "first-team squad", "first team squad", "squad", "senior squad", "first team", "first-team"}
+CURRENT_SECTIONS = {
+    "current squad", "first-team squad", "first team squad", "squad",
+    "senior squad", "first team", "first-team",
+    "selectie", "kern", "effectif", "kader", "kadro", "plantel",
+    "plantilla", "rosa", "squadra", "giocatori in rosa", "roster"
+}
+LEAGUE_LANGUAGES = {
+    "belgian-pro-league": ("nl", "fr"),
+    "brazil-serie-a": ("pt",),
+    "france-ligue-1": ("fr",),
+    "germany-bundesliga": ("de",),
+    "greece-super-league": ("el",),
+    "italy-serie-a": ("it",),
+    "netherlands-eredivisie": ("nl",),
+    "portugal-liga-portugal": ("pt",),
+    "spain-la-liga": ("es",),
+    "turkey-super-lig": ("tr",)
+}
 MAX_PHOTO_TRIES = 28
 MAX_ROSTER_CANDIDATES = 65
 SLEEP_SECONDS = 0.35
@@ -88,9 +105,12 @@ def wikidata_entities(qids, props="claims|labels"):
 def club_wikipedia_pages(club_qids):
     pages = {}
     for qid, entity in wikidata_entities(club_qids, "sitelinks").items():
-        page = entity.get("sitelinks", {}).get("enwiki", {}).get("title")
-        if page:
-            pages[qid] = page
+        sites = entity.get("sitelinks", {})
+        pages[qid] = {
+            lang: sites.get(lang + "wiki", {}).get("title")
+            for lang in ("en", "nl", "fr", "pt", "de", "el", "it", "es", "tr")
+            if sites.get(lang + "wiki", {}).get("title")
+        }
     return pages
 
 
@@ -120,17 +140,17 @@ def license_allowed(raw):
     )
 
 
-def wiki_title_url(title):
-    return "https://en.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe="_()")
+def wiki_title_url(title, language="en"):
+    return "https://" + language + ".wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe="_()")
 
 
-def wiki_squad(title):
-    data = api("en.wikipedia.org", {
+def wiki_squad(title, language="en"):
+    data = api(language + ".wikipedia.org", {
         "action": "parse", "format": "json", "page": title,
         "prop": "wikitext", "redirects": 1
     })
     parsed = data.get("parse", {})
-    return parsed.get("wikitext", {}).get("*", ""), wiki_title_url(parsed.get("title", title))
+    return parsed.get("wikitext", {}).get("*", ""), wiki_title_url(parsed.get("title", title), language)
 
 
 def squad_section(wikitext):
@@ -140,8 +160,8 @@ def squad_section(wikitext):
         heading = re.sub(r"\{\{.*?\}\}|\[\[|\]\]", "", match.group(2)).strip().lower()
         score = (5 if "current squad" in heading else
                  4 if "first-team squad" in heading or "first team squad" in heading else
-                 3 if heading in ("squad", "senior squad", "first team", "first-team") else
-                 1 if heading == "players" else 0)
+                 3 if heading in CURRENT_SECTIONS else
+                 1 if heading in ("players", "spelers", "joueurs", "spieler", "jugadores", "futbolcular") else 0)
         if score:
             headings.append((score, match.start(), match.end(), len(match.group(1)), heading))
     if not headings:
@@ -189,10 +209,10 @@ def squad_titles(section):
         if n and ":" not in n and len(n) <= 100))[:MAX_ROSTER_CANDIDATES]
 
 
-def wikipedia_qids(titles):
+def wikipedia_qids(titles, language="en"):
     result, pageimages = [], {}
     for group in chunks(titles, 35):
-        data = api("en.wikipedia.org", {
+        data = api(language + ".wikipedia.org", {
             "action": "query", "format": "json", "redirects": 1,
             "prop": "pageprops|pageimages", "ppprop": "wikibase_item",
             "piprop": "name", "titles": "|".join(group)
@@ -303,16 +323,16 @@ def crop_face(image_bytes):
     return out.getvalue()
 
 
-def process_club(team, qid, title, old_db):
+def process_club(team, qid, title, old_db, language="en"):
     club_id = team["id"]
-    raw, roster_url = wiki_squad(title)
+    raw, roster_url = wiki_squad(title, language)
     section, heading = squad_section(raw)
     if not section or heading not in CURRENT_SECTIONS:
-        raise ValueError("No explicit current squad heading on English Wikipedia")
+        raise ValueError("No explicit current squad heading on " + language + " Wikipedia")
     titles = squad_titles(section)
     if len(titles) < 3:
         raise ValueError("Current squad has fewer than 3 linked player names")
-    qids, pageimages = wikipedia_qids(titles)
+    qids, pageimages = wikipedia_qids(titles, language)
     entities = wikidata_entities(qids)
     candidates = []
     for player_qid in qids:
@@ -405,13 +425,42 @@ def run(max_clubs, force=False, since=None):
         status = {"clubName": team["name"], "checkedAt": datetime.now(timezone.utc).isoformat()}
         try:
             if not qid or not wiki_pages.get(qid):
-                raise ValueError("No confirmed club Wikidata QID / English Wikipedia article")
-            players, roster_count, candidates = process_club(team, qid, wiki_pages[qid], old_db)
-            status.update({"rosterNames": roster_count, "photoCandidates": candidates})
+                raise ValueError("No confirmed club Wikidata QID / Wikipedia article")
+            pages = wiki_pages[qid]
+            sources = []
+            if pages.get("en"):
+                sources.append(("en", pages["en"]))
+                if team["league_id"] != "brazil-serie-a":
+                    sources.append(("en", "2026–27 " + pages["en"] + " season"))
+            for language in LEAGUE_LANGUAGES.get(team["league_id"], ()):
+                if pages.get(language):
+                    sources.append((language, pages[language]))
+            players, seen, errors, used_sources = [], set(), [], []
+            roster_count, candidates = 0, 0
+            for language, title in sources:
+                if len(players) >= TARGET:
+                    break
+                try:
+                    extra, names_count, candidates_count = process_club(
+                        team, qid, title, old_db, language
+                    )
+                    roster_count = max(roster_count, names_count)
+                    candidates += candidates_count
+                    for player in extra:
+                        if player["wikidataQid"] not in seen and len(players) < TARGET:
+                            players.append(player)
+                            seen.add(player["wikidataQid"])
+                    used_sources.append(wiki_title_url(title, language))
+                except Exception as source_exc:
+                    errors.append(language + ":" + str(source_exc)[:90])
+            if not used_sources:
+                raise ValueError("No verified current squad: " + "; ".join(errors[:3]))
+            status.update({"rosterNames": roster_count, "photoCandidates": candidates,
+                           "sources": used_sources})
             # A new roster snapshot supersedes historical and previously stale data.
             db.setdefault("clubs", {})[club_id] = {
                 "clubName": team["name"], "clubWikidataQid": qid,
-                "players": players, "rosterSource": wiki_title_url(wiki_pages[qid]),
+                "players": players, "rosterSource": used_sources[0],
                 "checkedAt": status["checkedAt"]
             }
             status.update({"count": len(players),
@@ -451,6 +500,10 @@ def self_test():
     section, heading = squad_section(sample)
     assert heading == "current squad", heading
     assert squad_titles(section) == ["Current Player", "Other Player", "Third Player"]
+    translated = "=== Selectie ===\n{{Fs player|name=[[Speler Een]]}}\n"
+    section, heading = squad_section(translated)
+    assert heading == "selectie"
+    assert squad_titles(section) == ["Speler Een"]
     assert license_allowed("CC BY-SA 4.0")
     assert license_allowed("CC0")
     assert not license_allowed("CC BY-NC 4.0")
