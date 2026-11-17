@@ -34,7 +34,9 @@ CURRENT_SECTIONS = {
     "current squad", "first-team squad", "first team squad", "squad",
     "senior squad", "first team", "first-team",
     "selectie", "kern", "effectif", "kader", "kadro", "plantel",
-    "plantilla", "rosa", "squadra", "giocatori in rosa", "roster"
+    "plantilla", "rosa", "squadra", "giocatori in rosa", "roster",
+    "ρόστερ", "ροστερ", "ομάδα", "elenco atual", "effectif actuel",
+    "plantilla actual", "huidige selectie", "aktueller kader", "güncel kadro"
 }
 LEAGUE_LANGUAGES = {
     "belgian-pro-league": ("nl", "fr"),
@@ -153,6 +155,23 @@ def wiki_squad(title, language="en"):
     return parsed.get("wikitext", {}).get("*", ""), wiki_title_url(parsed.get("title", title), language)
 
 
+def is_current_heading(heading):
+    if heading in CURRENT_SECTIONS:
+        return True
+    # Some local-language squad headings append a season or "professional".
+    # Never accept generic headings for "players", "alumni" or "history".
+    prefixes = (
+        "current squad ", "first-team squad ", "first team squad ",
+        "selectie ", "huidige selectie", "effectif ", "kader ",
+        "aktueller kader", "kadro ", "güncel kadro", "plantel ",
+        "elenco atual", "plantilla ", "rosa ", "squadra ",
+        "ρόστερ", "ροστερ"
+    )
+    return heading.startswith(prefixes) and not any(
+        word in heading for word in ("former", "histor", "ancien", "ehemalig", "ex-jogadores")
+    )
+
+
 def squad_section(wikitext):
     """Choose the most specific 'Current squad' heading, not former players."""
     headings = []
@@ -160,7 +179,7 @@ def squad_section(wikitext):
         heading = re.sub(r"\{\{.*?\}\}|\[\[|\]\]", "", match.group(2)).strip().lower()
         score = (5 if "current squad" in heading else
                  4 if "first-team squad" in heading or "first team squad" in heading else
-                 3 if heading in CURRENT_SECTIONS else
+                 3 if is_current_heading(heading) else
                  1 if heading in ("players", "spelers", "joueurs", "spieler", "jugadores", "futbolcular") else 0)
         if score:
             headings.append((score, match.start(), match.end(), len(match.group(1)), heading))
@@ -327,7 +346,7 @@ def process_club(team, qid, title, old_db, language="en"):
     club_id = team["id"]
     raw, roster_url = wiki_squad(title, language)
     section, heading = squad_section(raw)
-    if not section or heading not in CURRENT_SECTIONS:
+    if not section or not is_current_heading(heading):
         raise ValueError("No explicit current squad heading on " + language + " Wikipedia")
     titles = squad_titles(section)
     if len(titles) < 3:
@@ -383,7 +402,9 @@ def process_club(team, qid, title, old_db, language="en"):
             "clubWikidataQid": qid, "photoUrl": relative,
             "sourceUrl": info["sourceUrl"], "license": info["license"],
             "licenseUrl": info.get("licenseUrl", ""), "author": info["author"],
-            "membershipSource": roster_url, "membershipSection": heading,
+            "membershipSource": roster_url,
+            "membershipSection": heading if heading in CURRENT_SECTIONS else "current squad",
+            "membershipHeading": heading,
             "verifiedCurrent": True, "faceCrop": True, "modified": True,
             "associationType": "current_squad_wikipedia_section"
         })
@@ -401,7 +422,7 @@ def run(max_clubs, force=False, since=None):
     # Remove such ambiguous records before counting or publishing them.
     for club in db.get("clubs", {}).values():
         club["players"] = [p for p in club.get("players", [])
-                           if p.get("membershipSection") in CURRENT_SECTIONS]
+                           if is_current_heading(p.get("membershipSection", ""))]
     db["source"] = "Current squad sections of English Wikipedia + Wikidata P18 + licensed Commons face crops"
     db["minimumCurrentHeadshotsPerClub"] = MINIMUM
     db["targetCurrentHeadshotsPerClub"] = TARGET
@@ -504,6 +525,9 @@ def self_test():
     section, heading = squad_section(translated)
     assert heading == "selectie"
     assert squad_titles(section) == ["Speler Een"]
+    assert is_current_heading("plantel principal")
+    assert is_current_heading("ρόστερ")
+    assert not is_current_heading("former players")
     assert license_allowed("CC BY-SA 4.0")
     assert license_allowed("CC0")
     assert not license_allowed("CC BY-NC 4.0")
