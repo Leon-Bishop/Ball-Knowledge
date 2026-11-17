@@ -190,18 +190,20 @@ def squad_titles(section):
 
 
 def wikipedia_qids(titles):
-    result = []
+    result, pageimages = [], {}
     for group in chunks(titles, 35):
         data = api("en.wikipedia.org", {
             "action": "query", "format": "json", "redirects": 1,
-            "prop": "pageprops", "ppprop": "wikibase_item",
-            "titles": "|".join(group)
+            "prop": "pageprops|pageimages", "ppprop": "wikibase_item",
+            "piprop": "name", "titles": "|".join(group)
         })
         for page in data.get("query", {}).get("pages", {}).values():
             qid = page.get("pageprops", {}).get("wikibase_item")
             if qid and re.fullmatch(r"Q\d+", qid):
                 result.append(qid)
-    return list(dict.fromkeys(result))
+                if page.get("pageimage"):
+                    pageimages[qid] = page["pageimage"]
+    return list(dict.fromkeys(result)), pageimages
 
 
 def claim_value(entity, prop):
@@ -310,14 +312,14 @@ def process_club(team, qid, title, old_db):
     titles = squad_titles(section)
     if len(titles) < 3:
         raise ValueError("Current squad has fewer than 3 linked player names")
-    qids = wikipedia_qids(titles)
+    qids, pageimages = wikipedia_qids(titles)
     entities = wikidata_entities(qids)
     candidates = []
     for player_qid in qids:
         entity = entities.get(player_qid, {})
         if not is_footballer(entity):
             continue
-        filename = photo_filename(entity)
+        filename = photo_filename(entity) or pageimages.get(player_qid, "")
         if not filename:
             continue
         name = entity.get("labels", {}).get("en", {}).get("value", "")
