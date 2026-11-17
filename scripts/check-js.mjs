@@ -7,8 +7,12 @@ const js=read('assets/app.js');
 const css=read('assets/styles.css');
 new vm.Script(js,{filename:'assets/app.js'});
 new vm.Script(read('assets/guess-matcher.js'),{filename:'assets/guess-matcher.js'});
-assert(html.includes('src="./assets/app.js"')&&html.includes('href="./assets/styles.css"'),'Missing app JS/CSS links');
-assert(html.includes('src="./assets/guess-matcher.js"')&&html.indexOf('src="./assets/guess-matcher.js"')<html.indexOf('src="./assets/app.js"'),'Guess matcher must load before app');
+const appScript=/src="\.\/assets\/app\.js(?:\?[^"]*)?"/.exec(html);
+const cssLink=/href="\.\/assets\/styles\.css(?:\?[^"]*)?"/.exec(html);
+assert(appScript&&cssLink,'Missing app JS/CSS links');
+assert(html.includes('src="./assets/guess-matcher.js"')&&
+ html.indexOf('src="./assets/guess-matcher.js"')<appScript.index,
+ 'Guess matcher must load before app');
 assert(css.includes('.league-grid')&&css.includes('.slots'),'Missing game styles');
 for (const f of ['leagues.json','teams.enriched.json','tum-kulupler-ilginc-hikayeler-guncel.json','i18n.json'])assert(js.includes(`'${f}'`)||js.includes(`"${f}"`),'Game does not load '+f);
 assert(js.includes('pickDisplayFact(round)'),'Result must choose one story');
