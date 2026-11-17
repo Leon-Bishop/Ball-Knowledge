@@ -15,9 +15,9 @@ permissions:
   id-token: write
 concurrency:
   group: ball-knowledge-photo-data
-  # Importer checkpoints each batch; superseded runs should not continue
-  # from stale database snapshots and race against a newer run.
-  cancel-in-progress: false
+  # The importer checkpoints every batch. A new, corrected import must
+  # supersede the old job and resume from the newest main-branch snapshot.
+  cancel-in-progress: true
 jobs:
   curate:
     runs-on: ubuntu-latest
