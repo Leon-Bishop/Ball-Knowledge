@@ -118,7 +118,8 @@ def recheck_wikipedia_squad_memberships(db):
     accidentally included. A failed page lookup cannot prove membership.
     """
     sources = set(p.get("membershipSource") for club in db.get("clubs", {}).values()
-                  for p in club.get("players", []) if p.get("membershipSource"))
+                  for p in club.get("players", [])
+                  if p.get("membershipSource") and p.get("membershipSection") != "wikidata current club")
     membership = {}
     for index, url in enumerate(sorted(sources), 1):
         try:
@@ -162,12 +163,17 @@ def verify(db, entities, evidence, mapping, today, roster_qids=None):
             duplicate = len(occurrences[qid]) > 1
             if official:
                 status, evidence_url = official, official_source
-            elif roster_qids is not None and (
+            elif (p.get("membershipSection") == "wikidata current club" and
+                  p.get("membershipSource") != "https://www.wikidata.org/wiki/" + qid):
+                status, evidence_url = "invalid_wikidata_provenance", None
+            elif roster_qids is not None and p.get("membershipSection") != "wikidata current club" and (
                 p.get("membershipSource") not in roster_qids or
                 roster_qids[p.get("membershipSource")] is None
             ):
                 status, evidence_url = "roster_source_unavailable", None
-            elif roster_qids is not None and qid not in roster_qids[p["membershipSource"]]:
+            elif (roster_qids is not None and
+                  p.get("membershipSection") != "wikidata current club" and
+                  qid not in roster_qids[p["membershipSource"]]):
                 status, evidence_url = "not_on_current_squad", None
             elif not expected:
                 status, evidence_url = "unconfirmed", None
