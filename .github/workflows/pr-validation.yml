@@ -43,3 +43,4 @@ jobs:
           python -m pip install --disable-pip-version-check "numpy>=2,<3" "opencv-python-headless>=4.10,<5"
           python scripts/headshot_quality.py --self-test
           python scripts/headshot_quality.py
+          python scripts/headshot_quality.py --check-all
