@@ -1,22 +1,87 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-17T09:33:35.871114+00:00",
+  "checkedAt": "2026-11-17T09:47:27.997719+00:00",
   "rule": "Official current squad/loan evidence, or explicit Wikipedia current squad without recent conflicting 2026-27 Wikidata P54; all cross-club duplicates excluded",
   "totalClubs": 214,
-  "totalPlayers": 810,
-  "uniquePlayers": 810,
+  "totalPlayers": 815,
+  "wikipediaPagesRechecked": 214,
+  "wikipediaPagesUnavailable": 0,
+  "uniquePlayers": 815,
   "verifiedClubsWithThree": 203,
-  "verifiedPlayers": 808,
+  "verifiedPlayers": 805,
+  "independentlyCorroboratedPlayers": 295,
+  "wikipediaOnlyPlayers": 510,
   "statuses": {
-    "wikipedia_squad_no_p54": 226,
+    "wikipedia_squad_no_p54": 223,
     "wikipedia_squad_stale_p54": 287,
     "wikidata_current_club": 280,
     "confirmed_current_loan": 3,
+    "not_on_current_squad": 8,
     "recent_conflicting_club": 2,
     "official_club_squad": 12
   },
   "conflictingPlayers": [],
   "unconfirmed": [
+    {
+      "clubId": "brazil-serie-a:1",
+      "playerName": "Léo Naldi",
+      "wikidataQid": "Q117716058",
+      "clubWikidataQid": "Q274465",
+      "p54CurrentClub": null,
+      "p54Reason": "no_active_p54",
+      "p54ActiveClubStart": null,
+      "verification": "not_on_current_squad",
+      "evidenceUrl": null,
+      "duplicateInClubs": []
+    },
+    {
+      "clubId": "brazil-serie-a:2",
+      "playerName": "Raul Lô Gonçalves",
+      "wikidataQid": "Q56382170",
+      "clubWikidataQid": "Q506832",
+      "p54CurrentClub": null,
+      "p54Reason": "ambiguous_active_p54",
+      "p54ActiveClubStart": null,
+      "verification": "not_on_current_squad",
+      "evidenceUrl": null,
+      "duplicateInClubs": []
+    },
+    {
+      "clubId": "brazil-serie-a:8",
+      "playerName": "Igor Cariús",
+      "wikidataQid": "Q58821137",
+      "clubWikidataQid": "Q2622870",
+      "p54CurrentClub": "Q2306468",
+      "p54Reason": "single_active_p54",
+      "p54ActiveClubStart": "None",
+      "verification": "not_on_current_squad",
+      "evidenceUrl": null,
+      "duplicateInClubs": []
+    },
+    {
+      "clubId": "brazil-serie-a:17",
+      "playerName": "Riquelme",
+      "wikidataQid": "Q130493306",
+      "clubWikidataQid": "Q541744",
+      "p54CurrentClub": null,
+      "p54Reason": "no_active_p54",
+      "p54ActiveClubStart": null,
+      "verification": "not_on_current_squad",
+      "evidenceUrl": null,
+      "duplicateInClubs": []
+    },
+    {
+      "clubId": "brazil-serie-a:19",
+      "playerName": "Italo",
+      "wikidataQid": "Q137823628",
+      "clubWikidataQid": "Q2536715",
+      "p54CurrentClub": null,
+      "p54Reason": "no_active_p54",
+      "p54ActiveClubStart": null,
+      "verification": "not_on_current_squad",
+      "evidenceUrl": null,
+      "duplicateInClubs": []
+    },
     {
       "clubId": "england-premier-league:18",
       "playerName": "Radu Drăgușin",
@@ -39,6 +104,42 @@
       "p54ActiveClubStart": "2026-07-01",
       "verification": "recent_conflicting_club",
       "evidenceUrl": "https://www.wikidata.org/wiki/Q699094",
+      "duplicateInClubs": []
+    },
+    {
+      "clubId": "scotland-premiership:7",
+      "playerName": "Julius Eskesen",
+      "wikidataQid": "Q33112671",
+      "clubWikidataQid": "Q192873",
+      "p54CurrentClub": "Q211912",
+      "p54Reason": "single_active_p54",
+      "p54ActiveClubStart": "None",
+      "verification": "not_on_current_squad",
+      "evidenceUrl": null,
+      "duplicateInClubs": []
+    },
+    {
+      "clubId": "spain-la-liga:12",
+      "playerName": "Unai Santos",
+      "wikidataQid": "Q134883919",
+      "clubWikidataQid": "Q10286",
+      "p54CurrentClub": "Q10286",
+      "p54Reason": "latest_active_p54",
+      "p54ActiveClubStart": "2026-01-01",
+      "verification": "not_on_current_squad",
+      "evidenceUrl": null,
+      "duplicateInClubs": []
+    },
+    {
+      "clubId": "turkey-super-lig:18",
+      "playerName": "Eren Karadağ",
+      "wikidataQid": "Q60050428",
+      "clubWikidataQid": "Q19613395",
+      "p54CurrentClub": null,
+      "p54Reason": "no_active_p54",
+      "p54ActiveClubStart": null,
+      "verification": "not_on_current_squad",
+      "evidenceUrl": null,
       "duplicateInClubs": []
     }
   ],
@@ -155,18 +256,19 @@
       "total": 3,
       "verified": 3,
       "verifiedNames": [
-        "Anthony Descotte",
         "Aurélien Scheidler",
-        "Freddy Mbemba"
+        "Freddy Mbemba",
+        "Mohamed Koné"
       ]
     },
     "belgian-pro-league:13": {
-      "total": 3,
-      "verified": 3,
+      "total": 4,
+      "verified": 4,
       "verifiedNames": [
         "Ralf Seuntjens",
         "Shawn Adewoye",
-        "Stredair Appuah"
+        "Stredair Appuah",
+        "Joey Pelupessy"
       ]
     },
     "belgian-pro-league:14": {
@@ -215,19 +317,17 @@
     },
     "brazil-serie-a:1": {
       "total": 4,
-      "verified": 4,
+      "verified": 3,
       "verifiedNames": [
         "Emanuel Brítez",
         "Lucas Rodrigues",
-        "Léo Naldi",
         "Osvaldo Lourenço Filho"
       ]
     },
     "brazil-serie-a:2": {
       "total": 4,
-      "verified": 4,
+      "verified": 3,
       "verifiedNames": [
-        "Raul Lô Gonçalves",
         "Kerwin Vargas",
         "Léo Pelé",
         "Felipinho"
@@ -285,12 +385,11 @@
     },
     "brazil-serie-a:8": {
       "total": 4,
-      "verified": 4,
+      "verified": 3,
       "verifiedNames": [
         "Gustavo Silva",
         "Victor Luis Chuab Zamblauskas",
-        "José Roberto Assunção de Araújo Filho",
-        "Igor Cariús"
+        "José Roberto Assunção de Araújo Filho"
       ]
     },
     "brazil-serie-a:9": {
@@ -375,9 +474,8 @@
     },
     "brazil-serie-a:17": {
       "total": 4,
-      "verified": 4,
+      "verified": 3,
       "verifiedNames": [
-        "Riquelme",
         "Gabriel Girotto Franco",
         "Ignacio Sosa",
         "Eduardo Sasha"
@@ -395,10 +493,9 @@
     },
     "brazil-serie-a:19": {
       "total": 4,
-      "verified": 4,
+      "verified": 3,
       "verifiedNames": [
         "Maurício Garcez",
-        "Italo",
         "Vinicius Balieiro",
         "Bruno de Jesus Pacheco"
       ]
@@ -1334,12 +1431,13 @@
       ]
     },
     "netherlands-eredivisie:5": {
-      "total": 3,
-      "verified": 3,
+      "total": 4,
+      "verified": 4,
       "verifiedNames": [
         "Gonçalo Borges",
         "Oussama Targhalline",
-        "Thomas Beelen"
+        "Thomas Beelen",
+        "Gijs Smal"
       ]
     },
     "netherlands-eredivisie:6": {
@@ -1692,12 +1790,11 @@
     },
     "scotland-premiership:7": {
       "total": 4,
-      "verified": 4,
+      "verified": 3,
       "verifiedNames": [
         "Jordan Amissah",
         "Daniel Bennie",
-        "Lachlan Rose",
-        "Julius Eskesen"
+        "Lachlan Rose"
       ]
     },
     "scotland-premiership:8": {
@@ -1730,21 +1827,23 @@
       ]
     },
     "scotland-premiership:11": {
-      "total": 3,
-      "verified": 3,
+      "total": 4,
+      "verified": 4,
       "verifiedNames": [
         "Ruari Paton",
         "Joel Cotterill",
-        "Matty Foulds"
+        "Matty Foulds",
+        "Danny Schmidt"
       ]
     },
     "scotland-premiership:12": {
-      "total": 3,
-      "verified": 3,
+      "total": 4,
+      "verified": 4,
       "verifiedNames": [
         "Liam Donnelly",
         "Jake Young",
-        "Henry Fieldson"
+        "Henry Fieldson",
+        "Declan John"
       ]
     },
     "spain-la-liga:1": {
@@ -1856,10 +1955,9 @@
     },
     "spain-la-liga:12": {
       "total": 4,
-      "verified": 4,
+      "verified": 3,
       "verifiedNames": [
         "Romain Del Castillo",
-        "Unai Santos",
         "Ante Budimir",
         "Kike Barja"
       ]
@@ -1945,12 +2043,13 @@
       ]
     },
     "turkey-super-lig:1": {
-      "total": 3,
-      "verified": 3,
+      "total": 4,
+      "verified": 4,
       "verifiedNames": [
         "Ianis Hagi",
         "Hwang Ui-jo",
-        "Elia Meschak"
+        "Elia Meschak",
+        "Florent Hadergjonaj"
       ]
     },
     "turkey-super-lig:2": {
@@ -2040,7 +2139,7 @@
         "Gökdeniz Bayrakdar",
         "Efkan Bekiroğlu",
         "Luka Gugeshashvili",
-        "Novatus Dismas"
+        "Novatus Miroshi"
       ]
     },
     "turkey-super-lig:11": {
@@ -2115,9 +2214,8 @@
     },
     "turkey-super-lig:18": {
       "total": 4,
-      "verified": 4,
+      "verified": 3,
       "verifiedNames": [
-        "Eren Karadağ",
         "Mohammed Diomande",
         "Göktan Gürpüz",
         "Youssoufa Moukoko"
