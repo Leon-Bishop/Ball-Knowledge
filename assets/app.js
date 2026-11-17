@@ -133,7 +133,8 @@ function emojiMeaning(index){
 // Display face-only portraits of verified current-squad players.
 // Three distinct, attributed and face-detected crops are required for a club.
 // Randomize separately per round and never use the historical photo database.
-const PLAYER_PHOTO_REPLACE=new Set(['⚽','🏆','🥇']);
+const PLAYER_PHOTO_PRIORITY=['🏆','⚽','🥇'];
+const PLAYER_PHOTO_REPLACE=new Set(PLAYER_PHOTO_PRIORITY);
 const playerPhotoSessionSeed=Math.random().toString(36).slice(2);
 const photoAlternates=new Map();
 function eligiblePlayerPhoto(index,alternative=null){
@@ -141,8 +142,12 @@ function eligiblePlayerPhoto(index,alternative=null){
  const seed=session?.daily?String(session.date):playerPhotoSessionSeed;
  const roundSeed=seed+'|'+String(session?.played??0);
  const offset=alternative===null?(photoAlternates.get(round.id+'|'+roundSeed+'|'+index)||0):alternative;
- // Assign each photo clue a unique portrait, even when emoji slots are nonadjacent.
- const portraitIndex=round.emojis.slice(0,index).filter(e=>PLAYER_PHOTO_REPLACE.has(e)).length;
+ // Prioritize replacement of the cup and ball before the medal; one
+ // verified player should never get consumed by a medal emoji instead of 🏆.
+ // This remains stable even if visible clue cards are shuffled per round.
+ const prioritySlots=PLAYER_PHOTO_PRIORITY.flatMap(emoji=>
+  round.emojis.map((value,position)=>value===emoji?position:-1).filter(position=>position>=0));
+ const portraitIndex=prioritySlots.indexOf(index);
  return window.BKPlayerPhotos?.getPlayer(round.id,roundSeed,portraitIndex,offset)||null;
 }
 function displayEmojiExplanation(){

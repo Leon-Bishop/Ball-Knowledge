@@ -31,6 +31,8 @@ assert(source.includes('ALLOWED_VERIFICATION')&&source.includes('rosterAuditAt')
 assert(source.includes('p.faceQualityVerified!==true'), 'Player photos require final facial-feature QA');
 assert(css.includes('.slot .player-photo-clue')&&css.includes('object-fit:contain')&&!css.includes('transform:scale(1.35)'));
 assert(app.includes('if(photo&&!finished)'),'Do not reveal identity during the round');
+assert(app.includes("const PLAYER_PHOTO_PRIORITY=['🏆','⚽','🥇']"),'Use trophy-before-medal photo ordering');
+assert(app.includes('prioritySlots.indexOf(index)'),'Photo clues must respect priority ordering');
 assert(!app.includes('item.title=(lang===\'tr\'?\'Futbolcu fotoğrafını'),'No photograph source tooltips');
 assert(credits.includes('player-headshot-db.json'));
 assert(source.includes('UNUSABLE_CROPS')&&source.includes('Q56043335')&&source.includes('Q40991902')&&source.includes('Q26704485'),
