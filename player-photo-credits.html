@@ -23,25 +23,25 @@ footer{padding:28px 0}
 <body>
 <a href="./">← Ball Knowledge</a>
 <h1>Player photo credits</h1>
-<p>Player photographs used in the quiz are sourced individually from Wikimedia Commons. Each image retains its own author, source page and reuse license. A player's team relationship comes from Wikidata P54 membership and may be historical; the photograph may show another team's kit.</p>
+<p>Player photographs used in the quiz are sourced individually from Wikimedia Commons. Each image retains its own author, source page and reuse license. Players are selected from the current-squad section of their club's English Wikipedia article. Wikimedia Commons photographs are automatically cropped to the detected face, excluding team shirts as far as possible. These are modified images: original authors and licenses are credited below. A club needs at least three qualifying portraits before its photos appear in the game.</p>
 <p id="coverage">Loading verified photo credits…</p>
 <table><thead><tr><th>Club / player</th><th>Photographer</th><th>License</th><th>Source</th></tr></thead><tbody id="rows"></tbody></table>
 <footer><small>Ball Knowledge does not imply that a photographed player endorses the game. Licensing and factual corrections can be requested at dev.leonb@gmail.com.</small></footer>
 <script>
-fetch('./assets/player-photo-db.json').then(r=>r.json()).then(db=>{
+fetch('./assets/player-headshot-db.json').then(r=>r.json()).then(db=>{
  const tbody=document.getElementById('rows');
  const count=Object.values(db.clubs||{}).reduce((n,club)=>n+(club.players?.length||0),0);
  const clubs=Object.values(db.clubs||{});
- const complete10=clubs.filter(club=>(club.players||[]).length>=10).length;
- const complete7=clubs.filter(club=>(club.players||[]).length>=7).length;
- document.getElementById('coverage').textContent=count+' licensed photographs collected · '+complete7+' clubs with at least 7 usable photos · '+complete10+' clubs with at least 10 photos';
+ const complete4=clubs.filter(club=>(club.players||[]).length>=4).length;
+ const complete3=clubs.filter(club=>(club.players||[]).length>=3).length;
+ document.getElementById('coverage').textContent=count+' cropped, licensed current-squad headshots · '+complete3+' clubs with at least 3 portraits · '+complete4+' clubs with 4 portraits';
  const seen=new Set();
  for(const club of Object.values(db.clubs||{})){
   for(const player of club.players||[]){
    const key=player.clubId+'|'+player.wikidataQid;
    if(seen.has(key))continue;seen.add(key);
    const row=document.createElement('tr');
-   const p=document.createElement('td');p.textContent=club.clubName+' — '+player.playerName;
+   const p=document.createElement('td');p.textContent=club.clubName+' — '+player.playerName+' (face crop)';
    const author=document.createElement('td');author.textContent=player.author;
    const license=document.createElement('td');
    if(player.licenseUrl){const a=document.createElement('a');a.href=player.licenseUrl;a.textContent=player.license;license.append(a)}
