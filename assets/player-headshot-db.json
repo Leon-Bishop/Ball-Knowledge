@@ -6403,40 +6403,18 @@
           "membershipSource": "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)",
           "membershipSection": "selectie",
           "membershipHeading": "selectie",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "netherlands-eredivisie:3",
-          "playerName": "Jordy Clasie",
-          "wikidataQid": "Q198068",
-          "clubWikidataQid": "Q191264",
-          "photoUrl": "./assets/player-headshots/netherlands-eredivisie-3--Q198068.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jordy_Clasie_in_2025.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Biso",
-          "membershipSource": "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)",
-          "membershipSection": "selectie",
-          "membershipHeading": "selectie",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:28:45.444004+00:00",
+          "secondaryRosterSource": "https://www.az.nl/inside-az/nieuws/2026/november/liveblog-az-fc-groningen"
         }
       ],
       "rosterSource": "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)",
-      "checkedAt": "2026-11-17T11:47:54.877628+00:00"
+      "checkedAt": "2026-11-17T14:28:41.457590+00:00"
     },
     "netherlands-eredivisie:4": {
       "clubName": "Excelsior",
@@ -6485,18 +6463,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Feyenoord",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Feyenoord",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:28:51.179288+00:00",
+          "secondaryRosterSource": "https://www.feyenoord.com/en/feyenoord-1/squad"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Feyenoord",
-      "checkedAt": "2026-11-17T11:48:46.562236+00:00"
+      "checkedAt": "2026-11-17T14:28:48.432628+00:00"
     },
     "netherlands-eredivisie:6": {
       "clubName": "Fortuna Sittard",
@@ -6575,9 +6553,32 @@
     "netherlands-eredivisie:7": {
       "clubName": "Go Ahead Eagles",
       "clubWikidataQid": "Q749589",
-      "players": [],
+      "players": [
+        {
+          "clubId": "netherlands-eredivisie:7",
+          "playerName": "Hamid Zarbaf",
+          "wikidataQid": "Q47982266",
+          "clubWikidataQid": "Q749589",
+          "photoUrl": "./assets/player-headshots/netherlands-eredivisie-7--Q47982266.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamid_zarbaf_-1533106762.jpeg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "author": "Hamid Zarbaf",
+          "membershipSource": "https://www.wikidata.org/wiki/Q47982266",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:29:30.933321+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q47982266",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Go_Ahead_Eagles",
-      "checkedAt": "2026-11-17T11:50:10.439165+00:00"
+      "checkedAt": "2026-11-17T14:28:51.633303+00:00"
     },
     "netherlands-eredivisie:8": {
       "clubName": "FC Twente",
@@ -6670,40 +6671,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/FC_Utrecht",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/FC_Utrecht",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "netherlands-eredivisie:9",
-          "playerName": "Joris van Overeem",
-          "wikidataQid": "Q3183928",
-          "clubWikidataQid": "Q24680",
-          "photoUrl": "./assets/player-headshots/netherlands-eredivisie-9--Q3183928.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joris_van_Overeem_2019.jpg",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "author": "FCUFAN",
-          "membershipSource": "https://nl.wikipedia.org/wiki/FC_Utrecht",
-          "membershipSection": "selectie",
-          "membershipHeading": "selectie",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://nl.wikipedia.org/wiki/FC_Utrecht",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:28:47.974076+00:00",
+          "secondaryRosterSource": "https://www.fcutrecht.nl/nieuws/2026/augustus/alle-rugnummers-van-fc-utrecht-op-een-rijtje/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/FC_Utrecht",
-      "checkedAt": "2026-11-17T11:52:01.032664+00:00"
+      "checkedAt": "2026-11-17T14:28:45.863120+00:00"
     },
     "netherlands-eredivisie:10": {
       "clubName": "FC Groningen",
@@ -6738,9 +6717,32 @@
     "netherlands-eredivisie:11": {
       "clubName": "Heerenveen",
       "clubWikidataQid": "Q200321",
-      "players": [],
+      "players": [
+        {
+          "clubId": "netherlands-eredivisie:11",
+          "playerName": "Simon Thern",
+          "wikidataQid": "Q1342780",
+          "clubWikidataQid": "Q200321",
+          "photoUrl": "./assets/player-headshots/netherlands-eredivisie-11--Q1342780.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:SwedenU21_09_Simon_Thern_130606_Sve-Sch_3-2_172651_6339.jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "author": "Pechblaende",
+          "membershipSource": "https://www.wikidata.org/wiki/Q1342780",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:29:57.344192+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q1342780",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/SC_Heerenveen",
-      "checkedAt": "2026-11-17T11:53:26.145391+00:00"
+      "checkedAt": "2026-11-17T14:29:31.350372+00:00"
     },
     "netherlands-eredivisie:12": {
       "clubName": "NEC Nijmegen",
@@ -6789,18 +6791,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/PEC_Zwolle",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/PEC_Zwolle",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:29:59.997194+00:00",
+          "secondaryRosterSource": "https://peczwolle.nl/nieuws/selectie-trainingskamp-portugal"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/PEC_Zwolle",
-      "checkedAt": "2026-11-17T11:54:33.722226+00:00"
+      "checkedAt": "2026-11-17T14:29:57.785565+00:00"
     },
     "netherlands-eredivisie:14": {
       "clubName": "PSV Eindhoven",
@@ -6990,9 +6992,32 @@
     "netherlands-eredivisie:18": {
       "clubName": "Willem II",
       "clubWikidataQid": "Q332664",
-      "players": [],
+      "players": [
+        {
+          "clubId": "netherlands-eredivisie:18",
+          "playerName": "Kristófer Kristinsson",
+          "wikidataQid": "Q50227154",
+          "clubWikidataQid": "Q332664",
+          "photoUrl": "./assets/player-headshots/netherlands-eredivisie-18--Q50227154.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kristofer_Kristinsson_(2022).jpg",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "author": "VVV-Venlo",
+          "membershipSource": "https://www.wikidata.org/wiki/Q50227154",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:30:19.544399+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q50227154",
+          "associationType": "wikidata_current_P54_and_commons_P18"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Willem_II_Tilburg",
-      "checkedAt": "2026-11-17T11:57:14.996150+00:00"
+      "checkedAt": "2026-11-17T14:30:00.448582+00:00"
     },
     "portugal-liga-portugal:1": {
       "clubName": "Arouca",
@@ -7144,40 +7169,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "portugal-liga-portugal:7",
-          "playerName": "Stefan Leković",
-          "wikidataQid": "Q112978315",
-          "clubWikidataQid": "Q838134",
-          "photoUrl": "./assets/player-headshots/portugal-liga-portugal-7--Q112978315.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stefan_Lekovi%C4%87.jpg",
-          "license": "CC BY-SA 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-          "author": "Вячеслав Евдокимов",
-          "membershipSource": "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:21.952646+00:00",
+          "secondaryRosterSource": "https://estrelamadora.pt/futebol/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora",
-      "checkedAt": "2026-11-17T11:59:49.901283+00:00"
+      "checkedAt": "2026-11-17T14:30:19.998845+00:00"
     },
     "portugal-liga-portugal:8": {
       "clubName": "FC Famalicão",
@@ -7257,14 +7260,37 @@
       "clubWikidataQid": "Q223450",
       "players": [],
       "rosterSource": "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C.",
-      "checkedAt": "2026-11-17T12:01:22.994245+00:00"
+      "checkedAt": "2026-11-17T14:30:27.169811+00:00"
     },
     "portugal-liga-portugal:13": {
       "clubName": "Moreirense",
       "clubWikidataQid": "Q1346314",
-      "players": [],
+      "players": [
+        {
+          "clubId": "portugal-liga-portugal:13",
+          "playerName": "Ibrahima Camará",
+          "wikidataQid": "Q61761734",
+          "clubWikidataQid": "Q1346314",
+          "photoUrl": "./assets/player-headshots/portugal-liga-portugal-13--Q61761734.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:World_Cup_Qualification_Africa_Guinea_v_Algeria_9_(Ibrahima_Camar%C3%A1).jpg",
+          "license": "Public domain",
+          "licenseUrl": "",
+          "author": "feguifoot",
+          "membershipSource": "https://www.wikidata.org/wiki/Q61761734",
+          "membershipSection": "wikidata current club",
+          "membershipHeading": "Active P54 current-club statement",
+          "verifiedCurrent": true,
+          "faceCrop": true,
+          "faceQualityVerified": true,
+          "modified": true,
+          "rosterVerification": "wikidata_current_club",
+          "verifiedAt": "2026-11-17T14:30:26.740962+00:00",
+          "secondaryRosterSource": "https://www.wikidata.org/wiki/Q61761734",
+          "associationType": "old_commons_source_fresh_active_P54_verified"
+        }
+      ],
       "rosterSource": "https://en.wikipedia.org/wiki/Moreirense_F.C.",
-      "checkedAt": "2026-11-17T12:01:34.841586+00:00"
+      "checkedAt": "2026-11-17T14:30:22.361562+00:00"
     },
     "portugal-liga-portugal:14": {
       "clubName": "C.D. Nacional",
@@ -7645,84 +7671,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:3",
-          "playerName": "Imari Samuels",
-          "wikidataQid": "Q118470954",
-          "clubWikidataQid": "Q335483",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-3--Q118470954.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Imari_Samuels.png",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Stuartp1213",
-          "membershipSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:3",
-          "playerName": "Joe Westley",
-          "wikidataQid": "Q131910302",
-          "clubWikidataQid": "Q335483",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-3--Q131910302.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joe_Westley.jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Stuartp1213",
-          "membershipSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:3",
-          "playerName": "Matai Akinmboni",
-          "wikidataQid": "Q111711024",
-          "clubWikidataQid": "Q335483",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-3--Q111711024.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matai_Akinmboni_2025.jpg",
-          "license": "CC BY 3.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-          "author": "AFC Bournemouth",
-          "membershipSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:40.299884+00:00",
+          "secondaryRosterSource": "https://dundeefc.co.uk/team/first-team/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Dundee_F.C.",
-      "checkedAt": "2026-11-17T12:03:47.603383+00:00"
+      "checkedAt": "2026-11-17T14:30:38.287274+00:00"
     },
     "scotland-premiership:4": {
       "clubName": "Heart of Midlothian",
@@ -7741,84 +7701,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:4",
-          "playerName": "Laurent Mendy",
-          "wikidataQid": "Q137864483",
-          "clubWikidataQid": "Q202093",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-4--Q137864483.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laurent_Mendy_Hearts_v_Dundee_United_9_Aug_2026-065.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:4",
-          "playerName": "Calvin Miller",
-          "wikidataQid": "Q28045315",
-          "clubWikidataQid": "Q202093",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-4--Q28045315.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calvin_Miller_Hearts_v_Dundee_United_9_Aug_2026-059_(cropped).jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:4",
-          "playerName": "Sabri Guendouz",
-          "wikidataQid": "Q140364405",
-          "clubWikidataQid": "Q202093",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-4--Q140364405.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sabri_Guendouz_Hearts_v_Dundee_United_9_Aug_2026-043.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:45.263305+00:00",
+          "secondaryRosterSource": "https://www.heartsfc.co.uk/pages/first-team-squad"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C.",
-      "checkedAt": "2026-11-17T12:03:55.117889+00:00"
+      "checkedAt": "2026-11-17T14:30:43.276555+00:00"
     },
     "scotland-premiership:5": {
       "clubName": "Hibernian",
@@ -7837,40 +7731,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Hibernian_F.C.",
           "membershipSection": "first team squad",
           "membershipHeading": "first team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Hibernian_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:5",
-          "playerName": "Azeem Abdulai",
-          "wikidataQid": "Q113483655",
-          "clubWikidataQid": "Q192597",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-5--Q113483655.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Azeem_Abdulai_18042026_(2).jpg",
-          "license": "CC0",
-          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-          "author": "Timmy96",
-          "membershipSource": "https://en.wikipedia.org/wiki/Hibernian_F.C.",
-          "membershipSection": "first team squad",
-          "membershipHeading": "first team squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Hibernian_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:47.925784+00:00",
+          "secondaryRosterSource": "https://www.hibernianfc.co.uk/news/2026/november/11/our-mens-and-academy-2026-2027-squad-photos/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Hibernian_F.C.",
-      "checkedAt": "2026-11-17T12:04:04.627223+00:00"
+      "checkedAt": "2026-11-17T14:30:45.699664+00:00"
     },
     "scotland-premiership:6": {
       "clubName": "Kilmarnock",
@@ -7889,18 +7761,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Kilmarnock_F.C.",
           "membershipSection": "first team squad",
           "membershipHeading": "first team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Kilmarnock_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:50.513019+00:00",
+          "secondaryRosterSource": "https://kilmarnockfc.co.uk/news/international-recognition/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Kilmarnock_F.C.",
-      "checkedAt": "2026-11-17T12:04:28.977324+00:00"
+      "checkedAt": "2026-11-17T14:30:48.344980+00:00"
     },
     "scotland-premiership:7": {
       "clubName": "Dundee United",
@@ -7919,84 +7791,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:7",
-          "playerName": "Jack Walton",
-          "wikidataQid": "Q60733962",
-          "clubWikidataQid": "Q192873",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-7--Q60733962.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jack_Walton_Hearts_v_Dundee_United_9_Aug_2026-102_(cropped).jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:7",
-          "playerName": "Mehdi Merghem",
-          "wikidataQid": "Q38167881",
-          "clubWikidataQid": "Q192873",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-7--Q38167881.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mehdi_Merghem_Hearts_v_Dundee_United_9_Aug_2026-019.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:7",
-          "playerName": "Neil Farrugia",
-          "wikidataQid": "Q102276813",
-          "clubWikidataQid": "Q192873",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-7--Q102276813.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neil_Farrugia_Hearts_v_Dundee_United_9_Aug_2026-198_(cropped).jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:42.862058+00:00",
+          "secondaryRosterSource": "https://www.christmas.dundeeunitedfc.co.uk/news/9557/United-see-points-shared-in-home-clash-with-Motherwell.html"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Dundee_United_F.C.",
-      "checkedAt": "2026-11-17T12:04:44.190439+00:00"
+      "checkedAt": "2026-11-17T14:30:40.758661+00:00"
     },
     "scotland-premiership:8": {
       "clubName": "Motherwell",
@@ -8015,18 +7821,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Motherwell_F.C.",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Motherwell_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:53.047932+00:00",
+          "secondaryRosterSource": "https://www.motherwellfc.co.uk/2026/10/15/team-news-for-trip-to-kilmarnock/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Motherwell_F.C.",
-      "checkedAt": "2026-11-17T12:04:51.712318+00:00"
+      "checkedAt": "2026-11-17T14:30:50.936209+00:00"
     },
     "scotland-premiership:9": {
       "clubName": "Rangers",
@@ -8045,62 +7851,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Rangers_F.C.",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:9",
-          "playerName": "Ross McCausland",
-          "wikidataQid": "Q111994930",
-          "clubWikidataQid": "Q19597",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-9--Q111994930.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_McCausland_2023_(cropped).jpg",
-          "license": "CC BY-SA 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-          "author": "Jim Easton",
-          "membershipSource": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:9",
-          "playerName": "Findlay Curtis",
-          "wikidataQid": "Q131863254",
-          "clubWikidataQid": "Q19597",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-9--Q131863254.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Findlay_Curtis_Scotland_v_Bolivia_6_June_2026-56.jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:55.833653+00:00",
+          "secondaryRosterSource": "https://www.rangers.co.uk/Article/team-news-gers-side-to-face-falkirk-tonight/xjPOCRUZIHHWOwxM8zFrU"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Rangers_F.C.",
-      "checkedAt": "2026-11-17T12:05:35.422927+00:00"
+      "checkedAt": "2026-11-17T14:30:53.502369+00:00"
     },
     "scotland-premiership:10": {
       "clubName": "Falkirk",
@@ -8149,18 +7911,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:30:58.267533+00:00",
+          "secondaryRosterSource": "https://www.perthstjohnstonefc.co.uk/news/article/match-report-st-johnstone-2-1-dundee/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/St_Johnstone_F.C.",
-      "checkedAt": "2026-11-17T12:06:22.375012+00:00"
+      "checkedAt": "2026-11-17T14:30:56.255315+00:00"
     },
     "scotland-premiership:12": {
       "clubName": "St. Mirren",
@@ -8179,40 +7941,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
           "membershipSection": "first-team squad",
           "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_no_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "scotland-premiership:12",
-          "playerName": "Declan John",
-          "wikidataQid": "Q5249348",
-          "clubWikidataQid": "Q319136",
-          "photoUrl": "./assets/player-headshots/scotland-premiership-12--Q5249348.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Declan_John_Ashkahn_Dejagah_(cropped).jpg",
-          "license": "CC BY-SA 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-          "author": "Jon Candy",
-          "membershipSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-          "membershipSection": "first-team squad",
-          "membershipHeading": "first-team squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_and_commons_named_person_category",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:31:00.863793+00:00",
+          "secondaryRosterSource": "https://www.stmirren.com/news/team-news-st-mirren-v-rangers-7th-nov"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/St_Mirren_F.C.",
-      "checkedAt": "2026-11-17T12:06:35.722852+00:00"
+      "checkedAt": "2026-11-17T14:30:58.707867+00:00"
     },
     "spain-la-liga:1": {
       "clubName": "Deportivo Alavés",
@@ -8335,62 +8075,18 @@
           "membershipSource": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
           "membershipSection": "current squad",
           "membershipHeading": "current squad",
-          "verifiedCurrent": false,
+          "verifiedCurrent": true,
           "faceCrop": true,
+          "faceQualityVerified": true,
           "modified": true,
           "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "spain-la-liga:3",
-          "playerName": "Nicolás Serrano",
-          "wikidataQid": "Q106644525",
-          "clubWikidataQid": "Q8687",
-          "photoUrl": "./assets/player-headshots/spain-la-liga-3--Q106644525.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Esapana-inglaterra-22_(48899953721)_(cropped).jpg",
-          "license": "CC BY 2.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-          "author": "Pedro Semitiel from Cehegín, España",
-          "membershipSource": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
-        },
-        {
-          "clubId": "spain-la-liga:3",
-          "playerName": "Nico Williams",
-          "wikidataQid": "Q104414736",
-          "clubWikidataQid": "Q8687",
-          "photoUrl": "./assets/player-headshots/spain-la-liga-3--Q104414736.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nico_Williams_Argentina_v_Spain_19_July_2026-196_(cropped).jpg",
-          "license": "CC BY-SA 4.0",
-          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-          "author": "Bryan Berlin",
-          "membershipSource": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-          "membershipSection": "current squad",
-          "membershipHeading": "current squad",
-          "verifiedCurrent": false,
-          "faceCrop": true,
-          "modified": true,
-          "associationType": "current_squad_wikipedia_section",
-          "rosterVerification": "wikipedia_squad_stale_p54",
-          "secondaryRosterSource": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-          "verifiedAt": "2026-11-17T13:45:30.090186+00:00",
-          "faceQualityVerified": true
+          "rosterVerification": "official_club_squad",
+          "verifiedAt": "2026-11-17T14:31:03.995906+00:00",
+          "secondaryRosterSource": "https://www.athletic-club.eus/en/teams/athletic-club/2026-27/squad/"
         }
       ],
       "rosterSource": "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-      "checkedAt": "2026-11-17T12:08:45.789889+00:00"
+      "checkedAt": "2026-11-17T14:31:01.295261+00:00"
     },
     "spain-la-liga:4": {
       "clubName": "Atlético Madrid",
@@ -10211,6 +9907,6 @@
       "checkedAt": "2026-11-17T11:06:48.531998+00:00"
     }
   },
-  "lastUpdated": "2026-11-17T14:28:32.717875+00:00",
-  "rosterAuditAt": "2026-11-17T14:28:32.286913+00:00"
+  "lastUpdated": "2026-11-17T14:31:04.449297+00:00",
+  "rosterAuditAt": "2026-11-17T14:31:03.995906+00:00"
 }

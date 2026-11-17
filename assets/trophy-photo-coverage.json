@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-17T14:28:34.909Z",
-  "catalogUpdatedAt": "2026-11-17T14:28:32.717875+00:00",
+  "checkedAt": "2026-11-17T14:31:04.517Z",
+  "catalogUpdatedAt": "2026-11-17T14:31:04.449297+00:00",
   "totalClubs": 214,
   "trophyClubs": 105,
-  "covered": 92,
-  "missingCount": 13,
+  "covered": 98,
+  "missingCount": 7,
   "missing": [
     {
       "id": "belgian-pro-league:5",
@@ -35,46 +35,11 @@
       "approvedCrops": 0
     },
     {
-      "id": "netherlands-eredivisie:7",
-      "club": "Go Ahead Eagles",
-      "league": "netherlands-eredivisie",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
-      "id": "netherlands-eredivisie:11",
-      "club": "Heerenveen",
-      "league": "netherlands-eredivisie",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
-      "id": "netherlands-eredivisie:18",
-      "club": "Willem II",
-      "league": "netherlands-eredivisie",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
       "id": "portugal-liga-portugal:12",
       "club": "Vitória Guimarães",
       "league": "portugal-liga-portugal",
       "catalogued": 0,
       "approvedCrops": 0
-    },
-    {
-      "id": "portugal-liga-portugal:13",
-      "club": "Moreirense",
-      "league": "portugal-liga-portugal",
-      "catalogued": 0,
-      "approvedCrops": 0
-    },
-    {
-      "id": "scotland-premiership:4",
-      "club": "Heart of Midlothian",
-      "league": "scotland-premiership",
-      "catalogued": 4,
-      "approvedCrops": 4
     },
     {
       "id": "turkey-super-lig:10",
@@ -89,13 +54,6 @@
       "league": "turkey-super-lig",
       "catalogued": 0,
       "approvedCrops": 0
-    },
-    {
-      "id": "turkey-super-lig:14",
-      "club": "Konyaspor",
-      "league": "turkey-super-lig",
-      "catalogued": 4,
-      "approvedCrops": 4
     }
   ],
   "verified": [
@@ -633,8 +591,7 @@
       "club": "AZ Alkmaar",
       "league": "netherlands-eredivisie",
       "players": [
-        "Mateo Chávez",
-        "Jordy Clasie"
+        "Mateo Chávez"
       ]
     },
     {
@@ -643,6 +600,14 @@
       "league": "netherlands-eredivisie",
       "players": [
         "Sem Steijn"
+      ]
+    },
+    {
+      "id": "netherlands-eredivisie:7",
+      "club": "Go Ahead Eagles",
+      "league": "netherlands-eredivisie",
+      "players": [
+        "Hamid Zarbaf"
       ]
     },
     {
@@ -659,8 +624,7 @@
       "club": "FC Utrecht",
       "league": "netherlands-eredivisie",
       "players": [
-        "Victor Jensen",
-        "Joris van Overeem"
+        "Victor Jensen"
       ]
     },
     {
@@ -672,11 +636,27 @@
       ]
     },
     {
+      "id": "netherlands-eredivisie:11",
+      "club": "Heerenveen",
+      "league": "netherlands-eredivisie",
+      "players": [
+        "Simon Thern"
+      ]
+    },
+    {
       "id": "netherlands-eredivisie:13",
       "club": "PEC Zwolle",
       "league": "netherlands-eredivisie",
       "players": [
         "Simon Graves"
+      ]
+    },
+    {
+      "id": "netherlands-eredivisie:18",
+      "club": "Willem II",
+      "league": "netherlands-eredivisie",
+      "players": [
+        "Kristófer Kristinsson"
       ]
     },
     {
@@ -692,8 +672,15 @@
       "club": "Estrela",
       "league": "portugal-liga-portugal",
       "players": [
-        "Jeremy Arévalo",
-        "Stefan Leković"
+        "Jeremy Arévalo"
+      ]
+    },
+    {
+      "id": "portugal-liga-portugal:13",
+      "club": "Moreirense",
+      "league": "portugal-liga-portugal",
+      "players": [
+        "Ibrahima Camará"
       ]
     },
     {
@@ -718,10 +705,15 @@
       "club": "Dundee",
       "league": "scotland-premiership",
       "players": [
-        "Charlie Reilly",
-        "Imari Samuels",
-        "Joe Westley",
-        "Matai Akinmboni"
+        "Charlie Reilly"
+      ]
+    },
+    {
+      "id": "scotland-premiership:4",
+      "club": "Heart of Midlothian",
+      "league": "scotland-premiership",
+      "players": [
+        "Josh McPake"
       ]
     },
     {
@@ -729,8 +721,7 @@
       "club": "Hibernian",
       "league": "scotland-premiership",
       "players": [
-        "Jordan Smith",
-        "Azeem Abdulai"
+        "Jordan Smith"
       ]
     },
     {
@@ -746,10 +737,7 @@
       "club": "Dundee United",
       "league": "scotland-premiership",
       "players": [
-        "Lachlan Rose",
-        "Jack Walton",
-        "Mehdi Merghem",
-        "Neil Farrugia"
+        "Lachlan Rose"
       ]
     },
     {
@@ -765,9 +753,7 @@
       "club": "Rangers",
       "league": "scotland-premiership",
       "players": [
-        "Ivor Pandur",
-        "Ross McCausland",
-        "Findlay Curtis"
+        "Ivor Pandur"
       ]
     },
     {
@@ -783,8 +769,7 @@
       "club": "St. Mirren",
       "league": "scotland-premiership",
       "players": [
-        "Henry Fieldson",
-        "Declan John"
+        "Henry Fieldson"
       ]
     },
     {
@@ -801,9 +786,7 @@
       "club": "Athletic Club",
       "league": "spain-la-liga",
       "players": [
-        "Iñaki Williams",
-        "Nicolás Serrano",
-        "Nico Williams"
+        "Iñaki Williams"
       ]
     },
     {
@@ -890,6 +873,17 @@
       "players": [
         "Christopher Opéri",
         "Edin Višća"
+      ]
+    },
+    {
+      "id": "turkey-super-lig:14",
+      "club": "Konyaspor",
+      "league": "turkey-super-lig",
+      "players": [
+        "Adil Demirbağ",
+        "Marko Jevtović",
+        "Jean-Luc Dompé",
+        "Mostafa Mohamed"
       ]
     }
   ]

@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "totalClubs": 43,
-  "clubsWithThree": 179,
-  "clubsWithFour": 44,
-  "totalCurrentHeadshots": 388,
+  "totalClubs": 27,
+  "clubsWithThree": 183,
+  "clubsWithFour": 41,
+  "totalCurrentHeadshots": 374,
   "clubs": {
     "belgian-pro-league:1": {
       "clubName": "Anderlecht",
@@ -1498,14 +1498,14 @@
     },
     "netherlands-eredivisie:3": {
       "clubName": "AZ Alkmaar",
-      "checkedAt": "2026-11-17T11:47:54.877628+00:00",
+      "checkedAt": "2026-11-17T14:28:41.457590+00:00",
       "rosterNames": 48,
-      "photoCandidates": 16,
+      "photoCandidates": 4,
       "sources": [
         "https://nl.wikipedia.org/wiki/AZ_(voetbalclub)"
       ],
-      "count": 2,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "netherlands-eredivisie:4": {
       "clubName": "Excelsior",
@@ -1521,15 +1521,14 @@
     },
     "netherlands-eredivisie:5": {
       "clubName": "Feyenoord Rotterdam",
-      "checkedAt": "2026-11-17T11:48:46.562236+00:00",
-      "rosterNames": 65,
-      "photoCandidates": 43,
+      "checkedAt": "2026-11-17T14:28:48.432628+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 5,
       "sources": [
-        "https://en.wikipedia.org/wiki/Feyenoord",
-        "https://nl.wikipedia.org/wiki/Feyenoord"
+        "https://en.wikipedia.org/wiki/Feyenoord"
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "netherlands-eredivisie:6": {
       "clubName": "Fortuna Sittard",
@@ -1545,15 +1544,16 @@
     },
     "netherlands-eredivisie:7": {
       "clubName": "Go Ahead Eagles",
-      "checkedAt": "2026-11-17T11:50:10.439165+00:00",
+      "checkedAt": "2026-11-17T14:28:51.633303+00:00",
       "rosterNames": 53,
-      "photoCandidates": 31,
+      "photoCandidates": 5,
       "sources": [
         "https://en.wikipedia.org/wiki/Go_Ahead_Eagles",
-        "https://nl.wikipedia.org/wiki/Go_Ahead_Eagles"
+        "https://nl.wikipedia.org/wiki/Go_Ahead_Eagles",
+        "https://www.wikidata.org/wiki/Q749589"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "netherlands-eredivisie:8": {
       "clubName": "FC Twente",
@@ -1570,16 +1570,14 @@
     },
     "netherlands-eredivisie:9": {
       "clubName": "FC Utrecht",
-      "checkedAt": "2026-11-17T11:52:01.032664+00:00",
-      "rosterNames": 52,
-      "photoCandidates": 53,
+      "checkedAt": "2026-11-17T14:28:45.863120+00:00",
+      "rosterNames": 28,
+      "photoCandidates": 4,
       "sources": [
-        "https://en.wikipedia.org/wiki/FC_Utrecht",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_FC_Utrecht_season",
-        "https://nl.wikipedia.org/wiki/FC_Utrecht"
+        "https://en.wikipedia.org/wiki/FC_Utrecht"
       ],
-      "count": 2,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "netherlands-eredivisie:10": {
       "clubName": "FC Groningen",
@@ -1595,15 +1593,16 @@
     },
     "netherlands-eredivisie:11": {
       "clubName": "Heerenveen",
-      "checkedAt": "2026-11-17T11:53:26.145391+00:00",
+      "checkedAt": "2026-11-17T14:29:31.350372+00:00",
       "rosterNames": 46,
-      "photoCandidates": 20,
+      "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/SC_Heerenveen",
-        "https://nl.wikipedia.org/wiki/Sc_Heerenveen"
+        "https://nl.wikipedia.org/wiki/Sc_Heerenveen",
+        "https://www.wikidata.org/wiki/Q200321"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "netherlands-eredivisie:12": {
       "clubName": "NEC Nijmegen",
@@ -1619,15 +1618,14 @@
     },
     "netherlands-eredivisie:13": {
       "clubName": "PEC Zwolle",
-      "checkedAt": "2026-11-17T11:54:33.722226+00:00",
-      "rosterNames": 58,
-      "photoCandidates": 25,
+      "checkedAt": "2026-11-17T14:29:57.785565+00:00",
+      "rosterNames": 22,
+      "photoCandidates": 2,
       "sources": [
-        "https://en.wikipedia.org/wiki/PEC_Zwolle",
-        "https://nl.wikipedia.org/wiki/PEC_Zwolle"
+        "https://en.wikipedia.org/wiki/PEC_Zwolle"
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "netherlands-eredivisie:14": {
       "clubName": "PSV Eindhoven",
@@ -1678,16 +1676,17 @@
     },
     "netherlands-eredivisie:18": {
       "clubName": "Willem II",
-      "checkedAt": "2026-11-17T11:57:14.996150+00:00",
+      "checkedAt": "2026-11-17T14:30:00.448582+00:00",
       "rosterNames": 37,
-      "photoCandidates": 27,
+      "photoCandidates": 0,
       "sources": [
         "https://en.wikipedia.org/wiki/Willem_II_Tilburg",
         "https://en.wikipedia.org/wiki/2026%E2%80%9327_Willem_II_Tilburg_season",
-        "https://nl.wikipedia.org/wiki/Willem_II_(voetbalclub)"
+        "https://nl.wikipedia.org/wiki/Willem_II_(voetbalclub)",
+        "https://www.wikidata.org/wiki/Q332664"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "portugal-liga-portugal:1": {
       "clubName": "Arouca",
@@ -1759,14 +1758,14 @@
     },
     "portugal-liga-portugal:7": {
       "clubName": "Estrela",
-      "checkedAt": "2026-11-17T11:59:49.901283+00:00",
+      "checkedAt": "2026-11-17T14:30:19.998845+00:00",
       "rosterNames": 22,
-      "photoCandidates": 9,
+      "photoCandidates": 2,
       "sources": [
         "https://en.wikipedia.org/wiki/C.F._Estrela_da_Amadora"
       ],
-      "count": 2,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "portugal-liga-portugal:8": {
       "clubName": "FC Famalicão",
@@ -1815,9 +1814,9 @@
     },
     "portugal-liga-portugal:12": {
       "clubName": "Vitória Guimarães",
-      "checkedAt": "2026-11-17T12:01:22.994245+00:00",
+      "checkedAt": "2026-11-17T14:30:27.169811+00:00",
       "rosterNames": 28,
-      "photoCandidates": 4,
+      "photoCandidates": 0,
       "sources": [
         "https://en.wikipedia.org/wiki/Vit%C3%B3ria_S.C."
       ],
@@ -1826,14 +1825,15 @@
     },
     "portugal-liga-portugal:13": {
       "clubName": "Moreirense",
-      "checkedAt": "2026-11-17T12:01:34.841586+00:00",
+      "checkedAt": "2026-11-17T14:30:22.361562+00:00",
       "rosterNames": 22,
-      "photoCandidates": 1,
+      "photoCandidates": 0,
       "sources": [
-        "https://en.wikipedia.org/wiki/Moreirense_F.C."
+        "https://en.wikipedia.org/wiki/Moreirense_F.C.",
+        "https://www.wikidata.org/wiki/Q1346314"
       ],
-      "count": 0,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "portugal-liga-portugal:14": {
       "clubName": "C.D. Nacional",
@@ -1915,81 +1915,79 @@
     },
     "scotland-premiership:3": {
       "clubName": "Dundee",
-      "checkedAt": "2026-11-17T12:03:47.603383+00:00",
+      "checkedAt": "2026-11-17T14:30:38.287274+00:00",
       "rosterNames": 24,
-      "photoCandidates": 17,
+      "photoCandidates": 5,
       "sources": [
         "https://en.wikipedia.org/wiki/Dundee_F.C."
       ],
-      "count": 4,
+      "count": 1,
       "status": "ready"
     },
     "scotland-premiership:4": {
       "clubName": "Heart of Midlothian",
-      "checkedAt": "2026-11-17T12:03:55.117889+00:00",
+      "checkedAt": "2026-11-17T14:30:43.276555+00:00",
       "rosterNames": 32,
-      "photoCandidates": 22,
+      "photoCandidates": 5,
       "sources": [
         "https://en.wikipedia.org/wiki/Heart_of_Midlothian_F.C."
       ],
-      "count": 4,
+      "count": 1,
       "status": "ready"
     },
     "scotland-premiership:5": {
       "clubName": "Hibernian",
-      "checkedAt": "2026-11-17T12:04:04.627223+00:00",
+      "checkedAt": "2026-11-17T14:30:45.699664+00:00",
       "rosterNames": 27,
-      "photoCandidates": 14,
+      "photoCandidates": 4,
       "sources": [
         "https://en.wikipedia.org/wiki/Hibernian_F.C."
       ],
-      "count": 2,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "scotland-premiership:6": {
       "clubName": "Kilmarnock",
-      "checkedAt": "2026-11-17T12:04:28.977324+00:00",
+      "checkedAt": "2026-11-17T14:30:48.344980+00:00",
       "rosterNames": 22,
-      "photoCandidates": 11,
+      "photoCandidates": 2,
       "sources": [
         "https://en.wikipedia.org/wiki/Kilmarnock_F.C."
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "scotland-premiership:7": {
       "clubName": "Dundee United",
-      "checkedAt": "2026-11-17T12:04:44.190439+00:00",
+      "checkedAt": "2026-11-17T14:30:40.758661+00:00",
       "rosterNames": 22,
-      "photoCandidates": 21,
+      "photoCandidates": 5,
       "sources": [
         "https://en.wikipedia.org/wiki/Dundee_United_F.C."
       ],
-      "count": 4,
+      "count": 1,
       "status": "ready"
     },
     "scotland-premiership:8": {
       "clubName": "Motherwell",
-      "checkedAt": "2026-11-17T12:04:51.712318+00:00",
-      "rosterNames": 63,
-      "photoCandidates": 31,
+      "checkedAt": "2026-11-17T14:30:50.936209+00:00",
+      "rosterNames": 25,
+      "photoCandidates": 1,
       "sources": [
-        "https://en.wikipedia.org/wiki/Motherwell_F.C.",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Motherwell_F.C._season"
+        "https://en.wikipedia.org/wiki/Motherwell_F.C."
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "scotland-premiership:9": {
       "clubName": "Rangers",
-      "checkedAt": "2026-11-17T12:05:35.422927+00:00",
+      "checkedAt": "2026-11-17T14:30:53.502369+00:00",
       "rosterNames": 28,
-      "photoCandidates": 29,
+      "photoCandidates": 5,
       "sources": [
-        "https://en.wikipedia.org/wiki/Rangers_F.C.",
-        "https://en.wikipedia.org/wiki/2026%E2%80%9327_Rangers_F.C._season"
+        "https://en.wikipedia.org/wiki/Rangers_F.C."
       ],
-      "count": 3,
+      "count": 1,
       "status": "ready"
     },
     "scotland-premiership:10": {
@@ -2005,25 +2003,25 @@
     },
     "scotland-premiership:11": {
       "clubName": "St. Johnstone",
-      "checkedAt": "2026-11-17T12:06:22.375012+00:00",
+      "checkedAt": "2026-11-17T14:30:56.255315+00:00",
       "rosterNames": 23,
-      "photoCandidates": 6,
+      "photoCandidates": 1,
       "sources": [
         "https://en.wikipedia.org/wiki/St_Johnstone_F.C."
       ],
       "count": 1,
-      "status": "insufficient_licensed_face_crops"
+      "status": "ready"
     },
     "scotland-premiership:12": {
       "clubName": "St. Mirren",
-      "checkedAt": "2026-11-17T12:06:35.722852+00:00",
+      "checkedAt": "2026-11-17T14:30:58.707867+00:00",
       "rosterNames": 24,
-      "photoCandidates": 7,
+      "photoCandidates": 2,
       "sources": [
         "https://en.wikipedia.org/wiki/St_Mirren_F.C."
       ],
-      "count": 2,
-      "status": "insufficient_licensed_face_crops"
+      "count": 1,
+      "status": "ready"
     },
     "spain-la-liga:1": {
       "clubName": "Deportivo Alavés",
@@ -2053,14 +2051,13 @@
     },
     "spain-la-liga:3": {
       "clubName": "Athletic Club",
-      "checkedAt": "2026-11-17T12:08:45.789889+00:00",
-      "rosterNames": 65,
-      "photoCandidates": 42,
+      "checkedAt": "2026-11-17T14:31:01.295261+00:00",
+      "rosterNames": 29,
+      "photoCandidates": 7,
       "sources": [
-        "https://en.wikipedia.org/wiki/Athletic_Bilbao",
-        "https://es.wikipedia.org/wiki/Athletic_Club"
+        "https://en.wikipedia.org/wiki/Athletic_Bilbao"
       ],
-      "count": 3,
+      "count": 1,
       "status": "ready"
     },
     "spain-la-liga:4": {
@@ -2476,5 +2473,5 @@
       "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T14:28:32.717875+00:00"
+  "lastUpdated": "2026-11-17T14:31:04.449297+00:00"
 }
