@@ -158,7 +158,7 @@ def wiki_squad(title, language="en"):
 
 
 def is_current_heading(heading):
-    if heading in CURRENT_SECTIONS:
+    if heading in CURRENT_SECTIONS or heading == "wikidata current club":
         return True
     # Some local-language squad headings append a season or "professional".
     # Never accept generic headings for "players", "alumni" or "history".
@@ -574,6 +574,89 @@ def process_club(team, qid, title, old_db, language="en", target=TARGET, roster_
     return photos, len(titles), len(candidates), set(qids)
 
 
+def wikidata_current_club_headshots(team, club_qid, target=1, excluded=None):
+    """Obtain licensed portraits by *active* P54 membership without a Wiki squad.
+
+    Wikidata's documented haswbstatement search is not proof of CURRENT
+    membership (it also includes historical P54 claims). Every candidate is
+    independently tested with the full qualified P54 current-club resolver.
+    """
+    from verify_current_rosters import current_club_from_wikidata
+    today = datetime.now(timezone.utc).date()
+    excluded = set(excluded or ())
+    club_id = team["id"]
+    records = []
+    tried = set()
+    for offset in (0, 100, 200):
+        if len(records) >= target:
+            break
+        try:
+            data = api("www.wikidata.org", {
+                "action": "query", "format": "json", "list": "search",
+                "srsearch": "haswbstatement:P54=" + club_qid + " haswbstatement:P18",
+                "srnamespace": 0, "srlimit": 100, "sroffset": offset
+            })
+            found = [p.get("title", "") for p in data.get("query", {}).get("search", [])
+                     if re.fullmatch(r"Q\d+", p.get("title", ""))]
+        except Exception as exc:
+            print("  Club Wikidata media search unavailable", club_id, str(exc)[:90], flush=True)
+            break
+        qids = [qid for qid in found if qid not in tried and qid not in excluded]
+        tried.update(qids)
+        if not qids:
+            break
+        entities = wikidata_entities(qids)
+        eligible = []
+        for player_qid in qids:
+            ent = entities.get(player_qid, {})
+            if not is_footballer(ent):
+                continue
+            if current_club_from_wikidata(ent, today)[0] != club_qid:
+                continue
+            filename = photo_filename(ent)
+            name = ent.get("labels", {}).get("en", {}).get("value")
+            if filename and name:
+                eligible.append((player_qid, name, filename))
+        # Preserve a stable source order and limit image bandwidth.
+        for group in chunks(eligible[:50], 25):
+            meta = commons_metadata([row[2] for row in group])
+            for player_qid, name, filename in group:
+                if len(records) >= target:
+                    break
+                info = meta.get(filename.casefold())
+                if not info:
+                    continue
+                try:
+                    cropped = crop_face(fetch(info["photoUrl"], attempts=2))
+                except Exception:
+                    continue
+                if not cropped:
+                    continue
+                safe = re.sub(r"[^a-z0-9-]", "-", club_id.lower().replace(":", "-"))
+                relative = "./assets/player-headshots/" + safe + "--" + player_qid + ".jpg"
+                HEADSHOTS.mkdir(parents=True, exist_ok=True)
+                (HEADSHOTS / (safe + "--" + player_qid + ".jpg")).write_bytes(cropped)
+                record_url = "https://www.wikidata.org/wiki/" + player_qid
+                records.append({
+                    "clubId": club_id, "playerName": name, "wikidataQid": player_qid,
+                    "clubWikidataQid": club_qid, "photoUrl": relative,
+                    "sourceUrl": info["sourceUrl"], "license": info["license"],
+                    "licenseUrl": info.get("licenseUrl", ""), "author": info["author"],
+                    "membershipSource": record_url,
+                    "membershipSection": "wikidata current club",
+                    "membershipHeading": "Active P54 current-club statement",
+                    "verifiedCurrent": True, "faceCrop": True,
+                    "faceQualityVerified": True, "modified": True,
+                    "rosterVerification": "wikidata_current_club",
+                    "verifiedAt": datetime.now(timezone.utc).isoformat(),
+                    "secondaryRosterSource": record_url,
+                    "associationType": "wikidata_current_P54_and_commons_P18"
+                })
+        if len(found) < 100:
+            break
+    return records
+
+
 def run(max_clubs, force=False, since=None, only_missing_cups=False):
     teams = read_json(TEAMS, [])
     mapping = read_json(CLUBS, {}).get("clubs", {})
@@ -679,8 +762,20 @@ def run(max_clubs, force=False, since=None, only_missing_cups=False):
                     used_sources.append(wiki_title_url(title, language))
                 except Exception as source_exc:
                     errors.append(language + ":" + str(source_exc)[:90])
+            if len(players) < target:
+                try:
+                    direct = wikidata_current_club_headshots(
+                        team, qid, target - len(players), seen)
+                    for player in direct:
+                        if player["wikidataQid"] not in seen and len(players) < target:
+                            players.append(player)
+                            seen.add(player["wikidataQid"])
+                    if direct:
+                        used_sources.append("https://www.wikidata.org/wiki/" + qid)
+                except Exception as fallback_exc:
+                    errors.append("wikidata-current-p54:" + str(fallback_exc)[:90])
             if not used_sources:
-                raise ValueError("No verified current squad: " + "; ".join(errors[:3]))
+                raise ValueError("No verified current squad or active P54 photo: " + "; ".join(errors[:3]))
             # The entire acquired-photo batch is independently checked against
             # a current club P54 or the explicit official/loan roster evidence.
             from verify_current_rosters import official_evidence, current_club_from_wikidata
