@@ -28,11 +28,12 @@
     "primary_cdn_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Logo_Ligue_1_McDonald%27s_2024.svg"
   },
   "germany-bundesliga": {
-    "file": "Fußball-Bundesliga Logo.png",
-    "asset_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fu%C3%9Fball-Bundesliga%20Logo.png",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Fu%C3%9Fball-Bundesliga_Logo.png",
-    "status": "Official artwork source identified on Wikimedia Commons; live browser display not independently verified",
-    "primary_cdn_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Fu%C3%9Fball-Bundesliga_Logo.png"
+    "file": "Bundesliga current logo.svg",
+    "asset_url": "https://assets.footylogos.com/logos/bundesliga-germany/bundesliga-germany-logo-footylogos.svg",
+    "source_page": "https://www.footylogos.com/logos/bundesliga-germany",
+    "status": "Current Bundesliga emblem (red player silhouette and wordmark); secondary Wikimedia SVG wordmark URL retained in app",
+    "primary_cdn_url": "https://assets.footylogos.com/logos/bundesliga-germany/bundesliga-germany-logo-footylogos.svg",
+    "secondary_cdn_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Bundesliga_logo.svg"
   },
   "greece-super-league": {
     "file": "Stoiximan Super League Greece logo.svg",

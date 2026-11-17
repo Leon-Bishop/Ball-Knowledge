@@ -10,7 +10,7 @@ const officialLogos={
  "brazil-serie-a": ["https://upload.wikimedia.org/wikipedia/commons/c/c2/Campeonato_Brasileiro_S%C3%A9rie_A_logo_%282026%29.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato%20Brasileiro%20S%C3%A9rie%20A%20logo%20%282026%29.svg"],
  "england-premier-league": ["https://upload.wikimedia.org/wikipedia/commons/b/bf/Pl-logo-light.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Pl-logo-light.svg"],
  "france-ligue-1": ["https://upload.wikimedia.org/wikipedia/commons/7/7b/Logo_Ligue_1_McDonald%27s_2024.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Ligue%201%20McDonald%27s%202024.svg"],
- "germany-bundesliga": ["https://upload.wikimedia.org/wikipedia/commons/1/1e/Fu%C3%9Fball-Bundesliga_Logo.png","https://commons.wikimedia.org/wiki/Special:FilePath/Fu%C3%9Fball-Bundesliga%20Logo.png"],
+ "germany-bundesliga": ["https://assets.footylogos.com/logos/bundesliga-germany/bundesliga-germany-logo-footylogos.svg","https://upload.wikimedia.org/wikipedia/commons/1/15/Bundesliga_logo.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Bundesliga_logo.svg"],
  "greece-super-league": ["https://upload.wikimedia.org/wikipedia/commons/7/7a/Stoiximan_Super_League_Greece_logo.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Stoiximan%20Super%20League%20Greece%20logo.svg"],
  "italy-serie-a": ["https://upload.wikimedia.org/wikipedia/commons/e/e9/Serie_A_logo_2022.svg","https://commons.wikimedia.org/wiki/Special:FilePath/Serie%20A%20logo%202022.svg"],
  "netherlands-eredivisie": ["https://upload.wikimedia.org/wikipedia/commons/8/81/VriendenLoterij_Eredivisie_Logo.png","https://commons.wikimedia.org/wiki/Special:FilePath/VriendenLoterij%20Eredivisie%20Logo.png"],

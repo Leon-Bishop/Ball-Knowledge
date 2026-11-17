@@ -28,6 +28,7 @@ for(const [clubId,club] of Object.entries(db.clubs)){
 assert(!source.includes('fetch(\'./assets/player-photo-db.json\''),'Historical photos must never appear in quiz');
 assert(source.includes('verifiedCurrent!==true')&&source.includes('faceCrop!==true'));
 assert(source.includes('ALLOWED_VERIFICATION')&&source.includes('rosterAuditAt'));
+assert(source.includes('p.faceQualityVerified!==true'), 'Player photos require final facial-feature QA');
 assert(css.includes('.slot .player-photo-clue')&&css.includes('object-fit:contain')&&!css.includes('transform:scale(1.35)'));
 assert(app.includes('if(photo&&!finished)'),'Do not reveal identity during the round');
 assert(!app.includes('item.title=(lang===\'tr\'?\'Futbolcu fotoğrafını'),'No photograph source tooltips');
@@ -57,7 +58,7 @@ const player=(n,current=true)=>({
  clubId:'team:1',clubWikidataQid:'Q999',wikidataQid:'Q'+n,playerName:'Player '+n,
  rosterVerification:'wikidata_current_club',verifiedAt:new Date().toISOString(),
  secondaryRosterSource:'https://www.wikidata.org/wiki/Q'+n,
- verifiedCurrent:current,faceCrop:true,
+ verifiedCurrent:current,faceCrop:true,faceQualityVerified:true,
  photoUrl:'./assets/player-headshots/team-1--Q'+n+'.jpg',
  sourceUrl:'https://commons.wikimedia.org/wiki/File:Portrait.jpg',
  membershipSource:'https://en.wikipedia.org/wiki/Team',membershipSection:'current squad',
@@ -83,6 +84,10 @@ const window={dispatchEvent(){}};
 vm.runInNewContext(source,{window,fetch:async(url)=>({ok:true,json:async()=>url.includes('official-roster-evidence')?officialMock:mock}),Event:class Event{},console});
 await window.BKPlayerPhotos.ready;
 assert.equal(window.BKPlayerPhotos.availablePlayers('team:1').length,3);
+mock.clubs['team:1'].players[0].faceQualityVerified=false;
+assert.equal(window.BKPlayerPhotos.availablePlayers('team:1').length,0,
+ 'An unverified face is excluded even when the roster and initial crop were approved');
+mock.clubs['team:1'].players[0].faceQualityVerified=true;
 const wikipediaOnly=[70,71,72].map(n=>({...player(n),clubId:'team:7',
  photoUrl:'./assets/player-headshots/team-7--Q'+n+'.jpg',rosterVerification:'wikipedia_squad_no_p54'}));
 mock.clubs['team:7']={clubWikidataQid:'Q999',checkedAt:new Date().toISOString(),players:wikipediaOnly};

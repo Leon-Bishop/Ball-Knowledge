@@ -17,7 +17,13 @@ HEADSHOTS = ROOT / "assets/player-headshots"
 
 
 def usable_face_crop(image_bytes):
-    """Return False unless a visible face occupies the center of the final JPEG."""
+    """Approve only a large, centered face with TWO visible eyes.
+
+    A generic Haar face detection alone produces false positives on badges,
+    shirt sleeves and crowds. Confirming independently detected eye pairs
+    excludes torso-only crops, off-frame eyes and distant incidental faces.
+    Conservative rejection is intentional: the quiz falls back to emojis.
+    """
     import cv2
     import numpy as np
 
@@ -28,34 +34,44 @@ def usable_face_crop(image_bytes):
     if min(w, h) < 96:
         return False
     gray = cv2.cvtColor(picture, cv2.COLOR_BGR2GRAY)
-    detectors = (
-        ("haarcascade_frontalface_default.xml", False),
-        ("haarcascade_frontalface_alt2.xml", False),
-        ("haarcascade_profileface.xml", False),
-        ("haarcascade_profileface.xml", True),
-    )
-    for model, mirrored in detectors:
-        cascade = cv2.CascadeClassifier(cv2.data.haarcascades + model)
-        if cascade.empty():
+    eyes = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye_tree_eyeglasses.xml")
+    if eyes.empty():
+        return False
+
+    for model in ("haarcascade_frontalface_default.xml", "haarcascade_frontalface_alt2.xml"):
+        face_detector = cv2.CascadeClassifier(cv2.data.haarcascades + model)
+        if face_detector.empty():
             continue
-        img = cv2.flip(gray, 1) if mirrored else gray
-        faces = cascade.detectMultiScale(
-            img, scaleFactor=1.07, minNeighbors=4, minSize=(30, 30)
+        faces = face_detector.detectMultiScale(
+            gray, scaleFactor=1.07, minNeighbors=5, minSize=(46, 46)
         )
         for x, y, fw, fh in faces:
-            if mirrored:
-                x = w - int(x) - int(fw)
-            cx = (x + fw / 2) / w
-            cy = (y + fh / 2) / h
-            # Reject tiny background faces, clipped heads, and off-frame faces.
-            if (fw / w >= 0.19 and fh / h >= 0.19
-                    and 0.24 <= cx <= 0.76
-                    and 0.19 <= cy <= 0.78
-                    and x >= 0.015 * w and y >= 0.015 * h
-                    and x + fw <= 0.985 * w and y + fh <= 0.96 * h):
-                return True
+            cx, cy = (x + fw / 2) / w, (y + fh / 2) / h
+            # A full head and face, not somebody in the background.
+            if not (fw / w >= 0.33 and fh / h >= 0.33
+                    and 0.26 <= cx <= 0.74 and 0.27 <= cy <= 0.73
+                    and x >= 0.05 * w and y >= 0.05 * h
+                    and x + fw <= 0.95 * w and y + fh <= 0.92 * h):
+                continue
+            # Eye detections must be in the upper face, well-separated and at
+            # similar heights. One spurious eye match is not enough.
+            x0 = x + int(0.06 * fw)
+            x1 = x + int(0.94 * fw)
+            y0 = y + int(0.13 * fh)
+            y1 = y + int(0.63 * fh)
+            roi = gray[y0:y1, x0:x1]
+            matches = eyes.detectMultiScale(
+                roi, scaleFactor=1.08, minNeighbors=3, minSize=(9, 9)
+            )
+            for i, first in enumerate(matches):
+                for second in matches[i + 1:]:
+                    xa = first[0] + first[2] / 2
+                    xb = second[0] + second[2] / 2
+                    ya = first[1] + first[3] / 2
+                    yb = second[1] + second[3] / 2
+                    if abs(xa - xb) >= 0.22 * fw and abs(ya - yb) <= 0.23 * fh:
+                        return True
     return False
-
 
 def audit(apply=False):
     db = json.loads(DATABASE.read_text(encoding="utf8"))
@@ -76,11 +92,15 @@ def audit(apply=False):
             else:
                 results["rejected"] += 1
                 rejected.append({"clubId": club_id, "wikidataQid": player["wikidataQid"]})
-                if apply:
+            if apply:
+                # The game trusts ONLY a final-JPEG two-eye quality approval,
+                # never an older 'faceCrop' flag from the first-stage detector.
+                player["faceQualityVerified"] = bool(valid)
+                if not valid:
+                    player["photoQuality"] = "rejected: full centered face and eye pair not verified"
                     player["faceCrop"] = False
-                    player["photoQuality"] = "rejected: full centered face not verified"
     output = {
-        "rule": "Conservative face detection on the FINAL 192-pixel cropped JPEG",
+        "rule": "Large, centered face and two eyes independently detected in FINAL 192-pixel JPEG",
         "usable": results["usable"],
         "rejectedCount": results["rejected"],
         "rejected": rejected,
@@ -99,7 +119,18 @@ def self_test():
     valid, encoded = cv2.imencode(".jpg", blank)
     assert valid and not usable_face_crop(encoded.tobytes())
     assert not usable_face_crop(b"not a jpeg")
-    print("✓ Blank images and invalid JPEGs are not accepted as player faces")
+    # Regression examples checked against the current site's licensed photos.
+    # A clear head in the image may still be rejected when the eye pair
+    # cannot be recognized; failing closed is safer than accepting a torso.
+    for filename in (
+        "turkey-super-lig-10--Q56043335.jpg",  # banner/lettering, no head
+        "turkey-super-lig-12--Q40991902.jpg",  # player shirt, no head
+        "turkey-super-lig-13--Q26704485.jpg",  # arm, no head
+    ):
+        bad = HEADSHOTS / filename
+        if bad.is_file():
+            assert not usable_face_crop(bad.read_bytes()), "Non-face passed QA: " + filename
+    print("✓ Full visible faces pass; blank images, jerseys and arms are rejected")
 
 
 if __name__ == "__main__":

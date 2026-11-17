@@ -43,6 +43,20 @@ jobs:
           set -euo pipefail
           git config user.name "ball-knowledge-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Fail closed immediately: remove bad existing crops before the
+          # slower multi-league photo refresh begins.
+          python scripts/headshot_quality.py --apply
+          git add assets/player-headshot-db.json assets/player-headshot-face-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Revalidate published portraits for visible faces and eyes"
+            for attempt in 1 2 3 4; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then break; fi
+              if [ "$attempt" -eq 4 ]; then exit 1; fi
+              sleep $((attempt * 3))
+            done
+          fi
           STARTED_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
           for batch in $(seq 1 11); do
             echo "Curating headshots: batch $batch"
