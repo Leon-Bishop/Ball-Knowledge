@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-17T09:30:00Z",
+  "description": "Independent current 2026/27 squad evidence. Club pages are primary for Turkish clubs; loan announcements or current player listings resolve three conflicting Wikipedia memberships. A historical photo/kit is never proof of current membership.",
+  "officialClubs": {
+    "turkey-super-lig:7": {
+      "club": "Galatasaray",
+      "source": "https://www.galatasaray.org/en/pl/squad/48",
+      "players": {
+        "Q107352615": "Barış Alper Yılmaz",
+        "Q125247410": "Aleksey Batrakov",
+        "Q318069": "Abdülkerim Bardakçı",
+        "Q30055335": "Rafael Leão"
+      }
+    },
+    "turkey-super-lig:10": {
+      "club": "Göztepe",
+      "source": "https://www.goztepe.org.tr/futbol/erkek-a-takim/sporcular",
+      "players": {
+        "Q98829644": "Gökdeniz Bayrakdar",
+        "Q56043335": "Efkan Bekiroğlu",
+        "Q68593365": "Luka Gugeshashvili",
+        "Q108513776": "Novatus Miroshi"
+      }
+    },
+    "turkey-super-lig:12": {
+      "club": "Kasımpaşa",
+      "source": "https://www.kasimpasa.com.tr/en/teams/kasimpasa-first-team",
+      "players": {
+        "Q822762": "Kerem Demirbay",
+        "Q297461": "Ömer Bayram",
+        "Q86077125": "Andri Baldursson",
+        "Q40991902": "Fousseni Diabaté"
+      }
+    }
+  },
+  "loanAssignments": {
+    "Q115902876": {
+      "clubId": "belgian-pro-league:17",
+      "club": "RAAL La Louvière",
+      "source": "https://www.sporting-charleroi.be/news/mehdi-boukamir-prete-a-la-raal-la-louviere/",
+      "player": "Mehdi Boukamir",
+      "until": "2027-06-30"
+    },
+    "Q59728235": {
+      "clubId": "netherlands-eredivisie:13",
+      "club": "PEC Zwolle",
+      "source": "https://www.sofascore.com/football/player/filip-krastev/935556",
+      "player": "Filip Krastev",
+      "until": "2027-06-30"
+    },
+    "Q134470771": {
+      "clubId": "netherlands-eredivisie:4",
+      "club": "Excelsior",
+      "source": "https://www.feyenoord.com/nl/news/plug-op-huurbasis-naar-excelsior-130726",
+      "player": "Jan Plug",
+      "until": "2027-06-30"
+    }
+  }
+}
