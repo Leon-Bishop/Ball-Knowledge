@@ -85,7 +85,7 @@
     },
     "england-premier-league:8": {
       "clubName": "Everton",
-      "checkedAt": "2026-11-17T17:41:13.373348+00:00",
+      "checkedAt": "2026-11-22T04:24:51.764498+00:00",
       "rosterNames": 41,
       "photoCandidates": 12,
       "sources": [
@@ -1214,7 +1214,7 @@
     },
     "portugal-liga-portugal:12": {
       "clubName": "Vitória Guimarães",
-      "checkedAt": "2026-11-17T17:44:24.048794+00:00",
+      "checkedAt": "2026-11-22T04:26:25.676349+00:00",
       "rosterNames": 28,
       "photoCandidates": 1,
       "sources": [
@@ -1743,5 +1743,5 @@
       "status": "insufficient_licensed_face_crops"
     }
   },
-  "lastUpdated": "2026-11-17T17:44:35.996317+00:00"
+  "lastUpdated": "2026-11-22T04:26:44.507370+00:00"
 }
